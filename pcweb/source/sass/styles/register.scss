@@ -1,0 +1,498 @@
+﻿/*=======================register.css===========================*/
+body {
+	text-align: center;
+}
+#register {
+	width: 1000px;
+	min-height: 400px;
+	_height: 400px;
+	margin: 0 auto;
+}
+#register .form_info .item {
+	float: none;
+	margin: 15px 0;
+	padding: 5px 0;
+}
+#register .form_info .regtitle {
+	float: left;
+	text-align: right;
+	width: 105px;
+	margin-right: 8px;
+}
+.regtitle .yel {
+	font-size: 14px;
+}
+.form_info .regtext {
+	margin-right: 3px;
+	width: 200px;
+	height: 22px;
+	border: 1px solid #DADADA;
+	line-height: 22px;
+	box-shadow: 2px 2px 4px #F0F0F0 inset;
+	border-top: 1px solid #bababa;
+	padding: 2px 5px;
+}
+.form_info .wid90 {
+	width: 90px;
+}
+#title_pic {
+	padding: 10px 0px;
+	font-weight: bold;
+	color: #EB5E00;
+	font-size: 16px;
+	text-align: left;
+}
+.form_info .left {
+	width: 680px;
+}
+.link_notice {
+	font: 12px arial, sans-serif;
+	color: #666;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 15px;
+}
+.link_notice a {
+	color: #2894FF;
+}
+.title_icon {
+	background: url(/content/images/register/title_reg.png?v=20130314) 0 0;
+	display: inline-block;
+	width: 160px;
+	height: 32px;
+	vertical-align: bottom;
+}
+.registercon {
+	line-height: 26px;
+	text-align: left;
+	margin: 0 auto;
+	padding-left: 160px;
+}
+.registercon .dec {
+	padding: 15px 0;
+	color: gray;
+	font-size: 12px;
+}
+.registercon .title {
+	font-size: 20px;
+	color: #EB5E00;
+	margin: 10px 0;
+	font-weight: bold;
+}
+.registerAuto .pro_list {
+	text-align: left;
+	background-color: #FFEECC;
+	padding: 10px 80px;
+	margin: 10px auto;
+	width: 270px;
+}
+.registerAuto .pro_list .pro_list_left {
+	width: 200px;
+	line-height: 24px;
+}
+.registerAuto .pro_list .pro_list_right {
+	margin-left: 210px;
+	width: 38px;
+	height: 40px;
+}
+.registerAuto .pro_list .pro_list_tit {
+	color: #EB5E00;
+	font-size: 14px;
+}
+a.btnForum, a.btnForum:hover {
+	color: #000;
+	display: inline-block;
+	padding: 5px;
+	background: #EFEFEF;
+}
+.rmb10, .rmb5, .rmb2, .rmb1 {
+	background: url(/content/letter/img/tab_bg.png) no-repeat;
+	display: inline-block;
+	width: 38px;
+	height: 40px;
+}
+.aletter {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	*padding-left: 3px;
+	background: url(/content/letter/img/tab_bg.png) no-repeat 0 -315px;
+	display: inline-block;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #333;
+}
+.rmb10 {
+	background-position: 0 -228px;
+}
+.rmb5 {
+	background-position: 0 -270px;
+}
+.rmb2 {
+	background-position: -40px -228px;
+}
+.rmb1 {
+	background-position: -81px -228px;
+}
+.registerGress {
+	text-align: center;
+	margin: 0 0 40px;
+}
+.registerGress .box {
+	width: 1000px;
+	height: 45px;
+	background: url(/content/img/sprites/buyerLoginPress1000.png) no-repeat;
+}
+.registerGress .img_1 {
+	background-position: 0 0;
+}
+.registerGress .img_2 {
+	background-position: 0 -45px;
+}
+.registerGress .img_3 {
+	background-position: 0 -90px;
+}
+.registerGress .img_4 {
+	background-position: 0 -135px;
+}
+.shenheGress {
+	text-align: center;
+	margin: 0 0 30px;
+}
+.shenheGress .box {
+	border: 1px solid #DADADA;
+	padding: 15px 0;
+}
+.shenheGress .img {
+	background: url(/content/img/sprites/shenhe.png) no-repeat;
+	width: 678px;
+	height: 60px;
+	margin: 0 auto;
+}
+.shenheGress .img_1 {
+	background-position: 0 0;
+}
+.shenheGress .img_2 {
+	background-position: 0 -71px;
+}
+.shenheGress .img_3 {
+	background-position: 0 -142px;
+}
+.pageGress .important {
+	padding: 5px 15px;
+	background-color: #FFEBCC;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	font-weight: bold;
+	color: #F04D00;
+	margin-bottom: 30px;
+}
+.pageGress .textbox {
+	padding: 15px;
+	border: 1px solid #DADADA;
+	line-height: 24px;
+	text-align: left;
+}
+.pageGress .bt {
+	text-align: left;
+	margin: 20px 0;
+}
+.pageGress .btn_2 {
+	display: inline-block;
+	padding: 3px 10px;
+	background-color: #F04E00;
+	color: #fff;
+	line-height: 28px;
+	text-decoration: none;
+}
+.pageGress .title {
+	font-size: 16px;
+	color: #666666;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: left;
+}
+.pageGress .aUserInfo {
+	border: 1px solid #dfdfdf;
+}
+.pageGress .aUserInfo .hd {
+	height: 80px;
+	line-height: 80px;
+	font-size: 14px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.pageGress .aUserInfo .bd {
+	width: 500px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.pageGress .aUserInfo .zf_item {
+	height: 28px;
+	line-height: 28px;
+	padding: 15px 0;
+}
+.pageGress .aUserInfo .zf_dis {
+	float: left;
+	width: 160px;
+	text-align: right;
+	padding-right: 10px;
+}
+.pageGress .aUserInfo .zf_con {
+	width: 100%;
+	text-align: left;
+}
+.pageGress .aUserInfo input {
+	line-height: 28px;
+	padding: 0 5px;
+	height: 28px;
+}
+.pageGress .yellow {
+	color: #F04C00;
+}
+.weibo {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	width: 22px;
+	height: 20px;
+	background: url(/content/img/sprites/mymatouicon.gif) -169px -21px;
+}
+.zhifubao {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	width: 16px;
+	height: 20px;
+	background: url(/content/img/sprites/mymatouicon.gif) -151px -21px;
+}
+.node .l, .node .r {
+	display: inline-block;
+	vertical-align: middle;
+}
+.node .l {
+	margin-right: 5px;
+}
+.node .t {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+.payment {
+	height: 370px;
+	width: 192px;
+	text-align: left;
+	overflow: hidden;
+	padding: 20px 30px 0;
+	background: url(/content/images/sidegray.png) no-repeat left top;
+}
+.payment .hd {
+	padding: 10px 0;
+}
+.payment .bd {
+	border: 1px solid #e2e2e2;
+}
+.payment .dd {
+	padding: 5px 10px;
+	height: 24px;
+	line-height: 24px;
+	border-bottom: 1px dashed #e2e2e2;
+	margin-bottom: -1px;
+}
+
+/*注册页面修改20140521*/
+.reg_tabs {
+	display: block;
+	text-align: left;
+	height: 70px;
+	border-bottom: 2px solid #ddd;
+	position: relative;
+}
+.reg_tabs ul {
+	display: block;
+	width: 1000px;
+	height: 70px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+.reg_tabs ul li {
+	float: left;
+}
+.reg_tabs ul .rightline {
+	background: url("/images/public/reg_tabs_line.gif") no-repeat right 22px;
+}
+.reg_tabs li a {
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: 68px;
+	overflow: hidden;
+	line-height: 68px;
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 40px;
+	border-bottom: 2px solid #ddd;
+}
+.reg_tabs .active a {
+	border-bottom-color: #F04E00;
+	color: #F04E00;
+	background: url("/images/public/reg_tabs_activeBg.jpg") no-repeat bottom center;
+}
+.reg_tabs li a i {
+	font-size: 30px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.reg_tabs .reg_tabs_right {
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 39px;
+}
+.reg_tabs .reg_tabs_right a {
+	color: #3368FF;
+}
+#mobileForm #msgCode {
+	width: 90px;
+}
+.getCode {
+	background: #8FA0AB;
+	border: 0;
+	color: #fff;
+	line-height: 30px;
+	height: 30px;
+	margin-right: 2px;
+}
+.getCode:hover {
+	background: #7cA0AB;
+	color: #fff;
+}
+.getCodeStop, .getCodeStop:hover {
+	background: #CCD4D9;
+	color: #8E9FAB;
+	cursor: default;
+}
+
+/*手机绑定成功*/
+.bindMobileSuccess {
+	padding: 6px 58px;
+	text-align: left;
+	background: url("images/success.jpg") left top no-repeat;
+}
+.bindMobileSuccess .des {
+	line-height: 30px;
+}
+.bindMobileSuccess .qrCodeBox {
+	margin-top: 44px;
+	border: 1px solid #cccccc;
+	padding: 74px 36px;
+	text-align: left;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bindMobileSuccess .qr {
+	position: absolute;
+	right: 36px;
+	top: 24px;
+	text-align: center;
+	line-height: 34px;
+}
+
+/*注册成功*/
+.successlogin .icon-font, .registerSuccess .icon-font {
+	padding: 0;
+	margin-top: 5px;
+}
+.registerSuccess .icon-font {
+	font-size: 50px;
+	color: green;
+	line-height: 50px;
+}
+.registerSuccess {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 6px 0;
+	text-align: left;
+}
+.registerSuccess .des {
+	line-height: 30px;
+	padding-left: 58px;
+}
+.registerSuccess .des .tip {
+	font-size: 14px;
+	font-weight: bold;
+}
+.registerSuccess .des .mobileNumber {
+	color: #cc3333;
+}
+.indexlink {
+	color: #3369ff;
+}
+.registerSuccess .qrCodeBox {
+	margin: 44px 0;
+	background-color: #eeeeee;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+	padding: 34px 40px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 58px;
+}
+.registerSuccess .qr {
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+}
+.registerSuccess .qrPic {
+	margin-top: 20px;
+}
+.registerSuccess .coupon {
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 58px;
+}
+.registerSuccess .mrgLeft {
+	margin-left: 28px;
+}
+.registerSuccess .icon-font {
+	color: green;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+/*推荐注册页面*/
+#mobileForm .item .fill {
+	float: left;
+}
+#register .regTip {
+	height: 70px;
+	line-height: 70px;
+	padding-left: 72px;
+	background: url("/images/olderpullnew/regTip.jpg") no-repeat left center scroll;
+	font-size: 16px;
+}
+#register .red {
+	color: #cc3333;
+	font-weight: bold;
+}
+
+/* 微信登录 */
+.weixin {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	background: url(images/login/weixin.png) 0 0 no-repeat;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+//清除浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//生成字体
+@mixin fontface($fontname,$fontpath){
+  font-family:$fontname;
+  font-style: normal;
+  font-weight: normal;
+  src: local("☺"), 
+    url(#{$fontUrl}#{$fontpath}.eot#iefix) format(embedded-opentype), 
+	  url(#{$fontUrl}#{$fontpath}.woff) format(woff), 
+	  url(#{$fontUrl}#{$fontpath}.ttf) format(truetype), 
+	  url(#{$fontUrl}#{$fontpath}.svg#svgFontName) format(svg);
+}

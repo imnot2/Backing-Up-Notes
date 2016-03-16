@@ -1,0 +1,75 @@
+<div class="nominate-product" ng-if="lowerCategorys && lowerCategorys.length">
+	<ul>
+		<li ng-repeat="item in lowerCategorys">
+			<div class="pro-box" ng-click="selectCategory(item.id)">
+				<span class="img-box">
+					<img ng-src="{{item.img}}" alt="">
+				</span>
+				<span class="nominate-title">
+					{{item.name}}
+				</span>
+			</div>			
+		</li>
+	</ul>
+
+</div>
+<div class="searchresult" ng-if="search.isSearchOver">
+	<div class="result">
+		为您筛选出下列与"<span ng-bind="search.searchKeyword"></span>"相关的商品 <span ng-click="search.closeSearchBox()" class="icon icon-shut-round"></span>
+	</div>
+	<div class="desc" ng-if="!search.searchNumber" ymt-style="height:clientHeight - 84px">米有找到‘<span ng-bind="search.searchKeyword"></span>’耶<br>小主不如试一下别的吧~</div>
+</div>
+<div class="hot-list" ng-if="!(search.isSearchOver&&search.searchNumber===0)">
+	<ul class='hl-main' infinite-scroll='hotProducts.nextPage("page")' infinite-scroll-disabled='hotProducts.busy' 
+		infinite-scroll-distance='1'>
+		<li ng-repeat="hp in hotProducts.items" ng-click="toProduct(hp.ProductId,hp.Name,hp.PicUrl,hp.Price)" >
+			<span class="hl-box">
+					<p class="pic-warp"  ng-style="{'background-image':'url('+hp.PicUrl+')' }">
+						<span class="last" ng-if="hp.Stock < 4"><em>库存紧张</em><i class="arrow-down"></i></span>
+					</p>
+					<p class="price">
+						<span class="country">
+							<span class="flag" ng-style="{'background-image':'url('+hp.Flag+')'}"></span>
+							<i ng-bind="hp.Country"></i>
+						</span>
+						
+						<span class="number">
+							&yen;<strong ng-bind='hp.Price'></strong>
+						</span>
+					</p>
+					<p class="info">
+						<span class='title' ng-bind="hp.Name"></span>
+					</p>
+			</span>
+		</li>
+	</ul>
+	<p class="loading" ng-show='hotProducts.busy'></p>
+</div>
+
+<!--<div class="search-default-box"  ng-click="search.selectSearchBox()" ng-show="search.isShowDefault" >
+	<div class="search-inner">
+		<i class="icon icon-search"></i><input type="text" class="search-input" placeholder="输入关键词搜索商品或分类" readonly>
+	</div>
+</div> -->
+
+<div class="search-mod" ng-show="search.isShowSearch" ng-if="search.isShowSearch&&!search.isSearchOver" >
+	<div class="search-box">
+		<i class="icon icon-search small-search"></i><input type="text" ng-model="keyword" class="search-input-field" placeholder="输入关键词"><button class="btn" ng-click="search.searchVal(keyword)">搜索</button>
+	</div>
+	<div class="youlike" ng-if="hotProducts.HotKeywords.length && hotProducts.tabId !=99 && hotProducts.tabId !=5">
+		<div class="hd">热门推荐</div>
+		<div class="bd">
+			<a href="" class="item" ng-repeat="key in hotProducts.HotKeywords" ng-click="search.searchVal(key)">{{key}}</a>
+		</div>
+	</div>
+	<div class="search-history" ng-if="search.keywordHistory.length">
+		<div class="hd">搜索历史</div>
+		<div class="bd">
+			<a href="" class="item" ng-repeat="key in search.keywordHistory" ng-click="search.searchVal(key)">{{key}}</a>
+		</div>
+	</div>
+	<div class="search-clear" ng-if="search.keywordHistory.length">
+		<button class="btn" ng-click="search.clear()">清除搜索历史</button>
+	</div>
+</div>
+

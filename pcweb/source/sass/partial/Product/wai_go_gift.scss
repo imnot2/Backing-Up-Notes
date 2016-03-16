@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@mixin rightTri($val:10px) {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	border: $val solid white;
+	border-left: $val solid #ff1a64;
+	position: absolute;
+}
+.rightTri {
+	@include rightTri(8px);
+}
+.WL_gift {
+	overflow: hidden;
+	height: 540px;
+	padding-top: 30px;
+
+	dl {
+		overflow: hidden;
+	}
+	dt {
+		width: 136px;
+		float: left;
+	}
+	dd {
+		width: 440px;
+		float: left;
+		line-height: 110px;
+		font-size: 14px;
+		color: #999;
+	}
+	b {
+		color: #333;
+	}
+	strong {
+		color: #c33;
+	}
+	.receive {
+		padding-top: 38px;
+	}
+	.recv_title {
+		text-indent: 28px;
+		font-size: 14px;
+	}
+	.work_flow {
+		padding-top: 20px;
+		color: #fff;
+
+		ul {
+			overflow: hidden;
+		}
+		li {
+			float: left;
+			width: 120px;
+			height: 42px;
+			background: url(/images/olderpullnew/recv_gift.png) 0 0 no-repeat;
+			line-height: 42px;
+			text-align: left;
+			text-indent: 26px;
+			margin-right: 6px;
+		}
+		.last-gift {
+			background-position: -120px 0;
+			text-indent: 20px;
+		}
+	}
+}

@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@import "../home/_basic215";
+
+.h-icon {
+    @include background-img("icon.#{$version}.png");
+    background-repeat: no-repeat;
+    @include inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.hi-timeout {
+    background-position: -48px -24px;
+}
+
+.hi-weibo {
+    background-position: -192px 0;
+    &:hover {
+        background-position: -240px 0;
+    }
+}
+
+.hi-weixin {
+    background-position: -192px -24px;
+    &:hover {
+        background-position: -240px -24px;
+    }
+}
+
+.row-right {
+    .recomment-list {
+        font-family: "Verdana","SimSun";
+        .recomment-item {
+            float: none;
+            margin: 20px 15px 0;
+            width: auto;
+            border-top: 1px #ccc dashed;
+            margin-top: -1px;
+        }
+        .ri-hd {
+            background: url("/images/sprites/sh-rec.jpg") no-repeat;
+            text-indent: 63px;
+        }
+        .ri-bd {
+            position: relative;
+            width: 202px;
+            margin-top: 10px;
+        }
+        .product-img {
+            display: block;
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 4px;
+                border: 1px #e5e5e5 solid;
+            }
+        }
+        .cover {
+            width: 200px;
+            position: absolute;
+            height: 60px;
+            bottom: 0;
+            left: 1px;
+            background-repeat: repeat;
+            z-index: 1;
+        }
+        .cover-inner {
+            background: #000;
+            filter: Alpha(opacity = 80);
+            position: static;
+            *zoom: 1;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 0 0 5px 5px;
+            .mod-user {
+                position: relative;
+                padding: 8px 10px 7px;
+                height: 45px;
+            }
+        }
+        .order-item-hover {
+            .share {
+                display: inline;
+            }
+        }
+        //share
+        .share-wrap {
+            height: 30px;
+            position: absolute;
+            right: 5px;
+            top: 7px;
+            background-color: $white;
+            *background-color: transparent;
+            _background-color: tomato;
+            _filter: chroma(color = tomato);
+            border-radius: 3px;
+        }
+        .share-wrap-show {
+            *width: 145px;
+        }
+        .share-type {
+            float: left;
+            width: 90px;
+            margin: 3px 0;
+            *margin: 0;
+            *padding: 3px 0;
+            height: 22px;
+            *height: 24px;
+            display: none;
+            background-color: $white;
+            span {
+                padding: 0 10px;
+                float: left;
+                cursor: pointer;
+            }
+        }
+        .weibo {
+            border-right: 1px #f8d4d4 solid;
+        }
+        .weixin {
+            border-left: 1px $white solid;
+        }
+        .share {
+            width: 55px;
+            height: 30px;
+            line-height: 30px;
+            color: $white;
+            text-align: center;
+            background-color: $lighterColor;
+            border-radius: 3px;
+            cursor: pointer;
+            float: right;
+            display: none;
+            font-size: 14px;
+        }
+        .mod-user {
+            .avator {
+                width: 45px;
+                height: 45px;
+                float: left;
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                }
+            }
+            .mu-content {
+                margin-left: 52px;
+            }
+            .live-name {
+                font-size: 14px;
+                @include ellipsis;
+                @include inline-block;
+                width: 120px;
+                vertical-align: top;
+                *vertical-align: middle;
+                a {
+                    color: $lighterColor;
+                    &:hover {
+                        color: $lighterColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .country {
+                a {
+                    color: $miorColor;
+                    &:hover {
+                        color: $miorColor;
+                        text-decoration: none;
+                    }
+                }
+                img {
+                    margin-right: 5px;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 100%;
+                }
+            }
+            .country-name {
+                @include ellipsis;
+                @include inline-block;
+                width: 100px;
+                vertical-align: top;
+                *vertical-align: middle;
+            }
+        }
+        .ri-ft {
+            position: relative;
+            padding: 10px 0;
+            _width: 206px;
+            .price {
+                display: block;
+                font-size: 24px;
+                color: #db3539;
+            }
+        }
+        .timeout {
+            position: absolute;
+            right: 4px;
+            top: 5px;
+            em {
+                width: 11px;
+                height: 14px;
+                @include inline-block;
+                background-color: $miorColor;
+                border-radius: 2px;
+                margin-left: 2px;
+                vertical-align: middle;
+                color: $white;
+                text-align: center;
+                line-height: 14px;
+            }
+            .timeout-inner {
+                margin-left: -6px;
+            }
+            .timeout-inner span {
+                padding: 0 3px;
+            }
+        }
+    }
+}
+
+//share pop
+#mask {
+    position: absolute;
+    z-index: 100001;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .mask-warp {
+        background: $black;
+        filter: Alpha(opacity = 70);
+        position: static;
+        *zoom: 1;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+    .mw-bd {
+        position: relative;
+        width: 460px;
+        height: 460px;
+        margin: 0 auto;
+        z-index: 100001;
+        background: #fff;
+        border-radius: 5px;
+        text-align: center;
+    }
+    h3 {
+        padding-top: 40px;
+    }
+    img {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+    }
+}

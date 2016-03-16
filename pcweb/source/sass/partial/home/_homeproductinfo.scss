@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import "../assets/wharf/mixins";
+@import "../assets/wharf/variables";
+
+.product-info {
+	text-align:center;
+	a{
+		text-decoration:none;
+	}
+	.left,.right{
+		float:left;
+		width:293px;
+		position:relative;
+		&:hover{
+			.title{
+				color:#333;
+			}
+			// .info-bd a{
+			// 	color:#6A6B6D;
+			// }
+		}
+	}
+	.right{
+		border-left:1px solid #ddd;
+	}
+	.imgbox{
+		display:block;
+		padding:15px 0 10px;
+		height:120px;
+		.img{width:120px;height:120px;}
+	}
+	.sign{
+		position:absolute;
+		width:80px;
+		height:80px;
+		background:url(/images/sprites/icon-home.png) no-repeat 0 0;
+		color:#fff;
+		font-size:21px;
+		text-align:left;
+		top:0;
+		left:0;
+		b{
+			width:45px;
+			display:block;
+			word-wrap:break-word;
+			margin:3px 0 0 5px;
+			font-size:16px;
+			line-height:20px
+		}
+		p{
+			text-align:center;
+			font:normal 14px/1.3 $font-yahei;
+		}
+	}
+	.sign-red{
+		background-position:-90px 0;
+	}
+
+	.sign-sun-light,.sign-sun-gray,.sign-moon-light,.sign-moon-gray{
+		width:48px;
+		height:46px;
+		left:10px;
+		top:10px;
+		padding-top:51px;
+	}
+
+	.sign-sun-light{
+		background-position:-178px 0;
+		p{
+			color:#FF8787;
+		}
+	}
+	
+	.sign-sun-gray{
+		background-position:-294px 0;
+		p{
+			color:#c3c3c3;
+		}
+	}
+
+	.sign-moon-light{
+		background-position:-236px 0;
+		p{
+			color:#9EB0D4;
+		}
+	}
+
+	.sign-moon-gray{
+		background-position:-352px 0;
+		p{
+			color:#c3c3c3;
+		}
+	}
+	
+	.productinfo{
+		text-align:left;
+		&:hover{
+			color:#333;
+		}
+		.fc-red{color:#cc3333;}
+		.info-bd-wrap{
+			height:41px;
+			_height:39px;
+			overflow:hidden;
+		}
+		.info-bd{
+			padding:0 10px 5px;
+			font:normal 14px/1.5 $font-yahei;
+			.zhekou{
+				font-weight:bold;
+			}
+		}
+		.bought{
+			color:#999;
+			font-size:12px;
+			margin-top:5px;
+		}
+		.yen{
+			font-size:12px;
+		}
+		.del-price{
+			font-size: 12px;
+		}
+		.price{
+			font:normal 20px/1.2 "Arial";
+			margin:0 10px 0 0;
+			font-weight:700;
+		}
+		.info-bt{
+			padding:0 10px;
+			height:40px;
+			_height:24px;
+			_padding:8px 10px;
+			background-color:#F6F6F6;
+			line-height:40px;
+			_line-height:normal;
+		}
+	}
+}
+.unStrat,.isEnd,.sold-out{
+	position:absolute;
+	  width:140px;
+	  line-height:40px;
+	  height:40px;
+	  left:50%;
+	  margin-left:-70px;
+	  bottom:7px;
+	  color:#fff;
+	  text-align:center;
+	  font-size:18px;
+	.cover-inner{
+		background: #000;
+		filter:Alpha(opacity=70);
+		position:static;
+		*zoom:1;
+		background:rgba(0,0,0,0.7);
+		p{
+		  color: #fff;
+		  position: relative;
+		}
+	}
+}

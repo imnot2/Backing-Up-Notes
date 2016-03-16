@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*
+    UI框架集合
+*/
+
+//全局变量模块，颜色值，页宽等
+@import "variables";
+
+//全局类模块，如fl，fr等
+@import "global";
+
+//头部信息
+@import "header.scss";
+
+//头部公用导航
+@import "navbar.scss";
+
+//整站底部
+@import "footer.scss";
+
+//全局icon，如国旗，商品类型的icon集合
+@import "icon";
+@import "typography";
+@import "label";
+@import "button";
+@import "tables";
+@import "form";
+@import "layout";
+@import "user-card";
+
+/*
+*   module
+*/
+@import "module/_live.scss";
+
+//电视墙
+@import "videowall";
+
+//标题栏，内容组件
+@import "utils/bar-title";
+
+//倒计时组件
+@import "utils/countdown";
+
+//回复评论框
+@import "utils/replay-comment";
+
+//浮动按钮组
+@import "utils/float-buttons";
+
+// 直播详细页头部直播信息
+@import "partials/liveBodyTop";
+// 公用对话框
+@import "dialog";
+// 公用提示框
+@import "tips";
+
+// .fixed-replay-warp {
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     overflow: hidden;
+//     width: 100%;
+//     border-top: 1px solid #ddd;
+//     background: $white;
+//     .fix_box {
+//         display: block;
+//         width: 900px;
+//         overflow: hidden;
+//         margin: 0 auto;
+//         padding: 0 10px;
+//         border-top: 0;
+//         border-bottom: 0;
+//         padding-right: 305px;
+//         .fl, .fr {
+//             height: 86px;
+//         }
+//         .fl {
+//             border-left: 1px solid #ddd;
+//             padding: 22px 0 22px 10px;
+//             height: 42px;
+//         }
+//         .fr {
+//             border-right: 1px solid #ddd;
+//             padding-right: 10px;
+//         }
+//         .replay-area {
+//             width: 900px;
+//             padding: 0 15px;
+//             border: 1px #dddddd solid;
+//             resize: none;
+//             border-radius: 5px;
+//             display: inline-block;
+//             vertical-align: middle;
+//             margin-right: 7px;
+//             height: 40px;
+//         }
+//         .checkboxs {
+//             vertical-align: middle;
+//         }
+//         .replay-area-min {
+//             width: 600px;
+//         }
+//         .sendComment {
+//             margin-top: 26px;
+//             margin-left: 5px;
+//             float: right;
+//         }
+//         .price {
+//             display: inline-block;
+//             position: relative;
+//             height: 52px;
+//             min-width: 70px;
+//             text-align: left;
+//             float: left;
+//             margin-right: 10px;
+//             .cover {
+//                 position: absolute;
+//                 top: 10px;
+//                 display: inline-block;
+//                 color: $grey40;
+//                 line-height: 20px;
+//             }
+//             strong {
+//                 font-size: 25px;
+//                 line-height: 32px;
+//                 display: inline-block;
+//                 color: $highRad;
+//                 padding-top: 32px;
+//             }
+//         }
+//     }
+//     .fix_box_s2 {
+//         width: 1112px;
+//         padding-right: 0;
+//         border-right: 1px solid #ddd;
+//     }
+// }
+
+.hide {
+    display: none;
+}
+
+.no_live {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    .licon {
+        font-size: 170px;
+        text-align: center;
+        line-height: 14px;
+        .icon {
+            color: #ccc;
+        }
+    }
+    .times {
+        display: block;
+        overflow: hidden;
+        height: 80px;
+        .time_ol {
+            display: block;
+            overflow: hidden;
+            width: 170px;
+            margin: 0 auto;
+        }
+        .time_ol li {
+            float: left;
+            height: 50px;
+            padding: 0 10px;
+            font-size: 20px;
+            line-height: 50px;
+            background: #ccc;
+            color: #fff;
+            margin: 0 3px;
+            border-radius: 4px;
+        }
+        .time_ol {
+            .nott {
+                display: block;
+                padding: 0 4px;
+                background: none;
+                margin: 0;
+                color: #ccc;
+                font-size: 25px;
+            }
+        }
+    }
+    h5 {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #ccc;
+    }
+    .hrs {
+        border: 0;
+        margin: 30px 0;
+        border-bottom: 1px dotted #ccc;
+    }
+    .btn {
+        width: 240px;
+        line-height: 45px;
+        height: 45px;
+    }
+}
+
+//底色弹层
+.pop_mod {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: block;
+    top: 0;
+    left:0;
+    z-index: 9999999999999;
+    .pop_layout {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: $black;
+        filter: alpha(opacity = 80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+    }
+    .hongbao_share {
+        position: fixed;
+        display: block;
+        width: 800px;
+        height: 597px;
+        z-index: 99999999;
+        margin-left: -400px;
+        margin-top: -240px;
+        top:50%;
+        left: 50%;
+        background: url("/images/live/bonus.png") no-repeat center;
+        _position: absolute;
+        _left: expression(eval(document.documentElement.scrollLeft));
+        _top: expression(eval(document.documentElement.scrollTop));
+        .weichat_s, .weibo_s {
+            display: block;
+            width: 212px;
+            height: 80px;
+            margin-top: 500px;
+            float: left;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .weichat_s {
+            margin-top: 480px;
+            position: relative;
+            .wchat_pic {
+                display: none;
+                width: 210px;
+                height: 200px;
+                position: absolute;
+                top: -80px;
+                left: 245px;
+                background: url("/images/live/bonusW.png") no-repeat center;
+            }
+        }
+        .weibo_s {
+            margin-left: 316px;
+        }
+    }
+}
+
+//分享图片
+#mask {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    .mask-warp {
+        background: $black;
+        filter: Alpha(opacity = 70);
+        position: static;
+        *zoom: 1;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+    .mw-bd {
+        position: relative;
+        width: 460px;
+        height: 460px;
+        margin: 0 auto;
+        z-index: 100001;
+        background: #fff;
+        border-radius: 5px;
+        text-align: center;
+    }
+    h3 {
+        padding-top: 40px;
+    }
+    img {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+    }
+}

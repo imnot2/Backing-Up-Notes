@@ -1,0 +1,46 @@
+﻿<section id="" class="checkout" temp-data="data">
+ <article class="i-assets">
+        <h2>你的洋码头余额：<span class="mt-price-20"><i>¥</i> <b>${data.AvaliableAccount}</b></span></h2>
+</article>
+
+<!--未设置洋码头支付密码-->
+<article id="mttradebox">
+<!--余额可以支付全部--->
+<if e="data.HasTradingPassword">
+    <if e="data.AvailAmountStatus==1">
+        <h5>请输入洋码头交易密码：</h5>
+        <p><input type="password" class="input" id="mtpassword" /><span class="alert alert-err none" id="vertifypassword">密码输入不正确</span></p>
+        <blockquote><small>如忘记支付密码，请去WWW.YMATOU.COM找回。</small></blockquote>
+        <div class="bt"><a href="" id="toRedirect" class="btn-a" id="toPay">确认支付</a></div>
+    </if>
+    <!--可以用余额支付部分--->
+    <if e="data.AvailAmountStatus==2">
+        <div class="price-under"><label><input type="checkbox" checked="checked" id="mtavaiamount" /></label> <p>请输入洋码头余额付款 <strong>${data.AvaliableAccount}</strong> 元，剩余 <strong>${parseInt(data.TotalPrice)-data.AvaliableAccount}</strong> 元可以选择支付宝支付</p></div>
+    </if>
+    <!--没有余额--->
+    <if e="data.AvailAmountStatus==3"></if>
+    </if>
+<else>
+    <div class="alert alert-warning"><strong>请先设置洋码头交易密码</strong></div>
+</else>
+
+</article>
+<!--已设置洋码头支付密码-->
+</section>
+
+<section class="outhod_checkout">
+    <article>
+        <h5>第三方在线支付：</h5>
+        <div class="alipay">
+            <label>
+                <input type="radio" name="zhifubaoment" id="zhifubao">
+                <i class="icon-alipay"></i>
+            </label>
+            <blockquote>快捷支付您支付的交易款将打入洋码头担保账户；只有确认收货后，卖家才会收到交易款；</blockquote>
+        </div>
+        <div class="bt"><a href="javascript:void(0)" id="toPays" class="btn-a">去付款</a></div>
+    </article>
+    <article>
+        <blockquote class="blockquote-bg">1、您支付的交易款将打入洋码头担保账户；只有确认收货后，卖家才会收到交易款；<br />2、交易过程中您遇到任何问题，可通过“投诉维权”维护合法权益。</blockquote>
+    </article>
+</section>

@@ -1,0 +1,511 @@
+﻿/*=======================logistics.css===========================*/
+
+/* =left
+-----------------------------------------------------------------------------*/
+
+#body_div {
+	height: auto;
+	width: 1000px;
+	min-height: 1160px;
+	_height: 1110px;
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+}
+.wl_left {
+	float: left;
+	width: 152px;
+}
+.wl_right {
+	float: right;
+	width: 835px;
+}
+.clean_div {
+	font: 0px/0px sans-serif;
+	clear: both;
+	display: block
+}
+.p_left_main {
+	border: 1px solid #e6e6e6;
+}
+.p_title_bk {
+	width: 150px;
+	height: 24px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background-image: url(/content/images/logistics/p_top_gary.gif);
+	text-align: left;
+	padding-top: 4px;
+}
+.p_title_bk span {
+	font-size: 14px;
+	margin-left: 15px;
+	color: #000;
+	font-weight: bold;
+}
+.p_title_bk img {
+	margin-right: 5px;
+}
+.ul_text {
+	text-align: left;
+	margin-top: 8px;
+}
+.ul_text li {
+	margin-left: 31px;
+	margin-bottom: 8px;
+}
+.ul_text li a {
+	color: #000;
+	text-decoration: none;
+}
+.ul_text li a:hover {
+	color: #F60;
+}
+
+/* =right
+-----------------------------------------------------------------------------*/
+.p_info_p {
+	height: 161px;
+	width: 834px;
+	border: 1px solid #edd28b;
+	background-color: #fbf9e6;
+	margin-bottom: 20px;
+}
+.p_info_photo {
+	width: 110px;
+	height: 110px;
+	float: left;
+	margin: 10px;
+	border: 1px solid #edd28b;
+	display: inline;
+}
+.p_right_p {
+	width: 680px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline;
+}
+.p_info1 {
+	display: inline;
+	width: 680px;
+	height: 24px;
+	float: right;
+	text-align: left;
+	color: #595959;
+	margin-bottom: 10px;
+}
+.p_info1 span {
+	font-size: 20px;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #000;
+}
+.p_info2 {
+	width: 680px;
+	height: 26px;
+	float: right;
+	text-align: left;
+	color: #595959;
+	margin-bottom: 10px;
+}
+.p_info2 li {
+	float: left;
+}
+.sp_text {
+	display: block;
+	margin-top: 4px;
+}
+.info2_win {
+	height: 21px;
+	width: 525px;
+	background-color: #FFF;
+	border: 1px solid #edd28b;
+	margin-left: 10px;
+	float: right;
+	padding: 3px 0px 0px 3px;
+}
+.win_span1 {
+	color: #3366cc;
+	margin: 0px 5px 0px 5px;
+}
+.win_span2 {
+	color: #b60000;
+	margin: 0px 5px 0px 5px;
+}
+.win_span3 {
+	margin-left: 20px;
+}
+
+/*.info2_win span{float:right;}*/
+.p_info3 {
+	width: 638px;
+	height: 58px;
+	padding-right: 20px;
+	padding-left: 20px;
+	float: right;
+	border: 1px solid #edd28b;
+	text-align: left;
+	background-color: #FFF;
+	margin-right: 10px;
+	display: inline;
+}
+.p_info3_text {
+	margin-top: 15px;
+	height: 25px;
+	border-bottom: 1px solid #ffeed6;
+}
+.p_info3_text li {
+	float: left;
+	margin-right: 35px;
+	display: inline;
+}
+.info3_textcolor1 a {
+	color: #3366cc;
+}
+.p_wlgl_p {
+	height: 30px;
+	line-height: 30px;
+	width: 833px;
+	border: 1px solid #cccccc;
+	color: #ae0400;
+	text-align: left;
+}
+.p_wlgl_p .btn {
+	margin: 0 2px 0 0
+}
+.p_wlgl_p span {
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.p_wlgl_p_c {
+	height: 3px;
+	width: 835px;
+	font-size: 0;
+	background-color: #fb5413;
+}
+.p_table_tab {
+	height: 26px;
+	width: 833px;
+	margin-top: 20px;
+	text-align: left;
+}
+.tab_all {
+	width: 98px;
+	height: 22px;
+	margin: -1px 0 0 5px;
+	float: left;
+	border: 1px solid #f09450;
+	border-bottom: 0;
+	background: -moz-linear-gradient(top, #fff6d7, #feefba, #fde9a4);
+	background: -webkit-linear-gradient(top, #fff6d7, #feefba, #fde9a4);
+	background: -o-linear-gradient(top, #fff6d7, #feefba, #fde9a4);
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType='0', startColorStr='#fff6d7', endColorStr='#fde9a4');
+	background: linear-gradient(top, #fff6d7, #feefba, #fde9a4);
+	padding-top: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.tab_all a {
+	color: #ff5400;
+}
+.tab_all span {
+	margin-left: 5px;
+}
+.tab_zhongliang {
+	width: 98px;
+	height: 22px;
+	margin: -1px 0 0 5px;
+	float: left;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	background: -moz-linear-gradient(top, #fff, #fff, #e2e2e2);
+	background: -webkit-linear-gradient(top, #fff, #fff, #e2e2e2);
+	background: -o-linear-gradient(top, #fff, #fff, #e2e2e2);
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType='0', startColorStr='#ffffff', endColorStr='#e2e2e2');
+	background: linear-gradient(top, #fff, #fff, #e2e2e2);
+	padding-top: 4px;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.tab_zhongliang  a:hover {
+	color: #000;
+}
+.table_title {
+	height: 28px;
+	width: 833px;
+	text-align: left;
+	background-image: url(/content/images/logistics/table_bk.gif);
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.table_title li {
+	float: left;
+	text-align: center;
+	margin-top: 5px;
+}
+.table_title_t {
+	background-image: url(/content/images/logistics/table_bk.gif);
+}
+.table_border {
+	border: 1px solid #cccccc;
+	font-size: 12px;
+}
+.table_border a {
+	color: #3366cc;
+}
+.table_border td {
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.yundan_chaxun {
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.lishi {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+.lishi a {
+	color: #3366cc;
+}
+
+/* =bukuan
+-----------------------------------------------------------------------------*/
+.p_detail {
+	width: 813px;
+	height: auto;
+	border: 1px solid #edd28b;
+}
+.d_tetail {
+	margin-top: 20px;
+	background-color: #fbf9e6;
+	padding: 10px;
+}
+.d_tetail span {
+	color: #ff5400;
+}
+.d_address {
+	margin-top: 20px;
+	background-color: #fbf9e6;
+	padding: 10px;
+	text-align: left;
+}
+.d_address li {
+	font-size: 14px;
+}
+.d_address li span {
+	font-weight: bold;
+}
+.add_text1 {
+	width: 800px;
+	height: 25px;
+	font-size: 14px;
+	text-align: left;
+	font-weight: bold;
+}
+.add_text1 li {
+	float: left;
+	margin-left: 30px;
+	color: #474747;
+}
+.add_text2 {
+	width: 800px;
+	height: 25px;
+	font-size: 14px;
+	text-align: left;
+	font-weight: bold;
+}
+.add_text2 li {
+	float: left;
+	margin-left: 30px;
+	color: #474747;
+}
+.add_text2_caozuo {
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+}
+.add_text2_caozuo ul {
+	float: right;
+}
+.add_text2_caozuo li {
+	float: left;
+	margin-left: 5px;
+}
+
+/*.add_text2_caozuo a{color:#3366cc;}*/
+.add_text2_caozuo span {
+	margin-top: 4px;
+	display: block;
+}
+.del_yundan_button {
+	height: 30px;
+}
+.del_yundan_button li {
+	float: left;
+	margin-left: 30px;
+	height: 35px;
+}
+.del_yundan_p {
+	width: 230px;
+	float: left;
+}
+.del_yundan_p div {
+	width: 250px;
+	height: 60px;
+}
+.del_yundan_p textarea {
+	width: 220px;
+	height: 60px;
+}
+.d_baoguan {
+	margin-top: 20px;
+	padding: 10px;
+	text-align: left;
+}
+.baoguan_tilte {
+	color: #ff5400;
+	font-size: 14px;
+	font-weight: bold;
+}
+.d_baoguan span {
+	color: #ff5400;
+}
+.d_baoguan li {
+	font-size: 14px;
+}
+.d_baoguan li span {
+	font-weight: bold;
+}
+.d_caozuo {
+	margin-top: 20px;
+	padding: 10px;
+	text-align: left;
+}
+.p_search {
+	border: 1px solid #cccccc;
+	width: 317px;
+	height: 27px;
+	background-image: url(/content/images/logistics/input_bk.gif);
+}
+.waitfor_mod {
+	height: 36px;
+	line-height: 36px;
+	width: 250px;
+	margin: 0 auto
+}
+.waitfor_mod .waitfor_con {
+	float: left;
+	text-align: center
+}
+.amendaddress {
+	background-image: url(/content/img/sprites/mymatouicon.gif);
+	width: 15px;
+	height: 16px;
+	background-position: -44px -23px;
+	cursor: pointer;
+	display: inline-block
+}
+
+/*运单信息教程浮层*/
+.billcoursefloatbox {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100000;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType='0', StartColorStr='#99000000', EndColorStr='#99000000');
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.billcoursefloatbox .bd {
+	width: 660px;
+	position: absolute;
+	left: 50%;
+	margin: 225px 0 0 -250px
+}
+.billcoursefloatbox .closebill {
+	position: absolute;
+	left: 226px;
+	bottom: 2px;
+	width: 166px;
+	height: 40px;
+	z-index: 1000001;
+	cursor: pointer;
+	background: url(about:blank)
+}
+.newicon {
+	position: relative
+}
+
+/*运单信息 new*/
+.newicon .ico-new {
+	position: absolute;
+	top: -5px;
+	right: -5px
+}
+
+/*运单信息排序*/
+.sort {
+	display: inline-block;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	padding: 8px 10px;
+	color: #000;
+	text-align: center;
+	white-space: nowrap
+}
+.sort:hover, .yellow {
+	color: #f29509
+}
+.sort i {
+	font-size: 10px
+}
+
+/*运单信息*/
+.billcourse .left {
+	width: 380px;
+}
+.billcourse .right {
+	width: 301px;
+	height: 360px;
+	overflow: hidden
+}
+.billcourse .number {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ff9900;
+	border-radius: 3px;
+	padding: 2px 6px;
+	margin: 0 5px;
+	color: #fff;
+	font: bold 12px/normal "arial";
+}
+.billcourse .head {
+	margin: 20px 0
+}
+.billcourse p {
+	margin: 20px 0
+}
+.billcourse .bt-btn {
+	text-align: center;
+	margin-top: 40px
+}
+.billcourse .btn-0-0 {
+	padding: 5px 20px;
+	font: bold 16px/26px "宋体"
+}

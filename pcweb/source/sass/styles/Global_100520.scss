@@ -1,0 +1,2069 @@
+﻿/*=======================Global_100520.css===========================*/
+
+/* ---------------------------------------------------------------------------------------------- 
+FileName: Global.css
+Description: Global CSS include reset&hack content
+Author: Cheney Jin
+WebSite: yMatou.com
+Version: 1.0.0|2010-1-4
+
+PageWidth: 950px
+------------------------------------------------------------------------------------------------- */
+
+/* NAV ----------------------------------------------------------------------------------------- */
+body {
+    text-align: center;
+}
+#head {
+    height: 60px;
+    padding: 5px 0;
+}
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 60px;
+    width: 287px;
+    background: transparent url(http://img.ymatou.com/portal/images/logo_10.png) no-repeat scroll 0 0;
+    z-index: 9999;
+}
+#user {
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    font-size: 13px;
+    color: #111;
+    position: relative;
+}
+#signin_bt {
+    z-index: 500;
+}
+#signin_bt.action {
+    border-color: #C4CCC9;
+    border-bottom-color: #F2F3F8;
+    background: #F2F3F8;
+    color: #2B2A25 !important;
+}
+#signinbox {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: none;
+    z-index: 400;
+    text-align: left;
+    background-color: #F2F3F8;
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+#signinbox p {
+    line-height: 24px;
+    height: 24px;
+    color: #2B2A25;
+}
+.signinput {
+    font-size: 16px !important;
+}
+#usersignin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+#usersignin .ima_a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#usersignin .ucontent {
+    padding-right: 64px;
+}
+#usersignin .ucontent .ucon_line {
+    line-height: 24px;
+    height: 24px;
+}
+#mCartBox {
+    position: absolute;
+    top: 4px;
+    left: 650px;
+    z-index: 100;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+}
+#mCartBox a#mCartBnt {
+    background: #88D404;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #DBD03B;
+}
+#mCartBox a#mCartBnt span.cttext {
+    background: transparent url(http://img.ymatou.com/portal/images/toggle_down_light.png) no-repeat scroll 100% 50%;
+    padding-right: 16px;
+}
+#mCartBox a#mCartBnt:hover {
+    background-color: #DDEEF6;
+    color: #778899;
+}
+#mCartBox a#mCartBnt:hover span.cttext {
+    background-image: url(http://img.ymatou.com/portal/images/toggle_up_dark.png);
+}
+
+/*  #mCartBox{position:absolute;top:0;left:550px;}
+        #mCartBox #OPcartBnt{position:absolute;top:0;right:0;background:#88D404;width:76px;height:25px;line-height:25px;color:#F2F3F8;font-weight:bold;padding:4px 6px;cursor:pointer;}
+        #mCartBox #OPcartBnt span{background:transparent url(http://img.ymatou.com/portal/images/toggle_down_light.png) no-repeat scroll 100% 50%;padding:4px 16px 6px 0;}
+        #mCartBox #CLcartBnt{position:absolute;top:0;right:0;background:#DDEEF6;width:76px;height:25px;line-height:25px;color:#778899;font-weight:bold;padding:4px 6px;cursor:pointer;display:none;}
+        #mCartBox #CLcartBnt span{background:transparent url(http://img.ymatou.com/portal/images/toggle_up_dark.png) no-repeat scroll 100% 50%;padding:4px 16px 6px 0;} */
+#mCartBox #mCartCon {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    background-color: #DDEEF6;
+    color: #778899;
+    padding: 10px;
+    width: 300px;
+    z-index: 10000;
+    display: none;
+}
+.onePoj {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #C4CCC9;
+}
+.onePoj img {
+    float: left;
+    margin-right: 10px;
+}
+.onePojtxt {
+    float: left;
+    width: 208px;
+}
+#bntGoCart {
+    float: right;
+}
+#nav {
+    background: #EEEEEE url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+    border-bottom: 1px solid #D4D4D4;
+    height: 35px;
+}
+#n_navul {
+    line-height: 35px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    clear: both;
+    height: 35px;
+    width: 540px;
+}
+#n_navul li {
+    height: 35px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    background: #EEE url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+}
+#n_navul a {
+    color: #686C70;
+    padding: 10px 33px;
+    _padding: 10px 33px;
+    line-height: 35px;
+}
+#n_navul a.act {
+    background: transparent url(http://img.ymatou.com/portal/images/nvhqq.png) no-repeat scroll 13px 1px;
+}
+#n_navul a:hover {
+    color: #88A825;
+}
+#n_navul li.act {
+    background-color: #DBDBDB;
+}
+#n_navul li.act a {
+    color: #B52745;
+    font-weight: 700;
+}
+
+/*#parknav{position:absolute;top:42px;left:60px;width:540px;display:none;height:0px;background-color:#fff;border:3px solid #ABC8E2;overflow:hidden;
+    -moz-box-shadow:4px 4px 5px #E9E9E9;-webkit-border-shadow:4px 4px 5px #E9E9E9;z-index:9999}
+    #parkmenu{position:absolute;left:0;top:3px;white-space:nowrap;width:1696px;}
+    #parknav a{float:left;padding:0px;}
+    #parknav img{max-height:240px;max-width:320px;margin:3px;}
+    #parknav a:hover{background-color:#FF8A00}*/
+#nav div.y_nhover {
+    border-bottom: 2px solid #727272;
+    position: absolute;
+    z-index: 3 / 9;
+}
+#n_arror {
+    background: transparent url(http://img.ymatou.com/portal/images/n0.gif) no-repeat scroll 0% 0%;
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 36px;
+    z-index: 10;
+}
+.n0 {
+    left: 45px;
+}
+.n1 {
+    left: 160px;
+}
+.n2 {
+    left: 275px;
+}
+.n3 {
+    left: 390px;
+}
+.n4 {
+    left: 505px;
+}
+#typelistbox {
+    position: absolute;
+    right: 270px;
+    top: 9px;
+}
+#searchbox {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 35px;
+    z-index: 400;
+}
+.searchico {
+    height: 16px;
+    width: 16px;
+    background: transparent url(http://img.ymatou.com/portal/images/arrorUpRightW.png) no-repeat scroll 0% 0%;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.searchico_hover {
+    background-image: url(http://img.ymatou.com/portal/images/arrorUpRightB.png);
+}
+#txtSearchBox {
+    border: 1px solid #C4CCC9;
+    width: 260px;
+    color: #C4CCC9;
+    height: 21px;
+    line-height: 21px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding: 3px 0 3px 3px;
+    font-size: 13px;
+}
+.txtSearchBox_hover {
+    color: #2B2A25 !important;
+    border-color: #88A825 !important;
+    border-top-color: #C4CCC9 !important;
+}
+#btnSearch {
+    border: 0 none;
+    background: transparent url(http://img.ymatou.com/portal/images/Search1.png) no-repeat scroll 0% 0%;
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    cursor: pointer;
+}
+
+/*#condSearchBox{padding:6px;position:absolute;bottom:-36px;right:0;width:251px;border:1px solid #88A825;background-color:#fff;display:none;border-bottom:none;z-index:8000}
+#condSearchBox input,#condSearchBox  label{cursor:pointer;}
+#condSearchTabs .clo{height:12px;width:12px;background:transparent url(http://img.ymatou.com/portal/images/searchclo.png) no-repeat scroll 0% 0%;cursor:pointer;}
+.citem{margin-right:5px;}*/
+#navll {
+    border-top: 1px solid #eaeaea;
+}
+#navl li {
+    background-color: #F2F3F8;
+}
+#navl li.icorlink {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 3px 0px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 5px 10px;
+}
+#navl li.top {
+    border-left: 1px solid #ddd;
+}
+#navl a.icorlink {
+    background: url(http://img.ymatou.com/portal/images/navlarr.png) no-repeat scroll right center;
+}
+#navl a.icorlink:hover {
+    background: url(http://img.ymatou.com/portal/images/navlarrh.png) no-repeat scroll right center;
+}
+.nldropbox {
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    width: 210px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 100;
+    display: none;
+}
+.zicbox .zb_head {
+    height: 23px;
+    position: relative;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+.zicbox .zb_head h4 {
+    font-weight: 700;
+    line-height: 25px;
+    border-bottom: 2px solid #B0250E;
+    position: relative;
+    top: 2px;
+    display: inline;
+    padding-right: 5px;
+}
+.zicbox .zb_head a.icor_m {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    border-color: #ddd;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    display: block;
+    padding: 0 3px;
+    color: #505050;
+    background: #fff url(http://img.ymatou.com/portal/images/icorarr.png) no-repeat scroll right center;
+    padding-right: 10px;
+}
+.zicbox .zb_head a.icor_m:hover {
+    color: #88A825;
+}
+.nllist a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.nllist a.end {
+    margin-right: 0;
+}
+.nlimg {
+    padding: 10px 0;
+}
+#main {
+    min-height: 500px;
+    padding: 20px 0;
+    background: #fff;
+    height: auto !important;
+    height: 500px;
+    overflow: visible;
+}
+#foot {
+    background: #EEEEEE url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+    border-bottom: 1px solid #D4D4D4;
+    height: 35px;
+}
+#foot #ftnav {
+    line-height: 35px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    clear: both;
+    position: relative;
+    height: 35px;
+}
+#foot #ftnav li {
+    float: left;
+    position: relative;
+    z-index: 200;
+    cursor: pointer;
+}
+#foot #ftnav a {
+    color: #686C70;
+    padding: 6px 35px;
+    line-height: 35px;
+}
+#foot #ftnav a:hover {
+    border-bottom: 2px solid #727272;
+}
+#hhbox {
+    width: 510px;
+    float: left;
+}
+#hhbox .hhitem {
+    margin-right: 10px;
+    float: left;
+    width: 160px;
+}
+#hhbox .hhitem h4 {
+    font-size: 15px;
+    top: 8px;
+}
+#hhbox .hhitem li {
+    height: 24px;
+    line-height: 24px;
+}
+#hhbox .end {
+    margin-right: 0;
+}
+#safeguard {
+    width: 400px;
+    height: 80px;
+    background: url(http://img.ymatou.com/portal/images/safeguard.png) no-repeat scroll 0 0;
+    float: right;
+    margin: 10px 0 0;
+    position: relative;
+}
+#safeguard:hover {
+    background-image: url(http://img.ymatou.com/portal/images/safeguard_h.png);
+}
+#safeguard .sfgitem {
+    width: 133px;
+    height: 80px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+#safeguard #sfgitem1 {
+    left: 0;
+}
+#safeguard #sfgitem2 {
+    left: 133px;
+}
+#safeguard #sfgitem3 {
+    left: 266px;
+}
+#footer {
+    text-align: center;
+    margin-top: 10px;
+}
+#floatbox {
+    text-align: left;
+    z-index: 6000;
+}
+#signboxbox {
+    width: 220px;
+    text-align: left;
+}
+#signboxbox .textbt {
+    float: right;
+    margin: 5px 0 5px 10px;
+}
+#signboxbox .mt_text {
+    width: 160px;
+}
+#PadB {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    z-index: 6000;
+}
+#PadA {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    z-index: 6000;
+}
+#ajaxload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222 url(http://img.ymatou.com/portal/images/ajaxload5.gif) no-repeat scroll 50% 50%;
+    z-index: 9990;
+    opacity: 0.75;
+    filter: alpha(opacity = 75);
+    display: none;
+}
+#blurPad {
+    display: none;
+    width: 100%;
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#vtip {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    font-size: 13px;
+    background-color: #000;
+    border: 1px solid #a6c9e2;
+    z-index: 9999;
+}
+#AlertDialog {
+    max-width: 200px;
+    text-align: center;
+    z-index: 9100 !important;
+}
+#AlertDialog p {
+    margin-bottom: 10px;
+}
+#AlertDialog .ui_bnt {
+    margin-right: 20px;
+}
+
+/* RESET ---------------------------------------------------------------------------------------- */
+a {
+    text-decoration: none;
+    color: #111;
+}
+a:hover {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+legend {
+    color: #000;
+}
+fieldset, img {
+    border: 0;
+}
+body {
+    font-family: "Microsoft YaHei", Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+html {
+    color: #000;
+    background: #FFF;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+del, ins {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: '';
+}
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+sup {
+    vertical-align: baseline;
+}
+sub {
+    vertical-align: baseline;
+}
+legend {
+    color: #000;
+}
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+input, buttontextarea, select {
+    *font-size: 100%;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+    font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* MTForm ------------------------------------------------------------------------------------- */
+.mt_button_drop {
+    background: transparent url(http://img.ymatou.com/portal/images/btdown.png) no-repeat right center;
+    padding-right: 16px;
+}
+.mt_button.action .mt_button_drop {
+    background-image: url(http://img.ymatou.com/portal/images/btup.png);
+}
+.mt_text {
+    margin: 1px;
+    padding: 3px 0 3px 3px;
+    background-color: #FFFFFF;
+    border-color: #666666 #CCCCCC #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 13px;
+    color: #C4CCC9;
+    height: 20px;
+    line-height: 20px;
+}
+.mt_text-action {
+    margin: 0px !important;
+    border: 2px solid #5485BD !important;
+    color: #2B2A25 !important;
+}
+.mt_text_wval {
+    margin: 1px;
+    padding: 3px 0 3px 3px;
+    background-color: #FFFFFF;
+    border-color: #666666 #CCCCCC #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+}
+.mTextOtype-action {
+    color: #2B2A25 !important;
+}
+.mt_textarea {
+    margin: 1px;
+    padding: 3px 0 3px 3px;
+    background-color: #FFFFFF;
+    border-color: #666666 #CCCCCC #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #021324;
+    font-size: 12px;
+    color: #C4CCC9;
+    line-height: 18px;
+    overflow: auto;
+}
+.mt_textarea-hover {
+    margin: 0px !important;
+    border: 2px solid #5485BD !important;
+    color: #2B2A25;
+}
+.favbtbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+a.favbt {
+    background-color: #88A825;
+    margin-left: 3px;
+    font-size: 12px;
+    border: 1px solid #88A825;
+    color: #F2F3F8;
+    cursor: pointer;
+    padding: 2px 4px;
+    _padding: 2px 4px 1px;
+}
+a.favbt:hover {
+    background-color: #F2F3F8;
+    color: #88A825;
+}
+a.favbt-top {
+    margin-left: 0px;
+}
+a.ifavbt {
+    cursor: pointer;
+    padding: 0 2px;
+    color: #88A825;
+}
+a.ifavbt:hover {
+    background-color: #88A825;
+    color: #F2F3F8;
+}
+a.ifavbt_hover {
+    background-color: #88A825;
+    color: #F2F3F8;
+}
+a.favbtpu {
+    background-color: #88A825;
+    border: 1px solid #88A825;
+    color: #F2F3F8;
+    cursor: pointer;
+    line-height: 18px;
+    padding: 2px 4px;
+    _padding: 2px 4px 1px;
+    font-size: 12px;
+}
+a.favbtpu:hover {
+    background-color: #F2F3F8;
+    color: #88A825;
+}
+a.report {
+    background: transparent url(http://img.ymatou.com/portal/images/report.png) no-repeat scroll 2px center;
+    cursor: pointer;
+    float: right;
+    padding: 0 2px 0 16px;
+}
+a.report:hover, a.ireport:hover {
+    color: #fff;
+    background-color: #B0250E;
+    background-image: url(http://img.ymatou.com/portal/images/report_hover.png);
+}
+a.ireport {
+    background: transparent url(http://img.ymatou.com/portal/images/report.png) no-repeat scroll 2px center;
+    cursor: pointer;
+    padding: 0 2px 0 16px;
+}
+.lb-button {
+    background: transparent url(http://img.ymatou.com/portal/images/lb-bottom.png) no-repeat scroll right 0px;
+    padding: 3px 17px 5px 0;
+    cursor: pointer;
+    *padding-top: 0px;
+}
+.lb-button span {
+    background: transparent url(http://img.ymatou.com/portal/images/lb-bottom.png) no-repeat scroll 0 0;
+    padding: 3px 6px 5px 9px;
+}
+.lb-button:hover {
+    background-position: 100% -35px !important;
+}
+.lb-button:hover span {
+    background-position: 0 -35px !important;
+}
+.Paginator {
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6px;
+}
+.Paginator a, .pageList .this-page {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+.Paginator a:visited {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+.Paginator .AtStart {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    color: #BBBBBB;
+    margin-right: 20px;
+    padding: 2px 6px;
+}
+.Paginator .Prev {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    padding: 2px 6px;
+}
+.Paginator .break {
+    background-color: #FFFFFF;
+    border: medium none;
+    color: #BBBBBB;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+.Paginator .Next {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    padding: 2px 6px;
+}
+.Paginator .AtEnd {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    color: #BBBBBB;
+    margin-left: 20px;
+    padding: 2px 6px;
+}
+.Paginator .this-page {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    color: #FF8A00;
+    font-weight: bold;
+    padding: 2px 6px;
+    vertical-align: top;
+}
+.Paginator a:visited:hover, .Paginator a:hover, .Paginator a:active {
+    background: none repeat scroll 0 0 #0063DC;
+    border-color: #FFFFFF;
+    color: #FFF;
+    text-decoration: none;
+}
+.float_dialog_shadow {
+    position: fixed;
+    display: none;
+    padding: 20px 24px;
+    z-index: 6000;
+}
+.float_dialog {
+    position: fixed;
+    display: none;
+    padding: 10px 14px;
+    z-index: 6000;
+}
+.float_dialog a.close_ico {
+    height: 18px;
+    padding: 1px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 19px;
+}
+.float_dialog a.close_ico span {
+    display: block;
+    margin: 1px;
+    background: transparent url(http://img.ymatou.com/portal/images/ui-icons_ffffff_256x240.png) no-repeat -96px -128p;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+.float_dialog a.close_ico:hover span {
+    background-image: url(http://img.ymatou.com/portal/images/ui-icons_B0250E_256x240.png);
+}
+.float_dialog .dia_l {
+    margin-bottom: 10px;
+}
+.float_dialog .assis {
+    color: #2B2A25;
+}
+.float_dialog .f_btbox {
+    height: 32px;
+}
+.float_dialog .mt_button {
+    float: right;
+}
+.popup {
+    position: absolute;
+    z-index: 2001;
+    border-collapse: collapse;
+    top: -30px;
+    width: 200px;
+    display: none;
+}
+#pstep1 {
+    left: 0;
+}
+#pstep2 {
+    left: 133px;
+}
+#pstep3 {
+    left: 266px;
+}
+.popup td.corner {
+    height: 15px;
+    width: 19px;
+}
+.popup td.tbbcon {
+    background-color: #fff;
+    font-size: 13px;
+}
+.popup td.topleft {
+    background-image: url(http://img.ymatou.com/portal/images/bb1.png);
+}
+.popup td.top {
+    background-image: url(http://img.ymatou.com/portal/images/bb2.png);
+}
+.popup td.topright {
+    background-image: url(http://img.ymatou.com/portal/images/bb3.png);
+}
+.popup td.left {
+    background-image: url(http://img.ymatou.com/portal/images/bb4.png);
+}
+.popup td.right {
+    background-image: url(http://img.ymatou.com/portal/images/bb5.png);
+}
+.popup td.bottomleft {
+    background-image: url(http://img.ymatou.com/portal/images/bb6.png);
+}
+.popup td.bottom {
+    background-image: url(http://img.ymatou.com/portal/images/bb7.png);
+    text-align: center;
+}
+.popup td.bottom img {
+    display: block;
+    margin: 0 auto;
+}
+.popup td.bottomright {
+    background-image: url(http://img.ymatou.com/portal/images/bb8.png);
+}
+.popup table.popup-contents {
+    font-size: 12px;
+    line-height: 1.2em;
+    background-color: #fff;
+    color: #666;
+}
+table.popup-contents th {
+    text-align: right;
+    text-transform: lowercase;
+}
+table.popup-contents td {
+    text-align: left;
+}
+
+/* FONT ----------------------------------------------------------------------------------------- */
+h1 {
+    color: #494949;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1em;
+    padding: 0 0 12px;
+    position: relative;
+    z-index: 100;
+}
+h1 span {
+    color: #C4CCC9;
+    font-size: 16px;
+}
+h2 {
+    color: #88A825;
+    display: block;
+    font-size: 20px;
+    position: relative;
+    padding: 0 0 6px;
+}
+h3 {
+    color: #2B2A25;
+    position: relative;
+    display: block;
+    padding: 3px 0 4px 0;
+}
+h4 {
+}
+h5 {
+    color: #2B2A25;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1em;
+    padding: 0 0 6px;
+    position: relative;
+    margin-bottom: 10px;
+}
+h6 {
+    color: #88A825;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    padding: 0 0 10px;
+}
+a.link {
+    cursor: pointer;
+    color: #88A825 !important;
+}
+a.link:hover {
+    background: #88A825;
+    color: #F2F3F8 !important;
+}
+a.slink {
+    cursor: pointer;
+}
+a.slink:hover {
+    text-decoration: underline;
+    color: #88A825;
+}
+a.slinkd {
+    cursor: pointer;
+    color: #88A825;
+}
+a.slinkd:hover {
+    text-decoration: underline;
+    color: #B0250E;
+}
+a.icolink {
+    padding-left: 16px;
+    cursor: pointer;
+}
+a.icorlink {
+    padding-right: 16px;
+    cursor: pointer;
+}
+a.icolink:hover, a.icorlink:hover {
+    text-decoration: underline;
+    color: #88A825;
+}
+span.ppass {
+}
+a.tit {
+    cursor: pointer;
+    color: #A89E2D;
+    font-size: 14px;
+}
+a.tit:hover {
+    color: #FF8A00;
+    text-decoration: underline;
+}
+.newin {
+    background: url(http://img.ymatou.com/portal/images/new_window.gif) no-repeat right center;
+    padding-right: 12px;
+    color: #88A825;
+}
+.newin:hover {
+    color: #A89E2D;
+    text-decoration: underline;
+}
+a.ul {
+    color: #666;
+    text-decoration: none;
+    background: url(http://img.ymatou.com/portal/images/underline.gif) repeat-x left bottom;
+}
+a.ul:hover {
+    background-image: url(http://img.ymatou.com/portal/images/underlineh.gif);
+}
+a.acu {
+    background-color: #9F0000;
+    border-bottom: 2px solid #E1E1E1;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 15px;
+}
+a.acu:hover {
+    border-bottom: medium none;
+    margin-top: 1px;
+}
+#topcontrol {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    cursor: pointer;
+}
+#topcontrol a {
+    background: url(http://img.ymatou.com/portal/images/gotop.gif) no-repeat scroll 0 0 transparent;
+    height: 40px;
+    width: 22px;
+}
+#topcontrol a:hover {
+    background-position: 0 -38px;
+}
+
+/*.ui-state-hover{color:#fff!important;} */
+.img_a {
+    padding: 3px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    background-color: #F2F3F8;
+}
+.img320 {
+    max-width: 320px;
+    _width: expression(this.width > 320 ? 320:true) !important;
+}
+.img160 {
+    max-width: 320px;
+    _width: expression(this.width > 160 ? 160:true) !important;
+}
+.img100 {
+    max-width: 320px;
+    _width: expression(this.width > 100 ? 100:true) !important;
+}
+.img48 {
+    max-width: 320px;
+    _width: expression(this.width > 48 ? 48:true) !important;
+}
+::-moz-selection {
+    background: #cc0000;
+    color: #fff;
+}
+::selection {
+    background: #cc0000;
+    color: #fff;
+}
+.bt_dialog {
+    padding: 4px 6px 4px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.bt_dialog span.ui-icon {
+    left: 0.2em;
+    margin: -8px 5px 0 0;
+    position: absolute;
+    top: 50%;
+}
+
+/* COLOR_normal --------------------------------------------------------------------------------- */
+.gray {
+    color: #B2B7B5;
+}
+.grayd {
+    color: #666 !important;
+}
+.green {
+    color: #88A825 !important;
+}
+.greend {
+    color: #86B28E;
+}
+.red {
+    color: #B0250E;
+}
+.wh {
+    color: #F2F3F8;
+}
+.blk {
+    color: #2B2A25;
+}
+.bRed {
+    background-color: #B52745;
+}
+.bReds {
+    background-color: #BD5851;
+}
+.bBrown {
+    background-color: #A18B45;
+}
+.bGreen {
+    background-color: #7FDBB1;
+}
+.bGreens {
+    background-color: #86B28E;
+}
+.cRed {
+    background-color: #B52745;
+}
+.cReds {
+    background-color: #BD5851;
+}
+.cBrown {
+    background-color: #A18B45;
+}
+.cGreen {
+    background-color: #7FDBB1;
+}
+.cGreens {
+    background-color: #86B28E;
+}
+
+/* FIX ------------------------------------------------------------------------------------------ */
+.clearfix:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+}
+.clearfix {
+    display: inline-block !important;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 0 !important;
+}
+.clearfix {
+    display: block !important;
+}
+
+/* End hide from IE-mac */
+
+/* Grids Layout Help ---------------------------------------------------------------------------- */
+body {
+    text-align: center;
+}
+.gb_wapper {
+    margin: 0 auto;
+    width: 950px;
+    position: relative;
+    text-align: left;
+}
+.col-main {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+}
+.col-sub, .col-extra {
+    float: left;
+}
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.layout, .main-wrap, .col-sub, .col-extra {
+    zoom: 1;
+}
+.grid-s5m0 .main-wrap {
+    margin-left: 200px;
+}
+.grid-s5m0 .col-sub {
+    width: 190px;
+    margin-left: -100%;
+}
+.grid-s6m0 .main-wrap {
+    margin-left: 240px;
+}
+.grid-s6m0 .col-sub {
+    width: 230px;
+    margin-left: -100%;
+}
+.grid-s7m0 .main-wrap {
+    margin-left: 280px;
+}
+.grid-s7m0 .col-sub {
+    width: 270px;
+    margin-left: -100%;
+}
+.grid-m0s6 .main-wrap {
+    margin-right: 240px;
+}
+.grid-m0s6 .col-sub {
+    width: 230px;
+    margin-left: -230px;
+}
+.grid-m0s7 .main-wrap {
+    margin-right: 280px;
+}
+.grid-m0s7 .col-sub {
+    width: 270px;
+    margin-left: -270px;
+}
+.grid-m0s8 .main-wrap {
+    margin-right: 320px;
+}
+.grid-m0s8 .col-sub {
+    width: 310px;
+    margin-left: -310px;
+}
+.grid-m0s9 .main-wrap {
+    margin-right: 360px;
+}
+.grid-m0s9 .col-sub {
+    width: 350px;
+    margin-left: -350px;
+}
+.grid-e6m0s5 .main-wrap {
+    margin: 0 200px 0 240px;
+}
+.grid-e6m0s5 .col-sub {
+    width: 190px;
+    margin-left: -190px;
+}
+.grid-e6m0s5 .col-extra {
+    width: 230px;
+    margin-left: -100%;
+}
+.grid-s12m0 .main-wrap {
+    margin-left: 480px;
+}
+.grid-s12m0 .col-sub {
+    width: 470px;
+    margin-left: -100%;
+}
+
+/* PLUS ----------------------------------------------------------------------------------------- */
+#blurPad {
+    display: none;
+    width: 1000px;
+    z-index: 9000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.in_bk {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    position: relative;
+}
+.trans50 {
+    filter: alpha(opacity = 50);
+    opacity: 0.5;
+}
+.poter {
+    cursor: pointer;
+}
+.hidden {
+    display: none !important;
+}
+.height0, .height0 * {
+    height: 0;
+    visibility: hidden;
+}
+.show {
+    display: block;
+}
+.hidden_im {
+    display: none !important;
+}
+.show_im {
+    display: block !important;
+}
+.rel {
+    position: relative;
+}
+.fw {
+    font-weight: 700;
+}
+#vtip {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    font-size: 13px;
+    background-color: #000;
+    border: 1px solid #a6c9e2;
+    z-index: 9999;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml40 {
+    margin-left: 40px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mr5 {
+    margin-right: 5px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.pt5 {
+    padding-top: 5px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.FR {
+    float: right !important;
+}
+.FL {
+    float: left !important;
+}
+.c4 {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.c6r {
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-topright: 6px;
+}
+.c6l {
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px;
+}
+.mtab {
+    border: 1px solid #EFEEED;
+    position: relative;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+.mtab ul {
+    background: #F2F3F8;
+    height: 26px;
+    padding-left: 10px;
+}
+.mtab li {
+    float: left;
+    height: 22px;
+    line-height: 23px;
+    margin-top: 4px;
+    margin-left: 6px;
+    border-bottom: 1px solid #EFEEED;
+}
+.mtab li a.t {
+    display: block;
+    overflow: hidden;
+    padding: 0 9px;
+    text-align: center;
+    color: #2B2A25;
+}
+.mtab li.on {
+    background: #FFFFFF;
+    border: 1px slid #EFEEED;
+    border-bottom: 1px solid #fff;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+.mtab li.on a.t {
+    color: #88A825;
+}
+.mtabcon {
+    border-bottom: 1px solid #EFEEED;
+    border-left: 1px solid #EFEEED;
+    border-right: 1px solid #EFEEED;
+    padding: 10px;
+}
+.odtable {
+    margin: 10px 0;
+}
+.odtable tr {
+    border: 0 none;
+    vertical-align: baseline;
+}
+.odtable th {
+    background: #eee url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+    color: #686C70;
+    border-bottom: 1px solid #D4D4D4;
+    padding: 6px 0 6px 10px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+.odtable th .ordertbid {
+    margin: 0 10px;
+}
+.odtable td {
+    vertical-align: middle;
+}
+.odtable td img {
+    display: inline;
+}
+.odtable td, .potable th {
+    padding: 4px 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+tr.nonebdr td {
+    border: none 0;
+    padding: 0;
+}
+.s_list {
+    margin: 10px 0 0 0;
+}
+.s_list li.s_listli {
+    display: inline-block;
+    width: 168px;
+    margin: 0 0 18px 16px;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+.s_list .img_a {
+    padding: 3px;
+    border: 1px solid #DDDDDD;
+    max-width: 160px;
+    max-height: 160px;
+    _width: expression(this.width > this.height ? (this.width > 160 ? 160:true):true) !important;
+    _height: expression(this.height > this.width ? (this.height > 160 ? 160:true):true) !important;
+}
+.s_list h4 {
+    height: 24px;
+    line-height: 24px;
+}
+.s_list h4 a {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.s_list h4 span {
+    float: right;
+    color: #B0250E;
+}
+.s_list h4 a:hover {
+    color: #A89E2D;
+}
+.s_list .s_star {
+    width: 80px;
+    float: left;
+}
+.s_list .s_mancout {
+    float: right;
+    color: #C4CCC9;
+}
+.s_list .prop {
+    color: #88A825;
+    margin-right: 10px;
+}
+.s_list .prop_t {
+    color: #C4CCC9;
+}
+.pdate {
+    color: #2B2A25 !important;
+}
+.s_list_b {
+    margin: 10px 0 0 4px;
+}
+.s_list_b li.s_listli {
+    display: inline-block;
+    width: 168px;
+    margin: 0 0 18px 15px;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    position: relative;
+}
+.s_list_b .img_a {
+    padding: 3px;
+    border: 1px solid #DDDDDD;
+    max-width: 160px;
+}
+.s_list_b h4 {
+    height: 24px;
+    line-height: 24px;
+}
+.s_list_b h4 a:hover {
+    color: #A89E2D;
+}
+.s_list_b .s_star {
+    width: 80px;
+    float: left;
+}
+.s_list_b .s_mancout {
+    float: right;
+    color: #C4CCC9;
+}
+.s_list_b .prop {
+    float: left;
+    color: #88A825;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.s_list_b .prop .prop_t {
+    color: #C4CCC9;
+}
+.s_navul {
+    background: #eee url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+    border-bottom: 1px solid #D4D4D4;
+    height: 26px;
+    margin-top: 10px;
+}
+.s_navul li {
+    float: left;
+    height: 26px;
+    line-height: 28px;
+}
+.s_navfliter {
+    color: #9C9C9C;
+    width: 180px;
+    padding-left: 10px;
+}
+.s_listcontent {
+    border-top: 1px solid #EAEAEA;
+    text-align: left;
+}
+.s_navtxt {
+    margin-left: 22px;
+    color: #9c9c9c;
+}
+.s_navs, .s_navsSel, .s_navsr {
+    padding: 0 5px;
+    cursor: pointer;
+    color: #2B2A25;
+}
+.s_navsr {
+    float: right !important;
+}
+.s_navsr.act a {
+    color: #B0250E;
+    font-weight: 700;
+}
+.s_navs_hover {
+    border-bottom: 1px solid #A69C8D;
+    color: #B0250E;
+}
+.s_navsSel {
+    border-bottom: 1px solid #A69C8D;
+    background: #DBD03B url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;
+}
+.s_navsSel a {
+    color: #fff;
+}
+.s_viewV a {
+    width: 20px;
+    height: 26px;
+    background: transparent url(http://img.ymatou.com/portal/images/sViewB.png) no-repeat scroll 0 4px;
+    cursor: pointer;
+}
+.s_viewL {
+    margin-right: 25px;
+}
+.s_viewL a {
+    background-image: url(http://img.ymatou.com/portal/images/sViewL.png);
+}
+.s_viewL a:hover, .s_viewL.s_viewSel a {
+    background-image: url(http://img.ymatou.com/portal/images/sViewLh.png) !important;
+}
+.s_viewB a {
+    background-image: url(http://img.ymatou.com/portal/images/sViewB.png);
+}
+.s_viewB a:hover, .s_viewB.s_viewSel a {
+    background-image: url(http://img.ymatou.com/portal/images/sViewBh.png) !important;
+}
+.unused a {
+    color: #9C9C9C;
+}
+.droppad {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border: 1px solid #DDDDDD;
+    display: none;
+    background-color: #fff;
+}
+.droppad a.dropitem {
+    padding: 0 5px;
+    width: 44px;
+}
+.droppad a.dropitem:hover {
+    background-color: #DBD03B;
+    color: #fff;
+}
+.s_list2 {
+    margin: 18px 0 0 8px;
+}
+.s_list2 .s_listli {
+    margin-bottom: 20px;
+}
+.s_list2 .s_list2l {
+    width: 108px;
+    float: left;
+}
+.s_list2 .img_a {
+    padding: 3px;
+    border: 1px solid #DDDDDD;
+    max-width: 100px;
+    max-height: 100px;
+    _width: expression(this.width > this.height ? (this.width > 100 ? 100:true):true) !important;
+    _height: expression(this.height > this.width ? (this.height > 100 ? 100:true):true) !important;
+}
+.s_list2 .s_list2r {
+    width: 504px;
+    float: left;
+    padding-left: 10px;
+}
+.s_list2 h4 {
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #C4CCC9;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+}
+.s_list2 h4 a {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.s_list2 h4 span {
+    color: #B0250E;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.s_list2 .s_star {
+    width: 80px;
+    float: left;
+}
+.s_list2 .s_mancout {
+    float: left;
+    color: #C4CCC9;
+}
+.s_list2 .s_prop {
+    width: 420px;
+    float: left;
+    margin-bottom: 5px;
+}
+.s_list2 .s_propr {
+    width: 80px;
+    float: right;
+}
+.s_list2 .prop {
+    float: left;
+    color: #C4CCC9;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.s_list2 .prop span {
+    color: #88A825;
+}
+.s_list2 .s_ditial {
+    position: relative;
+}
+.s_list2 .s_ditial span {
+    color: #C4CCC9;
+}
+.s_list2 .s_ditial .s_ditial_t {
+    display: none;
+}
+.s_list2 .s_ditial .s_detial_bt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url(http://img.ymatou.com/portal/images/sh_ex.png) no-repeat scroll 0 1px;
+    color: #ABC8E2;
+    padding-left: 13px;
+    cursor: pointer;
+}
+.s_list2 .s_ditial .s_detial_bt:hover {
+    background-image: url(http://img.ymatou.com/portal/images/sh_exh.png);
+    color: #A89E2D;
+}
+.s_list2 .s_ditial .s_detial_bt.act {
+    background-image: url(http://img.ymatou.com/portal/images/sh_colh.png);
+    color: #FF8A00;
+}
+#crumbs {
+    font-size: 12px;
+    font-weight: normal;
+}
+#crumbs .stat {
+    position: relative;
+    z-index: 1;
+    background: transparent url(http://img.ymatou.com/portal/images/botharrow.gif) no-repeat scroll right -18px;
+    margin: 1px;
+    display: inline;
+    float: left;
+    height: auto !important;
+    line-height: 16px;
+    padding: 3px 21px 3px 5px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-align: left;
+}
+#crumbs .statHover {
+    background: transparent url(http://img.ymatou.com/portal/images/botharrow.gif) no-repeat scroll right 0;
+    border: 1px solid #A1C6EB !important;
+    margin: 0px;
+}
+#crumbs .toc {
+    border: 1px solid #A1C6EB;
+    position: absolute;
+    left: -1px;
+    top: 22px;
+    display: none;
+    padding: 3px;
+    background-color: #fff;
+}
+#crumbs .toc li {
+    overflow: visible;
+    white-space: nowrap;
+}
+#crumbs .toc li a {
+    border: 1px solid #fff;
+    padding: 3px;
+    display: block;
+}
+#crumbs .toc li a:hover {
+    background-color: #F0F7FD;
+    border: 1px solid #ADDBEF;
+    color: #000000;
+    display: block;
+    padding: 3px;
+}
+.mm .zb_head {
+    height: 27px;
+    position: relative;
+    border-bottom: 3px solid #ddd;
+    margin: 5px 0;
+}
+.mm .zb_head h4 {
+    border-bottom: 3px solid #DBD03B;
+    position: relative;
+    top: 5px;
+    _top: 3px;
+    display: inline;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 5px 0;
+    cursor: default;
+    background-color: #fff;
+    margin-right: -4px;
+    font-weight: normal;
+}
+.mm .zb_head h4:hover {
+    background-color: #F2F3F8;
+    color: #666;
+}
+.mm .zb_head h4.tt {
+    font-weight: 700;
+    font-size: 17px;
+    border-bottom: 3px solid #B0250E;
+    background-color: #F2F3F8;
+    position: relative;
+    top: 3px;
+    _top: 0px;
+    display: inline;
+    padding: 0 5px;
+    color: #2B2A25;
+    z-index: 1;
+    cursor: default;
+}
+.mm .zb_head h4.tt:hover {
+    background-color: #B0250E;
+    color: #fff;
+}
+.mm .zb_head h4.ie6hk {
+    _top: 6px !important;
+}
+.mm .zb_r h4 {
+    border-bottom: 3px solid #DBD03B;
+    position: relative;
+    top: 5px;
+    _top: 3px;
+    display: inline;
+    color: #666;
+    font-size: 13px;
+    padding: 5px 5px 0;
+    cursor: pointer;
+    left: -4px;
+    font-weight: normal;
+    background-color: #fff;
+}
+.mm .zb_r h4:hover {
+    background-color: #F2F3F8;
+}
+.mm .zb_head span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    border-color: #ddd;
+    border-width: 3px 0 0 3px;
+    border-style: solid;
+    display: block;
+    padding: 0 3px;
+    color: #505050;
+    background-color: #fff;
+    height: 20px;
+    line-height: 20px;
+}
+.mm .zb_head a.icor_m {
+    background: #fff url(http://img.ymatou.com/portal/images/icorarr.png) no-repeat scroll right center;
+    padding-right: 10px;
+}
+.comment {
+    border: 1px solid #C4CCC9;
+    padding: 5px;
+    margin-bottom: 10px;
+    min-height: 48px;
+}
+.comment .com_prop {
+    padding-bottom: 5px;
+}
+#credit {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 210px;
+}
+#credit .u_star {
+    position: absolute;
+    top: 1px;
+    left: 35px;
+}
+#credit .tip {
+    margin-left: 80px;
+}
+.inp_price {
+    border: 0;
+    color: #FF8A00;
+    font-weight: bold;
+    background-color: #F2F3F8;
+}
+#price_range {
+    width: 530px;
+    margin-bottom: 10px;
+}
+#bntPriceRange {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+#bntMsnConnect {
+    background: url(http://img.ymatou.com/portal/images/msn.png) no-repeat scroll left center transparent;
+}
+.ssearchbox {
+    margin-left: 10px;
+    position: relative;
+    width: 118px;
+}
+#txtSellerSearch {
+    border: 1px solid;
+    border-color: #666666 #CCCCCC #CCCCCC;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100px;
+    height: 16px;
+    vertical-align: middle;
+    color: #C4CCC9;
+}
+#btnSellerSearch {
+    background: url(http://img.ymatou.com/portal/images/Search2.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 18px;
+    width: 18px;
+}
+.uheader {
+    margin-right: 5px;
+    position: relative;
+}
+.uheader a.tipico {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 18px;
+    height: 14px;
+    display: block;
+    cursor: pointer;
+}
+.uheader a.tipico:hover {
+    background: url(http://img.ymatou.com/portal/images/tipico.png) no-repeat scroll -1px -141px;
+}
+.uheader_h a.tipico {
+    background: url(http://img.ymatou.com/portal/images/tipico.png) no-repeat scroll -1px -127px;
+}
+.uheader a.op {
+    background: url(http://img.ymatou.com/portal/images/tipico.png) no-repeat scroll -1px -113px;
+}
+.dd_menu {
+    display: none;
+    height: 10px;
+    position: absolute;
+    width: 146px;
+    z-index: 6000;
+}
+.dd_menu div.menu {
+    background-color: #FFFFFF;
+    border-color: #ddd #c0c0c0 #c0c0c0 #ddd;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    top: 1px;
+}
+.dd_menu a {
+    border: 1px solid #FFFFFF;
+    color: #21628D;
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+.dd_menu a img {
+    padding: 2px 3px 3px 0;
+    vertical-align: middle;
+}
+.dd_menu a:hover {
+    background: url(http://img.ymatou.com/portal/images/item_menu_hover.gif) repeat-x scroll 0 0 #DBE7C7;
+    border: 1px solid #A5C576;
+}
+.dd_menu div.separator {
+    border-top: 1px solid #DDDDDD;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 10px;
+}
+
+/* HACK IE6,IE7,IE8 ----------------------------------------------------------------------------- */
+.glayout678 {
+    height: 0\9;
+}
+#signinbox {
+    top: 29px\9;
+}
+#nav div.y_nhover {
+    background-image: none\9;
+}
+#condSearchTabs ul li a {
+    padding-left: 5px\9;
+    padding-right: 5px\9;
+}
+#searchcategory {
+    width: 78px\9;
+}
+
+/* HACK IE6,IE7 --------------------------------------------------------------------------------- */
+.glayout67 {
+    *height: 0;
+}
+#signinbox {
+    *top: 30px;
+}
+#n_navul a {
+    *padding: 10px 33px;
+}
+#typelistbox {
+    *top: 4px;
+}
+#typelistbox a {
+    *width: 120px;
+}
+
+/* HACK IE6 ------------------------------------------------------------------------------------- */
+.glayout6 {
+    _height: 0;
+}
+
+/* .mt_button_drop{_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/btdown-trans.png',sizingMethod='crop');} */
+.float_dialog, .float_dialog_shadow {
+    _position: absolute !important;
+    _top: expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight-this.offsetHeight)*.45)) !important;
+    _left: expression(eval(document.documentElement.scrollLeft+(document.documentElement.clientWidth-this.offsetWidth)*.45)) !important;
+}
+
+/* HACK FX3 (must repair IE7) ------------------------------------------------------------------------------------- */
+.select, x:-moz-any-link, x:default {
+    padding: 6px;
+}
+.ui-tabs .ui-tabs-nav {
+    _position: static;
+}

@@ -1,0 +1,138 @@
+/* line 2, ../../source/sass/home/iconflag.scss */
+.icon-flag-lg {
+  display: inline-block;
+  height: 33px;
+  width: 49px;
+  background-image: url(/images/sprites/icon-flag-lg.png);
+  background-repeat: no-repeat;
+}
+
+/* line 6, ../../source/sass/home/iconflag.scss */
+.icon-flag-meiguo {
+  background-position: 0 -1px;
+}
+
+/* line 9, ../../source/sass/home/iconflag.scss */
+.icon-flag-taiwan {
+  background-position: -59px -1px;
+}
+
+/* line 12, ../../source/sass/home/iconflag.scss */
+.icon-flag-yingguo {
+  background-position: -118px -1px;
+}
+
+/* line 15, ../../source/sass/home/iconflag.scss */
+.icon-flag-ruidian {
+  background-position: -177px -1px;
+}
+
+/* line 18, ../../source/sass/home/iconflag.scss */
+.icon-flag-faguo {
+  background-position: -236px -1px;
+}
+
+/* line 21, ../../source/sass/home/iconflag.scss */
+.icon-flag-aodili {
+  background-position: -295px -1px;
+}
+
+/* line 24, ../../source/sass/home/iconflag.scss */
+.icon-flag-bilishi {
+  background-position: -354px -1px;
+}
+
+/* line 27, ../../source/sass/home/iconflag.scss */
+.icon-flag-danmai {
+  background-position: -413px -1px;
+}
+
+/* line 30, ../../source/sass/home/iconflag.scss */
+.icon-flag-putaoya {
+  background-position: -472px -1px;
+}
+
+/* line 33, ../../source/sass/home/iconflag.scss */
+.icon-flag-fenlan {
+  background-position: -531px -1px;
+}
+
+/* line 36, ../../source/sass/home/iconflag.scss */
+.icon-flag-eluosi {
+  background-position: -591px -1px;
+}
+
+/* line 39, ../../source/sass/home/iconflag.scss */
+.icon-flag-ruishi {
+  background-position: -650px -1px;
+}
+
+/* line 42, ../../source/sass/home/iconflag.scss */
+.icon-flag-xila {
+  background-position: -709px -1px;
+}
+
+/* line 45, ../../source/sass/home/iconflag.scss */
+.icon-flag-xinjiapo {
+  background-position: -768px -1px;
+}
+
+/* line 48, ../../source/sass/home/iconflag.scss */
+.icon-flag-xibanya {
+  background-position: -827px -1px;
+}
+
+/* line 51, ../../source/sass/home/iconflag.scss */
+.icon-flag-alabolh {
+  background-position: -919px -1px;
+}
+
+/* line 54, ../../source/sass/home/iconflag.scss */
+.icon-flag-bolan {
+  background-position: -1015px -1px;
+}
+
+/* line 57, ../../source/sass/home/iconflag.scss */
+.icon-flag-deguo {
+  background-position: -0 -73px;
+}
+
+/* line 60, ../../source/sass/home/iconflag.scss */
+.icon-flag-aodaliya {
+  background-position: -59px -73px;
+}
+
+/* line 63, ../../source/sass/home/iconflag.scss */
+.icon-flag-riben {
+  background-position: -118px -73px;
+}
+
+/* line 66, ../../source/sass/home/iconflag.scss */
+.icon-flag-xinxilan {
+  background-position: -178px -73px;
+}
+
+/* line 69, ../../source/sass/home/iconflag.scss */
+.icon-flag-jianada {
+  background-position: -236px -73px;
+}
+
+/* line 72, ../../source/sass/home/iconflag.scss */
+.icon-flag-jieke {
+  background-position: -295px -73px;
+}
+
+/* line 75, ../../source/sass/home/iconflag.scss */
+.icon-flag-helan {
+  background-position: -354px -73px;
+}
+
+/* line 78, ../../source/sass/home/iconflag.scss */
+.icon-flag-yidali {
+  background-position: -413px -73px;
+}
+
+/* line 81, ../../source/sass/home/iconflag.scss */
+.icon-flag-hanguo {
+  background-position: -473px -73px;
+}

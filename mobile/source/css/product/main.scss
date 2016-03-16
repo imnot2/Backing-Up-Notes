@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+@import "../../assets/sass/variable.scss";
+
+.specontent {
+    dl {
+        margin-bottom: 1em;
+    }
+    dl:first-child {
+        margin-top: 1em;
+    }
+    .dt {
+        font: bold 1.2em/2em "arial";
+        color: #444;
+    }
+    .dd {
+        float: left;
+        width: 100%;
+        margin-left: -0.5em;
+    }
+    .item {
+        float: left;
+        height: 2.5em;
+        margin-left: 0.5em;
+        font: normal 1em/2.5em "arial";
+        border: 1px solid #e2e2e2;
+        padding: 0 1em;
+        cursor: pointer;
+        margin-bottom: 0.5em;
+        color: $normal-color;
+        max-width: 288px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .selected {
+        background-color: #f04e00;
+        color: #fff;
+        border: 1px solid #f04e00;
+        background-color: $primary-color;
+        border: 1px $primary-color solid;
+        color: #fff;
+    }
+    .disabled, .disabled:hover {
+        background-color: #efefef;
+        color: #999;
+        border: 1px solid #e2e2e2;
+    }
+}
+
+.description {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 1em 3em;
+}
+
+.description img {
+    max-width: 320px;
+}
+
+.product-banner {
+    position: relative;
+}
+
+.product-banner .trigger {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.product-title {
+    border: 0;
+    padding: 1em 15px;
+}
+
+.product-title .lk-title-16 {
+    line-height: 1.2em;
+}
+
+.product-title .dec {
+    margin-top: 10px;
+}
+
+.product-info .item, .product-action .item, .product-share .item, .mg-tb {
+    color: #666;
+    margin: 1em 0;
+}
+
+.product-info .item label {
+    color: #999;
+}
+
+.product-action .full {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.product-action .btn-a {
+    margin-right: 1em;
+    display: inline-block;
+    width: 100%;
+}
+
+.product-action .infotips {
+    font: normal 1.5em/2em "宋体";
+    color: #cc3333;
+    height: 2em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.product-share {
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.product-share a {
+    margin-right: 0.8em;
+}
+
+.product-share .btn-dim {
+    display: block;
+    margin: 10px 0;
+}
+
+.product-action .amount {
+    margin-left: 60px;
+    color: #999;
+}
+
+.product-action .item .btn-white-squa {
+    padding: 12px 43px;
+}
+
+.product-action .item .btn-white-squa:first-child {
+    margin-right: 10px;
+}
+
+#productBaseInfo {
+    .lk-title-16 {
+        font: 400 14px/1.5 '';
+        color: $major-color;
+    }
+    .product-info {
+        border-top: 1px solid #ddd;
+        font-size: 12px;
+    }
+}
+
+.product-detail .product-banner {
+    margin-bottom: 12px;
+}
+
+.product-detail .area {
+    font-size: 12px;
+}
+
+.full {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.icon-add-cart, .icon-add-share {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.product-action .item .btn-white-squa {
+    padding: 9px 28px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $normal-color;
+}
+
+.product-detail .item span.chinaareahandle {
+    border: 0;
+    color: $operate-color;
+}
+
+.mod-info-list .item {
+    border-top: 1px solid #ddd;
+    padding: 1em;
+}
+
+.rate-star .name {
+    display: inline-block;
+    vertical-align: middle;
+    font: normal 1em/2em "Helvetica, Arial, sans-serif";
+}
+
+.rate-star .mod-star {
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.rate-star .mg-tb {
+    padding: 0 1em;
+    padding-right: 0;
+}
+
+.rate-list .hd {
+    font: normal 1.4em/1.5 "Helvetica, Arial, sans-serif";
+}
+
+.rate-list .bd {
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rate-list .bd, .rate-list .bt {
+    font: normal 1.2em/2 "Helvetica, Arial, sans-serif";
+    color: #666;
+}
+
+.rate-number {
+    margin-bottom: 3.5em;
+}
+
+.rate-number .number {
+    margin: 0 1em;
+}
+
+.rate-number .tc {
+    padding: 1em 0;
+}
+
+.prudcutinfo {
+    padding: 1em 1em 0;
+    .imgbox {
+        width: 1em / 12 * 92;
+        height: 1em / 12 * 92;
+        line-height: 1em / 12 * 85;
+        text-align: center;
+        border: 1px solid #ddd;
+        margin-right: 1em;
+        float: left;
+        overflow: hidden;
+        img {
+            max-width: 1em / 12 * 90;
+            max-height: 1em / 12 * 90;
+            vertical-align: middle;
+        }
+    }
+    .infobox {
+        float: left;
+        width: 12.6em;
+        .pd-title {
+            font-size: 18px;
+            color: #666;
+            word-break: break-word;
+        }
+    }
+    .price {
+        line-height: 1.5;
+        color: #FC3D44;
+        font-family: arial;
+        word-break: break-all;
+        b {
+            font-size: 1.8em;
+            font-weight: normal;
+        }
+        i {
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+}
+
+/*floatshoppingcart*/
+.floatshoppingcart {
+    width: 100%;
+    position: fixed;
+    height: 1em / 12 * 44;
+    background-color: #eee;
+    border-top: 1px solid #b1b1b1;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+    .button {
+        display: inline-block;
+        width: 100px;
+        font: normal 18px/32px "Microsoft yahei";
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 32px;
+        margin: 0 0 0 5px;
+        text-align: center;
+    }
+    .right {
+        margin: 0.6em 0 0 0;
+    }
+    .button-red {
+        background-color: $primary-color;
+    }
+    .button-yel {
+        background-color: #ff8c25;
+    }
+    .button-gray {
+        background-color: #888;
+    }
+    .icon-simple-home, .icon-simple-cart {
+        color: #717171;
+        font-size: 2.2em;
+        line-height: 50px;
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+    .icon-simple-cart {
+        position: relative;
+        i {
+            position: absolute;
+            border-radius: 12px;
+            background-color: #FF3A3A;
+            color: #fff;
+            font-size: 12px;
+            line-height: 1.5;
+            padding: 0 0.5em;
+            top: 0.2em;
+            left: 1.4em;
+            font-family: arial;
+        }
+    }
+}
+
+.submittobuybox {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    height: 1em / 12 * 60;
+    .submittobuy {
+        padding: 0.4em 4em;
+        font: normal 18px/1 "Microsoft yahei";
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: $primary-color;
+    }
+}
+
+/**/
+.product-action {
+    label {
+        display: block;
+        font: bold 1.2em/2em "arial";
+        color: #444;
+    }
+}

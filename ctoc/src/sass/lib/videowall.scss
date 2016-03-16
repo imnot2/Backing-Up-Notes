@@ -1,0 +1,18 @@
+﻿@charset "UTF-8";/*
+	未知作用不建议新增内容
+*/
+
+.focus-images {position:relative;}
+.home-banner {height:300px;background-repeat:repeat;margin-bottom:10px;}
+
+.home-banner .img {height:300px;width:100%}
+.home-banner .images { height:300px;width:100%;}
+.home-banner .images .item {display:none;width:100%;height:300px;left:0;top:0;position:absolute;}
+.home-banner .images .current {display:block}
+.home-banner .focus {position:absolute;left:50%;bottom:20px;margin-left:400px;z-index:3}
+.home-banner .focus .item {float:left;width:12px;height:12px;margin-right:5px;background-color:#eee}
+.home-banner .focus .current{background-color:#cc3333;}
+.focus-images .prevarrow,.focus-images .nextarrow{background-image:url(/images/sprites/focusimagearrow.png);width:20px;height:50px;position:absolute;left:50%;top:50%;margin:-25px 0 0 0;z-index:4;cursor:pointer;visibility:hidden;}
+.focus-images .prevarrow{background-position:0 0;margin-left:-595px;}
+.focus-images .nextarrow{background-position:-30px 0;margin-left:575px;}
+.focus-images:hover .prevarrow,.focus-images:hover .nextarrow{visibility:visible;}

@@ -1,0 +1,49 @@
+@import "../assets/wharf/variables";
+
+.recomme-product {
+    overflow: hidden;
+    margin: 14px 10px 7px;
+    li {
+        float: left;
+        padding: 0 13px 10px;
+        width: 120px;
+        border-left: 1px #eee solid;
+        margin-left: -1px;
+        text-align:center;
+        .info-title {
+            font: normal 12px / 1.5 $font-yahei;
+            height:35px;
+            overflow:hidden;
+            margin-top:5px;
+            text-align:left;
+        }
+        &:hover{
+            a{
+                color:#1F7DD8;
+                text-decoration:none;
+            }
+        }
+    }
+    .imgbox {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    img {
+        width: auto;
+        height: auto;
+        _width: 120px;
+        _height: 120px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .info-price {
+        color: #cc3333;
+        text-align:left;
+    }
+    .price {
+        font-size: 16px;
+        margin-left: 2px;
+        font-weight: 700;
+    }
+}

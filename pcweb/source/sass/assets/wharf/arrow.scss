@@ -1,0 +1,4 @@
+﻿@import "mixins";
+.arrow-border3{
+	@include arrow-border(3px,#333);
+}

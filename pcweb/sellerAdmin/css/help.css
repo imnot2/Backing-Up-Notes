@@ -1,0 +1,234 @@
+﻿body, html {
+  height: 100%; }
+
+.helppage {
+  height: 100%; }
+
+.footer {
+  position: relative;
+  z-index: 3; }
+
+.help-top {
+  width: 100%;
+  height: 80px;
+  background-color: #f04e00;
+  position: relative;
+  z-index: 1; }
+  .help-top .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../img/helpcenter/top-bg.jpg") no-repeat left center; }
+  .help-top .logo {
+    background: url("../img/helpcenter/logo.png") no-repeat left center;
+    display: block;
+    width: 366px;
+    height: 80px; }
+  .help-top .fr {
+    margin-top: 10px; }
+  .help-top a, .help-top .user {
+    color: #fff;
+    margin-left: 10px; }
+
+.help-wrap {
+  margin: -80px auto -140px;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+  .help-wrap a {
+    color: #0000ff; }
+  .help-wrap .inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 200px;
+    overflow: hidden; }
+  .help-wrap .main-title {
+    font-size: 28px;
+    color: #666; }
+  .help-wrap .help-ul {
+    width: 888px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    font-size: 0; }
+    .help-wrap .help-ul li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: 280px;
+      height: 154px;
+      padding: 2px;
+      line-height: 154px;
+      background-color: #fff;
+      text-align: center;
+      border: 1px solid #dadada;
+      position: relative;
+      margin: 10px 0 0 10px; }
+      .help-wrap .help-ul li:hover {
+        border-width: 3px;
+        padding: 0;
+        border-color: #ff7f00; }
+        .help-wrap .help-ul li:hover .hi-arrow {
+          background-position: -15px -103px; }
+    .help-wrap .help-ul a {
+      color: #666;
+      font-size: 18px;
+      display:block;
+    }
+    .help-wrap .help-ul .active {
+      border-width: 3px;
+      padding: 0;
+      border-color: #ff7f00; }
+      .help-wrap .help-ul .active .hi-arrow {
+        background-position: -15px -103px; }
+  .help-wrap .help-icon {
+    background: url("../img/helpcenter/help-icon.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 91px;
+    height: 91px;
+    margin-right: 40px; }
+  .help-wrap .hi-seller {
+    background-position: 0 0; }
+  .help-wrap .hi-trade {
+    background-position: -96px 0; }
+  .help-wrap .hi-wl {
+    background-position: -192px 0; }
+  .help-wrap .hi-money {
+    background-position: -288px 0; }
+  .help-wrap .hi-tool {
+    background-position: -384px 0; }
+  .help-wrap .hi-arrow {
+    background-position: -1px -103px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0; }
+  .help-wrap .slider {
+    width: 192px;
+    border: 3px solid #cdcdcd;
+    background-color: #fff;
+    float: left;
+    padding: 0 6px;
+    margin-left: -100%; }
+  .help-wrap .s-title {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    padding: 8px 0 8px 8px;
+    border-top: 1px dashed #e5e5e5;
+    cursor: pointer; }
+  .help-wrap .s-list {
+    border-top: 1px dashed #e5e5e5;
+    padding-left: 18px; }
+    .help-wrap .s-list a {
+      color: #666; }
+      .help-wrap .s-list a:hover {
+        color: #ff7f00; }
+      .help-wrap .s-list .active a {
+        color: #ff7f00; }
+    .help-wrap .s-list li {
+      padding: 10px 0; }
+  .help-wrap .content {
+    float: left;
+    width: 100%; }
+  .help-wrap .c-wrap {
+    margin-left: 250px;
+    margin-top: 10px; }
+  .help-wrap .help-a {
+    color: #1f77dd;
+    text-decoration: none; }
+  .help-wrap .c-crumbs .gray {
+    color: #666;
+    padding: 0 5px; }
+  .help-wrap .c-tab {
+    border-bottom: 2px solid #ff7f00;
+    overflow: hidden;
+    margin-top: 20px; }
+    .help-wrap .c-tab li {
+      float: left;
+      background-color: #fff;
+      border: 1px solid #dcdcdc;
+      border-bottom: 0;
+      height: 34px;
+      padding: 0 25px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 34px;
+      cursor: pointer;
+      margin-right: 5px; }
+    .help-wrap .c-tab .current {
+      border-color: #ff7f00;
+      background-color: #ff7f00;
+      color: #fff; }
+  .help-wrap .c-tab-content {
+    margin-top: 20px;
+    color: #666; }
+  .help-wrap .c-tab-item {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #666;
+    width: 808px; }
+    .help-wrap .c-tab-item .help_data {
+      width: 100%;
+      border: 1px solid #dcdcdc;
+      margin-bottom: 20px; }
+      .help-wrap .c-tab-item .help_data td, .help-wrap .c-tab-item .help_data th {
+        border: 1px solid #dcdcdc;
+        padding: 10px;
+        text-align: left;
+        color: #666; }
+        .help-wrap .c-tab-item .help_data .td-table td, .help-wrap .c-tab-item .help_data .td-table th {
+            border:0;
+            padding:0;
+            border: 1px solid #dcdcdc;
+        }
+      .help-wrap .c-tab-item .help_data th {
+        white-space: nowrap; }
+      .help-wrap .c-tab-item .help_data p {
+        margin-bottom: 10px; }
+  .help-wrap .f14 {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 20px; }
+  .help-wrap .cti-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .help-wrap .rule-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-indent: 1em; }
+  .help-wrap .cti-info {
+    margin-bottom: 30px;
+    text-indent: 1em;
+    font-size: 14px;
+    line-height: 26px; }
+  .help-wrap .cti-li {
+    display: block; }
+  .help-wrap .cti-img {
+    display: block;
+    margin-top: 10px; }
+  .help-wrap .tool-bd {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 15px 0 15px 12px;
+    margin-bottom: 10px; }
+    .help-wrap .tool-bd .tb-title {
+      font-size: 16px;
+      color: #ff7f00; }
+    .help-wrap .tool-bd .tb-desc {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px; }
+    .help-wrap .tool-bd .tb-img {
+      text-align: center;
+      padding-top: 20px; }
+  .help-wrap .tb-list {
+    margin-top: 10px; }
+    .help-wrap .tb-list li {
+      padding: 20px 0 0; }
+    .help-wrap .tb-list .li-title {
+      margin-bottom: 10px; }

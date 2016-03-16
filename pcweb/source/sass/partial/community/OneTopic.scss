@@ -1,0 +1,187 @@
+﻿/*=======================OneTopic.css===========================*/
+.ttpic {
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.ttpic_m {
+    border-top: none 0;
+}
+.ttpic_t {
+    background: transparent url(http://img.ymatou.com/portal/images/title_bg.gif) repeat-x scroll 0 0;
+    height: 30px;
+    padding: 6px 5px;
+    position: relative;
+}
+.ttpic_l {
+    padding: 0 10px 10px;
+    width: 180px;
+    text-align: center;
+}
+.ttpic_seller {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #efefef;
+}
+.span_security {
+    background: transparent url(http://img.ymatou.com/portal/images/Security3.png) no-repeat scroll 0 1px;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    height: 16px;
+    color: #88A825;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ttpic_hd {
+    font-size: 14px;
+}
+.tt_store {
+    text-align: center;
+    margin-top: 10px;
+}
+.ttpic_tpob {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.ttpic_r {
+    width: 733px;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #ddd;
+}
+.ttpic_txt {
+    position: relative;
+    min-height: 200px;
+    height: auto !important;
+    height: 200px;
+    overflow: visible;
+}
+.ttpic_floor {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+.ttpic_uinfo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+}
+.ttpic_sign {
+    border-top: 1px dashed #ddd;
+    position: relative;
+    height: 100px;
+}
+.ttpic_signtxt {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    background-color: #fff;
+    display: block;
+    padding: 0 5px;
+}
+.ttpic_signedit {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background-color: #fff;
+    display: block;
+    padding: 0 0 0 10px;
+}
+.ttpic_f {
+    background-color: #EFEFEF;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 5px;
+    position: relative;
+}
+.ttpic_fed {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.ttpic_rel {
+    border: 1px dashed #ddd;
+    padding: 10px;
+    margin: 10px 30px 10px 0;
+    background-color: #efefef;
+    max-height: 500px;
+    overflow: hidden;
+}
+p.span_credit {
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    padding: 5px 0;
+}
+#returnbox h5 {
+    padding: 0;
+    margin-bottom: 5px;
+}
+.yq_btn {
+    font-family: 鍗庢枃浠垮畫;
+    font-size: 11;
+    color: #888888;
+    background-color: #EEEEEE;
+    width: 100px;
+    font-weight: bold;
+}
+.yq_div {
+    background-color: #F0F0F0;
+    border: 1px solid lightGrey;
+    margin: 3px 0px 7px;
+    padding: 6px 12px;
+    width: 240px;
+}
+#yq_Response {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+#repMsgBox {
+    padding: 3px;
+}
+.TopicWithDiscountItem {
+    margin-top: 10px;
+    border-top: 1px;
+    border-style: solid;
+    border-top-color: Gray;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+.DiscountPicture {
+    width: 200px;
+}
+.DiscountProductUrl a {
+    display: block;
+    width: 590px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.DiscountProductUrl a {
+    cursor: pointer;
+    color: #6E871F;
+}
+.DiscountProductUrl a:hover {
+    background: #6E871F;
+    color: #F2F3F8;
+}
+.DiscountProductName {
+    width: 350px;
+    vertical-align: top;
+    color: #FF0000;
+}
+.DiscountOfficalPrice {
+    width: 100px;
+    vertical-align: top;
+}
+.DiscountAction {
+    width: 100px;
+    vertical-align: top;
+}

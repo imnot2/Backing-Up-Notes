@@ -1,0 +1,32 @@
+{
+  "appenders": [{
+    "type": "console"
+  }, {
+    "type": "dateFile",
+    "filename": "access",
+    "pattern": "-yyyy-MM-dd.log",
+    "alwaysIncludePattern": true,
+    "category": "normal",
+    "level": "LOG"
+  }, {
+    "type": "dateFile",
+    "filename": "error",
+    "pattern": "-yyyy-MM-dd.log",
+    "maxLogSize": 2097152,
+    "backup": 10,
+    "alwaysIncludePattern": true,
+    "category": "error"
+  }, {
+    "type": "dateFile",
+    "filename": "record",
+    "pattern": "-yyyy-MM-dd.log",
+    "maxLogSize": 2097152,
+    "alwaysIncludePattern": true,
+    "category": "record"
+  }],
+
+  "levels": {
+    "error": "error",
+    "record": "trace"
+  }
+}

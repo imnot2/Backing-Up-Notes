@@ -1,0 +1,67 @@
+;(function() {
+'use strict';
+//加载过慢无法载入商家判断
+var isSeller = function(obj, callback) {
+
+	var seller = false;
+
+	for (var i in obj) {
+		if (!obj[i]) {
+			seller = true;
+		}
+	}
+
+	if (seller) {
+		prompt('卖家还没准备好。稍后联系卖家')
+		callback(false)
+	} else {
+		callback(true)
+	}
+}
+
+var promptStatus = true,
+	confirmStatus = true;
+
+function prompt(data, callback) {
+	if (promptStatus) {
+		promptStatus = false;
+		$('.error').html("<i>" + data + "</i>").fadeIn(200);
+		setTimeout(function() {
+			$('.error').fadeOut(100);
+			promptStatus = true;
+			callback && callback()
+		}, 2500)
+	}
+}
+/**/
+function confirmBox(msg, callback) {
+	var confirmHtml = '<div class="alert" style="">' +
+		'<div class="alert-content">' +
+		'<div class="alert-title"></div>' +
+		'<div class="alert-header"></div>' +
+		'<div class="alert-body">' + msg + '</div>' +
+		'<div class="alert-footer">' +
+		'<span class="alert-btn">否</span> ' +
+		'<i class="alert-apart"></i>' +
+		'<span class="alert-btn alert-hover alert-confir">是</span>' +
+		'</div>' +
+		'</div>' +
+		'</div>';
+	if (confirmStatus) {
+		confirmStatus = false;
+		var $html = $(confirmHtml).appendTo("body");
+		var docWidth = document.body.clientWidth,
+			selfWidth = $html[0].offsetWidth;
+		$html.css("left", docWidth / 2 - selfWidth / 2).fadeIn(200);
+		$("#MaskAbs").fadeIn(200);
+		$html.on("click", ".alert-btn", function() {
+			$html.fadeOut(100, function() {
+				$html.remove();
+				confirmStatus = true;
+			});
+			$("#MaskAbs").fadeOut(100);
+		}).on("click", ".alert-confir", function() {
+			callback && callback();
+		})
+	}
+}

@@ -1,0 +1,23 @@
+﻿@import "variables";
+@import "mixins";
+
+.wrapper .area {
+  @include container-fixed();
+  text-align:left;
+  width:$container-lg;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+.wrapper{
+	@include wrapper();
+}
+/*全站头尾间距*/
+.mainbody{
+	padding:10px 0;
+}
+//@include make-grid-columns();
+
+//@media (min-width: $screen-lg-min) {
+//  @include make-grid(lg);
+//}

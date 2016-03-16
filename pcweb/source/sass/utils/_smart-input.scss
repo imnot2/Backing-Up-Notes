@@ -1,0 +1,35 @@
+@mixin smart-input {
+    .smart-input {
+        position: relative;
+        &.change {
+            textarea {
+                border: 1px solid $Gdb;
+            }
+            .smart-label {
+                display: none;
+            }
+        }
+        textarea {
+            padding: 2px;
+            border: 1px solid $Ge6;
+            background-color: $white;
+            resize: none;
+            outline: none;
+        }
+        .smart-label {
+            height: 20px;
+            line-height: 20px;
+            font-size: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #d1cece;
+            padding-left: 5px;
+            visibility: visible;
+            float: left;
+            z-index: 1;
+            cursor: text;
+            vertical-align: middle;
+        }
+    }
+}

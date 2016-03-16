@@ -1,0 +1,126 @@
+﻿/*=======================Lbrand.css===========================*/
+
+/*
+#BrandList-nav .ln-letters a { border:none; border-top:2px solid pink; color:red; }
+#BrandList-nav .ln-letters a.ln-last { border-right:none; }
+#BrandList-nav .ln-letters a:hover,
+#BrandList-nav .ln-letters a.ln-selected { border-top:2px solid red; background-color:pink; color:White !important; }
+#BrandList-nav .ln-letters a.ln-disabled { color:pink; }
+#BrandList-nav .ln-letters a.ln-disabled:hover { color:white; }
+#BrandList-nav .ln-letter-count { color:red; }
+
+#BrandList li { color:pink; }
+#BrandList li a { color:red; text-decoration:none; }
+#BrandList li a:hover { text-decoration:underline; }
+*/
+
+#BrandList-nav {
+	margin: 10px 0;
+	position: relative;
+	width: 100%;
+}
+.ln-letters {
+	overflow: hidden;
+}
+.ln-letters a {
+	font-size: 12px;
+	display: block;
+	float: left;
+	padding: 2px 6px;
+	border: 1px solid silver;
+	text-decoration: none;
+	color: #2B2A25;
+}
+.ln-letters a.ln-last {
+	border-right: 1px solid silver;
+}
+.ln-letters a:hover, .ln-letters a.ln-selected {
+	background-color: #eaeaea;
+}
+.ln-letters a.ln-disabled {
+	color: #ccc;
+}
+.ln-letter-count {
+	text-align: center;
+	font-size: 12px;
+	line-height: 1;
+	margin-bottom: 3px;
+	color: #336699;
+}
+#BrandList {
+	font-size: 12px;
+}
+#BrandList li {
+	float: left;
+	margin: 0 35px 0 0;
+	line-height: 24px;
+	white-space: nowrap;
+	text-align: center;
+}
+#BrandList li a:hover {
+	text-decoration: underline;
+}
+#BrandList a {
+	cursor: pointer;
+}
+#BrandList a:hover {
+	color: #A89E2D;
+}
+#bl_tips #b_content {
+	line-height: 23px;
+}
+#bl_tips .bl_imgbox {
+	float: left;
+}
+#bl_tips .bl_prop {
+	float: left;
+	color: #C4CCC9;
+	margin-left: 20px;
+}
+#bl_tips #bl_star {
+	width: 80px;
+}
+#bl_tips #bl_mancout {
+	color: #C4CCC9;
+}
+#bl_tips .bl_prop span {
+	color: #88A825;
+}
+#b_img {
+	max-width: 160px;
+	max-height: 160px;
+	vertical-align: middle;
+	_width: expression(this.width > this.height ? (this.width > 160 ? 160:true):true) !important;
+	_height: expression(this.height > this.width ? (this.height > 160 ? 160:true):true) !important;
+}
+ul#BrandHotList img {
+	max-width: 130px;
+	max-height: 100px;
+	vertical-align: middle;
+	_width: expression(this.width > this.height ? (this.width > 130 ? 130:true):true) !important;
+	_height: expression(this.height > this.width ? (this.height > 100 ? 100:true):true) !important;
+}
+#BrandHotList {
+	text-align: center;
+	font-size: 12px;
+}
+#BrandHotList li {
+	float: left;
+	margin: 0 20px 10px 0;
+	width: 132px;
+	height: 120px;
+}
+#BrandHotList li a:hover {
+	text-decoration: underline;
+	color: #A89E2D;
+}
+#BrandHotList li div.middle {
+	width: 130px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+.mr0 {
+	margin-right: 0 !important;
+}

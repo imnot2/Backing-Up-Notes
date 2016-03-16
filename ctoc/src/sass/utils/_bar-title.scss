@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+@import "lib/classes";
+
+.bar-title {
+    margin-top: 30px;
+    .bt-tit {
+        background-color: $grayf7;
+        padding: 14px 24px;
+        color: $gray38;
+        font-size: 18px;
+    }
+    .bt-cont {
+        @include clearfix;
+    }
+}

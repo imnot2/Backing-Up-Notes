@@ -1,0 +1,275 @@
+<%=include global/header.html%>
+<top-tools-bar class="navbar"></top-tools-bar>
+<section class="container orders search-container " ng-controller="OrdersController">
+
+<div class="allorders ng-cloak" ng-repeat='o in ordersList.Orders'>
+	<!-- 收件地址 -->
+	<address class="ordersAddress" ng-if="$index < 1">
+		<h3><strong ng-bind='o.Address.Addressee'></strong><span ng-bind="o.Address.Phone"></span>
+			<span class="edit_address" ng-click="switchAddressState(1)">
+				<i class="icon icon-addressChange"></i>修改
+			</span>
+		</h3>
+		<p><span ng-bind='o.Address.Area'></span><span ng-bind='o.Address.DetailAddress'></span></p>
+		
+	</address>
+	<!-- 购买商品列表 -->
+	<div class="p_mod orders_list" >
+		<div class="pm-t">
+			<div class="pull-left">
+				<span class="pm-name spb-name" ng-bind='o.SellerName'></span>
+				<span class="seller-toTalk" diff-show ng-click='toChat(o.SellerId,o.SellerName,o.SellerLogo)'><i class="icon icon-chat"></i></span>
+			</div>
+			<div class="pull-right orders_number">
+				
+			</div>
+		</div>
+		<div class="pm-m">
+			<ol class="ol_list">
+				<li ng-repeat='op in o.Products'>
+					<span class="pic">
+						<img ng-src="{{(op.PictureUrl  | urlAdapt)}}"/>
+					</span>
+					<h3><strong ng-bind="op.ProductName"></strong>
+						<span class="price">￥<span ng-bind='op.QuotePrice'>0</span></span>
+						<span class="number">x<span ng-bind='op.ProductNumber'>0</span></span>
+					</h3>
+					<div class="ng-cloak" ng-repeat="CatalogProp in op.CatalogPropertyList">
+						<p>{{CatalogProp.Property}}<span ng-bind="CatalogProp.PropertyAttribute"></span></p>
+					</div>
+					<p class='freight_method' ng-init="ProductService.deliveryWay(op)">
+						<i class="{{op.delverIco}}"></i>{{op.delverText}}
+					</p>
+				</li>
+			</ol>
+		</div>
+		
+		<div class="pm-discount ng-cloak" ng-if="o.Promotion.CanUseCoupon||o.Promotion.CanUseGift||o.Promotion.CanUseFreeCard">
+			<div class="selected"  ng-if="!o.IsXloboBonded">
+				<span class="checkbox" ng-click='discountAll(o)'>
+					<label ng-show="o.selectDiscountAll"><i class="icon" ng-class="{'icon-chooseH01':o.selectDiscountAll,'icon-chooseN':!o.selectDiscountAll}"></i></label>
+					<label class="txt">我要使用优惠</label>
+				</span>
+				<span class="pull-right sel-txt" >使用优惠：<strong ng-bind="o.useDiscount||'未选择优惠方式'"></strong></span>
+			</div>
+			<div class="selected" ng-if="o.IsXloboBonded">
+				<span class="checkbox">
+					<label class="txt bondedTxt">保税区商品不能使用优惠</label>
+				</span>
+			</div>
+			<div class="select_type" ng-if="!o.IsXloboBonded">
+				<ol>
+					<li class="ms" ng-if="o.Promotion.CanUseCoupon" ng-click='selectCC(o,"freeCard")' ng-class="{'disabled':o.inputCoupon}">
+						<span class="checkbox" >
+							<label><i class="icon icon-chooseN" ng-class="{'icon-chooseH02':o.PromotionUsed.UseCouponCode && !o.PromotionUsed.inputCouponCode}"></i></label>
+						</span>
+						<p>
+							<span class="pull-left">使用优惠券</span>
+							<span class="pull-right icon icon-more"></span> 
+							<span class="pull-right">
+								<strong></strong>
+							</span>
+
+						</p>
+					</li>
+					<li class="ms" ng-if="o.Promotion.CanUseCoupon" ng-click="inputCoupon(o,o.SellerId,o.Products)">
+						<span class="checkbox" >							
+						<label><i class="icon icon-chooseN" ng-class="{'icon-chooseH02':o.PromotionUsed.inputCouponCode}"></i></label>
+						</span>
+						<p>
+							<span class="pull-left">输入优惠券码</span>
+							<span class="pull-right icon icon-more"></span> 
+						</p>
+					</li>					
+					<li class="ms" ng-if="o.Promotion.CanUseGift" ng-click='selectUGA(o,o.usedGift)' ng-init="canUseGift(o)" ng-class="{'disabled':o.usedGift==0}">
+						<span class="checkbox" >
+							<label><i class="icon icon-chooseN" ng-class="{'icon-chooseH02':o.PromotionUsed.UseGiftAmount}"></i></label>
+						</span>
+						<p>
+							<span class="pull-left">使用红包</span>
+							<span class="pull-right">
+								订单可使用的最大红包数 <strong>￥<span ng-bind="o.usedGift"></span></strong></span>
+						</p>
+					</li>
+					<li class="ms" ng-if='o.Promotion.CanUseFreeCard' ng-click='selectUFC(o,o.Promotion.UseFreeCard)' ng-class="{'disabled':(o.TotalPrice<20 || ordersList.AvailableFreeCardNum <1)}">
+						<span class="checkbox" >
+							<label><i class="icon icon-chooseN" ng-class="{'icon-chooseH02':o.PromotionUsed.UseFreeCard}"></i></label>
+						</span>
+						<p>
+							<span class="pull-left">使用免运卡</span>
+							<span class="pull-right">
+								你的洋码头免运卡有<span ng-bind="ordersList.AvailableFreeCardNum"></span>张
+							</span>
+						</p>
+					</li>
+
+
+					<div class="select_discount_fix  ng-cloak" ng-if="o.showCoupon">
+						<div class="inset">
+							<div class="t">
+								我的优惠券
+								<span class="close">
+									<i class="icon icon-closeBtn" ng-click='closeDiscount(o)'></i>
+								</span>
+							</div>
+							<p ng-if="!CouponsList.length && !couponLoading" ng-bind="couponsDesc"></p>
+							<p ng-if="couponLoading">数据加载中<span class="loading"></span></p>
+							<ul class="m" ng-if="CouponsList.length">
+								<li ng-click="selectQ(o,s.CouponCode,s.CouponOrderValue,s.CouponValue,s.UseType)" ng-repeat="s in CouponsList" ng-if="!s.isUsed">
+									<h4>满<span ng-bind="s.CouponOrderValue||0"></span>{{(s.UseType==1?"抵":"返")}}<span ng-bind="s.CouponValue||0"></span></h4>
+									<p class="out_time">有效期至<span ng-bind="s.ValidEnd"></span></p>
+									<p class="number">编号：<span ng-bind="s.CouponCode"></span></p>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</ol>
+			</div>
+		</div>
+		<div class="pm-bottom">
+			<p>
+				<span class="type">商品数量：<span ng-bind='o.ProductNumber||0'></span></span>
+				<span class="type">含运费：￥<span ng-bind='o.Freight||0'></span></span>
+				<span class="type">合计：<strong>￥<span ng-bind='o.TotalPrice||0'></span></strong></span>
+			</p>
+		</div>
+	</div>
+	
+</div>
+
+<div class="allorders_price">
+	<span class="toPay btn btn-warning" ng-click="goPay()">去付款</span>
+	<p>您需要支付总价:<strong>￥<span ng-bind="ordersList.TotalPrice||''"></span></strong></p>
+	<p>含运费: ￥<span ng-bind='ordersList.TotalFreight||0'></span> 优惠扣除: -￥<span ng-bind="discountPrice||0"></span></p>
+</div>
+
+<div class="modal ng-cloak" ng-show="inputCouponMask" disabled-scroll>
+	<div class="modal-dialog">
+		<div class="modal-content"  ng-if="validateStep == 1">
+			<div class="modal-header">
+				<p class="modal-title">请输入优惠券码</p>
+			</div>
+			<div class="modal-body">
+				<p class="input-group">
+					<input type="text" class="inp-default" ng-model="coupon.code">
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-warning btn-min-100" ng-click="toValidate(coupon.code)">确定</button>
+				<button class="btn btn-white btn-min-100" ng-click="inputCouponCancel()">取消</button>
+			</div>
+		</div>
+		<div class="modal-content" ng-if="validateStep == 2">
+			<div class="modal-header">
+				<p class="modal-title">使用优惠码必须先验证您的手机号码</p>
+			</div>
+			<div class="modal-body"></div>
+			<div class="modal-footer">
+				<button class="btn btn-warning btn-min-100" ng-click="ToValidateConfirmDalog()">立即验证</button>
+				<button class="btn btn-white btn-min-100" ng-click="inputCouponCancel()">暂不使用</button>
+			</div>
+		</div>
+		<div class="modal-content" ng-if="validateStep == 3">
+			<div class="modal-header">
+				<p class="modal-title">验证手机号码</p>
+			</div>
+			<div class="modal-body">
+				<p class="input-group">
+					<span class="col-6"><input type="number" placeholder="请输入手机号码" class="inp-default" ng-model="phoneNumber"></span>
+					<button class="btn  btn-white btn-small fl-right" ng-class="{'btn-on-border':countDown}" ng-click="getValidateCode()">{{countDown || '获得验证码'}}</button>
+				<p class="assist-msg">手机验证后将与您的账号绑定，请使用您本人的手机号码</p>
+				<p class="input-group">
+					<input type="text" placeholder="请输入您收到的验证码" class="inp-default" ng-model="validateCode">
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default btn-min-100" ng-class="{'btn-warning':validateCode}" ng-click="completeValidate()">完成验证</button>
+				<button class="btn btn-white btn-min-100" ng-click="inputCouponCancel()">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="body-mask-fix search-mask ng-scope ng-cloak" ng-if="addressState" ng-click="closeAddressState()" disabled-scroll="">
+		<div class="search-mask-close" ymt-style="left:(clientWidth*0.13 - 27)/2px" style="left: 110.195px;">
+			<i class="icon icon-arrow"></i>
+		</div>		
+	</div>
+	<nav class="screening-wrap">
+		<div class="screening-board ng-cloak" side-slide="addressState > 0">
+			<div class="addressList ">
+				<div ymt-style="height:clientHeight-93;overflow:auto;" disabled-scroll>
+					<ol class="list">
+						<li ng-repeat="add in AddressService.list | orderBy:'AddressId'" ng-class="{active:add.IsDefault}">
+							<div class="selectDefault" ng-click="setDefault(add)">
+								<span class="selectAdd">
+									<i class="icon icon-addressCheck" ng-if="add.IsDefault"></i>
+								</span>
+								<h3 class='add_user'>
+									<strong ng-bind='add.Recipient'></strong>
+									<span ng-bind='add.Telephone'></span>
+								</h3>
+								<p class="add_info"><span ng-bind='add.Address1'></span><span ng-bind='add.Details'></span></p>
+							</div>
+							<span class="editAddress" ng-click="editAddress(add.AddressId)">
+								<i class="icon icon-addressEdit"></i>
+								编辑
+							</span>
+						</li>
+					</ol>
+				</div>
+				<div class="screening-board-bottom"  disabled-scroll ng-if="AddressService.list.length<5">
+					<p class="bottom-tools">
+						<button class="btn btn-primary btn-full-w" ng-click="insterAddress()">新增收货地址</button>
+					</p>
+				</div>
+		</div>
+		<div class="ng-cloak board-item addAddress" side-slide="addressState == 2">
+			<div ymt-style="height:clientHeight-93;overflow:auto;"> 
+				<div ymt-style="height:clientHeight;">
+					<p class='input-group'>
+						<input type="text" value="" ng-model="AddressService.item.Recipient" placeholder="收货人"></p>
+					<p class="txt_msg">请务必填写真实的收货人姓名，海关清关时将核对姓名</p>
+					<p class='input-group'>
+						<input type="text" value="" ng-model='AddressService.item.Mobile' placeholder="手机号码"></p>	
+						<p class='input-group'>
+						 <span class="">
+							<select ng-model='AddressService.item.ProvinceName' ng-options="act.name as act.name for act in AddressService.cityObj[0]" ng-change="AddressService.selectCity()" >
+								<option value="">选择省份</option>
+							</select>
+						</span>
+						<span class="">
+							<select ng-model='AddressService.item.CityName' ng-options="act.name as act.name for act in AddressService.selectCityObj" ng-change="AddressService.areaCity()" >
+								<option value="" >选择城市</option>
+							</select>
+						</span>
+						<span class="">
+							<select ng-model='AddressService.item.DistrictName' ng-options="act.name as act.name for act in AddressService.selectDistrictObj">
+								<option value="">选择县区</option>
+							</select>	
+						</span>
+					</p>
+					<p class='input-group'>
+						<input type="text" value="" ng-model='AddressService.item.Details' placeholder="详细地址"/></p>
+					<p class='input-group'>
+						<input type="text" value="" ng-model='AddressService.item.PostCode' placeholder="邮政编号"/></p>
+					<p class='input-group'  ng-if="!AddressService.hasEmail">
+						<input type="email" value="" ng-model='AddressService.item.Email' placeholder="电子邮件地址（e-mail）"/></p>
+					<p class='input-group selectDefault'>
+						<label class="label" ng-click="AddressService.item.IsDefault = !AddressService.item.IsDefault">
+						<i class="icon icon-label-select" ng-class="{'active':AddressService.item.IsDefault}" ></i>
+						设置为默认收货地址</label>
+					</p>
+				</div>
+				
+			</div>
+			<div class="screening-board-bottom"  disabled-scroll>
+				<p class="bottom-tools">
+					<button class="btn btn-primary" ng-class="{'btn-full-w':!AddressService.item.AddressId}" ng-click="saveAddress()">保存</button>
+					<button class="btn btn-warning" ng-if="AddressService.item.AddressId" ng-click="deleteAddress(AddressService.item.AddressId)">删除</button>
+				</p>
+			</div>
+		</div>
+	</nav>
+</section>
+<%=include global/footer.html%>

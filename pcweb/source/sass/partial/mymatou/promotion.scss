@@ -1,0 +1,126 @@
+﻿/*=======================promotion.css===========================*/
+.promotion .mod_1 {
+	padding: 20px 0;
+}
+.promotion .mod_2 {
+	margin: 10px 0
+}
+.promotion .ptlist {
+	text-align: center;
+	font-size: 14px;
+	padding-left: 150px
+}
+.promotion .infocontent {
+	border: 1px solid #e2e2e2;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	padding: 20px;
+}
+.promotion .progress {
+	margin: 20px 0
+}
+.promotion .h2 {
+	color: #000;
+	text-align: center;
+	font-size: 24px;
+	margin: 10px 0;
+	font-family: "微软雅黑"
+}
+.promotion .red {
+	color: #BB3B0C
+}
+.ptlist li {
+	float: left;
+	margin: 0 20px
+}
+.ptlist .tit {
+	margin: 0 2px 0 5px
+}
+.ptlist .b {
+	color: #F04E00
+}
+.ptlist .icon, .progress .box {
+	background: url(/content/img/sprites/coupon.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle
+}
+.ptlist .i_0 .icon {
+	background-position: 0 -85px;
+	width: 20px;
+	height: 23px;
+}
+.ptlist .i_0 .detail {
+	display: block;
+	font-size: 12px;
+}
+.ptlist .i_1 .icon {
+	background-position: -25px -85px;
+	width: 20px;
+	height: 18px;
+}
+.ptlist .i_2 .icon {
+	background-position: -52px -85px;
+	width: 18px;
+	height: 24px;
+}
+.infocontent .h3, .progress .h3 {
+	color: #DD6E27;
+	font-size: 14px;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+.infocontent .clipboard {
+	margin: 5px 0
+}
+.infocontent .clipboard .btn_1 {
+	display: none;
+	width: 96px;
+	vertical-align: top
+}
+.infocontent .dec {
+	color: #DD6E27
+}
+.infocontent .coupon {
+	margin: 20px 0
+}
+.infocontent .coupon .l {
+	float: left;
+	width: 450px;
+	margin-right: 20px
+}
+.infocontent .coupon .r {
+	float: left;
+}
+.infocontent .notice {
+	padding-top: 10px;
+	border-top: 1px solid #e2e2e2
+}
+.clipboard .con {
+	display: inline-block;
+	line-height: 30px;
+	width: 260px;
+	height: 30px;
+	padding: 0 10px;
+	border: 1px solid #e2e2e2;
+	margin-right: 5px;
+	color: #F04E00;
+	font-size: 16px
+}
+.infolist .dt {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	line-height: 30px;
+}
+.infolist .item {
+	line-height: 24px;
+}
+.progress .box {
+	width: 842px;
+	display: block;
+	height: 80px;
+	background-position: 0 0;
+	margin: 5px 0
+}

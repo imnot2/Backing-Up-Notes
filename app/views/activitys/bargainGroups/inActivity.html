@@ -1,0 +1,68 @@
+<%=include commons/header.html%>
+<!-- 头部 -->
+	<div class="header">
+		<div class="headerCont clear">
+			<div class="header_img">
+				<em></em>
+			</div>
+			<div class="header_info tuansuccess">
+				<p class="header_tomorrow"><strong><%=groupInfo.Tuan.Creator%></strong>&nbsp;开启的团购</p>
+				<p class="header_huore">团购正在火热进行中</p>
+				<p class="header_time" <%=groupInfo.Tuan.LeftTime %>>
+						<em class="img img-clock"></em>剩余 : <span data-time="<%=groupInfo.Tuan.LeftTime%>"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 中间区域 -->
+	<div class="k1_center inActivity-wrap">
+		<figure class="k1_tugouBg">
+			<img src="<%=staticfileurl('/images/activitys/bargainGroups/product-info.jpg')%>" alt="商品信息">
+		</figure>
+		
+		<p class="k1_tuanCanyu" >
+		<%if(groupInfo.Status == 1){%>	该团购目前参与人数<em><%=groupInfo.Tuan.MemberNum%></em>人 ， 正在向6人成团冲刺中！
+		<%}%>
+		<%if(groupInfo.Status == 2){%>	恭喜您，组团成功，可以进行购买啦
+		<%}%>
+		<%if(groupInfo.Status == 3){%>	抱歉，您访问的团购已满员，您可以自己发起团购
+		<%}%>
+		</p>
+
+		<div class="canyuList">
+			<div class="canyuCont">
+				<ul class="canyuUl clear" >
+					<% for( var i = 0 ; i < 6 ; i++ ){%>
+						<li <%=(i<groupInfo.Tuan.MemberNum)? 'class=active' :''%>>
+								<span class="stick"></span>	
+						</li>
+				    <%}%>
+					<li class="big6 <%=(groupInfo.Status==2 || groupInfo.Status==3) ? 'fit-success' : ''%>">6人<br>成团</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tips6" >
+			<span class="tips6ren">
+			<%= (groupInfo.Status == 1)?
+			"满6人成团后，系统会发送短信通知您" : (groupInfo.Status == 2) ? "合体成功马上购买吧": "该团已满员，请另辟蹊径吧！"%></span>
+		</div>
+		<%if( groupInfo.Status == 1 ){%>
+		<a class="publicBtn buy-btn active J-share" data-attr-code="<%=groupInfo.Tuan.GroupCode%>" data-topic-id="<%=groupInfo.topicId%>">
+			<em class="img img-share"></em>
+			<span class="btn-text">邀请朋友来参团</span>
+		</a>
+		<%}else if(groupInfo.Status == 2){%>
+		<a class="publicBtn buy-btn active in-group" href="/forYmatouApp/product/pid1?title=商品详情&needJumpFlag=1&pid=<%=productId%>">
+			<span>已成团 立即去选购</span>
+			<small>已有<i class="J-profile">x</i>人参与团购</small>
+		</a>
+		<%}else if(groupInfo.Status == 3){%>
+		<a class="publicBtn buy-btn active in-group J-create-group">
+			<span>我要自己建团！</span>
+			<small>已有<i class="J-profile">x</i>人参与团购</small>
+		</a>
+		<%}%>
+	</div>
+<%=include commons/bottom.html%>
+
+<%=include commons/footer.html%>

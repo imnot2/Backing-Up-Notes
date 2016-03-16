@@ -1,0 +1,591 @@
+﻿/*=======================convoyPlan.css===========================*/
+
+/**public**/
+.tab_mod_1 .item {
+	display: inline-block;
+	margin-right: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	background-color: #E9E9E9;
+	padding: 0 10px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 5px 5px 0 0;
+	vertical-align: bottom
+}
+.tab_mod_1 .current {
+	height: 32px;
+	background-color: #fff;
+	margin-bottom: -1px;
+	font: 14px/32px "宋体";
+	cursor: auto
+}
+.mod {
+	margin: 10px 0
+}
+.opacity {
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+}
+.pic_text_mod .dec {
+	line-height: 24px;
+}
+.level_module_1 .hd {
+	height: 28px;
+	line-height: 28px;
+	background: url(/content/img/sprites/bg.png) repeat-x 0 -210px #efefef;
+	border: 1px solid #e2e2e2;
+	padding: 0 10px
+}
+.level_module_1 .bd {
+	border: 1px solid #e2e2e2;
+	border-top: 0;
+	padding: 10px
+}
+.level_module_1 .bt {
+	border: 1px solid #e2e2e2;
+	border-top: 0;
+	height: 28px;
+	line-height: 28px;
+	background: url(/content/img/sprites/bg.png) repeat-x 0 -254px #efefef;
+	padding: 0 10px
+}
+.level_module_1 .left {
+	float: left
+}
+.level_module_1 .right {
+	float: right
+}
+.level_module_2 {
+	border: 1px solid #e2e2e2
+}
+.level_module_2 .hd {
+	height: 28px;
+	margin: 1px;
+	line-height: 28px;
+	background-color: #f9f9f9;
+	padding: 0 10px
+}
+.level_module_2 .bd {
+	padding: 10px;
+}
+.level_module_2 .left {
+	float: left
+}
+.level_module_2 .right {
+	float: right
+}
+.level_module_3 .hd .item {
+	font-weight: bold;
+	border-bottom: 0
+}
+.level_module_3 .bd {
+	border: 1px solid #ccc;
+	padding: 10px;
+	-webkit-border-radius: 0 5px 5px 5px;
+	-moz-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+}
+.level_module_3 .bt {
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	margin: 10px 0;
+}
+.field_l_r .l {
+	display: inline-block;
+	vertical-align: middle;
+}
+.field_l_r .r {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.field_l_r .vt {
+	display: inline-block;
+	vertical-align: top
+}
+.field_l_r .inp_text {
+	height: 22px;
+	line-height: 22px;
+	padding: 2px 4px;
+	vertical-align: middle
+}
+
+/**sprites**/
+.payPassword .i {
+	background: url(/content/img/sprites/mmt_settlement.png) no-repeat;
+	display: inline-block;
+}
+
+/**alert payPassword**/
+.payPassword .con {
+	padding: 20px 0 0;
+	width: 580px;
+	height: 300px;
+	color: #000;
+	border-top: 1px solid #e2e2e2;
+}
+.payPassword .h3 {
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	padding: 10px 0 10px 10px
+}
+.payPassword ul.field_l_r {
+	margin: 30px 0 0 60px;
+}
+.payPassword ul.field_l_r .l {
+	width: 100px;
+	text-align: right
+}
+.payPassword ul.field_l_r li {
+	margin: 20px 0
+}
+.payPassword .logo {
+	width: 55px;
+	height: 30px;
+	background-position: 0 -66px
+}
+.payPassword .payment {
+	display: block
+}
+.payPassword .level {
+	padding: 10px 20px;
+	width: 510px;
+	margin: 0 auto;
+	background-color: #efefef;
+	margin-bottom: 1px;
+	height: 36px;
+	line-height: 36px;
+}
+.payPassword .plus {
+	width: 13px;
+	height: 13px;
+	background-position: -207px -37px;
+	margin: 0 10px;
+	vertical-align: middle
+}
+.payPassword .width200 {
+	width: 200px;
+}
+.payPassword .width80 {
+	width: 80px;
+}
+.payPassword .overage {
+	display: inline-block;
+	height: 35px;
+	border: 1px solid #e2e2e2;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	color: #F04E00;
+	background-color: #fff;
+	padding: 0 10px
+}
+.payPassword .submitbtn {
+	width: 102px;
+	height: 32px;
+	background-position: 0 -33px;
+}
+.payPassword .ver {
+	display: none;
+	height: 26px;
+	background: #EB5E00;
+	line-height: 26px;
+	padding: 0 10px;
+	vertical-align: middle;
+	color: #fff
+}
+.pay_recharge {
+	width: 366px;
+	line-height: 36px;
+}
+.pay_recharge .h3 {
+	font-size: 14px;
+	color: #000
+}
+.pay_recharge .dec {
+	margin: 10px 0
+}
+.pay_recharge .container {
+	padding: 20px 0
+}
+.pay_recharge .overbtn {
+	width: 78px;
+	height: 32px;
+	background-position: -111px -36px
+}
+.pay_recharge .bottom_item a {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 2px
+}
+.table_mod_1 {
+	width: 100%
+}
+.table_mod_1 td, .table_mod_1 th {
+	border: 1px solid #e2e2e2;
+}
+.table_mod_1 .th th {
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	background-color: #efefef
+}
+.table_mod_1 td {
+	padding: 10px
+}
+.table_mod_1 .i_1 {
+	text-align: center;
+	width: 40px
+}
+.table_mod_1 .t_l {
+	text-align: left
+}
+.table_mod_1 .t_r {
+	text-align: right
+}
+.table_mod_1 .t_c {
+	text-align: center
+}
+.plan_1 .bd {
+	border-top: 1px solid #e2e2e2
+}
+.plan_1 {
+	margin: 10px 0
+}
+.plan_2 {
+	margin: 20px 0
+}
+.plan_1 .num {
+	padding: 0 4px;
+	color: #F04C00
+}
+.plan_2 .table_mod_1 {
+	margin: 5px 0;
+	color: #000
+}
+.plan_2 .table_mod_1 th {
+	font-weight: normal
+}
+.plan_2 .i_6 {
+	width: 74px;
+}
+.plan_2 .am {
+	display: none
+}
+.plan_2 .am .l {
+	float: left
+}
+.plan_2 .am .h {
+	border-bottom: 1px solid #e2e2e2;
+	height: 40px;
+	line-height: 40px;
+	margin: -10px -10px 0;
+	padding: 0 10px;
+}
+.plan_2 .am .h .l {
+	width: 280px;
+}
+.plan_2 .am .r {
+	float: right
+}
+.plan_2 .am .b {
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 7px;
+}
+.plan_2 .am .b em {
+	padding: 0 0 0 5px;
+}
+.convoyPlan .alert_box_inner {
+	padding: 60px 90px
+}
+.convoyPlan p {
+	margin: 10px 0 30px;
+	font-size: 14px;
+	color: #000
+}
+.convoyPlan .con {
+	text-align: center;
+}
+.convoyPlan .con a {
+	color: #000
+}
+.l_r_span .r {
+	border-left: 1px solid #ccc;
+	padding-left: 6px;
+	margin-left: 5px;
+}
+.l_r_span .i {
+	display: inline-block;
+	background: url(/content/img/sprites/mymatouicon.gif) no-repeat;
+	width: 11px;
+	height: 9px;
+}
+.l_r_span .up {
+	background-position: -189px 0
+}
+.l_r_span .down {
+	background-position: -189px -10px
+}
+.textarea {
+	border: 1px solid #e2e2e2;
+	width: 820px;
+	height: 200px;
+	color: #000;
+	margin: 10px 0;
+	line-height: 24px;
+	padding: 10px;
+}
+.submit {
+	text-align: center;
+	height: 32px;
+}
+.submit .btn {
+	width: 164px;
+	height: 32px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(/content/img/sprites/convoyplan.gif) no-repeat
+}
+.submit .btn3 {
+	width: 141px;
+	background-position: -129px -101px
+}
+.submit .btn4 {
+	background-position: -299px -101px
+}
+.submit .btn5 {
+	background-position: -470px -101px
+}
+.progress .inner {
+	width: 100%;
+	height: 30px;
+	background: url(/content/img/sprites/convoyplan.gif) no-repeat
+}
+.progress .s_0 {
+	background-position: -0 -0
+}
+.progress .s_1 {
+	background-position: -0 -34px
+}
+.progress .s_2 {
+	background-position: -0 -68px
+}
+.approve {
+	width: 466px;
+}
+.approve .item {
+	margin: 30px 0
+}
+.approve .hd {
+	border-bottom: 1px solid #e2e2e2;
+	line-height: 30px;
+	height: 30px;
+	padding: 0 0 0 10px
+}
+.approve .r {
+	float: right;
+	width: 110px;
+}
+.approve .tit {
+	font: 18px/24px "微软雅黑"
+}
+.approve .green {
+	color: #619B01
+}
+.approve .yellow {
+	color: #F29722
+}
+.approve .i, .erroricon {
+	display: inline-block;
+	width: 25px;
+	height: 24px;
+	background: url(/content/img/sprites/convoyplan.gif) no-repeat;
+	margin: 0 10px;
+	vertical-align: middle
+}
+.approve .right {
+	background-position: -0 -102px
+}
+.approve .error, .erroricon {
+	background-position: -36px -102px
+}
+.approve .warn {
+	background-position: -72px -102px
+}
+.approve .bd {
+	line-height: 24px;
+	padding: 5px 10px
+}
+.photograph {
+	padding: 10px 0;
+	border-top: 1px solid #e2e2e2;
+}
+.photograph dl {
+	line-height: 28px;
+}
+.photograph dt {
+	font: 14px/1.5 "微软雅黑";
+	color: #000
+}
+.update {
+	position: relative
+}
+.update .input {
+	width: 150px;
+	padding: 4px 5px;
+	border: 1px solid #e2e2e2;
+	display: inline-block;
+	vertical-align: middle
+}
+.update .btn_4 {
+	margin: 0 0 0 10px
+}
+.update .file {
+	position: absolute;
+	left: 70px;
+	height: 30px;
+	width: 200px;
+	cursor: pointer
+}
+.photo {
+	overflow: hidden
+}
+.photo li {
+	border-bottom: 1px dashed #e2e2e2;
+	padding: 20px 0;
+	margin: 10px 0;
+	margin-bottom: -1px
+}
+.photo .l {
+	float: left
+}
+.photo .r {
+	float: right;
+	padding-top: 15px
+}
+.photo .tit {
+	display: inline-block;
+	height: 24px;
+	font: 14px/24px "微软雅黑";
+	color: #000
+}
+.photo .update {
+	margin: 10px 0
+}
+.photo .pic {
+	width: 160px;
+	height: 162px;
+	border: 1px solid #e2e2e2;
+	line-height: 160px;
+	text-align: center;
+}
+.photo .img {
+	max-width: 160px;
+	max-height: 160px;
+	_width: expression(this.scrollWidth>160?'160px':'auto');
+	_height: expression(this.scrollHeight>160?'160px':'auto');
+	vertical-align: middle
+}
+.photo .st {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px
+}
+.contract .hd b {
+	font: 14px/24px "微软雅黑";
+	color: #000
+}
+.contract .box {
+	margin: -10px 0;
+	padding: 10px 0;
+	text-align: center
+}
+.contract .left {
+	width: 50%;
+	border-right: 1px solid #e2e2e2;
+}
+.contract .right {
+	margin-right: 32px
+}
+.contract .box .dec {
+	display: block;
+	margin: 10px 0;
+}
+.contract .box dl {
+	border: 1px solid #e2e2e2;
+	padding: 10px;
+	line-height: 24px;
+	text-align: left;
+	margin: 0 auto 10px;
+	width: 320px;
+}
+.contract .box dt {
+	text-align: center;
+	font-size: 14px;
+}
+.contract .box .btn_4 {
+	margin: 0 5px
+}
+.contract .con {
+	width: 500px;
+	height: 250px;
+	padding: 0
+}
+.contract .level {
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	border-bottom: 1px solid #e2e2e2
+}
+.contract .vercode {
+	margin: 8px 0 0 110px
+}
+.contract .update .file {
+	left: 185px
+}
+.vertical {
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	width: 0px;
+	font-size: 0
+}
+.vercode .img, .vercode .dec {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	line-height: 30px;
+}
+.vercode .dec {
+	margin: 0 10px
+}
+.vercode .img img {
+	height: 30px;
+}
+.desc p {
+	margin-bottom: 5px;
+}
+.desc .title {
+	font: 12px/1.5 "Arial", "宋体", "宋体B8B\4F53", sans-serif;
+	color: #666;
+	font-weight: bolder;
+	margin-bottom: 8px;
+}
+.desc a {
+	color: #2894FF
+}
+.notice {
+	border-top: 1px solid #e2e2e2;
+	padding-top: 20px;
+	margin-top: 10px
+}
+.notice p {
+	margin: 2px 0px;
+}

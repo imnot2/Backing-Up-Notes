@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "lib/variables";
+@import "compass/css3";
+
+.live-info-rt {
+    border: 1px solid $grey20;
+    border-width: 1px 1px 0;
+    background: $white;
+    @include border-radius(5px 5px 0px 0px);
+    overflow: hidden;
+    position: relative;
+
+    &.all-radius{
+        @include border-radius(5px);
+        border-width:1px;
+    }
+
+    .live-info-rt-head {
+        height: 68px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover{
+            .live-info-rt-pic{
+                @include opacity(0.2);
+            }
+        }
+    }
+    .live-info-rt-mask {
+        position: relative;
+        width: 100%;
+        top:0;
+        color: #fff;
+        min-height: 68px;
+        line-height: 68px;
+        background: $black;
+        display: block;
+
+        .icon-live-rt {
+            font-size: 28px;
+            left: 30px;
+            z-index: 2;
+        }
+        .live-info-rt-title {
+            position: absolute;
+            z-index: 12;
+            left: 68px;
+            top: 12px;
+            width: 50%;
+            line-height: 18px;
+
+            span {
+                display: block;
+            }
+            .title-first {
+                font-size: 14px;
+                
+            }
+            .title-second {
+                font-size: 12px;
+                color: $grey40;
+            }
+        }
+    }
+
+    .live-info-rt-pic{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include opacity(0.2);
+    }
+
+    .live_info_rt_con {
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 15px;
+
+        .btn-go-live{
+            position: absolute;
+            z-index: 1;
+            right : 20px;
+            bottom: 10px;
+        }
+        .count-down {
+            width: 88px;
+            height: 16px;
+            line-height: 16px;
+            top: 10px;
+            right: 20px;
+            position: absolute;
+            z-index: 2;
+            color: $grey40;
+
+            .icon {
+                font-size: 18px;
+                font-weight: bold;
+                top: 2px;
+                z-index: 2;
+            }
+            span {
+                @include border-radius(2px);
+                color: $white;
+                @include inline-block;
+                vertical-align: middle;
+                width: 12px;
+                text-align: center;
+                margin: 0 2px;
+                height: 100%;
+            }
+
+            .t-number{
+                background: $grey40;
+            }
+
+            &.t-active{
+               .icon{
+                    color: $highRad;
+               }
+               .t-number{
+                    background: $highRad;
+                } 
+            }
+        }
+
+        .con-info, .con-person, .con-tags{
+            width: 720px;
+            margin: 0 0 0 28px;
+            line-height: 20px;
+        }
+        .con-info {
+            margin-top: 12px;
+            line-height:20px;
+            font-size: 14px;
+        }
+        .con-person, .con-tags {
+            color: $grey40;
+        }
+        .con-tags {
+            span {
+                margin-right: 20px;
+            }
+            .icon {
+                margin-right: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+﻿body { font-size:12px;}
+form.demo{ border:dotted 1px #f00; padding:10px; margin-bottom:50px;}
+form.demo ul{ margin:0px; padding:0px; list-style:none;}
+form.demo ul li{ text-align:left; margin:0 0 40px 0; overflow:hidden;}
+form.demo ul li span{ display:block; width:100px; float:left; text-align:right;}
+.sp1{ width:auto !important; color:#f00; margin-left:20px; display:inline !important; float:none !important;}
+.cls{ border:4px groove #FF0000; padding:3px; position:absolute; z-index:999; display:none; background-color:#fff;}
+.cls img{ vertical-align:middle;}
+.cls span.sp{ padding:0 0 0 3px; font-weight:bold;}
+#info div{ border:solid 1px #00f; height:25px; float:left; background-color:#fff;}
+#info ul li{ float:left; list-style:none;}

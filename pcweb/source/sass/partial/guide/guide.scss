@@ -1,0 +1,288 @@
+﻿@charset "utf-8";
+
+@import "../museum/sass/_common";
+
+//分页
+.c-pager-simple {
+    margin: 0 auto;
+    position: relative;
+    height: 30px;
+    .pager-number {
+        float: left;
+        margin: 0 3px;
+        .pager-item {
+            //position: absolute;
+            //width: 26px;
+            //height: 26px;
+            //line-height: 26px;
+            display: inline-block;
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #999;
+            &:hover {
+                color: #1d398d;
+                border: 2px solid #1d398d;
+            }
+        }
+        .active {
+            color: #1d398d;
+            border: 2px solid #1d398d;
+            &:hover {
+                cursor: default;
+            }
+        }
+        .invalid {
+            background: #eee;
+            &:hover {
+                color: #999;
+                border: 1px solid #ddd;
+                cursor: default;
+            }
+        }
+    }
+}
+
+/****/
+.article {
+    width: 838px;
+    min-height: 550px;
+    float: left;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.article-body {
+    width: 820px;
+    mix-height: 320px;
+    text-align: center;
+    color: #666;
+    //
+    /***/
+    .title {
+        font-size: 24px;
+    }
+    .deputy {
+        color: #999;
+        span {
+            margin: 0 5px;
+        }
+        margin: 10px 0;
+    }
+    .content {
+        border-top: 1px solid #ddd;
+        text-align: left;
+        padding: 15px 0;
+        line-height: 20px;
+        min-height: 320px;
+    }
+    .content:first-letter {
+        font-size: 200%;
+        float: left;
+        margin: -5px 3px;
+    }
+}
+
+.bottom-bar {
+    //position: absolute;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    bottom: 10px;
+    left: 0px;
+    //width: 100%;
+    width: 820px;
+    .forward {
+        margin: 0 10px;
+        .ico-groud {
+            vertical-align: text-top;
+            vertical-align: baseline\9;
+        }
+        .ico {
+            display: inline-block;
+            width: 16px;
+            height: 20px;
+            margin-right: 5px;
+            background: url(#{$imgpath}/assemble.png);
+        }
+        .ico-qq {
+            background-position: 0 -155px;
+        }
+        .ico-sina {
+            background-position: -23px -155px;
+        }
+        .ico-qqWb {
+            background-position: -46px -155px;
+        }
+        .ico-rr {
+            background-position: -69px -155px;
+        }
+        .ico-weChat {
+            background-position: -92px -155px;
+        }
+        .ico-push {
+            background-position: -115px -155px;
+        }
+    }
+    .evaluate {
+        margin: 0 10px;
+        .achieve {
+            margin: 0 10px;
+        }
+        .oper {
+            padding: 2px 6px;
+            background: #fff;
+            border: 1px solid #ddd;
+            display: inline-block;
+        }
+        .ico {
+            background: url(#{$imgpath}/assemble.png);
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: -2px;
+            *vertical-align: middle;
+        }
+        .ico-cancel {
+            background-position: -89px -80px;
+        }
+        .ico-agree {
+            background-position: -107px -80px;
+        }
+    }
+}
+
+/*推荐*/
+.recommend {
+    width: 338px;
+    height: 550px;
+    float: right;
+    border: 1px solid #eee;
+    color: #666;
+    position: relative;
+    a {
+        color: #666;
+    }
+    .title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .subtitle {
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    li {
+        margin: 10px 0;
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 10px;
+        height: 60px\9;
+    }
+    .end {
+        border-bottom: none;
+    }
+    /*投稿*/
+    .submission {
+        background: #cc3333;
+        color: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        border-radius: 3px;
+        width: 320px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    //查看更多链接
+    .more {
+        float: right;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #1f7dd8;
+    }
+}
+
+/*相关商品*/
+.complex {
+    color: #666;
+    margin-top: 20px;
+    .title {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .isolation {
+        height: 3px;
+        background: #ddd;
+        width: 100%;
+        .item {
+            height: 100%;
+            width: 100px;
+            background: #1d398d;
+        }
+    }
+    .pro-class {
+        margin: 20px 0;
+        .pro-item {
+            padding: 5px 8px;
+            font-size: 14px;
+            background: #fff;
+            color: #1d398d;
+            border: 1px solid #ddd;
+            &:hover {
+                color: #fff;
+                background: #1d398d;
+                border: 1px solid #1d398d;
+            }
+        }
+        .active {
+            color: #fff;
+            background: #1d398d;
+            border: 1px solid #1d398d;
+        }
+    }
+    .pro-list {
+        width: 1200px;
+        .pro-item {
+            margin-right: 10px;
+            width: 230px;
+        }
+        .end {
+            margin-right: 0;
+        }
+    }
+    .pic-area {
+        text-align: center;
+        line-height: 210px;
+        *font-size: 183px;
+        vertical-align: middle;
+        img {
+            max-width: 210px;
+            max-height: 210px;
+            vertical-align: middle;
+        }
+    }
+    /*更多商品*/
+    .load-more {
+        width: 100%;
+        text-align: center;
+        .load-img {
+            height: 66px;
+            width: 66px;
+            margin: 20px auto;
+            background: url(#{$imgpath}/load_66x66.gif);
+        }
+        .load-text {
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+            display: inline-block;
+        }
+    }
+}

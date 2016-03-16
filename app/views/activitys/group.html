@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海外团</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="http://staticadmin.ymatou.com/operate/layout.css">
+    <style>
+        html,
+        body{
+            position: relative;
+            height: 100%;
+            background: #85000a ;
+        }
+        .group-wrap{
+            min-width: 320px;
+        }
+        .group-wrap .banner{
+            overflow: hidden;
+            margin-bottom: -5px;            
+        }
+        .group-wrap .banner img{
+            width: 100%;
+        }
+        .group-title-wrap{
+            height:85px;
+            font-size:30px;
+            color:#fff;
+            margin-top: 25px;
+
+        }
+        .group-title-wrap .icon{
+           background: url(data:image/png;base64,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);
+           background-size: 105px 40px;
+           width: 105px;
+           height: 40px;
+           display: inline-block;
+           vertical-align: middle;
+        }
+        .group-content-wrap{
+            background: url(http://staticontent.ymatou.com/ymtapp/group/images/content-bg.png) no-repeat right 16px;
+            background-size: 207px 125px;
+            padding: 5px 10px;
+        }
+        .group-item{
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px ;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .group-item img{
+           width: 100%;
+        }
+        .group-item .pic img{
+            height: 100%;
+            width: 100%;  
+        }
+        .group-item .detail{
+            margin-left: 140px;
+            font-size: 12px;
+            border-left:1px dashed  #ccc;
+            padding-left: 10px;
+        }
+        .detail-titile{
+        }
+        .group-item del{
+            color: #c5c5c5;
+
+        }
+        .group-item strong{
+            color: #c4181f;
+            font-size: 24px;
+        }
+        .buy-btn{
+            background: #c01920;
+            color: #fff;
+            font-size: 15px;
+            height: 30px;
+            width: 125px;
+            border-radius: 5px;
+            border: 0;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            position: relative;
+        }
+        .icon-shopping-cart{
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAwCAMAAACWlYwtAAAAn1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Kd3m4AAAANHRSTlMAM5yNRfPk2tfEWi0VC+B5bWci+e/rtqqUSkEFA/zQoYZ9VjgnGRC9sYqIc19SIN3Kx6ydeOuVQgAAAalJREFUSMel1mlzgkAMBuBQREU8ODwQKQh4az33//+2TnedDsY9SPt8jWYIm30HAPCz9tNwFwKdz2omAyBzWN3ovw26QHZkL9ZANnI7P7oRmoGsxxsMrca897dB1EEtYkY1hBcVI0MzjBnRJ2pgM6IparASbT/MZoyzABnyBucGu8P/fwOQzjADkwHjvgCkMzgN1/8iqVx5ZQ56C3FcgTIcpo2WPpJlx5lxfdDK+I+W0tqN106g02KcPLxODWa46s6qj2JFPeZKUXZ59QhqYgtd5RvGZWzD9Ee9cAwzFCJ8TU9YKB/AwVuMlShr0k3oJfMy8IvD477NJsZtT5972vOLOJ+63TaKSll206NxoV80o9x01wwcw12xNSnqtLvuRwh6Vu0f0biTbe+P5Sgok8oL14MUGhBHFfda1ao/gD/Yo/tOFqJlodvxDgnQWae9bdsHcac7e1vl0POkaTJlzeXv25hOGIHkRueMZvkWh0RRisOMqoIXQa1UJi25xOd1aS566NtHodZgg0qX30psWDJhC6B4BAfdIMW7DgELInHAFujM2+LDXgTzNy2X2eR6PxoVAAAAAElFTkSuQmCC) no-repeat;
+            background-size: 32px 24px;
+            display: inline-block;
+            width: 32px;
+            height: 24px;
+            vertical-align: -6px;
+        }
+        .navmenu{
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            background: #400005;
+        }
+        .navmenu ul{
+            width: 100%;
+            overflow: hidden;
+        }
+         .navmenu a{
+            color:#fff;
+            display: inline-block;
+            height: 20px;
+            width: 100%;
+            margin-top:5px;
+            line-height: 20px;
+            font-weight: bold;
+         }
+         .navmenu a:not(fisrt-child){
+            border-right: 2px solid #fff;
+         }
+        .navmenu li{
+            float: left;
+            width: 16.66666%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="group-wrap">
+        <div class="banner">
+            <img src="http://staticontent.ymatou.com/ymtapp/group/images/banner1.png" alt=""></div>
+        <nav class="navmenu">
+            <ul>
+                <li>
+                    <a href="#index">
+                        海外团
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        时尚
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        保健
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        美妆
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        母婴
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        户外
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="group-content-wrap">
+            <div class="group-content-list" id="index">
+                <h2 class="group-title-wrap">
+                    <strong class="icon"></strong>
+                    海外团1
+                </h2>
+                <ul class="group-list">
+                    <li class="group-item J-buy" data-productId="8FB645E2-988E-465B-84BE-F5B9399A38D6">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                    <li class="group-item J-buy" data-productId="7D15AF06-FFC3-4F40-ACF2-E38A0DEF3EA9">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="group-content-list">
+                <h2 class="group-title-wrap">
+                    <strong class="icon"></strong>
+                    海外团2
+                </h2>
+                <ul class="group-list">
+                    <li class="group-item J-buy" data-productId="8FB645E2-988E-465B-84BE-F5B9399A38D6">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                    <li class="group-item J-buy" data-productId="7D15AF06-FFC3-4F40-ACF2-E38A0DEF3EA9">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="group-content-list">
+                <h2 class="group-title-wrap">
+                    <strong class="icon"></strong>
+                    海外团3
+                </h2>
+                <ul class="group-list">
+                    <li class="group-item J-buy" data-productId="668D6E2F-B975-4523-B90D-30703A102068">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                     <li class="group-item J-buy" data-productId="C6BAADFA-C8E0-423A-BCD6-BEB143DBBAF2">
+                        <img lazy-load="http://i1.tietuku.com/dbf9b8dfca901dec.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="http://static.matouapp.ymatou.com/js/lib/zepto.min.js"></script>
+    <script src="<%=staticfileurl('/js/saohuoYmtApi.js')%>"></script>
+    <script>
+        //http://api.activity.alpha.ymatou.com/Activity/PageParts/3820/2?callback=
+        $(function(){
+             /*var query = window.YmtApiUtils.parseUrl(location.search);
+             var aid  = query['aid'],
+                 pid  = query['pid'];
+             function render(d){
+                var tpl = [
+                    '<li> ',
+                        '<div class="group-item">',
+                            '<div class="pic">',
+                                '<img src="{{PicUrl}}" alt="">',
+                            '</div>',
+                            '<div class="detail">',
+                                '<h3 class="detail-titile">{{Name}}</h3>',
+                                '<p>',
+                                    '<del>市场价：{{MarketPrice}}</del>',
+                                '</p>',
+                                '<p>',
+                                    '促销价：<strong>{{Price4Sale}}</strong>',
+                                '</p>',
+                                '<p>',
+                                    '<span class="buy-btn J-buy" data-productId="{{ProductId}}"> ',
+                                        '<em class="icon-shopping-cart"></em>&nbsp;&nbsp;立即购买',
+                                    '</span>',
+                                '</p>',
+                            '</div>',
+                        '</div>',
+                    '</li>',
+                    ].join('');
+                function complie(structure,data){
+                    for(var o in data){
+                        structure = structure.replace(new RegExp('{{'+o+'}}'),data[o]);
+                    }
+                    return structure;
+                }
+                var content = '',
+                    productInfos ;
+                if(d.Code == 200){
+                    productInfos = d.Data && d.Data.Products || {}
+                    for(var i = 0,len=productInfos.length;i<len;i++){
+                        content += complie(tpl,productInfos[i]);
+                    }
+                    $('.group-list').append(content);
+                }else{
+                    alert('商品加载失败');
+                }
+             }
+             $.ajax({
+                dataType: "jsonp",
+                url:'http://api.evt.ymatou.com/ActivityTemplate/Products/aid_' + aid + "/pid_" + pid + "/ps_" + 10,
+                success: function (d) {
+                    render(d);
+                }
+             })*/
+             $(document).on('click','.J-buy',function(){
+                    var productId = $(this).attr('data-productId'),productInfo,buyerInfo;
+                    if(!productId){
+                        return;
+                    }
+                    var buy = function(){
+                        var data = {
+                            sellerId: productInfo.SellerId,
+                            sellerName: buyerInfo.SellerName,
+                            CatalogId: productInfo.Catalogs[0].CatalogId,
+                            ProductNumber :productInfo.ProductNumber || 1
+                        }
+                        $.ajax({
+                            type:'post',
+                            url:YmtApiUtils.addAuth('/forymatouapp/orders/directBuy'),
+                            data:JSON.stringify(data),
+                            contentType:'application/json',
+                            success:function(result){
+                                if(result.Code == 200){
+                                    window.location.href=YmtApiUtils.addAuth("/forYmatouApp/orders?title=确认订单&needJumpFlag=1")
+                                }else if(result.Code == 600){
+                                    YmtApi.toLogin();
+                                }else{
+                                    alert(result.Msg)
+                                }
+                            }
+                        });
+                    }
+                    //productId = '0633e9bf-c7cf-482f-9c72-813910541c4e';
+
+                    $.ajax({
+                        type:'get',
+                        url:YmtApiUtils.addAuth('/forYmatouApp/product/' + productId + '/detail'),
+                        success:function(result){
+                            if(result.Code == 200){   
+                                productInfo = result.Data; 
+                                if(!productInfo){
+                                    alert('获取商品信息失败')
+                                    return;
+                                }                  
+                                $.ajax({
+                                    type:'get',
+                                    url:'/api/buyerInfo/'+productInfo.SellerId,
+                                    success:function(result){
+                                        if(result.Code == 200){
+                                            buyerInfo = result.Data;
+                                            buy();
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    })
+                    
+                });
+        })
+    </script>
+    <script>
+    (function(root){
+        'use strict';
+        /*var opts; 
+        if(attrs.lazyCfg){
+            opts = (new Function("return" + attrs.lazyCfg))();
+
+            if(opts.isFade){
+                elem.css("opacity",0);
+            }
+        }*/
+
+        var lazyLoad = {};
+
+        var callback = function () {};
+
+        var offset, poll, throttle, unload;
+        /**
+         *
+         * @param  {element} element 图片对象
+         * @param  {object}  view 视图及页面显示部分
+         * @return {Boolean} 是否在视图中
+         */
+        var inView = function (element, view) {
+            var box = element.getBoundingClientRect();
+            return !(box.right >= view.r && box.left <= 0 && box.top <= 0 && box.bottom > view.b);
+        };
+
+        var debounce = function () {
+            clearTimeout(poll);
+            poll = setTimeout(lazyLoad.render, throttle);
+        };
+
+        lazyLoad.init = function (opts) {
+            opts = opts || {};
+            var offsetAll = opts.offset || 0;
+            var offsetVertical = opts.offsetVertical || offsetAll;
+            var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+            var optionToInt = function (opt, fallback) {
+                return parseInt(opt || fallback, 10);
+            };
+            offset = {
+                t: optionToInt(opts.offsetTop, offsetVertical),
+                b: optionToInt(opts.offsetBottom, offsetVertical),
+                l: optionToInt(opts.offsetLeft, offsetHorizontal),
+                r: optionToInt(opts.offsetRight, offsetHorizontal)
+            };
+            throttle = optionToInt(opts.throttle, 250);
+            unload = !!opts.unload;
+            callback = opts.callback || callback;
+            lazyLoad.render();
+            if (document.addEventListener) {
+                /*root.addEventListener('scroll', debounce, false);
+                root.addEventListener('touchstart', debounce, false);
+                root.addEventListener('load', debounce, false);*/
+                $(root).on('scroll', debounce)
+                    .on('touchstart', debounce)
+                    .on('load', debounce);
+            }
+            /* else {//去掉ie的兼容
+                                root.attachEvent('onscroll', debounce);
+                                root.attachEvent('onload', debounce);
+                            }*/
+        };
+
+        lazyLoad.render = function () {
+            var nodes = document.querySelectorAll('img[lazy-load]');
+            var length = nodes.length;
+            var src, elem;
+            var view = {
+                l: (root.pageXOffset || document.documentElement.scrollLeft) - offset.l,
+                t: (root.pageYOffset || document.documentElement.scrollTop) - offset.t,
+                b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+                r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+            };
+            var loadError = function(){
+                elem.removeEventListener('error');
+                elem.removeEventListener('load');
+                this.src = 'data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==';
+                
+            }
+            for (var i = 0; i < length; i++) {
+                elem = nodes[i];
+                if (inView(elem, view)) {
+                    if (unload) {
+                        elem.setAttribute('lazy-load-placeholder', elem.src);
+                    }
+                    src = elem.getAttribute('lazy-load');
+                    if (/{{/.test(src)) {
+                        return;
+                    }
+                    elem.src = src;
+
+                    if (!unload) {
+                        elem.removeAttribute('lazy-load');
+                    }
+                    elem.addEventListener('load', function () {
+                        callback(this, 'load');
+                    })
+                    elem.addEventListener('error',loadError);   
+                }
+                else if (unload && !!(src = elem.getAttribute('lazy-load-placeholder'))) {
+                    elem.src = src;
+                    elem.removeAttribute('lazy-load-placeholder');
+                    //callback(elem, 'unload');
+                    elem.addEventListener('load', function () {
+                        callback(this, 'unload');
+                    })
+                    elem.addEventListener('error',loadError);;
+                }
+            }
+            /*if (!length) {
+                lazyLoad.detach();
+            }*/
+        };
+
+        lazyLoad.detach = function () {
+            if (document.removeEventListener) {
+                $(root).off('scroll')
+                    .off('touchstart');
+            }
+            /* else {
+                                root.detachEvent('onscroll', debounce);
+                            }*/
+            clearTimeout(poll);
+        };
+
+        lazyLoad.init({
+            throttle: 250,
+            unload: false,
+            offset: 250,
+            callback: function (element) {
+               
+            }
+        });
+    })(this);
+    </script>
+</body>
+</html>

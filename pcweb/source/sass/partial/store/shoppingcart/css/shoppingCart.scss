@@ -1,0 +1,109 @@
+.address_new {
+	width: 800px;
+	position: absolute;
+}
+.address_new .alert_box_inner .address {
+	padding: 1px 10px;
+	margin-bottom: 10px;
+}
+.address_new .alert_box_inner .address .address_item {
+	display: block;
+	cursor: pointer;
+}
+.padbox {
+	padding: 16px 0 8px;
+}
+.order_box {
+	width: 898px;
+	margin: 20px 0;
+}
+.product_name_img {
+	width: 238px;
+	height: 60px;
+}
+.product_name_img .product_img, .product_name_img .product_img img {
+	width: 60px;
+	height: 60px;
+	float: left;
+	vertical-align: text-top;
+}
+.product_name_img .product_name {
+	float: left;
+	width: 150px;
+	margin-left: 8px;
+}
+.bcption .icon {
+	background-position: -159px -205px;
+	height: 19px;
+	width: 20px;
+	float: left;
+}
+.product_num {
+	text-align: center;
+	margin: 0 auto;
+}
+.product_url {
+	width: 170px;
+	margin: 0 auto;
+}
+.product_des {
+	float: left;
+	margin: 0 auto 0 20px;
+}
+.product_del {
+	width: 40px;
+}
+.product_foot {
+	text-align: left;
+}
+.product_foot .address_text {
+	width: 510px;
+	float: left;
+}
+.product_foot .address_text label {
+	float: left;
+	margin-top: 10px;
+}
+.product_foot .address_text_con {
+	width: 400px;
+	float: left;
+	height: 40px;
+	line-height: 20px;
+}
+.product_foot .address_other_btn {
+	float: left;
+	margin-top: 4px;
+}
+.product_total_price {
+	float: right;
+}
+.product_num {
+	width: 76px;
+	margin: 0 auto;
+}
+.address_box {
+	padding: 30px 0;
+}
+.settlement {
+	height: 42px;
+	background: url(/content/images/b_b.png) repeat-x bottom;
+	line-height: 42px;
+	border: 1px solid #efefef;
+}
+.settlement .rackage {
+	float: right;
+	line-height: 36px;
+}
+.settlement .checkout {
+	float: right;
+	padding: 0 14px;
+	background-color: #ED4D00;
+	text-align: center;
+}
+.settlement .checkout a {
+	color: #fff;
+}
+.sendmessage {
+	width: 160px;
+	margin-top: 6px;
+}

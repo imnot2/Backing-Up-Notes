@@ -1,0 +1,72 @@
+@import "compass/css3";
+
+.ymt-c2c-dialog {
+	width: 380px;
+	height: 210px;
+	display: none;
+	@include border-radius(10px);
+	background: #fff;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1001;
+
+	.ymt-c2c-title {
+		height: 70px;
+		text-align: center;
+		font: 500 20px/70px 'microsoft yahei';
+		border-bottom: 1px solid $grey13;
+		position: relative;
+	}
+	.ymt-c2c-close {
+		position: absolute;
+		height: 18px;
+		width: 20px;
+		font-size: 18px;
+		top : 50%;
+		margin-top:-9px;
+		right: 12px;
+		cursor: pointer;
+	}
+	.ymt-c2c-dialog-body {
+		height: 140px;
+		line-height: 140px;
+	}
+	.ymt-c2c-dialog-content {
+		@include inline-block;
+		font: 500 18px/50px "microsoft yahei";
+		text-align: center;
+		margin: 20px 0 0 20px;
+		overflow: auto;
+	}
+	.ymt-c2c-dialog-footer {
+		height: 70px;
+		line-height: 70px;
+		background: #e5e5e5;
+		text-align: center;
+		position: relative;
+	}
+	.ymt-c2c-dialog-btn {
+		height: 35px;
+		font: 500 16px/35px "microsoft yahei";
+		width: 125px;
+		text-align: center;
+		@include border-radius(6px);
+		background: #dd3333;
+		@include inline-block;
+		vertical-align: middle;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+#c2c-mask {
+	background: #000;
+	@include opacity(0.7);
+	position: fixed;
+	display: none;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+}

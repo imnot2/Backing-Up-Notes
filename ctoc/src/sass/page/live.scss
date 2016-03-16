@@ -1,0 +1,773 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+@import "utils/user-tutorial";
+
+//直播大banner部分
+//
+.sq_banner {
+    background-color: $black;
+    height: 328px;
+    margin-bottom: 0;
+    position: relative;
+
+    //v1.0.1
+
+    .sq_banner_link{
+        display: block;
+        height: 328px;
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        z-index: 996;
+    }
+    .l_seller{
+        display: block;
+        float: left;
+        width: 165px;
+        overflow: hidden;
+        height: 328px;
+        background-color:#a1368e;
+
+        img {
+            width: 100%;
+            height: initial !important;
+        }
+
+        .ls_avatar{
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            border:2px solid #fff;
+            margin-top: 50px;
+            &,img{
+                border-radius: 25em;
+            }
+        }
+        .ls_name{
+            display: block;
+            padding:0 35px;
+            text-align: center;
+            font-size:16px;
+            margin-top: 10px;
+            color:#fff;
+        }
+        .ls_local{
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            overflow: hidden;
+
+            .lsl_flag{
+                display:inline-block;
+                width: 20px;
+                height: 20px;
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .lsl_txt{
+                display: inline-block;
+                line-height: 23px;
+                height: 20px;
+                color:#fff;
+                font-size:14px;
+                vertical-align: middle;
+
+            }
+        }
+    }
+
+    .l_info{
+        display: block;
+        float: left;
+        width: 255px;
+        height: 328px;
+        padding-left:20px;
+        padding-right:85px;
+        background-color: #000;
+        color:#fff;
+        position: relative;
+        overflow: hidden;
+
+        .li_fix{
+            display: block;
+            width: 0;
+            height:0;
+            position: absolute;
+            right: 0;
+            top:-328px;
+            border-color:#fff;
+            border-style: solid;
+            border-width: 328px;
+            border-right-color:transparent;
+            border-left-color:transparent;
+            border-top-color:transparent;
+            border-right-width:0;
+            border-left-width:140px;
+            z-index: 99;
+        }
+
+        .live_img_alpha{
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top:0;
+            left:0;
+
+            z-index: 98;
+
+            img{
+                width: 100%;
+                filter: alpha(opacity = 30);
+                            -moz-opacity: 0.3;
+                            opacity: 0.3;
+            }
+        }
+
+        .li_cent{
+
+            position: relative;
+            z-index: 100;
+            display: block;
+            margin-top: 40px;
+            height: 120px;
+            overflow: hidden;
+            border-bottom: 1px solid #444;
+
+            .icon{
+                display: inline-block;
+                float: left;
+                font-size:35px;
+                vertical-align: top;
+                height: 120px;
+                 margin-right:5px;
+            }
+            h4{
+                font-size: 18px;
+            }
+            p{
+                margin-top: 5px;
+                color:#999;
+            }
+        }
+
+        .li_type{
+            position: relative;
+            z-index: 100;
+            display: block;
+            overflow: hidden;
+            padding-top:16px;
+
+            .lit_tag,.lit_type{
+                display: block;
+                overflow: hidden;
+                color:#999;
+                padding-top: 5px;
+            }
+            .lit_tag li,.lit_type li{
+                display: block;
+                overflow: hidden;
+                float: left;
+                margin-right: 5px;
+            }
+            .lit_tag{
+
+            }
+
+            .lit_type{
+
+            }
+        }
+    }
+
+    .l_des{
+        display: block;
+        float: left;
+        overflow: hidden;
+        width: 665px;
+        height: 328px;
+        background-color: #fff;
+
+        .ld_content{
+            display: block;
+            height: 100px;
+            font-size: 20px;
+            margin-top: 40px;
+            padding-right: 35px;
+        }
+        .ld_product{
+            display: block;
+            height: 120px;
+            margin-top: 25px;
+            li{
+                float: left;
+                display: block;
+                height: 120px;
+                width: 120px;
+                margin-right: 15px;
+                background-color: #eee;
+                .ldp_pic{
+                    display: block;
+                    position: relative;
+                    width: 120px;
+                    height: 120px;
+                    border-radius:4px;
+
+                    .ldpp_price{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        color:#fff;
+                        z-index: 9;
+                        text-align: center;
+                    }
+                    .ldpp_bg{
+                        display: block;
+                        position: absolute;
+                        bottom:0;
+                        left:0;
+                        width: 100%;
+                        height: 30px;
+                        background-color: #000;
+                        filter: alpha(opacity = 80);
+                        -moz-opacity: 0.8;
+                        opacity: 0.8;
+                        border-radius: 0 0 4px 4px;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: initial !important;
+                        border-radius:4px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //old
+    .images {
+        &, & .item {
+            height: 328px;
+        }
+    }
+    .area {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        width: 1190px;
+        height: 328px;
+    }
+    .focus-images {
+        img {
+            height: 328px;
+        }
+    }
+    .wy-slide-nav {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        z-index: 3;
+        li {
+            float: left;
+            display: block;
+            margin: 4px;
+            border-radius: 25em;
+            width: 10px;
+            height: 10px;
+            margin: 0px 5px;
+            background: #999;
+            overflow: hidden;
+            line-height: 200px;
+        }
+        .current {
+
+            background-color: #DD3333;
+        }
+    }
+}
+
+//直播国家切换
+.sq_live_tab {
+    height: 40px;
+    border-bottom: 1px solid $grey20;
+    background-color: $gray4;
+
+    //old
+    .slt_list {
+        li {
+            float: left;
+            display: block;
+            width: 236px;
+            height: 40px;
+            line-height: 40px;
+            border-left: 1px solid $grey20;
+            text-align: center;
+            position: relative;
+            color: #666;
+            cursor: pointer;
+            &:last-child {
+                border-right: 1px solid $grey20;
+            }
+        }
+        .active {
+            background-color: $white;
+            padding-bottom: 1px;
+            cursor: text;
+        }
+    }
+}
+
+//当前直播数量与国家
+.live_info {
+    height: 40px;
+    line-height: 40px;
+    color: $grey60;
+    .count {
+        margin: 0 2px;
+    }
+    .country {
+        color: $highRad;
+        margin: 0 4px;
+    }
+}
+
+//直播列表
+.sq_live_list {
+    margin-bottom: 70px;
+    background-image: url("/images/live/linem.png");
+    background-repeat: repeat-x;
+    .sql_list {
+        .sql_i_list {
+            position: relative;
+            //直播详情列表时间
+            .sql_time {
+                position: absolute;
+                left: 0;
+                top: -29px;
+                width: 1190px;
+                height: 60px;
+                .time_list {
+                    display: block;
+                    height: 60px;
+                    overflow: hidden;
+                    li {
+                        display: block;
+                        float: left;
+                        width: 396px;
+                        height: 45px;
+                        padding-top: 15px;
+                        font-family: "宋体";
+                        .clock {
+                            display: block;
+                            margin: 0 auto;
+                            height: 25px;
+                            padding-bottom: 5px;
+                            color: #fff;
+                            //text-align: right;
+                            line-height: 25px;
+                            @include clearfix;
+                            span {
+                                display: inline-block;
+                                padding: 0 4px 0 3px;
+                            }
+                        }
+                        .s1 {
+                            width: 61px;
+                            padding-left: 59px;
+                            .c1 {
+                                //padding-right: 6px;
+                           
+                            }
+                            .c2 {
+                                //padding-right: 12px;
+                           
+                            }
+                            .c3 {
+                                //padding-right: 6px;
+                                margin-left: 4px;
+                            }
+                            .c4 {
+                                //padding-right: 9px;
+                           
+                            }
+                            color: $highRad;
+                            background-image: url("/images/live/timeoutStyle1.png");
+                        }
+                        .s2 {
+                            width: 77px;
+                            padding-left: 43px;
+                            // .c1 {
+                            //     padding-right: 6px;
+                            // }
+                            // .c2 {
+                            //     padding-right: 12px;
+                            // }
+                            .c3 {
+                                //     padding-right: 6px;
+                                margin-left: 4px;
+                            }
+                            // .c4 {
+                            //     padding-right: 26px;
+                            // }
+                            color: $white;
+                            background-image: url("/images/live/timeoutStyle2.png");
+                        }
+                    }
+                }
+            }
+            .linetop {
+                background-image: url("/images/live/lineTop.png");
+            }
+            .linebottom_r {
+                background-image: url("/images/live/lineBottom.png");
+                background-repeat: no-repeat;
+                background-position: right;
+                top: -1px;
+            }
+            .linebottom_l {
+                background-image: url("/images/live/lineBottomLeft.png");
+                background-repeat: no-repeat;
+                background-position: left;
+                top: -1px;
+            }
+            .line_s1 {
+                background-image: url("/images/live/lines1.png");
+            }
+            .line_s2 {
+                background-image: url("/images/live/lines2.png");
+            }
+            //直播详情列表
+            .sql_content {
+                display: block;
+                overflow: hidden;
+                padding: 20px;
+                padding-top: 0;
+                margin-top: 28px;
+                .cli {
+                    display: block;
+                    width: 1px * 1190 / 3 - 31 - 40 / 3;
+                    padding: 15px;
+                    padding-top: 34px;
+                    height: 358px;
+                    float: left;
+                    border-right: 1px solid $grey20;
+                    border-bottom: 1px solid $grey20;
+                    background: $white;
+                    overflow: hidden;
+                    .productLinkBox {
+                        height: 60px;
+                        display: block;
+                        overflow: hidden;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    span {
+                        display: block;
+                    }
+                    .cli_local {
+                        height: 60px;
+                        color: $white;
+                        background-color: $black;
+                        border-radius: 4px;
+                        position: relative;
+                        overflow: hidden;
+
+                     
+
+
+                        h5 {
+                            padding-top: 12px;
+                            position: relative;
+                            z-index: 1;
+                            height: 20px;
+                            overflow: hidden;
+                            width: 280px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-size: 14px;
+                        }
+                        p {
+                            color: #999;
+                            position: relative;
+                            z-index: 1;
+                            height: 20px;
+                            overflow: hidden;
+                            width: 280px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .icon {
+                            float: left;
+                            font-size: 18px;
+                            margin: 0 15px;
+                            margin-right: 10px;
+                            padding-top: 15px;
+                            height: 45px;
+                            position: relative;
+                            z-index: 1;
+                        }
+                        img {
+                            position: absolute;
+                            z-index: 0;
+                            bottom: 0;
+                            left: 0;
+                            filter: alpha(opacity = 30);
+                            -moz-opacity: 0.3;
+                            opacity: 0.3;
+                        }
+                    }
+                    .cli_seller {
+                        position: relative;
+                        height: 70px;
+
+                        .cli_tip{
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            font-size: 0;
+                            left: 24px;
+                            bottom: 0;
+                            border-color:#000;
+                            border-style: solid;
+                            border-width: 6px;
+                            border-left-color: transparent;
+                            border-top-color: transparent;
+                            border-right-color: transparent;
+                        }
+
+
+                        .seller_info {
+                            float: left;
+                            width: 250px;
+                            padding-top: 6px;
+                            .seller_avatar, .seller_avatar img {
+                                float: left;
+                                width: 45px;
+                                height: 45px;
+                                border: 1px solid $grey20;
+                                border-radius: 100%;
+                            }
+                            .seller_avatar {
+                                float: left;
+                                margin: 7px;
+                                border: 1px solid #e5e5e5;
+                            }
+                            .seller_name {
+                                padding-top: 10px;
+                                h5 {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    color: $highRad;
+                                }
+                                p {
+                                    color: $grey40;
+                                    line-height: 16px;
+                                }
+                                .country_logo {
+                                    margin-right: 3px;
+                                }
+                                .country_logo, .country_logo img {
+                                    float: left;
+                                    width: 15px;
+                                    height: 15px;
+                                    vertical-align: middle;
+                                    border-radius: 25em;
+                                }
+                            }
+                        }
+                        .follow_seller {
+                            float: right;
+                            padding: 20px 15px 0 0;
+                            .txt {
+                                display: inline-block;
+                            }
+                        }
+                    }
+
+                    .live_desAndLink{
+                        display: inline-block;
+                        overflow: hidden;
+
+                        .cli_des {
+                            float: left;
+                            display: block;
+                            width: 230px;
+                            height: 30px;
+                            padding: 10px 9px;
+                            font-size: 12px;
+                            color: $black;
+                        }
+                        .link_btn{
+                            float: right;
+                            display: block;
+                            width:100px;
+                            height: 50px;
+                            font-size: 12px;
+                            color: $black;
+                            line-height: 50px;
+                            text-align: right;
+
+                            .icon{
+                                font-size: 28px;
+                                vertical-align: middle;
+                                width: 15px;
+                                margin-left: -5px;
+                            }
+
+                        }
+
+                    }
+                    
+                    .live_tab_type{
+                        display: block;
+                        height: 60px;
+                        background-color:#f6f6f6;
+                        padding:0 10px;
+
+
+                        .lt_tab,.lt_type{
+                            display: block;
+                            overflow: hidden;
+                            padding:0 5px;
+                            height: 30px;
+
+                        }
+                        .lt_tab li,.lt_type li{
+                            float: left;
+                            height: 29px;
+                            line-height: 29px;
+                            margin-right:5px;
+                            color:#999;
+                        }
+                        .lt_tab{
+                            display: block;
+                            height: 29px;
+                            border-bottom: 1px solid #ddd;
+                        }
+                        .lt_type{
+                            .icon{
+                                float: left;
+                                line-height: 29px;
+                                vertical-align: middle;
+                                margin-right: 2px;
+                            }
+                            .txt{
+                                float: left
+                            }
+                        }
+
+                    }
+
+                    .cli_product {
+                        ol {
+                            li {
+                                display: block;
+                                float: left;
+                                width: (1px * 1190 / 3 - 31 - 40 / 3) / 3 - 12;
+                                margin: 5px 4px 5px 5px;
+                                *margin: 2px;
+                                background: #eee;
+                                overflow: hidden;
+                                border-radius: 4px;
+                                position: relative;
+                                border: 1px solid #e5e5e5;
+                                img {
+                                    width: 100%;
+                                    border-radius: 4px;
+                                }
+                                .txt {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 26px;
+                                    line-height: 26px;
+                                    left: 5px;
+                                    bottom: 0;
+                                    color: $white;
+                                    z-index: 2;
+                                    text-align: center;
+                                }
+                                .bg {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    display: block;
+                                    width: 100%;
+                                    height: 26px;
+                                    z-index: 1;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .line_right {
+                background-image: url("/images/live/liney.png");
+                background-repeat: repeat-y;
+                background-position: right;
+            }
+            .line_left {
+                background-image: url("/images/live/liney.png");
+                background-repeat: repeat-y;
+                background-position: left;
+            }
+        }
+    }
+}
+
+.end_txt {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+//没有直播内容
+.sq_nodata {
+    display: none;
+    height: 460px;
+    width: 948px;
+    margin: 0 auto;
+    background-image: url("/images/live/empty.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sq_loaddate {
+    display: block;
+    height: 60px;
+    width: 50px;
+    margin: 0 auto;
+    background-image: url("/images/system/load.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $white;
+    border-radius: 25em;
+}
+
+//首页网站logo修改
+.gb-header .logo {
+    background: url(/images/sprites/logo-new.png);
+    width: 310px;
+}

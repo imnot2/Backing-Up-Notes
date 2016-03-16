@@ -1,0 +1,542 @@
+﻿/*=======================admin-style.css===========================*/
+div.send_type {
+    width: 500px;
+    height: 180px;
+    margin-top: 80px;
+    margin-left: 100px;
+    border: 1px solid #C4CCC9;
+}
+.send_type .send_type_tips {
+    width: 100%;
+    height: 15px;
+    margin: 20px;
+    font-size: 18px;
+}
+.send_type input {
+    width: 130px;
+    height: 60px;
+    margin: 8px 30px;
+}
+.send_type .button {
+    width: 400px;
+    height: 100px;
+    padding: 15px 20px;
+    margin-left: 40px;
+}
+.batch_param {
+    width: 600px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+    border: 1px solid #C4CCC9;
+}
+.batch_param .batch_title {
+    width: auto;
+    height: 20px;
+    margin: 3px auto 3px 5px;
+}
+.batch_param .batch_title span {
+    font-size: 14px;
+    color: #F30;
+    font-weight: bold;
+}
+.batch_param .batch_param_row {
+    margin: 20px auto 20px 50px;
+    width: auto;
+    height: 25px;
+    padding: auto auto;
+}
+.batch_param .batch_param_row .batch_param_name {
+    margin-right: 20px;
+}
+.batch_param .batch_param_row p {
+    color: #A4A4A4;
+}
+.batch_param .batch_param_btn {
+    margin: 20px auto 20px 50px;
+    height: 50px;
+    padding: auto 1px;
+}
+.batch_param .batch_param_btn input {
+    width: 150px;
+    height: 35px;
+}
+.batch_param .batch_msg {
+    color: Red;
+    margin: 15px auto 0px 50px;
+    font-size: 13px;
+}
+div.coupon_setting {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+    border: 1px solid #C4CCC9;
+    padding: 18px;
+    display: inline-block;
+}
+.coupon_setting .use_type {
+    width: auto;
+    height: 20px;
+    margin-top: 10px;
+    padding-left: 70px;
+    border-bottom: 1px dashed #C4CCC9;
+}
+.coupon_setting .setting_row {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.coupon_setting .common_type {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+.coupon_setting .common_type .common_type_condition {
+    margin-top: 10px;
+}
+.coupon_setting .title {
+    width: 60px;
+    padding-left: auto;
+    padding-right: 5px;
+    text-align: right;
+    display: inline-block;
+}
+.coupon_setting .common_setting {
+    width: 520px;
+    height: auto;
+    border: 1px solid #C4CCC9;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.coupon_setting .value_setting {
+    width: 520px;
+    height: auto;
+    border: 1px solid #C4CCC9;
+    padding: 5px;
+}
+.coupon_setting .btn input {
+    margin: 0px 20px;
+    width: 100px;
+    height: 30px;
+}
+.coupon_setting a {
+    color: Blue;
+}
+.coupon_setting .mutil_type table {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-color: White;
+}
+.coupon_setting .mutil_type table tbody {
+    border-color: White;
+}
+.coupon_setting .mutil_type_title th {
+    background-color: #ADADAD;
+    text-align: center;
+    color: White;
+}
+.coupon_setting .mutil_type .mutil_table td {
+    text-align: center;
+}
+.coupon_setting .mutil_type .mutil_table input {
+    margin: 2px;
+}
+.coupon_setting .mutil_type span {
+    margin-left: 15px;
+    margin-top: 5px;
+    display: inline-block;
+}
+span.error_msg {
+    font-size: 14px;
+    color: Red;
+}
+.complete_batch {
+    width: 650px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+    border: 1px solid #C4CCC9;
+}
+.complete_batch .title {
+    height: 30px;
+    color: #FF0000;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+.complete_batch .list {
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+}
+.complete_batch .download {
+    margin: 10px 5px 15px auto;
+    width: 90px;
+}
+.complete_batch .download a {
+    color: #0000FF;
+}
+.complete_batch .link {
+    margin: 30px auto 30px 30px;
+}
+.complete_batch .link span {
+    display: block;
+}
+.complete_batch #link_title {
+    font-size: 13px;
+}
+.complete_batch #link_address {
+    font-size: 14px;
+    color: #0000FF;
+}
+#coupon_scenario {
+    width: 750px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+}
+#coupon_scenario .current {
+    color: Red;
+}
+#coupon_scenario .type {
+    width: 600px;
+    margin: 20px auto;
+    width: 100%;
+}
+#coupon_scenario .type span {
+    margin: auto 30px;
+}
+#coupon_scenario .alltype {
+    margin: 30px auto 30px 0px;
+}
+#coupon_scenario .alltype span {
+    margin: 10px 20px;
+    display: inline-block;
+}
+#coupon_scenario .alltype .blank {
+    margin-left: 54px;
+}
+#coupon_scenario .btn {
+    width: 45px;
+    height: 22px;
+    margin: 10px 50px 10px auto;
+}
+#coupon_scenario .btn input {
+    width: 70px;
+    height: 28px;
+    font-size: 14px;
+}
+#coupon_scenario .categoriestype {
+    margin: 20px auto;
+}
+#coupon_scenario .categoriestype table span {
+    margin: 3px;
+}
+#coupon_scenario .item {
+    margin-top: 20px;
+}
+#coupon_scenario .item span {
+    margin: 6px 10px;
+    display: inline-block;
+}
+#coupon_scenario .type_content .msg {
+    color: #ff0000;
+}
+#coupon_scenario #type_sellers {
+    margin: 20px auto;
+    width: 300px;
+}
+#coupon_scenario .type_content .input {
+    width: auto;
+    height: 25px;
+}
+#coupon_scenario .type_content .input .title {
+    margin-right: 20px;
+}
+#coupon_scenario #type_sellers .input .input_text {
+    width: 150px;
+    height: 18px;
+}
+#coupon_scenario .type_content .input .input_button {
+    width: 60px;
+    height: 22px;
+    margin-left: 5px;
+}
+#coupon_scenario #type_sellers .order_tool {
+    margin: 30px 10px 0px 180px;
+    width: 120px;
+}
+#coupon_scenario .list_table {
+    border-color: #FFFFFF;
+    text-align: center;
+}
+#coupon_scenario .list_table th {
+    background-color: #ADADAD;
+    color: #000;
+    border-color: #FFFFFF;
+    text-align: center;
+}
+#coupon_scenario #type_sellers th {
+    width: 150px;
+}
+#coupon_scenario .list_table td {
+    text-align: center;
+    border-color: #FFFFFF;
+}
+#coupon_scenario .list_table td a {
+    color: #0000FF;
+}
+#coupon_scenario div.title {
+    display: inline-block;
+    font-weight: bolder;
+    margin-left: 20px;
+    text-align: right;
+}
+#coupon_scenario .width107 {
+    width: 107px;
+}
+#coupon_scenario .width60 {
+    width: 60px;
+}
+#coupon_scenario .top {
+    vertical-align: top;
+}
+#coupon_scenario hr.dashed {
+    border: dashed;
+    border-width: 1px;
+}
+#coupon_scenario .select_all {
+    color: #0000FF;
+    font-weight: bold;
+}
+#coupon_scenario #type_products {
+    width: 450px;
+    margin: 20px auto;
+}
+#coupon_scenario #type_products .input .input_text {
+    width: 280px;
+    height: 18px;
+}
+#batch_list {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#batch_list table th {
+    background-color: #ADADAD;
+    color: #000;
+}
+#batch_list a {
+    color: #0000FF;
+}
+#batch_detail {
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: auto;
+    width: 600px;
+    height: 180px;
+}
+#batch_detail a {
+    color: #0000ff;
+}
+#batch_detail .operation {
+    margin: 20px;
+}
+#batch_detail .operation span {
+    margin: 15px;
+    font-size: 14px;
+}
+#batch_info {
+    border: 1px solid #C4CCC9;
+    height: 140px;
+    padding: 10px;
+    height: auto;
+}
+#batch_info table tr {
+    height: 23px;
+}
+#batch_info table td.title {
+    text-align: right;
+    font-weight: bold;
+}
+#batch_info table td.value {
+    text-align: left;
+}
+#link_content {
+    float: none;
+    clear: both;
+    height: auto;
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+    border-top: 1px dashed #C4CCC9;
+    margin-top: 15px;
+}
+#batch_detail #batch_detail_left {
+    width: 300px;
+    height: auto;
+    float: left;
+    display: inline-block;
+}
+#batch_detail #batch_detail_right table {
+    margin-left: 30px;
+}
+#list {
+    float: none;
+    clear: both;
+    margin-top: 20px;
+}
+#list table {
+    border-color: #fff;
+}
+#list table tr {
+    width: auto;
+    padding: 2px;
+}
+#list table th {
+    background-color: #ADADAD;
+}
+#list table td {
+    padding: 2px;
+}
+#coupon_search {
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: auto;
+    width: 650px;
+    height: 180px;
+}
+#coupon_search .tip {
+    width: 120px;
+    height: 25px;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px auto 10px 0px;
+}
+#coupon_search a {
+    color: #0000ff;
+}
+#coupon_search #search {
+    margin-left: 50px;
+}
+#coupon_search #search span {
+    margin-left: 25px;
+}
+#coupon_search #submit input {
+    width: 60px;
+    height: 25px;
+}
+#coupon_search #base_info {
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+    margin: 5px;
+}
+#coupon_search #base_info table .title {
+    font-weight: bold;
+    text-align: right;
+    color: #000;
+}
+#coupon_search #base_info table tr {
+    height: 18px;
+}
+#coupon_search #base_info table td {
+    height: 25px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+#coupon_search #use_info {
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+#coupon_search #use_info .title {
+    width: auto;
+    margin: 5px auto;
+    font-weight: bold;
+    color: #000;
+}
+#coupon_search #use_info table {
+    border-color: #fff;
+    width: 550px;
+    margin: 5px auto;
+}
+#coupon_search #use_info table th {
+    background-color: #ADADAD;
+    color: #fff;
+}
+.coupon_search {
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: auto;
+    width: 650px;
+    height: 180px;
+}
+.coupon_search .tip {
+    width: 120px;
+    height: 25px;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px auto 10px 0px;
+}
+.coupon_search a {
+    color: #0000ff;
+}
+.coupon_search #search {
+    margin-left: 50px;
+}
+.coupon_search #search span {
+    margin-left: 25px;
+}
+.coupon_search .ssubmit input {
+    width: 60px;
+    height: 25px;
+}
+.coupon_search #base_info {
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+    margin: 5px;
+}
+.coupon_search #base_info table .title {
+    font-weight: bold;
+    text-align: right;
+    color: #000;
+}
+.coupon_search #base_info table tr {
+    height: 18px;
+}
+.coupon_search #base_info table td {
+    height: 25px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+.coupon_search #use_info {
+    border: 1px solid #C4CCC9;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.coupon_search #use_info .title {
+    width: auto;
+    margin: 5px auto;
+    font-weight: bold;
+    color: #000;
+}
+.coupon_search #use_info table {
+    border-color: #fff;
+    width: 550px;
+    margin: 5px auto;
+}
+.coupon_search #use_info table th {
+    background-color: #ADADAD;
+    color: #fff;
+}

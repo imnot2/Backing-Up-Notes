@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+* 图片查看功能
+*/
+.image-figure{//图片展示遮罩
+	z-index:100;
+	background: rgba(0, 0, 0, .88);
+	position:fixed;
+	width:100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	display:none;
+}
+.image-figure-area{
+	z-index:101;
+	position:relative;
+}
+.image-figure-wrap{
+	position:absolute;
+	top: 0;
+	left: 0;
+}

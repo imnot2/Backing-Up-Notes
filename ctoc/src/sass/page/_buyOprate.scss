@@ -1,0 +1,33 @@
+@import "lib/variables";
+
+.buyOprateBox {
+    position: relative;
+    .aboutPrice {
+        .priceTip {
+            color: $grey60;
+        }
+        .priceNumber {
+            color: $highRad;
+            font-size: 30px;
+        }
+    }
+    .buyBox {
+        width: 120px;
+        .buyBtn {
+            margin-top: 26px;
+            padding: 0 20px;
+            background-color: $highRad;
+            color: $white;
+            font-size: 16px;
+            line-height: 35px;
+            text-decoration: none;
+            border-radius: 3px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}

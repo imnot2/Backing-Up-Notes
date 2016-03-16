@@ -1,0 +1,37 @@
+<%=include ../global/header.html%>
+<section class="container" 1ng-controller="couponController">
+	<% if(data.ActivatedCoupons && data.ActivatedCoupons.length>0){ %>
+	<ul class="coupon-wrap">
+		<% for(var i=0,len=data.ActivatedCoupons.length;i<len;i++){%>
+		<li>
+			<span class="img-<%= data.ActivatedCoupons[i].UseType == 1 ? "manjian" : "manfan" %>"></span>
+			<div>
+				<p><strong>满&nbsp;<%= data.ActivatedCoupons[i].CouponOrderValue %>&nbsp;<%= data.ActivatedCoupons[i].UseType == 1 ? "减" : "返" %>&nbsp;<%= data.ActivatedCoupons[i].CouponValue %></strong><small><%= data.ActivatedCoupons[i].CouponCode %></small></p>
+				<p class="valid-date">有效期至<%= format(data.ActivatedCoupons[i].ValidEnd) %></p>
+				<p>本券可用于&nbsp;<%= data.ActivatedCoupons[i].Platforms %></p>
+			</div>
+		</li>
+		<%}%>
+	</ul>
+	<% } if(data.UnactivatedCoupons && data.UnactivatedCoupons.length>0){ %>
+	<p class="no-effect">
+		尚未生效的优惠券<em class="icon icon-little-arrow"></em>
+	</p>
+	<ul class="coupon-wrap">
+		<% for(var i=0,len=data.UnactivatedCoupons.length;i<len;i++){%>
+		<li>
+			<span class="img-<%= data.UnactivatedCoupons[i].UseType == 1 ? "manjian" : "manfan" %>"></span>
+			<div>
+				<p><strong>满&nbsp;<%= data.UnactivatedCoupons[i].CouponOrderValue %>&nbsp;<%= data.UnactivatedCoupons[i].UseType == 1 ? "减" : "返" %>&nbsp;<%= data.UnactivatedCoupons[i].CouponValue %></strong><small><%= data.UnactivatedCoupons[i].CouponCode %></small></p>
+				<p class="valid-date">生效日期<%= format(data.UnactivatedCoupons[i].ValidStart) %></p>
+				<p>本券可用于&nbsp;<%= data.UnactivatedCoupons[i].Platforms %></p>
+			</div>
+		</li>
+		<%}%>
+	</ul>
+	<% } %>
+	<% if(!(data.ActivatedCoupons && data.ActivatedCoupons.length>0) && !(data.UnactivatedCoupons && data.UnactivatedCoupons.length>0)) { %>
+		<p class="no-coupon">亲爱的小主，您目前没有可用的优惠券<br/>每天留意主题活动 就有机会赢取哦</p>
+	<% } %>
+</section>
+<%=include ../global/footer.html%>

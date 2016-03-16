@@ -1,0 +1,27 @@
+/* line 2, ../../source/sass/home/timeout.scss */
+.timeout-wrap {
+  color: #999;
+}
+/* line 4, ../../source/sass/home/timeout.scss */
+.timeout-wrap span {
+  padding: 0 3px;
+}
+/* line 7, ../../source/sass/home/timeout.scss */
+.timeout-wrap .time-txt {
+  padding-right: 10px;
+}
+/* line 10, ../../source/sass/home/timeout.scss */
+.timeout-wrap em {
+  font-size: 14px;
+  background-image: url("/images/home/timeout.png");
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 1px;
+}

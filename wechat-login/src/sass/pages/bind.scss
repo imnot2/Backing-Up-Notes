@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "helpers/variable";
+@import "helpers/placeholder";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "base/font";
+
+body {
+    background-color: $doc-bg;
+}
+
+.form-box {
+    margin-top: pxtorem(40);
+    padding-left: pxtorem(40);
+    .operate-box {
+        @extend %clearfix;
+        &.operate-password {
+            .input-box {
+                border-bottom: none;
+            }
+        }
+        .icon-font {
+            font-size: pxtorem(48);
+            line-height: pxtorem(48);
+            float: left;
+        }
+        .operate-lable {
+            margin-right: pxtorem(8);
+            font-size: pxtorem(24);
+        }
+        .input-box {
+            height: pxtorem(44);
+            line-height: pxtorem(44);
+            margin-left: pxtorem(64);
+            color: $base-fc;
+            font-size: pxtorem(28);
+            padding: pxtorem(20) 0;
+            position: relative;
+            input {
+                border: none;
+                outline: none;
+            }
+            .empty-btn {
+                position: absolute;
+                top: 0;
+                right: pxtorem(30);
+                font-size: pxtorem(40);
+                color: $btn-cancel-fc;
+                display: none;
+            }
+        }
+    }
+}
+
+// .drop-operate {
+//     padding: 1.8rem 0;
+//     padding-left: 2rem;
+//     font-size: 1.2rem;
+//     .icon-font {
+//         margin-right: 0.4rem;
+//     }
+//     a {
+//         color: $gray9;
+//     }
+//     .drop-icon {
+//         float: left;
+//     }
+// }
+
+// .submit-box {
+//     width: 89%;
+//     margin: 0 auto;
+//     margin-top: 1.4rem;
+//     .submit-btn {
+//         border: none;
+//         @include btn(100%, 4.5rem, $glows-red, $white-color, $extend-radius-val);
+//         font-size: 1.6rem;
+//         &.disable {
+//             background-color: $disable-color;
+//         }
+//     }
+// }

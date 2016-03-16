@@ -1,0 +1,529 @@
+/* line 3, ../source/css/home.scss */
+body {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #333;
+  -webkit-text-size-adjust: none;
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3";
+  background: #f2f2f2;
+}
+
+/* line 14, ../source/css/home.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 18, ../source/css/home.scss */
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* line 27, ../source/css/home.scss */
+.ymt_wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*--- bg ---*/
+/* line 33, ../source/css/home.scss */
+.login-icon-alipay {
+  background-position: 0 -154px;
+}
+
+/* line 36, ../source/css/home.scss */
+.login-icon-sina {
+  background-position: -88px -154px;
+}
+
+/*======== index ========*/
+/* line 41, ../source/css/home.scss */
+.focus {
+  position: relative;
+  width: 320px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+/* line 47, ../source/css/home.scss */
+.wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* line 54, ../source/css/home.scss */
+#scroller {
+  float: left;
+}
+/* line 57, ../source/css/home.scss */
+#scroller ul {
+  float: left;
+  width: 320px;
+  height: 130px;
+  text-align: left;
+}
+/* line 64, ../source/css/home.scss */
+#scroller li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 320px;
+  height: 130px;
+  text-align: center;
+  font-family: georgia;
+  font-size: 12px;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 79, ../source/css/home.scss */
+#scroller li p {
+  text-align: left;
+}
+/* line 83, ../source/css/home.scss */
+#scroller li img {
+  display: block;
+  max-height: 130px;
+}
+
+/* line 92, ../source/css/home.scss */
+#nav {
+  position: absolute;
+  right: 30px;
+  bottom: 6px;
+  z-index: 10;
+  width: 70px;
+}
+
+/* line 99, ../source/css/home.scss */
+#indicator > li {
+  position: relative;
+  float: left;
+  text-indent: -9999em;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(12, 16, 25, 0.6);
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+/* line 113, ../source/css/home.scss */
+#indicator > li.active {
+  background: rgba(204, 51, 51, 0.6);
+}
+
+/* line 116, ../source/css/home.scss */
+#indicator > li:last-child {
+  margin: 0;
+}
+
+/* line 119, ../source/css/home.scss */
+.ymt_logo {
+  height: 45px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #c33;
+}
+/* line 125, ../source/css/home.scss */
+.ymt_logo .hm-icon {
+  display: inline-block;
+  width: 252.5px;
+  height: 45px;
+  line-height: 200em;
+  overflow: hidden;
+  background-position: 0 -32px;
+}
+/* line 134, ../source/css/home.scss */
+.ymt_logo h2 {
+  display: inline-block;
+  width: 167px;
+  height: 35px;
+  margin: 6px 0 0 0;
+  background-position: 0 -83px;
+}
+
+/* line 145, ../source/css/home.scss */
+.ymt_nav {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* line 154, ../source/css/home.scss */
+.ymt_nav_list .hm-icon {
+  display: inline-block;
+  background-size: 199px 40px;
+  font-size: 3.6em;
+  width: 1em;
+  height: 1em;
+}
+/* line 162, ../source/css/home.scss */
+.ymt_nav_list .icon-thick-tuangou {
+  color: #ffbd3f;
+}
+/* line 166, ../source/css/home.scss */
+.ymt_nav_list .icon-thick-cart {
+  color: #10ccb4;
+}
+/* line 170, ../source/css/home.scss */
+.ymt_nav_list .icon-thick-me {
+  color: #5bbbff;
+}
+/* line 174, ../source/css/home.scss */
+.ymt_nav_list .hm-icon-classify {
+  background-position: -66px 0;
+}
+/* line 177, ../source/css/home.scss */
+.ymt_nav_list .n1 .link-text {
+  margin-top: 9px;
+}
+/* line 181, ../source/css/home.scss */
+.ymt_nav_list li {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  width: 25%;
+  padding: 0.9em 5px;
+  line-height: 1;
+}
+/* line 191, ../source/css/home.scss */
+.ymt_nav_list a {
+  color: #999;
+  font-size: 0.9em;
+  display: block;
+}
+/* line 198, ../source/css/home.scss */
+.ymt_nav_list .link-text {
+  display: block;
+  margin-top: 7px;
+}
+/* line 203, ../source/css/home.scss */
+.ymt_nav_list .img {
+  background: url(about:blank);
+}
+
+@media screen and (orientation: landscape) {
+  /* line 212, ../source/css/home.scss */
+  .ymt_nav_list a {
+    font-size: 1.1em;
+  }
+}
+/* line 217, ../source/css/home.scss */
+.product_box {
+  padding: 0 10px;
+}
+
+/* line 220, ../source/css/home.scss */
+.mode_box {
+  margin-bottom: 10px;
+}
+
+/* line 223, ../source/css/home.scss */
+.mode_hd {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-left: 12px;
+}
+
+/* line 229, ../source/css/home.scss */
+.mode_hd h2 {
+  float: left;
+  margin-right: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* line 235, ../source/css/home.scss */
+.mode_hd span {
+  float: left;
+  color: #999;
+  font-size: 12px;
+}
+
+/* line 240, ../source/css/home.scss */
+.mode_bd {
+  background-color: #fff;
+}
+
+/* line 243, ../source/css/home.scss */
+.mode_bd::after {
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* line 252, ../source/css/home.scss */
+.mode_topic {
+  text-align: center;
+}
+
+/* line 255, ../source/css/home.scss */
+.mode_topic img {
+  width: 100%;
+}
+
+/* line 259, ../source/css/home.scss */
+.special_prt {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 13px 0;
+  height: 210px;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+/* line 268, ../source/css/home.scss */
+.special_prt img {
+  width: 120px;
+  height: 120px;
+}
+/* line 273, ../source/css/home.scss */
+.special_prt p {
+  padding: 0 15px;
+  color: #333;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.4;
+}
+/* line 281, ../source/css/home.scss */
+.special_prt .pro-title {
+  max-height: 48px;
+  overflow: hidden;
+}
+
+/* line 288, ../source/css/home.scss */
+.mode_bd strike {
+  color: #999;
+}
+
+/* line 291, ../source/css/home.scss */
+.mode_bd strong {
+  color: #f03d00;
+  font-weight: normal;
+}
+
+/* line 295, ../source/css/home.scss */
+.mode_prt_list {
+  float: left;
+  width: 50%;
+  height: 210px;
+}
+
+/* line 298, ../source/css/home.scss */
+.mode_prt_list:empty {
+  height: 0;
+}
+
+/* line 302, ../source/css/home.scss */
+.mode_prt_list li {
+  padding: 10px 0;
+  height: 50%;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 307, ../source/css/home.scss */
+.mode_prt_list li::after {
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* line 316, ../source/css/home.scss */
+.mode_prt_list img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 5px 10px 0 10px;
+}
+
+/* line 322, ../source/css/home.scss */
+.mode_prt_inf {
+  padding: 5px 0 0 0;
+  overflow: hidden;
+}
+
+/* line 326, ../source/css/home.scss */
+.mode_prt_list p {
+  max-height: 50px;
+  padding-right: 4px;
+  color: #333;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* line 333, ../source/css/home.scss */
+.mode_prt_list li:last-child {
+  border-bottom: 0 none;
+}
+
+/* line 336, ../source/css/home.scss */
+.mode_other_box .mode_topic {
+  max-height: 120px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+/* line 343, ../source/css/home.scss */
+.mode_other_box .mode_topic::after,
+.mode_other_box .mode_topic::before {
+  content: " ";
+  clear: both;
+  display: table;
+  height: 0;
+}
+
+/* line 351, ../source/css/home.scss */
+.mode_other_box .mode_prt_list {
+  width: 100%;
+  float: none;
+}
+
+/* line 355, ../source/css/home.scss */
+.mode_other_box .mode_prt_list li {
+  float: left;
+  width: 50%;
+  height: 108px;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+}
+
+/* line 362, ../source/css/home.scss */
+.mode_other_box .mode_prt_list li:nth-child(even) {
+  border-right: 0 none;
+}
+
+/* line 365, ../source/css/home.scss */
+.mode_other_box .mode_prt_list li:nth-last-of-type(1), .mode_other_box .mode_prt_list li:nth-last-of-type(2) {
+  border-bottom: 0 none;
+}
+
+/* line 368, ../source/css/home.scss */
+.mode_other_box .mode_prt_list li img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px 10px 0 10px;
+}
+
+/* line 374, ../source/css/home.scss */
+.mode_other_box .mode_topic_inf {
+  float: left;
+  width: 46%;
+  margin: 0 0 0 30px;
+}
+
+/* line 379, ../source/css/home.scss */
+.mode_other_box .mode_topic_inf p {
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* line 384, ../source/css/home.scss */
+.mode_other_box .mode_topic_inf strong {
+  font-size: 16px;
+}
+
+/* line 387, ../source/css/home.scss */
+.mode_other_box .mode_topic img {
+  float: right;
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 0;
+}
+
+/* line 393, ../source/css/home.scss */
+.cate_product {
+  margin-bottom: 10px;
+}
+
+/* line 396, ../source/css/home.scss */
+.cate_product table {
+  width: 100%;
+}
+
+/* line 399, ../source/css/home.scss */
+.cate_product td {
+  width: 33.3333%;
+  padding: 0 0.5em;
+  height: 38px;
+  color: #111;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* line 409, ../source/css/home.scss */
+.cate_product a {
+  color: #666;
+}
+
+/* line 412, ../source/css/home.scss */
+.get_info {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* line 419, ../source/css/home.scss */
+.get_info input {
+  /*   -webkit-appearance: caret;
+      -moz-appearance: caret;*/
+  display: block;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  height: 38px;
+  padding: 0 5px;
+  line-height: 38px;
+  border: 1px solid #ddd;
+  border-right: 0 none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* line 438, ../source/css/home.scss */
+.get_info a.submit_btn {
+  display: block;
+  width: 68px;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #c33;
+}

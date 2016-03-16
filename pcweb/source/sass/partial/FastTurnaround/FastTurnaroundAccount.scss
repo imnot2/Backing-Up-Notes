@@ -1,0 +1,116 @@
+﻿/*=======================FastTurnaroundAccount.css===========================*/
+.account_approve {
+    width: 700px;
+    height: auto;
+    margin-top: 40px;
+}
+.account_approve a {
+    color: blue;
+}
+.account_approve .solid {
+    color: #000;
+    font-weight: bold;
+    margin: 3px 10px;
+}
+.account_approve .content {
+    padding: 15px;
+    border: 1px solid #000;
+}
+.account_approve .title, .account_approve .title a, .account_approve th {
+    background-color: #AAA;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.account_approve .type_list .current, .account_approve .type_list .current a {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.account_approve .type_list span {
+    border-width: 1px;
+    border-color: #fff;
+}
+.account_approve .content table {
+    width: 100%;
+}
+.account_approve .content table img {
+    width: 130px;
+    height: 100px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.account_approve .content td, .account_approve th {
+    height: 30px;
+    vertical-align: middle;
+    padding: 0px 5px;
+    border: 1px solid #000;
+}
+.account_approve .content .saleInfo {
+    border: 1px solid #000;
+    padding: 5px;
+}
+.account_approve .content .saleInfo table td {
+    border: 1px solid #AAA;
+    background-color: #fff;
+}
+.account_approve .content .logistics {
+    border: 1px solid #000;
+    padding: 5px;
+}
+.account_approve .content .logistics table td {
+    border: 1px solid #AAA;
+    background-color: #fff;
+}
+.account_approve .pager {
+    margin-top: 30px;
+    text-align: center;
+}
+.account_approve .return {
+    text-align: right;
+    padding-right: 30px;
+}
+.account_approve .background {
+    background-color: #CCC;
+}
+.account_approve .logistics, .saleInfo, .uinfo {
+    margin: 13px 0px;
+}
+.account_approve .operate {
+    height: 25px;
+    margin: 5px 0px 5px 0px;
+    text-align: right;
+    border-top: 1px solid #000;
+}
+.account_approve .operate span {
+    margin-right: 20px;
+}
+.account_approve .operate input {
+    height: 25px;
+    padding: 1px 5px;
+}
+.account_approve .img_dialog {
+    text-align: center;
+    vertical-align: middle;
+}
+.account_approve .opacity {
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+}
+.account_approve .file {
+    position: absolute;
+    left: -150px;
+    top: 0px;
+    z-index: 5;
+    cursor: pointer;
+    width: 250px;
+    height: 20px;
+}
+.account_approve .mask_file {
+    position: absolute;
+    left: -200px;
+    top: -10px;
+    width: 200px;
+    height: 30px;
+    z-index: 10;
+}

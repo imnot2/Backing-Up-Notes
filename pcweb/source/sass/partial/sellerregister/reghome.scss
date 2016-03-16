@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+
+.container .area {
+	width: 1200px;
+}
+.reg-home {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+.reg-home-banner {
+	height: 230px;
+	background: url(/images/sellerregister/regist.png) no-repeat;
+}
+.reg-home-banner-en {
+	height: 230px;
+	background: url(/images/sellerregister/regist_en.png) no-repeat;
+}
+.reg-home-introduce {
+	background: #666;
+	padding: 20px;
+	font-family: "Microsoft yahei", "宋体";
+}
+.reg-home-introduce .hd {
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+.reg-home-introduce .bd {
+	text-align: left;
+	padding: 20px 50px 20px 100px;
+}
+.reg-home-introduce li {
+	margin: 30px 0;
+}
+.reg-home-introduce .left {
+	margin-right: 20px;
+}
+.reg-home-introduce h3 {
+	color: #999;
+	margin-bottom: 10px;
+}
+.reg-home-introduce p {
+	color: #eee;
+}
+.reg-home-type {
+	height: 270px;
+	background: #e7e7e7;
+	padding: 20px;
+}
+.reg-home-type .item {
+	width: 580px;
+	float: left;
+	height: 400px;
+}
+.reg-home-type .reg-hd {
+	text-align: center;
+	margin: 20px 0;
+}
+.reg-home-type .reg-bd {
+	font: bold 12px/1.8 "Microsoft yahei", "宋体";
+	color: #555;
+	padding-left: 170px;
+}
+.reg-home-type .left .reg-bd {
+	background: url(/images/sellerregister/split.png) center right no-repeat;
+}
+.reg-home-type dd {
+	margin: 6px 0;
+}
+.c-btn-lg-red {
+	display: inline-block;
+	background-color: #F03D00;
+	border-radius: 20px;
+	height: 40px;
+	font: normal 24px/40px "Microsoft yahei", "宋体";
+	color: #fff;
+	padding: 0 30px;
+}
+.c-btn-lg-red:hover {
+	color: #fff;
+}
+.reg-home-type .c-btn-lg-red {
+	margin: 20px 0;
+}
+.reg-home-introduce .right {
+	width: 920px;
+	float: left;
+}
+.reg-home-introduce .right p {
+	width: 920px;
+}

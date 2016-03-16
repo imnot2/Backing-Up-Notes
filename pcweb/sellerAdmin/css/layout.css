@@ -1,0 +1,170 @@
+﻿@charset "UTF-8";
+
+body {background-color: #eee;text-align: center; }
+.box{width: 1200px;  margin: 0 auto;}
+
+/** main Start **/
+.main{width: 1200px; padding:10px; margin: 0 auto 60px; background: #fff;}
+
+/*订单列表*/
+.order-search{
+	width: 100%;
+	height:100px;
+}
+.order-search .order-title{
+	width:960px;
+	height: 98px;
+	border-right:1px dashed #f4f4f4;
+	text-align: left;
+	float: left;
+	display: inline-block;
+}
+
+.order-desc .title{
+	width:80px;
+	float:left
+}
+.order-desc span{
+	margin: 10px -25px;
+	color:#999;
+	display: inline-block;
+}
+
+/*新增商品*/
+.add-commodity{
+	float:right;
+	width:220px;
+	height:100px;
+}
+.add-commodity button{
+	margin-top: 20px;
+	width:135px;
+	height:32px;
+	font-size:14px;
+	color:#fff;
+	background:url(../img/bnt.png);
+	border-radius: 5px;
+}
+
+.order-list{
+	background:#fff url("../img/bg1.png") no-repeat;
+	padding-top:39px;
+}
+
+.c-tabs .tab-header > li:hover{
+	border-left:2px solid #fd4d00;
+	border-top:2px solid #fd4d00;
+	border-right:2px solid #fd4d00;
+	border-bottom:2px solid #fff;
+	position:relative; 
+	z-index:2;
+}
+/*列表工具栏*/
+.list-tools{
+	height: 50px;
+    line-height: 50px;
+}
+.list-tools > span{
+	margin: 0 25px;
+}
+.list-tools .c-pagination{
+	margin: 0 140px;
+}
+
+.order-list-info{
+	height:30px;
+	line-height:30px;
+}
+.order-list-info span{
+	font-size:16px;
+}
+.order-list-info i,.order-list-info a{
+	color:#bababa;
+}
+.order-list-info .order-list-limit{
+	font-size:12px;
+}
+.order-list-info .order-list-limit a{
+	margin:0px 5px;
+}
+.order-list-table dd{
+	border-top:1px solid #ddd;
+}
+.list-table thead tr,.list-table tfoot tr{
+	height: 50px;
+}
+.list-table .table-head{
+	background: #eee;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color:#999;
+}
+.list-table tbody tr{
+	height:100px;
+	border-bottom:1px dashed #ddd;
+	word-wrap:break-word;
+     overflow:hidden;
+	color:#666;
+}
+.list-table tbody tr:hover{
+	background:#fef4e9;
+}
+
+.list-table tbody tr i{
+	color:#bababa;
+}
+.list-table a{
+	text-decoration:none;
+}
+.comm-img {
+	width:120px;
+	margin:15px 10px;
+}
+.comm-info {
+	width:160px;
+	height:100px;
+	text-align:left;	
+	margin-top:10px;
+}
+
+.comm-info .title{
+	height:50px;
+}
+.comm-info .tag{
+	height:25px;
+}
+.comm-briefly .comm-img img{
+	width:100px;
+	height:75px;
+	border:1px solid #bbb;
+}
+
+.comm-briefly .comm-info span{
+	height:35px;
+	border:1px dashed #eee;
+	color:#bbb;
+	margin-left:4px;
+	line-height:35px;
+	padding:3px;
+	cursor:pointer;
+}
+
+.comm-briefly .comm-info i{
+	font-size:8px;
+	padding: 3px;
+}
+
+.comm-briefly .comm-info .added{
+	border:1px solid #f9e0bb;
+	background:#fffcec;
+}
+
+.list-table .operate a,.list-table .title a{
+	color:#227dd8;
+}
+
+.com-briefly{
+
+}
+

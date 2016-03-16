@@ -1,0 +1,165 @@
+﻿.mg {
+	margin: 30px;
+}
+.red {
+	color: #c82424;
+}
+.line {
+	height: 1px;
+	background: #e2e2e2;
+	clear: both;
+}
+.input {
+	width: 240px;
+	border: 1px solid #e2e2e2;
+	height: 34px;
+	margin-left: 10px;
+	padding-left: 14px;
+	vertical-align: middle;
+}
+.verticalCenter {
+	vertical-align: center;
+}
+.indexTipBox {
+	height: 24px;
+	background: url('images/dot.png') repeat-x center;
+}
+.indexTipBox .tip {
+	display: inline-block;
+	margin-left: 30px;
+	padding: 0 10px;
+	background: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+.tipBox {
+	border: 1px solid #f0c36e;
+	background: #f9edbe;
+	padding: 14px;
+}
+.tipBox .info {
+	padding-left: 62px;
+}
+
+/*福利页*/
+.myShareLinkBox {
+	height: 34px;
+	line-height: 34px;
+	vertical-align: middle;
+}
+.marg_lf {
+	margin-left: 16px;
+}
+.btn-0-0 {
+	display: inline-block;
+	box-shadow: 0 1px 1px #efefef;
+	height: 26px;
+	text-decoration: none;
+	margin-right: 5px;
+	vertical-align: middle;
+	line-height: 26px;
+	padding: 0 10px;
+	cursor: pointer;
+	min-width: 40px;
+	text-align: center;
+}
+.btn-0-0 {
+	background: -moz-linear-gradient(top, #fff, #efefef, #e2e2e2);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e2e2e2));
+	background: -o-linear-gradient(top, #fff, #e2e2e2);
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType='0', startColorStr='#ffffff', endColorStr='#e2e2e2');
+	background: linear-gradient(to bottom, #fff, #efefef, #e2e2e2);
+	color: #666;
+	border: 1px solid #ccc;
+}
+.btn-0-0 {
+	border-radius: 2px;
+}
+a.btn-0-0:hover {
+	color: #666;
+	text-decoration: none
+}
+.shareBox {
+	height: 30px;
+	line-height: 30px;
+}
+.shareBox .qqZone, .shareBox .sinaWeibo, .shareBox .qqWeibo {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 46px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: inline-block;
+	margin: 0 20px;
+	text-decoration: none;
+	outline: none;
+}
+.shareBox .qqZone {
+	background-image: url('images/qqZone.png');
+}
+.shareBox .sinaWeibo {
+	background-image: url('images/sinaWeibo.png');
+}
+.shareBox .qqWeibo {
+	background-image: url('images/qqWeibo.png');
+}
+.splitLine {
+	width: 5px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url('images/dot.png') repeat-y;
+}
+.rules, .rules .title, .rules .info {
+	color: #666;
+}
+.rules .info {
+	padding-left: 62px;
+}
+.getBoonsInfo {
+	width: 80%;
+	border: 1px solid #e2e2e2;
+}
+.getBoonsInfo .selects {
+	height: 32px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e2e2e2;
+}
+.getBoonsInfo th {
+	border-bottom: 1px solid #e2e2e2;
+}
+.getBoonsInfo td {
+	height: 60px;
+	line-height: 60px;
+	border-top: 1px dashed #e2e2e2;
+	overflow: hidden;
+	position: relative;
+	top: -1px;
+}
+
+/*红包明细页*/
+.surplus {
+	font-weight: bold;
+	color: #333;
+}
+.surplus span {
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+}
+.surplus .middle {
+	background: url('images/radius.png') center repeat-x;
+	margin-left: 30px;
+}
+.surplus .left {
+	background: url('images/radius.png') left top no-repeat;
+}
+.surplus .right {
+	background: url('images/radius.png') right bottom no-repeat;
+	padding: 0 16px;
+	color: #333;
+}
+.switchInput {
+	margin: 0 20px;
+}

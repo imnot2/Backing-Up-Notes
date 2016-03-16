@@ -1,0 +1,1056 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sma",
+				"smart-input"
+			],
+			[
+				"border",
+				"borderColor"
+			],
+			[
+				"bor",
+				"borderColor"
+			],
+			[
+				"ex",
+				"explaining-box"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"gr",
+				"grey60"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"clear",
+				"clearTimeout"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"co",
+				"complete"
+			],
+			[
+				"_",
+				"_blank"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"fa",
+				"fadeIn"
+			],
+			[
+				"data-",
+				"data-param-id"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"get",
+				"getData"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"page",
+				"pageSize"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"addre",
+				"address"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"d",
+				"dest"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"border-t",
+				"border-bottom"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"p",
+				"pointer"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"i",
+				"images"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"set",
+				"setContent"
+			],
+			[
+				"card",
+				"cardArr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/ymt_gitlab/ymt-wechat/src/sass/global.scss",
+			"settings":
+			{
+				"buffer_size": 40,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ymt_gitlab/ymt-wechat/build/js/pages/login.js",
+			"settings":
+			{
+				"buffer_size": 680,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "login.js",
+			"settings":
+			{
+				"buffer_size": 1041,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ymt_gitlab/ymt-wechat/html/login.html",
+			"settings":
+			{
+				"buffer_size": 1023,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ymt_gitlab/ymt-wechat/html/bind.html",
+			"settings":
+			{
+				"buffer_size": 1461,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/bigui_bpm/demo.html",
+			"settings":
+			{
+				"buffer_size": 499,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 64.0,
+		"history":
+		[
+			"npm install",
+			"grunt ",
+			"grunt watch",
+			"cd ../../",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/Content/museum/america.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/Scripts/ordercomments/ordercomments.js",
+		"/D/ymt_gitlab/ymt-wechat/build/css/global.css",
+		"/D/static/Ymatou.StaticUI/master/source/sass/Product/product_details.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/selleradmin/js/comments.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/source/sass/productdetail/product_details.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/mixin/_smart-input.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/gruntfile.js",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/mixin/_variable.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/selleradmin/css/comments.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/source/sass/ordercomments/ordercomments.scss",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/source/sass/utils/_smart-input.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/comments.html",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/package.json",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/404.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/base.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/funds.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/mixin/variable.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/home.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/listing.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/order.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/src/sass/tools.scss",
+		"/D/static/Ymatou.StaticUI.Seller/branch/SellerAssessment/selleradmin/css/listing.css",
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/SassBeautify/SassBeautify.sublime-settings",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/source/sass/utils/_mixin.scss",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/source/sass/utils/_classes.scss",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/package.json",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/Content/ordercomments/ordercomments.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.4/index.html",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.3/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.2.1/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.2/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.1/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev3.7.0/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/branch/Dev.215.ie6/Content/app-load.css",
+		"/D/static/Ymatou.StaticUI/master/Content/app-load.css",
+		"/D/static/xloboUploadIdCard/app.js",
+		"/D/static/Ymatou.StaticUI/master/Content/AddProduct.css",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/bask-order.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/utils/_replay-comment.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/hotTopic.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/live.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/core/moduleconfig.js",
+		"/D/static/Ymatou.StaticUI.Admin/master/Scripts/pages/ProductManage.js",
+		"/D/static/StaticUI.Dev/singleproduct/sass/product_details.scss",
+		"/D/static/Ymatou.StaticUI/master/source/sass/assets/wharf.scss",
+		"/D/static/Ymatou.Static.C2C/master/gruntfile.js",
+		"/D/static/Ymatou.Static.C2C/master/package.json",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/order/detail.js",
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/dingbigui/Desktop/load.html",
+		"/D/demos/appload/app-load.html",
+		"/D/Documents/Tencent Files/510036379/FileRecv/aa.html",
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/C/Users/dingbigui/Desktop/【洋码头APP下载页】-洋码头.html",
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/_hotProduct.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/hot.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/_userinfo.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/live.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/page/seller.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/hotlist.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/recommands.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/showorderlist.js",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/utils/user-tutorial.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/utils/_share-like.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/variables.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/layout.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/label.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/js/module/widget/comfirm.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/userAttent.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/order.js",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/global.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/js/page/loadSpecialComments.js",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/app.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/button.scss",
+		"/D/static/Ymatou.Static.C2C/master/src/sass/lib/navbar.scss",
+		"/D/static/xloboUploadIdCard/node_modules/ejs/benchmark.js",
+		"/D/static/Ymatou.Static.C2C/master/src/js/module/component/praise.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1/.sass-cache/659ed772a184c5b53f07092e29beddf61aa5ed87/live_item.scssc",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1.0/.sass-cache/9d08014849d9693ab70ac65194caeddf9350088b/live_item.scssc",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/.sass-cache/e04e1bd95b236b4fd03d5d3dc24c48472a779d61/live_item.scssc",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1.0/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.cmd/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/tags/Tag.0.1/src/sass/page/live_item.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1/src/sass/page/live.scss",
+		"/D/static/xloboUploadIdCard/node_modules/connect-flash/LICENSE",
+		"/C/Users/dingbigui/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/static/xloboUploadIdCard/node_modules/png-word/node_modules/node-png/examples/test/img/PngSuite.LICENSE",
+		"/D/static/Ymatou.Static.C2C/master/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-svgo/node_modules/svgo/node_modules/js-yaml/lib/js-yaml/loader.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.215.ie6/Scripts/appload/load.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.215.ie6/Scripts/idcard/uploadidcardbytradingid.js",
+		"/D/static/Ymatou.StaticUI.Seller/master/helpcenter/loanAdmin.html",
+		"/D/static/Ymatou.StaticUI/master/Content/item/item_shop.html",
+		"/D/static/YmatouUploadIdCard/index.html",
+		"/D/static/Ymatou.Static.C2C/master/.sass-cache/04ebe013a5ff021046120f86c77745a3524ee351/bask-order.scssc",
+		"/D/static/Ymatou.StaticUI/branch/3.6.1/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev2.15/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.Header/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.3.5.6/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.3.3.1/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/branch/Dev.215.ie6/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI.Admin/master/Scripts/NGlobal.js",
+		"/D/static/Ymatou.StaticUI/master/Scripts/NGlobal.js",
+		"/D/static/Ymatou.Static.C2C/master/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/shelljs/global.js",
+		"/D/static/Ymatou.Static.C2C/tags/Tag.0.1/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.cmd/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/dist/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/build/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1.0/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1.0/dist/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1.0/build/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1/src/js/page/global.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.1/dist/js/page/global.js",
+		"/D/static/Ymatou.StaticUI/master/Content/Global.css",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/js/page/live.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/sass/utils/_countdown.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/js/page/order/detail.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/sass/page/seller.scss",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/js/page/userAttent.js",
+		"/D/static/Ymatou.Static.C2C/branch/Dev.0.2/src/sass/page/live.scss"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"D:\\static\\Ymatou.StaticUI\\branch\\Dev3.7.4",
+			"D:\\static\\Ymatou.StaticUI\\branch\\Dev3.7.3",
+			"F:\\demos\\jscode\\website\\v2\\assets\\js",
+			"F:\\demos\\jscode\\website\\v2",
+			"F:\\demos\\jscode",
+			"D:\\static\\Ymatou.StaticUI.Admin",
+			"D:\\static\\Ymatou.StaticUI.Seller",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src\\js",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src\\sass",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src\\js",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src\\sass",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src",
+			"D:\\static\\Ymatou.Static.C2C\\master",
+			"D:\\static\\Ymatou.Static.C2C\\master\\src",
+			"D:\\static\\Ymatou.Static.C2C\\branch\\Dev.0.1\\src",
+			"D:\\static\\Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass",
+			"D:\\static\\Ymatou.Static.C2C\\branch\\Dev.0.1\\src",
+			"F:\\demos\\jscode",
+			"D:\\static\\Ymatou.StaticUI\\master",
+			"D:\\static\\Ymatou.StaticUI\\branch\\3.6.1",
+			"D:\\static\\Ymatou.StaticUI\\branch\\Dev3.6.0",
+			"D:\\static"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$.trim",
+			"-width(",
+			"uncollect",
+			"-width(",
+			"transportation_type",
+			"padding-left",
+			".tip",
+			"padding-left",
+			"sh-recom",
+			"margin-left",
+			"exports",
+			"Module.resolve",
+			"require",
+			"resolve",
+			"require",
+			"emit",
+			"parseDependencies",
+			"$.ajax",
+			"<div class=\"comment-error\">您输入的内容有敏感词，请核对后提交</div>",
+			"href=\"#\"",
+			"007",
+			"ff7f",
+			"smart",
+			"placeholder",
+			"focus",
+			"placeholder",
+			"place",
+			"placehol",
+			"placeholde",
+			"static.ymatou.com",
+			".2015030602",
+			"BatchApproveProducts",
+			"此商品已被审核",
+			"RediretProductViewDetail",
+			"static.",
+			"static1.alpha",
+			"wrapper navigatorba",
+			"新手",
+			"selectCur",
+			"$('.p_main')",
+			"$('ul.fl li')",
+			"j_show_share",
+			"新手引导",
+			"seller_avatar",
+			"shareMask",
+			"seller_params",
+			"sd_btn",
+			"c-btn",
+			"btn-gray",
+			"n_gb",
+			"n_gb-right",
+			"shareMask",
+			"sharemask",
+			"font-size",
+			"j_praise",
+			"like-wrap",
+			"share-wrap",
+			"plist",
+			"chang",
+			"change",
+			"topbar",
+			"scrollTop",
+			"TopBar",
+			"scrollTo",
+			"selectCur",
+			"active",
+			"liveLoad",
+			"loadActivity",
+			"scroll",
+			"commentTop",
+			"cli",
+			"isLoading",
+			"cover-bt",
+			"j_show_share",
+			"cover-bt",
+			"user/order",
+			"size",
+			"sq_live_list",
+			"$.setempty",
+			"seller_nodata",
+			"clickFollow",
+			"stockCount",
+			"countDown",
+			"_",
+			"听说海龙添了一宝，我赶忙来道喜，一来沾沾喜气。二来祝福送给孩子，愿他茁壮成长。三来祝福初为人父母的你们，晋升快乐!",
+			"shareMask",
+			"floatrightbottom-s5dfa4fdae1",
+			"rl(",
+			"rl('",
+			"/src",
+			"src",
+			"商品详情",
+			"$clone",
+			"$.clone",
+			"OrderShowComment",
+			"replay-area",
+			"pecial/special/getlistspecialtojson",
+			"product/ShowRecommandProductsToJson",
+			"proShow",
+			"proShow ",
+			"timeItem",
+			"fixedReplay",
+			"replay-wrap c_s fixedReplay fixed-replay-warp",
+			"立刻购买",
+			"replay-wrap",
+			"replay-wrap c_s fixedReplay fixed-replay-warp",
+			"replay-area-min",
+			"replay-area",
+			"replay-area replay-area-min",
+			"solid $grey13",
+			"solid ",
+			"changeElement",
+			"pic_list",
+			"<div class=\"pli\"",
+			"solid $grey20",
+			"batchReject",
+			"子函数",
+			"钩子",
+			"compileTpls",
+			"isSupportPlaceholder",
+			"retUrl",
+			"ProductPic",
+			"type=2",
+			"class=\"img-box\"",
+			"当前",
+			"___SubmitAddress",
+			"delAddressURL",
+			"Del"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"href=\"javascript:;\"",
+			"static.dev.ymatou.com",
+			"",
+			"staticontent.",
+			"staticontent",
+			"staticcontent",
+			"solid $grey20",
+			"solid $grey13",
+			">');",
+			"http://staticc2c.alpha.ymatou.com/",
+			"/",
+			"http://staticc2c.alpha.ymatou.com",
+			"/",
+			".layerTemps",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/ymt_gitlab/ymt-wechat/src/sass/global.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/ymt_gitlab/ymt-wechat/build/js/pages/login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								680,
+								680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 5398.0,
+						"translation.y": -0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								673,
+								673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/ymt_gitlab/ymt-wechat/html/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/ymt_gitlab/ymt-wechat/html/bind.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								417
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/bigui_bpm/demo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "ymt_gitlab.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"app-load.css",
+				"Ymatou.StaticUI\\branch\\Dev3.7.4\\Content\\app-load.css"
+			],
+			[
+				"live_item.scss",
+				"Ymatou.Static.C2C\\master\\src\\sass\\page\\live_item.scss"
+			],
+			[
+				"bask-order.scss",
+				"Ymatou.Static.C2C\\master\\src\\sass\\page\\bask-order.scss"
+			],
+			[
+				"global.js",
+				"Ymatou.StaticUI\\branch\\3.6.1\\Scripts\\NGlobal.js"
+			],
+			[
+				"userattent.js",
+				"Ymatou.Static.C2C\\branch\\Dev.0.2\\src\\js\\page\\userAttent.js"
+			],
+			[
+				"hottopic.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.2\\src\\sass\\page\\hotTopic.scss"
+			],
+			[
+				"seller.scss",
+				"Ymatou.Static.C2C\\master\\src\\sass\\page\\seller.scss"
+			],
+			[
+				"live",
+				"Ymatou.Static.C2C\\master\\src\\sass\\page\\live_item.scss"
+			],
+			[
+				"_share-like.scss",
+				"Ymatou.Static.C2C\\master\\src\\sass\\utils\\_share-like.scss"
+			],
+			[
+				"user-card",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\lib\\user-card.scss"
+			],
+			[
+				"_buyoprate.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\page\\_buyOprate.scss"
+			],
+			[
+				"_hotproduct.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\page\\_hotProduct.scss"
+			],
+			[
+				"hot.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\page\\hot.scss"
+			],
+			[
+				"global.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1.0\\src\\sass\\lib\\global.scss"
+			],
+			[
+				"live.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\page\\live.scss"
+			],
+			[
+				"user-tutorial.scss",
+				"Ymatou.Static.C2C\\branch\\Dev.0.1\\src\\sass\\utils\\user-tutorial.scss"
+			],
+			[
+				"detail.css",
+				"Content\\users\\detail.css"
+			],
+			[
+				"waterfall",
+				"Ymatou.Static.C2C\\master\\src\\js\\module\\widget\\waterfall.js"
+			],
+			[
+				"hotlist",
+				"Ymatou.Static.C2C\\master\\build\\js\\page\\hotlist.js"
+			],
+			[
+				"water",
+				"Ymatou.Static.C2C\\master\\src\\js\\module\\widget\\waterfall.js"
+			],
+			[
+				"button.scss",
+				"Ymatou.Static.C2C\\master\\src\\sass\\lib\\button.scss"
+			],
+			[
+				"_share",
+				"Ymatou.Static.C2C\\master\\src\\sass\\utils\\_share-like.scss"
+			],
+			[
+				"bask-or",
+				"Ymatou.Static.C2C\\master\\src\\sass\\page\\bask-order.scss"
+			],
+			[
+				"bask",
+				"Ymatou.Static.C2C\\master\\.sass-cache\\04ebe013a5ff021046120f86c77745a3524ee351\\bask-order.scssc"
+			],
+			[
+				"gruntfile.js",
+				"mix\\template\\android_v2\\Gruntfile.js"
+			],
+			[
+				"index.js",
+				"Scripts\\order\\BuyerOrder\\Index.js"
+			],
+			[
+				"orderlist",
+				"Content\\orderListStyle.css"
+			],
+			[
+				"ymt.js",
+				"Scripts\\Ymt.js"
+			],
+			[
+				"orderliststyle",
+				"Content\\orderListStyle.css"
+			],
+			[
+				"main.css",
+				"Content\\empty\\main.css"
+			],
+			[
+				"productde",
+				"Scripts\\detail\\productdetail.js"
+			],
+			[
+				"order",
+				"Scripts\\ordertool\\ordertool.js"
+			],
+			[
+				"shoppingcart",
+				"Ymatou.StaticUI\\branch\\3.6.1\\Content\\shoppingcart\\shoppingCart.css"
+			],
+			[
+				"orderinfo.js",
+				"Ymatou.StaticUI\\branch\\Dev.3.5.6\\Scripts\\ordertool\\OrderInfo.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

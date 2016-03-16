@@ -1,0 +1,25 @@
+<%=include global/header.html%>
+<section class="container addressList" ng-controller="AddressController">
+	<ol class="list">
+		<li ng-repeat="add in addressList | orderBy:'AddressId'" ng-class="{active:add.IsDefault}">
+			<div class="selectDefault" ng-click="setDefault(add)">
+				<span class="selectAdd">
+					<i class="icon icon-addressCheck" ng-if="add.IsDefault"></i>
+				</span>
+				<h3 class='add_user'>
+					<strong ng-bind='add.Recipient'></strong>
+					<span ng-bind='add.Telephone'></span>
+				</h3>
+				<p class="add_info"><span ng-bind='add.Address1'></span><span ng-bind='add.Details'></span></p>
+			</div>
+			<span class="editAddress" ng-click="toEditAddress(add.AddressId)">
+				<i class="icon icon-addressEdit"></i>
+				编辑
+			</span>
+		</li>
+	</ol>
+	<div class="bar-fix" ng-if="addressList.length<5">
+		<span class='btn btn-primary' ng-click='toAddAddress()'>新增收货地址</span>
+	</div>
+</section>
+<%=include global/footer.html%>

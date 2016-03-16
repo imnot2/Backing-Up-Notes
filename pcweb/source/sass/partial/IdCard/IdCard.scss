@@ -1,0 +1,278 @@
+﻿/*=======================IdCard.css===========================*/
+div.container {
+	margin: 0px;
+	padding: 0px;
+}
+.fl-r {
+	text-align: right;
+}
+.fc-dim {
+	color: #999;
+}
+.progress1 {
+	margin: 15px 0;
+}
+.progress1 .hd {
+	font: bold 14px/1.5 "微软雅黑";
+}
+.progressbt {
+	background-color: #cccccc;
+	width: 330px;
+	height: 37px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 37px;
+}
+.progress1 .bd {
+	padding: 20px 0 0;
+}
+.progress1 .c {
+	margin-right: 10px;
+}
+.progress1 .l {
+	margin: 5px 0;
+}
+.progress1 .t {
+	padding: 2px 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.progress1 .i {
+	width: 14px;
+	height: 11px;
+	font-size: 0;
+	margin-right: 10px;
+	background-position: -214px -62px;
+}
+.progress1 .current {
+	color: #fff;
+	background-color: #F47C15;
+}
+.progress1 .btn {
+	width: 102px;
+	height: 32px;
+	background-position: 0 -61px;
+	text-indent: -999em;
+}
+.tip {
+	font-size: 14px;
+	margin-left: 15px;
+	font-weight: normal;
+}
+.tip span {
+	display: inline-block;
+}
+.tip .i {
+	background-image: url(/content/img/sprites/mymatouicon.gif);
+}
+.tip .query {
+	width: 15px;
+	height: 16px;
+	background-position: -44px -23px;
+	margin-right: 3px;
+}
+.query {
+	cursor: pointer;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.tooltip-3 {
+	width: 380px;
+	position: absolute;
+}
+.example {
+	position: relative;
+}
+.example .tips {
+	border: 1px solid #CAD8FF;
+	padding: 10px;
+	position: absolute;
+	height: 250px;
+	background-color: #fff;
+	top: -270px;
+	left: 140px;
+	display: none
+}
+.example .bg {
+	display: inline-block;
+	width: 518px;
+	height: 227px;
+	background: url(/images/IdCardManage/idcardexample.jpg);
+}
+.hr {
+	border-bottom: 1px solid #CAD8FF;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	margin: 10px 0
+}
+.tooltip-3 .con {
+	display: inline-block;
+	width: 360px;
+}
+.floatbox {
+	border: 1px solid #CAD8FF;
+	padding: 15px;
+	background-color: #fff;
+	width: 810px;
+	position: absolute;
+}
+.floatbox .shut {
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+	float: right;
+}
+.floatbox .panel {
+	padding: 0 10px;
+	text-align: left;
+}
+.floatbox .h1 {
+	font: normal 36px/1.5 Microsoft yahei, arial, 宋体;
+	color: #333;
+	border-bottom: 1px dashed #CAD8FF;
+	text-align: center;
+}
+.floatbox .h2 {
+	font: normal 22px/1.5 Microsoft yahei, arial, 宋体;
+	color: #333;
+	margin: 15px 0;
+}
+.floatbox .dec {
+	font: normal 14px/1.5 "宋体";
+	color: #666;
+	margin: 15px 0;
+}
+.floatbox .table-1 {
+	border: 1px solid #cad8ff;
+	margin: 10px 0;
+	color: #000;
+}
+.floatbox .table-1 td {
+	border: 1px solid #cad8ff;
+}
+.floatbox .name {
+	background-color: #CAD8FF;
+	text-align: right;
+}
+.floatbox .cert, .floatbox .bt {
+	text-align: center;
+	padding: 20px 0;
+}
+.idcardinfo {
+	background-color: #FFFFCC;
+	border: #FAC97A solid 1px;
+	margin-bottom: 18px;
+	font-size: 14px;
+	color: #000000;
+}
+.idcardinfo img {
+	margin: 20px
+}
+.idcardinfo .info {
+	margin-left: 0px;
+	margin-top: 8px;
+	position: absolute;
+	line-height: 28px;
+}
+
+/*
+* 2014/07/23   
+*by xiaokang 
+*/
+.idcard-msg {
+	background-color: #FFFFCC;
+	border: #FAC97A solid 1px;
+	margin-bottom: 18px;
+	font-size: 14px;
+	color: #000000;
+}
+.idcard-msg img {
+	margin: 18px;
+}
+.idcard-msg .msg-text {
+	margin-left: 0px;
+	margin-top: 12px;
+	position: absolute;
+	line-height: 23px;
+}
+.nopid {
+	padding: 0 !important;
+}
+.idcard-btn {
+	background: #ed4d00;
+	width: 171px;
+	height: 40px;
+	float: left;
+	background-color: #ed4d00;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.no-cardid {
+	cursor: pointer;
+	position: relative;
+}
+.show_upload_code {
+	display: none;
+	position: absolute;
+	cursor: text;
+	top: 23px;
+	left: 0;
+	color: #666;
+	width: 430px;
+	height: 40px;
+	background: #FFFFE5;
+	border: 1px solid #FAC97A;
+	z-index: 9
+}
+.show_upload_code p {
+	text-align: center;
+	font-weight: normal;
+	margin-top: 12px;
+	color: #666;
+	position: relative
+}
+.show_upload_code p .close {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -12px;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-family: cursive;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: chocolate;
+}
+.show_upload_code p strong {
+	color: #000
+}
+.setorder_top {
+	height: 50px;
+	padding: 20px 0;
+}
+.status_nav .modify {
+	width: 120px;
+}
+
+/*zhangdong 20140802*/
+.alertbody {
+	padding: 20px 0 100px 20px;
+}
+.alertbody .info {
+	margin-left: 10px;
+	line-height: 26px;
+	font-size: 14px;
+}

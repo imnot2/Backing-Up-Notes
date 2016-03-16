@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@function pxtorem($px) {
+    @return $px / $px-ratio-val / 16 * 1rem;
+}

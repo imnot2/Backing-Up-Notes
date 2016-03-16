@@ -1,0 +1,59 @@
+﻿<section class="mod-search">
+    <div class="panel">
+        <i class="icon-search"></i><input type="text" class="search" id="searchInput" placeholder="请输入搜索关键字"  /><span id="btn-search" class="btn-search">搜索</span>
+    </div>
+</section>
+<!--搜索框-->
+<!--导航模块-->
+<section class="mod-nav clearfix">
+    <div class="fr">
+        <a class="btn-a-0" id="filterProduct" href="#">筛选</a>
+    </div>
+    <div class="fl">
+        <div class="bread" id="navigator"></div>
+    </div>
+</section>
+<!--导航模块-->
+<!--排序模块-->
+<section class="mod-sort clearfix" id="sortOfProduct">
+    <span class="lk-item">默认</span>
+    <span class="lk-item">价格<i class="vm icon-arrow-up-a"></i></span>
+    <span class="lk-item">销量<i class="vm icon-arrow-down-a"></i></span>
+    <span class="lk-item">人气<i class="vm icon-arrow-down-a"></i></span>
+</section>
+<!--排序模块-->
+<!--商品列表-->
+<section class="mod-product-list show-img-80 productlist" temp-data="data">
+    <ul class="panel">
+        <for e="d in data.Products">
+        <li class="item">
+            <a class="lk-img"  href="/singleproduct?productId=${d.ProductId}">
+                <img lazysrc="${d.PicUrl}" src="/img/load/s.gif" class="img" title="${d.Name}" alt="${d.Name}" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a class="lk-title-14"  href="/singleproduct?productId=${d.ProductId}">${d.Name}</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>${d.CatalogPriceForShow}</b>
+                    </span>
+                    <span class="transfer">运费：${d.Flight}</span>
+                </div>
+            </div>
+            <div class="other">
+                <div class="dec"><span><label>卖家：</label>${d.SellerName}</span><span><label>品牌：</label>${d.BrandEnName}</span></div>
+                <div class="dec"><label>库存所在地：</label><span>${d.StockRemain}</span></div>
+            </div>
+        </li>
+        </for>
+    </ul>
+    <div class="rate-number">
+        <div class="tc">
+            <a class="btn-a" href="#" id="prevpage">上一页</a>
+            <span class="vm number"><span class="current" id="currentpage">${data.Page}</span>/<span class="total">${data.TotalCount}</span></span>
+            <a class="btn-a" href="#" id="nextpage">下一页</a>
+        </div>
+    </div>
+</section>
+<div id="floatDivFilter"></div>

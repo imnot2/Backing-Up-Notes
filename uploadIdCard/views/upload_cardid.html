@@ -1,0 +1,151 @@
+<%include global/header.html%>
+<!-- <script type="text/javascript" src='/js/ajaxfileupload.js'></script>
+-->
+<section>
+<form id="uploadImgsForm">
+	<input type='hidden' name="userid" id="userid" value="<%=info['userid']%>
+	"/>
+	<input type='hidden' name="name" value="<%=info.name%>
+	"/>
+	<input type='hidden' name="cardid" value="<%=info.cardid%>
+	"/>
+	<input type='hidden' name="mobile" value="<%=info.mobile%>
+	"/>
+	<input type='hidden' name="businessid" value="<%=info.businessid%>
+	"/>
+	<input type='hidden' name="type" value="<%=info.type%>
+	"/>
+	<input type='hidden' name="action" value="<%=info.action%>
+	"/>
+	<p>
+		<img src="/images/demo_phone.png" class="demoPhone"  height="40" />
+		请务必保证身份证清晰可读。
+		<br/>
+		<a class="showCardId" href="javascript:void(0)">查看范例</a>
+	</p>
+	<ul class="uploadPic">
+		<li>
+			<div class="card-box">
+				<span class="span2 icon" >&#x349a;</span>
+				<img class="placeholder-img" src="" alt="">
+				<input type='file' name="idCardPic" value="" />
+			</div>
+			<span class="span_title2">正面</span>
+		</li>
+		<li>
+			<div class="card-box">
+				<span class="span2 icon" >&#x349a;</span>
+				<img class="placeholder-img" src="" alt="">
+				<input type='file' name="idCardPic" value="" />
+			</div>
+			<span class="span_title2">反面</span>
+		</li>
+	</ul>
+	<p>
+		点击下一步表示阅读并同意
+		<a href="/info/clause">重要条款</a>
+		。
+	</p>
+	<button id="upload" type="button" class="btn btn-primary btn-block">下一步</button>
+</form>
+</section>
+
+<div class="playout">
+<img src="/images/example.png" style="margin-top:25%;" width="50%"/>
+</div>
+<script type="text/javascript">
+/**
+ * 上传身份证
+ */
+$(function(){
+	
+	
+	var promptStatus=true;
+	function prompt(data, callback) {
+		if (promptStatus) {
+			promptStatus = false;
+			$('.error').html("<i>" + data + "</i>").show();
+			setTimeout(function() {
+				$('.error').hide();
+				promptStatus = true;
+				callback && callback()
+			}, 2500)
+		}
+	}
+
+	/**
+	 * 图片预览
+	 * @param  {file} file [description]
+	 * @param  {ElementObject} img  [description]
+	 * @description
+	 * 	将图片通过fileReader 转成base64然后用预览出来
+	 */
+	function preview(file,img){
+		var fileReader = new FileReader();
+		fileReader.onload = function(e){
+			img.src=e.target.result;
+		}
+		fileReader.readAsDataURL(file);
+	}
+	function parseUrl(str) {
+		var arr, 
+			part,
+			url = {};
+
+		arr = str.substring(1, str.length).split('&');
+		for (var i in arr) {
+			part = arr[i].split('=');
+			url[part[0]] = part[1];
+		}
+		return url;
+	}	
+	var uploadIng = false;	
+	function upload(){
+		if(uploadIng){
+			return;
+		}
+		uploadIng=true;
+		var data = new FormData($('#uploadImgsForm')[0]);  
+		var $upload = $("#upload");
+		$upload.text("上传中...")
+		$.ajax({
+	 		type:'POST',
+	 		data:data,
+	 		url:'/upload',
+            cache: false,  
+            processData: false,  
+            contentType: false,  
+	 		success:function(result){
+	 			uploadIng = false;
+	 			$upload.text("下一步")
+	 			if(result.Status == 200){
+	 				window.location.href = '/complete';
+	 			}else{
+	 				prompt(result.msg,function(){
+	 					console.log(result.msg);
+	 				});
+	 			}
+	 		}
+	 	})
+	}
+	$("[name=idCardPic]").change(function(e){
+		var target = e.target;		
+		preview(target.files[0],target.previousElementSibling)
+	})
+	$("#upload").click(function(){
+		var isSelect = true;
+		$("[name=idCardPic]").map(function(i,v){
+			if(v.value == ""){
+				prompt("请选择要上传的身份证");
+				return isSelect = false;
+			}
+		})
+		if(isSelect){
+			upload(this);
+		}
+		
+	})
+
+})
+</script>
+<%include global/footer.html%>

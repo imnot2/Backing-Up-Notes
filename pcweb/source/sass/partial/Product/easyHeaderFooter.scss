@@ -1,0 +1,120 @@
+/* line 64, icons/*.png */
+.icons-sprite {
+  background-image: url("/images/easyHeaderFooter/images/icons-s0bc8cd0c96.png");
+  background-repeat: no-repeat;
+}
+
+/* line 6, ../sass/easyHeaderFooter.scss */
+#header .main, #footer .main {
+  width: 1190px;
+  margin: 0 auto;
+  color: #888;
+}
+
+/* line 12, ../sass/easyHeaderFooter.scss */
+#header {
+  border-bottom: 2px solid #cc3333;
+}
+
+/* line 15, ../sass/easyHeaderFooter.scss */
+#header .logo {
+  width: 100%;
+  float: left;
+  background: url("/images/easyHeaderFooter/images/icons-s9e22932609.png") 50% 4px no-repeat;
+}
+
+/* line 19, ../sass/easyHeaderFooter.scss */
+#header .logo .logoWrap {
+  margin-left: 350px;
+  margin-right: 130px;
+  height: 78px;
+}
+
+/* line 25, ../sass/easyHeaderFooter.scss */
+#header .welcomeBox {
+  width: 350px;
+  margin-left: -100%;
+  padding: 0 20px;
+  padding-top: 24px;
+  float: left;
+}
+
+/* line 31, ../sass/easyHeaderFooter.scss */
+#header .welcomeBox .userName {
+  color: #666;
+}
+
+/* line 34, ../sass/easyHeaderFooter.scss */
+#header .welcomeBox .message {
+  margin: 0 20px;
+  position: relative;
+}
+
+/* line 37, ../sass/easyHeaderFooter.scss */
+#header .welcomeBox .message .count {
+  position: absolute;
+  right: -12px;
+  top: -2px;
+  width: 11px;
+  height: 11px;
+  background: url("/images/easyHeaderFooter/images/icons-s9e22932609.png") 0 -87px no-repeat;
+  color: #fff;
+}
+
+/* line 47, ../sass/easyHeaderFooter.scss */
+#header .welcomeBox .mobile {
+  background: url("/images/easyHeaderFooter/images/icons-s9e22932609.png") 0 -118px no-repeat;
+  padding-left: 14px;
+  margin: 0 10px;
+}
+
+/* line 53, ../sass/easyHeaderFooter.scss */
+#header .userinfo {
+  width: 130px;
+  padding: 0 20px;
+  margin-left: -170px;
+  padding-top: 24px;
+  float: left;
+}
+
+/* line 59, ../sass/easyHeaderFooter.scss */
+#header .userinfo .myMatou {
+  margin: 0 10px;
+}
+
+/* line 62, ../sass/easyHeaderFooter.scss */
+#header .userinfo .shopCar {
+  margin: 0 10px;
+  position: relative;
+}
+
+/* line 65, ../sass/easyHeaderFooter.scss */
+#header .userinfo .shopCar .count {
+  position: absolute;
+  right: -12px;
+  top: -2px;
+  width: 11px;
+  height: 11px;
+  background: url("/images/easyHeaderFooter/images/icons-s9e22932609.png") 0 -87px no-repeat;
+  color: #fff;
+}
+
+/* line 77, ../sass/easyHeaderFooter.scss */
+#footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+/* line 81, ../sass/easyHeaderFooter.scss */
+#footer p {
+  line-height: 20px;
+  text-align: center;
+}
+@media screen and (max-width:1024px) {
+
+  /* line 87, ../sass/easyHeaderFooter.scss */
+  #header .main, #footer .main {
+    width: 990px;
+  }
+}

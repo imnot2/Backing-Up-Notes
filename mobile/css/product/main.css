@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/* line 6, ../../source/css/product/main.scss */
+.specontent dl {
+  margin-bottom: 1em;
+}
+/* line 9, ../../source/css/product/main.scss */
+.specontent dl:first-child {
+  margin-top: 1em;
+}
+/* line 12, ../../source/css/product/main.scss */
+.specontent .dt {
+  font: bold 1.2em/2em "arial";
+  color: #444;
+}
+/* line 16, ../../source/css/product/main.scss */
+.specontent .dd {
+  float: left;
+  width: 100%;
+  margin-left: -0.5em;
+}
+/* line 21, ../../source/css/product/main.scss */
+.specontent .item {
+  float: left;
+  height: 2.5em;
+  margin-left: 0.5em;
+  font: normal 1em/2.5em "arial";
+  border: 1px solid #e2e2e2;
+  padding: 0 1em;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  color: #666;
+  max-width: 288px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 35, ../../source/css/product/main.scss */
+.specontent .selected {
+  background-color: #f04e00;
+  color: #fff;
+  border: 1px solid #f04e00;
+  background-color: #ff534b;
+  border: 1px #ff534b solid;
+  color: #fff;
+}
+/* line 43, ../../source/css/product/main.scss */
+.specontent .disabled, .specontent .disabled:hover {
+  background-color: #efefef;
+  color: #999;
+  border: 1px solid #e2e2e2;
+}
+
+/* line 50, ../../source/css/product/main.scss */
+.description {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 1em 3em;
+}
+
+/* line 56, ../../source/css/product/main.scss */
+.description img {
+  max-width: 320px;
+}
+
+/* line 60, ../../source/css/product/main.scss */
+.product-banner {
+  position: relative;
+}
+
+/* line 64, ../../source/css/product/main.scss */
+.product-banner .trigger {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 71, ../../source/css/product/main.scss */
+.product-title {
+  border: 0;
+  padding: 1em 15px;
+}
+
+/* line 76, ../../source/css/product/main.scss */
+.product-title .lk-title-16 {
+  line-height: 1.2em;
+}
+
+/* line 80, ../../source/css/product/main.scss */
+.product-title .dec {
+  margin-top: 10px;
+}
+
+/* line 84, ../../source/css/product/main.scss */
+.product-info .item, .product-action .item, .product-share .item, .mg-tb {
+  color: #666;
+  margin: 1em 0;
+}
+
+/* line 89, ../../source/css/product/main.scss */
+.product-info .item label {
+  color: #999;
+}
+
+/* line 93, ../../source/css/product/main.scss */
+.product-action .full {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* line 98, ../../source/css/product/main.scss */
+.product-action .btn-a {
+  margin-right: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 104, ../../source/css/product/main.scss */
+.product-action .infotips {
+  font: normal 1.5em/2em "宋体";
+  color: #cc3333;
+  height: 2em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* line 112, ../../source/css/product/main.scss */
+.product-share {
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 118, ../../source/css/product/main.scss */
+.product-share a {
+  margin-right: 0.8em;
+}
+
+/* line 122, ../../source/css/product/main.scss */
+.product-share .btn-dim {
+  display: block;
+  margin: 10px 0;
+}
+
+/* line 127, ../../source/css/product/main.scss */
+.product-action .amount {
+  margin-left: 60px;
+  color: #999;
+}
+
+/* line 132, ../../source/css/product/main.scss */
+.product-action .item .btn-white-squa {
+  padding: 12px 43px;
+}
+
+/* line 136, ../../source/css/product/main.scss */
+.product-action .item .btn-white-squa:first-child {
+  margin-right: 10px;
+}
+
+/* line 141, ../../source/css/product/main.scss */
+#productBaseInfo .lk-title-16 {
+  font: 400 14px/1.5 '';
+  color: #333;
+}
+/* line 145, ../../source/css/product/main.scss */
+#productBaseInfo .product-info {
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+}
+
+/* line 151, ../../source/css/product/main.scss */
+.product-detail .product-banner {
+  margin-bottom: 12px;
+}
+
+/* line 155, ../../source/css/product/main.scss */
+.product-detail .area {
+  font-size: 12px;
+}
+
+/* line 159, ../../source/css/product/main.scss */
+.full {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* line 164, ../../source/css/product/main.scss */
+.icon-add-cart, .icon-add-share {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* line 171, ../../source/css/product/main.scss */
+.product-action .item .btn-white-squa {
+  padding: 9px 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+/* line 178, ../../source/css/product/main.scss */
+.product-detail .item span.chinaareahandle {
+  border: 0;
+  color: #3369ff;
+}
+
+/* line 183, ../../source/css/product/main.scss */
+.mod-info-list .item {
+  border-top: 1px solid #ddd;
+  padding: 1em;
+}
+
+/* line 188, ../../source/css/product/main.scss */
+.rate-star .name {
+  display: inline-block;
+  vertical-align: middle;
+  font: normal 1em/2em "Helvetica, Arial, sans-serif";
+}
+
+/* line 194, ../../source/css/product/main.scss */
+.rate-star .mod-star {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+/* line 199, ../../source/css/product/main.scss */
+.rate-star .mg-tb {
+  padding: 0 1em;
+  padding-right: 0;
+}
+
+/* line 204, ../../source/css/product/main.scss */
+.rate-list .hd {
+  font: normal 1.4em/1.5 "Helvetica, Arial, sans-serif";
+}
+
+/* line 208, ../../source/css/product/main.scss */
+.rate-list .bd {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 214, ../../source/css/product/main.scss */
+.rate-list .bd, .rate-list .bt {
+  font: normal 1.2em/2 "Helvetica, Arial, sans-serif";
+  color: #666;
+}
+
+/* line 219, ../../source/css/product/main.scss */
+.rate-number {
+  margin-bottom: 3.5em;
+}
+
+/* line 223, ../../source/css/product/main.scss */
+.rate-number .number {
+  margin: 0 1em;
+}
+
+/* line 227, ../../source/css/product/main.scss */
+.rate-number .tc {
+  padding: 1em 0;
+}
+
+/* line 231, ../../source/css/product/main.scss */
+.prudcutinfo {
+  padding: 1em 1em 0;
+}
+/* line 233, ../../source/css/product/main.scss */
+.prudcutinfo .imgbox {
+  width: 7.66667em;
+  height: 7.66667em;
+  line-height: 7.08333em;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-right: 1em;
+  float: left;
+  overflow: hidden;
+}
+/* line 242, ../../source/css/product/main.scss */
+.prudcutinfo .imgbox img {
+  max-width: 7.5em;
+  max-height: 7.5em;
+  vertical-align: middle;
+}
+/* line 248, ../../source/css/product/main.scss */
+.prudcutinfo .infobox {
+  float: left;
+  width: 12.6em;
+}
+/* line 251, ../../source/css/product/main.scss */
+.prudcutinfo .infobox .pd-title {
+  font-size: 18px;
+  color: #666;
+  word-break: break-word;
+}
+/* line 257, ../../source/css/product/main.scss */
+.prudcutinfo .price {
+  line-height: 1.5;
+  color: #FC3D44;
+  font-family: arial;
+  word-break: break-all;
+}
+/* line 262, ../../source/css/product/main.scss */
+.prudcutinfo .price b {
+  font-size: 1.8em;
+  font-weight: normal;
+}
+/* line 266, ../../source/css/product/main.scss */
+.prudcutinfo .price i {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*floatshoppingcart*/
+/* line 275, ../../source/css/product/main.scss */
+.floatshoppingcart {
+  width: 100%;
+  position: fixed;
+  height: 3.66667em;
+  background-color: #eee;
+  border-top: 1px solid #b1b1b1;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+}
+/* line 285, ../../source/css/product/main.scss */
+.floatshoppingcart .button {
+  display: inline-block;
+  width: 100px;
+  font: normal 18px/32px "Microsoft yahei";
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 32px;
+  margin: 0 0 0 5px;
+  text-align: center;
+}
+/* line 296, ../../source/css/product/main.scss */
+.floatshoppingcart .right {
+  margin: 0.6em 0 0 0;
+}
+/* line 299, ../../source/css/product/main.scss */
+.floatshoppingcart .button-red {
+  background-color: #ff534b;
+}
+/* line 302, ../../source/css/product/main.scss */
+.floatshoppingcart .button-yel {
+  background-color: #ff8c25;
+}
+/* line 305, ../../source/css/product/main.scss */
+.floatshoppingcart .button-gray {
+  background-color: #888;
+}
+/* line 308, ../../source/css/product/main.scss */
+.floatshoppingcart .icon-simple-home, .floatshoppingcart .icon-simple-cart {
+  color: #717171;
+  font-size: 2.2em;
+  line-height: 50px;
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+/* line 315, ../../source/css/product/main.scss */
+.floatshoppingcart .icon-simple-cart {
+  position: relative;
+}
+/* line 317, ../../source/css/product/main.scss */
+.floatshoppingcart .icon-simple-cart i {
+  position: absolute;
+  border-radius: 12px;
+  background-color: #FF3A3A;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0 0.5em;
+  top: 0.2em;
+  left: 1.4em;
+  font-family: arial;
+}
+
+/* line 332, ../../source/css/product/main.scss */
+.submittobuybox {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  height: 5em;
+}
+/* line 337, ../../source/css/product/main.scss */
+.submittobuybox .submittobuy {
+  padding: 0.4em 4em;
+  font: normal 18px/1 "Microsoft yahei";
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff534b;
+}
+
+/**/
+/* line 349, ../../source/css/product/main.scss */
+.product-action label {
+  display: block;
+  font: bold 1.2em/2em "arial";
+  color: #444;
+}

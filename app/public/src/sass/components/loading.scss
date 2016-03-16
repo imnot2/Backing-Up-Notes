@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.loading,
+.flash-loading{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	background-color:#000;
+}
+//收缩loading
+.loading {
+	-webkit-animation: typing 1s linear infinite alternate;
+	-moz-animation: typing 1s linear infinite alternate;
+	animation: typing 1s linear infinite alternate;
+}
+
+@keyframes typing {
+	0% {
+		background-color: rgba(0,0,0, 1);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,.2);
+	}
+
+	25% {
+		background-color: rgba(0,0,0, .4);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,.2);
+	}
+
+	75% {
+		background-color: rgba(0,0,0, .4);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,1);
+	}
+}
+//闪烁loading
+.flash-loading {
+	-webkit-animation: flash 1s linear infinite ;
+	-moz-animation: flash 1s linear infinite ;
+	animation: flash 1s linear infinite ;
+    box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,.2);
+}
+
+@keyframes flash {
+	0% {
+		background-color: rgba(0,0,0, 1);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,.2);
+	}
+
+	25% {
+		background-color: rgba(0,0,0, .4);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,1),24px 0px 0px 0px rgba(0,0,0,.2);
+	}
+
+	75% {
+		background-color: rgba(0,0,0, .4);
+		box-shadow: 12px 0px 0px 0px rgba(0,0,0,.2),24px 0px 0px 0px rgba(0,0,0,1);
+	}
+}
+.imgLoad{
+	background-image: url(#{$ImgUrl}loading.png);
+}
+
+.logo-loading {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border:5px solid rgba(153,153,153,.3);
+  border-top:5px solid rgba(153,153,153,.8);
+  border-radius: 50%;
+  animation: logo-loading .8s infinite linear;
+  position: relative;
+
+}
+@keyframes logo-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}  
+.loading-warp{
+  position:fixed;
+  width:50px;
+  height: 50px;
+  z-index:99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.loading-warp:after{
+	content:'洋';
+	position:absolute;
+	left:50%;
+	top:50%;
+	font-size:28px;
+	color:#999;
+	font-weight:bold;
+	line-height: 1;
+	transform: translate(-50%,-50%);
+}

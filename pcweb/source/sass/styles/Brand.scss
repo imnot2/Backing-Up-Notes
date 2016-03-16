@@ -1,0 +1,193 @@
+﻿/*=======================Brand.css===========================*/
+#tlogo {
+    float: left;
+    max-height: 100px;
+    max-width: 100px;
+}
+.h1float {
+    float: right;
+    width: 828px;
+    position: relative;
+}
+h1 .b_star {
+    position: absolute;
+    top: 2px;
+    right: 85px;
+}
+h1 .b_mancout {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 13px;
+    font-weight: 700;
+}
+h1 .b_Action {
+    position: absolute;
+    top: -1px;
+    right: 220px;
+    font-size: 13px;
+    font-weight: normal;
+}
+h1 .dialogbt {
+    padding: 4px 6px 4px 20px;
+    position: relative;
+}
+h1 .dialogbt span.ui-icon {
+    left: 0.2em;
+    margin: -8px 5px 0 0;
+    position: absolute;
+    top: 50%;
+}
+.b_chief {
+    margin-bottom: 30px;
+}
+.b_chief .b_ditial {
+    display: none;
+}
+.b_chief .b_detial_bt {
+    color: #ABC8E2;
+    cursor: pointer;
+}
+.b_chief .b_detial_bt:hover {
+    color: #A89E2D;
+}
+.b_chief .b_detial_bt.act {
+    color: #A89E2D;
+}
+.search_tab .ui-tabs-nav {
+    border-bottom: 1px solid #C4CCC9;
+}
+#pagebox_p {
+    right: 13px;
+    top: 195px;
+    display: none;
+    padding-right: 20px;
+}
+#pagebox_p a {
+    cursor: pointer;
+    color: #88A825;
+    padding: 2px 6px;
+}
+#pagebox_p a:hover {
+    background: #88A825;
+    color: #F2F3F8;
+}
+#pagebox_p a.act {
+    color: #B0250E;
+    font-weight: 700;
+}
+.f_current {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+.f_current a, .f_current .fc_item {
+    color: #111;
+}
+.f_current a:hover {
+    color: #A89E2D;
+    text-decoration: underline;
+}
+.f_current .fc_arror {
+    float: left;
+    margin: 0 5px;
+}
+.f_current .fc_item a {
+    background: transparent url(http://img.ymatou.com/portal/images/clo.png) no-repeat scroll right center;
+    cursor: pointer;
+    padding-right: 14px;
+    white-space: nowrap;
+}
+.f_current .fc_item a:hover {
+    background-image: url(http://img.ymatou.com/portal/images/cloh.png);
+}
+.treeview span {
+    cursor: pointer;
+}
+.treeview span.folder_h {
+    background: url(http://img.ymatou.com/portal/images/tMain_h.png) 0 0 no-repeat;
+}
+.treeview span.file_h {
+    background: url(http://img.ymatou.com/portal/images/tNot_h.png) 0 0 no-repeat;
+}
+.flul ul {
+    clear: both;
+    position: relative;
+}
+.flul ul.fl li {
+    float: left;
+    padding: 3px 5px;
+    position: relative;
+    z-index: 200;
+}
+.flul ul li a {
+    color: #A89E2D;
+    white-space: nowrap;
+}
+.flul ul li a:hover {
+    color: #fff;
+}
+.flul ul div.y_fhover {
+    background: #A89E2D;
+    position: absolute;
+}
+.flprices li {
+    padding-bottom: 3px;
+}
+.flprices li a {
+    color: #A89E2D;
+}
+.flprices li a:hover {
+    color: #B0250E;
+    text-decoration: underline;
+}
+.flprices .flprices_in {
+    width: 50px;
+}
+#AttentionDialog {
+    width: 550px;
+}
+.cloud {
+    text-align: justify;
+}
+.cloud a {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.cloud a:hover {
+    background-color: #575757;
+    color: white !important;
+}
+.cloud a.size0 {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 13px;
+}
+.cloud a.size1 {
+    color: #999;
+    font-size: 14px;
+    line-height: 14px;
+}
+.cloud a.size2 {
+    color: #777;
+    font-size: 15px;
+    line-height: 15px;
+}
+.cloud a.size3 {
+    color: #555;
+    font-size: 16px;
+    line-height: 16px;
+}
+.cloud a.size4 {
+    color: #333;
+    font-size: 17px;
+    line-height: 17px;
+}
+.cloud a.size5 {
+    color: #111;
+    font-size: 18px;
+    line-height: 18px;
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'shiconfont';
+  src: url('http://at.alicdn.com/t/font_1423120503_706834.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1423120503_706834.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1423120503_706834.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1423120503_706834.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1423120503_706834.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
+.sh-icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'shiconfont';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    *line-height:1.1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+.icon-sortbeauty:before,.icon-3:before{ content: "\e606";}
+.icon-sortcloth:before,.icon-2:before{ content: "\e607"; }
+.icon-sortelectronics:before,.icon-9:before  { content: "\e608"; }
+.icon-sortfood:before,.icon-12:before { content: "\e609"; }
+.icon-sortglass:before,.icon-8:before { content: "\e60a";}
+.icon-sorthealth:before,.icon-4:before { content: "\e60b"; }
+.icon-sortjewel:before,.icon-7:before { content: "\e60c"; }
+.icon-sortlife:before,.icon-10:before { content: "\e60d"; }
+.icon-sortmami:before,.icon-5:before { content: "\e60e"; }
+.icon-sortman:before,.icon-11:before { content: "\e60f"; }
+.icon-sortwatch:before,.icon-6:before { content: "\e610"; }
+.icon-location:before {content: "\e618";}

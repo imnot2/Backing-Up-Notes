@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/**
+ * 支付列表
+ */
+$msg-color:#383838;
+$msg-strong-color:#ff3c3c;
+
+$order-list-border-color:#e4e4e4;
+.paylist-wrap{
+	background-color: #f7f7f7;
+	.ordinary-msg{
+		color:$msg-color;
+		font-size: $rem * 13;
+		font-weight:bold;
+		padding:0 $rem*15;
+		strong{
+			color:$msg-strong-color;
+			margin:0 $rem*5;
+			font-weight: bold;
+		}
+	}
+	.warn-msg{
+		background-color: #fff9da;
+		height:$rem *22;
+		line-height:$rem *22;
+		color:#666666;
+		font-size:$rem *12;
+		text-align:center;
+		border-top:1px solid $order-list-border-color;
+		border-bottom:1px solid $order-list-border-color;
+	}
+
+	.paylist-item{
+		background-color:#fff;
+		border-top:1px solid $order-list-border-color;
+		margin:$rem*7 0;
+		.item-head{
+			height:$rem * 43;
+			line-height:$rem * 43;
+			padding-left:$rem * 7;
+			color:$msg-color;
+			font-size: $rem * 14;
+			padding:0 $rem*10;
+			strong{
+				margin-left: $rem*7;
+			}
+			span{
+				color:#868686;
+				font-size:$rem *11;
+				float: right;
+				padding-right: $rem*3;
+			}
+			em{
+				font-size: $rem * 10;
+				margin-left: $rem*13;
+			}
+			&.has-border{
+				border-bottom:1px solid $order-list-border-color;
+			}
+		}
+	}
+	.order-detail{	
+		color:#383838;
+		border-bottom:1px solid $order-list-border-color;
+		.order-product-detail{
+			padding: 0 $rem*10;		
+			.product-item{
+				border-top:1px solid $order-list-border-color;
+				padding:$rem * 11 0;
+				overflow:hidden;
+				&:last-child{
+					border-bottom:1px solid $order-list-border-color;
+				}
+			}
+		}
+		.warn-msg{
+			border-top:0;
+		}
+		.pic{
+			height:$rem  *78;
+			width:$rem * 78;
+			border:1px solid #eee;
+			float:left;
+			text-align: center;
+			img{
+				max-height: 100%;
+				max-width:100%;
+			}
+		}
+		.order-attribute{
+			margin-left:93px;
+			.title{
+				font-size: $rem * 12;
+				line-height: $rem *15;
+				color:#646464;
+				overflow: hidden;
+				text-align: right;
+				strong{
+					color:#838383;
+					text-align: left;
+					width:$rem * 142;
+					float:left;
+				}
+			}
+			p{
+				line-height: $rem *18;
+				font-size:$rem * 11;
+				color:#868686;
+				.icon{
+					color:#61b5e5;
+					font-size:$rem * 12;
+					margin:0 $rem*6 0 $rem *1;
+				}
+			}
+		}
+		.order-bottom{
+			height:$rem *40;
+			line-height: $rem*40;
+			text-align: right;
+			font-size: $rem *12;
+			color:#383838;
+			border-bottom:1px solid $order-list-border-color;
+			padding:0 $rem*13;
+			span{
+				color:#868686;
+			}
+			strong{
+				color:#ff3c3c;
+				font-size:$rem * 18;
+			}
+			&:last-child{
+				border-bottom:0;
+			}
+		}		
+	}
+	.order-tools{
+		text-align: right;
+		line-height:$rem * 51;
+		padding:0 $rem*13;
+		.tips{
+			font-size:$rem *12;
+			margin-right:$rem*15;
+		}
+	}
+}

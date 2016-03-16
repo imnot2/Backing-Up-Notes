@@ -1,0 +1,129 @@
+﻿.blueline {
+	border: 1px solid #CAD8FF;
+	margin: 20px 0;
+	padding: 20px;
+	background: #F4F8FF;
+	color: #000;
+}
+.blueline .right {
+	width: 900px;
+}
+.blueline .hd {
+	font: bold 16px/1 "微软雅黑";
+	margin-bottom: 10px;
+}
+.blueline .h3, .level_module_3 .h3 {
+	font: bold 14px/1 "微软雅黑";
+	margin-bottom: 8px;
+}
+.blueline .b {
+	padding: 10px;
+	border-bottom: 1px solid #CAD8FF;
+	line-height: 2;
+}
+.blueline .bo {
+	border-bottom: 0;
+}
+.blueline .ico-success {
+	margin-top: 10px;
+}
+.blueline .ico-error {
+	margin-top: 8px;
+}
+.blueline .icon .r {
+	margin: 0 2px;
+}
+.blueline ul li {
+	margin: 5px 0;
+}
+.green {
+	color: #619B01;
+}
+.level_module_3 {
+	margin-top: 20px;
+}
+
+/*level_module_3*/
+.level_module_3 .bd {
+	color: #444444;
+}
+.level_module_3 .h3 {
+	margin: 10px 0;
+}
+.level_module_3 p {
+	margin: 10px 0 30px;
+}
+
+/*callback*/
+.callback {
+	width: 310px;
+	margin: 80px auto;
+	min-height: 380px;
+	_height: 380px;
+	text-align: left;
+}
+.callback .right {
+	padding-left: 60px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.callback .h3 {
+	font: bold 16px/1.5 "微软雅黑";
+}
+.ordercon {
+	display: none;
+}
+.trigger .it {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #ccc;
+	font: normal 12px/15px "arial";
+	color: #666;
+	text-align: center;
+	margin-left: 5px;
+	text-decoration: none;
+}
+.trigger .current {
+	background-color: #F04E00;
+	border: 1px solid #F04E00;
+	color: #fff;
+}
+.g-bt-recommend {
+	height: 268px;
+	overflow: hidden;
+	position: relative;
+}
+.prepayfail .bd {
+	padding: 0 10px;
+}
+.warn-1 .trigger {
+	color: #000;
+}
+.warn-1 .tooltip-3 {
+	color: #000;
+	width: 400px;
+}
+.warn-1 .tooltip-3 .arrow {
+	left: 280px;
+}
+
+/*涓嬭浇鐮佸ごapp*/
+#downloadApp {
+	border: 1px solid #ddd;
+	background-color: #fafafa;
+	height: 86px;
+	padding: 22px 48px;
+}
+#downloadApp .qrBox {
+	width: 86px;
+	height: 86px;
+	font-size: 14px;
+}
+#downloadApp .des {
+	padding-left: 108px;
+	padding-top: 14px;
+}
+#downloadApp .des p {
+	line-height: 28px;
+}

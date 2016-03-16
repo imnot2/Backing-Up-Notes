@@ -1,0 +1,1 @@
+Ymt.add(function(){return{byteLen:function(a){for(var b,c=0,d=0,e=a.length;e>d;d++)b=a.charCodeAt(d),c+=b>127?2:1;return c},subStr:function(a,b,c){var d=0,e=0,f="",g=a.length,h=this.byteLen(a);for(0>b&&(b=h+b),0>c||!$m.isNumber(c)?c=~~c+h:c+=b;g>d&&!(e>=b);d++)h=a.charCodeAt(d),e+=h>127?2:1;for(;g>d&&(h=a.charCodeAt(d),e+=h>127?2:1,!(e>c));d++)f+=a.charAt(d);return f}}});

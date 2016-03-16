@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+
+@import "variable";
+
+//按钮
+.btn {
+    padding: 11px 15px;
+    color: #fff;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+}
+
+//默认按钮
+.btn-defult {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+    border: 0;
+}
+
+.btn-lighter {
+    background-color: #eee;
+    color: #666;
+    border: 0;
+}
+
+.btn-info {
+    background-color: #61a4e8;
+    color: #fff;
+    border: 0;
+}
+
+.btn-border-primary {
+    border: 1px solid $primary-color;
+}
+
+.btn-sm {
+    padding: 6px 15px;
+    vertical-align: middle;
+}
+
+.btn-lg {
+    font-size: 20px;
+}
+
+//满宽度
+.btn-w-full {
+    width: 100%;
+}
+
+.btn-press {
+    outline: none;
+}
+
+.btn-group {
+    position: relative;
+    display: table;
+    .btn {
+        border-radius: 5px;
+        width: 50%;
+        &:last-child {
+            border-left-width: 0px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:first-child {
+            border-right-width: 0px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}

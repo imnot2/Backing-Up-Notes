@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+@import "lib/icon";
+
+/*
+*  倒计时控件，默认是高亮，需要变灰添加end类
+*/
+
+.countDown {
+    background: sprite($icons-sprite, countdown_start, 0, 2px) no-repeat;
+    padding-left: 20px;
+    color: $highRad;
+    font-family: "宋体";
+    font-weight: bold;
+    @include clearfix;
+    &.line {
+        float: left;
+        margin-top: 7px;
+        *margin-top: 2px;
+        margin-right: 3px;
+        overflow: hidden;
+    }
+    .timeItem {
+        border-radius: 3px;
+        background-color: $highRad;
+        color: $white;
+        padding: 0 4px;
+        margin: 0 2px;
+        float: left;
+        _margin: 0 1px;
+    }
+    &.end {
+        background: sprite($icons-sprite, countdown_end, 0, 2px) no-repeat;
+        color: $grey40;
+        .timeItem {
+            background-color: $grey40;
+        }
+    }
+}
+
+
+
+
+
+/*
+    @New Countdown model 
+    @HTML Format
+    <div class="m-countdown-s1">
+    
+        <div class="mcs-horn">
+            <i class="mcsh-line"></i>
+            <em class="mcsh-bg"></em>
+        </div>
+
+        <ol class="mcs-ol">
+            <li class="mcso-first">
+                <span class="mcsof-txt">距离结束</span>
+                <i class="icon icon-time"></i>
+            </li>
+            <li class="mcso-time">0</li>
+            <li class="mcso-time">0</li>
+            <li class="mcso-colon">:</li>
+            <li class="mcso-time">0</li>
+            <li class="mcso-time">0</li>
+        </ol>
+
+    </div>
+*/
+
+//live home style
+.m-countdown-s1{
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border:1px solid $highRad;
+    position: relative;
+
+    .mcs-horn{
+        position: absolute;
+        bottom:-6px;
+        left:50%;
+        margin-left: -6px;
+        width: 6px;
+        height: 6px;
+        .mcsh-line,.mcsh-bg{
+            display: inline-block;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            font-size: 0px;
+            border-color: $highRad;
+            border-width:7px;
+            border-style: solid;
+            border-right-color:transparent;
+            border-left-color:transparent;
+            border-bottom-color:transparent;
+        }
+        .mcsh-line{
+            margin-top: 1px;
+        }
+        .mcsh-bg{
+            border-top-color:#fff; 
+        }
+    }
+
+    .mcs-ol{
+        display: block;
+        height: 25px;
+        overflow: hidden;
+        text-align: center;
+        li{
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .mcso-first{
+
+            .icon{
+                font-size:16px;
+                color:$highRad;
+            }
+        }
+        .mcso-time{
+            background-color:$highRad;
+            color:#fff;
+            height: 16px;
+            margin:4px 0;
+            line-height: 16px;
+            padding:0 2px;
+            border-radius: 2px;
+            font-family: serif;
+            font-size:12px;
+
+        }
+        .mcso-colon{
+            color:$highRad;
+        }
+    }
+}
+.m-countdown-s1-active{
+
+    background-color: $highRad;
+
+    .mcs-horn{
+        .mcsh-bg{
+            border-top-color: $highRad;
+        }
+    }
+    .mcso-first{
+        .mcsof-txt{
+           display: inline-block;
+           color:#fff;
+         }
+    }
+    .mcs-ol{
+
+        .mcso-time{
+            color:$highRad;
+            background-color: #fff;
+            font-size:12px;
+        }
+        .mcso-colon{
+            color:#fff;
+        }
+    }
+}
+
+.m-countdown-s2{
+    display: inline-block;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+
+
+    .mcs-ol{
+
+        display: block;
+        height: 25px;
+        overflow: hidden;
+        text-align: center;
+        li{
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+
+        .mcso-first{
+            .icon{
+                font-size:16px;
+                color:$grey40;
+            }
+        }
+        .mcso-time{
+            background-color:$grey40;
+            color:#fff;
+            height: 16px;
+            margin:4px 0;
+            line-height: 16px;
+            padding:0 2px;
+            border-radius: 2px;
+            font-family: serif;
+            font-size:12px;
+
+        }
+        .mcso-colon{
+            color:$grey40;
+        }
+
+    }
+}
+
+
+.m-countdown-s2-active{
+    .mcs-ol{
+        .mcso-first{
+            .icon{
+                color:$highRad;
+            }
+        }
+        .mcso-time{
+            background-color:$highRad;
+        }
+         .mcso-colon{
+            color:$highRad;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "_common";
+
+.submission{
+	color:#999;
+	.title{
+		font-size:28px;
+		margin:10px 0;
+		color:#666;
+		font-weight: normal;
+	}
+	.table{
+		width: 100%;
+	}
+	.tr-heigth{ 
+		height: 45px;
+	}
+	.label{
+		width:50px;
+	}
+	.bottom-bar{
+		margin-top:10px;
+	}
+		
+	.submit-btn{
+		color: #fff;
+		font-size: 14px;
+		background:#cc3333;
+		width:120px;
+		height: 56px;
+		border:none;
+		float: right;
+		border-radius: 6px;
+	}
+}
+.c-input{
+	height:26px;
+	padding:0 5px;
+	border:1px solid #DADADA;
+	box-shadow: 2px 2px 4px #F0F0F0 inset; 
+	border-top:1px solid #bababa;
+}
+.input-text{
+	width:250px;
+}
+.input-cm-text{
+	width:80px;
+}

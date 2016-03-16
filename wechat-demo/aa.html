@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://staticweixinapp.dev.ymatou.com/js/lib/jquery.js"></script>
+    <script src="aa.js"></script>
+</head>
+<body>
+    <script>
+        gui.utils.wechatExtend({
+        appid: 'wxa06ebe9f39751792',
+        weChatConf: {
+            jsApiList: ['chooseWXPay']
+        },
+        wechatFn: function() {
+            var d = {
+                accesstoken: token,
+                tradingId: tid,
+                platForm:'2'
+            };
+
+            $.post('/Pay/WeChat/PayJson', d, function(res) {
+                res = res || {};
+                if (res.IsSuccess) {
+                    var opt = res.PayOrderRequest;
+                    wx.chooseWXPay({
+                        'timestamp': opt.TimeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+                        'nonceStr': opt.NonceStr, // 支付签名随机串，不长于 32 位
+                        'package': opt.Package, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                        'signType': opt.SignType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+                        'paySign': opt.Sign, // 支付签名
+                        success: function(res) {
+                            var ret = gui.utils.urlQuery().ret || 'http://m.ymatou.com';
+                            window.location.href = ret;
+                        }
+                    });
+                } else {
+                    alert(res.ErrorMessage);
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

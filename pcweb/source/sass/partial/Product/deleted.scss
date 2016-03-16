@@ -1,0 +1,59 @@
+﻿/*已删除商品*/
+.level_module_3 {
+	margin: 20px 0
+}
+.deleted {
+	border: 1px solid #e2e2e2;
+	margin-top: 20px;
+	line-height: 20px;
+}
+.deleted .fl {
+	width: 120px;
+	height: 120px;
+	padding: 15px;
+	border-right: 1px solid #e2e2e2;
+	text-align: center;
+	line-height: 120px;
+}
+.deleted .right {
+	padding: 15px 15px 15px 165px;
+}
+.deleted .hd h1 {
+	font: bold 16px/1 "宋体";
+	color: #000;
+}
+.deleted .b {
+	margin: 4px 0
+}
+.deleted i.r {
+	height: 120px;
+	width: 0;
+	font-size: 0
+}
+.bluebox {
+	border: 1px solid #CAD8FF;
+	padding: 10px;
+	background: #F4F8FF;
+	color: #000;
+	width: 400px;
+}
+.trigger .it {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #ccc;
+	font: normal 12px/15px "arial";
+	color: #666;
+	text-align: center;
+	margin-left: 5px;
+	text-decoration: none
+}
+.trigger .current {
+	background-color: #F04E00;
+	border: 1px solid #F04E00;
+	color: #fff;
+}
+.g-bt-recommend {
+	height: 260px;
+	overflow: hidden;
+}

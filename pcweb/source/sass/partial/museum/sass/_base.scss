@@ -1,0 +1,76 @@
+﻿@charset "utf-8";
+
+// css reset
+@import "_reset";
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.cb:after{
+	content:"";
+	clear:both;
+	height: 0px;
+	display:block;
+}
+.h2{
+	font-size:28px;
+	font-weight:bold;
+}
+.h4{
+	font-size:18px;
+	font-weight:bold;
+}
+
+//文字显示
+@each $member in left,center,right{
+	.text-#{$member}{
+		text-align:$member;
+	}
+}
+
+.hide{
+	display:none;
+}
+
+.row{
+	width:100%;
+	&:after{
+		display:table;
+		content:"";
+		clear:both;
+		zoom:1;
+	}
+	&:before {
+		display:table;
+		content:"";
+	}
+}
+.clearFex{
+	clear:both;
+	content:"";
+	zoom:1;	
+	display:block;
+	height:0;
+}
+.ly-m-10{
+	margin:10px;
+}
+.ly-m-x-10{
+	margin:0 10px;
+}
+.ly-m-y-10{
+	margin:10px 0px;
+}
+.ly-m-r-10{
+	margin-right: 10px;
+}
+.ly-m-b-10{
+	margin-bottom: 10px;
+}
+
+.dp-ib{
+	display:inline-block;
+}

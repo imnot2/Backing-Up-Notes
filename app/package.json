@@ -1,0 +1,25 @@
+{
+  "name": "YmatouApp",
+  "version": "1.7.0",
+  "private": true,
+  "scripts": {
+    "prestart": "cd public & grunt watch",
+    "start": "supervisor ymtapp.js || node ymtapp.js",
+    "release": "cp -rf public/dist/. ../../../cw/Ymatou.App.WapStatic/. & cp -rf ./ ../../../cw/Ymatou.App.WapUI"
+  },
+  "devDependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-redis": "2.0.0",
+    "cookie-parser": "^1.1.0",
+    "ejs": "*",
+    "eventproxy": "^0.3.1",
+    "express": "4.2.0",
+    "express-session": "^1.2.0",
+    "formidable": "^1.0.14",
+    "log4js": "^0.6.22",
+    "mongoose": "^3.8.15",
+    "morgan": "^1.1.1",
+    "node-uuid": "1.4.1",
+    "socket.io": "^1.2.1"
+  }
+}

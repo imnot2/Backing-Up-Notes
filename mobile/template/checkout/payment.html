@@ -1,0 +1,30 @@
+﻿<article id="" class="m_payment" temp-data="data" id="submitPayment">
+    <header>确认支付方式，输入洋码头支付密码</header>
+    <figure class="payment">
+        <legend>已选择的支付方式：</legend>
+        <div class="details">
+            <span class="icon-alipay"></span>
+            <if e="data.a">
+                <span class="add co-red">+</span>
+                <span class="co-red">账户余额</span>
+            </if>
+        </div>
+    </figure>
+    <figure class="pay-money">
+        <p>订单合计：<span class="co-red">${data.p}</span>元</p>
+        <if e="data.a">
+            <p>洋码头余额支付：<span class="co-red">${data.a}</span>元</p>
+        </if>
+        <p>其他支付方式：<span class="co-red">${data.other}</span>元</p>
+    </figure>
+    <div class="pay-ymtpasswd">
+        <if e="data.a">
+        <h5>请输入洋码头交易密码：</h5>
+        <p><input type="password" class="input" id="mtpasswordpayment" /><span class="alert alert-err none" id="vertifypasswordpayment">密码输入不正确</span></p>
+        <!--<h6>输入验证码</h6>
+        <p><input type="password" class="input vf" id="Password1" /></p>-->
+        <blockquote><small>如忘记支付密码，请去WWW.YMATOU.COM找回。</small></blockquote>
+        </if>
+        <div class="bt"><a href="" id="toSubmit" class="btn-a">确认支付</a></div>
+    </div>
+</article>

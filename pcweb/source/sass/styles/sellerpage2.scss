@@ -1,0 +1,164 @@
+﻿/*=======================sellerpage2.css===========================*/
+.uProfile .h1body {
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom: 5px;
+	padding: 0 0 5px;
+	width: 560px;
+	position: relative;
+}
+.uProfile .h1body h1 {
+	padding: 0;
+}
+.uProfile .h1body span {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 15px;
+}
+.uProfile ul li {
+	float: left;
+	margin-right: 10px;
+}
+.bradio {
+	padding: 0 5px;
+	background-color: #F2F3F8;
+	font-size: 12px;
+	border: 1px solid #C4CCC9;
+	color: #2B2A25;
+	margin-bottom: 12px;
+}
+.bradio a {
+	cursor: pointer;
+	padding: 2px 4px;
+}
+.bradio a:hover {
+	background-color: #C4CCC9;
+}
+.bradio a:hover .gray {
+	color: #2B2A25;
+}
+.bradio a.sel {
+	background-color: #2B2A25;
+	color: #fff;
+}
+.rdMore {
+	color: #2B2A25;
+	padding-right: 14px !important;
+	background: transparent url(http://img.ymatou.com/portal/images/exArror.png) no-repeat scroll right center;
+}
+.rdMore:hover {
+	background-color: #F2F3F8 !important;
+	color: #88A825;
+	background-image: url(http://img.ymatou.com/portal/images/exArrorH.png);
+}
+.rdMoreEx {
+	background-image: url(http://img.ymatou.com/portal/images/exeArrorH.png);
+}
+.rdMoreEx:hover {
+	background-image: url(http://img.ymatou.com/portal/images/exeArrorH.png);
+}
+.s_navul {
+	margin-top: 0;
+}
+#s_list2 {
+	margin: 10px 0 0 0;
+}
+#s_list2 .s_list2r {
+	width: 510px;
+}
+#s_list2 .s_listck {
+	width: 20px;
+	float: left;
+}
+#MsgDialog {
+	width: 550px;
+}
+.blist a {
+	margin: 0 5px 10px 0;
+}
+.blist img {
+	max-height: 48px;
+	max-width: 48px;
+}
+.pjlist {
+}
+.pjlist .pl_tit {
+}
+.pjlist .pl_tit .pl_tit_a {
+	background: url(http://img.ymatou.com/portal/images/context_open.gif) no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 25px;
+	width: 18px;
+	float: left;
+}
+.pjlist .pl_tit .pl_tit_a:hover {
+	background-image: url(http://img.ymatou.com/portal/images/context_open_over.gif);
+}
+.pjlist .pl_tit .op {
+	background: url(http://img.ymatou.com/portal/images/context_closed.gif) no-repeat scroll 0 0 transparent;
+}
+.pjlist .pl_tit .op:hover {
+	background-image: url(http://img.ymatou.com/portal/images/context_closed_over.gif);
+}
+.pjlist .pl_tit .pl_tit_txt {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	height: 25px;
+	line-height: 25px;
+	font-weight: 700;
+}
+.pjlist .pl_con {
+	border: 1px solid #E3E3E3;
+}
+.pjlist .pl_con .pl_fimg {
+	border-left: 1px solid #fff;
+	background-color: #f3f3f3;
+	padding: 10px 10px 5px 16px;
+}
+.pjlist .pl_con .pl_slider {
+	overflow: hidden;
+	width: 235px;
+	height: 108px;
+}
+.pl_slider .win {
+	height: 108px;
+	width: 9999px;
+	overflow: hidden;
+	margin-left: 0px;
+	line-height: 104px;
+}
+.pl_slider .win a {
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+.pl_slider .win img {
+	max-height: 100px;
+	max-width: 100px;
+	vertical-align: middle;
+}
+.pjlist .pl_con .pl_control {
+	margin-top: 5px;
+}
+.pl_control .pl_ctl_l {
+	display: block;
+	float: left;
+	background: url(http://img.ymatou.com/portal/images/pl_left.gif) no-repeat scroll 0 0 transparent;
+	width: 37px;
+	height: 10px;
+	cursor: pointer;
+}
+.pl_control .pl_ctl_l:hover {
+	background-image: url(http://img.ymatou.com/portal/images/pl_left_ov.gif);
+}
+.pl_control .pl_ctl_r {
+	display: block;
+	float: left;
+	background: url(http://img.ymatou.com/portal/images/pl_right.gif) no-repeat scroll 0 0 transparent;
+	width: 37px;
+	height: 10px;
+	cursor: pointer;
+}
+.pl_control .pl_ctl_r:hover {
+	background-image: url(http://img.ymatou.com/portal/images/pl_right_ov.gif);
+}

@@ -1,0 +1,113 @@
+/* line 3, ../../../src/sass/page/paid.scss */
+.main {
+  width: 1078px;
+  margin: 0 auto;
+}
+
+/* line 9, ../../../src/sass/page/paid.scss */
+.methodBox .bt-cont {
+  padding: 0 22px;
+}
+/* line 12, ../../../src/sass/page/paid.scss */
+.methodBox .contItem {
+  font-size: 14px;
+  color: #666666;
+  line-height: 18px;
+}
+/* line 17, ../../../src/sass/page/paid.scss */
+.methodBox .methodImg {
+  margin-top: 40px;
+}
+
+/* line 22, ../../../src/sass/page/paid.scss */
+.paidOprate {
+  text-align: center;
+}
+/* line 24, ../../../src/sass/page/paid.scss */
+.paidOprate .paidIcon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* line 31, ../../../src/sass/page/paid.scss */
+.paidOprate .loadIcon {
+  background: url("/images/system/load.gif") center no-repeat scroll;
+}
+/* line 34, ../../../src/sass/page/paid.scss */
+.paidOprate .successIcon {
+  background: url("/images/paidSuccess/paidSuccess_03.jpg") no-repeat scroll;
+}
+/* line 37, ../../../src/sass/page/paid.scss */
+.paidOprate .FailIcon {
+  background: url("/images/paidFail/paidFail.png") center no-repeat scroll;
+}
+/* line 40, ../../../src/sass/page/paid.scss */
+.paidOprate .paidMainTip {
+  font-size: 30px;
+  line-height: 46px;
+  color: #383838;
+}
+/* line 45, ../../../src/sass/page/paid.scss */
+.paidOprate .paidSubTip {
+  font-size: 14px;
+  line-height: 36px;
+}
+
+/* line 51, ../../../src/sass/page/paid.scss */
+.successBtn {
+  padding: 0 160px;
+  height: 58px;
+  line-height: 58px;
+  background-color: #dd3333;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* line 64, ../../../src/sass/page/paid.scss */
+.successBtn:hover {
+  text-decoration: none;
+}
+
+/* line 70, ../../../src/sass/page/paid.scss */
+.processBox .processImg {
+  margin-top: 24px;
+}
+
+/* line 76, ../../../src/sass/page/paid.scss */
+.howToBox .mt20 {
+  margin-top: 24px;
+}
+/* line 79, ../../../src/sass/page/paid.scss */
+.howToBox .howToImg1, .howToBox .howToImg2 {
+  margin-top: 20px;
+}
+/* line 82, ../../../src/sass/page/paid.scss */
+.howToBox .howToImg1 {
+  width: 227px;
+  margin-left: 20px;
+}
+/* line 86, ../../../src/sass/page/paid.scss */
+.howToBox .howToImg2 {
+  width: 738px;
+}
+
+/* line 92, ../../../src/sass/page/paid.scss */
+.tipsBox .tipsDes {
+  margin-top: 18px;
+}
+/* line 94, ../../../src/sass/page/paid.scss */
+.tipsBox .tipsDes .desItem {
+  background: url("/images/paidSuccess/paidSuccess2_07.jpg") left center no-repeat scroll;
+  padding-left: 28px;
+  margin-left: 24px;
+  line-height: 26px;
+  color: #464646;
+  font-size: 14px;
+}

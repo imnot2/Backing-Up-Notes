@@ -1,0 +1,187 @@
+/* line 5, ../../source/sass/home/homeproductinfo.scss */
+.product-info {
+  text-align: center;
+}
+/* line 7, ../../source/sass/home/homeproductinfo.scss */
+.product-info a {
+  text-decoration: none;
+}
+/* line 10, ../../source/sass/home/homeproductinfo.scss */
+.product-info .left, .product-info .right {
+  float: left;
+  width: 293px;
+  position: relative;
+}
+/* line 15, ../../source/sass/home/homeproductinfo.scss */
+.product-info .left:hover .title, .product-info .right:hover .title {
+  color: #333;
+}
+/* line 23, ../../source/sass/home/homeproductinfo.scss */
+.product-info .right {
+  border-left: 1px solid #ddd;
+}
+/* line 26, ../../source/sass/home/homeproductinfo.scss */
+.product-info .imgbox {
+  display: block;
+  padding: 15px 0 10px;
+  height: 120px;
+}
+/* line 30, ../../source/sass/home/homeproductinfo.scss */
+.product-info .imgbox .img {
+  width: 120px;
+  height: 120px;
+}
+/* line 32, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url(/images/sprites/icon-home.png) no-repeat 0 0;
+  color: #fff;
+  font-size: 21px;
+  text-align: left;
+  top: 0;
+  left: 0;
+}
+/* line 42, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign b {
+  width: 45px;
+  display: block;
+  word-wrap: break-word;
+  margin: 3px 0 0 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 50, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign p {
+  text-align: center;
+  font: normal 14px/1.3 "Microsoft yahei";
+}
+/* line 55, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-red {
+  background-position: -90px 0;
+}
+/* line 59, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-sun-light, .product-info .sign-sun-gray, .product-info .sign-moon-light, .product-info .sign-moon-gray {
+  width: 48px;
+  height: 46px;
+  left: 10px;
+  top: 10px;
+  padding-top: 51px;
+}
+/* line 67, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-sun-light {
+  background-position: -178px 0;
+}
+/* line 69, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-sun-light p {
+  color: #FF8787;
+}
+/* line 74, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-sun-gray {
+  background-position: -294px 0;
+}
+/* line 76, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-sun-gray p {
+  color: #c3c3c3;
+}
+/* line 81, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-moon-light {
+  background-position: -236px 0;
+}
+/* line 83, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-moon-light p {
+  color: #9EB0D4;
+}
+/* line 88, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-moon-gray {
+  background-position: -352px 0;
+}
+/* line 90, ../../source/sass/home/homeproductinfo.scss */
+.product-info .sign-moon-gray p {
+  color: #c3c3c3;
+}
+/* line 95, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo {
+  text-align: left;
+}
+/* line 97, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo:hover {
+  color: #333;
+}
+/* line 100, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .fc-red {
+  color: #cc3333;
+}
+/* line 101, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .info-bd-wrap {
+  height: 41px;
+  _height: 39px;
+  overflow: hidden;
+}
+/* line 106, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .info-bd {
+  padding: 0 10px 5px;
+  font: normal 14px/1.5 "Microsoft yahei";
+}
+/* line 109, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .info-bd .zhekou {
+  font-weight: bold;
+}
+/* line 113, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .bought {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* line 118, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .yen {
+  font-size: 12px;
+}
+/* line 121, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .del-price {
+  font-size: 12px;
+}
+/* line 124, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .price {
+  font: normal 20px/1.2 "Arial";
+  margin: 0 10px 0 0;
+  font-weight: 700;
+}
+/* line 129, ../../source/sass/home/homeproductinfo.scss */
+.product-info .productinfo .info-bt {
+  padding: 0 10px;
+  height: 40px;
+  _height: 24px;
+  _padding: 8px 10px;
+  background-color: #F6F6F6;
+  line-height: 40px;
+  _line-height: normal;
+}
+
+/* line 140, ../../source/sass/home/homeproductinfo.scss */
+.unStrat, .isEnd, .sold-out {
+  position: absolute;
+  width: 140px;
+  line-height: 40px;
+  height: 40px;
+  left: 50%;
+  margin-left: -70px;
+  bottom: 7px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+/* line 151, ../../source/sass/home/homeproductinfo.scss */
+.unStrat .cover-inner, .isEnd .cover-inner, .sold-out .cover-inner {
+  background: #000;
+  filter: Alpha(opacity=70);
+  position: static;
+  *zoom: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 157, ../../source/sass/home/homeproductinfo.scss */
+.unStrat .cover-inner p, .isEnd .cover-inner p, .sold-out .cover-inner p {
+  color: #fff;
+  position: relative;
+}

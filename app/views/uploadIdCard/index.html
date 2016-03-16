@@ -1,0 +1,21 @@
+<%=include commons/header.html%>
+<section class="container">
+	<div class="upload-mod">
+		<p>您的包裹将通过中国海关清关入境，需配合提交身份证明，<a href="/forYmatouApp/uploadIdCard/provision/1">查看海关法律</a></p>
+		<% if(data && data.length){ %>
+		<h5 class="upload-mod-title">选择上传身份证的收件人姓名：</h5>
+		<ul class="upload-mod-lists">
+			<%for(var i = 0,len = data.length;i<len;i++){%>
+			<li <%=data[i].isNeedUploadIdCard?"":"class=\"submited\""%>>
+				<a class="J-open" data-href="/forYmatouApp/uploadIdCard/<%= tid %>/list/<%=data[i].OrderId%>/userInfo/<%= data[i].UserId%>/<%=data[i].Recipient%>/<%=data[i].Mobile%>">
+					<%=data[i].Recipient%><em>></em>
+				</a>
+			</li>
+			<%}%>
+		</ul>
+		<% }else{%>
+			没有需要的上传信息
+		<% } %>
+	</div>
+</section>
+<%=include commons/footer.html%>

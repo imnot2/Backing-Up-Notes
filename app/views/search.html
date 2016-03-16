@@ -1,0 +1,132 @@
+<%=include global/header.html%>
+<section class="container search-container"  ng-controller='SearchController' >
+	<div class="search-box">
+		<span class="inp-wrap">
+			<em class="icon icon-search"></em>
+			<input type="text" ng-model="search.keyword">
+			<em class="icon icon-search-close" ng-if="search.keyword" ng-click="search.clearKeyword()"></em>
+		</span>		
+		<button class="btn" ng-click="updateResult(true)">搜索</button>
+	</div>
+	<div class="search-tools-box">	
+		<span ng-click="toSort(105)" ng-class="{selected:param.SortType==105}">综合排名</span>
+		<span ng-click="toSort(102)" ng-class="{selected:param.SortType==102}">销售最高</span>
+		<span ng-click="toSort(104)" ng-class="{selected:param.SortType==104}">价格<em class="icon" ng-class="{'icon-search-up':param.SortType==104&&!sequence,'icon-search-down':param.SortType==104&&sequence}"></em></span>
+		<span ng-click="screeningStep=1"><em class="icon icon-search-filter"></em>筛选</span>
+	</div>
+	<div class="hot-list ng-cloak" ng-if="!(search.isSearchOver&&search.searchNumber===0)">
+		<ul class='hl-main' infinite-scroll='search.nextPage()' infinite-scroll-disabled='search.busy' 
+			infinite-scroll-distance='1'>
+			<li ng-repeat="hp in search.results" ng-click="toProduct(hp.ProductId,hp.Name,hp.PicUrl,hp.Price)">
+				<span class="hl-box">
+						<p class="pic"  ng-style="{'background-image':'url('+hp.PicUrl+')' }">
+							<span class="last" ng-if="hp.Stock < 4"><em>库存紧张</em><i class="arrow-down"></i></span>
+						</p>
+						<p class="price">
+							<span class="country">
+								<span class="flag" ng-style="{'background-image':'url('+hp.Flag+')'}"></span>
+								<i ng-bind="hp.Country"></i>
+							</span>
+							
+							<span class="number">
+								&yen;<strong ng-bind='hp.Price'></strong>
+							</span>
+						</p>
+						<p class="info">
+							<span class='title' ng-bind="hp.Name"></span>
+						</p>
+				</span>
+			</li>
+		</ul>
+		<div class="load-more">
+			<p class="loading" ng-show='search.busy'></p>
+		</div>
+	</div>
+	<div class="search-empty ng-cloak" ng-if="!search.busy && search.results.length == 0">
+		米有找到‘<span ng-bind="search.keyword"></span>’耶<br>小主不如试一下别的吧~
+	</div>
+	<!--遮罩-->
+	<div class="body-mask-fix ng-cloak search-mask" ng-if="screeningStep" ng-click="closeScreening()" disabled-scroll>
+		<div class="search-mask-close" ymt-style="left:(clientWidth*0.13 - 27)/2px">
+			<i class="icon icon-arrow"></i>
+		</div>
+		
+	</div>
+
+	<nav class="screening-wrap">
+		<!--筛选结果-->
+		<div class="screening-board ng-cloak" side-slide="screeningStep > 0" disabled-scroll>
+			<div class="screening-board-content" ymt-style="height:clientHeight-51;overflow:auto;">
+				<h4 class="scree-title">价格区间</h4>
+				<div class="scree-row">
+					<span class="scree-input-wrap">
+						<input type="number" class="scree-inp" ng-model="param.MinPrice" placeholder="请输入数字">
+					</span>
+					至
+					<span class="scree-input-wrap">
+						<input type="number" class="scree-inp" ng-model="param.MaxPrice" placeholder="请输入数字">
+					</span>
+				</div>
+				<div class="scree-row">	
+					<ul class="scree-list">
+						<li ng-click="openScreening(3)">品牌 <strong>{{brandDescLists.toString()}}</strong><em class="icon icon-arrow"></em></li>
+						<li ng-click="openScreening(2)">分类 <strong>{{classify}}</strong><em class="icon icon-arrow"></em></li>
+					</ul>
+				</div>
+<!-- 				<h4 class="scree-title">配送方式<span>(可多选)</span></h4>
+<div class="scree-row scree-row-division">				
+	<ul class="more-btn-grunp">
+		<li><button class="btn btn-white" ng-class="{'btn-warning-boder':dispatchingMap['2']}" ng-click="dispatchingWay('2')">海外直邮</button></li>
+		<li><button class="btn btn-white" ng-class="{'btn-warning-boder':dispatchingMap['4,5']}" ng-click="dispatchingWay('4,5')">保税区发货</button></li>
+		<li><button class="btn btn-white" ng-class="{'btn-warning-boder':dispatchingMap['1']}" ng-click="dispatchingWay('1')">国内现货</button></li>
+	</ul>
+</div> -->
+				<h4 class="scree-title">邮费和关税</h4>
+				<div class="scree-row scree-row-division">				
+					<ul class="more-btn-grunp">
+						<li><button class="btn btn-white" ng-class="{'btn-warning-boder':param.FreeShipping}" ng-click="param.FreeShipping = !param.FreeShipping">商家包邮</button></li>
+						<li><button class="btn btn-white" ng-class="{'btn-warning-boder':param.TaxFarming}" ng-click="param.TaxFarming = !param.TaxFarming">商家包税</button></li>
+					</ul>
+				</div>
+				<p class="bottom-tools">	
+					<button class="btn btn-gray" ng-click="clear()">清空筛选</button>
+				</p>
+			</div>	
+			<div class="screening-board-bottom" disabled-scroll>
+				<p class="bottom-tools">
+					<button class="btn btn-warning btn-full-w" ng-click="updateResult();openScreening(0)">确认</button>
+				</p>
+			</div>
+		</div>
+		<div class="screening-board ng-cloak" side-slide="screeningStep == 2">
+			<div class="scree-row" ymt-style="height:clientHeight;overflow:auto;">				
+				<ul class="scree-list">
+					<li ng-click="selectClassify(item.Sort,item.CategoryName)" ng-repeat="item in allCategorys">{{item.CategoryName}}<em class="icon icon-arrow"></em></li>
+				</ul>
+			</div>	
+		</div>
+		<!--品牌-->
+		<div class="screening-board ng-cloak" side-slide="screeningStep == 3">
+			<div class="screening-board-content" ymt-style="height:clientHeight-51px;overflow:auto;">
+				<div class="brand-classify" ng-repeat="(key,items) in allBrandLists" id="/_{{key}}">
+					<h3>{{key}}</h3>
+					<ul class="scree-list">
+						<li ng-click="selectBrand(brand)" ng-repeat="brand in items">
+							<em class="icon" ng-class="{'icon-search-unselected':!brand.isSelect,'icon-search-selected':brand.isSelect}"></em>{{brand.BrandName}}
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="screening-board-bottom"  disabled-scroll>
+				<p class="bottom-tools">
+					<button class="btn btn-warning btn-full-w" ng-click="confirmBrand()">确认</button>
+				</p>
+			</div>
+		</div>
+	</nav>
+	<div class="loading-warp" ng-if="logo.loading" data="{{logo.loading}}">     
+		<div class="logo-loading"></div>
+	</div>
+
+</section>
+<%=include global/footer.html%>

@@ -1,0 +1,122 @@
+<%=include global/header.html%>
+<top-tools-bar class="navbar"></top-tools-bar>
+<section class="container shopping-bag" ng-controller="ShoppingBagController">
+
+	<div class="no-product" ng-class='{dshow:shoppingcart.ItemCount < 1}'>
+		<span class='null-product'> <i class="icon icon-EShoppingBag"></i>
+			<span>购物袋中还空空如也呢～</span>
+		</span>
+	</div>
+
+	<div class="yes-product" ng-class='{dshow:shoppingcart.ItemCount > 0}'>
+		<div class="top-tips" ng-class="{'bonded-tips':bonded>0}">
+			<p ng-if="bonded==0">袋子里共有<span ng-bind="shoppingcart.ItemCount||0"></span>个宝贝等你下手哦～</p>
+			<p ng-if="bonded>0">有<strong ng-bind="bonded"></strong>个保税商品暂无法通过APP购买<br/>请到洋码头官网支付</p>
+		</div>
+
+		<div class="p_mod s-nmb" ng-repeat="s in shoppingcart.ShoppingCartInfo.SellerProducts"  ng-if="!s.isNoProduct">
+			<div class="pm-t">
+				<span class="checkbox" ng-click='sellerSelectd($index,shoppingcart.ShoppingCartId)'>
+					<label> <i class="icon " ng-class="{'icon-chooseH01':s.Selected,'icon-chooseN':!s.Selected}"></i>
+					</label>
+				</span>
+				<span class="pm-name spb-name" ng-bind='s.SellerName'></span>
+				<span class="spb-link" ng-click="toChat(s.SellerId,s.SellerName,s.SellerLogo)" diff-show>
+					<i class="icon icon-toTalk"></i>
+				</span>
+			</div>
+			<div class="pm-m">
+				<ol class="spb-bag-list">
+					<li ng-repeat="sp in s.Catalogs">
+						<span class="spb-select" >
+							<span class="checkbox" ng-click="productSelect(s.SellerId,$index,shoppingcart.ShoppingCartId)">
+								<label>
+									<i class="icon" ng-class="{'icon-chooseH01':sp.Selected,'icon-chooseN':!sp.Selected}"></i>
+								</label>
+							</span>
+						</span>
+						<div class="spb-info">
+							<span class="pic">
+								<img ng-src="{{(sp.PictureUrl  | urlAdapt)}}"/>
+							</span>
+							<div class="info">
+								<div class="tl">
+									<p>
+										<span ng-bind='sp.ProductName' class="productname" textflow="2"></span>
+										<span class="quoteprice" >
+											&yen;
+											<i ng-bind='sp.QuotePrice'></i>
+										</span>
+										<span class='number'>
+											x <strong ng-bind="sp.ProductNumber||0"></strong>
+										</span>
+									</p>
+								</div>
+								<div class="tn" ng-repeat="catalogProp in sp.CatalogPropertyList">
+									<p>
+										<span>{{catalogProp.Property}}：</span>
+										<span ng-bind="catalogProp.PropertyAttribute" class="category-value"></span>
+									</p>
+								</div>
+								<div class="tnb">
+									<p>
+										<span class="del" ng-click='delProduct(s.SellerId,sp.CatalogId,$index,shoppingcart.ShoppingCartId,sp.CartId)'>
+											<i class="icon icon-delete"></i>
+										</span>
+									</p>
+									<div class="input-group">
+										<span class="input-group-btn" ng-click="incOrDec(0,sp,s.SellerId)">-</span>
+										<input type="text" class="form-input form-input-super-sm" ng-model="sp.ProductNumber" ng-value="sp.ProductNumber||1" readonly>
+										<span class="input-group-btn" ng-click="incOrDec(1,sp,s.SellerId)">+</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="spb-msg" ng-if="sp.NeedDisplayCancelTime">
+							<p>
+								<i class="icon icon-note"></i>
+								此商品需要在下单后
+								<span ng-bind='sp.AutoCancelOrderMinites'></span>
+								分钟内完成支付哦！
+							</p>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="top-tips" ng-if="shoppingcart.InvalidNum > 0">
+			<p>
+				有
+				<span ng-bind="shoppingcart.InvalidNum||0"></span>
+				个宝贝失效，已自动当您移除哦～
+			</p>
+		</div>
+
+		<div class="bar-fix go-pay">
+			<div class="pull-left">
+				<span class="checkbox" ng-click='allSelect(shoppingcart.ShoppingCartId)'>
+					<label>
+						<i class="icon" ng-class="{'icon-chooseH01':shoppingcart.SelectedAll,'icon-chooseN':!shoppingcart.SelectedAll}"></i>
+					</label>
+					<span class="txt">全选</span>
+				</span>
+			</div>
+			<div class="pull-right">
+				<span class="pay-price">
+					  <span class="label">总价:</span><strong>￥
+						<span ng-bind='shoppingcart.TotalPrice||0'></span></strong> 
+					<br/>
+					（含运费:￥
+					<span ng-bind="shoppingcart.TotalFeight||0"></span>）
+				</span>
+				<span class="pay-btn">
+					<button class="btn btn-warning" ng-click='toOrder()'>去结算</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+<fixed-menu></fixed-menu>
+<%=include global/footer.html%>

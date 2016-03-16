@@ -1,0 +1,162 @@
+﻿.gav_logo .web_logo {
+  background-image: url(/content/img/sprites/top.png?v=201212051602);
+  background-repeat: no-repeat;
+}
+.gav_logo {
+  float: left;
+}
+.gav_logo li {
+  float: left;
+  margin-right: 10px;
+  height: 59px;
+}
+.gav_logo .web_logo {
+  display: inline-block;
+  width: 115px;
+  height: 60px;
+  background-position: 0 -150px;
+}
+#page_box {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: left;
+}
+.page_mod {
+  width: 1000px;
+  margin: 0 auto;
+}
+.gb_wapper {
+  position: relative;
+  text-align: left;
+  margin: 0px auto;
+  width: 990px;
+}
+.hidden {
+  display: none !important;
+}
+.page_logo {
+  padding: 20px 0;
+}
+.mt_text {
+  color: #999;
+}
+.mt_text_act {
+  color: #2b2a25;
+}
+#singe_out {
+  margin-top: 4px;
+  text-align: right;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/*global*/
+.vgap-20 {
+  margin: 20px 0;
+}
+.vgap-30 {
+  margin: 30px 0;
+}
+.vpad-20 {
+  padding: 20px 0;
+}
+.vpad-10 {
+  padding: 10px 0;
+}
+.bluebox {
+  border: 1px solid #CAD8FF;
+}
+
+/**settle_1**/
+.settle_1 {
+  padding: 5px;
+  border: 1px solid #e2e2e2;
+  background-color: #f5f5f5;
+}
+.settle_1 .inner {
+  padding: 10px;
+  background-color: #fff;
+  height: 22px;
+  overflow: hidden;
+  line-height: 22px;
+}
+.settle_1 .inner .item {
+  float: left;
+}
+.settle_1 .inner .l {
+  width: 450px;
+}
+.settle_1 .inner .c {
+  width: 200px;
+}
+.settle_1 .inner .r {
+  float: right;
+}
+.settle_1 .price {
+  font-size: 24px;
+  color: #EB5E00;
+  line-height: 20px;
+}
+
+/*postpay*/
+.postpay {
+  padding: 10px 0;
+  color: #000;
+}
+.postpay .dec {
+  font: normal 14px/2.5 "宋体";
+}
+.postpay .bt {
+  text-align: center;
+}
+.bluebox .dashed {
+  border-bottom: 1px dashed #ccc;
+}
+.bluebox .mod {
+  padding: 0 50px;
+}
+.bluebox li.node {
+  margin: 20px 0;
+  height: 24px;
+}
+.bluebox .inp_text {
+  height: 22px;
+  line-height: normal;
+}
+
+/*zhangdong*/
+.page_split {
+  line-height: 0;
+  font-size: 0;
+  border-top: 2px solid #cc3333;
+}
+
+/*dingbigui*/
+.icons-sprite {
+  background-image: url("/content/img/sprites/icons-s0bc8cd0c96.png");
+  background-repeat: no-repeat;
+}
+.topbar .empty-hd-center {
+  width: 130px;
+  height: 66px;
+  background: url("/content/img/sprites/icons-s9e22932609.png") 0 0 no-repeat;
+}
+.topbar .empty-hd-center a {
+  width: 130px;
+}
+#footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+#footer p {
+  line-height: 20px;
+  text-align: center;
+}
+.topbar {
+  padding: 4px 0 8px 0;
+}
+.wrapper .topbar .droptitle {
+  margin-top: 0;
+}

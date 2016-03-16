@@ -1,0 +1,29 @@
+<div class="hot-list" ng-if="recommendProducts.item && recommendProducts.item[0]">
+	<ul class='hl-main' infinite-scroll='loadRecommend()' infinite-scroll-disabled='recommendProducts.isBuy' 
+		infinite-scroll-distance='1'>
+		<li ng-repeat="hp in recommendProducts.item" ng-click="toProduct(hp.PID,hp.Name,hp.Pic,hp.Price)" >
+			<span class="hl-box">
+					<p class="pic-warp"  ng-style="{'background-image':'url('+hp.Pic+')' }">
+						<span class="last" ng-if="hp.Stock < 4"><em>库存紧张</em><i class="arrow-down"></i></span>
+					</p>
+					<p class="price">
+						<span class="country">
+							<span class="flag" ng-style="{'background-image':'url('+hp.CountryModel.Flag+')'}"></span>
+							<i ng-bind="hp.Country"></i>
+						</span>
+						
+						<span class="number">
+							&yen;<strong>{{hp.Price}}</strong>
+						</span>
+					</p>
+					<p class="info">
+						<span class="title" >{{hp.Name}}</span>
+					</p>
+			</span>
+		</li>
+	</ul>
+	<div class="load-more">
+		<p class="loading" ng-show='recommendProducts.isBuy'></p>
+		<p class="line" ng-if="recommendProducts.isEnd">已显示全部商品</p>
+	</div>
+</div>

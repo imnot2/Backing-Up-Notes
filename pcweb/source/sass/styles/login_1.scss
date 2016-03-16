@@ -1,0 +1,77 @@
+﻿/*=======================login_1.css===========================*/
+#img_login {
+	width: 452px;
+	height: 260px;
+	margin-top: 30px;
+	float: left;
+}
+.input_div {
+	width: 360px;
+	float: right;
+}
+.input_div .gary_f1 {
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+}
+.input_div .gary_f2 {
+	font-size: 14px;
+	color: #333;
+}
+.input_div .gary_f3 {
+	font-size: 12px;
+	color: #666;
+}
+#input_login {
+	width: 360px;
+	height: 290px;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	margin: 5px 0 1px;
+}
+#input_login_bk {
+	width: 350px;
+	height: 260px;
+	margin: 5px;
+	background-image: url(./images/login_input_bk.png);
+	padding-top: 20px;
+	text-align: center;
+}
+#input_login .input_style {
+	width: 200px;
+	height: 26px;
+	border: 1px solid #dadada;
+	border-top: 1px solid #bababa;
+}
+#input_login .jinggao {
+	height: 26px;
+	background-color: #F04E00;
+	font-size: 12px;
+	color: #fff;
+	line-height: 26px;
+	padding-left: 7px;
+	width: 200px;
+}
+#checkbox_login {
+}
+#checkbox_login li {
+	float: left;
+	display: inline;
+	margin-right: 5px;
+	line-height: 18px;
+}
+#line_line {
+	margin: 0px auto 15px;
+	font-size: 0px;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #fff;
+	width: 280px;
+}
+#input_login .left_ul_li li {
+	float: left;
+}
+#input_login .div_input {
+	height: 28px;
+	width: 300px;
+	margin: 0px auto 15px auto;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "base/font";
+@import "helpers/variable";
+@import "helpers/placeholder";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "modules/errormask";
+
+body {
+    background-color: $doc-bg;
+    color: $base-fc;
+}
+
+.mt56 {
+    margin-top: pxtorem(56);
+}
+
+.mt38 {
+    margin-top: pxtorem(38);
+}
+
+.bind-tips {
+    font-size: pxtorem(28);
+    margin-top: pxtorem(20);
+    @extend %text-center;
+    @include text-middle(pxtorem(86));
+}
+
+.form-login {
+    padding-left: pxtorem(40);
+    background-color: $base-bg;
+    border-bottom: 1px solid $base-bc;
+    border-top: 1px solid $base-bc;
+    .operate-box {
+        @extend %clearfix;
+        &.operate-password {
+            .input-box {
+                border-bottom: none;
+            }
+        }
+        .icon-font {
+            font-size: pxtorem(46);
+            line-height: pxtorem(46);
+            float: left;
+            margin-top: pxtorem(20);
+            color: $icon-login-fc;
+        }
+        .input-box {
+            @include text-middle(pxtorem(46));
+            margin-left: pxtorem(64);
+            color: $form-login-fc;
+            font-size: pxtorem(28);
+            padding: pxtorem(20) 0;
+            position: relative;
+            border-bottom: 1px solid $base-bc;
+            lable {
+                margin-right: pxtorem(8);
+            }
+            input {
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            .empty-btn {
+                position: absolute;
+                top: 0;
+                right: pxtorem(30);
+                font-size: pxtorem(40);
+                color: $btn-cancel-fc;
+                display: none;
+            }
+        }
+    }
+}
+
+.photo-box {
+    padding: pxtorem(60) 0;
+    text-align: center;
+    .user-photo {
+        @extend %full-radius;
+    }
+}
+
+.toggle-cont .btn-bind {
+    margin: pxtorem(22) 0;
+}
+
+.togglebind-box {
+    border: 2px solid $bold-bc;
+    @extend %extend-redius;
+    overflow: hidden;
+    &.direction-down {
+        height: pxtorem(96);
+    }
+    .toggle-trigger {
+        @include text-middle(pxtorem(96));
+        background-color: $base-bg;
+        text-align: center;
+        font-size: pxtorem(34);
+        position: relative;
+        .icon-font {
+            position: absolute;
+            color: $highlight-fc;
+            right: pxtorem(30);
+            font-size: pxtorem(40);
+            font-weight: bold;
+        }
+    }
+    .toggle-cont {
+        .form-login {
+            background-color: $form-login-bg;
+        }
+    }
+}
+
+.unknow-user {
+    .bind-tips {
+        width: $main-width;
+        margin: 0 auto;
+        text-align: left;
+        font-size: pxtorem(24);
+        margin-top: pxtorem(22);
+        @include text-middle(pxtorem(58));
+    }
+}
+
+.old-user {}

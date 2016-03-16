@@ -1,0 +1,50 @@
+﻿/*=======================base.css===========================*/
+* {
+    padding-bottom: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+HTML {
+    background: #ffffff;
+}
+BODY {
+    font: 12px/1.6em simsun, Verdana, Lucida, Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+TH {
+    border-collapse: collapse;
+}
+TD {
+    border-collapse: collapse;
+}
+OL {
+    list-style-type: none;
+}
+UL {
+    list-style-type: none;
+}
+A {
+    color: #666666;
+    text-decoration: none;
+}
+A:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+INPUT {
+    vertical-align: middle;
+}
+SELECT {
+    vertical-align: middle;
+}
+FORM IMG {
+    vertical-align: middle;
+}
+IMG {
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}

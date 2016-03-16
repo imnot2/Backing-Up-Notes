@@ -1,0 +1,283 @@
+﻿/*=======================cshop.css===========================*/
+/**layout**/
+@charset "utf-8";
+.topmain .logobg{background:url(/content/images/shop/shoplogobg.gif) no-repeat;width:261px;height:78px}
+.searchtab .searchbtn input{width:90px}
+.cshop .main{width:100%;float:left}
+.cshop .main .btt{margin:15px 0 0;text-align:right}
+.cshop .left{float:left;display:inline;margin-left:-100%;_margin-left:-1000px;width:198px;border:1px solid #e2e2e2}
+.cshop .right{float:left;margin-left:-231px;width:228px;border-left:1px solid #e2e2e2;}
+.cshop .rcon{padding:0;width:790px;padding-left:210px;}
+.cshop .rcon-1{width:570px;padding-left:200px;float:left;padding-right:230px;}
+.cshop .sitebar{overflow:hidden}
+.cshop .i{background-image:url(/content/img/sprites/cshop.2014112500.gif)}
+.cshop .node{margin:10px 0}
+.node .fr{border:1px solid #efefef;padding:3px 5px}
+.node .w650{width:650px;overflow:hidden}
+.tarrow,.tarrow1{display:inline-block;vertical-align:middle;height:0;width:0;overflow: hidden; font-size: 0; line-height: 0; border-color:#3368FF #fff #fff #fff;border-style:solid;border-width:4px; margin:5px 5px 0 0;}
+.tarrow1{border-color:#fff #fff #3368FF #fff;margin:0 5px 5px 0}
+.mmod{border-bottom:1px solid #e2e2e2;padding:15px 0}
+.mmod .fname{margin:0 0 5px;font-size:14px;color:#000;}
+.mmod .node{margin:0}
+.h4{font:bold 14px/22px "\u5b8b\u4f53"; color:#404040}
+
+.mod{border-bottom:1px solid #e2e2e2;margin-bottom:-1px;padding:10px 15px;}
+.sitebar .one{padding:20px 10px 15px;overflow:hidden;}
+.webmessage{background:url(/content/img/sprites/cshop.2014112500.gif) no-repeat -50px -77px;width:77px;height:24px;}
+.split{margin:0 5px}
+.fs{font-size:14px}
+.node .mr{margin-right:20px}
+.price b{background:url("/content/img/sprites/shop.2014112500.png") no-repeat scroll -194px -74px #FFFFFF;padding-left:10px;line-height:10px;font-size:16px;height:15px; line-height:18px;color:#FF2900}
+.put{font-size:0;line-height:0;height:5px; text-align:center;border-top:1px solid #f2f2f2;margin:10px 0 0}
+.put .arrow{width:30px;height:5px;display:inline-block;cursor:pointer;}
+.put .on{background-position:-202px -153px;}
+.put .off{background-position:-202px -159px;}
+.putshow{display:none;}
+.rcon-1 .five{margin:0;border:1px solid #e2e2e2;border-top:0;*margin-left:-2px;margin-left:-2px\9;}
+.rcon-1 .product{margin-left:-1px}
+.rcon-1 .product .pt{margin-right:14px;}
+.redbtn{display:inline-block;padding:5px 20px;background-color:#ff0000;color:#fff;height:30px;line-height:30px;text-align:center}
+.redbtn:hover{color:#fff; text-decoration:none}
+.tab,.person{width:206px;height:35px;}
+.tab{background-position:0 0;}
+.person{background-position:0 -36px;}
+.shopnav{height:34px;line-height:34px;border-bottom:1px solid #999;margin-bottom:10px;}
+.shopnav .l b{font-size:14px;font-family:"\5b8b\4f53"}
+.shopnav .r{float:right;}
+.shopnav .tab{margin-bottom:-1px;_position:relative}
+.shopnav .tab .item{display:inline-block;width:88px;height:26px;}
+.shopnav .tab .current{width:114px;height:34px;}
+.usercenter{display:inline-block;width:88px;height:22px;background-position:-152px -205px;vertical-align:middle}
+.shopnav .icon{display:inline-block;width:25px;height:22px;background-position:-12px -7px;margin:0 5px 0 0; vertical-align:middle}
+.one .p{height:160px;background-color:#f2f2f2;width:160px;padding:5px}
+.one .pt{margin-left:3px;}
+.one .aimg .img {width:160px;height:160px}
+.h2{font:bold 14px/16px "\5b8b\4f53";color:#F04D00;}
+.h3{font:bold 14px/20px "\5b8b\4f53";color:#F04D00;padding:10px 0 0}
+.h3 a,.h2 a{color:#F04D00}
+.two .node .l{width:45px;}
+.four{border:1px solid #e2e2e2;position:relative;}
+.four .img{width:788px;max-height:150px;_height:150px;}
+.four .bt{display:inline-block;width:84px;height:32px;cursor:pointer;background-position:-132px -77px;margin-top:5px}
+.collect{width:84px;cursor:pointer;margin-top:5px; text-align:center;font-weight:bold}
+.four .l{width:230px;height:60px;padding:10px;}
+.four .pos{width:300px;color:#000;line-height:22px;padding:10px;}
+.five{margin:10px 0}
+.search .inp{width:80px;margin-right:5px;background-position:-222px -42px;background-repeat:no-repeat;padding-left:20px}
+.catalog .hd{ color:#404040;font:bold 14px/36px "\5b8b\4f53";height:36px;background:url(/content/img/sprites/bg.png) repeat-x 0 -205px;padding:0 15px 0 10px; text-align:left;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2}
+.catalog .hd a{display:inline-block;vertical-align:middle;color:#404040;}
+.catalog .hd b{display:inline-block;vertical-align:middle;}
+.catalog .hd .r{float:right;margin-top:13px;width:13px;height:13px;background-repeat:no-repeat;cursor:pointer}
+.catalog .hd .down{background-position:-229px 0}
+.catalog .hd .up{background-position:-229px -18px} 
+.catalog .hd .ic{display:inline-block;vertical-align:middle;width:10px;height:5px;background:url(/content/img/sprites/cshop.2014112500.gif) -232px -180px no-repeat;margin:0 5px 0 0;font-size:0;line-height:0}
+.catalog .bd{}
+.catalog .sub{overflow:hidden;margin-top:-1px;}
+.catalog .dt{color:#404040;font:bold 14px/32px "Arial";height:32px;border-top:1px solid #e2e2e2;padding:0 10px 0 12px;}
+.catalog .dt .ic{display:inline-block;vertical-align:middle;font-size:0;width:9px;height:9px;background:url(/content/img/sprites/cshop.2014112500.gif) -233px -169px no-repeat;margin:0 2px 0 0}
+.catalog .dt em{color:#ccc;font-size:12px; font-weight:normal;padding-left:2px}
+.catalog .dd{padding:0 10px 0 28px;border-top:1px dashed #e2e2e2;line-height:30px;}
+.catalog .item{display:inline-block;padding:4px 6px;margin:5px 10px 5px 0;border:1px solid #cccccc}
+.catalog .item:hover{background-color:#F04E00;color:#fff; text-decoration:none}
+.catalog .current{background-color:#f04e00}
+.catalog .current a,.catalog .current a:hover{color:#fff}
+.catalog .bd a.hover{color:#fff;background-color:#f04e00}
+.tab-bd .intro{line-height:24px;}
+.tab-bd .bt{text-align:center;padding:10px 15px}
+.tab-bd .time{float:left;}
+.topay .ic{display:inline-block;background:url(/content/images/forumlink.png) 0 -119px no-repeat;width:170px;height:45px; }
+.product{padding:0 15px;}
+.product .hd{padding:2px 15px;background:url(/content/img/sprites/bg.png) repeat-x 0 -215px;margin:0px -15px 20px;_margin:0px -15px 20px;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2 }
+.product .h3{font:normal 12px/1.6 "\5b8b\4f53";height:40px;overflow:hidden;padding-top:5px}
+.product .h3 a{color:#006DD9}
+.product ul{margin-right:-38px;}
+.product .pt{width:170px;margin-right:26px;margin-bottom:20px;float:left;display:inline;height:262px;overflow:hidden;}
+.product .p{padding:4px;border:1px solid #e2e2e2;}
+.product .aimg {display:block;width:160px;height:160px;overflow:hidden; text-align:center;line-height:160px;letter-spacing:-4px;font-size:0;word-wrap:normal}
+.product .i{width:20px;height:19px;background-position:-219px -85px}
+.product .img_160 {display:inline-block}
+.product .node{margin:5px 0}
+.product .mall{width:37px;height:13px;background:url(/content/img/sprites/shop.2014112500.png) no-repeat -34px 0;margin-left:5px;}
+.product .bonded{width:20px;height:16px;background:url(/content/img/sprites/shop.2014112500.png) no-repeat -86px -16px;margin-left:5px; vertical-align:top;}
+.product .bd{overflow:hidden;}
+
+.product .h{height:92px}
+.product .avi{background:url(/content/img/sprites/shop.2014112500.png) no-repeat -38px -17px;width:14px;height:16px}
+.table-1 .num{width:66px;}
+.table-1 .txt{width:170px;}
+.wid758{width:758px;}
+
+.record{overflow:hidden}
+.record .lt{float:left}
+.record li{overflow:hidden;margin-top:15px;padding:10px 0;border-bottom:1px solid #e2e2e2;margin-bottom:-1px}
+.record .box-1{width:100px;overflow:hidden; text-align:center}
+.record .box-1 p{margin:10px 0}
+.record .box-2{width:520px;margin:0 15px;}
+.record .box-3{padding-top:30px;}
+.record .img{width:100px;height:100px;}
+.btnorder{display:inline-block;width:60px;height:29px;background:url(/content/img/sprites/cshop.2014112500.gif) no-repeat -2px -116px;}
+/******page 品牌选择*******/
+.mainbrand .brand{width:715px;overflow:hidden}
+.mainbrand .l{vertical-align:top;}
+.mainbrand .showall{height:auto;}
+.mainbrand .brand a{margin:0 8px 10px;display:inline-block;padding:0 2px;vertical-align:top;color:#000}
+.mainbrand .brand a .remark{color:#666}
+.mainbrand .brand a:hover,.mainbrand .brand a.hover{background:#3369FF;color:#fff; text-decoration:none}
+.mainbrand .brand a:hover .remark{color:#fff}
+.mainbrand .bt{line-height:0;background:url(/content/img/sprites/prodcut_repeatx.png) repeat-x 0 0; text-align:center;}
+.toggle .close,.toggle .open{display:inline-block;width:16px;height:16px;background:url(/content/img/sprites/shop.2014112500.png) no-repeat 0 -39px;cursor:pointer;margin-bottom:-17px;}
+.toggle .open{background-position:-19px -39px}
+/***店铺编辑***/
+.editmod{position:relative}
+.editmod .ehd{height:30px;line-height:30px;padding:0 10px;border-top:1px solid #F4DDB3;border-bottom:1px solid #F4DDB3;background: -moz-linear-gradient(top, #FFF8EB, #FEF0C1);background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF8EB), to(#FEF0C1)); filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFF8EB,endColorStr=#FEF0C1);}
+.editmod .rt{float:right;}
+.editmod .rt .i{width:15px;height:16px;background-position:-67px -115px}
+/*.editmod b{font:bold 14px/30px "\5fae\8f6f\96c5\9ed1"; color:#F04D00}*/
+.editmod .title{font:bold 14px/30px "\5fae\8f6f\96c5\9ed1"; color:#F04D00}
+.addpanel{display:inline-block;height:40px;line-height:40px;text-align:center;font-size:14px;color:#fff;background-color:#f04d00;width:100%;margin:10px 0;font-weight:bold}
+.addpanel:hover{text-decoration:none;color:#ffee66;background-color:#666}
+.editmod .redbtn{position:absolute;}
+.editmod .pos-1{top:80px;left:50px}
+.editmod .pos-2{top:80px;right:50px;}
+.editmod .pos-3{top:230px;left:40px;}
+/**新增橱窗**/
+.cshop-window .node{margin:20px 0}
+.cshop-window .inp{width:160px;color:#999}
+.cshop-window .ptlist .node{margin:10px 0}
+.cshop-window .ptlist .pt{width:170px;margin:0 70px 0 0}
+.cshop-window .ptlist .p{width:168px;height:168px;border:1px solid #e2e2e2}
+.cshop-window .hd{margin:10px 0}
+.cshop-window .bt,.cshop-formula .bt{text-align:center;padding:30px 0}
+.cshop-window .bt .btn-0{margin-right:20px}
+.cshop-window .level_module_1 .hd{margin:0}
+.cshop-window .level_module_1 .bd {padding-top:15px}
+.cshop-window .pdlist .item{margin:0 10px 10px}
+/**编辑代购公式**/
+.cshop-formula .table-1{width:500px;margin:10px 0}
+.cshop-formula .widtext{width:90px;text-align:right}
+.cshop-formula .widtext{margin:10px 0;}
+.textarea{width:300px;height:100px}
+/**个人中心**/
+.pic_text_mod{overflow:hidden}
+.pic_text_mod .pic_box{text-align:left; vertical-align:middle;margin-bottom:10px}
+.pic_text_mod .dec{line-height:24px;}
+.mycenter .main{border:1px solid #e2e2e2;padding-bottom:30px;width:998px}
+.mycenter .left{border-left:0;border-top:0}
+.mycenter .right .hd{padding:0 15px;margin-top:10px}
+.mycenter .right .bd{height:38px;overflow:hidden;padding:5px 15px 10px; line-height:22px;border-bottom:1px solid #e2e2e2}
+.mycenter .rcon-1 .five{width:568px;_width:570px;overflow:hidden;margin-left:0}
+.tab-2{margin-top:20px;}
+.tab-1 .tab-hd {margin-top:20px;border-bottom:1px solid #e2e2e2;padding-left:10px}
+.tab-1 .tab-bd{border:0;padding:10px 10px 0;}
+.record li.item{font-family:"Arial";display:block}
+
+.ttlist .item{margin-bottom:10px;padding-bottom:10px;border-bottom:1px dashed #e2e2e2;display:block;}
+.ttlist .h5{font:bold 14px/30px "\5b8b\4f53";height:30px;overflow:hidden }
+.ttlist .h5 a{color:#3368FF}
+.ttlist .bd{line-height:22px;}
+.ttlist .bt{padding:5px 0;color:#999}
+.ttlist .li{float:left;margin-right:10px;border:1px solid #efefef}
+/***cshop-seletetemp**/
+.cshop-seletetemp{position:relative}
+.cshop-seletetemp a{width:130px;height:33px;position:absolute;background:url(about:blank);bottom:34px;}
+.cshop-seletetemp .one{left:25px;}
+.cshop-seletetemp .two{left:360px;}
+.cshop-seletetemp .three{left:690px;}
+/***bshopnav B店铺***/
+.bshop .bshopnav{margin:-47px 0 10px;position:relative;height:40px;}
+.bshopnav .item{float:left;width:102px;height:32px;margin:0 10px 0px 0;font:bold 14px/34px "arial";text-align:center;background:url(/content/img/bshop-nav-bg.png) no-repeat 0 -41px}
+.bshopnav .navbt{height:6px;font-size:0;background:url(/content/img/bshop-nav-bg.png) repeat-x 0 -79px;bottom:2px}
+.bshopnav .hover{background-position:0 0;position:relative;z-index:100;margin-bottom:-2px;height:34px}
+.bshopnav .item a{color:#000}
+.bshopnav .hover a{color:#fff}
+/*.bshop .bshopnav{margin:10px 0}
+.bshopnav{height:34px;background:url(/content/img/sprites/bg.png) repeat-x 0 -325px;border-radius:4px;border:1px solid #f04e00;padding:0 10px;box-shadow:1px 2px 3px #ccc;font:bold 14px/34px "\5b8b\4f53";}
+.bshopnav .item{float:left;margin:0 10px;padding:0 10px}
+.bshopnav .item a{color:#fff}
+.bshopnav .item a:hover{text-decoration:none}
+.bshopnav .hover{margin-top:3px;border-radius:4px 4px 0 0;background-color:#fff;padding:0 10px;line-height:28px;height:32px;background:url(/content/img/sprites/bg.png) repeat-x 0 -215px}
+.bshopnav .hover a,.bshopnav .hover a:hover{color:#F04E00}
+.bshopnav .ic{display:inline-block;font-size:0;width:1px;height:23px;background:url(/content/img/sprites/bg.png) no-repeat 0 -361px;margin-top:5px}
+*/
+.bshop .bannner{position:relative;margin-bottom:10px}
+.bshop .bannner .clound{position:absolute;width:242px;height:93px;left:40px;top:30px;text-align:center;font:bold 14px/93px "arial";color:#000;background:url(/content/img/cloud.png) repeat-x}
+.bshop .bannner .img{width:1000px;height:200px;}
+.bshop .bannner .pos{position:absolute;right:50px;top:35px;width:250px;height:90px;}
+.bshop .bannner .spring{padding:10px 10px 0;}
+.bshop .bannner .dec{color:#000;line-height:22px;overflow:hidden;margin-top:5px;}
+.bshop .bannner .border,.cshop .border{border:1px solid #e2e2e2;padding-bottom:10px;background-color:rgba(255,255,255,0.5);filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#99ffffff', EndColorStr='#99ffffff');}
+
+.showarea{border-top:1px solid #e2e2e2;width:758px;overflow:hidden;padding:10px 15px;border-bottom:0}
+.bshop-edit .sitebar,.cshop-edit .sitebar{border-top:0}
+.bshop-edit .bod{border-left:1px solid #F4DDB3;border-right:1px solid #F4DDB3}
+.teyuepd{display:block;margin:8px 0 10px;}
+.teyuepd img{width:154px}
+
+.topmain .m_r{width:450px}
+.searchtab .searchbtn{width:90px;height:33px;background:url(/content/img/sprites/cshop.2014112500.gif) no-repeat 0 -198px}
+.mainbrand .node{margin:10px 0 20px}
+.mainbrand{padding:5px 15px 20px}
+.mainbrand .toggle{margin:0 -15px;border-bottom:1px solid #e2e2e2}
+.nonefound{padding:10px 15px 0;line-height:26px}
+.cshop .topay{margin-bottom:0}
+.taborder{border:1px solid #e2e2e2;padding:10px 0;border-top:0}
+.marl{margin-left:10px}
+.bshop .taborder{border:1px solid #e2e2e2;padding:0px 0;border-top:1}
+.shopbd{width:788px}
+
+.mod .hd {
+padding: 2px 15px;
+background: url(/content/img/sprites/bg.png) repeat-x 0 -215px;
+margin: 0px -15px 20px;
+border-top: 1px solid #E2E2E2;
+border-bottom: 1px solid 
+#E2E2E2;
+}
+
+.node .l {
+margin-right: 10px;
+}
+
+.mycenter .right .hd 
+{padding: 2px 15px;
+background: url(/content/img/sprites/bg.png) repeat-x 0 -215px;
+margin: 0px 0px 0px;
+border-bottom: 1px solid 
+#E2E2E2;
+}
+
+
+.tab-1 .current a span
+{
+    font-size:14px;
+}
+
+
+.catalog .dt a
+{
+    color:#404040;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+
+.catalog .current a{color:white}
+
+
+.mycenter .mod .hd
+{
+    border-top: 0px solid   #E2E2E2;
+}
+
+.mycenter .five .mod
+{
+    padding:0px 15px
+}
+
+.cshop-edit .taborder
+{
+    padding:0px
+}
+.pt .p{position:relative;}
+.buyerz{width:40px;height:40px;display:block;position:absolute;background:url(/content/img/sprites/community.png) -45px -21px}
+.pt .buyerz{top:-10px;right:-10px}

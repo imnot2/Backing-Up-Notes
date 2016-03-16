@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+@import "../assets/sass/variable.scss";
+@import "../assets/sass/reset.scss";
+@import "../assets/sass/_mixin.scss";
+@import "errormask";
+
+$base-path: "http://staticontent.ymatou.com";
+$version: "2015042222";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #ffdce0;
+    font-family: "microsoft yahei";
+}
+
+.top-box {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #cc3333;
+}
+
+.banner-box {
+    text-align: center;
+}
+
+.btn {
+    height: rem(31);
+    padding: 0 rem(5);
+    line-height: rem(24);
+    color: #fff;
+    text-align: center;
+    margin-top: rem(5);
+    background-color: #cc3333;
+    border-left: rem(4) solid #eebdbd;
+    border-top: rem(4) solid #b2272a;
+    border-right: rem(4) solid #b2272a;
+    border-bottom: rem(4) solid #d14848;
+    &.disable {
+        background-color: #a2a2a2;
+        border-left: rem(4) solid #e1e1e1;
+        border-top: rem(4) solid #7d7d7d;
+        border-right: rem(4) solid #7d7d7d;
+        border-bottom: rem(4) solid #ababab;
+    }
+}
+
+.operation-box {
+    width: rem(287);
+    margin: 0 auto;
+    margin-top: rem(10);
+    @include clearfix;
+    background-color: #fff;
+    .operation-item {
+        height: rem(43);
+        line-height: rem(43);
+        padding: 0 rem(16);
+        font-size: rem(15);
+        .input-box {
+            border-bottom: 1px dashed #cc3333;
+            @include clearfix;
+            .send-btn {
+                float: right;
+            }
+            input {
+                width: rem(140);
+                font-size: rem(15);
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        &:last-child .input-box {
+            border-bottom: none;
+        }
+    }
+}
+
+.sumit-box {
+    width: rem(287);
+    margin: 0 auto;
+    margin-top: rem(10);
+    .confirm-btn {
+        height: rem(45);
+        line-height: rem(35);
+        font-size: rem(27);
+        display: block;
+    }
+}
+
+.complete-box {
+    width: rem(287);
+    margin: 0 auto;
+    .complete-href {
+        display: block;
+        height: rem(45);
+        line-height: rem(45);
+        margin: rem(10) 0;
+        text-decoration: none;
+        color: #ff99a5;
+        font-size: rem(12);
+    }
+}
+
+.article-box {
+    background-color: #d9d9d9;
+    .article-title {
+        height: rem(52);
+        line-height: rem(52);
+        text-align: center;
+        background-color: #fff;
+        color: #cc3333;
+        font-size: rem(27);
+    }
+    .article-main {
+        line-height: rem(18);
+        color: #4c4c4c;
+        width: rem(287);
+        font-size: rem(12);
+        padding: rem(10) 0;
+        margin: 0 auto;
+        &.min-height {
+            height: rem(118);
+            overflow: hidden;
+        }
+    }
+    .article-more {
+        height: rem(34);
+        line-height: rem(34);
+        text-align: center;
+        background-color: #c0c0c0;
+        color: #434343;
+        font-size: rem(15);
+        &.top-arrows {
+            background-image: url(#{$base-path}/images/activity/9kuai9/top-arrows_03.png?v=#{$version});
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: rem(17) rem(9);
+        }
+    }
+}
+
+.login-tips {
+    background-color: #ff445b;
+    color: #fff;
+    font-size: rem(12);
+    height: rem(30);
+    line-height: rem(30);
+    text-align: center;
+}
+
+.product-tips {
+    height: rem(73);
+    line-height: rem(73);
+    text-align: center;
+    background-color: #ff445b;
+    img {
+        vertical-align: middle;
+    }
+}
+
+.product-list {
+    .img-box {
+        width: rem(320);
+        margin: 0 auto;
+        @include clearfix;
+        text-align: center;
+        position: relative;
+        .buy-btn {
+            position: absolute;
+            width: rem(92);
+            height: rem(29);
+            background-size: rem(92) rem(29);
+        }
+    }
+    img {
+        float: left;
+    }
+}
+
+.btn1-style {
+    .buy-btn {
+        right: rem(45);
+        background-image: url(#{$base-path}/images/activity/9kuai9/pic2_10.png?v=#{$version});
+    }
+    .buy-btn1 {
+        top: rem(74.5);
+    }
+    .buy-btn2 {
+        top: rem(72.5);
+    }
+    .buy-btn3 {
+        top: rem(68);
+    }
+}
+
+.btn2-style {
+    .buy-btn {
+        left: rem(59);
+        background-image: url(#{$base-path}/images/activity/9kuai9/pic2_16.png?v=#{$version});
+    }
+    .buy-btn1 {
+        top: rem(77);
+    }
+    .buy-btn2 {
+        top: rem(76);
+    }
+    .buy-btn3 {
+        top: rem(67);
+    }
+}
+
+.share-box {
+    height: rem(78);
+    background-color: #ff445b;
+    .share-main {
+        width: rem(320);
+        margin: 0 auto;
+        @include clearfix;
+        .share-tips {
+            vertical-align: middle;
+            padding-top: rem(16);
+            color: #fff;
+            font-size: rem(15);
+            text-align: center;
+            .wechat-text {
+                padding-top: rem(4);
+                display: none;
+            }
+            .plain-text {
+                display: block;
+            }
+        }
+        .share-operation {
+            width: rem(106.5);
+            height: rem(37.5);
+            float: right;
+            margin-right: rem(41);
+            margin-top: rem(20);
+            display: none;
+            background-image: url(#{$base-path}/images/activity/9kuai9/weixinsharebtn_03_03.png?v=#{$version});
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &.isWechat {
+            .share-operation {
+                display: block;
+            }
+            .share-tips {
+                vertical-align: middle;
+                padding-left: rem(16);
+                text-align: left;
+                color: #fff;
+                font-size: rem(15);
+                float: left;
+                .wechat-text {
+                    display: block;
+                }
+                .plain-text {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.down-box {
+    background-color: #393939;
+    color: #fff;
+    text-align: center;
+    line-height: rem(18);
+    padding: rem(10) 0;
+    font-size: rem(12);
+    .down-tips {
+        padding: 0 rem(5);
+    }
+}
+
+.mask-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    .mask-inner {
+        width: rem(280);
+        margin: 0 auto;
+        margin-top: rem(10);
+    }
+}
+
+.not-register {
+    height: rem(183);
+    background: url(#{$base-path}/images/activity/9kuai9/goregister_03.png?v=#{$version}) no-repeat;
+    background-size: contain;
+    position: relative;
+    .register-btn {
+        position: absolute;
+        width: rem(135.5);
+        height: rem(42.5);
+        top: rem(123);
+        left: rem(75);
+        background: url(#{$base-path}/images/activity/9kuai9/goregisterbtn_03.png?v=#{$version}) no-repeat;
+        background-size: contain;
+    }
+}
+
+.olduser-plain {
+    height: rem(183);
+    background: url(#{$base-path}/images/activity/9kuai9/notweixintips1_03.png?v=#{$version}) no-repeat;
+    background-size: contain;
+}
+
+.olduser-wechat {
+    height: rem(183);
+    background: url(#{$base-path}/images/activity/9kuai9/mask_01_03.png?v=#{$version}) no-repeat;
+    background-size: contain;
+    //position: relative;
+    .guide-arrows {
+        position: absolute;
+        width: rem(58);
+        height: rem(107);
+        top: rem(3);
+        right: rem(6);
+        background-image: url(#{$base-path}/images/activity/9kuai9/mask_02_03.png?v=#{$version});
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    // .wechat-btn {
+    //     position: absolute;
+    //     top: rem(96);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    // }
+    // .wechat-btn1 {
+    //     left: rem(70);
+    //     width: rem(59.5);
+    //     height: rem(64.5);
+    //     background-image: url(#{$base-path}/images/activity/9kuai9/weixinsharebtn_03.png?v=#{$version});
+    // }
+    // .wechat-btn2 {
+    //     right: rem(60);
+    //     width: rem(68);
+    //     height: rem(65);
+    //     background-image: url(#{$base-path}/images/activity/9kuai9/weixinsharebtn_05.png?v=#{$version});
+    // }
+}

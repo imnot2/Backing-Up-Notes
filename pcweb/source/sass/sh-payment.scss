@@ -1,0 +1,104 @@
+.paidOprate {
+    text-align: center;
+    .paidIcon {
+        width: 54px;
+        height: 54px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .loadIcon {
+        background: url("/images/system/load.gif") center no-repeat scroll;
+    }
+    .successIcon {
+        background: url("/images/sprites/paidSuccess_03.jpg") no-repeat scroll;
+    }
+    .FailIcon {
+        background: url("/images/sprites/paidFail.jpg") center no-repeat scroll; 
+    }
+    .paidMainTip {
+        font-size: 30px;
+        line-height: 46px;
+        color: #383838;
+    }
+    .paidSubTip {
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+
+.successBtn {
+    padding: 0 160px;
+    height: 58px;
+    line-height: 58px;
+    background-color: #dd3333;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.processBox {
+    .processImg {
+        margin-top: 24px;
+    }
+}
+.bar-title {
+    margin-top: 30px;
+    .bt-tit {
+        background-color: #f7f7f7;
+        padding: 14px 24px;
+        color: #383838;
+        font-size: 18px; 
+    }
+    .bt-cont {
+        margin-top: 20px;
+        overflow:hidden;
+    }
+}
+.howToBox {
+    .mt20 {
+        margin-top: 24px;
+    }
+    .howToImg1, .howToImg2 {
+        margin-top: 20px;
+    }
+    .howToImg1 {
+        width: 227px;
+        margin-left: 20px;
+    }
+    .howToImg2 {
+        width: 738px;
+    }
+}
+
+.tipsBox {
+    .tipsDes {
+        margin-top: 18px;
+        .desItem {
+            background: url("/images/paidSuccess/paidSuccess2_07.jpg") left center no-repeat scroll;
+            padding-left: 28px;
+            margin-left: 24px;
+            line-height: 26px;
+            color:#464646;
+            font-size: 14px;
+        }
+    }
+}
+.methodBox,.tipsBox {
+    border-bottom:1px #ddd solid;
+    padding-bottom:60px;
+}
+#copywrite{
+    padding:10px 0 20px;
+}
+.ordercon{
+    display:none;
+}

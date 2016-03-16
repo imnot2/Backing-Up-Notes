@@ -1,0 +1,790 @@
+﻿@charset "UTF-8";
+
+@import "../assets/sass/_mixin.scss";
+
+@import "../assets/sass/variable.scss";
+@import "../assets/sass/reset.scss";
+@import "../assets/sass/button.scss";
+@import "../assets/sass/alert.scss";
+@import "../assets/sass/form.scss";
+@import "../assets/sass/media.scss";
+@import "../assets/sass/icons.scss";
+
+//微信浏览器支付页
+@import "pay";
+
+.zhangdong {
+    color: #eee;
+}
+
+body {
+    color: #999;
+}
+
+.container,
+.container-sides,
+.container-wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 12px;
+}
+
+.container-sides {
+    padding: 0 12px;
+}
+
+.top-bar {
+    //width:100%;
+    height: 50px;
+    padding: 0 10px;
+    background-color: $docbg-color;
+    color: $title-color;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid $border-color;
+    .title {
+        font-size: 1.25em;
+        line-height: 50px;
+        font-weight: 400;
+    }
+    .back {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        line-height: 1;
+        margin: 12px 0 0 5px;
+        color: $icon-color;
+        font-size: 26px;
+        font-weight: normal;
+    }
+}
+
+.clearfix:after {
+    content: " ";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clr-blue {
+    color: #3369ff;
+}
+
+//取消链接样式
+.nolink {
+    color: #666;
+    text-decoration: none;
+}
+
+//注册
+.register-row,
+.login-row {
+    margin-top: 15px;
+    color: #999;
+}
+
+.button-tool {
+    margin-top: 28px;
+}
+
+.regiter-msg {
+    position: relative;
+    height: 93px;
+    b {
+        color: #333;
+        font-size: 16px;
+    }
+    .msg {
+        left: 130px;
+        top: 30px;
+        position: absolute;
+    }
+}
+
+.login-link {
+    text-decoration: underline;
+}
+
+.sprites-bg {
+    background: url(/img/bg-sprites.#{$version}.png);
+    display: inline-block;
+}
+
+.regiter-face {
+    width: 70px;
+    height: 93px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.discount-more-row {
+    .type,
+    .details {
+        top: 5px !important;
+    }
+}
+
+.regiter-discount-bg {
+    background-position: -1px -94px;
+    width: 193px;
+    height: 80px;
+    margin: 10px 0;
+    position: relative;
+    color: #fff;
+    .type {
+        font-size: 18px;
+        width: 18px;
+        word-wrap: break-word;
+        position: absolute;
+        top: 20px;
+        left: 12px;
+    }
+    .details {
+        position: absolute;
+        top: 14px;
+        left: 85px;
+        i {
+            font-size: 18px;
+        }
+        .dis-meet {
+            font-size: 20px;
+        }
+        .dis-give {
+            font-size: 32px;
+            white-space: nowrap;
+            margin-left: -33px;
+        }
+        .small {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+    }
+    .money {
+        font-size: 48px;
+    }
+}
+
+.register-discount {
+    background-color: #eee;
+    padding: 13px;
+    font-size: 12px;
+    color: #999;
+    .clause {
+        margin: 5px 0;
+    }
+    .guide {
+        font-size: 14px;
+        color: #999;
+    }
+    .danger {
+        color: $primary-color;
+    }
+}
+
+//第三方
+.third-party {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px dashed #ccc;
+    .title {
+        font-size: 14px;
+        color: #999;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .login-item {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        //border:1px solid #ccc;
+        margin: 0 15px;
+        display: inline-block;
+        background-color: #fff;
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+.login-icon-alipay {
+    background-position: -44px -77px;
+    height: 23px;
+}
+
+.login-icon-sina {
+    background-position: 0 -77px;
+    height: 23px;
+}
+
+.login-link {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+//优惠券
+.use-discount {
+    padding: 0 15px;
+    color: #666;
+    .icon {
+        margin: 0 5px;
+    }
+    .accent-money {
+        color: $primary-color;
+    }
+    .discount-depict {
+        margin-left: 38px;
+    }
+}
+
+.use-discount-toggle {
+    color: #000;
+    font-size: 16px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+}
+
+.use-discount-item {
+    margin-bottom: 25px;
+}
+
+//选择优惠券
+.choice-coupons {
+    .btn-group {
+        width: 100%;
+        .btn {
+            font-size: 14px;
+        }
+    }
+}
+
+.choice-list {
+    margin-top: 20px;
+}
+
+.choice-item {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    .info {
+        font-size: 22px;
+        color: $primary-color;
+        text-align: center;
+    }
+    .choice-term {
+        margin: 10px 0;
+        .stress {
+            color: $primary-color;
+        }
+    }
+    .choice-icon {
+        position: absolute;
+        right: 15px;
+        top: 45px;
+    }
+}
+
+.coupons-msg {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #999;
+}
+
+//结算页
+.settle-area {
+    padding: 15px;
+    border-top: 1px solid #fff;
+}
+
+.payoff {
+    border-top: 1px solid #ddd;
+    background-color: #eee;
+    .pay-btn {
+        margin: 0 12px;
+        padding: 5px 0 20px;
+    }
+}
+
+.orderinfo {
+    padding: 15px 12px 0;
+    .seller {
+        color: $normal-color;
+    }
+    .dec {
+        font-size: 12px;
+    }
+    article.mod-product-list {
+        border: 1px solid #ccc;
+    }
+    .hd {
+        background-color: #eee;
+        border-bottom-width: 0;
+        text-align: right;
+    }
+    p.co-dim {
+        font-size: 14px;
+        color: $primary-color;
+    }
+}
+
+.coupon {
+    color: $normal-color;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    .hed {
+        background-color: #eee;
+        padding: 12px;
+    }
+    .payoff {
+        background-color: #fff;
+        margin: 0;
+        border-top-width: 0;
+    }
+    .yen {
+        font-size: 12px;
+    }
+    .orderavailgift {
+        font-size: 16px;
+    }
+}
+
+//搜索商品列表
+.mod-sort {
+    .lk-item {
+        font-size: 12px;
+        line-height: 4em;
+        color: $normal-color;
+    }
+    .btn-sort {
+        color: #fff;
+    }
+}
+
+.productlist .transfer {
+    font-size: 12px;
+}
+
+.mod-product-list {
+    .item .dec {
+        .specification {
+            color: $normal-color;
+        }
+        label {
+            color: $minor-color;
+        }
+        .origin-price {
+            margin-right: 1.25em;
+        }
+    }
+}
+
+.clickarea, .mod-collapsible .title {
+    color: $normal-color;
+    font: 400 14px/2.8em '';
+}
+
+.mod-collapsible {
+    .right {
+        font-size: 12px;
+        color: $minor-color;
+    }
+    .hd {
+        background-color: #eee;
+    }
+    .hd:hover {
+        background-color: #eee;
+    }
+}
+
+.dl-secondlist dd label {
+    color: $normal-color;
+    font-weight: 400;
+}
+
+//头部标题使用默认字体
+.header .title {
+    font: 400 20px/1.5 '';
+}
+
+.mod-sideslide h3 {
+    font-weight: 400;
+}
+
+//购物车
+.shoppingcart-wrap {
+    .mod-product-list {
+        margin: 0;
+    }
+}
+
+//个人中心
+.mymatou .bar-h40 {
+    background-color: $primary-color;
+}
+
+//收貨地址
+.address .info {
+    font: normal 14px/1.5 '';
+}
+
+//結算頁面
+#checkout {
+    margin: 0 -12px;
+    font-size: 14px;
+}
+
+.price-under .checkbox {
+    width: auto;
+    left: 5px;
+}
+
+.price-under label {
+    margin-left: 10px;
+}
+
+//上傳身份證明
+.up-identity {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 260px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 14px;
+    margin: -130px 10px 0 -150px;
+    width: 300px;
+    .ui-wrap {
+        padding: 10px;
+    }
+    .ui-title {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .ui-bd {
+        height: 150px;
+    }
+    .ui-ft {
+        border-top: 1px #fff solid;
+        margin-top: 10px;
+        a {
+            font-size: 16px;
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            height: 48px;
+            line-height: 48px;
+        }
+        .go-pay {
+            border-left: 1px solid #fff;
+        }
+    }
+}
+
+.promo-container {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+    padding-top: 10px;
+    background: -moz-linear-gradient(top, #999, #ccc);
+    background: -webkit-linear-gradient(top, #999, #ccc);
+    background: linear-gradient(top, #999, #ccc);
+    .promo-reveal {
+        @include clearfix;
+        white-space: nowrap;
+        li {
+            //float:left;
+            display: inline-block;
+            //max-width:200px;
+            margin-right: 10px;
+            //height:189px;
+            //background-color:#fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            //line-height: 189px;
+       
+        }
+        img {
+            //max-width: 100%;  
+            //max-height: 100%;
+            height: 189px;
+            width: 200px;
+        }
+    }
+    .promo-nav {
+        @include clearfix;
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        li {
+            float: left;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #bbb;
+            margin: 2px;
+        }
+        .selected {
+            background-color: #cc3333;
+        }
+    }
+}
+
+//移动端 模拟select
+.simulate-group {
+    position: relative;
+    display: inline-block;
+    margin-left: -4px;
+    .simulate {
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: alpha(opacity = 0);
+        -moz-opacity: 00;
+        opacity: 0;
+    }
+    .flag {
+        font-size: 10px;
+        color: #333;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        margin-top: -5px;
+    }
+}
+
+.product-detail {
+    padding-bottom: 49px;
+}
+
+//building project
+
+.building {
+    padding: 10px;
+    .img-info {
+        padding: 10px 0;
+        @include clearfix;
+        .img {
+            float: left;
+        }
+        .info {
+            float: left;
+            padding-left: 10px;
+        }
+        .link {
+            color: #999;
+            font-size: 12px;
+        }
+        .redtitle {
+            color: #FF0000;
+            font-size: 16px;
+            font-family: "Microsoft yahei";
+            margin-bottom: 10px;
+        }
+    }
+    .redirect {
+        display: block;
+        margin-top: 10px;
+        border: 1px solid #DDDDDD;
+        color: #999;
+        padding: 14px 10px;
+        font-size: 12px;
+        background-color: #fff;
+        .arrow {
+            float: right;
+            font: bold 16px / 1.1 "arial";
+        }
+    }
+}
+
+//gray background
+
+.lightergray {
+    background: #f7f7f7;
+    .footer {
+        position: fixed;
+        width: 100% !important;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*float board of product list*/
+.floatboardoflist {
+    position: fixed;
+    background: rgba(33, 33, 33, 0.7);
+    padding: 0 0.6em;
+    border-radius: 10px;
+    right: 0.5em;
+    bottom: 0.3em;
+    height: 42px;
+    .iconfont {
+        color: #fff;
+        font-size: 1.7em;
+        padding: 0 9px;
+        float: left;
+        line-height: 44px;
+        height: 42px;
+    }
+    .iconfont:before {
+        line-height: 44px;
+    }
+    .icon-simple-cart {
+        position: relative;
+        i {
+            position: absolute;
+            border-radius: 12px;
+            background-color: #FF3A3A;
+            color: #fff;
+            font-size: 12px;
+            padding: 0.1em 0.5em;
+            top: 0.1em;
+            left: 1.4em;
+            font-family: arial;
+            line-height: 16px;
+        }
+    }
+}
+
+//search module
+
+.mod-newsearch {
+    position: relative;
+    padding: 7px 0 0 30px;
+    width: 98%;
+    .searchbox {
+        background-color: #dedede;
+        border-radius: 5px;
+        color: #666;
+        border: 0;
+        padding: 0 10px;
+        font-size: 1.3em;
+        height: 36px;
+        width: 100%;
+        &:focus {
+            color: #666;
+            background-color: #fff;
+            color: #666;
+            &:-moz-placeholder {
+                color: #666;
+            }
+            &::-moz-placeholder {
+                color: #666;
+            }
+            &:-ms-input-placeholder {
+                color: #666;
+            }
+            &::-webkit-input-placeholder {
+                color: #666;
+            }
+        }
+        &:-moz-placeholder {
+            color: #666;
+        }
+        &::-moz-placeholder {
+            color: #666;
+        }
+        &:-ms-input-placeholder {
+            color: #666;
+        }
+        &::-webkit-input-placeholder {
+            color: #666;
+        }
+    }
+    .icon-simple-search {
+        position: absolute;
+        font-size: 22px;
+        cursor: pointer;
+        color: #666;
+        line-height: 1;
+        margin: 7px 0 0 -33px;
+    }
+}
+
+//short
+
+.mod-short-newsearch {
+    padding: 7px 0 0 80px;
+    width: 90%;
+}
+
+.mod-mid-newsearch {
+    padding: 8px 0 0 28px;
+    width: 90%;
+}
+
+.header .righticon {
+    display: block;
+    margin-top: 0.3em;
+    font-size: 1.5em;
+    color: $primary-color;
+}
+
+/***特殊优惠券***/
+.choice-coupons {
+    padding: 10px 10px 0;
+}
+
+.specialcoupons {
+    display: none;
+    background-color: #efefef;
+    position: relative;
+    margin: 20px -10px 0 - 10px;
+    padding: 10px;
+    .dec {
+        padding: 0 0 0.6em;
+        line-height: 1.5;
+        p {
+            color: #CC3333;
+        }
+        span {
+            font-size: 10px;
+        }
+    }
+    .arrow {
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+        border-color: #fff #fff #efefef #fff;
+        width: 0px;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        position: absolute;
+        margin: -30px 0 0 0;
+    }
+    .login-row {
+        margin-top: 10px;
+    }
+    .input-group-btn {
+        background-color: #cecece;
+    }
+}
+
+/*productlist */
+.rate-number {
+    padding: 10px 0;
+}

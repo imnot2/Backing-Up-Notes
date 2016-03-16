@@ -1,0 +1,103 @@
+@import "lib/variables";
+
+.main {
+    width: 1078px;
+    margin: 0 auto;
+}
+
+.methodBox {
+    .bt-cont {
+        padding: 0 22px;
+    }
+    .contItem {
+        font-size: 14px;
+        color: $grey60;
+        line-height: 18px;
+    }
+    .methodImg {
+        margin-top: 40px;
+    }
+}
+
+.paidOprate {
+    text-align: center;
+    .paidIcon {
+        width: 54px;
+        height: 54px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .loadIcon {
+        background: url("/images/system/load.gif") center no-repeat scroll;
+    }
+    .successIcon {
+        background: url("/images/paidSuccess/paidSuccess_03.jpg") no-repeat scroll;
+    }
+    .FailIcon {
+        background: url("/images/paidFail/paidFail.png") center no-repeat scroll;
+    }
+    .paidMainTip {
+        font-size: 30px;
+        line-height: 46px;
+        color: $gray38;
+    }
+    .paidSubTip {
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+
+.successBtn {
+    padding: 0 160px;
+    height: 58px;
+    line-height: 58px;
+    background-color: $highRad;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.processBox {
+    .processImg {
+        margin-top: 24px;
+    }
+}
+
+.howToBox {
+    .mt20 {
+        margin-top: 24px;
+    }
+    .howToImg1, .howToImg2 {
+        margin-top: 20px;
+    }
+    .howToImg1 {
+        width: 227px;
+        margin-left: 20px;
+    }
+    .howToImg2 {
+        width: 738px;
+    }
+}
+
+.tipsBox {
+    .tipsDes {
+        margin-top: 18px;
+        .desItem {
+            background: url("/images/paidSuccess/paidSuccess2_07.jpg") left center no-repeat scroll;
+            padding-left: 28px;
+            margin-left: 24px;
+            line-height: 26px;
+            color: $gray46;
+            font-size: 14px;
+        }
+    }
+}

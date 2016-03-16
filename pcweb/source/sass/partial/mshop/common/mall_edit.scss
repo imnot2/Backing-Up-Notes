@@ -1,0 +1,199 @@
+﻿/*=======================mall_edit.css===========================*/
+.shop_name {
+    background-image: url(../images/form_bg.gif);
+    background-repeat: no-repeat;
+    border: 1px solid #d1d1d1;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.button_save {
+    height: 26px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.button_pub {
+    background-image: url(../images/all_buyer.gif);
+    background-position: 0px -530px;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    float: left;
+    height: 23px;
+    width: 105px;
+    padding-top: 9px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    cursor: hand;
+}
+.button_pub a {
+    color: #FFFFFF;
+}
+.button_save2 {
+    font-size: 12px;
+    color: #FFFFFF;
+    background-position: 0px;
+    display: block;
+    height: 23px;
+    width: 58px;
+    padding-top: 6px;
+    padding-left: 2px;
+    cursor: hand;
+    clear: both;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button_save2 button {
+    color: #FFFFFF;
+    cursor: hand;
+    display: block;
+}
+.button_save2 button a {
+    display: block;
+    height: 29px;
+    width: 61px;
+}
+.button_save2 button a:hover {
+    background-image: url(../images/all_buyer.gif);
+    background-position: 0px -493px;
+    display: block;
+    height: 29px;
+    width: 61px;
+    color: #000000;
+}
+.sort_set {
+    font-size: 12px;
+    color: #FFFFFF;
+    background-image: url(../images/all_buyer.gif);
+    background-repeat: no-repeat;
+    background-position: 0px -572px;
+    text-align: center;
+    height: 18px;
+    width: 95px;
+    float: left;
+    display: block;
+    padding-top: 6px;
+    cursor: hand;
+    padding-left: 10px;
+}
+.sort_set a {
+    color: #FFFFFF;
+}
+.shop_left {
+    background-image: url(../images/form_bg.gif);
+    background-repeat: no-repeat;
+    border: 1px solid #d1d1d1;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 10px;
+    width: 80px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.button_edit {
+    padding-left: 30px;
+    font-size: 12px;
+    font-family: "瀹嬩綋";
+}
+.buttonstyle {
+    color: #FFFFFF;
+    background-color: #FF6600;
+    height: 20px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FF3300;
+    border-right-color: #990000;
+    border-bottom-color: #990000;
+    border-left-color: #FF3300;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "瀹嬩綋";
+    font-size: 12px;
+    cursor: hand;
+    width: 80px;
+}
+.buttonstyle3 {
+    color: #FFFFFF;
+    background-color: #FF6600;
+    height: 20px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FF3300;
+    border-right-color: #990000;
+    border-bottom-color: #990000;
+    border-left-color: #FF3300;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "瀹嬩綋";
+    font-size: 12px;
+    cursor: hand;
+    width: 120px;
+}
+.buttonstyle2 {
+    color: #FFFFFF;
+    background-color: #a7a7a7;
+    height: 20px;
+    width: 32px;
+    border: 1px solid #a7a7a7;
+    margin-left: 5px;
+    font-family: "瀹嬩綋";
+    font-size: 12px;
+    cursor: hand;
+}
+.leftline {
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #CCCCCC;
+    float: left;
+    width: 220px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.leftline2 {
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #CCCCCC;
+    float: left;
+    width: 220px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.content1 .set_ad {
+    float: left;
+    height: auto;
+    width: 740px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.set_ad .set1 {
+
+    /*  height: 30px;*/
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #CCCCCC;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    clear: both;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}

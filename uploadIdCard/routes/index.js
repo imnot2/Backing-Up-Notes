@@ -1,0 +1,1 @@
+module.exports.Page=require('./lib/page');

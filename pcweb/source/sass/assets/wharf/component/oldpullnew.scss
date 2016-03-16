@@ -1,0 +1,57 @@
+.couponlayerbox {
+    width: 530px;
+    height: 280px;
+    text-align: left;
+    background: url(/images/olderpullnew/coupon_03.jpg) left center no-repeat #fff;
+    position: relative;
+    .closeBtn {
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        background: url(/images/olderpullnew/close_06.jpg) center no-repeat;
+    }
+    .cont {
+        width: 308px;
+        height: 226px;
+        padding: 54px 36px 0;
+        float: right;
+        .yes {
+            color: #59b200;
+            font-size: 52px;
+            line-height: 56px;
+            float: left;
+        }
+        .info {
+            color: #59b200;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .coupontext {
+            padding-left: 60px;
+            p {
+                line-height: 26px;
+            }
+        }
+        .bindtext {
+            padding-left: 60px;
+            p {
+                line-height: 52px;
+            }
+        }
+        .qr {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .bindbtn {
+            text-align: center;
+            margin-top: 20px;
+            .receiveBtn {
+                padding: 10px 24px;
+                color: #fff;
+                background-color: #cc3333;
+            }
+        }
+    }
+}

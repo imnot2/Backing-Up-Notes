@@ -1,0 +1,108 @@
+/*floatbox event*/
+@keyframes modelSlide {
+  from {
+    -webkit-transform: translate(0, -200%);
+    -ms-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-moz-keyframes modelSlide {
+  from {
+    -webkit-transform: translate(0, -200%);
+    -ms-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes modelSlide {
+  from {
+    -webkit-transform: translate(0, -200%);
+    -ms-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-o-keyframes modelSlide {
+  from {
+    -webkit-transform: translate(0, -200%);
+    -ms-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+/* line 5, ../../source/css/activity/errormask.scss */
+.floatbox {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+/* line 15, ../../source/css/activity/errormask.scss */
+.floatbox .floatbox-content {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #999;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  vertical-align: middle;
+  padding: .8em 1em;
+  min-width: 8em;
+  max-width: 100%;
+  -webkit-border-radius: .02rem;
+  animation: modelSlide .8s;
+  -moz-animation: modelSlide .8s;
+  -webkit-animation: modelSlide .8s;
+  -o-animation: modelSlide .8s;
+}
+/* line 33, ../../source/css/activity/errormask.scss */
+.floatbox .floatbox-content .ui-msg, .floatbox .floatbox-content .ui-msg-err {
+  display: inline-block;
+  color: #fff;
+  font-style: normal;
+  font-size: 1.2em;
+  vertical-align: middle;
+  padding: .8em 1em;
+  min-width: 8em;
+  background-color: rgba(51, 51, 51, 0.9);
+  -webkit-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 48, ../../source/css/activity/errormask.scss */
+.floatbox.show {
+  display: block;
+}
+/* line 51, ../../source/css/activity/errormask.scss */
+.floatbox:after {
+  content: '\20';
+  font-size: 0;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+}

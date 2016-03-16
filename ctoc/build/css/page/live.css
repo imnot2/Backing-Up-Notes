@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/* line 8, ../../../src/sass/utils/user-tutorial.scss */
+.new-tips {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 13, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step1 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -198px no-repeat;
+  width: 765px;
+  height: 439px;
+}
+
+/* line 19, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step2 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -657px no-repeat;
+  width: 670px;
+  height: 430px;
+}
+
+/* line 25, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step3 {
+  width: 870px;
+  height: 600px;
+}
+
+/* line 30, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step3-1 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -1109px no-repeat;
+  width: 258px;
+  height: 272px;
+  position: absolute;
+  left: 18px;
+  top: 130px;
+}
+
+/* line 39, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step3-2 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -1401px no-repeat;
+  width: 394px;
+  height: 286px;
+  position: absolute;
+  left: 212px;
+  top: 130px;
+}
+
+/* line 48, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step3-3 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -1707px no-repeat;
+  width: 483px;
+  height: 157px;
+  position: absolute;
+  left: 417px;
+  top: 130px;
+}
+
+/* line 57, ../../../src/sass/utils/user-tutorial.scss */
+.nt-step3-4 {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -1884px no-repeat;
+  width: 276px;
+  height: 272px;
+  position: absolute;
+  left: 121px;
+  top: 478px;
+}
+
+/* line 66, ../../../src/sass/utils/user-tutorial.scss */
+.nt-next {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 0 no-repeat;
+  width: 340px;
+  height: 79px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* line 74, ../../../src/sass/utils/user-tutorial.scss */
+.nt-close {
+  background: url('/images/sprites/beginerguide-s545e9bee51.png') 0 -99px no-repeat;
+  width: 340px;
+  height: 79px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -170px;
+}
+
+/* line 85, ../../../src/sass/utils/user-tutorial.scss */
+#mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#aa000000,endColorStr=#aa000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#aa000000, endColorstr=aa000000);
+  z-index: 99999999999;
+}
+/* line 95, ../../../src/sass/utils/user-tutorial.scss */
+#mask .mask-inner {
+  width: 1190px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* line 8, ../../../src/sass/page/live.scss */
+.sq_banner {
+  background-color: #000000;
+  height: 328px;
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 14, ../../../src/sass/page/live.scss */
+.sq_banner .images, .sq_banner .images .item {
+  height: 328px;
+}
+/* line 18, ../../../src/sass/page/live.scss */
+.sq_banner .area {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+  width: 1190px;
+}
+/* line 27, ../../../src/sass/page/live.scss */
+.sq_banner .focus-images img {
+  height: 328px;
+}
+/* line 31, ../../../src/sass/page/live.scss */
+.sq_banner .wy-slide-nav {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  margin-left: 400px;
+  z-index: 3;
+}
+/* line 37, ../../../src/sass/page/live.scss */
+.sq_banner .wy-slide-nav li {
+  float: left;
+  display: block;
+  margin: 4px;
+  border-radius: 25em;
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+  background: #fff;
+  overflow: hidden;
+  line-height: 200px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+/* line 53, ../../../src/sass/page/live.scss */
+.sq_banner .wy-slide-nav .current {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+/* line 62, ../../../src/sass/page/live.scss */
+.sq_live_tab {
+  height: 40px;
+  border-bottom: 1px solid #cccccc;
+  background-color: #f4f4f4;
+}
+/* line 67, ../../../src/sass/page/live.scss */
+.sq_live_tab .slt_list li {
+  float: left;
+  display: block;
+  width: 236px;
+  height: 40px;
+  line-height: 40px;
+  border-left: 1px solid #cccccc;
+  text-align: center;
+  position: relative;
+  color: #666;
+  cursor: pointer;
+}
+/* line 78, ../../../src/sass/page/live.scss */
+.sq_live_tab .slt_list li:last-child {
+  border-right: 1px solid #cccccc;
+}
+/* line 82, ../../../src/sass/page/live.scss */
+.sq_live_tab .slt_list .active {
+  background-color: #ffffff;
+  padding-bottom: 1px;
+  cursor: text;
+}
+
+/* line 91, ../../../src/sass/page/live.scss */
+.live_info {
+  height: 40px;
+  line-height: 40px;
+  color: #666666;
+}
+/* line 95, ../../../src/sass/page/live.scss */
+.live_info .count {
+  margin: 0 2px;
+}
+/* line 98, ../../../src/sass/page/live.scss */
+.live_info .country {
+  color: #dd3333;
+  margin: 0 4px;
+}
+
+/* line 105, ../../../src/sass/page/live.scss */
+.sq_live_list {
+  margin-bottom: 70px;
+  background-image: url("/images/live/linem.png");
+  background-repeat: repeat-x;
+}
+/* line 110, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list {
+  position: relative;
+}
+/* line 113, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time {
+  position: absolute;
+  left: 0;
+  top: -29px;
+  width: 1190px;
+  height: 60px;
+}
+/* line 119, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list {
+  display: block;
+  height: 60px;
+  overflow: hidden;
+}
+/* line 123, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li {
+  display: block;
+  float: left;
+  width: 396px;
+  height: 45px;
+  padding-top: 15px;
+  font-family: "宋体";
+}
+/* line 130, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .clock {
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  padding-bottom: 5px;
+  color: #fff;
+  line-height: 25px;
+  *zoom: 1;
+}
+/* line 3, ../../../src/sass/lib/classes.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .clock:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+/* line 139, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .clock span {
+  display: inline-block;
+  padding: 0 4px 0 3px;
+}
+/* line 144, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .s1 {
+  width: 61px;
+  padding-left: 59px;
+  color: #dd3333;
+  background-image: url("/images/live/timeoutStyle1.png");
+}
+/* line 155, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .s1 .c3 {
+  margin-left: 4px;
+}
+/* line 166, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .s2 {
+  width: 77px;
+  padding-left: 43px;
+  color: #ffffff;
+  background-image: url("/images/live/timeoutStyle2.png");
+}
+/* line 175, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_time .time_list li .s2 .c3 {
+  margin-left: 4px;
+}
+/* line 188, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .linetop {
+  background-image: url("/images/live/lineTop.png");
+}
+/* line 191, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .linebottom_r {
+  background-image: url("/images/live/lineBottom.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  top: -1px;
+}
+/* line 197, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .linebottom_l {
+  background-image: url("/images/live/lineBottomLeft.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  top: -1px;
+}
+/* line 203, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .line_s1 {
+  background-image: url("/images/live/lines1.png");
+}
+/* line 206, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .line_s2 {
+  background-image: url("/images/live/lines2.png");
+}
+/* line 210, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content {
+  display: block;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 28px;
+}
+/* line 216, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli {
+  display: block;
+  width: 352.33333px;
+  padding: 15px;
+  padding-top: 34px;
+  height: 298px;
+  float: left;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background: #ffffff;
+  overflow: hidden;
+}
+/* line 227, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .productLinkBox {
+  height: 60px;
+  display: block;
+  overflow: hidden;
+}
+/* line 232, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli:last-child {
+  border-right: 0;
+}
+/* line 235, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli span {
+  display: block;
+}
+/* line 238, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_local {
+  height: 60px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 245, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_local h5 {
+  padding-top: 12px;
+  position: relative;
+  z-index: 1;
+  height: 20px;
+  overflow: hidden;
+  width: 280px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+/* line 257, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_local p {
+  color: #999;
+  position: relative;
+  z-index: 1;
+  height: 20px;
+  overflow: hidden;
+  width: 280px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 268, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_local .icon {
+  float: left;
+  font-size: 18px;
+  margin: 0 15px;
+  margin-right: 10px;
+  padding-top: 15px;
+  height: 45px;
+  position: relative;
+  z-index: 1;
+}
+/* line 278, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_local img {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+/* line 288, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller {
+  height: 70px;
+  border-bottom: 1px dashed #dddddd;
+}
+/* line 291, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info {
+  float: left;
+  width: 250px;
+  padding-top: 6px;
+}
+/* line 295, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_avatar, .sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_avatar img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+}
+/* line 302, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_avatar {
+  float: left;
+  margin: 7px;
+  border: 1px solid #e5e5e5;
+}
+/* line 307, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name {
+  padding-top: 10px;
+}
+/* line 309, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name h5 {
+  display: inline-block;
+  font-size: 14px;
+  color: #dd3333;
+}
+/* line 314, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name p {
+  color: #999999;
+  line-height: 16px;
+}
+/* line 318, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name .country_logo {
+  margin-right: 3px;
+}
+/* line 321, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name .country_logo, .sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .seller_info .seller_name .country_logo img {
+  float: left;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border-radius: 25em;
+}
+/* line 330, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .follow_seller {
+  float: right;
+  padding: 20px 15px 0 0;
+}
+/* line 333, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_seller .follow_seller .txt {
+  display: inline-block;
+}
+/* line 338, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_des {
+  display: block;
+  height: 30px;
+  padding: 10px 9px;
+  font-size: 12px;
+  color: #000000;
+}
+/* line 347, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_product ol li {
+  display: block;
+  float: left;
+  width: 105.44444px;
+  margin: 5px 4px 5px 5px;
+  *margin: 2px;
+  background: #eee;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+}
+/* line 358, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_product ol li img {
+  width: 100%;
+  border-radius: 4px;
+}
+/* line 362, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_product ol li .txt {
+  position: absolute;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  left: 5px;
+  bottom: 0;
+  color: #ffffff;
+  z-index: 2;
+  text-align: center;
+}
+/* line 373, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .sql_content .cli .cli_product ol li .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 26px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 388, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .line_right {
+  background-image: url("/images/live/liney.png");
+  background-repeat: repeat-y;
+  background-position: right;
+}
+/* line 393, ../../../src/sass/page/live.scss */
+.sq_live_list .sql_list .sql_i_list .line_left {
+  background-image: url("/images/live/liney.png");
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+/* line 402, ../../../src/sass/page/live.scss */
+.end_txt {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+/* line 415, ../../../src/sass/page/live.scss */
+.sq_nodata {
+  display: none;
+  height: 460px;
+  width: 948px;
+  margin: 0 auto;
+  background-image: url("/images/live/empty.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 425, ../../../src/sass/page/live.scss */
+.sq_loaddate {
+  display: block;
+  height: 60px;
+  width: 50px;
+  margin: 0 auto;
+  background-image: url("/images/system/load.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border-radius: 25em;
+}
+
+/* line 438, ../../../src/sass/page/live.scss */
+.gb-header .logo {
+  background: url(/images/sprites/logo-new.png);
+  width: 310px;
+}

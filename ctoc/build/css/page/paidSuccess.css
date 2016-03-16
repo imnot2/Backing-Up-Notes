@@ -1,0 +1,83 @@
+/* line 3, ../../../src/sass/page/paidSuccess.scss */
+.main {
+  width: 1078px;
+  margin: 0 auto;
+}
+/* line 6, ../../../src/sass/page/paidSuccess.scss */
+.main .successOprate {
+  text-align: center;
+}
+/* line 9, ../../../src/sass/page/paidSuccess.scss */
+.main .successIcon {
+  width: 54px;
+  height: 54px;
+  background: url("/images/paidSuccess/paidSuccess_03.jpg") no-repeat scroll;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* line 17, ../../../src/sass/page/paidSuccess.scss */
+.main .paidMainTip {
+  font-size: 30px;
+  line-height: 46px;
+  color: #383838;
+}
+/* line 22, ../../../src/sass/page/paidSuccess.scss */
+.main .paidSubTip {
+  font-size: 14px;
+  color: #dd3333;
+  line-height: 36px;
+}
+/* line 27, ../../../src/sass/page/paidSuccess.scss */
+.main .successBtn {
+  padding: 0 160px;
+  height: 58px;
+  line-height: 58px;
+  background-color: #dd3333;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* line 40, ../../../src/sass/page/paidSuccess.scss */
+.main .successBtn:hover {
+  text-decoration: none;
+}
+/* line 45, ../../../src/sass/page/paidSuccess.scss */
+.main .processBox .processImg {
+  margin-top: 24px;
+}
+/* line 50, ../../../src/sass/page/paidSuccess.scss */
+.main .howToBox .mt20 {
+  margin-top: 24px;
+}
+/* line 53, ../../../src/sass/page/paidSuccess.scss */
+.main .howToBox .howToImg1, .main .howToBox .howToImg2 {
+  margin-top: 20px;
+}
+/* line 56, ../../../src/sass/page/paidSuccess.scss */
+.main .howToBox .howToImg1 {
+  width: 227px;
+  margin-left: 20px;
+}
+/* line 60, ../../../src/sass/page/paidSuccess.scss */
+.main .howToBox .howToImg2 {
+  width: 738px;
+}
+/* line 65, ../../../src/sass/page/paidSuccess.scss */
+.main .tipsBox .tipsDes {
+  margin-top: 18px;
+}
+/* line 67, ../../../src/sass/page/paidSuccess.scss */
+.main .tipsBox .tipsDes .desItem {
+  background: url("/images/paidSuccess/paidSuccess2_07.jpg") left center no-repeat scroll;
+  padding-left: 28px;
+  margin-left: 24px;
+  line-height: 26px;
+  color: #464646;
+  font-size: 14px;
+}

@@ -1,0 +1,28 @@
+﻿/*=======================iframe.css===========================*/
+.notification {
+    overflow: hidden;
+    background-color: #F8F8F8;
+    line-height: 20px;
+    font-size: 0;
+    padding: 2px 5px;
+    border: 1px solid #BBBBBB;
+    border-top: 0;
+    box-shadow: 0px 2px 0px #EBEBEB;
+    padding-bottom: 0px;
+}
+.notification .framemod {
+    border-bottom: 1px dashed #CACDD0;
+    display: block;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 20px;
+    position: relative;
+    margin-bottom: -2px;
+}
+.notification .framemod a {
+    color: #4D5259;
+}
+.notification .framemod a:hover {
+    text-decoration: none;
+    color: #f20;
+}

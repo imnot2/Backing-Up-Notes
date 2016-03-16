@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import "../assets/sass/variable.scss";
+
+@font-face {
+    font-family: 'wapIcon';
+    src: url(/css/icon-font/wapIcon/iconfont.#{$version}.eot);
+    /* IE9*/
+    src: url(/css/icon-font/wapIcon/iconfont.#{$version}.eot?#iefix) format("embedded-opentype"), url(/css/icon-font/wapIcon/iconfont.#{$version}.woff) format("woff"), url(/css/icon-font/wapIcon/iconfont.#{$version}.ttf) format("truetype"), url(/css/icon-font/wapIcon/iconfont.#{$version}.svg#iconfont) format("svg");
+    /* iOS 4.1- */
+}
+
+
+.wapIcon {
+    display: inline-block;
+    font-family: "wapIcon" !important;
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    line-height: 1;
+    font-style: normal;
+}
+
+//整点抢
+.icon-buyinglogo:before {
+    content: "\e60b";
+}
+
+//倒三角
+.icon-xiasanjiao:before {
+    content: "\e60c";
+}
+
+//倒计时
+.icon-countdown:before {
+    content: "\e60a";
+}
+
+//锁
+.icon-lock:before {
+    content: "\e600";
+}
+
+//用户
+.icon-user {
+    font-size: 22px;
+}
+
+//key
+.icon-key:before {
+    content: "\e604";
+}
+
+//发送手机
+.icon-send:before {
+    content: "\e603";
+}
+
+//搜索
+//.icon-search:before { content: "\e607";}
+//删除
+.icon-detele:before {
+    content: "\e605";
+}
+
+.icon-validate:before {
+    content: "\e606";
+}
+
+.icon-refresh:before {
+    content: "\e607";
+}
+
+.login-icon {
+    background: url(/img/hm_sprites.#{$version}.png) no-repeat;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: 253px 122px;
+}
+
+.icon-logo {
+    background-position: -88px -79px;
+    width: 74px;
+    height: 40px;
+}
+
+.icon-user-hd {
+    background-position: -200px -5px;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-cart-hd {
+    background-position: -223px -5px;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-add-cart {
+    background-position: -166px -78px;
+}
+
+.icon-add-share {
+    background-position: -191px -78px;
+}
+
+.iconfont {
+    font-family: "wapIcon";
+}
+
+.icon-simple-home:before {
+    content: "\e60e";
+}
+
+.icon-simple-me:before {
+    content: "\e60f";
+}
+
+.icon-simple-cart:before {
+    content: "\e611";
+}
+
+.icon-simple-backtop:before {
+    content: "\e610";
+}
+
+.icon-simple-search:before {
+    content: "\e612";
+}
+
+.icon-simple-category:before {
+    content: "\e613";
+}
+
+.icon-simple-back:before {
+    content: "\e614";
+}
+
+/*home page*/
+.icon-thick-me:before {
+    content: "\e615";
+}
+
+.icon-thick-cart:before {
+    content: "\e616";
+}
+
+.icon-thick-tuangou:before {
+    content: "\e617";
+}
+
+.icon-thick-clock:before {
+    content: "\e617";
+}

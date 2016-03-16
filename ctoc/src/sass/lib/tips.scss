@@ -1,0 +1,61 @@
+@import "mixins";
+@import "variables";
+.c2c-tips-container{
+	@include background-opacity($black, 0.7);
+	@include border-radius(5px);
+	width: 158px;
+	height:48px;
+	color: #fff;
+	position: fixed;
+	text-align: center;
+	z-index: 1000;
+	display: none;
+	.c2c-tips-content{
+		padding:8px;
+	}
+	.c2c-tips-arrow{
+		@include opacity(0.7);
+		height: 0;
+		width: 0;
+		line-height: 1%;
+		overflow: hidden;
+		background: transparent;
+		border:8px solid transparent;
+		position: absolute;
+		z-index: 1002;
+	}
+	.c2c-tips-arrow-left{
+		border-right:8px solid $black;
+		left : -8px;
+		top : 50%;
+		margin-top:-8px;
+	}
+	.c2c-tips-arrow-right{
+		border-left:8px solid $black;
+		left : 100%;
+		top : 50%;
+		margin-top:-8px;
+	}
+	.c2c-tips-arrow-top{
+		border-bottom:8px solid $black;
+		top:-8px;
+		left:50%;
+		margin-left:-8px;
+	}
+	.c2c-tips-arrow-bottom{
+		border-top:8px solid $black;
+		top:100%;
+		left:50%;
+		margin-left:-8px;
+	}
+	.c2c-tips-arrow-bottom-right{
+		border-top:8px solid $black;
+		right : 20px;
+		top : 100%;
+	}
+	.c2c-tips-arrow-top-right{
+		border-bottom:8px solid $black;
+		right : 20px;
+		top : -16px;
+	}
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+    标签,气泡
+*/
+
+@import "variables";
+
+.labels {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999999;
+}
+
+.labels_b {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #999;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.labels_b_red {
+    border-color: $highRad;
+    color: $highRad;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+
+
+/*
+    @html Format 
+
+    <a class="labels-bubble">Title
+        <span class="lb-fix">
+            <span class="lb-fix-in">
+                <span class="txt">0</span>
+                <i class="lb-fix-icon"></i>
+            </span>
+        </span>
+    </a>
+
+*/
+
+.labels-bubble{
+    display: inline-block;
+    position: relative;
+
+    .lb-fix{position: absolute;
+    display: inline-block;
+    padding: 0 6px;
+    background-color: #C00;
+    top: 1px;
+    right: -5px;
+    line-height: 16px;
+    border-radius: 2px;
+    color: #fff;
+
+        .lb-fix-in{
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .lb-fix-txt{
+                color:#fff;
+            }
+            .lb-fix-icon{
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 50%;
+                margin-left: -4px;
+                bottom: -8px;
+                font-family: self;
+                border-width: 4px;
+                font-size: 12px;
+                border-style: solid;
+                border-color: #c00;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+                border-left-color: transparent;
+            }
+        }
+    }
+}

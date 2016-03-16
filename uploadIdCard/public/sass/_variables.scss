@@ -1,0 +1,17 @@
+$Color_Main				:#F04E00;
+//$Color_assist			:#FF6C6C;
+
+$black					:#000;
+// $gray1					:lighten($black,22%);   //#383838
+// $gray2					:lighten($black,28%);	//#464646
+// $gray3					:lighten($black,39%);	//#646464
+// $gray4					:lighten($black,52%);	//#868686
+
+$bodyBg					:lighten($black,95%);
+
+//Text Color
+$textColor				:lighten($black,40%);
+
+//link Color
+$link_default			:$Color_Main;
+$link_hover				:lighten($Color_Main,10%);

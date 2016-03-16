@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*
+    页面导航
+*/
+
+//直播头部导航部分
+.navbar {
+    height: 60px;
+    border-bottom: 1px solid $grey20;
+    background-color: $white;
+    z-index: 999;
+    .nb-inner {
+        //导航
+        .nb-ul {
+            float: left;
+            .nb-li {
+                float: left;
+                display: block;
+                width: 200px;
+                text-align: center;
+                line-height: 58px;
+                font-size: 16px;
+                position: relative;
+                cursor: pointer;
+                bottom: -1px;
+                a {
+                    display: block;
+                    color: $grey60;
+                }
+                .icon {
+                    font-size: 20px;
+                    position: relative;
+                    margin-left: -20px;
+                    margin-right: 5px;
+                }
+                //下拉栏目
+                .nb-li-meun {
+                    display: none;
+                    width: 200px;
+                    background: $white;
+                    background: $gray4;
+                    position: absolute;
+                    left: 0;
+                    top: 60px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    z-index: 999;
+                    li {
+                        display: block;
+                        padding-left: 15px;
+                        text-align: left;
+                        font-size: 12px;
+                        height: 30px;
+                        line-height: 30px;
+                        border-bottom: 1px solid $grey20;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            &, .icon {
+                                color: $grey60;
+                            }
+                            &:hover {
+                                &, .icon {
+                                    color: $highRad;
+                                }
+                                background-color: $white;
+                            }
+                        }
+                        .icon {
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                        &:first-child {
+                            border-top: 1px solid $grey20;
+                        }
+                        &:hover {
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            .active, .active .icon, .active a {
+                color: $highRad;
+            }
+            .active {
+                border-bottom: 2px solid $highRad;
+            }
+        }
+        //右侧扫货用户信息
+        .nb-user {
+            float: right;
+            height: 60px;
+            line-height: 60px;
+            span {
+                display: inline-block;
+            }
+            .nb-avatar {
+                width: 40px;
+                margin-right: 5px;
+            }
+            .nb-avatar, .nb-avatar img {
+                border-radius: 25em;
+            }
+            .nb-u-txt, .nb-u-txt a {
+                color: $highRad;
+            }
+        }
+    }
+}

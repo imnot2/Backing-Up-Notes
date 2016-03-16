@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="http://staticweixinapp.dev.ymatou.com/js/lib/jquery.js?v=4"></script>
+</head>
+<body>
+    微信支付demo
+    <button id="topay" style="width:100px; height:40px">微信支付</button>
+    <script>
+
+var result = {
+    "ErrorMessage": null,
+    "IsSuccess": true,
+    "TradeNo": "20352160",
+    "PayPrice": 1,
+    "PayOrderRequest": {
+        "AppID": "wxa06ebe9f39751792",
+        "TimeStamp": "1430986770",
+        "NonceStr": "500367399",
+        "Package": "prepay_id=wx201505071619098114e6c6ee0550493105",
+        "SignType": "MD5",
+        "Sign": "bac064c2b6b8e627a7f57f351804789a"
+    }
+};
+
+//脚本加载器。
+function loadScript(url, callback) {
+    var node = document.createElement("script");
+    var timeID;
+    var supportLoad = "onload" in node;
+    var onEvent = supportLoad ? "onload" : "onreadystatechange";
+    var head = document.getElementsByTagName('head')[0];
+    node[onEvent] = function onLoad() {
+        if (!supportLoad && !timeID && /complete|loaded/.test(node.readyState)) {
+            timeID = setTimeout(onLoad)
+            return
+        }
+        if (supportLoad || timeID) {
+            clearTimeout(timeID);
+            callback && callback();
+        }
+    }
+    head.insertBefore(node, head.firstChild) //chrome下第二个参数不能为null
+    node.src = url
+};
+function logfn(str){
+    document.querySelector('body').appendChild(document.createTextNode('    '+str));
+};
+function jsonp(url,callback){
+    var randomFnName = 'jsonp'+new Date().getTime(),
+        script = document.createElement('script');
+        script.src = url+'&callback='+randomFnName;
+        document.querySelector('head').appendChild(script);
+
+    window[randomFnName] = function(res){
+        callback(res);
+    }    
+}
+$(function() {
+
+    logfn(0);
+    $('#topay').on('click',function(){
+        logfn('click');
+        payfn();
+    });
+    function payfn(){
+        logfn('payfn');
+        var script = document.createElement('script');
+        script.src = 'http://wechatpay.ymatou.com:3000/?callback=dingding';
+        document.querySelector('head').appendChild(script);
+        window.dingding = function(res) {
+            res = res || {};
+            logfn(res.IsSuccess);
+            if (res.IsSuccess) {
+                logfn(1);
+                var opt = res.PayOrderRequest;
+                // function jsApiCall() {
+                //     logfn(5);
+                //     logfn(opt.AppID);
+                //     logfn(opt);
+                //     WeixinJSBridge.invoke('getBrandWCPayRequest', {
+                //         'appId': opt.AppID, //公众号名称，由商户传入 
+                //         'timeStamp': opt.TimeStamp, 
+                //         'nonceStr': opt.NonceStr, // 支付签名随机串，不长于 32 位
+                //         'package': opt.Package, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                //         'signType': opt.SignType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+                //         'paySign': opt.Sign // 支付签名
+                //     }, function(re) {
+                //         logfn(6);
+                //         if (re.err_msg == "get_brand_wcpay_request:ok") {
+                //             logfn(7);
+                //         } else {
+                //             logfn(8);
+                //             alert(re.err_msg);
+                //         }
+                //         // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg 将在用户支付成功后返 
+                //         // 回ok，但并不保证它绝对可靠。 
+                //     });
+                // }
+
+                // function callpay() {
+                //     if (typeof WeixinJSBridge == "undefined") {
+                //         logfn(3);
+                //         if (document.addEventListener) {
+                //             logfn(4);
+                //             document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                //         } else if (document.attachEvent) {
+                //             document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                //             document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                //         }
+                //     } else {
+                //         logfn(2);
+                //         jsApiCall();
+                //     }
+                // }
+                // callpay();                
+            } else {
+                logfn(res.ErrorMessage);
+                alert(res.ErrorMessage);
+            }
+
+        }
+    }
+    //获取签名
+    // jsonp('http://wechatpay.ymatou.com:3000/wechat/getSign?appid=wxa06ebe9f39751792',function(res){
+
+    // })
+});
+
+var isLine = !/alpha|localhost|file:/ig.test(window.location.href);
+var scriptUrl = 'http://'+(isLine ? 'staticwap.alpha.ymatou.com' : 'staticwap.alpha.ymatou.com');
+
+$.getScript(scriptUrl + '/wechat/js/gui.min.js', function() {
+    var tid = gui.utils.urlQuery().tradingId;
+    var token = gui.utils.urlQuery().token;
+    gui.utils.wechatExtend({
+        appid: 'wxa06ebe9f39751792',
+        weChatConf: {
+            jsApiList: ['chooseWXPay','onMenuShareTimeline', 'onMenuShareAppMessage']
+        },
+        shareConf:{
+            title: '111', // 分享标题
+            desc: '222', // 分享描述
+            link: 'https://www.baidu.com'
+        },
+        wechatFn:function(){
+            var d = {
+                accesstoken: token,
+                tradingId: tid,
+                platForm:'2'
+            };
+
+            $.post('/Pay/WeChat/PayJson', d, function(res) {
+                res = res || {};
+                if (res.IsSuccess) {
+                    var opt = res.PayOrderRequest;
+                    wx.chooseWXPay({
+                        'timestamp': opt.TimeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+                        'nonceStr': opt.NonceStr, // 支付签名随机串，不长于 32 位
+                        'package': opt.Package, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                        'signType': opt.SignType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+                        'paySign': opt.Sign, // 支付签名
+                        success: function(res) {
+                            var ret = gui.utils.urlQuery().ret || 'http://m.ymatou.com';
+                            window.location.href = ret;
+                        }
+                    });
+                } else {
+                    alert(res.ErrorMessage);
+                }
+            });
+        }
+    });
+});
+</script>
+</body>
+</html>

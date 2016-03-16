@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*
+    全站按钮
+*/
+@import "lib/variables";
+
+.btn {
+    display: inline-block;
+    *display: inline;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    font-size: 14px;
+    line-height: 20px;
+    color: $grey60;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $gray4;
+    *background-color: $gray4;
+    border: 1px solid $grey20;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    *zoom: 1;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled] {
+        color: $grey60;
+        background-color: $grey13;
+        *background-color: $grey13;
+    }
+    &.active,
+    &:active {
+        background-color: #ccc;
+    }
+    .icon {
+        position: relative;
+        top: -1px;
+    }
+}
+
+.btn-mini {
+    padding: 2px 10px;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+//加关注按钮
+.btn-follow {
+    padding: 0;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border: 1px solid $highRad;
+    color: $highRad;
+    background-color: $white;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled] {
+        color: $highRad;
+        background: lighten($highRad, 42%);
+    }
+    &.active,
+    &:active {
+        background: lighten($highRad, 30%);
+    }
+}
+
+.btn-unfollow {
+    padding: 0;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border: 1px solid $grey20;
+    color: $grey40;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled] {
+        color: $grey40;
+        background: lighten($grey10, 42%);
+    }
+    &.active,
+    &:active {
+        background: lighten($gray9a, 30%);
+    }
+}
+
+//立即购买/主色调按钮
+.btn-buy,.btn-primary{
+    width: 100px;
+    height: 35px;
+    color: $white;
+    padding: 0;
+    line-height: 35px;
+    background-color: $highRad;
+    border: 0;
+    &:hover,
+    &:active {
+        color: $white;
+        border: 0;
+        background-color: $DarkRed;
+    }
+}
+
+.btn-primary-small{
+    color: $white;
+    padding: 0;
+    background-color: $highRad;
+    border: 0;
+    padding: 2px 10px;
+    &:hover,
+    &:active {
+        color: $white;
+        border: 0;
+        background-color: $DarkRed;
+    }
+}
+
+.btn-unbuy {
+    width: 100px;
+    height: 35px;
+    color: $white;
+    padding: 0;
+    line-height: 35px;
+    background-color: $grey40;
+    border: 0;
+    color: $white;
+    &:hover {
+        color: $white;
+        border: 0;
+        background-color: $grey40;
+    }
+}
+
+.btn-small {
+    font-size: 16px;
+    line-height: 2.2;
+    font-family: 'arial';
+    border: 1px solid $grey20;
+    text-align: center;
+    display: inline-block;
+    color: $gray46;
+    background-color: $grayf4;
+    border-radius: 4px;
+    min-width: 70px;
+    padding: 0 10px;
+    _width: 70px;
+}
+

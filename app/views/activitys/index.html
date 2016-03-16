@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chareset='utf-8'>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<link rel="stylesheet" href="<%=staticfileurl('/css/Ymtapp.css')%>">
+<style>
+	body{
+		background: #fff;
+	}
+	.active-container{
+		overflow: hidden;
+	}
+	.feedback{
+		float: left;
+	}
+	.side-nav{
+		float: left;
+		color:#767676;		
+		width:150px;
+		padding-left: 10px;
+	}
+	.nav-title{
+		font-size:16px;
+		padding-left: 10px;
+		font-weight: bold;
+	}
+	.nav-container>li{
+		padding-left: 20px;
+	}
+	.nav-container>li:hover{
+		border-left:2px solid #61b5e5;
+	}
+	.nav-container>li:hover a{
+		color:#61b5e5;
+	}
+	.nav-container a {
+		color:#767676;
+		font-size: 14px;
+	}
+	.active{
+		color:#61b5e5;
+		border-left:2px solid #61b5e5;
+	}
+	.active a{
+		color:#61b5e5;
+	}
+
+	input.inpt{
+		border:1px solid #666;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		padding: 5px;
+	}
+	.field-warp{
+		margin-bottom: 5px;
+	}
+	.textContent{
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		margin: 15px 0;
+		padding-top:15px;
+	}
+	.side-nav{
+		width:10%;
+	}
+	.main{
+		width:90%;
+	}
+	.edit,
+	.preview{
+		float: left;
+		width:48%;
+		height: 100%;
+	}
+	/*头部*/
+	.header{
+		height:44px;
+		background: #61b5e5;
+	}
+	.header h1{
+		width:200px;
+		height:44px;
+		float: left;
+		color:#fff;
+		line-height: 44px;
+		margin-left: 20px;
+		background: url(http://staticontent.ymatou.com/ymtapp/activitys/logo.png) no-repeat;
+		background-size:70px 38.5px; 
+		padding-left: 80px;
+	}
+	.actions{
+		height: 100%;
+	}
+	.actions .item{
+		display: block;
+		line-height: 44px;
+		color: #fff;
+		background: #198fc0;
+		float: left;
+		padding: 0 15px;
+		margin-right: 1px;
+		cursor: pointer;
+	}
+	.msg{
+		color:red;
+		font-size:14px;
+		text-align: center;
+		background-color:rgba(255,60,0,.3);
+	}
+	.inp-text{
+		border:1px solid #ddd;
+		border-radius: 4px;
+	}
+</style>
+<title>活动模板页</title>
+</head>
+<body>
+<div class="active-container">
+	<div class="header">
+		<h1>活动模板编辑</h1>
+		<div class="actions">
+			<a class="item" id="save" href="#" title="保存">保存</a>
+			<a class="item" id="preview" href="#" title="预览">预览</a>
+			<a class="item" id="create" href="#" title="新建主题">新建主题</a>
+		</div>
+	</div>
+	<p class="msg">注：由于是临时系统，没有数据校验功能和恢复功能，请谨慎编辑代码。</p>
+	<nav class="side-nav"></nav>
+	<section class="feedback main">		
+		<div class="min edit">
+			<p class="field-warp">
+				<label>主题：<input class="inpt" id="topicid" type="text" value=""></label>
+			</p>
+			<p class="field-warp">
+				<label>模板名称：<input class="inpt" id="tplname" type="text" value=""></label>
+			</p>
+			<p class="field-warp">
+				<label style="vertical-align: top;">参数：
+					<textarea class="inp-text" name="" id="param" cols="70" rows="10" style="width:100%" title="只是简单的对staticfileurl 进行替换">
+						
+					</textarea>
+				</label>
+			</p>
+			<p class="textContent">
+				<textarea id="hiddenContent" hidden><%= JSON.stringify(content) %></textarea>
+				<textarea id="content" name="content" id="" cols="120" rows="30"></textarea>
+			</p>
+		</div>
+		<div class="preview">
+			<iframe frameborder="0" id="previewFrame" width="100%" height="100%"></iframe>
+		</div>
+	</section>
+</div>
+
+<script src="<%=staticfileurl('/js/lib/zepto.min.js')%>"></script>
+<script src="<%=staticfileurl('/js/activitys/lib/ejs.min.js')%>"></script>
+<script>
+	var content = $('#hiddenContent').val(),
+    	conObj = JSON.parse(content); 
+    	setPath();
+    function createNav(){
+    	var html = '';
+    	for(var i in conObj){
+    		html += '<div>';
+    		html += '<p class="nav-title J-modify" data-topicid="'+i+'" >'+i+'</p>';
+    		html += '<ul class="nav-container">';
+    			for(var j in conObj[i]){
+    				html+='<li class="nav-item  J-modify " data-tplname="'+j+'">';
+    				html+='<a class="" href="#">'+j+'</a>';
+    				html+='</li>';
+    			}
+    		html += '</ul>';
+    	}
+    	$('.side-nav').html(html);
+    }
+    createNav();
+    $('#save').click(function(){
+    	var topicInp = $('#topicid'),
+			tplnameInp = $('#tplname'),
+			contInp = $('#content'),
+			topic = conObj[topicInp.val()],
+			tpl;
+		//判断当前主题是否存在
+		if(!topic){
+			topic = conObj[topicInp.val()] = {};
+		}
+		tpl = topic[tplnameInp.val()];
+		if(!tpl){
+			tpl = topic[tplnameInp.val()] = {};
+		}
+		tpl.content = contInp.val();
+		createNav();
+		console.log(conObj);
+		$.ajax({
+			url:'/forYmatouApp/activitys/templet',
+			data:{content:JSON.stringify(conObj)},
+			type:'post',
+			success:function(data){
+				alert(data.Msg)
+			}
+		})
+    });
+
+    $('#create').click(function(){
+    	setting('','');
+    });
+
+	$('#preview').click(function(){
+		window.open('data:text/html;charset=utf-8,'+getPreviewContent());
+	});
+
+	$(document).on('click','.J-modify',function(){
+		var $this = $(this);
+		$('.J-modify').removeClass('active');
+		$this.addClass('active');
+		var topicid = $this.attr('data-topicid');
+		var tplname = $this.attr('data-tplname');
+		if(topicid){
+			setting(topicid);
+			return;
+		}else{
+			topicid = $this.closest('div').find('p').attr('data-topicid')
+		}
+		setting(topicid,tplname);
+	});
+
+	function setting(topicid,tplname){					
+		var topicInp = $('#topicid'),
+			tplnameInp = $('#tplname'),
+			contInp = $('#content');
+		topicInp.val(topicid);
+		tplnameInp.val(tplname || '');
+		contInp.val('');
+		if(tplname){
+			contInp.val(conObj[topicid][tplname]['content']);
+		}
+		contInp.trigger('change');
+		setPath();
+	}
+
+	$('#content').change(function(){
+		$('#previewFrame')[0].contentWindow.document.documentElement.innerHTML= getPreviewContent();
+	});
+
+	/**
+	 * 获得预览内容
+	 */
+	function getPreviewContent(){
+		var content = $('#content').val(),
+			param = $('#param').val();
+		//配合静态本地开发替换
+		//content = content.replace(/<\%=staticfileurl\(\'(.*?)\'\)%>/ig,param+'$1');
+		//content = content.replace(/<\%=?(.*?)%>/ig,'');
+		console.log(param)
+		param = new Function('return '+ param)();
+		return render(content,param);
+	}
+	var key = (function(){
+		for(var i in conObj){
+			return i;
+		}
+	})(),
+	tplname = (function(){
+		for(var i in conObj[key]){
+			return i;
+		}
+	})();
+	setting(key,tplname);
+	/**
+	 * 设置静态资源路径
+	 * 只是简单的对staticfileurl 进行替换
+	 */
+	function setPath(){
+		var isAlpha = /\.alpha\.ymatou.com|localhost|127.0.0.1/.test(window.location.host),
+			host = 'http://'+window.location.host+'';
+		if(!isAlpha){
+			host = 'http://static.matouapp.ymatou.com';
+		}
+		$('#param').val(['{',
+								'title:"洋码头",',
+						        'version: "", ',
+						        'staticfilepath: "'+host+'",',
+						        'staticfileurl: function(url) {',
+						        '    if (this.version != "") {',
+						        '        var replaceurls = [".js", ".css"];',
+						        '        for (var index in replaceurls) {',
+						        '            if (url.indexOf(replaceurls[index]) > 0) {   ',                     
+						        '                url = url.replace(replaceurls[index], ".") + this.version + replaceurls[index];',
+						        '                break;',
+						        '            }',
+						        '        }',
+						        '    }',
+						        '    return this.staticfilepath + url;',
+						        '},',
+						        'groupInfo:{',
+						        '    Tuan:{',
+
+						        '    },',
+						        '    Group:{',
+						        '        Creator:"2014-14-04"',
+						        '    }',
+						        '},',
+						        'code:"121",',
+						        'topicId:"12"',
+						'}'].join(''));
+	}
+
+	function render(tpls,options){
+		return ejs.render(tpls,options);
+	}
+	
+</script>
+</body>
+</html>

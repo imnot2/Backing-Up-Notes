@@ -1,0 +1,38 @@
+﻿<span temp-data="d">
+    <if e="d.FlightBySeller==true">
+        卖家承担运费
+    </if>
+    <elseif e="d.IsChinaFlightPerPackage==true">
+        ${d.ProductFlight} 元
+    </elseif>
+    <else>
+        <span class="inland">${d.FromArea}</span>&nbsp;|&nbsp;至&nbsp;
+        <if e="d.IsUs">
+            <span>${d.ToArea}</span> 
+        </if>
+        <else>
+            <span class="pointer blue" id="chinaAreaHandle">${d.ToArea}&nbsp;<i class="icon-arrow-bottom">></i></span>
+        </else>
+        
+        <if e="d.Areas.length>0">
+            <article class="chinaArea none" id="chinaAreaFloatBox">
+                <header class="hd">
+                    <a class="fr close" href="javascript:void(0)">关闭</a>
+                    <b class="tit">当前所选城市：${d.ToArea}</b>
+                </header>
+                <div class="bd">
+                    <address class="address">
+                        <for e="c in d.Areas">
+                            <if e="c.Name==d.ToArea">
+                                <a class="as selected" areaid="${c.Id}" href="javascript:void 0">${c.Name}</a>
+                            </if>
+                            <else>
+                                <a class="as" areaid="${c.Id}" href="javascript:void 0">${c.Name}</a>
+                            </else>
+                        </for>
+                    </address>
+                </div>
+            </article>
+        </if>
+    </else>
+</span>

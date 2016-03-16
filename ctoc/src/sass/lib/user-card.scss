@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*
+    暂未知作用。不建议新增
+*/
+
+@import "variables";
+@import "classes";
+
+.user-hd {
+    padding: 25px 20px 20px;
+    margin-bottom: 20px;
+    a {
+        display: block;
+        color: $grey40;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .avator {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        @include inline-block;
+        vertical-align: middle;
+    }
+    .content {
+        @include inline-block;
+        vertical-align: middle;
+        padding-left: 12px;
+    }
+    .name {
+        font-size: 18px;
+        color: $highRad;
+        width: 120px;
+        height: 27px;
+        overflow: hidden;
+    }
+    .country {
+        padding-top: 5px;
+    }
+    .country-flag {
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        overflow: hidden;
+        @include inline-block;
+        vertical-align: middle;
+        img {
+            vertical-align: top;
+            width: 14px;
+            height: 14px;
+        }
+    }
+    .country-name {
+        padding-left: 5px;
+    }
+}

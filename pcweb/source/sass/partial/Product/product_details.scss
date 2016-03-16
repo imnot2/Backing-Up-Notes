@@ -1,0 +1,1743 @@
+@charset "UTF-8";
+
+@import "singleproduct/mixin/borderRadius/*.png";
+
+$borderRadius-spacing: 20px;
+
+@include all-borderRadius-sprites;
+
+$icons-sprite: sprite-map("singleproduct/icons/*.png", $spacing: 20px, $repeat: no-repeat);
+
+$bgs-sprite: sprite-map("singleproduct/bgs/*.png", $spacing: 20px, $repeat: no-repeat);
+
+//色板
+@import "../../utils/colors";
+
+//公共的一些组件
+@import "../../utils/classes";
+
+//单品页组件asdf
+@import "../../utils/mixin";
+
+.share_icon {
+    width: 24px;
+    height: 20px;
+    background: #fff url(/images/sprites/share_wx_sina_qq_zone.png) 0 0 no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.help {
+    width: 16px;
+    height: 16px;
+    @include inline;
+    margin: 0 4px;
+    background: sprite($icons-sprite, help);
+    background-repeat: no-repeat;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.hightZindex, .hightZindex1 {
+    position: relative;
+    z-index: 999;
+}
+
+.placeholder24 {
+    padding: 0 12px;
+}
+
+.placeholder6 {
+    padding: 0 3px;
+}
+
+.grayBackgroundColor {
+    width: 100%;
+    background-color: $Ge;
+}
+
+.p-bubble-border {
+    width: 300px;
+    padding: 30px 20px;
+    border: 1px solid #E4EAF1;
+    position: relative;
+    span {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+    .border, .mask {
+        border-width: 10px;
+        border-style: solid;
+    }
+    .top_border, .top_mask {
+        left: 20px;
+    }
+    .top_border {
+        border-color: transparent transparent #E4EAF1;
+        top: -20px;
+    }
+    .top_mask {
+        border-color: transparent transparent #ffffff;
+        top: -18px;
+    }
+    .bottom_border, .bottom_mask {
+        left: 80px;
+    }
+    .bottom_border {
+        border-color: #E4EAF1 transparent transparent;
+        bottom: -20px;
+    }
+    .bottom_mask {
+        border-color: #ffffff transparent transparent;
+        bottom: -18px;
+    }
+    .left_border, .left_mask {
+        top: 20px;
+    }
+    .left_border {
+        border-color: transparent #E4EAF1 transparent transparent;
+        left: -21px;
+    }
+    .left_mask {
+        border-color: transparent #ffffff transparent transparent;
+        left: -20px;
+    }
+    .right_border, .right_mask {
+        top: 20px;
+    }
+    .right_border {
+        border-color: transparent transparent transparent #E4EAF1;
+        right: -21px;
+    }
+    .right_mask {
+        border-color: transparent transparent transparent #ffffff;
+        right: -20px;
+    }
+}
+
+#main {
+    width: 1190px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#breadcrumb {
+    font-size: 14px;
+    padding: 14px 0;
+    color: $G9;
+    a {
+        margin: 0 4px;
+        color: $G9;
+    }
+    .root {
+        font-size: 18px;
+        color: $G9;
+        font-weight: bold;
+        margin-left: 0;
+    }
+}
+
+#detail {
+    border: 1px solid $Gd;
+    background-color: #f6f6f6;
+    position: relative;
+    *z-index: 99;
+}
+
+#proGallery {
+    float: left;
+    padding: 20px;
+    width: 400px;
+    margin-left: -100%;
+    background-color: #fff;
+    .verticalMiddle {
+        @include inline;
+        width: 1px;
+        height: 100%;
+        margin-left: -1px;
+        vertical-align: middle;
+    }
+    .bigImgList, .bigImgList .imgItem {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        .itemImg {
+            max-width: 400px;
+            max-height: 400px;
+            _width: expression((function(el){el.clientWidth>400&&(el.style.width="400px")})(this));
+            _height: expression((function(el){el.clientWidth>400&&(el.style.width="400px")})(this));
+        }
+    }
+    .bigImgList {
+        a {
+            @include inline;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            line-height: 400px;
+        }
+        .imgItem {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    }
+    .smallImgList {
+        text-align: left;
+        margin: 10px 0;
+        .imgItem {
+            @include inline;
+            overflow: hidden;
+            margin-right: 5px;
+            float: left;
+            padding: 1px;
+            border: 1px solid $Gd;
+            width: 62px;
+            height: 62px;
+            line-height: 58px;
+            vertical-align: middle;
+            &.select {
+                padding: 0;
+                border: 2px solid $R2;
+            }
+            .itemImg {
+                max-width: 62px;
+                max-height: 62px;
+                _width: expression((function(el){el.clientWidth>62&&(el.style.width="62px")})(this));
+                vertical-align: middle;
+            }
+        }
+    }
+    .mobileDown {
+        width: 84px;
+        height: 32px;
+        padding: 8px;
+        padding-left: 50px;
+        padding-right: 4px;
+        background: sprite($bgs-sprite, qr, 8px, 8px) no-repeat;
+        border: 1px solid $Gd;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 2px 2px $Ge;
+        .drop {
+            height: 32px;
+            background: sprite($icons-sprite, dropbtn, 70px, 12px) no-repeat;
+            line-height: 16px;
+            text-align: left;
+            span {
+                display: block;
+            }
+            .qrText {
+                color: #999;
+            }
+            .buyText {
+                color: #5775b7;
+            }
+        }
+        .qrBox {
+            position: absolute;
+            width: 130px;
+            padding: 4px 4px 9px;
+            text-align: center;
+            border: 1px solid $Gd;
+            border-top: none;
+            top: 48px;
+            left: -1px;
+            background-color: #fff;
+            display: none;
+            z-index: 999;
+        }
+    }
+    .shareBox {
+        text-align: left;
+        .collect, .uncollect {
+            color: $G9;
+            margin-right: 7px;
+        }
+        .collect {
+            background: sprite($icons-sprite, iscollect) no-repeat;
+            padding-left: 26px;
+            cursor: pointer;
+            &:hover {
+                color: $L1;
+            }
+        }
+        .uncollect {
+            background: sprite($icons-sprite, nocollect) no-repeat;
+            padding-left: 26px;
+        }
+        .share {
+            margin-top: 6px;
+            .shareText {
+                margin-right: 10px;
+                line-height: 28px;
+                color: $G9;
+            }
+        }
+    }
+}
+
+#proDetail {
+    float: left;
+    width: 100%;
+}
+
+.detailWrap {
+    margin-left: 440px;
+    margin-right: 210px;
+    _width: 496px;
+    padding: 8px 20px;
+    padding-bottom: 32px;
+    border-right: 1px solid $Ge;
+    border-left: 1px solid $Ge;
+    min-height: 552px;
+    height: expression( this.scrollHeight < 552 ? "552px" : "auto" );
+    background-color: #fff;
+    dl {
+        padding: 5px 0;
+    }
+    dt, dd {
+        @include inline;
+        position: relative;
+    }
+    dt {
+        width: 66px;
+        float: left;
+    }
+    .name {
+        color: $G6;
+    }
+    .proNameBox {
+        line-height: 26px;
+        padding-top: 6px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid $Gd;
+        color: $G3;
+        vertical-align: top;
+        .proName {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .transportation_type {
+            @include inline;
+            background: sprite($bgs-sprite, transportation_type);
+            background-repeat: no-repeat;
+            height: 55px;
+            width: 51px;
+            margin: -20px 10px 0 0;
+            _margin-top: -20px;
+            _position: relative;
+            text-align: center;
+            line-height: 24px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 6px;
+            color: #fff;
+            float: left;
+        }
+        .transportation_cost {
+            color: $R2;
+        }
+        .tip {
+            color: $R3;
+            line-height: 16px;
+            padding-top: 14px;
+        }
+    }
+}
+
+.productInfoBox {
+    .proInfo {
+        padding: 10px 0;
+        @include bubble;
+        dl {
+            padding: 2px 0;
+            line-height: 24px;
+        }
+        .tip {
+            @include borderRadius;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-top: 1px dashed $Ge;
+            display: block;
+            margin-left: 68px;
+            .radiusWrap, .radiusLeft, .radiusRight {
+                display: inline\9;
+            }
+            .countdown {
+                margin-left: 5px;
+                font-size: 14px;
+                color: $G6;
+                *vertical-align: 5px;
+            }
+        }
+        .price {
+            .des {
+                font-size: 24px;
+                color: $R2;
+                .count {
+                    font-weight: bold;
+                }
+            }
+        }
+        .newUser {
+            .des {
+                font-size: 24px;
+                color: $R2;
+                .count {
+                    font-weight: bold;
+                }
+            }
+            .info {
+                color: $G9;
+                margin-left: 10px;
+                vertical-align: top;
+            }
+        }
+        .market {
+            .des {
+                font-size: 12px;
+                color: $G6;
+                text-decoration: line-through;
+            }
+        }
+        .promotion {
+            display: none;
+            .des {
+                font-size: 24px;
+                color: $R2;
+            }
+            .noStart {
+                font-size: 14px;
+                color: $G9;
+            }
+            .started {
+                font-size: 24px;
+                color: $R2;
+                .count, .count1 {
+                    font-weight: bold;
+                }
+            }
+            .noLogin {
+                font-size: 14px;
+                .count {
+                    font-weight: normal;
+                }
+            }
+            .tip {
+                margin-top: 5px;
+            }
+        }
+        .curAddress {
+            padding-left: 4px;
+            border: 1px solid $Gd;
+            cursor: pointer;
+            margin-right: 20px;
+            line-height: 18px;
+            @include inline;
+            .addBg {
+                background: sprite($icons-sprite, dropbtn, 0, 7px) no-repeat;
+                margin: 0 4px;
+                width: 7px;
+                height: 19px;
+                vertical-align: middle;
+                @include inline;
+            }
+            &:after {
+                clear: both;
+                content: '.';
+                height: 0;
+                line-height: 0;
+                visibility: hidden;
+            }
+        }
+        .noBorder {
+            border: none;
+            cursor: inherit;
+        }
+        .chinaArea {
+            line-height: 20px;
+            width: 378px;
+            position: absolute;
+            left: 0;
+            top: 24px;
+            display: none;
+            font-size: 12px;
+            letter-spacing: normal;
+            border: 1px solid #E2E2E2;
+            background-color: #fff;
+            padding: 5px;
+            width: 400px;
+            .hd {
+                border-bottom: 1px solid #e2e2e2;
+                padding: 5px 15px 10px;
+                margin: 0 -5px;
+                .r {
+                    float: right;
+                }
+            }
+            .tit {
+                font-size: 14px;
+                font-weight: normal;
+            }
+            .box {
+                overflow: hidden;
+            }
+            .item {
+                float: left;
+                display: inline;
+                margin: 8px 10px;
+                width: 60px;
+                line-height: 16px;
+                margin: 8px 0 8px 10px;
+                a {
+                    cursor: pointer;
+                }
+            }
+            .dec {
+                padding-left: 10px;
+                margin: 10px 0;
+            }
+            .areaMod {
+                position: relative;
+            }
+        }
+        .distribution {
+            position: relative;
+            .des {
+                font-size: 14px;
+                color: $G3;
+                a.distributionLink {
+                    color: $G3;
+                }
+                .help {
+                    vertical-align: middle;
+                    *vertical-align: bottom;
+                    margin: 0;
+                }
+            }
+            .plane {
+                color: $G6;
+                a.distributionLink {
+                    color: $G6;
+                }
+            }
+            .ship, .bonded {
+                padding: 0 18px;
+                padding-right: 0;
+            }
+            .ship {
+                background: sprite($icons-sprite, ship, 0, 4px) no-repeat;
+            }
+            .bonded {
+                background: sprite($icons-sprite, bonded, 0, 4px) no-repeat;
+            }
+            .inChina {
+                color: $G3;
+                font-size: 14px;
+                .help {
+                    margin: 0;
+                }
+            }
+            .info, .speed {
+                color: $G9;
+            }
+            .speed {
+                margin-left: 20px;
+            }
+            .bubble {
+                color: $G6;
+            }
+        }
+        .fare {
+            .des {
+                font-size: 14px;
+                color: $G3;
+                .curAddress, .to {
+                    font-size: 12px;
+                    color: $G6;
+                }
+                .curAddress {
+                    margin-left: 6px;
+                }
+                .noBorder {
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+                .fareDetail {
+                    text-decoration: underline;
+                    color: $G9;
+                    font-size: 12px;
+                    &:hover {
+                        color: $L1;
+                    }
+                }
+                .bubble {
+                    color: $G6;
+                }
+            }
+        }
+        .tariff .des {
+            font-size: 14px;
+            color: $G3;
+            a.help {
+                vertical-align: middle;
+                *vertical-align: bottom;
+            }
+            .bubble {
+                color: $G6;
+            }
+        }
+    }
+    .buyInfo {
+        @include buyOperation;
+        .supportPay {
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            .alipay, .unionpay, .week, .noFare {
+                margin-left: 10px;
+                border-right: 1px solid $Ge;
+            }
+            .payitem {
+                @include inline;
+                padding: 10px;
+                padding-left: 46px;
+                width: 54px;
+                height: 30px;
+                line-height: 14px;
+            }
+            .alipay {
+                //@include bgs-sprite(alipay);
+                background: sprite($bgs-sprite, alipay, 0, 18px);
+                background-repeat: no-repeat;
+                margin-left: 0;
+            }
+            .unionpay {
+                //@include bgs-sprite(unionpay);.
+                background: sprite($bgs-sprite, unionpay, 0, 14px);
+                background-repeat: no-repeat;
+            }
+            .week {
+                background: sprite($bgs-sprite, week, 0, 7px);
+                background-repeat: no-repeat;
+            }
+            .noFare {
+                background: sprite($bgs-sprite, no_fare, 0, 7px);
+                background-repeat: no-repeat;
+                border: none;
+            }
+        }
+        .sellIn {
+            display: none;
+        }
+        .sellOut {
+            background-color: #faf9ed;
+            padding: 13px 10px;
+            .title {
+                line-height: 1.2;
+                font-size: 18px;
+                color: $R2;
+            }
+            .des {
+                color: $G9;
+                padding: 10px 0;
+            }
+            li {
+                @include proShow($pdgVertical: 8px);
+                .imgWrap {
+                    background-color: #fff;
+                    img {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    @include inline;
+                }
+                .name {
+                    color: $G6;
+                    height: 32px;
+                    @include inline;
+                }
+            }
+        }
+    }
+}
+
+// 邀请好友注册有礼
+.productInvitediv {
+    padding-top: 20px;
+    height: 45px;
+    color: #333333;
+    font-family: '微软雅黑';
+    .inviteBox {
+        width: 150px;
+        float: right;
+        overflow: hidden;
+    }
+    .productInviteBtn {
+        display: block;
+        width: 150px;
+        background-color: #ff5e5e;
+        color: #fff;
+        text-align: center;
+        line-height: 45px;
+        font-size: 14px;
+    }
+    .productInviteBtn:hover {
+        text-decoration: none;
+    }
+    .shareIconBox {
+        width: 242px;
+        height: 152px;
+        border: 1px solid #dcdcdc;
+        padding: 20px 20px 28px 28px;
+        background-color: #fff;
+        position: absolute;
+        margin-left: -142px;
+        margin-top: -247px;
+        display: none;
+        ul {
+            overflow: hidden;
+            height: 100%;
+        }
+        .weibo_box {
+            position: absolute;
+            bottom: 0;
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .li_zone {
+            height: 32px;
+            line-height: 32px;
+            i {
+                vertical-align: middle;
+            }
+            span {
+                vertical-align: middle;
+            }
+        }
+        .box_0 {
+            width: 152px;
+            float: left;
+            height: 100%;
+        }
+        .box_1 {
+            width: 88px;
+            float: right;
+            height: 100%;
+            position: relative;
+        }
+    }
+    .weixing_h3 {
+        color: #666;
+        font-size: 14px;
+        padding-bottom: 6px;
+        .share_icon {
+            background-position: 0 0;
+            margin-right: 4px;
+        }
+    }
+}
+
+#parea {
+    *position: relative;
+    *z-index: 99;
+}
+
+#proBusiness {
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+}
+
+.businessWrap {
+    margin-right: 10px;
+    padding-bottom: 10px;
+    .businessInfo {
+        padding: 10px 0;
+        border-bottom: 1px solid $Ge;
+        .businessLogo {
+            float: right;
+            width: 63px;
+            height: 76px;
+        }
+        .buyer {
+            background: sprite($bgs-sprite, buyer_authentication, 12px, 0);
+            background-repeat: no-repeat;
+        }
+        .business {
+            background: sprite($bgs-sprite, business_authentication);
+            background-repeat: no-repeat;
+        }
+        .name {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: $G6;
+            height: 21px;
+            line-height: 21px;
+            overflow: hidden;
+        }
+        .scroe {
+            margin-top: 6px;
+            .des {
+                color: $G9;
+            }
+            .medalList {
+                text-align: left;
+                margin-top: 5px;
+                .medalItem {
+                    width: 12px;
+                    height: 16px;
+                    float: left;
+                    margin-right: 4px;
+                    @include inline;
+                    background: sprite($icons-sprite, medal) no-repeat;
+                    *margin-right: 4px;
+                }
+                .text {
+                    height: 16px;
+                    line-height: 15px;
+                    color: $Gc;
+                }
+                .highlight {
+                    background: sprite($icons-sprite, medalhighlight) no-repeat;
+                }
+                .nomedal {
+                    background: sprite($icons-sprite, nomedal) no-repeat;
+                }
+            }
+        }
+        .evaluation {
+            color: $G9;
+            .count {
+                margin: 0 4px;
+                color: $L1;
+                a {
+                    color: $L1;
+                }
+            }
+        }
+        .concat {
+            margin-top: 7px;
+            @include shadow;
+            &:after {
+                content: '';
+                clear: both;
+                height: 0;
+                display: block;
+                visibility: hidden;
+            }
+            .shadow {
+                background-color: #fff;
+            }
+            .shadow a.qq, .shadow a.sendMessage {
+                padding-left: 24px;
+                span {
+                    margin: 0 10px;
+                }
+                &:hover {
+                    background-color: #f5f5f5;
+                }
+            }
+            .qqBox {
+                margin-right: 6px;
+            }
+            .online {
+                background: sprite($icons-sprite, qq_online, 8px, 2px);
+                background-repeat: no-repeat;
+            }
+            .unline {
+                background: sprite($icons-sprite, qq_unline, 8px, 2px);
+                background-repeat: no-repeat;
+            }
+            .sendMessage {
+                background: sprite($icons-sprite, message, 8px, 4px);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .addressInfo {
+        padding: 5px 0 9px;
+        border-bottom: 1px solid $Ge;
+        line-height: 1;
+        .pd {
+            padding: 5px 0;
+        }
+        .resident {
+            color: $G9;
+        }
+        .formBox {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 1px 0;
+            color: $G6;
+            .from {
+                font-weight: bold;
+                margin-right: -2px;
+            }
+        }
+        .moon {
+            background: sprite($icons-sprite, moon, 0, 9px);
+            background-repeat: no-repeat;
+        }
+        .sun {
+            background: sprite($icons-sprite, sun, 0, 7px);
+            background-repeat: no-repeat;
+        }
+        .curAddressTime {
+            background-repeat: no-repeat;
+            padding-left: 24px;
+            color: $G9;
+            padding-top: 10px;
+        }
+    }
+    .store {
+        padding: 10px 0;
+        color: $G6;
+        @include shadow;
+        .shadow {
+            background-color: #fff;
+        }
+        .shadow a.enterStore {
+            border: 1px solid #ced7ea;
+            .text {
+                padding: 8px 34px;
+            }
+            &:hover {
+                background-color: #f1f4fa;
+            }
+        }
+        .collectStore {
+            line-height: 42px;
+            text-decoration: underline;
+            margin-right: 10px;
+            _margin-right: -3px;
+            _position: relative;
+        }
+    }
+    .warranty {
+        padding: 10px 0;
+        border-top: 1px solid $Ge;
+        .shipping, .genuine, .return {
+            width: 60px;
+            height: 55px;
+            @include inline;
+        }
+        .shipping {
+            background: sprite($bgs-sprite, shipping, 0, 4px);
+        }
+        .genuine {
+            background: sprite($bgs-sprite, genuine);
+        }
+        .return {
+            background: sprite($bgs-sprite, return, 0, 1px);
+            _margin-right: -3px;
+        }
+    }
+}
+
+#proInfo {
+    width: 100%;
+    margin-top: 20px;
+    .mainInfo {
+        width: 100%;
+        float: left;
+        .detailInfoWrap, .evalInfoWrap {
+            margin-right: 200px;
+            z-index: 99;
+        }
+        .evalInfoWrap {
+            margin-top: 20px;
+        }
+    }
+    .recommandBox {
+        width: 180px;
+        float: left;
+        margin-left: -180px;
+        .sizeConversion, .recommands, .recentlys {
+            border: 1px solid $Gd;
+        }
+        .sizeConversion {
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fff;
+            margin-bottom: 10px;
+            a {
+                font-size: 14px;
+                padding-left: 22px;
+                background: sprite($icons-sprite, sizeconversion, 0, 2px);
+                background: sprite($icons-sprite, sizeconversion, 0, 5px) \9;
+                *background: sprite($icons-sprite, sizeconversion, 0, 12px);
+                background-repeat: no-repeat;
+                line-height: 40px;
+                display: inline;
+            }
+        }
+        .recommands, .recentlys {
+            padding-bottom: 10px;
+            background-color: #fff;
+            dt {
+                font-size: 14px;
+                line-height: 42px;
+                text-align: center;
+            }
+        }
+        .recommands {
+            display: none;
+            dl {
+                padding: 0 5px;
+            }
+            dt, dd {
+                padding: 0 18px;
+            }
+            dd {
+                @include proShow;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px dashed $Gd;
+                .name {
+                    color: $G6;
+                }
+            }
+            .last {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        .recentlys {
+            margin-bottom: 10px;
+            dl {
+                padding: 0 5px;
+            }
+            dd {
+                @include proShow;
+                width: 72px;
+                margin: 4px 6px;
+                padding: 0;
+                .name {
+                    color: $G6;
+                }
+                .imgWrap {
+                    width: inherit;
+                    *width: 60px;
+                    padding: 6px;
+                    @include inline;
+                }
+                .price {
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.productdetailinfo {
+    @include switch;
+    background-color: #fff;
+    position: relative;
+    _width: 990px;
+    overflow: hidden;
+    .switchBox {
+        width: 988px;
+        height: 58px;
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        *left: 0;
+        background-color: #fff;
+        border-bottom: none;
+        .switchWrap {
+            height: 38px;
+            background-color: #f6f6f6;
+            border-bottom: 1px solid $Gc;
+        }
+        .switch {
+            float: left;
+            .blueline {
+                top: -3px;
+            }
+        }
+        .enterCar {
+            @include inline;
+            display: none;
+            float: right;
+            height: 28px;
+            margin: 6px 0;
+            margin-right: 10px;
+            background-color: $B3;
+            cursor: pointer;
+            position: relative;
+            a.title {
+                margin: 0  42px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                line-height: 28px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .productInfoContainer {
+        border: 1px solid $Gd;
+        border-top: none;
+        padding-top: 61px;
+    }
+    .productEvalBar {
+        width: 970px;
+        margin: 0 auto;
+        border-bottom: 3px solid $Gd;
+        height: 38px;
+        line-height: 38px;
+        .evalText {
+            color: $G6;
+            font-size: 14px;
+            font-weight: bold;
+            height: 38px;
+            line-height: 38px;
+        }
+    }
+    .proShow, .evaluationShow {
+        border-top: none;
+        overflow: hidden;
+        .noborder {
+            border-bottom: none;
+        }
+    }
+    .proShow {
+        padding: 0 10px;
+        .property {
+            padding: 0 12px 40px;
+            margin: 15px 0;
+            background: url(/images/singleProduct/background/evaluationbackground.png) center bottom no-repeat;
+            li {
+                float: left;
+                width: 30%;
+                overflow: hidden;
+                white-space: nowrap;
+                .l {
+                    color: $G9;
+                }
+            }
+            .borderLeft {
+                border-left: 1px solid $Ge;
+                padding-left: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    .stars {
+        .start {
+            float: left;
+            width: 12px;
+            height: 12px;
+        }
+        .scoreFor00 {
+            background: sprite($icons-sprite, scoreFor00);
+        }
+        .scoreFor04 {
+            background: sprite($icons-sprite, scoreFor04);
+        }
+        .scoreFor05 {
+            background: sprite($icons-sprite, scoreFor05);
+        }
+        .scoreFor09 {
+            background: sprite($icons-sprite, scoreFor09);
+        }
+        .scoreFor10 {
+            background: sprite($icons-sprite, scoreFor10);
+        }
+    }
+    .evaluationShow {
+        padding: 0 30px 20px;
+        .cont-addEva {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px dashed $Gd;
+        }
+        .cont-reply {
+            padding-left: 22px;
+        }
+        .font-bold {
+            margin-right: 10px;
+        }
+        .levelIcon {
+            margin-left: 10px;
+            color: #f04e00;
+            font-size: 16px;
+        }
+        .overall {
+            border: 1px solid #fde8e8;
+            border-right: none;
+            margin-top: 20px;
+            @include inline;
+            .into {
+                padding: 14px;
+                padding-top: 8px;
+                border-right: 1px solid #fde8e8;
+                text-align: center;
+                float: left;
+                .title {
+                    color: $G6;
+                }
+                .evaluation {
+                    font-size: 14px;
+                    color: $G9;
+                    .value {
+                        font-size: 32px;
+                        color: $R2;
+                    }
+                }
+                .speed {
+                    color: $R2;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+        .clientEvaluation {
+            /*width: 714px;*/
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed $Gd;
+            .info {
+                @include btn;
+                padding-left: 106px;
+                width: 600px;
+                p {
+                    line-height: 26px;
+                }
+                .stars {
+                    height: 12px;
+                    padding: 2px 0;
+                }
+                .proInfo {
+                    color: $G9;
+                    .catalogText {
+                        margin-right: 10px;
+                    }
+                }
+                .time .btn {
+                    float: right;
+                    a {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                .cont-addEva {
+                    p {
+                        line-height: 18px;
+                    }
+                }
+                .reply {
+                    min-height: 50px;
+                    height: expression( this.scrollHeight < 50 ? "50px" : "auto" );
+                    //background-color: #f2f5f9;
+                    //border: 1px solid $B6;
+                    padding: 10px 10px 10px 72px;
+                    position: relative;
+                    margin-top: 10px;
+                    .adminPhoto {
+                        width: 48px;
+                        height: 48px;
+                        position: absolute;
+                        background: sprite($bgs-sprite, work-pic);
+                        background-repeat: no-repeat;
+                        top: 12px;
+                        left: 12px;
+                    }
+                    .from {
+                        color: $G9;
+                    }
+                    .replyInfo {
+                        color: $G6;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .time {
+                color: $G9;
+            }
+            .clientName, .time {
+                line-height: 16px;
+            }
+        }
+        .tip {
+            padding: 30px 0 30px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            color: $G6;
+        }
+        .bg {
+            background: url(/images/singleProduct/background/evaluationbackground.png) no-repeat;
+            padding-top: 40px;
+        }
+        .noborder {
+            border: none;
+        }
+    }
+    .othersEvaluationBox {
+        .tip {
+            padding: 34px 0;
+            text-align: center;
+            line-height: 24px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: $G6;
+        }
+        .bg {
+            background: url(/images/singleProduct/background/evaluationbackground.png) no-repeat;
+        }
+        .user, .eva, .cont, .buyPro {
+            padding: 0 5px;
+            float: left;
+        }
+        .user {
+            width: 90px;
+        }
+        .eva {
+            width: 90px;
+        }
+        .cont {
+            width: 354px;
+        }
+        .buyPro {
+            width: 354px;
+        }
+        .titleBox {
+            border-top: 1px solid $Ge;
+            border-bottom: 1px solid $Ge;
+            height: 34px;
+            line-height: 36px;
+        }
+        .evaItem {
+            padding: 10px 0;
+            border-bottom: 1px dashed $Gd;
+            .stars {
+                padding-top: 6px;
+            }
+            .tag {
+                color: $R2;
+                margin-right: 5px;
+            }
+            .cont {
+                .des {
+                    padding-right: 10px;
+                    color: $G6;
+                }
+                .time {
+                    color: $G9;
+                }
+            }
+            .bubble {
+                border: 1px solid $B6;
+                padding: 0 10px;
+                margin-top: 14px;
+                @include inline;
+                p {
+                    line-height: 24px;
+                }
+                .replyTime {
+                    color: $G9;
+                }
+                .replyInfo {
+                    color: $G6;
+                }
+            }
+        }
+        .noborder {
+            border: none;
+        }
+    }
+    .proImgs {
+        padding: 20px 50px;
+        img {
+            max-width: 868px;
+            _width: expression((function(el){el.clientWidth>868&&(el.style.width="868px")})(this));
+        }
+    }
+    .show {
+        display: block;
+    }
+}
+
+#buyToo {
+    @include switch;
+    margin: 20px 200px 60px 0;
+    _height: 293px;
+    .buyTooShow, .sameShow {
+        padding: 20px 0;
+        border: 1px solid $Gd;
+        border-top: none;
+        display: none;
+        overflow: hidden;
+    }
+    .panels {
+        background-color: #fff;
+    }
+    .show {
+        display: block;
+    }
+    .proItem {
+        @include proShow($pdgVertical: 22px);
+        padding-right: 0;
+        padding: 0 22px;
+        width: 120px;
+        border-right: 1px solid $Ge;
+        .imgWrap {
+            padding: 0;
+            border: none;
+        }
+        .name {
+            color: $G6;
+        }
+    }
+    .last {
+        padding-right: 0;
+        border-right: none;
+    }
+    .switchBox {
+        border: none;
+        border-bottom: 3px solid $Gd;
+        background-color: transparent;
+        .switch {
+            li {
+                margin-top: 0;
+                border-top: none;
+                border-right: none;
+                height: 38px;
+                .splitLine {
+                    width: 1px;
+                    height: 40px;
+                    position: absolute;
+                    bottom: -3px;
+                    right: 0;
+                    background: sprite($bgs-sprite, splitline) no-repeat;
+                }
+                .blueline {
+                    padding: 0;
+                    bottom: -3px;
+                    left: 0;
+                }
+            }
+            .select {
+                background-color: transparent;
+                span {
+                    color: $B3;
+                }
+            }
+        }
+    }
+}
+
+#shopEvalPagination, #proEvalPagination {
+    height: 38px;
+    text-align: center;
+    padding-top: 15px;
+    a {
+        padding: 10px;
+        margin: 0 1px;
+        border: 1px solid $Gd;
+        color: $G6;
+        @include inline;
+        &.select {
+            padding: 9px;
+            border: 2px solid $B2;
+        }
+        &.disabled {
+            cursor: default;
+            background-color: $Ge;
+            &:hover {
+                color: $G6;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#collectAlert {
+    text-align: left;
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .alert_box_inner {
+        padding: 0;
+        text-align: left;
+        width: 350px;
+    }
+    .tip {
+        height: 36px;
+        line-height: 36px;
+        padding-left: 14px;
+        border-bottom: 1px solid $Ge;
+        font-size: 14px;
+        color: $G6;
+    }
+    .contentBox {
+        padding: 26px;
+        padding-left: 16px;
+        .desWrap {
+            @include shadow;
+            .shadow {
+                float: left;
+            }
+            .icon {
+                margin-right: 10px;
+                float: left;
+                line-height: 44px;
+                *line-height: 60px;
+                _line-height: 60px;
+                font-size: 66px;
+                _font-size: 60px;
+                *font-size: 60px;
+                font-size: 60px\9;
+            }
+            .orange {
+                color: #ff7f00;
+            }
+            .green {
+                color: #64b711;
+            }
+            .des {
+                font-size: 16px;
+                color: #666;
+                line-height: 26px;
+            }
+            .enterCollect a {
+                font-size: 12px;
+                color: #1F7DD8;
+                line-height: 22px;
+            }
+            .singleLingHeight {
+                line-height: 44px;
+            }
+            .toLogin, .toClose {
+                padding-top: 15px;
+            }
+            .toLogin, .toClose {
+                padding-left: 74px;
+                height: 30px;
+                a.btn {
+                    border: none;
+                    background-color: $R2;
+                    padding: 6px 26px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.floatshoppingcart {
+    @include buyOperation;
+    @include shadow;
+    border: 1px solid $Gd;
+    padding: 10px 10px 15px;
+    background-color: #f5f2e2;
+    width: 420px;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    text-align: left;
+    dl {
+        padding: 3px 0;
+        line-height: 18px;
+    }
+    dt, dd {
+        @include inline;
+        position: relative;
+    }
+    dt {
+        width: 66px;
+        float: left;
+    }
+    .buyOperationBox {
+        padding: 0;
+    }
+    .promotion {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px dashed $Gd;
+        .des {
+            font-size: 24px;
+            color: $R2;
+        }
+    }
+    .name {
+        color: $G6;
+    }
+    .enter {
+        background-color: $R2;
+        margin-right: 10px;
+        margin-left: 66px;
+        a {
+            color: #fff;
+            border: 1px solid $R2;
+        }
+    }
+    .cancel {
+        color: $G9;
+        background-color: #fff;
+    }
+    .shadow {
+        font-size: 18px;
+        .text {
+            padding: 2px 30px;
+        }
+    }
+    .buyOperationBox {
+        padding-left: 0;
+        .colorBox .des {
+            width: 354px;
+        }
+    }
+}
+
+.floatextendinfo {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    width: 0;
+    font-size: 0;
+    float: left;
+    .trigger {
+        background: sprite($bgs-sprite, baseinfoextend) no-repeat;
+        width: 20px;
+        height: 360px;
+        top: 80px;
+        cursor: pointer;
+        position: absolute;
+        left: -10px;
+    }
+}
+
+.floatOffBtn {
+    position: absolute;
+    top: 184px;
+    left: -20px;
+    width: 20px;
+    height: 96px;
+    background: sprite($bgs-sprite, floatOffBtn) no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+.backtop {
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
+
+#fancy_overlay, #fancy_loading {
+    z-index: 100001 !important;
+}
+
+#fancy_outer, #fancy_title {
+    z-index: 100002 !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .vbanner {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .wrapper {
+        min-width: 1000px;
+    }
+    .matou-link {
+        max-width: 900px;
+    }
+    .wrapper .area {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        width: 990px;
+        min-width: 990px;
+    }
+    .wrapper .area:before, .wrapper .area:after {
+        content: ".";
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+        font-size: 0;
+        line-height: 0;
+    }
+    /*nav*/
+    .hd-login {
+        width: 400px;
+    }
+    .site-search {
+        width: 170px;
+    }
+    .search-inp {
+        width: 90px;
+    }
+    .navigatorbar .left, .navigatorbar .countries {
+        width: 400px;
+    }
+    .floatextendinfo {
+        display: block;
+    }
+    .detailWrap {
+        margin-right: 10px;
+    }
+    #buyToo {
+        margin-right: 0;
+    }
+    #proInfo {
+        .mainInfo {
+            .detailInfoWrap, .evalInfoWrap {
+                margin-right: 0;
+            }
+        }
+    }
+    #proBusiness {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #f6f6f6;
+        padding-left: 10px;
+        border-left: 1px solid $Gd;
+        height: 100%;
+        display: none;
+    }
+    #proBusiness .floatOffBtn {
+        display: block;
+    }
+    #proBusiness.proBusinessShow {
+        display: block;
+    }
+    #main {
+        width: 990px;
+        .recommandBox {
+            display: none;
+        }
+    }
+}

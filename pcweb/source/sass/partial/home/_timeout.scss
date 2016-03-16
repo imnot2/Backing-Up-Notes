@@ -1,0 +1,22 @@
+@import "basic215";
+.timeout-wrap{
+  color:$miorColor;
+  span{
+    padding:0 3px;
+  }
+  .time-txt{
+      padding-right:10px;
+  }
+  em{
+    font-size:14px;
+    @include background-img("timeout.png");
+    @include inline-block();
+    background-repeat:no-repeat;
+    width:14px;
+    height:24px;
+    text-align:center;
+    line-height:24px;
+    color:$white;
+    margin:0 1px;
+  }
+}

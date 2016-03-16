@@ -1,0 +1,11 @@
+<%=include global/header.html%>
+<top-tools-bar class="navbar"></top-tools-bar>
+<section id='content' class="container" ng-controller='ProductItemController'>
+	
+	<article ng-bind-html="productDec" class="shoppingbag-info"></article>
+
+	<%=include part/productDetail.html%>	
+	
+</section>
+<fixed-menu></fixed-menu>
+<%=include global/footer.html%>

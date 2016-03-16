@@ -1,0 +1,985 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>uxiconfont</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;list-style: none;}
+        /*
+KISSY CSS Reset
+理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+     2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+     3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色：1. 适应中文；2. 基于最新主流浏览器。
+维护：玉伯<lifesinger@gmail.com>, 正淳<ragecarrier@gmail.com>
+*/
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 清除浮动 */
+.ks-clear:after, .clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.ks-clear, .clear {
+  *zoom: 1;
+}
+
+.main {padding: 30px 100px;}
+.main h1{font-size:36px; color:#333; text-align:left;margin-bottom:30px; border-bottom: 1px solid #eee;}
+
+.helps{margin-top:40px;}
+.helps pre{
+    padding:20px;
+    margin:10px 0;
+    border:solid 1px #e7e1cd;
+    background-color: #fffdef;
+    overflow: auto;
+}
+
+.icon_lists li{
+    float:left;
+    width: 100px;
+    height:150px;
+    text-align: center;
+}
+.icon_lists .iconfont{
+    font-size: 42px;
+    line-height: 100px;
+    margin: 10px 0;
+    color:#333;
+    -webkit-transition: font-size 0.25s ease-out 0s;
+-moz-transition: font-size 0.25s ease-out 0s;
+transition: font-size 0.25s ease-out 0s;
+
+}
+.icon_lists .iconfont:hover{
+    font-size: 100px;
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>一淘UX图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                    <i class="iconfont">&#xf000e;</i>
+                    <div class="name">mianyun</div>
+                    <div class="code">&amp;#xf000e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf000c;</i>
+                    <div class="name">vip</div>
+                    <div class="code">&amp;#xf000c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf000b;</i>
+                    <div class="name">shengzhi</div>
+                    <div class="code">&amp;#xf000b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0001;</i>
+                    <div class="name">edit</div>
+                    <div class="code">&amp;#xf0001;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0002;</i>
+                    <div class="name">yes-1</div>
+                    <div class="code">&amp;#xf0002;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0003;</i>
+                    <div class="name">yes-2</div>
+                    <div class="code">&amp;#xf0003;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0004;</i>
+                    <div class="name">no</div>
+                    <div class="code">&amp;#xf0004;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0005;</i>
+                    <div class="name">shop</div>
+                    <div class="code">&amp;#xf0005;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0006;</i>
+                    <div class="name">index</div>
+                    <div class="code">&amp;#xf0006;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0007;</i>
+                    <div class="name">zhibo</div>
+                    <div class="code">&amp;#xf0007;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0008;</i>
+                    <div class="name">vip-lvse</div>
+                    <div class="code">&amp;#xf0008;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf000a;</i>
+                    <div class="name">gift</div>
+                    <div class="code">&amp;#xf000a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a7;</i>
+                    <div class="name">minus</div>
+                    <div class="code">&amp;#x34a7;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a6;</i>
+                    <div class="name">money</div>
+                    <div class="code">&amp;#x34a6;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a5;</i>
+                    <div class="name">money-box</div>
+                    <div class="code">&amp;#x34a5;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a4;</i>
+                    <div class="name">movie</div>
+                    <div class="code">&amp;#x34a4;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a3;</i>
+                    <div class="name">music</div>
+                    <div class="code">&amp;#x34a3;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a2;</i>
+                    <div class="name">music-video</div>
+                    <div class="code">&amp;#x34a2;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a1;</i>
+                    <div class="name">mute</div>
+                    <div class="code">&amp;#x34a1;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x34a0;</i>
+                    <div class="name">near-me</div>
+                    <div class="code">&amp;#x34a0;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349f;</i>
+                    <div class="name">news</div>
+                    <div class="code">&amp;#x349f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3496;</i>
+                    <div class="name">price-tag-usd</div>
+                    <div class="code">&amp;#x3496;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3497;</i>
+                    <div class="name">price-tag-pound</div>
+                    <div class="code">&amp;#x3497;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3498;</i>
+                    <div class="name">price-tag-euro</div>
+                    <div class="code">&amp;#x3498;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3499;</i>
+                    <div class="name">price-tag</div>
+                    <div class="code">&amp;#x3499;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349a;</i>
+                    <div class="name">plus</div>
+                    <div class="code">&amp;#x349a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349b;</i>
+                    <div class="name">picture</div>
+                    <div class="code">&amp;#x349b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349c;</i>
+                    <div class="name">phone-alt</div>
+                    <div class="code">&amp;#x349c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349d;</i>
+                    <div class="name">phone</div>
+                    <div class="code">&amp;#x349d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x349e;</i>
+                    <div class="name">opened-folder</div>
+                    <div class="code">&amp;#x349e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3495;</i>
+                    <div class="name">print</div>
+                    <div class="code">&amp;#x3495;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3494;</i>
+                    <div class="name">put-in</div>
+                    <div class="code">&amp;#x3494;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3493;</i>
+                    <div class="name">put-out</div>
+                    <div class="code">&amp;#x3493;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3492;</i>
+                    <div class="name">recycle-sign</div>
+                    <div class="code">&amp;#x3492;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3491;</i>
+                    <div class="name">reload</div>
+                    <div class="code">&amp;#x3491;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3490;</i>
+                    <div class="name">right</div>
+                    <div class="code">&amp;#x3490;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348f;</i>
+                    <div class="name">right-arrow-alt</div>
+                    <div class="code">&amp;#x348f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348e;</i>
+                    <div class="name">sale</div>
+                    <div class="code">&amp;#x348e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348d;</i>
+                    <div class="name">search</div>
+                    <div class="code">&amp;#x348d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3484;</i>
+                    <div class="name">stopwatch</div>
+                    <div class="code">&amp;#x3484;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3485;</i>
+                    <div class="name">star</div>
+                    <div class="code">&amp;#x3485;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3486;</i>
+                    <div class="name">speech-bubble</div>
+                    <div class="code">&amp;#x3486;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3487;</i>
+                    <div class="name">shopping-cart-loaded</div>
+                    <div class="code">&amp;#x3487;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3488;</i>
+                    <div class="name">shopping-cart-empty</div>
+                    <div class="code">&amp;#x3488;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3489;</i>
+                    <div class="name">shopping-bag</div>
+                    <div class="code">&amp;#x3489;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348a;</i>
+                    <div class="name">shared</div>
+                    <div class="code">&amp;#x348a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348b;</i>
+                    <div class="name">settings</div>
+                    <div class="code">&amp;#x348b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x348c;</i>
+                    <div class="name">sent</div>
+                    <div class="code">&amp;#x348c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3483;</i>
+                    <div class="name">thumb-up</div>
+                    <div class="code">&amp;#x3483;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3482;</i>
+                    <div class="name">thumb-up</div>
+                    <div class="code">&amp;#x3482;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3481;</i>
+                    <div class="name">timer</div>
+                    <div class="code">&amp;#x3481;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3480;</i>
+                    <div class="name">tones</div>
+                    <div class="code">&amp;#x3480;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347f;</i>
+                    <div class="name">trash</div>
+                    <div class="code">&amp;#x347f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347e;</i>
+                    <div class="name">tv</div>
+                    <div class="code">&amp;#x347e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347d;</i>
+                    <div class="name">tv-show</div>
+                    <div class="code">&amp;#x347d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347c;</i>
+                    <div class="name">unlock</div>
+                    <div class="code">&amp;#x347c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347b;</i>
+                    <div class="name">up</div>
+                    <div class="code">&amp;#x347b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3472;</i>
+                    <div class="name">female</div>
+                    <div class="code">&amp;#x3472;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3473;</i>
+                    <div class="name">up-right</div>
+                    <div class="code">&amp;#x3473;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3474;</i>
+                    <div class="name">upload-cloud</div>
+                    <div class="code">&amp;#x3474;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3475;</i>
+                    <div class="name">upload</div>
+                    <div class="code">&amp;#x3475;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3476;</i>
+                    <div class="name">up-list</div>
+                    <div class="code">&amp;#x3476;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3477;</i>
+                    <div class="name">up-left</div>
+                    <div class="code">&amp;#x3477;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3478;</i>
+                    <div class="name">update</div>
+                    <div class="code">&amp;#x3478;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3479;</i>
+                    <div class="name">up-arrow-alt</div>
+                    <div class="code">&amp;#x3479;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x347a;</i>
+                    <div class="name">up-arrow</div>
+                    <div class="code">&amp;#x347a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346d;</i>
+                    <div class="name">男人头像</div>
+                    <div class="code">&amp;#x346d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346e;</i>
+                    <div class="name">男人头像</div>
+                    <div class="code">&amp;#x346e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346f;</i>
+                    <div class="name">female</div>
+                    <div class="code">&amp;#x346f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3470;</i>
+                    <div class="name">female</div>
+                    <div class="code">&amp;#x3470;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3471;</i>
+                    <div class="name">female</div>
+                    <div class="code">&amp;#x3471;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346c;</i>
+                    <div class="name">男人头像</div>
+                    <div class="code">&amp;#x346c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346b;</i>
+                    <div class="name">男人头像</div>
+                    <div class="code">&amp;#x346b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346a;</i>
+                    <div class="name">录影机</div>
+                    <div class="code">&amp;#x346a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3469;</i>
+                    <div class="name">钱包</div>
+                    <div class="code">&amp;#x3469;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3460;</i>
+                    <div class="name">low-volume</div>
+                    <div class="code">&amp;#x3460;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3461;</i>
+                    <div class="name">medium-battery</div>
+                    <div class="code">&amp;#x3461;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3462;</i>
+                    <div class="name">medium-volume</div>
+                    <div class="code">&amp;#x3462;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3463;</i>
+                    <div class="name">megaphone</div>
+                    <div class="code">&amp;#x3463;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3464;</i>
+                    <div class="name">email</div>
+                    <div class="code">&amp;#x3464;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3465;</i>
+                    <div class="name">micro</div>
+                    <div class="code">&amp;#x3465;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3466;</i>
+                    <div class="name">zoom-out</div>
+                    <div class="code">&amp;#x3466;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3467;</i>
+                    <div class="name">放大</div>
+                    <div class="code">&amp;#x3467;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3468;</i>
+                    <div class="name">眼睛</div>
+                    <div class="code">&amp;#x3468;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345b;</i>
+                    <div class="name">like</div>
+                    <div class="code">&amp;#x345b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345c;</i>
+                    <div class="name">link-broken</div>
+                    <div class="code">&amp;#x345c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345d;</i>
+                    <div class="name">link</div>
+                    <div class="code">&amp;#x345d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345e;</i>
+                    <div class="name">lock</div>
+                    <div class="code">&amp;#x345e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345f;</i>
+                    <div class="name">low-battery</div>
+                    <div class="code">&amp;#x345f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x345a;</i>
+                    <div class="name">left</div>
+                    <div class="code">&amp;#x345a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3459;</i>
+                    <div class="name">left-arrow</div>
+                    <div class="code">&amp;#x3459;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3458;</i>
+                    <div class="name">left-arrow</div>
+                    <div class="code">&amp;#x3458;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3457;</i>
+                    <div class="name">key</div>
+                    <div class="code">&amp;#x3457;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344e;</i>
+                    <div class="name">globe-vector</div>
+                    <div class="code">&amp;#x344e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344f;</i>
+                    <div class="name">help-vector</div>
+                    <div class="code">&amp;#x344f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3450;</i>
+                    <div class="name">high-battery</div>
+                    <div class="code">&amp;#x3450;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3451;</i>
+                    <div class="name">high-volume</div>
+                    <div class="code">&amp;#x3451;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3452;</i>
+                    <div class="name">home</div>
+                    <div class="code">&amp;#x3452;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3453;</i>
+                    <div class="name">idea</div>
+                    <div class="code">&amp;#x3453;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3454;</i>
+                    <div class="name">inbox</div>
+                    <div class="code">&amp;#x3454;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3455;</i>
+                    <div class="name">info</div>
+                    <div class="code">&amp;#x3455;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3456;</i>
+                    <div class="name">invisible</div>
+                    <div class="code">&amp;#x3456;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3449;</i>
+                    <div class="name">edit</div>
+                    <div class="code">&amp;#x3449;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344a;</i>
+                    <div class="name">folder</div>
+                    <div class="code">&amp;#x344a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344b;</i>
+                    <div class="name">forward-vector</div>
+                    <div class="code">&amp;#x344b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344c;</i>
+                    <div class="name">fully-charged-battery</div>
+                    <div class="code">&amp;#x344c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x344d;</i>
+                    <div class="name">gift-vector</div>
+                    <div class="code">&amp;#x344d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3448;</i>
+                    <div class="name">drop-down-vector</div>
+                    <div class="code">&amp;#x3448;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3447;</i>
+                    <div class="name">down-vector</div>
+                    <div class="code">&amp;#x3447;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3446;</i>
+                    <div class="name">down-right-vector</div>
+                    <div class="code">&amp;#x3446;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3445;</i>
+                    <div class="name">下载</div>
+                    <div class="code">&amp;#x3445;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343c;</i>
+                    <div class="name">clock-vector</div>
+                    <div class="code">&amp;#x343c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343d;</i>
+                    <div class="name">contacts-vector</div>
+                    <div class="code">&amp;#x343d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343e;</i>
+                    <div class="name">credit-card</div>
+                    <div class="code">&amp;#x343e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343f;</i>
+                    <div class="name">document-vector</div>
+                    <div class="code">&amp;#x343f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3440;</i>
+                    <div class="name">down-arrow-vector</div>
+                    <div class="code">&amp;#x3440;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3441;</i>
+                    <div class="name">down-arrow-alt</div>
+                    <div class="code">&amp;#x3441;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3442;</i>
+                    <div class="name">down-left</div>
+                    <div class="code">&amp;#x3442;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3443;</i>
+                    <div class="name">flag</div>
+                    <div class="code">&amp;#x3443;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3444;</i>
+                    <div class="name">云下载</div>
+                    <div class="code">&amp;#x3444;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3437;</i>
+                    <div class="name">back-vector</div>
+                    <div class="code">&amp;#x3437;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3438;</i>
+                    <div class="name">bookmark-vector</div>
+                    <div class="code">&amp;#x3438;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3439;</i>
+                    <div class="name">box-vector</div>
+                    <div class="code">&amp;#x3439;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343a;</i>
+                    <div class="name">charge-battery-vector</div>
+                    <div class="code">&amp;#x343a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x343b;</i>
+                    <div class="name">clear-shopping-cart-vector</div>
+                    <div class="code">&amp;#x343b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3432;</i>
+                    <div class="name">baby</div>
+                    <div class="code">&amp;#x3432;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3436;</i>
+                    <div class="name">archive</div>
+                    <div class="code">&amp;#x3436;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3435;</i>
+                    <div class="name">alarm-clock</div>
+                    <div class="code">&amp;#x3435;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3434;</i>
+                    <div class="name">card</div>
+                    <div class="code">&amp;#x3434;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3433;</i>
+                    <div class="name">location</div>
+                    <div class="code">&amp;#x3433;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0016;</i>
+                    <div class="name">tixian</div>
+                    <div class="code">&amp;#xf0016;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0017;</i>
+                    <div class="name">jilu</div>
+                    <div class="code">&amp;#xf0017;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0018;</i>
+                    <div class="name">chongzhi</div>
+                    <div class="code">&amp;#xf0018;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0020;</i>
+                    <div class="name">y0</div>
+                    <div class="code">&amp;#xf0020;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001f;</i>
+                    <div class="name">y1</div>
+                    <div class="code">&amp;#xf001f;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001e;</i>
+                    <div class="name">y2</div>
+                    <div class="code">&amp;#xf001e;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001d;</i>
+                    <div class="name">y3</div>
+                    <div class="code">&amp;#xf001d;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001c;</i>
+                    <div class="name">y4</div>
+                    <div class="code">&amp;#xf001c;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001b;</i>
+                    <div class="name">y5</div>
+                    <div class="code">&amp;#xf001b;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf001a;</i>
+                    <div class="name">y6</div>
+                    <div class="code">&amp;#xf001a;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0019;</i>
+                    <div class="name">jinggao</div>
+                    <div class="code">&amp;#xf0019;</div>
+                </li>
+            
+        </ul>
+
+
+        <div class="helps">
+            <!-- <pre>一定要添加iconfont: "x", asiicode: 120 ,不然在window xp下用safari会出现蓝屏。</pre> <br > <br> -->
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用iconfont的样式
+            <pre>
+.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="iconfont"&gt;&amp;#x33&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿@import "../variables";
+//回到顶部
+.backtop{
+	background-color:#FFF;
+	position: fixed;
+	z-index: 9999;
+	right: 0px;
+	margin-right: 0;
+	bottom: 200px;
+	color:#999;
+	a{
+		color:#999;
+		text-decoration: none;
+	}
+	.ico{
+		cursor: pointer;
+		display:block;
+		width:36px;
+		height:48px;
+		background:url(/images/sprites/backTop.#{$version}.png) no-repeat;
+	}
+	.group-ico{
+		margin-top: -1px;
+		display:block;
+		//height:90px;
+		border:1px solid #ddd;
+		cursor: pointer;
+		position: relative;
+		.txt{
+			width:35px;
+			display:block;
+			height:62px;
+			word-break: break-all;
+		}
+	}
+	.ico-backtop{
+		border:1px solid #ddd;
+		&:hover{
+			background-position:  0 -100px;
+			background-color:#999;
+		}
+	}	
+	.ico-support{
+		background-position: 0 -50px;
+	}
+	.ico-qq{
+		background-position: -0px -287px;
+	}
+	.ico-qq-off-line{
+		background-position: -0px -250px;
+	}
+	.ico-support-off-line{
+		background-position: -0px -153px;
+	}
+
+	.qq-ymt-tips{
+		width: 228px;
+		height: 30px;
+		border: 1px solid #666;
+		display: block;
+		position: absolute;
+		background: #fff;
+		line-height: 30px;
+		color: #666;
+		right: 167%;
+		filter:alpha(opacity=0);
+		opacity: 0;
+		top: 0;
+		transition:.3s;
+		.right_triangle{
+			width: 0px;
+			height: 0px;
+			overflow: hidden;
+			border: 6px solid transparent;
+			border-left:6px solid #676767;
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: -13px;
+		}
+	}
+}
+
+// 问卷调查
+.group-question{
+	width: 36px;
+	background: #F06562;
+	height: 45px;
+	
+	color: #fff;
+}
+.jiang{
+	display: block;
+	height: 45px; 
+	font-size: 26px;
+	font-weight: bold;
+	border-bottom: 2px solid #FFA09E;
+}
+.diaocha{
+	display: block;
+	height: 45px;
+	font-size: 14px;
+}
+.backtop .group-question{
+	border: 1px solid #FFA09E;
+} 

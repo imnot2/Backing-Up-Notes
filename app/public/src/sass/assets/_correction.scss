@@ -1,0 +1,212 @@
+@charset "UTF-8";
+//整点抢
+.home-list .hl-list li .info .price .reminded{
+	color: #ff6c6c;
+}
+
+//组合输入框
+.input-group{
+	position: relative;
+	display: table;
+	.form-input{
+		display: table-cell;
+		padding: 3px 6px; 
+	}
+	.form-input-super-sm{
+		width:35px;
+	}
+}
+
+.input-group-btn{
+	cursor:pointer;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: table-cell;
+	white-space: nowrap;
+	vertical-align: middle;
+	&:first-child{
+		border-right: 0;
+		border-top-right-radius:0;
+		border-bottom-right-radius:0;
+	}
+	&:last-child{
+		border-left: 0;
+		border-top-left-radius:0;
+		border-bottom-left-radius:0;	}
+}
+.input-group .form-input:not(:first-child):not(:last-child) {
+	border-radius: 0;
+}
+
+.tnb .input-group{
+	width:8.5em;
+}
+//物流
+.logistics-tab{
+	ul {
+		width: 100%;
+		overflow: hidden;
+		background: #eee;
+		li {
+			
+		}
+	}
+}
+
+.logistics-tab-item{
+	a{
+		display: block;
+		float: left;
+		width: 20%;
+		text-align: center;
+		line-height: 70px;
+		text-decoration: none;
+		color: #666;
+		box-shadow: inset 0 0 1px #999;
+	}
+}
+.logistics-tab-ative{
+	a{
+		background: #f8f8f8;
+		box-shadow: 0 0 0 #fff;
+		box-shadow: inset 0 3px 0 #cc3333;
+		color: #CC3333;
+	}
+}
+.logistics-concise{
+	min-height: 100px;
+	padding: 0 1em;
+	border-bottom: 1px solid #eee;
+	h2, p {
+		line-height: 2em;
+		font-size: 1.0em;
+		font-weight: normal;
+		color: #444;
+	}
+	.logistics-msg{
+		text-align:center;
+		color:#ff3c3c;
+		font-size:14px;
+	}
+}
+.logistics-stauts-title{
+	font-size: 1.1em;
+	background: #fff;
+	//overflow: auto;
+	span{
+		padding: 0.5em 1em; 
+	}
+}
+.logistics-stauts-list{
+	li{
+		border-top: 1px dotted #ddd;
+		overflow: hidden;
+		&:first-child{
+			.line{
+				top:50%;
+			}
+		}
+		&:last-child{
+			.line{
+				height: 50px;
+			}
+		}
+	}
+	.status-item{
+		
+	}
+	.status-ico{
+		width: 20%;
+		height: 100px;
+		position: relative;		
+	}
+	.round{
+		width: 26px;
+		height: 26px;
+		border-radius: 999px;
+		background: #999;
+		position: absolute;
+		left: 50%;
+		margin-left: -17px;
+		top: 50%;
+		margin-top: -20px;
+		z-index: 2;
+		border: 4px solid #f8f8f8;
+	}
+	.line{
+		width: 6px;
+		left: 50%;
+		margin-left: -7px;
+		top: 0px;
+		height: 2000px;
+		background: #ddd;
+		position: absolute;
+		z-index: 1;
+	}
+	.active{
+		background: #fff;
+		.status-ico{
+			.round {
+				background: #CC3333;
+				border-color: #fff;
+			}
+		} 
+	}
+}
+.fl{
+	float:left;
+}
+.status-detail{
+	padding: 1em 0;
+	address, time,  p {
+		line-height: 1.3em;
+		font-size: 0.9em;
+		font-style: normal;
+		color: #666;
+		width: 220px;
+	}
+	em {
+		color: #CC3333;
+		font-size: 0.8em;
+		font-weight: bold;
+		font-style: normal;
+	}
+}
+.addAddress .input-group{
+	width:100%;
+	span{
+		width:33.33333%;
+		display: inline-block;
+		padding-right: 1%;
+	}
+}
+.home-list-fixed{
+	position: relative;
+	.time-active{
+		position:fixed;
+		top: -1px;
+		min-width: 320px;
+		width: 100%;
+		z-index:10;
+	}
+	.hl-list{
+		margin-top: 28px;
+	}
+}
+
+.hide{
+	display:none!important;
+}
+#content{
+	margin-bottom: 2.8125em;
+}
+.home-wrap{
+	margin-top: 45px;
+}

@@ -1,0 +1,92 @@
+﻿/*=======================wishingTree_alert.css===========================*/
+
+/**alert vote**/
+#voteBox {
+	width: 390px;
+	height: 195px;
+	margin: 20px;
+	position: relative;
+	display: none;
+	background: #fff;
+	text-align: left;
+}
+.box_shadow {
+	-webkit-box-shadow: 3px 3px 3px 3px #ccc;
+	-moz-box-shadow: 3px 3px 3px 3px #ccc;
+	box-shadow: 3px 3px 3px 3px #ccc;
+	border: 2px solid #FF8401;
+}
+.shut {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 13px;
+	height: 14px;
+	background: url(/wish/vote/img/wishingtree/shut.png) no-repeat;
+	cursor: pointer;
+}
+.vote_pro_name {
+	padding: 30px 20px 0;
+	font-size: 14px;
+}
+.vote_pro_name h4 {
+	color: #EB5E00;
+	padding-top: 8px;
+}
+.vote_pro_price {
+	padding: 15px 20px 10px;
+	border-top: 1px dashed #cccccc;
+	margin-top: 15px;
+}
+.vote_pro_price .price, .vote_pro_price .price_sub {
+	float: left;
+}
+.vote_pro_price .price_sub {
+	margin-left: 10px;
+}
+.price_dec {
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.vote_pro_price input {
+	height: 26px;
+	font-weight: bold;
+	width: 235px;
+	padding-left: 5px;
+	border: 1px solid #B7B7B7;
+}
+
+/**alert help***/
+#helpBox {
+	width: 800px;
+	position: relative;
+	background: #fff;
+	display: none;
+}
+#helpBox .helpBox_tit {
+	text-align: center;
+	font-size: 14px;
+	color: #FF8401;
+	padding: 10px 0 0;
+}
+#helpBox .helpBox_con, #helpBox .helpBox_time {
+	width: 750px;
+	margin: 0 25px;
+	padding: 0 0 20px;
+}
+#helpBox .helpBox_con p {
+	line-height: 24px;
+	margin: 15px 0;
+	color: #000;
+}
+#helpBox td {
+	height: 36px;
+	line-height: 36px;
+}
+#helpBox thead td {
+	color: #FF8401;
+}
+#helpBox tbody td {
+	border-bottom: 1px dashed #ccc;
+}

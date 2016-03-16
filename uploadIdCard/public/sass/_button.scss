@@ -1,0 +1,38 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 8px 7px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn:active, .btn.active {
+  background-color: darken($Color_Main,5%);
+}
+.btn:disabled, .btn.disabled {
+  opacity: .6;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $Color_Main;
+  border: 1px solid darken($Color_Main,5%);
+}

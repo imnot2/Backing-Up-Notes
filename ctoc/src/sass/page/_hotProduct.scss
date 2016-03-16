@@ -1,0 +1,94 @@
+@import "lib/variables";
+
+.hotBox {
+    .ml3 {
+        margin-left: 3px;
+    }
+    .mt3 {
+        margin-top: 3px;
+    }
+    .ml12 {
+        margin-left: 12px;
+    }
+    .mt12 {
+        margin-top: 12px;
+    }
+    .hotList {
+        .hotItem {
+            width: 580px;
+            height: 303px;
+            border: 1px solid $grey20;
+            border-radius: 4px;
+            box-shadow: 0 0 4px $grey20;
+            overflow: hidden;
+            float: left;
+            background-color: $white;
+            margin: 6px;
+            *margin: 3px;
+            .proImgList {
+                width: 303px;
+                position: relative;
+                .imgItem {
+                    float: left;
+                    a {
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+                .stockBox {
+                    position: absolute;
+                    left: 8px;
+                    bottom: 8px;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 4px 8px;
+                    color: $grey40;
+                    border-radius: 2px;
+                    .count {
+                        color: $white;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            .proDetail {
+                width: 246px;
+                height: 300px;
+                padding: 0 15px;
+                position: relative;
+                .userInfo {
+                    border-bottom: 1px dashed $grey20;
+                    .buyerPhoto {
+                        margin-left: 0;
+                        border: 1px solid $grey20;
+                    }
+                }
+                .proDes {
+                    display: block;
+                    margin-top: 10px;
+                    line-height: 24px;
+                    height: 128px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    color: $black;
+                    .postmark {
+                        line-height: 18px;
+                        text-align: center;
+                        border: 1px solid $highRad;
+                        margin-top: 2px;
+                        margin-right: 4px;
+                        color: $highRad;
+                        border-radius: 3px;
+                        float: left;
+                        padding: 0 4px;
+                        font-size: 12px;
+                    }
+                }
+                .buyOprateBox {
+                    position: absolute;
+                    left: 15px;
+                    bottom: 15px;
+                    width: 246px;
+                }
+            }
+        }
+    }
+}

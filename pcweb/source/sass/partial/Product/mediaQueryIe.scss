@@ -1,0 +1,78 @@
+.floatextendinfo {
+	display: block;
+}
+.detailWrap {
+	margin-right: 10px;
+}
+#buyToo {
+	margin-right: 0;
+}
+#proInfo .mainInfo .detailInfoWrap, #proInfo .mainInfo .evalInfoWrap {
+	margin-right: 0;
+}
+#proBusiness {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #f6f6f6;
+	padding-left: 10px;
+	border-left: 1px solid #ddd;
+	height: 100%;
+	display: none;
+}
+#proBusiness.proBusinessShow {
+	display: block;
+}
+#proBusiness .floatOffBtn {
+	display: block;
+}
+#main {
+	width: 990px;
+}
+.recommandBox {
+	display: none;
+}
+.vbanner {
+	width: 1000px;
+	margin: 0 auto;
+}
+.wrapper {
+	min-width: 1000px;
+}
+.matou-link {
+	max-width: 900px;
+}
+.wrapper .area {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	width: 1000px;
+}
+.wrapper .area:before, .wrapper .area:after {
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}
+
+/*nav*/
+.hd-login {
+	width: 400px;
+}
+.site-search {
+	width: 170px;
+}
+.search-inp {
+	width: 90px;
+}
+.navigatorbar .left {
+	width: 400px;
+}
+.navigatorbar .current {
+	width: 690px;
+}

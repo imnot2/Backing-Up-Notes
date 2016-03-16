@@ -1,0 +1,285 @@
+﻿    <section class="mod-search">
+    <div class="panel">
+        <i class="icon-font-gly ficon-search">&#xe028;</i><input type="text" class="search" id="searchInput" placeholder="请输入搜索关键字"  /><span id="btn-search" class="btn-search">搜索</span>
+    </div>
+</section>
+<section class="mod-product-show show-img-full mod-scroll homeindex" id="mod-scroll">
+    <div class="panel">
+        <ul temp-data="data">
+            <for e="d in data">
+            <li class="item">
+                <a class="lk-img" href="/singleproduct?productId=${d.Id}">
+                    <img lazysrc="${d.PictureUrl}" src="/img/load/s.gif" class="img" title="${d.Title}" alt="${d.Title}" />
+                </a>
+                <div class="info">
+                    <h2 class="h2">
+                        <a  class="lk-title-16" href="singleproduct?productId=${d.Id}">${d.Title}</a>
+                    </h2>
+                    <div class="dec">
+                        <span class="mt-price-20">
+                            <i>&yen;</i><b>${d.Price4Sale}</b>&nbsp;&nbsp;
+                        </span>
+                        <span class="mk-price-12">
+                            市场价：<b>${d.MarketPrice}</b>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            </for>
+        </ul>
+    </div>
+    <ul class="trigger">
+        <for e="d in data">
+            <if e="dIndex==0">
+                <li class="item current"></li>
+            </if>
+            <else>
+                <li class="item"></li>
+            </else>
+        </for>
+    </ul>
+</section>
+<!--首页slide结束-->
+
+<!--首页商家商品，热卖商品， 图片大小150px 图片列表-->
+<section class="mod-product-show show-img-150">
+    <div class="bar">
+        <b class="title">商家商品</b>
+    </div>
+    <ul class="panel">
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=9EDAAE25-F2E8-4338-BC7A-C4E7BA6BEA4B">
+                <img src="http://p5.img.ymatou.com/upload/product/original/10ada043af474b3dac99d440e9399e83_o.jpg" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=9EDAAE25-F2E8-4338-BC7A-C4E7BA6BEA4B">Similac 美国雅培一段金盾宝宝奶粉</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>330</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=C7F03DB3-D050-4D5B-A47D-706F15C0620C">
+                <img src="http://p231.img.ymatou.com:10231/upload/product/original/52374a82d9a84e2b92fd9cf7128b6cd5_o.png" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=C7F03DB3-D050-4D5B-A47D-706F15C0620C">旅行度假终极防晒 水宝宝SPF100身体防晒霜+香蕉船晒后修复</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>165</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=30431CC1-DB73-41C5-A6CB-4065CB4379DB">
+                <img src="http://p231.img.ymatou.com:10231/upload/product/original/65d965d7e300459190f8e0d78c68aeee_o.png" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=30431CC1-DB73-41C5-A6CB-4065CB4379DB">美国直邮专区 2瓶价 Martek纽曼斯孕妇成人型LIfe's DHA 60粒 补脑</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>360</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=C3F6115F-B54A-4E38-81AF-D8F9283E05B2">
+                <img src="http://p5.img.ymatou.com/upload/product/original/c91a352af2f045229979913d55a1a374_o.jpg" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a   class="lk-title-14" href="singleproduct?productId=C3F6115F-B54A-4E38-81AF-D8F9283E05B2">美国Nature's Way Sambucus黑接骨木儿童糖浆 240ml</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>195</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="mod-product-show show-img-150">
+    <div class="bar">
+        <b class="title">热卖商品</b>
+    </div>
+    <ul class="panel">
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=974FB6C4-3D16-4CFB-AAE2-C699CD5D56A5">
+                <img src="http://p5.img.ymatou.com/upload/product/original/de960902b1b742a2b2880cd1605be656_o.jpg" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=974FB6C4-3D16-4CFB-AAE2-C699CD5D56A5">美国代购 直邮包关税 coach 90209 男士真皮双面皮带 实拍 现货</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>478</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=C3F6115F-B54A-4E38-81AF-D8F9283E05B2">
+                <img src="http://p5.img.ymatou.com/upload/product/original/c91a352af2f045229979913d55a1a374_o.jpg" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a   class="lk-title-14" href="singleproduct?productId=C3F6115F-B54A-4E38-81AF-D8F9283E05B2">美国Nature's Way Sambucus黑接骨木儿童糖浆 240ml</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>195</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=30431CC1-DB73-41C5-A6CB-4065CB4379DB">
+                <img src="http://p231.img.ymatou.com:10231/upload/product/original/65d965d7e300459190f8e0d78c68aeee_o.png" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=30431CC1-DB73-41C5-A6CB-4065CB4379DB">美国直邮专区 2瓶价 Martek纽曼斯孕妇成人型LIfe's DHA 60粒 补脑</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>360</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <a class="lk-img" href="singleproduct?productId=9EDAAE25-F2E8-4338-BC7A-C4E7BA6BEA4B">
+                <img src="http://p5.img.ymatou.com/upload/product/original/10ada043af474b3dac99d440e9399e83_o.jpg" class="img" title="" alt="" />
+            </a>
+            <div class="info">
+                <h2 class="h2">
+                    <a  class="lk-title-14" href="singleproduct?productId=9EDAAE25-F2E8-4338-BC7A-C4E7BA6BEA4B">Similac 美国雅培一段金盾宝宝奶粉</a>
+                </h2>
+                <div class="dec">
+                    <span class="mt-price-20">
+                        <i>&yen;</i><b>330</b>
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--首页商家商品，热卖商品， 图片大小150px 图片列表-->
+
+<!--首页分类模块 20140121 by xiaokang-->
+<section class="category">
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>母婴保健</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1298" title="洗发沐浴">洗发沐浴</a>
+            <a class="dd" href="/productlist/#c=1270" title="一段奶粉">一段奶粉</a>
+            <a class="dd" href="/productlist/#c=1271" title="二段奶粉">二段奶粉</a>
+            <a class="dd" href="/productlist/#c=1283">饼干/泡芙</a>
+            <a class="dd" href="/productlist/#c=1374">护理用品</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>营养健康</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1239">咖啡/冲调</a>
+            <a class="dd" href="/productlist/#c=1253">维生素</a>
+            <a class="dd" href="/productlist/#c=1234">饼干糕点</a>
+            <a class="dd" href="/productlist/#c=1236">干果/蜜饯</a>
+            <a class="dd" href="/productlist/#c=1258">有机提取</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>美容护肤</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1148">护肤套装</a>
+            <a class="dd" href="/productlist/#c=1088">洁面</a>
+            <a class="dd" href="/productlist/#c=1298">精华</a>
+            <a class="dd" href="/productlist/#c=1136">润唇膏</a>
+            <a class="dd" href="/productlist/#c=1113">手足护理</a>
+            <a class="dd" href="/productlist/#c=1103">洗发护肤</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>服饰鞋帽</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1424">休闲鞋</a>
+            <a class="dd" href="/productlist/#c=1331">T恤/Polo</a>
+            <a class="dd" href="/productlist/#c=1315">男卫衣</a>
+            <a class="dd" href="/productlist/#c=1328">女卫衣</a>
+            <a class="dd" href="/productlist/#c=1320">上衣外套</a>
+            <a class="dd" href="/productlist/#c=1365">童装</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>箱包手袋</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1181">单肩包</a>
+            <a class="dd" href="/productlist/#c=1180">手拿包</a>
+            <a class="dd" href="/productlist/#c=1179">钱包/卡包</a>
+            <a class="dd" href="/productlist/#c=1184">斜挎包</a>
+            <a class="dd" href="/productlist/#c=1183">手提包</a>
+            <a class="dd" href="/productlist/#c=1194">旅行包</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>家用电器</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1057">电动剃须刀</a>
+            <a class="dd" href="/productlist/#c=1446">洗脸刷</a>
+            <a class="dd" href="/productlist/#c=1066">体温计</a>
+            <a class="dd" href="/productlist/#c=1404">净水器（含过滤芯）</a>
+            <a class="dd more" href="/productlist/#AllCategorys">更多</a>
+        </div>
+    </div>
+
+    <div class="categorylist">
+        <div class="categoryname">
+            <h3>热门品牌</h3>
+        </div>
+        <div class="clearfix dl subcategory">
+            <a class="dd" href="/productlist/#c=1271/b=10214">Similac</a>
+            <a class="dd" href="/productlist/#b=13108">Amway</a>
+            <a class="dd" href="/productlist/#b=13360">Honeywell</a>
+            <a class="dd" href="/productlist/#b=10089">Burberry</a>
+            <a class="dd" href="/productlist/#b=10968">UGG</a>
+            <a class="dd" href="/productlist/#b=10104">Coach</a>
+            <a class="dd" href="/productlist/#b=10123">Estee</a>
+        </div>
+    </div>
+</section>
+<!--首页分类模块-->

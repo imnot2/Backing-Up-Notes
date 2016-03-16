@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app='test'>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src='/build/js/application.js'></script>
+<style type="text/css">
+
+p label{
+	display: inline-block;
+	width:15%;
+	text-align: right;
+}
+.va_top{
+	vertical-align:middle;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.mods{
+	display:inline-block;
+	width: 100%;
+	padding-top:20px;
+	background-color:#eee;
+	text-align: center;
+}
+.mods .fl{
+	width: 50%;
+}
+.mods .fr{
+	width: 50%;
+}
+input{
+	padding:5px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+}
+textarea,.resultDate{
+	width: 88%;
+	height: 300px;
+	padding:2%;
+	margin: 4%;
+	line-height:2em;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.resultDate{
+	background: #eee;
+	text-align: left;
+font-size: 13px;
+}
+
+select{
+	width:80%;
+	padding:5px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+.btn {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.btn button{
+	display: inline-block;
+	padding:10px 30px;
+	background:#000;
+	color:#fff;
+	border: 0;
+}
+.demo{
+	display: block;
+	height: 40px;
+	padding: 5px 0;
+	text-align: center;
+	background:#f7f7f7;
+	line-height: 40px;
+	color:#666;
+	border: 1px solid #ddd;
+}
+.requrl strong{
+	color:red;
+}
+
+</style>
+<body ng-controller="testController">
+<h1>API Test for NodeJS</h1>
+<p><label>Server：</label>
+	<select ng-model='SelectApi.Server' ng-options="r.name for r in Api.Server"></select>
+</p>
+<p><label>Api Route：</label>
+	<select ng-model='SelectApi.Route' ng-options="r.name for r in Api.Route"></select>
+</p>
+<p><label>Api Mothod：</label>
+	<span ng-bind="SelectApi.Route.method"></span>
+</p>
+<p class="requrl">
+	<label>Request Url：</label>
+	<strong>http://<span ng-bind="SelectApi.Server.ip"></span>:<span ng-bind="SelectApi.Server.port"></span><span ng-bind="SelectApi.Route.route"></span><strong></p>
+<div class="mods">
+	<div class="fl">
+		<label class="va_top">Params：</label><textarea class="jsonss" ng-model='SelectApi.JSON'>{{SelectApi.Route.route}}</textarea>
+	</div>
+	<div class="fr">
+		<label class="va_top">Result：</label><div class="resultDate" ng-bind="resultDate"></div>
+	</div>
+</div>
+<p class="btn"><button ng-click='sendPost()'>发送</button></p>
+
+<script type="text/javascript">
+var test=angular.module('test',[]);
+
+test.controller('testController',function($scope,$http){
+	
+	$scope.Api={
+		Server:[{
+			name:"本地服务",
+			ip:"localhost",
+			port:"3200"
+		}],
+		Route:[{
+			name:"添加购物车",
+			method:'POST',
+			route:"/api/addshoppingcart",
+			JSON:{"sellerId":442167,"sellerName":"yam_89","CatalogInfo":{"CatalogId":"309b8f57-9b7d-4a8e-89c8-2f71a4afdea5","ProductId":"aee69414-5ab0-409a-953b-1b053c9280ed","ProductName":"商品名称-整点抢 16-18","PictureUrl":"http://p243.img.ymatou.com:10243/upload/product/original/db9fa54c2c984e64abcb3792447696c5_o.jpg","QuotePrice":100,"ProductNumber":1,"Freight":0,"Selected":true,"CatalogAddTime":"2014-09-05T12:58:13.586Z","CatalogPropertyList":[{"Property":"产品颜色","PropertyId":"e4df0a4b-42f3-4dda-9a25-d7e668d1e942","PropertyAttribute":"usernamehellowrold","PropertyAttributeId":"e4df0a4b-42f3-4dda-9a25-d7e668d1e942","PropertyAttributePic":"1231231231"}]},"UserId":"4085","ShoppingCartId":"","UserIp":"127.0.0.1"}
+		},{
+			name:"删除购物车单品",
+			method:'POST',
+			route:"/api/test1",
+			JSON:{}
+		},{
+			name:"路由名称2",
+			method:'POST',
+			route:"/api/test2",
+			JSON:{}
+		}]
+	};
+
+	$scope.SelectApi=[];
+
+	$scope.sendPost=function(){
+
+		if($scope.SelectApi.Server!=undefined&&$scope.SelectApi.Route!=undefined){
+			var ip=$scope.SelectApi.Server.ip,
+				port=$scope.SelectApi.Server.port,
+				route=$scope.SelectApi.Route.route,
+				method=$scope.SelectApi.Route.method;
+
+		var data={
+				server:{
+					host:ip,
+					route:route,
+					port:port,
+					method:method
+				},
+
+				JSONS:JSON.parse($scope.SelectApi.JSON)
+			};
+
+
+
+			var json=data;
+				$http.post('/api/test/',json).success(function(result){
+					$scope.resultDate=JSON.stringify(result);
+				})
+
+			
+		}else{
+
+			$scope.resultDate="接口地址错误";
+
+		}
+
+
+		
+	}
+
+	
+    
+
+	
+})
+
+</script>
+</body>
+</html>

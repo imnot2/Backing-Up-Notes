@@ -1,0 +1,55 @@
+<%include global/header.html%>
+<section>
+	
+	<form method='post' name="" onSubmit='return checkForm()'>
+		<h5>身份证信息</h5>
+		<input type='hidden' name="userid" value="<%=info.userid%>" />
+		<input type='hidden' name="name" value="<%=info.name%>" />
+		<input type='hidden' name="mobile" value="<%=info.mobile%>" />
+		<input type='hidden' name="businessid" value="<%=info.businessid%>" />
+		<input type='hidden' name="type" value="<%=info.type%>" />
+		<input type='hidden' name="action" value="<%=info.action%>" />
+
+		<input type="text" value=""  name="cardid"  class="nomargin" placeholder="填写收件人的身份证号" />
+		<p>您提供的信息均被加密，安全可靠。<a href="/info/promise">查看详情</a></p>
+		<br/>
+		<button class="btn btn-primary btn-block">下一步</button>
+	</form>
+</section>
+
+<%include global/footer.html%>
+<script type="text/javascript">
+
+if($('.error').text().length>0){
+    $('.error').fadeIn(230);
+    setTimeout(function(){$('.error').fadeOut(200);$('.error i').text('')},2000)
+}
+
+function checkForm(){
+	if($('.nomargin').val()==''){
+		$('.error i').text('身份证不允许为空');
+	}
+	if(!isCardNo($('.nomargin').val())){
+		$('.error i').text('身份证号码格式错误');
+		$('.error').fadeIn(230);
+    	setTimeout(function(){$('.error').fadeOut(200);$('.error i').text('')},2000)
+    	return false;
+	}
+
+	return true;
+}
+
+
+function isCardNo(card)  
+{  
+   // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X  
+   var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;  
+   if(reg.test(card) === false)  
+   {  
+       return  false;  
+   }
+
+   return true;
+}
+
+</script>

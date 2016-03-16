@@ -1,0 +1,71 @@
+﻿/*=======================review.css===========================*/
+.com_h {
+	margin-bottom: 5px;
+}
+.com_h img {
+	float: left;
+	height: 48px;
+	width: 48px;
+}
+.com_h .com_hr {
+	float: left;
+	padding-left: 10px;
+}
+.com_h .com_hr .prop {
+	color: #88A825;
+	font-size: 13px;
+	height: 24px;
+	line-height: 24px;
+}
+.com_action {
+	margin-top: 10px;
+}
+.subr_prop {
+	margin-bottom: 10px;
+}
+.comment {
+	border: 1px solid #C4CCC9;
+	padding: 5px;
+	margin-top: 10px;
+}
+.comment .com_prop {
+	padding-bottom: 5px;
+}
+.cl {
+	margin-left: 10px;
+}
+.c_action {
+	text-align: right;
+	color: #88A825;
+}
+.c_action a {
+	border-right: 1px solid #C4CCC9;
+	border-bottom: 1px solid #C4CCC9;
+}
+.sub_comment {
+	margin-top: 20px;
+}
+.rev_textarea {
+	width: 583px;
+}
+.bntBox {
+	text-align: right;
+	margin-top: 10px;
+}
+.irevwbox {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.irev_textarea {
+	width: 100%;
+	overflow: auto;
+	padding: 3px;
+	border: 2px solid #5485BD;
+}
+.ibntBox {
+	text-align: right;
+	margin: 10px 0;
+}
+.irloading {
+	display: none;
+}

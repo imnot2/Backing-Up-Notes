@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+body {background-color: #eee;text-align: center; }
+
+.box{width: 1200px;  margin: 0 auto;}
+
+.top{
+  font-size:12px;height:32px;width:100%;background:#333;
+  position:fixed;z-index:99;top:0;left:0;box-shadow:0 1px 3px rgba(51,51,51,0.8);
+  color:#eee;
+}
+.top a{
+	color:#eee;
+	line-height: 17px;
+	text-decoration: none;
+	height: 17px;
+}
+.top dt,.top dd{
+	height:32px;
+	line-height:32px;
+}
+.top dt span{
+  float: left;
+  margin: 0 1px;
+  padding: 0 12px;
+}
+.top .user-settings{
+    width: 200px;
+    height: 92px;
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    background-color: #fff;
+    border-bottom: 1px solid #444;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444; 
+}
+.top .user-settings .photo {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 1px solid #eee; 
+}
+.top .user-settings dd a{
+  color: #000;
+  float: left;
+  margin: 2px 2px;
+}
+.top .lang a:hover{
+	background: #666;
+}
+/*头部导航*/
+.header{
+	width: 1200px;  
+	margin: 0 auto;
+	 background:#eee;
+	 height:60px;
+	 line-height:60px;
+	 color:#666;
+	 font-size:14px;
+ }
+
+.header .logo{
+  float: left;
+  width: 158px;
+  height: 39px;
+  background: url("../img/logo.png");
+    
+}
+.header a{
+text-decoration:none;    
+}
+
+.c-navBar{
+  margin: 39px 0 0 10px;
+}
+.c-navBar .c-navBar-nav li{
+  float: left;
+  height:39px;
+  line-height:39px;
+}
+.c-navBar .c-navBar-nav a{
+	margin:0 30px;
+}
+
+/** main Start **/
+.main{width: 1200px;margin: 0 auto 60px;}
+
+.container{
+	padding: 10px;
+}
+
+.detal_box{
+	margin-bottom:10px;
+	background:#fff;
+	padding: 10px;
+}
+.detal_box .box_title{
+	text-align: left;
+	color: #666;
+	font-size: 18px;
+	margin: 5px;
+}
+/*买家信息*/
+.buyers .buyers-photo{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ddd;
+}
+.buyers{
+	height:170px;
+}
+.buyers .info{
+	text-align:left;
+	color:#666;
+	margin-left:10px;
+}
+.buyers tr{
+	height:25px;
+ 	line-height:25px;
+}
+.buyers a{
+	color:#227dd8;
+}
+/**商品简介**/
+.comm-img {
+	width:120px;
+	margin:15px 10px;
+}
+.comm-info {
+	width:160px;
+	height:100px;
+	text-align:left;	
+	margin-top:10px;
+}
+.comm-info a{
+	color:#227dd8;
+}
+.comm-info .title{
+	height:50px;
+}
+.comm-info .tag{
+	height:25px;
+}
+.comm-briefly .comm-img img{
+	width:100px;
+	height:75px;
+	border:1px solid #bbb;
+}
+
+.comm-briefly .comm-info span{
+	height:35px;
+	border:1px dashed #eee;
+	color:#bbb;
+	margin-left:4px;
+	line-height:35px;
+	padding:3px;
+	cursor:pointer;
+}
+
+.comm-briefly .comm-info i{
+	font-size:8px;
+	padding: 3px;
+}
+
+.comm-briefly .comm-info .added{
+	border:1px solid #f9e0bb;
+	background:#fffcec;
+}
+
+/**订单详情**/
+.order-detail .status{
+	font-size:18px;
+	color:#999;
+}
+.order-detail .status i{
+	color:#f04c00;
+}
+/*物流信息*/
+.logistics .c-table thead{
+	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
+}
+
+.logistics .c-table tbody tr{
+	height:30px;
+}
+.logistics .title{
+	text-align: left;
+	font-size: 14px;
+	margin: 5px;
+	color: #666;
+}
+/*买家留言*/
+.leaveMsg .msg{
+	text-align: left;
+	margin-left: 5px;
+	color: #666;
+}
+
+.status .c-table thead{
+	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
+}
+
+.status .c-table tbody tr{
+	height:30px;
+}
+
+/** main End **/
+.footer{
+  width:100%;
+  font-style: 14px;
+  clear: both;
+  color: #666;
+  margin-top: 32px;
+  padding-top: 8px;
+  height: 98px;
+  border-top: 2px solid #f60;
+  background: #333;
+  overflow: hidden;
+}
+.footer div{
+  margin: 25px 0;
+}

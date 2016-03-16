@@ -1,0 +1,782 @@
+﻿/*=======================orderListStyle.css===========================*/
+.seaInput {
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    margin: 0px 10px 6px 0px;
+}
+
+input {
+    vertical-align: middle;
+}
+
+.red {
+    color: #ff3300;
+}
+
+a.lBtn {
+    color: #3366cc;
+    text-decoration: underline;
+}
+
+a.lBtn:hover {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.lsBtn {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+a.lsBtn:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+a.rBtn {
+    color: #333;
+    text-decoration: none;
+}
+
+a.rBtn:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+a.rsBtn {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.rsBtn:hover {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.hBtn {
+    color: #333;
+    text-decoration: underline;
+}
+
+a.hBtn:hover {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.hsBtn {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+a.hsBtn:hover {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.hssBtn {
+    color: #666;
+    text-decoration: underline;
+}
+
+a.hssBtn:hover {
+    color: #ff3300;
+    text-decoration: none;
+}
+
+a.titleBtn {
+    margin: 0px;
+    padding: 8px 12px 7px 11px;
+    background-image: url(/content/images/logistics/p_top_gary.gif);
+    text-decoration: none;
+    border: 1px solid #e6e6e6;
+}
+
+a.titleBtn:hover {
+    color: #fff;
+    margin: 0px;
+    padding: 7px 12px 7px 11px;
+    background-image: url(/content/images/logistics/p_top_yellow.gif);
+    text-decoration: none;
+}
+
+a.titlesBtn {
+    margin: 0px;
+    padding: 8px 12px 15px 11px;
+    background-image: url(/content/images/logistics/p_top_yellow.gif);
+    color: #fff;
+    text-decoration: none;
+}
+
+a.titlesBtn:hover {
+    margin: 0px;
+    padding: 8px 12px 15px 11px;
+    background-image: url(/content/images/logistics/p_top_yellow.gif);
+    color: #fff;
+    text-decoration: none;
+}
+
+.glMain {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.glMainLeft {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.glMainRight {
+    float: left;
+    margin: 0px 0px 0px 8px;
+    padding: 4px 0px 8px 10px;
+    width: 840px;
+    border: 1px solid #c9d6d7;
+    text-align: left;
+}
+
+.glMainRight p {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'arial';
+    padding: 0px 0px 8px 0px;
+    color: #000;
+}
+
+.glMainList {
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    width: 150px;
+    border: 1px solid #c9d6d7;
+    text-align: left;
+}
+
+.glMainList ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.glMainList li {
+    margin: 0px;
+    padding: 6px 0px 4px 28px;
+    list-style-type: none;
+}
+
+.glMainList p {
+    background: url(../img/bgs.jpg);
+    font-weight: bold;
+    padding: 3px 0px 3px 8px;
+    color: #000;
+    overflow: hidden;
+}
+
+.glMainList img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+.glMainRightTop {
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 10px;
+    width: 822px;
+    overflow: hidden;
+    border-bottom: 3px solid #ff6600;
+}
+
+.glMainRightTop ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.glMainRightTop li {
+    float: left;
+    margin: 0px;
+    padding: 10px 1px 6px 1px;
+    list-style-type: none;
+}
+
+.glSeach {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.glQxan {
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    width: 830px;
+    border: 1px solid #f9dfb2;
+    background: #ffffe0;
+    overflow: hidden;
+}
+
+.glQxan ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.glQxan li {
+    float: left;
+    margin: 0px;
+    padding: 4px 20px 4px 8px;
+    list-style-type: none;
+}
+
+.glListMain {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 280px;
+}
+
+.glListMain ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.glListMain li {
+    margin: 0px;
+    padding: 0px 0px 4px 8px;
+    list-style-type: none;
+}
+
+.glListMain p {
+    float: left;
+    margin: 0px;
+    padding: 0px 8px 0px 0px;
+}
+
+.glListMains {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.glListMains ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.glListMains li {
+    margin: 0px;
+    padding: 0px 0px 4px 0;
+    list-style-type: none;
+}
+
+.glListMains p {
+    float: left;
+    margin: 0px;
+    padding: 0px 8px 0px 0px;
+}
+
+.glListMains .clearance {
+    font-weight: normal;
+}
+
+.tcMains {
+    float: left;
+    margin: auto 0;
+    margin: 0px;
+    padding: 0px;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
+
+.tcMain {
+    float: left;
+    margin: 50px 0px 0px 200px;
+    padding: 20px;
+    border: 4px solid #efefef;
+    text-align: left;
+}
+
+.tcMain ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tcMain li {
+    margin: 0px;
+    padding: 8px;
+    list-style-type: none;
+}
+
+/************ Table ************/
+.glList {
+    position: relative;
+}
+
+.glList table {
+    width: 832px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.glList table thead th {
+    font-size: 12px;
+    background: #efefef;
+    font-weight: normal;
+}
+
+.glList tbody tr {
+    border: 1px solid #ccc;
+}
+
+.glList table td, .glList table th {
+    padding: 10px;
+    line-height: 1.3em;
+}
+
+.col {
+    border-right: 1px solid #ddd;
+}
+
+/*上传身份证 zhangdong 7.22*/
+.modify-info {
+    text-align: left;
+    line-height: 22px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.modify-info .left {
+    width: 390px;
+    padding-left: 10px;
+}
+
+.modify-info .right {
+    width: 250px;
+}
+
+.modify-info .fs12 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.mg-tb40 {
+    margin: 30px 0;
+}
+
+.mg-tb10 {
+    margin: 10px 0;
+}
+
+.btn-lg-red, .btn-lg-dim {
+    background: #ed4d00;
+    display: inline-block;
+    padding: 0 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ed4d00;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn-lg-red:hover {
+    color: #fff;
+}
+
+.btn-lg-dim {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+/*订单状态倒计时付款*/
+.orderStatusCountdown {
+    width: 108px;
+    border: 1px solid #f9dfb2;
+    background: #ffffe0;
+    overflow: hidden;
+    margin-left: -10px;
+    padding: 5px;
+}
+
+/*杭保订单标示*/
+.HZbondedBtn {
+    border-bottom: 2px solid #ddd;
+    height: 26px;
+    line-height: 19px;
+    float: right;
+}
+
+.HZbondedBtn a {
+    float: right;
+    padding: 2px 0 3px 4px;
+    border: 1px solid #c5c5c5;
+}
+
+.HZbondedBtn a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.HZbondedBtn .bondedIcon {
+    width: 22px;
+    height: 19px;
+    background: url("/content/img/sprites/shop.png") -84px -15px no-repeat;
+    float: right;
+}
+
+.glList table td.lh28 {
+    line-height: 28px;
+}
+
+/*延迟收货时间弹窗*/
+.layerTemps {
+    text-align: left;
+}
+
+.layerTemps .show {
+    display: block;
+}
+
+.layerTemps .hide {
+    display: none;
+}
+
+.layerTemps .close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.layerTemps .alert_box_inner {
+    padding: 0;
+    text-align: left;
+    width: 544px;
+}
+
+.layerTemps .tip {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+.layerTemps .contentBox {
+    padding: 30px;
+    padding-left: 16px;
+}
+
+.layerTemps .contentBox .desWrap .shadow {
+    border-bottom: 2px solid #eee;
+}
+
+.layerTemps .contentBox .desWrap .shadow .btn {
+    padding: 1px 0 3px;
+    text-align: center;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    float: left;
+}
+
+.layerTemps .contentBox .desWrap .shadow .btn:hover {
+    text-decoration: none;
+}
+
+.layerTemps .contentBox .desWrap .shadow .btn span {
+    float: left;
+}
+
+.layerTemps .contentBox .desWrap .shadow {
+    float: left;
+}
+
+.layerTemps .contentBox .desWrap .icon {
+    margin-right: 10px;
+    line-height: 60px;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.layerTemps .contentBox .desWrap .orange {
+    color: #ff7f00;
+}
+
+.layerTemps .contentBox .desWrap .green {
+    color: #64b711;
+}
+
+.layerTemps .contentBox .desWrap .des {
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    vertical-align: middle;
+    width: 400px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.layerTemps .contentBox .desWrap .enterCollect a {
+    font-size: 12px;
+    color: #1F7DD8;
+    line-height: 22px;
+}
+
+.layerTemps .contentBox .desWrap .singleLingHeight {
+    line-height: 44px;
+}
+
+.layerTemps .contentBox .desWrap .toLogin, .layerTemps .contentBox .desWrap .toClose {
+    padding-top: 24px;
+}
+
+.layerTemps .contentBox .desWrap .toLogin, .layerTemps .contentBox .desWrap .toClose {
+    padding-left: 74px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.layerTemps .contentBox .desWrap .toLogin a.btn, .layerTemps .contentBox .desWrap .toClose a.btn {
+    border: none;
+    background: #CC3333;
+    padding: 6px 30px;
+    color: #fff;
+}
+
+.layerTemps .contentBox .desWrap .des .desTextMain {
+    font-size: 14px;
+    color: #666;
+}
+
+.layerTemps .contentBox .desWrap .des .desTextSub {
+    font-size: 12px;
+    color: #999;
+}
+
+.layerTemps .contentBox .desWrap .cancel {
+    margin-left: 33px;
+    color: #227dd8;
+}
+
+#confirmedLayer .icon {
+    color: #85c744;
+}
+
+#confirmLayer .icon, #unableConfirmLayer .icon, #ConfirmAgainLayer .icon {
+    color: #ff7f00;
+}
+
+/*追评弹框*/
+.add-comment-layer {
+    position: relative;
+    display: block;
+}
+
+.add-comment-layer .alert_box_inner {
+    padding: 0;
+    width: 480px;
+    text-align: left;
+}
+
+.add-comment-layer .alert_box_inner .tip {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 12px;
+}
+
+.add-comment-layer .alert_box_inner .add-comment {
+    border: none;
+    padding: 26px 36px;
+}
+
+.add-comment-layer .alert_box_inner .add-comment .product-img {
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.add-comment-layer .alert_box_inner .add-comment .product-info {
+    width: 310px;
+    padding-left: 26px;
+    float: left;
+    color: #666;
+}
+
+.add-comment-layer .alert_box_inner .add-comment .comment-desc {
+    clear: both;
+    margin-top: 0;
+}
+
+.add-comment-layer .alert_box_inner .add-comment .comment-desc textarea {
+    width: 408px;
+}
+
+.add-comment-layer .alert_box_inner .add-comment .comment-error {
+    margin: 6px 0 16px 0;
+}
+
+.add-comment-layer .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.deepRed {
+    color: #CC3333;
+}
+
+.small-layer {
+    box-shadow: 0px 0px 8px #e0e0e0;
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 34px;
+    vertical-align: middle;
+}
+
+.small-layer .icon-success {
+    font-size: 60px;
+    vertical-align: middle;
+    color: #5ab201;
+}
+
+.small-layer .layer-content {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.product-comment {
+    padding: 30px 0;
+    border-top: 1px dashed #dbdbdb;
+}
+
+.product-comment .product-title {
+    font-size: 14px;
+}
+
+.product-comment .product-img {
+    width: 98px;
+    height: 98px;
+    border: 1px solid #dbdbdb;
+    overflow: hidden;
+    float: left;
+}
+
+.product-comment .product-info {
+    padding-left: 126px;
+}
+
+.product-comment .product-info .comment-box {
+    margin-top: 8px;
+}
+
+.product-comment .product-info .comment-box .opration-lable {
+    font-size: 12px;
+}
+
+.product-comment .product-info .comment-box .opration-stars {
+    padding: 0 14px;
+    background-color: #fffdf4;
+    border: 1px solid #f8cb94;
+}
+
+.product-comment .comment-desc {
+    margin-top: 8px;
+}
+
+.product-comment .comment-desc textarea {
+    width: 648px;
+    height: 88px;
+}
+
+.product-comment .comment-desc textarea.err {
+    border: 1px solid #CC3333;
+}
+
+.product-comment .comment-desc textarea.focus {
+    border: 1px solid #cbcbcb;
+}
+
+.submit-box {
+    text-align: center;
+}
+
+.submit-box .submit-button {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 46px;
+    color: #fff;
+    background-color: #CC3333;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.smart-input {
+    position: relative;
+}
+
+.smart-input.change textarea {
+    border: 1px solid #dbdbdb;
+}
+
+.smart-input.change .smart-label {
+    display: none;
+}
+
+.smart-input textarea {
+    padding: 2px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    resize: none;
+    outline: none;
+}
+
+.smart-input .smart-label {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d1cece;
+    padding-left: 5px;
+    visibility: visible;
+    float: left;
+    z-index: 1;
+    cursor: text;
+    vertical-align: middle;
+}
+
+.comment-error {
+    color: #CC3333;
+    padding-left: 20px;
+    height: 16px;
+    line-height: 16px;
+    background: url("/images/ordercomments/icons-sadb9f2a8f0.png") 0 -238px no-repeat;
+    visibility: hidden;
+}
+
+.comment-error.show {
+    visibility: visible;
+}

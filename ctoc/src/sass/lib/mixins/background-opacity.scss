@@ -1,0 +1,9 @@
+@mixin background-opacity($color, $alpha){
+	  $c: rgba($color, $alpha);
+	  $ie_c: ie_hex_str($c);
+	  background: rgba($color, 1);
+	  *background: transparent;
+	  zoom: 1;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie_c}, endColorstr=#{$ie_c});
+	  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie_c}, endColorstr=#{$ie_c});
+}

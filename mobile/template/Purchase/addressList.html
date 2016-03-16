@@ -1,0 +1,36 @@
+﻿<header class="area bar-a">
+    <a class="title" href="javascript:void 0">收获信息</a>
+</header>
+<div temp-data="d">
+<ul class="address" id="addressRadio">
+    <for e="s in d">
+        <li class="clearfix item" id="addressli-${sIndex}">
+            <if e="!d.ismycenter">
+                <div class="fl radio"><input name="addressRadio" type="radio" id="address-${sIndex}" /></div>
+            </if>
+            <if e="!d.ismycenter">
+                <div class="info">
+            </if>
+            <else>
+                <div class="info right">
+            </else>
+                <address><label for="address-${sIndex}">${s.FullAddress}</label></address>
+                <div class="dec"><span class="name vm">${s.sRecipient}</span><span class="vm tel">${s.sCellPhone}</span></div>
+                <div class="dec"><a async="true" href="modify/addressId=${s.iAddressId}/ret=${d.ret}" class="blue">修改</a>&nbsp;|&nbsp;<a href="javascript:void 0" id="delete-${sIndex}-${s.iAddressId}" class="blue">删除</a></div>
+            </div>
+        </li>
+    </for>
+    <if e="d.length>=5">
+        <li class="clearfix item none" id="LiAddAddress">
+    </if>
+    <else>
+        <li class="clearfix item">
+    </else>
+            <div class="fl radio"></div>
+            <div class="info">
+                <div class="dec"><a async="true" class="btn-c" href="modify" id="AddAddress">新增收货地址</a></div>
+            </div>
+        </li>
+    
+</ul>
+</div>

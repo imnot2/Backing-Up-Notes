@@ -1,0 +1,27 @@
+<%include global/header.html%>
+<section class='complete'>
+	<span class="complete-icon icon icon-complete"></span>
+	<h4>恭喜你</h4>
+	<p>您的身份证已经上传成功</p>
+	<p><a href="<%=reurl%>"><span id="CountDown">5</span>秒后自动返回<%= isHasRedirect ? "之前" : "首页" %></p>
+	<p><a href="<%=reurl%>">立即返回>></p>
+</section>
+<%include global/footer.html%>
+
+<script type="text/javascript">
+	$(function(){
+		var CountDown=5;
+		var interval=setInterval(function(){
+			if(!CountDown){
+				clearInterval(interval);
+				location.href="<%=reurl%>"
+			}else{
+
+				$('#CountDown').html(CountDown);
+				CountDown--;
+			}
+
+		},1000)
+	})
+
+</script>

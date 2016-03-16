@@ -1,0 +1,539 @@
+html, body {
+    height:100%;
+}
+textarea {
+   resize: none;
+}
+.fl, .fr {
+    display: inline;
+}
+.fl {
+    float: left;
+}
+.fr{
+    float: right;
+}
+.triangle {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+}
+.top {
+    background: none repeat scroll 0 0 #444;
+    box-shadow: 0 1px 3px rgba(51, 51, 51, 0.8);
+    color: #ccc;
+    font-size: 12px;
+    height: 32px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width:1200px;
+    position:relative;
+    z-index:2;
+}
+.top .box {
+    width:1200px;
+    margin:0 auto;   
+    position:relative;
+    text-align:left;  
+}
+.top .box .fl {
+    float:none;
+}
+.top a, .login-top a {
+    text-decoration: none;
+}
+.top a {
+    color: #ccc;
+}
+.top .info, .top dd {
+    height: 32px;
+    line-height: 32px;
+}
+.top dt .dropdown {
+    margin: 0 1px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 2;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+.top dt .active {
+    background: none repeat scroll 0 0 #fff;
+    color: #666;
+}
+.top dt .active a {
+    color: #666;
+}
+.top .user-name {
+    color: #eee;
+    font-weight: bold;
+    margin: 2px;
+}
+.top .user-settings {
+    background-color: #fff;
+    border-bottom: 1px solid #444;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    display: none;
+    height: 92px;
+    left: -1px;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    width: 200px;
+    display:none
+}
+.top .user-settings .photo {
+    border: 1px solid #eee;
+    height: 80px;
+    margin: 5px;
+    width: 80px;
+}
+.top .user-settings span {
+    display: inline-block;
+    float: none;
+    line-height: 20px;
+    margin: 2px 0;
+    padding: 0;
+    position: inherit;
+}
+.top .user-settings span a {
+    color: #444;
+    margin: 2px;
+}
+.top .user-settings span a:hover {
+    color: #fd4d00;
+}
+.top .sys-msg {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #444;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    display: none;
+    left: -1px;
+    position: absolute;
+    top: 32px;
+    width: 280px;
+    z-index: 2;
+}
+.top .sys-msg li {
+    border-bottom: 1px dashed #eee;
+    padding: 10px;
+    text-align: left;
+}
+.top .sys-msg li:hover {
+    background: none repeat scroll 0 0 #fef4e9;
+}
+.top .sys-msg li a {
+    color: #666;
+    display: inline-block;
+    line-height: 15px;
+    overflow: hidden;
+    width: 230px;
+}
+.top .sys-msg li i {
+    color: #ccc;
+    margin: 5px;
+    position: absolute;
+    right: 5px;
+}
+.top .lang a {
+    padding:0 3px;
+}
+.top .lang a:hover, .top .lang .active {
+    background: none repeat scroll 0 0 #666;
+}
+.top .sys-msg .sys-msg-tabs {
+    border-bottom: 0 none;
+    border-top: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 0;
+}
+.top .sys-msg .sys-msg-tabs:hover {
+    background-color: transparent;
+}
+.top .sys-msg .sys-msg-tabs a {
+    border-right: 1px solid #ddd;
+    display: inline;
+    float: left;
+    line-height: normal;
+    overflow: visible;
+    padding: 10px 15px;
+    width: auto;
+}
+.top .sys-msg .sys-msg-tabs a.last {
+    border-right: 0 none;
+}
+
+
+
+
+.footer {
+    background: #444;
+    border-top: 2px solid #f60;
+    clear: both;
+    color: #999;
+    font-size: 12px;
+    height: 98px;
+    margin-top: 32px;
+    overflow: hidden;
+    padding-top: 8px;
+    width: 100%;
+    min-width:1200px;
+    position:relative;
+}
+.footer div {
+    margin: 25px 0;
+    text-align:center;
+}
+.wrapper {
+    margin:-32px auto -140px;
+    min-height:100%;
+    position:relative;
+    overflow:hidden;    
+}
+.wrapper .area {
+    width:1200px;
+    padding:52px 0 200px;
+    margin:0 auto; 
+    background-color:transparent;  
+}
+.wl_main_right {
+    float:none;
+    width:100%;
+    padding:20px 10px;
+    background-color:#fff;
+    overflow:hidden;
+}
+.textgroup .bd td,.textgroup th {
+    font-size:12px;
+}
+.textgroup .bt {
+    line-height:normal;
+    font-size:12px;
+}
+div.artdate {
+    top:-15px;
+}
+/*标题*/
+.main-title{
+    font-size:28px;
+    font-weight:400;
+    padding:5px 0 10px;
+}
+
+.meList {
+    border-top:1px solid #eee;
+    margin-top:0;
+}
+.meList td {
+    font-size:12px;
+    border-top:0;
+    border-bottom:1px dashed #eee;
+}
+.meList .d-3 {
+    width:65%;
+}
+/*站内信*/
+.mssage-new .meRightTitle {
+    float:none;
+    width:100%;
+    font-weight:400;
+}
+.mssage-new .meList {
+    float:none;
+    width:100%;
+    overflow:hidden;
+    border-top:0;
+}
+.mssage-new .meSend {
+    padding-top:0;
+    padding-right:0;
+}
+.mssage-new .meListRight {
+    width:100%;
+}
+.mssage-new .fy {
+    float:none;
+    width:auto;
+}
+.mssage-new .fyList,.mssage-new .fyList li {
+    float:none;
+}
+.mssage-new .fyList li {
+    display:inline-block;  
+}
+.mssage-new .meList td {
+    border-bottom:0;
+}
+.mssage-new .notiMain {
+    width:auto;
+}
+.datagrid td,.meRightMain td {
+    font-size:12px;
+}
+/*评论管理*/
+.wl_main_right table td {
+    font-size:12px;
+}
+/*导出采购单*/
+body {
+    background-color:#eee;
+}
+.mainbody {
+    margin:25px 0;
+    background-color:#fff;
+}
+.tool-page {
+    padding:0;   
+}
+.title-14 {
+    font-size:14px;
+    color:#000;
+    font-weight:700;
+}
+.tool-page .seleteitem {
+    margin:10px 0;
+    width:auto;
+}
+.tool-page .content .node .w {
+    text-align:left;
+    width:auto;
+}
+.tool-page .node .i,.tool-page .tooltip-1 .arrow{
+    background:url("../img/order-icon.png") no-repeat;
+}
+.tool-page .node .query {
+    background-position:-100px -2px;
+    height: 16px;
+    margin-right: 3px;
+    width: 15px;
+}
+.tool-page .tooltip-1 {
+    background-color:#fff;
+    border:1px solid #ddd;
+    padding:5px 10px;
+    text-align:left;
+}
+.tool-page .tooltip-1 .arrow {
+    background-position: -116px -34px; 
+    width:14px;
+    height:10px;
+    bottom:-10px;
+}
+.tool-page .tooltip-1 .c {
+    padding:0;
+}
+.lineOnTitle .title-14 {
+    text-align:center;
+    padding-bottom:10px;
+}
+.c-btn-primary {
+    background: url("../img/bg.png") repeat;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    color:#fff;
+}
+.c-btn-primary:hover {
+    color:#fff;
+    text-decoration:none;
+}
+.tool-page .seleteitem .arrow {
+    left:35px;
+}
+.linkto-detail {
+    margin-top:15px;
+}
+.tool-page #CatalogDiv {
+    width:550px;
+    margin-left:65px;
+}
+.tool-page .result .lineOnTitle .hd {
+    margin:0;
+}
+#divShipOrder {
+    text-align:right;
+    margin-top:10px;
+}
+#divShipOrder p {
+    margin-top:10px;
+}
+.title-base {
+    font-size:14px;
+    color:#333;
+    font-weight:700;
+    margin-bottom:10px;
+}
+/*公告的分页*/
+.line {
+    background-color:transparent;
+    height:auto;
+}
+.fyList li {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+.fyList .Paginator {
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fyList .Paginator A, 
+.fyList .pageList .this-page, 
+.fyList .Paginator A:visited, 
+.fyList .Paginator .AtStart, 
+.fyList .Paginator .Prev, 
+.fyList .Paginator .Next, 
+.fyList .Paginator .AtEnd {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+.fyList .Paginator .AtStart, 
+.fyList .Paginator .AtEnd {
+    color: #bbbbbb;
+    margin-right: 5px;
+}
+.fyList .Paginator .break {
+    background-color: #fff;
+    border: medium none;
+    color: #bbbbbb;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+.fyList .Paginator .Prev, 
+.fyList .Paginator .Next {
+    margin-left: 5px;
+}
+.fyList .Paginator .this-page {
+    color: #ff8a00;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.fyList .Paginator A:hover, 
+.fyList .Paginator A:active {
+    background: none repeat scroll 0 0 #0063dc;
+    border-color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+}
+.fyList .Paginator .pageSizeSelect {
+    float: left;
+    margin-left: 0;
+}
+.fyList .Paginator li {
+    display: inline-block;
+}
+.order-btn {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 0 #eee;
+    color: #2277d8;
+    display: inline-block;
+    margin-bottom: 5px;
+    /*padding: 5px;*/
+    width:75px;
+    margin:0 5px;
+    text-align:center
+}
+.back-new {
+    color:#3366cc;
+    margin-right:10px;
+}
+
+.flow-steps,.xlobo_box1 {
+    display:none;
+}
+.content_xlobo {
+    width:100%;
+}
+.content_xlobo .xlobo_box {
+    border:0;
+    width:auto;   
+}
+.content_xlobo .xlobo_box5 {
+    width:1000px !important;    
+}
+.content_xlobo #c_xlobo1 .xlobo_box3 {
+    text-align:center    
+}
+.content_xlobo .title_step {
+    background-position:75px center;    
+}
+.content_xlobo .box_yellow {
+    width:975px;  
+    margin-left:90px;  
+}
+#itemForm .tooltip-4 {
+    width:975px !important;  
+    margin-left:90px !important;
+}
+.content_xlobo .xlobo_bag {
+    margin-left:57px;
+}
+.BatchFill {
+    text-align:right;
+    margin-bottom:5px;
+    margin-right:85px;
+}
+.col-main {
+    width:100%;
+    float:none;
+}
+.uProfile .h1body {
+    width:100%;
+}
+.order-icon {
+    background-image: url("../img/order-icon.png");
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.order-tip {
+    background-position: -48px 0;
+    margin-right:5px;
+}
+.bonded-tips {
+    margin-left:10px;
+    color:#999;
+}
+.norecord{
+    padding:20px 0;
+}
+.xlob-tips{
+    font-size:12px;
+    color:#999;
+    margin-left:25px;
+    margin-top:10px;
+    background:url("../img/msg-tips.png") no-repeat left center;
+    line-height: normal;
+    padding-left:15px;
+    font-weight: normal;
+}
+.tooltip-3-result-l {
+    float:left;
+    width:55px;
+}
+.tooltip-3-result-r {
+    float:left;
+    width:600px;
+}
+.tooltip-3-result-r .black {
+    display:block;
+}

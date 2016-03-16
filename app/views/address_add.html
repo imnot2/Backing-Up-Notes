@@ -1,0 +1,41 @@
+<%=include global/header.html%>
+<section class="container addAddress" ng-controller='AddressController'>
+	<p class='input-group'>
+		<input type="text" value="" ng-model="address.Recipient" placeholder="收货人"></p>
+	<p class="txt_msg">请务必填写真实的收货人姓名，海关清关时将核对姓名</p>
+	<p class='input-group'>
+		<input type="text" value="" ng-model='address.Mobile' placeholder="手机号码"></p>	
+		<p class='input-group'>
+		 <span class="">
+			<select ng-model='address.ProvinceName' ng-options="act.name as act.name for act in cityObj[0]" ng-change="selectCity()" >
+				<option value="">选择省份</option>
+			</select>	
+		</span>
+		<span class="">
+			<select ng-model='address.CityName' ng-options="act.name as act.name for act in cityObj[select.CityNameId]" ng-change="areaCity()" >
+				<option value="" >选择城市</option>
+			</select>	
+		</span>
+		<span class="">
+			<select ng-model='address.DistrictName' ng-options="act.name as act.name for act in cityObj[select.DistrictNameId]">
+				<option value="">选择县区</option>
+			</select>	
+		</span>
+	</p>
+	<p class='input-group'>
+		<input type="text" value="" ng-model='address.Details' placeholder="详细地址"/></p>
+	<p class='input-group'>
+		<input type="number" value="" ng-model='address.PostCode' placeholder="邮政编号"/></p>
+	<p class='input-group'  ng-if="!hasEmail">
+		<input type="email" value="" ng-model='address.Email' placeholder="电子邮件地址（e-mail）"/></p>
+	<p class='input-group selectDefault'>
+		<label class="label" ng-click="selectDefault(address)">
+		<!-- <input type="checkbox" ng-value="address.IsDefault"  ng-model='address.IsDefault' ng-checked="{{address.IsDefault}}"> -->
+		<i class="icon icon-label-select" ng-class="{'active':address.IsDefault}" ></i>
+		设置为默认收货地址</label>
+	</p>
+	<div class="bar-fix">
+		<span class='btn btn-primary' ng-click='saveAddress()'>保存收货地址</span>
+	</div>
+</section>
+<%=include global/footer.html%> 

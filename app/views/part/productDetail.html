@@ -1,0 +1,52 @@
+<!--规格选择-->
+<div class="ng-cloak" ng-show="showTypeModel">
+	<!--商品规格面板-->		
+	<div class="pro-select-panel">
+		<figure disabled-scroll>			
+            <figcaption class="price" ng-bind="'￥'+product.SellingPrice"></figcaption>
+            <p class="pic"><img ng-src="{{product.ProductPictures[0]}}"/></p>
+            <p>
+            	<span class="stock" ng-bind="'库存'+product.Stock+'件'+(product.LimitNum?'(每人限购'+product.LimitNum+'件)':'')"></span>
+            </p>
+            <em class="close icon icon-closeBtn" ng-click="closeType()"></em>
+        </figure>
+        <div class="select-panel-content" style="overflow: auto;" ymt-style="max-height:clientHeight - 100 - 47 -40px" ng-if="spec">
+            <div class="classify" ng-repeat="s in spec" ng-init="s.index = $index">
+            	<p ng-bind="s.name"></p>
+            	<ol class="m">
+            		<li ng-repeat="t in s.val" ng-click="selSpec(s,t.name)" ng-class="{'active':s.selected==t.name}">
+            			<span ng-if="t.url" class="img-btn">
+            				<img ng-src="{{t.url}}" alt="{{t.name}}" title="{{t.name}}"/>
+            			</span>
+                        {{s.stock}}
+            			<span class="btn btn-white" ng-class="{'btn-warning':s.selected==t.name,'btn-default':!(s.selected==t.name),'btn-gary':s.stock == 0}" ng-bind='t.name' ng-if="!t.url"></span>
+            		</li>
+            	</ol>
+            </div>
+        </div>
+        <p class="number" disabled-scroll>
+        	购买数量:
+        	<span class="btn-group">
+        		<button class="btn btn-white" ng-click="incOrDec()">-</button><input type="text" ng-model="product.ProductNumber" ng-value='product.ProductNumber||1' ng-change="incOrDec(2)" readonly/><button class="btn btn-white"  ng-click="incOrDec(1)">+</button>
+        	</span>
+        </p>
+	</div>
+	<div  class="pro-bottom-bar tx-center">
+		<button class='btn btn-w-lg btn-primary' ng-click='postAdd(toType)' >确认</button>
+	</div>
+</div>
+
+<!--蒙版-->
+<div class="body-mask-fix ng-cloak" ng-show="showTypeModel" disabled-scroll ng-click="closeType()"></div>
+
+<div  class="pro-bottom-bar" ng-hide="showTypeModel" compatible-android-click-invalid>
+    <i class="icon icon-chat" diff-show ng-click="toChat(product.SellerId,buyerInfo.SellerName,buyerInfo.Logo)"></i>
+    <span class="icon icon-navShoppingbag" ng-click="toShoppingBag()">
+        <i ng-bind-html="quantity">&nbsp;</i>
+    </span>     
+    <button class='btn btn-white' ng-if="product.OnShelf && product.Stock > 0" ng-click="OnShelf && hasStock &&addCart()">放入购物袋</button>
+    <button class='btn btn-warning' ng-if="product.OnShelf && product.Stock > 0" ng-click='OnShelf && hasStock &&toOrders()'>立即购买</button>
+    <button class="btn btn-gray ng-cloak"  ng-if="isLoad && (!product.OnShelf || (!product.ActivityId && product.ReadyShelf))" >{{product.ReadyShelf?'即将上架':'已下架'}}</button>
+    <button class="btn btn-gray ng-cloak"  ng-if="isLoad && (product.OnShelf || !product.ReadyShelf) && product.Stock < 1" >已售罄</button>       
+</div>
+<p class="pro-msg ng-cloak" ng-click="seeCoupon()" ng-if="couponDesc" >{{couponDesc}}</p>

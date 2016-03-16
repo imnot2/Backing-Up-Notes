@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import "base/reset";
+@import "base/font";
+@import "base/globalclasses";
+@import "modules/errormask";
+
+body {
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: Arial,Roboto,'Droid Sans','Hiragino Sans GB',STXihei,sans-serif;
+    color: #000;
+    background: #f7f7f7;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.logistics-tab ul {
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+}
+
+.logistics-tab-item a {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    color: #666;
+    box-shadow: inset 0 0 1px #999;
+}
+
+.logistics-tab-ative a {
+    background: #f8f8f8;
+    box-shadow: 0 0 0 #fff;
+    box-shadow: inset 0 3px 0 #cc3333;
+    color: #CC3333;
+}
+
+.logistics-concise {
+    min-height: 100px;
+    padding: 0 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.logistics-concise h2, .logistics-concise p {
+    line-height: 2em;
+    font-size: 1.0em;
+    font-weight: normal;
+    color: #444;
+}
+
+.logistics-concise .logistics-msg {
+    text-align: center;
+    color: #ff3c3c;
+    font-size: 14px;
+}
+
+.logistics-stauts-title {
+    font-size: 1.1em;
+    background: #fff;
+}
+
+.logistics-stauts-title span {
+    padding: 0.5em 1em;
+}
+
+.logistics-stauts-list li {
+    border-top: 1px dotted #ddd;
+    overflow: hidden;
+}
+
+.logistics-stauts-list li:first-child .line {
+    top: 50%;
+}
+
+.logistics-stauts-list li:last-child .line {
+    height: 50px;
+}
+
+.logistics-stauts-list .status-ico {
+    width: 20%;
+    height: 100px;
+    position: relative;
+}
+
+.logistics-stauts-list .round {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background: #999;
+    position: absolute;
+    left: 50%;
+    margin-left: -17px;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 2;
+    border: 4px solid #f8f8f8;
+    box-sizing: border-box;
+}
+
+.logistics-stauts-list .line {
+    width: 6px;
+    left: 50%;
+    margin-left: -7px;
+    top: 0px;
+    height: 2000px;
+    background: #ddd;
+    position: absolute;
+    z-index: 1;
+}
+
+.logistics-stauts-list .active {
+    background: #fff;
+}
+
+.logistics-stauts-list .active .status-ico .round {
+    background: #CC3333;
+    border-color: #fff;
+}
+
+.status-detail {
+    padding: 1em 0;
+    padding-right: 2em;
+}
+
+.status-detail address, .status-detail time, .status-detail p {
+    line-height: 1.3em;
+    font-size: 0.9em;
+    font-style: normal;
+    color: #666;
+    width: 220px;
+}
+
+.status-detail em {
+    color: #CC3333;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.addAddress .input-group {
+    width: 100%;
+}
+
+.addAddress .input-group span {
+    width: 33.33333%;
+    display: inline-block;
+    padding-right: 1%;
+}

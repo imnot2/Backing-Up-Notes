@@ -1,0 +1,132 @@
+﻿/*=======================plain.css===========================*/
+
+/**layout left right**/
+.laylr .tit {
+    width: 120px;
+    text-align: right;
+    margin-right: 5px;
+}
+.laylr .mg {
+    margin: 15px 0;
+    overflow: hidden;
+    line-height: 22px;
+}
+.plain {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.plain .head {
+    padding: 10px 0;
+}
+.infolist .hd {
+    border: 0;
+    padding: 10px 0 5px;
+    margin: 0;
+}
+.infolist .bt {
+    text-align: right;
+    padding: 10px 0;
+}
+.content .hd {
+    padding: 10px 0 5px;
+}
+.content .hd b {
+    font-size: 12px;
+}
+.content .bd {
+    padding: 0 10px;
+    background-color: #FFFFF4;
+    border: 1px solid #EFCE8F;
+}
+.content .inw {
+    width: 300px;
+}
+.content .area {
+    width: 306px;
+    height: 235px;
+}
+.liuyan {
+    width: 500px;
+    height: 150px;
+}
+.content .imgs .img {
+    border: 1px solid #e2e2e2;
+    width: 36px;
+}
+.content .imgs .node {
+    margin: 10px 0;
+}
+.content .nhd {
+    padding: 10px 0 5px;
+}
+.content .nbd {
+    background-color: #fff;
+    line-height: 20px;
+}
+.content .table-1 .d-1 {
+    width: 104px;
+    padding-right: 10px;
+    text-align: right;
+}
+.specon .bd {
+    padding: 10px 40px;
+    width: 896px;
+}
+.green {
+    color: #629C02;
+}
+.sucess {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 18px;
+    background: url(/content/img/sprites/mymatouicon.gif) -100px -21px;
+}
+.ke-editor-wrap {
+    width: 788px;
+}
+.mess {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    margin: 0 0 20px;
+}
+.mess td {
+    padding: 10px;
+    border: 0;
+    vertical-align: top;
+}
+.mess .d-1 {
+    width: 80px;
+    border-right: 1px solid #e2e2e2;
+}
+.mess .img {
+    width: 80px;
+    height: 80px;
+}
+.mess .c {
+    margin-top: 5px;
+}
+.cblue {
+    border-color: #8AB6DD;
+}
+.cgreen {
+    border-color: #629C02;
+}
+.cyel {
+    border-color: #F47602;
+}
+.logo {
+    display: inline-block;
+    background: url(/content/img/sprites/top.png) no-repeat -100px -98px;
+    width: 80px;
+    height: 43px;
+}
+.h2 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 0 0 20px;
+}

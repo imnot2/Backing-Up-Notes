@@ -1,0 +1,303 @@
+/* line 2, ../../source/sass/utils/_smart-input.scss */
+.smart-input {
+  position: relative;
+}
+/* line 5, ../../source/sass/utils/_smart-input.scss */
+.smart-input.change textarea {
+  border: 1px solid #dbdbdb;
+}
+/* line 8, ../../source/sass/utils/_smart-input.scss */
+.smart-input.change .smart-label {
+  display: none;
+}
+/* line 12, ../../source/sass/utils/_smart-input.scss */
+.smart-input textarea {
+  padding: 2px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  resize: none;
+  outline: none;
+}
+/* line 19, ../../source/sass/utils/_smart-input.scss */
+.smart-input .smart-label {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d1cece;
+  padding-left: 5px;
+  visibility: visible;
+  float: left;
+  z-index: 1;
+  cursor: text;
+  vertical-align: middle;
+}
+
+/* line 18, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.wrapper .order-comments {
+  width: 1000px;
+  min-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 25, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.err-font {
+  color: #CC3333;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/* line 31, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.darkred {
+  color: #CC3333;
+}
+
+/* line 35, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.link-blue {
+  color: #1F7DD8;
+}
+
+/* line 39, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.comment-error {
+  color: #CC3333;
+  padding-left: 20px;
+  height: 16px;
+  line-height: 16px;
+  background: url('/source/images/ordercomments/icons-s8ab2a6756f.png') 0 -238px no-repeat;
+  visibility: hidden;
+}
+/* line 46, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.comment-error.show {
+  visibility: visible;
+}
+
+/* line 51, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.title-bar {
+  height: 66px;
+  line-height: 66px;
+  font-size: 20px;
+}
+
+/* line 57, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box {
+  border: 4px solid #ededed;
+  background-color: #f9f9f9;
+  padding: 0 26px 26px 26px;
+  *zoom: 1;
+}
+/* line 16, ../../source/sass/utils/_classes.scss */
+.order-box:after, .order-box:before {
+  content: "";
+  display: table;
+}
+/* line 21, ../../source/sass/utils/_classes.scss */
+.order-box:after {
+  clear: both;
+  overflow: hidden;
+}
+/* line 62, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title {
+  padding: 12px 0;
+  *zoom: 1;
+}
+/* line 16, ../../source/sass/utils/_classes.scss */
+.order-box .order-title:after, .order-box .order-title:before {
+  content: "";
+  display: table;
+}
+/* line 21, ../../source/sass/utils/_classes.scss */
+.order-box .order-title:after {
+  clear: both;
+  overflow: hidden;
+}
+/* line 65, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .seller-box {
+  width: 460px;
+}
+/* line 67, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .seller-box .order-info {
+  line-height: 54px;
+}
+/* line 69, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .seller-box .order-info .seller-name {
+  color: #666;
+}
+/* line 72, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .seller-box .order-info .order-detail {
+  color: #999;
+  margin-left: 20px;
+}
+/* line 78, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .privilege-box {
+  height: 70px;
+  background: url('/source/images/ordercomments/icons-s8ab2a6756f.png') 0 0 no-repeat;
+  padding-top: 20px;
+  padding-left: 48px;
+  font-size: 14px;
+}
+/* line 84, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .privilege-box .privilege-card {
+  width: 110px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  border-radius: 4px;
+  background-color: #EF6461;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 3px 3px #ccc;
+}
+/* line 97, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.order-box .order-title .privilege-box .privilege-tip {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 28px;
+}
+
+/* line 107, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.submit-box {
+  text-align: center;
+}
+/* line 109, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.submit-box .submit-button {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 46px;
+  color: #fff;
+  background-color: #CC3333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 121, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars {
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 16px;
+}
+/* line 125, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars .opration-lable, .opration-stars .operation-stars, .opration-stars .comment-error {
+  vertical-align: middle;
+}
+/* line 128, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars .opration-lable {
+  font-size: 16px;
+}
+/* line 131, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars .operation-stars {
+  height: 36px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* line 134, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars .operation-stars .star-item {
+  width: 24px;
+  height: 36px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: url('/source/images/ordercomments/icons-s8ab2a6756f.png') 0 -116px no-repeat;
+  cursor: pointer;
+}
+/* line 140, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.opration-stars .operation-stars .star-item.star-active {
+  background: url('/source/images/ordercomments/icons-s8ab2a6756f.png') 0 -176px no-repeat;
+}
+
+/* line 148, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment {
+  padding: 30px 0;
+  border-top: 1px dashed #dbdbdb;
+}
+/* line 151, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-title {
+  font-size: 14px;
+}
+/* line 154, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-img {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+  float: left;
+}
+/* line 161, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-info {
+  padding-left: 126px;
+}
+/* line 164, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-info .comment-box {
+  margin-top: 8px;
+}
+/* line 166, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-info .comment-box .opration-lable {
+  font-size: 12px;
+}
+/* line 169, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .product-info .comment-box .opration-stars {
+  padding: 0 14px;
+  background-color: #fffdf4;
+  border: 1px solid #f8cb94;
+}
+/* line 176, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .comment-desc {
+  margin-top: 8px;
+}
+/* line 178, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .comment-desc textarea {
+  width: 648px;
+  height: 88px;
+}
+/* line 181, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .comment-desc textarea.err {
+  border: 1px solid #CC3333;
+}
+/* line 184, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.product-comment .comment-desc textarea.focus {
+  border: 1px solid #cbcbcb;
+}
+
+/* line 191, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.deepRed {
+  color: #CC3333;
+}
+
+/* line 196, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.small-layer {
+  box-shadow: 0px 0px 8px #e0e0e0;
+  width: 200px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 34px;
+  vertical-align: middle;
+}
+/* line 202, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.small-layer .icon-success {
+  font-size: 60px;
+  vertical-align: middle;
+  color: #5ab201;
+}
+/* line 207, ../../source/sass/partial/ordercomments/ordercomments.scss */
+.small-layer .layer-content {
+  padding-left: 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}

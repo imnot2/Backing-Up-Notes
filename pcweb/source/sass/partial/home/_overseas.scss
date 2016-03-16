@@ -1,0 +1,134 @@
+@import "basic215";
+//overseas
+.overseas{
+  overflow:hidden;
+  @include bgcolorgradient(linear,top,#ffffff,#eeeeee); 
+  .tb-l{
+    width:567px;
+    float:left;
+    padding:10px;
+    &:hover{
+      cursor:pointer;
+      .info-wrap-hd a{
+        color:#333;
+      }
+    }
+    .imgbox{
+      width:200px;
+      height:240px;
+      float:left;
+    } 
+    .title,.desc{
+      display:block;
+      font-size:18px;
+    }
+    .key{
+      color:$lighterColor;
+      font-size:14px;
+
+    }
+  }
+  .info-wrap{
+    margin-left:212px;
+    .info-wrap-hd{
+      height:85px;
+      margin-top:10px;
+      *margin-top:20px;
+      a:hover{
+        color:#333;
+        text-decoration:none;
+      }
+    }
+    .info-wrap-bd{
+      height:80px;
+      font-size:14px;
+      margin-top:10px;
+      sup {
+          font-size: 20px;
+          top: -26px;
+        }
+      .pb-txt{
+        color:$lighterColor;
+        @include inline-block();
+        margin-left:5px;
+      }
+      .pb-price{
+        font-size: 50px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-right:5px;
+      }
+    }
+    .info-wrap-ft{
+      position:relative;
+      bottom:0;
+      _height:45px;
+      .timeout-wrap{
+        position:absolute;
+        right:-4px;
+        bottom:3px;
+      }
+    }
+  }
+  .btn-detail{
+    background-color:$lightColor; 
+    width:150px;
+    height:42px;
+    text-align:center;
+    @include inline-block();
+    line-height:42px;
+    color:$white;
+    font-size:18px;
+    border-bottom:3px $normalBorder solid;
+    &:hover{
+      color:$white;
+      background-color:$redHover;
+      text-decoration:none;
+    }
+  }
+  .tb-r{
+    width:162px;
+    float:right;
+    border-left:1px #e5e5e5 solid;
+    text-align:center;
+  }
+  .product-tbr{
+    padding:8px 15px;
+    position:relative;
+    border-top:1px #e5e5e5 solid;
+    margin-top:-1px;
+    height:114px;
+    background-color:$white;
+    &:hover{
+      .title{
+        a{color: #1F7DD8;}
+      }
+    }
+    .imgbox{
+      width:80px;
+      height:74px;
+      overflow:hidden;
+      img{
+        width:80px;
+        height:74px; 
+      }
+    }
+    .title{
+      margin-top:4px;
+      text-align:left;
+    }
+    .price{
+      position:absolute;
+      right:5px;
+      top:3px;
+      color:$lighterColor;
+      font-size:16px;
+      font-weight:700;
+      em{
+        font-size:12px;
+        margin-right:2px;
+        vertical-align:2px;
+      }
+    }
+  }
+}

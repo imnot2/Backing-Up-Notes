@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>红包收益</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="http://staticwap.dev.ymatou.com/css/app.css">
+</head>
+<script>
+window.onresize=function(){
+    document.documentElement.style.fontSize = parseInt(document.querySelector('body').offsetWidth) / 20 + 'px';    
+}
+window.onload = function(){
+    window.onresize();
+}
+</script>
+<body class="p-my-redpackage">
+    <div class="table-redpackage">
+        <div class="redpge-tit redpge-item">
+            <span class="redpge-date">日期</span>
+            <span class="redpge-name">朋友</span>
+            <span class="redpge-amount">金额</span>
+            <span class="redpge-from">用户状态</span>
+        </div>
+        <div class="redpge-cont">
+            <div class="redpge-item">
+                <span class="redpge-date">2014.12.12</span>
+                <span class="redpge-name">贵贵</span>
+                <span class="redpge-amount">20元</span>
+                <span class="redpge-from">手机验证</span>
+            </div>
+            <div class="redpge-item">
+                <span class="redpge-date">2014.12.12</span>
+                <span class="redpge-name">贵贵</span>
+                <span class="redpge-amount">20元</span>
+                <span class="redpge-from">手机验证</span>
+            </div>
+            <div class="redpge-item">
+                <span class="redpge-date">2014.12.12</span>
+                <span class="redpge-name">贵贵</span>
+                <span class="redpge-amount">20元</span>
+                <span class="redpge-from">手机验证</span>
+            </div>
+            <div class="redpge-item">
+                <span class="redpge-date">2014.12.12</span>
+                <span class="redpge-name">贵贵</span>
+                <span class="redpge-amount">20元</span>
+                <span class="redpge-from">手机验证</span>
+            </div>
+            <div class="redpge-item">
+                <span class="redpge-date">2014.12.12</span>
+                <span class="redpge-name">贵贵</span>
+                <span class="redpge-amount">20元</span>
+                <span class="redpge-from">手机验证</span>
+            </div>
+        </div>
+        <div class="redpge-bottom">
+        红包金额 总计<span class="redpgetotal"><span class="redpge-amount">60</span>元</span>
+        </div>
+    </div>
+    <div class="rules-box">
+        <div class="btn-view">
+            <span class="iconfont icon-helpvector"></span>查看红包获取规则<span class="iconfont icon-dropdownvector"></span>
+        </div>
+        <div class="rules-cont">
+            <div class="rules-tip">温馨提示：</div>
+            <div class="rules-detail">
+                <p>将您的推荐链接分享给好友，好友注册即可获得110元红包大礼，购物即享优惠；</p>
+                <br/>
+                <p>如果好友通过您的推荐链接注册，您可先获得5元红包，如果好友下单购物，并完成交易，您还可再获得每单20元的红包返利，多买多送哦！</p>
+            </div>
+            <div class="rules-tip">推荐规则：</div>
+            <div class="rules-detail">
+                <p>每个账号可生成唯一的推荐链接，链接包含的数据和账户的信息相对应；</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+    <script src="http://staticwap.dev.ymatou.com/js/lib/jquery.js"></script>
+    <script>
+    $('.btn-view').on('click',function(){
+        $('.rules-cont').toggle();
+    })
+    </script>
+</html>

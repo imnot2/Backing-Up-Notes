@@ -1,0 +1,93 @@
+
+.form-control{
+	padding: 6px 15px; 
+	display: block;
+	font-size: 14px;
+	color:#999;
+	height: 38px;
+	border: 1px solid #ccc;
+	background-color:#fff;
+	border-radius: 0;
+	width: 100%; 
+	outline: none;
+}
+.form-control-feedback{
+	position: relative;
+	font-size: 0;
+	letter-spacing: -4px;
+	.form-control{
+		padding: 6px 0;
+		padding-left: 30px;
+		display: inline-block; 
+		font-size: 14px;
+		letter-spacing:normal;
+		color: #999;
+		height: 38px;
+		border: 1px solid #ddd;
+		background-color: #fff; 
+		border-radius: 0;
+		width: 100%;
+		outline: none;
+	}
+
+	.form-short-control{
+		width: 60%;
+	}
+	.validatebox{
+		margin-left:4px;
+		display: inline-block;
+		background-color:#ddd;
+		padding:9px 10px;
+		vertical-align: top;
+	}
+	.validate-btn{
+		display: inline-block;
+		padding:6px 10px;
+		vertical-align: top;
+		border:1px solid #ddd;
+		background-color:#fff;
+	}
+
+}
+.form-control-icon{
+	position: absolute;
+	display:block!important;
+	top:50%;
+	left:.2em;
+	margin-top:-11px;
+	z-index:1;
+} 
+.input-group{
+	position: relative;
+	display: table;
+	width:100%;
+	.form-control,
+	.input-group-btn{
+		display: table-cell;
+	}
+	.form-control{ 
+		float: left;
+		position: relative;
+		margin-bottom: 0;
+	}
+	.input-group-btn,
+	.form-control{
+		&:last-child{
+			border-left-width: 0px;
+			
+		}
+		&:first-child{
+			border-right-width: 0px;
+			
+		}
+	}
+}
+.input-group-btn{
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:14px;max-height:38px;
+}
+.check-checked{
+	color:#cc3333;
+}

@@ -1,0 +1,32 @@
+﻿<article temp-data="d">
+    <section class="rate-star">
+        <div class="mg-tb">
+            <label class="name">商家服务态度：</label>
+            <span class="mod-star"><span class="dim"><span class="light" style="width: ${parseFloat(d.ServiceScore)*20}%"></span></span></span><span class="marks">(${d.ServiceScore})</span>
+        </div>
+        <div class="mg-tb">
+            <label class="name">商品与描述相符：</label>
+            <span class="mod-star"><span class="dim"><span class="light" style="width: ${parseFloat(d.SurfaceScore)*20}%"></span></span></span><span class="marks">(${d.SurfaceScore})</span>
+        </div>
+    </section>
+    <ul class="mod-info-list rate-list">
+        <for e="item in d.Credits">
+            <li class="item">
+                <h3 class="hd">${item.Content}</h3>
+                <p class="bd">现货：${item.ProductName}</p>
+                <div class="clearfix bt center">
+                    <span class="fr tr">${item.GoodScoreText}</span>
+                    <span class="time">${item.CreditTimeString}</span>
+                    <span class="fl name tl">${item.UserName}&nbsp;|&nbsp;</span>
+                </div>
+            </li>
+        </for>
+    </ul>
+    <div class="mod-info-list rate-number">
+        <div class="item tc">
+            <a class="btn-a" href="#" id="prevpage">上一页</a>
+            <span class="vm number"><span class="current" id="currentpage">1</span>/<span class="total">${Math.ceil(d.TotalCount/10)}</span></span>
+            <a class="btn-a" href="#" id="nextpage">下一页</a>
+        </div>
+    </div>
+</article>

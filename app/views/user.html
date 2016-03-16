@@ -1,0 +1,83 @@
+<%=include global/header.html%>
+<section class="container user-center" ng-controller="UserCenterController">
+	<div class="userinfo" ng-class="{'user-bg':UserInfo.HasLogo != true}" >
+		<img ng-src="{{UserInfo.Logo}}" class="blur" ng-if="UserInfo.HasLogo == true">
+		<div class="masktrans">
+			<div class="avatar">
+				<span class='avatar-url'>
+					<i ng-if="UserInfo.logo=='string'" class="icon icon-navMeN"></i>
+					<img ng-src="{{UserInfo.Logo}}">
+				</span>
+				<h2 ng-bind='UserInfo.UserName'></h2>
+				<p>手机号：<span ng-bind='UserInfo.Mobile||"未绑定手机号"'></span></p>
+			</div>
+			<div class="price">
+
+				<ol class="p-li">
+					<li>
+						<strong class="number">￥<span ng-bind="UserInfo.AccountBalance||0"></span></strong>账户余额
+					</li>
+					<li>
+						<strong class="number">￥<span ng-bind="UserInfo.RedPacket||0"></span></strong>红包
+					</li>
+					<li>
+						<strong class="number"><span ng-bind="UserInfo.FreeTransportCard||0"></span></strong>免运卡
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<ol class="user_orders">
+		<li ng-click="toOrders(1)">
+			<span class="icons"><i class="icon icon-GPayable"></i></span>
+			<span class="text">待付款</span>
+			<span class="number" ng-if="UserInfo.OrderEstablish>0"><strong ng-bind="UserInfo.OrderEstablish||0" ></strong></span>
+		</li>
+		<li ng-click="toOrders(2)">
+			<span class="icons"><i class="icon icon-GIncming"></i></span>
+			<span class="text">待收货</span>
+			<span class="number" ng-if="UserInfo.Shipped>0"><strong ng-bind="UserInfo.Shipped||0"></strong></span>
+		</li>
+		<li ng-click="toOrders(4)">
+			<span class="icons"><i class="icon icon-GAll"></i></span>
+			<span class="text">查看全部订单</span>
+		</li>
+	</ol>
+
+	<nav class='user_nav'>
+		<ul>
+			<li ng-click="toCoupon()">
+				<i class="icon icon-coupon nav_icon"></i>
+				<p>我的优惠券</p>
+				<i class="toRight icon icon-more"></i>
+			</li>
+			<li ng-click="toAddress()">
+				<i class="icon icon-location nav_icon"></i>
+				<p>管理收货地址</p>
+				<i class="toRight icon icon-more"></i>
+			</li>
+			<li ng-click="toChatList()">
+				<i class="icon icon-toTalk nav_icon"></i>
+				<p>消息中心</p>
+				<i class="toRight icon icon-more"></i>
+			</li>
+		</ul>
+
+		<ul>
+			<li ng-click="toHelp()" style="display:none;">
+				<i class="icon icon-help nav_icon"></i>
+				<p>使用帮助</p>
+				<i class="toRight icon icon-more"></i>
+			</li>
+			<li ng-click="toFeedback()">
+				<i class="icon icon-feedback nav_icon"></i>
+				<p>意见反馈</p>
+				<i class="toRight icon icon-more"></i>
+			</li>
+		</ul>
+	</nav>
+	
+	<cheat-remind></cheat-remind>
+</section>
+<%=include global/footer.html%>

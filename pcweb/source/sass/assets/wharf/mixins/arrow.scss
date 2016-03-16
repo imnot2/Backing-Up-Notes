@@ -1,0 +1,11 @@
+﻿@mixin arrow-border($width:3px,$color:#000) {
+	height:0;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+	display:inline-block;
+	border-width:$width;
+	border-style:solid dashed dashed dashed;
+	border-color:$color transparent transparent transparent
+}
+ 

@@ -1,0 +1,43 @@
+﻿/*=======================orderinfo.css===========================*/
+body {
+    font: 12px "Arial", "\5B8B\4F53", sans-serif;
+    color: #666;
+    padding: 0px;
+    margin: 0px;
+}
+table {
+    font-size: 12px;
+}
+.summary {
+    width: 100%;
+    border: 1px #B2D1FF solid;
+    background-color: #F3F8FF;
+    margin: 0px;
+    padding: 4px;
+}
+.list {
+    width: 100%;
+    border-left: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    background-color: #FFF;
+    margin: 0px;
+}
+.list td {
+    padding: 4px 0px;
+}
+.title {
+    color: #999;
+    margin-right: 6px;
+    margin-left: 8px;
+}
+.content .hd {
+    padding: 10px 0 5px;
+}
+.content .hd b {
+    font-size: 12px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}

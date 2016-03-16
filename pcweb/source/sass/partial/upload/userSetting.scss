@@ -1,0 +1,689 @@
+﻿@charset "UTF-8";
+
+/*
+Copyright (c) 2011, snda Inc. All rights reserved.
+version: 1.0.0
+*/
+
+/**
+ * style for videosearch group_page
+**/
+body {
+    color: #333;
+}
+
+#login3 li, #loginer .okey, .form_module .okey, .currentTag em, #user_setting .followCircle li span, .s-ic-reg {
+    background-image: url(/content/images/upload/sp-icon-reg.png);
+    background-repeat: no-repeat;
+}
+
+.form_module {
+    background-image: url(images/sp-repeat-x.png);
+    background-repeat: repeat-x;
+}
+
+#user_setting .selected span, #user_setting .menu {
+    background-image: url(images/setting.png);
+    background-repeat: no-repeat;
+}
+
+input.text {
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+    height: 26px;
+    line-height: 26px;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+input.text:focus {
+    border: 1px solid #FF9900;
+}
+
+button.btn, .btn {
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+textarea.textara {
+    border: 1px #999 solid;
+}
+
+.person .textara {
+    width: 410px;
+}
+
+/**布局信息**/
+#bd {
+    position: relative;
+}
+
+#bd .wrap {}
+
+/*menu border-bottom: 1px solid #D9D4D4;*/
+#user_setting {
+    border: 1px #D9D4D4 solid;
+    background-color: #FFF;
+}
+
+#user_setting ul {
+    border-bottom: 1px #D9D4D4 solid;
+    background-color: #F2F2F2;
+    position: relative;
+    background-position: right top;
+}
+
+#user_setting li {
+    background-color: #F2F2F2;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+    border-right: 1px #D9D4D4 solid;
+    _display: inline;
+    zoom: 1;
+}
+
+#user_setting li span {
+    display: block;
+    height: 33px;
+    line-height: 33px;
+    border: 1px #FFF solid;
+    border-bottom: none;
+    border-right: none;
+    padding: 0 16px;
+    _display: inline;
+    zoom: 1;
+}
+
+#user_setting .selected {
+    background-color: #FFF;
+}
+
+#user_setting .selected span {
+    font-weight: bold;
+    background-color: #FFF;
+    position: relative;
+    top: 1px;
+    background-position: 0 -48px;
+    border-top: medium none;
+    height: 34px;
+}
+
+#user_setting .clear_r {
+    border-right: none;
+}
+
+.node .l, .node .r {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.node .l {
+    margin-right: 5px;
+}
+
+.node .t {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.setting_content {
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 0;
+}
+
+.h4 {
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.regTit {
+    background-position: 0 -116px;
+}
+
+.forgetTit {
+    background-position: -62px -206px;
+}
+
+#loginer h2 {
+    display: block;
+    height: 40px;
+}
+
+#loginer ul, .submiter {
+    padding-left: 42px;
+    width: 430px;
+    overflow: hidden;
+}
+
+.form_module {
+    background-position: left bottom;
+    padding-bottom: 14px;
+}
+
+.form_module .tit {
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+.form_module .formPlace {}
+
+.form_module .tips {
+    margin-left: 14px;
+    height: 31px;
+    line-height: 31px;
+    color: red;
+}
+
+.form_module .okey {
+    background-position: -181px -151px;
+    width: 100px;
+}
+
+.form_module .tipTxt {
+    height: 17px;
+    color: #999;
+}
+
+#loginer .change {
+    cursor: pointer;
+    margin-left: 6px;
+    color: #4083A9;
+}
+
+#loginer .code-pic {
+    position: relative;
+    top: 6px;
+    margin-left: 4px;
+}
+
+#loginer .remeb {
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.submiter {
+    margin-top: 12px;
+    padding-bottom: 22px;
+}
+
+/*分模块-个人设置*/
+.person p {
+    color: #999;
+}
+
+.dl {
+    margin-top: 28px;
+}
+
+.person .wrap {
+    margin: 0 auto;
+    width: 635px;
+}
+
+.person dt {
+    float: left;
+}
+
+.person dt img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 8px;
+}
+
+.person dt .a {}
+
+.person dd {
+    float: right;
+    width: 430px;
+}
+
+/*修改头像*/
+.editHeadPic {
+    color: #666;
+    text-align: left;
+}
+
+.editHeadPic .L {
+    float: left;
+    width: 400px;
+}
+
+.editHeadPic .R {
+    float: right;
+    width: 340px;
+    padding-top: 30px;
+}
+
+.editHeadPic .w_upload .btn {
+    width: 78px;
+    height: 27px;
+    background-position: 0 -281px;
+}
+
+.editHeadPic .info {
+    margin-top: 6px;
+}
+
+.editHeadPic .w_upload .loading, .editHeadPic .w_submit .loading {
+    background-position: 8px 6px;
+    background-image: url(images/loadinga.gif);
+}
+
+.modifyPlace {
+    margin-bottom: 8px;
+    border: 1px #D9D4D4 solid;
+    background-color: #EEE;
+    width: 300px;
+    height: 300px;
+    margin-top: 8px;
+}
+
+.editHeadPic .w_submit {
+    margin-top: 12px;
+    height: 27px;
+}
+
+.editHeadPic .w_submit .btn-cancel {
+    margin-left: 10px;
+}
+
+.editHeadPic .R .wrap {
+    width: auto;
+    border-left: 1px #ccc solid;
+    padding: 0 0 0 40px;
+    height: 300px;
+}
+
+.editHeadPic .R .w_l {
+    float: left;
+    width: 302px;
+}
+
+.editHeadPic .R .cls {
+    margin-top: 18px;
+}
+
+.editHeadPic .head {
+    overflow: hidden;
+    width: 300px;
+    border: 1px #D9D4D4 solid;
+    text-align: center;
+}
+
+.mypic {
+    _width: expression((function(el) { el.clientWidth>300&&(el.style.width="300px") } )(this));
+    _height: expression((function(el) { el.clientHeight>300&&(el.style.height="300px") } )(this));
+}
+
+.editHeadPic .h_160 {
+    width: 160px;
+    height: 160px;
+}
+
+.editHeadPic .h_352 {
+    width: 280px;
+    height: 160px;
+    position: relative;
+}
+
+.editHeadPic .h_352 .png {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+}
+
+.editHeadPic .h_48 {
+    width: 48px;
+    height: 48px;
+}
+
+.editHeadPic .h_30 {
+    width: 30px;
+    height: 30px;
+}
+
+.editHeadPic .R .w_r {
+    float: right;
+    width: 70px;
+    text-align: center;
+}
+
+.editHeadPic .tips {
+    color: red;
+    margin-left: 12px;
+}
+
+.w_upload {
+    position: relative;
+    text-align: left;
+}
+
+.w_upload .iframemask {
+    display: block;
+    height: 28px;
+    left: -9px;
+    position: absolute;
+    width: 20px;
+    z-index: 11;
+    -moz-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+}
+
+#cancelButton {
+    background-position: -78px -281px;
+}
+
+#avatar {
+    -moz-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    height: 27px;
+    position: absolute;
+    width: 78px;
+    left: -7px;
+    z-index: 10;
+}
+
+/*修改密码*/
+.editPwd .wrap {
+    width: 486px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.editPwd .text {
+    width: 200px;
+}
+
+/*制定主页*/
+.customPage .tip {
+    color: #999;
+}
+
+.customPage .wrap {
+    overflow: hidden;
+    width: 791px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+#user_setting .currentTag {
+    background-color: transparent;
+    margin-top: 8px;
+    border: none;
+    margin-left: -10px;
+}
+
+#user_setting .customPage .currentTag li {
+    font-size: 13px;
+    cursor: auto;
+    border: 1px #999 dotted;
+    padding-top: 1px;
+    margin-left: 10px;
+    width: 68px;
+    height: 27px;
+    line-height: 27px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+}
+
+#user_setting .customPage .currentTag li em {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-position: -176px -290px;
+    top: 0;
+    right: 0;
+}
+
+#user_setting .customPage .currentTag .has_tag {
+    cursor: move;
+    border: 1px #06C solid;
+    border-top: 1px #06C solid;
+    padding-top: 0px;
+    background-color: #EBF6FF;
+}
+
+#user_setting .customPage .currentTag .has_tag label {
+    cursor: move;
+}
+
+.followCircle {
+    margin-top: 22px;
+    border: 1px #D8D3D3 solid;
+}
+
+.followCircle .tit {
+    height: 27px;
+    line-height: 27px;
+    border-top: 1px #FFF solid;
+    background-color: #F2F2F2;
+    text-indent: 1em;
+}
+
+.followCircle .edit {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #4083A9;
+}
+
+#user_setting .customPage .followCircle ul {
+    background-color: transparent;
+    padding: 12px 0 12px 47px;
+}
+
+#user_setting .followCircle li {
+    height: 27px;
+    line-height: 27px;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+#user_setting .followCircle .selected span {
+    border: 1px #06C solid;
+    border-top: 2px #06C solid;
+    background-position: -176px -352px;
+    background-color: #fff !important;
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 8px 0 23px;
+}
+
+#user_setting .followCircle li span {
+    border: none;
+    height: auto;
+    line-height: 27px;
+    float: left;
+    height: 27px;
+    padding: 1px 8px 0 23px;
+    background-position: -176px -317px;
+}
+
+#user_setting .customPage .w_submit {
+    margin-top: 44px;
+    text-align: center;
+}
+
+/*勋章*/
+#user_setting .medals .wrap {
+    padding: 24px 0;
+}
+
+#user_setting .medals .tit {
+    width: 800px;
+    margin: 12px auto 0 auto;
+    color: #666;
+    margin: 0 auto;
+}
+
+#user_setting .medals .medalPlace {
+    background: url(images/medal/medalbg.jpg) no-repeat;
+    width: 800px;
+    height: 342px;
+    margin: 12px auto 0 auto;
+}
+
+#user_setting .medals .medalPlace ul {
+    padding: 73px 0 0 119px;
+    background-color: transparent;
+    border: 0;
+}
+
+#user_setting .medals .medalPlace li {
+    width: 100px;
+    border: 0;
+    margin-left: 65px;
+    background-color: transparent;
+}
+
+#user_setting .medals .medal_tit {
+    margin-top: 21px;
+}
+
+/*按钮*/
+.btn-complete, .btn-cancel {
+    background-position: 0 -250px;
+    width: 100px;
+    height: 27px;
+}
+
+.btn-cancel {
+    background-position: -101px -250px;
+}
+
+/*特定元素*/
+#email {
+    width: 270px;
+}
+
+#password, #honeyname, #password1, #password2 {
+    width: 200px;
+}
+
+#checkcode {
+    width: 80px;
+}
+
+#signature {
+    width: 416px;
+    padding: 4px;
+}
+
+#rememberme {
+    position: relative;
+    top: 2px;
+}
+
+.clearBg {
+    background: none;
+}
+
+.dec {
+    color: red;
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+#user_setting .followCircle .list span {
+    border: 1px #06C solid;
+    border-top: 1px #06C solid;
+    background-position: -176px -352px;
+    background-color: #EBF6FF;
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 8px 0 23px;
+}
+
+#user_setting .followCircle .selected span {
+    border: none;
+    height: auto;
+    line-height: 27px;
+    float: left;
+    height: 27px;
+    padding: 1px 8px 0 23px;
+    background-position: -176px -317px;
+    font-weight: normal;
+}
+
+/**
+ * 用于拖曳
+ */
+.temp_box .has_tag {
+    cursor: move;
+    border: 1px #06C solid;
+    border-top: 1px #06C solid;
+    padding-top: 0px;
+    background-color: #EBF6FF;
+}
+
+.temp_box .has_tag label {
+    cursor: move;
+}
+
+.temp_box em {
+    background-image: url(/content/images/upload/sp-icon-reg.png);
+    background-repeat: no-repeat;
+}
+
+.temp_box {
+    background-color: transparent;
+    margin-top: 8px;
+    border: none;
+    margin-left: -10px;
+}
+
+.temp_box li {
+    font-size: 13px;
+    cursor: auto;
+    border: 1px #999 dotted;
+    padding-top: 1px;
+    margin-left: 10px;
+    width: 68px;
+    height: 27px;
+    line-height: 27px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    opacity: .8;
+    /*filter: opacity(alpha = 80);*/
+}
+
+.temp_box li em {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-position: -176px -290px;
+    top: 0;
+    right: 0;
+}
+
+.temp_box .has_tag {
+    cursor: move;
+    border: 1px #06C solid;
+    border-top: 1px #06C solid;
+    padding-top: 0px;
+    background-color: #EBF6FF;
+}
+
+.temp_box .has_tag label {
+    cursor: move;
+}

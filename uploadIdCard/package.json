@@ -1,0 +1,28 @@
+{
+  "name": "YMT-UploadCardId-Service",
+  "version": "0.0.1",
+  "private": true,
+  "description": "UploadCardId",
+  "main": "YMT-uploadCardId-Service.js",
+  "scripts": {
+    "start": "node YMT-uploadCardId-Service.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "connect-flash": "*",
+    "formidable": "*",
+    "eventproxy": "*",
+    "express-session": "*",
+    "cookie-parser": "*",
+    "morgan": "*"
+  },
+  "devDependencies": {
+    "connect-multiparty": "^1.2.5",
+    "connect-redis": "^2.2.0",
+    "formidable": "^1.0.17",
+    "mongoose": "^4.0.1",
+    "node-uuid": "^1.4.3",
+    "request": "^2.55.0"
+  }
+}

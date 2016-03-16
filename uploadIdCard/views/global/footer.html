@@ -1,0 +1,12 @@
+<footer>
+<div class="error"><i><%if(error){%><%=error%><%}%></i></div>
+</footer>
+
+<script type="text/javascript">
+if($('.error').text().length>0){
+    $('.error').fadeIn(230);
+    setTimeout(function(){$('.error').fadeOut(200);$('.error i').text('')},2000)
+}
+</script>
+</body>
+</html>

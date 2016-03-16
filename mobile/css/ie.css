@@ -1,0 +1,22 @@
+.search {
+  display: inline-block;
+  width: 286px;
+  width: 312px\9;
+  *width: 286px;
+  height: 33px;
+  padding: 0 4px 0 22px;
+  font: normal 14px/32px "Helvetica, Arial, sans-serif";
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+.header .fl img {
+  width: 60px; }
+
+.mod-product-show .item {
+  *display: inline;
+  zoom: 1; }
+
+.show-img-150 .item {
+  width: 150px; }
+
+/*# sourceMappingURL=ie.css.map */

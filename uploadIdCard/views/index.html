@@ -1,0 +1,25 @@
+<%include global/header.html%>
+<section>
+	<p>您的包裹将通过中国海关清关入境，需配合提交身份证明，<a href="/info/law">查看海关法律</a></p>
+	<h5>选择上传身份证的收件人姓名：</h5>
+
+	<%if(userArr.length>0){%>
+	<ul class="table-view">
+		
+		<%
+		
+			for(i in userArr){
+		%>
+			<li class="table-view-cell">
+				<a class='table-icon-right' userid="<%=info['userid']%>" name="<%=userArr[i].name%>" mobile="<%=userArr[i].mobile%>" businessid="<%=userArr[i].businessid%>" type="<%=info['type']%>" action="<%=info['action']%>" _href="javascript:;" href="/addCardId?userid=<%=info['userid']%>&name=<%=userArr[i].name%>&mobile=<%=userArr[i].mobile%>&businessid=<%=userArr[i].businessid%>&type=<%=info['type']%>&action=<%=info['action']%>"><%=userArr[i].name%></a></li>
+		<%
+			}
+		%>
+		
+	</ul>
+	<%}else{%>
+	<hr/>
+		<p>暂无收件人可填</p>
+	<%}%>
+</section>
+<%include global/footer.html%>

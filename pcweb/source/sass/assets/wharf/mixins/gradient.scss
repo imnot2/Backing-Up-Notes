@@ -1,0 +1,15 @@
+﻿@mixin bgcolorgradient($type:linear,$startpointer:top,$startcolor:#ffffff,$endcolor:#eeeeee) {
+  background:-moz-#{$type}-gradient( $startpointer,$startcolor,$endcolor);
+  background:-webkit-#{$type}-gradient( $startpointer,$startcolor,$endcolor);
+  background:-o-#{$type}-gradient($startpointer,$startcolor,$endcolor);
+  @if($startpointer==top){
+  filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#{$startcolor},endColorStr=#{$endcolor});
+  -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#{$startcolor}, endColorstr=#{$endcolor});
+  }
+  @if($startpointer==left){
+  filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#{$startcolor},endColorStr=#{$endcolor});
+  -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, startColorstr=#{$startcolor}, endColorstr=#{$endcolor});
+  }
+  background:-ms-#{$type}-gradient($startpointer,$startcolor,$endcolor);
+  background:#{$type}-gradient($startpointer,$startcolor,$endcolor);
+}

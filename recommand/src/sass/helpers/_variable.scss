@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+$static-url: "http://staticwap.dev.ymatou.com/";
+
+//设备像素比
+$px-ratio-val: 2;
+
+//标准圆角值
+$extend-radius-val: 4px;
+
+/**
+ * @name 色板variable
+ * @desc
+ *  分背景色.字体色.边框色
+ *  背景色统一结尾 -bg  eg: btn-register-bg
+ *  字体色统一结尾 -fc  eg: btn-register-fc
+ *  边框色统一结尾 -bc  eg: nav-tabs-bc
+ */
+
+//-------------------------default-------------------------
+
+//默认颜色
+$base-bg: #fff;
+
+//默认字体颜色
+$base-fc: #666666;
+
+//深色
+$base-dark-fc: #000;
+
+//链接色
+$link-fc: #208eff;
+
+//disable
+$disable-fc: #cacaca;
+
+//页宽
+$main-width: 89.0625%;
+
+//-------------------------bc-------------------------
+
+//默认边框色
+$base-bc: #e0e0e0;
+
+//粗边框颜色
+$bold-bc: #999;
+
+//-------------------------fc-------------------------
+
+//按钮字体颜色
+$btn-fc: #fff;
+
+//注册按钮字体颜色
+$btn-register-fc: $btn-fc;
+
+//取消按钮icon颜色
+$btn-cancel-fc: #dcdcdc;
+
+//登录按钮字体颜色
+$btn-login-fc: $btn-fc;
+
+//登录icon颜色
+$icon-login-fc: #b7b6b3;
+
+//登录表单字体颜色
+$form-login-fc: #212121;
+
+//凸显字体颜色
+$highlight-fc: #ff534b;
+
+//-------------------------bg-------------------------
+
+//背景色
+$doc-bg: #eee;
+
+//登录按钮背景颜色
+$btn-login-bg: #ff534b;
+
+//绑定按钮背景颜色
+$btn-bind-bg: #ff534b;
+
+//登录表单背景色
+$form-login-bg: #f6f6f6;
+
+//不可操作的背景色
+$disable-bg: #cacaca;
+
+//标题背景色
+$bar-tit-bg: #efefef;

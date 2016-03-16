@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*!
+* CSS Reset
+* @description 重设浏览器默认样式 
+*/
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, legend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0; }
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+  /* for ie */
+  font:normal 12px/1.5 "Microsoft yahei", "Arial";
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */ }
+button{font-family:"Microsoft Yahei"}
+a{text-decoration:none;cursor:pointer}
+i{font-style:normal}
+img{border:0}
+table{width:100%;border-collapse:collapse;border-spacing:0}
+body,input,button,textarea,select{color:#333}
+body{background:#fff}
+em{
+font-style:normal;
+}
+ul,li{
+  list-style: none;
+}

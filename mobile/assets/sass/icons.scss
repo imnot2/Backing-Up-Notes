@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: 'ymtWapIcon';
+  src: url(#{$ymtWapIconpath}iconfont.#{$version}.eot); /* IE9*/
+  src: url(#{$ymtWapIconpath}iconfont.#{$version}.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+  url(#{$ymtWapIconpath}iconfont.#{$version}.woff) format('woff'), /* chrome、firefox */
+  url(#{$ymtWapIconpath}font/iconfont.#{$version}.ttf) format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url(#{$ymtWapIconpath}font/iconfont.#{$version}.svg#iconfont) format('svg'); /* iOS 4.1- */
+}
+.icon{
+	display: inline-block;
+	font-family: ymtWapIcon;
+	font-size: 24px;
+	line-height: 1;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased; 
+}
+.icon-ring:before{
+	content:'\e600';
+} 
+
+.icon-hook:before{
+	content:'\e601';
+}
+
+
+@font-face {
+  font-family: 'wapIcon';
+  src: url(/css/icon-font/wapIcon/iconfont.#{$version}.eot); /* IE9*/
+  src: url(/css/icon-font/wapIcon/iconfont.#{$version}.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+  url(/css/icon-font/wapIcon/iconfont.#{$version}.woff) format('woff'), /* chrome、firefox */
+  url(/css/icon-font/wapIcon/iconfont.#{$version}.ttf) format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url(/css/icon-font/wapIcon/iconfont.#{$version}.svg#iconfont) format('svg'); /* iOS 4.1- */
+}
+
+.wapIcon {
+	display:inline-block;
+  font-family:"wapIcon" !important;
+  font-size: 24px;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
+	line-height:1;
+	font-style: normal;
+}
+
+//整点抢
+.icon-buyinglogo:before { content: "\e60b"; }
+//倒三角
+.icon-xiasanjiao:before { content: "\e60c"; }
+//倒计时
+.icon-countdown:before { content: "\e60a"; }
+//锁
+.icon-lock:before { content: "\e600";}
+//用户
+.icon-user{font-size: 22px; }
+//key
+.icon-key:before { content: "\e604"; }
+//发送手机
+.icon-send:before { content: "\e603";}
+//搜索
+//.icon-search:before { content: "\e607";}
+//删除
+.icon-detele:before { content: "\e605"; }
+.icon-validate:before{content:"\e606"}
+.icon-refresh:before{content:"\e607"}
+
+
+.login-icon {
+  background: url(/img/hm_sprites.#{$version}.png) no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px; 
+  background-size: 253px 122px;
+}
+.icon-logo{
+	background-position:  -88px -79px;
+	width:74px;
+	height:40px;
+}
+.icon-user-hd{
+	background-position:  -200px -5px;
+	width:22px;
+	height:22px;
+}
+.icon-cart-hd{
+	background-position:  -223px -5px;
+	width:22px;
+	height:22px;
+}
+.icon-add-cart{
+	background-position:  -166px -78px;
+}
+.icon-add-share{
+	background-position:  -191px -78px;
+}
+

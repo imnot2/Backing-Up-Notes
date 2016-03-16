@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size:100%;
+	vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+html {
+	font-size:100%;
+	padding:0;
+	margin:0;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: top
+}
+
+input[type=text],input[type=password],textarea {
+	border: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	resize: none;
+	outline: 0;
+	box-shadow: none;
+	-webkit-appearance: none;
+}
+
+table {
+	border-collapse: collapse
+}
+
+a {
+	color: #333;
+	text-decoration: none
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight: 400
+}
+
+ul,li {
+	list-style: none
+}
+
+dfn,em,i {
+	font-style: normal
+}
+
+a, img, button, input, textarea, span {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	outline:none;
+}
+html,body{
+//position: relative;//在android中会导致拉下刷新
+height: 100%;
+width: 100%;
+//overflow-x: hidden;
+}
+body {
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: Arial,Roboto,'Droid Sans','Hiragino Sans GB',STXihei,sans-serif;
+	color: #000;
+	background:$color_Bbg;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-overflow-scrolling: touch;
+}
+
+a,
+button,
+input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+input[type=number]{
+	&::-webkit-textfield-decoration-container{
+ 		background-color: #fff;
+	}
+	&::-webkit-inner-spin-button {
+ 		-webkit-appearance: none;
+	}
+	&::-webkit-outer-spin-button{
+		-webkit-appearance: none;	
+	}
+}
+
+
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+
+.dshow{
+	display:block !important;
+}

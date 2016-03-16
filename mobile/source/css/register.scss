@@ -1,0 +1,285 @@
+@import "../assets/sass/variable.scss";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reg-wrap {
+    color: #666;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: 20px;
+}
+
+.reg-wrap .reg-tips {
+    padding: 30px 15px;
+    font-size: 12px;
+    position: relative;
+}
+
+.reg-tips p {
+    margin-left: 57px;
+    display: block;
+}
+
+.reg-tips p span {
+    display: block;
+    font-size: 20px;
+}
+
+.reg-tips em {
+    color: #cc3333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reg-bd h3 {
+    font-size: 16px;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.reg-bd h3 span {
+    font-size: 12px;
+    color: #999;
+    padding-left: 10px;
+}
+
+.reg-icon {
+    background: url("/img/reg-icon.#{$version}.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -11px;
+    width: 22px;
+    height: 22px;
+}
+
+.r-mobile {
+    background-position: 0 0;
+}
+
+.r-yzm {
+    background-position: -22px 0;
+}
+
+.r-user {
+    background-position: -44px 0;
+}
+
+.r-password {
+    background-position: -66px 0;
+}
+
+.r-gift {
+    background-position: 0 -23px;
+    width: 47px;
+    height: 47px;
+    margin-top: -23px;
+    float: left;
+    left: 15px;
+}
+
+.reg-form {
+    margin-top: 10px;
+    border-top: 1px #cecece solid;
+    border-bottom: 1px #cecece solid;
+    background-color: #fff;
+}
+
+.form-item {
+    padding: 5px 0;
+    position: relative;
+    margin: 0 10px;
+    border-bottom: 1px #cecece solid;
+}
+
+.form-item:last-child {
+    border-bottom: 0;
+}
+
+.form-item .ymt-inp {
+    border: 0;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    padding-left: 38px;
+    width: 100%;
+}
+
+.form-item .inp-mobile {
+    width: 50%;
+}
+
+.reg-ft {
+    padding: 0 10px;
+}
+
+.reg-ft .btn-red {
+    margin-top: 20px;
+}
+
+.reg-ft .tip {
+    color: #999;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.reg-ft .tip input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ymt-btn {
+    text-align: center;
+    border-radius: 3px;
+    border: 0;
+}
+
+.btn-red {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #cc3333;
+}
+
+.btn-gray {
+    height: 40px;
+    background-color: #cecece;
+    width: 96px;
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+
+/*注册成功*/
+.success {
+    overflow: hidden;
+    padding: 40px 10px 20px;
+}
+
+.success .s-photo {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.success .s-info {
+    width: 60%;
+    float: left;
+}
+
+.s-info .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+}
+
+.s-info .tip {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.s-info .btn-red {
+    display: block;
+}
+
+.coupon {
+    border-top: 1px #cecece solid;
+    border-bottom: 1px #cecece solid;
+    background-color: #fff;
+    padding: 10px 10px 0;
+}
+
+.coupon-title {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.coupon-list li {
+    padding: 15px;
+    border-top: 1px #cecece solid;
+    font-size: 12px;
+}
+
+.coupon-list li:first-child {
+    border-top: 0;
+}
+
+.coupon-item {
+    border-radius: 5px;
+    background-color: #ff9673;
+    display: table;
+    height: 80px;
+    width: 195px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coupon-item .ci-type {
+    background-color: #cc3333;
+    width: 35px;
+    padding: 0 5px;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px dotted #fff;
+    vertical-align: middle;
+}
+
+.coupon-item .ci-info {
+    display: table-cell;
+    width: 120px;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.coupon-item .ci-info-1 {
+    font-size: 48px;
+}
+
+.coupon-item .ci-info-1 em {
+    font-size: 18px;
+}
+
+.red-packet .s-info {
+    margin-top: 35px;
+}
+
+.red-packet .ci-time {
+    color: #cc3333;
+    padding-top: 10px;
+}
+
+.red-packet .coupon-title, .red-packet .coupon-list li {
+    padding-left: 0;
+}
+
+/*header 11*/
+.ymt_logo {
+    display: inline-block;
+    width: 252.5px;
+    height: 45px;
+    line-height: 200em;
+    overflow: hidden;
+    background: url(/img/hm_sprites.#{$version}.png) no-repeat;
+    background-size: 253px 122px;
+    background-position: 0 -32px;
+}

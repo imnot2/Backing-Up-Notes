@@ -1,0 +1,315 @@
+﻿/*=======================channel.css===========================*/
+
+/**Modify menu-nav @zhangdong**/
+#sidebar {
+    BORDER-TOP-COLOR: #f09a9b;
+    WIDTH: 207px;
+    BACKGROUND: #fff9ef;
+    HEIGHT: auto;
+    padding: 4px 5px 4px;
+    float: left;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: #f09a9b;
+    border-bottom-color: #f09a9b;
+    border-left-color: #f09a9b;
+}
+#sidebar H3 {
+    PADDING-LEFT: 28px;
+}
+li {
+    list-style: none;
+}
+.sidelist {
+    border-top-color: #900;
+    border-right-color: #900;
+    border-bottom-color: #900;
+    border-left-color: #900;
+}
+.sidenavbaby .sidelist {
+    position: relative;
+    height: 37px;
+}
+.sidenavbaby .sidelist .i-list {
+    left: 212px;
+    top: -5px;
+}
+.sidelist li {
+    border-bottom: 1px solid #FDE7E3;
+    height: 37px;
+    line-height: 37px;
+    float: left;
+    padding-left: 5px;
+    width: 202px;
+}
+#fashionarea1 .sidelist {
+    border-top-color: #900;
+    border-right-color: #900;
+    border-bottom-color: #900;
+    border-left-color: #900;
+}
+#fashionarea1 .sidelist li {
+    border-bottom: 1px solid #FDE7E3;
+    margin: 1px 0 -1px;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 5px;
+    width: 202px;
+    padding-top: 0;
+}
+.sidelist SPAN {
+    Z-INDEX: 2;
+    POSITION: relative;
+    LINE-HEIGHT: 28px;
+    FLOAT: left;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+.sidelist SPAN H3 {
+    Z-INDEX: 2;
+    POSITION: relative;
+    LINE-HEIGHT: 28px;
+    FLOAT: left;
+    HEIGHT: 28px;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+.sidelist SPAN H3 A {
+    WIDTH: auto;
+    DISPLAY: block;
+    FLOAT: left;
+    HEIGHT: auto;
+    COLOR: #cd373d;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none;
+}
+.i-list {
+    Z-INDEX: 1;
+    BORDER-BOTTOM: #f09a9b 2px solid;
+    POSITION: absolute;
+    BORDER-LEFT: #f09a9b 2px solid;
+    PADDING-BOTTOM: 15px;
+    BACKGROUND-COLOR: #ffffff;
+    MARGIN-TOP: -2px;
+    PADDING-LEFT: 20px;
+    WIDTH: 200px;
+    PADDING-RIGHT: 15px;
+    DISPLAY: none;
+    HEIGHT: auto;
+    CLEAR: both;
+    OVERFLOW: hidden;
+    BORDER-TOP: #f09a9b 2px solid;
+    TOP: 0px;
+    BORDER-RIGHT: #f09a9b 2px solid;
+    PADDING-TOP: 2px;
+    LEFT: 205px;
+}
+.i-list UL LI {
+    LIST-STYLE-TYPE: none;
+    FLOAT: left;
+    LIST-STYLE-IMAGE: none;
+    height: 32px;
+}
+.i-list UL LI A {
+    WIDTH: 85px;
+    TEXT-OVERFLOW: ellipsis;
+    DISPLAY: block;
+    COLOR: #000;
+    FONT-SIZE: 12px;
+    OVERFLOW: hidden;
+    TEXT-DECORATION: none;
+    height: 32px;
+    float: left;
+}
+.i-list UL LI A:hover {
+    COLOR: red;
+    TEXT-DECORATION: underline;
+}
+.hovert {
+    Z-INDEX: 5;
+    BORDER-BOTTOM: #f09a9b 2px solid;
+    BORDER-LEFT: #f09a9b 2px solid;
+    BACKGROUND-COLOR: #ffffff;
+    MARGIN-TOP: -2px;
+    WIDTH: 220px;
+    MARGIN-LEFT: -2px;
+    BORDER-TOP: #f09a9b 2px solid;
+    BORDER-RIGHT: #f09a9b 0px solid;
+}
+.sidelist A {
+    PADDING-RIGHT: 8px;
+}
+#sidenav .navline {
+    Z-INDEX: 3;
+    WIDTH: 207px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #fce1de;
+}
+#side_title {
+    float: left;
+    height: 35px;
+    width: 221px;
+}
+
+/**Modify babyfocus @zhangdong**/
+div#MainPromotionBanner {
+    width: 515px;
+    height: 305px;
+    background: #feb900;
+    float: left;
+}
+#MainPromotionBanner #SlidePlayer {
+    position: relative;
+    margin: 0 auto;
+}
+#MainPromotionBanner .Slides {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 305px;
+    overflow: hidden;
+}
+#MainPromotionBanner .Slides li {
+    float: left;
+    width: 515px;
+    height: 305px;
+}
+#MainPromotionBanner .Slides img {
+    border: 0;
+    display: block;
+    width: 515px;
+    height: 305px;
+}
+#MainPromotionBanner .SlideTriggers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 265px;
+    right: 0px;
+    z-index: 10;
+    height: 25px;
+}
+#MainPromotionBanner .SlideTriggers li {
+    float: left;
+    display: inline;
+    color: #F60;
+    text-align: center;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    font-family: Arial;
+    font-size: 0.9em;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 3px 6px;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #F60;
+}
+#MainPromotionBanner .SlideTriggers li.Current {
+    color: #fff;
+    border: 1 solid #F60;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 21px;
+    height: 18px;
+    width: 18px;
+    background-color: #F60;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 0;
+    margin-left: 6px;
+}
+
+/**Modify @zhangdong**/
+#apDiv1 {
+    height: 72px;
+    position: absolute;
+    width: 79px;
+    z-index: 2;
+}
+#apDiv2 {
+    height: 77px;
+    margin-left: 465px;
+    margin-top: 90px;
+    position: absolute;
+    width: 49px;
+    z-index: 3;
+}
+.Cont {
+    border: 0 solid #FF0000;
+    float: left;
+    height: 200px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    padding-top: 0;
+    width: 414px;
+}
+.ScrCont {
+    width: 1e+7px;
+}
+.Cont .pic {
+    display: block;
+    float: left;
+    padding-right: 0;
+    text-align: center;
+    width: 138px;
+}
+* + html .rollBox .Cont .pic {
+    float: left;
+    padding-right: 0;
+    text-align: center;
+    width: 122px;
+}
+.Cont .pic img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+}
+Cont .pic p {
+    color: #505050;
+    line-height: 26px;
+}
+.Cont a:link, .rollBox .Cont a:visited {
+    color: #626466;
+    text-decoration: none;
+}
+.Cont a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+#List1, .rollBox #List2 {
+    float: left;
+}
+#List3, .rollBox #List4 {
+    float: left;
+}
+.show_product {
+    border: 0 solid #FF0000;
+    float: left;
+    padding-top: 10px;
+    width: 480px;
+}
+.show_product .arrow {
+    float: left;
+    padding-top: 50px;
+    width: 28px;
+}
+#apDiv3 {
+    height: 115px;
+    position: inherit;
+    width: 200px;
+    z-index: 1;
+}

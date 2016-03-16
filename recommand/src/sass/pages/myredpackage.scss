@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.p-my-redpackage {
+    background-color: #dedede;
+    .table-redpackage {
+        background-color: $base-bg;
+        width: pxtorem(614);
+        margin: 0  auto;
+        margin-top: pxtorem(10);
+        border: 1px solid $base-bc;
+        border-radius: pxtorem(16);
+        overflow: hidden;
+        .redpge-tit {
+            background-color: #f7f7f7;
+            border-bottom: 1px solid $base-bc;
+        }
+        .redpge-item {
+            padding: pxtorem(12) 1px;
+            font-size: pxtorem(26);
+            border-bottom: 1px solid $base-bc;
+            @extend %clearfix;
+            .redpge-date, .redpge-name, .redpge-amount, .redpge-from {
+                display: inline-block;
+                border-right: 1px solid #eeeeee;
+                text-align: center;
+                height: pxtorem(48);
+                line-height: pxtorem(48);
+                overflow: hidden;
+                float: left;
+            }
+            .redpge-date {
+                width: pxtorem(156);
+            }
+            .redpge-name {
+                width: pxtorem(194);
+            }
+            .redpge-amount {
+                width: pxtorem(108);
+            }
+            .redpge-from {
+                width: pxtorem(145);
+                border-right: none;
+            }
+        }
+        .redpge-bottom {
+            height: pxtorem(106);
+            line-height: pxtorem(106);
+            color: #ff6c6c;
+            font-size: pxtorem(30);
+            padding-left: pxtorem(32);
+            .redpgetotal {
+                float: right;
+                margin-right: pxtorem(34);
+                .redpge-amount {
+                    font-size: pxtorem(72);
+                }
+            }
+        }
+    }
+    .rules-box {
+        width: pxtorem(600);
+        margin: 0 auto;
+        padding-top: pxtorem(24);
+        padding-bottom: pxtorem(40);
+        font-size: pxtorem(26);
+        .iconfont {
+            width: pxtorem(32);
+            height: pxtorem(32);
+            display: inline-block;
+            //vertical-align: middle;
+            margin-top: pxtorem(5);
+        }
+        .btn-view {
+            line-height: pxtorem(42);
+        }
+        .rules-cont {
+            padding: 0 pxtorem(24);
+            display: none;
+            .rules-tip {
+                height: pxtorem(94);
+                line-height: pxtorem(94);
+                font-weight: bold;
+            }
+            .rules-detail {
+                line-height: pxtorem(34);
+            }
+        }
+    }
+}

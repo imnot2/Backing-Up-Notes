@@ -1,0 +1,672 @@
+﻿@charset "UTF-8";
+
+body {background-color: #eee;text-align: center; }
+
+.box{width: 1200px;  margin: 0 auto;}
+
+/** main Start **/
+.main{width: 1180px;margin: 0 auto 60px;
+background:#fff;
+padding:10px 10px;}
+
+.main .title {
+    color: #666;
+    font-size: 28px;
+}
+.container{
+	padding: 10px;
+}
+
+.detal_box{
+	margin-bottom:10px;
+	background:#fff;
+	padding: 10px;
+}
+.detal_box .box_title{
+	text-align: left;
+	color: #666;
+	font-size: 18px;
+	margin: 5px;
+}
+
+/**资金明细**/
+.money-info{
+	height:130px;
+	border-top:2px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+.money-info .area{
+	width: 350px;
+	height:100%;
+}
+.money-info .area dl {
+  border-right:1px dashed #ddd;  
+  padding-top:10px;
+}
+.money-info .bd-left{
+	border-left: 1px dashed #ddd;
+}
+
+.money-info .money-desc{
+	text-align: left;
+	margin-left: 15px;
+	font-size: 14px;
+	color: #999;
+}
+.money-info .area dd{
+	text-align: right;
+	margin: 15px 15px 0 0;
+    white-space: nowrap;
+	
+}
+.intger{
+	font-size:56px;
+	color:#f04c00;
+}
+.money-info .area .decimal{
+	font-size:14px;
+	color:#f04c00;
+}
+.money-info .area .unit{
+	font-size:12px;
+	color:#999;
+}
+.money-info .money-operation{
+	margin: 45px 175px;
+}
+
+.list-section{
+	background: #fff url("../img/bg1.png") no-repeat;
+	padding-top: 39px;
+}
+
+.fund-search{
+    text-align:left;
+	height: 30px;
+	padding: 15px 15px 15px 0;
+	border-bottom:1px solid #ddd;
+}
+.funds-limit{
+	border-bottom:1px solid #ddd;
+	height:40px;
+	line-height:40px;
+}
+.funds-list-table .c-table tr{
+	height:30px;
+}
+
+/*列表工具栏*/
+.list-tools{
+	height: 60px;
+    line-height:60px;
+    overflow:hidden;
+}
+.list-tools > span{
+	margin-left:0;
+}
+.list-tools > span .checkAll{
+    margin-left:10px;
+    margin-right:10px;
+}
+.list-tools .c-pagination{
+    line-height:normal;
+    margin-top:20px;
+}
+.list-tools.bd-top{
+    border-top:0;
+    margin-bottom:-15px;
+}
+/*提现*/
+.withdrawal form{
+	margin-top:20px;
+}
+.withdrawal .balance{
+line-height:60px;
+}
+.withdrawal .balance label{
+vertical-align:text-top;
+}
+.withdrawal .islink{font-size:12px;font-weight:normal;margin-left:10px;color:#999}
+
+
+.table-title{
+margin:10px;
+font-size:16;
+color:#999;
+}
+/*资金快周转*/
+.money-info .help{
+margin-left: 2px;
+font-size: 14px;
+vertical-align: top;
+text-decoration:none;
+}
+.biz-pwd .btn-sub{
+margin-left:150px}
+
+.text-section{
+	width: 96%;
+	background-color:#eee;
+	padding: 2%;
+	overflow-y: scroll;
+	text-align: left;
+	margin-bottom:10px;
+    color:#999;
+    line-height:1.8em;
+}
+/*合同描述*/
+.clause-desc{
+width:100%;
+color:#999;
+ line-height:30px;
+    padding:5px 0;
+}
+.clause-desc label{
+    width:160px;
+    float:left;
+    text-align:right;
+}
+
+.clause-print{
+text-align: center;
+width: 100%;
+margin-bottom: 20px;
+}
+/*账号信息*/
+.account-info{
+	font-size: 14px;
+	margin: 10px 0;
+	display: block;
+}
+
+.account-info i{
+	color: #f04c00;
+	margin: 0 5px;
+}
+/*验证密码*/
+.valid-pwd dt{
+	width: 90px;
+	text-align: right;
+	float: left;
+}
+.valid-pwd dd{
+	margin: 5px;
+}
+.vlid-img{
+	width: 77px;
+	height: 28px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+/*资金快周转信息*/
+.funds-small dt{
+	font-size: 14px;
+	margin: 5px 0;
+}
+.funds-small dd{
+	width: 700px;
+	word-wrap: break-word; 
+	word-break: normal;
+    margin-bottom:20px 
+}
+
+/*资金信息*/
+.funds-msg{padding:20px 10px;}
+
+.funds-msg dl{
+	margin-left:15px; 
+	color: #999;
+}
+.funds-msg .img,
+.funds-msg .msg{
+	float: left;
+}
+.funds-msg .qq-contact{
+	width: 92px;
+	height: 22px;
+	display: inline-block;
+	background: url("../img/img.png") -1px -98px;
+	vertical-align: bottom;
+}
+.funds-msg .msg-suc .img,
+.funds-msg .msg-fail .img,
+.funds-msg .msg-warn .img{
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+}
+
+.funds-msg .msg-suc .img{
+	background: url("../img/img.png") -40px -59px;	
+}
+.funds-msg .msg-fail .img{
+	background: url("../img/img.png") -40px -19px;
+}
+.funds-msg .msg-warn .img{
+	background: url("../img/img.png") -1px -59px;
+}
+
+
+.funds-msg .msg-warn .title{
+	color: #ff7f00;
+	font-size: 18px;
+}
+.funds-msg .msg-fail .title{
+	color: #ff0000;
+	font-size: 18px;
+}
+
+.funds-msg dl dt{
+    padding-bottom:8px;
+}
+.funds-msg dl p{
+    line-height:25px
+}
+/*查看收费明细**/
+.chargesDetail{
+    display:none;
+}
+
+.chargesDetail em{
+	display: block;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+	border: 6px solid #676767;
+	border-color: #676767 #fff;
+	border-width: 0 6px 6px 6px;
+	position: absolute;
+	left: 40px;
+}
+.chargesDetail .border{
+	border: 2px solid #666;
+	position: absolute;
+	background: #fff;
+	text-align: left;
+	top: 24px;
+	width: 380px;
+	padding: 5px;
+}
+.chargesDetail .list thead{
+	background: #ddd;
+}
+.chargesDetail .list th,
+.chargesDetail .list td{
+	padding: 5px;
+}
+
+.chargesDetail .list tbody tr{
+	height: 15px;
+	line-height: 15px;
+}
+.readCharges {
+    margin-left:150px;
+    display:inline-block;
+}
+.form-color a{
+    color:#666
+}
+.form-color a:hover{
+    color:#333
+}
+.clause-desc .nullline li{
+    line-height:18px;
+}
+
+.clause-desc dd,.clause-desc td{
+    padding:8px 0;
+}
+
+.payBail_prev{line-height:40px;display:inline-block;}
+
+.opacityFile{
+    width: 135px;
+    height: 27px;
+    position: absolute;
+    top: -8px;
+    left: 1px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+    font-size:6em\9;
+    +top:32px;
+    *width: 250px;
+}
+.funds-title .deputy{
+    color: #f04c00;
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 80%;
+    padding:5px 0 10px;
+}
+/*充值*/
+.fund-tips {
+    font-size:12px;
+    color:#999;
+}
+.withdrawal form .label-title {
+    margin-bottom:5px;
+}
+.withdrawal form .c-input-text {
+    width:120px;
+}
+.SellerInfo-form {
+    padding-bottom:200px;
+}
+.SellerInfo-form .c-btn-primary {
+    margin-top:15px;
+    padding:0 25px;
+    line-height:normal;
+}
+/*支付方式*/
+.bankarea {
+    clear: both;
+    padding-top: 15px;
+}
+.bankarea .fl {
+    margin-top: 14px;
+    text-align: left;
+    min-width: 130px;
+}
+.bankarea .hd {
+    margin: 16px 0 10px 12px;
+}
+.bankarea:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.bankarea {
+    display: block;
+}
+.node .l, .node .r {
+    display: inline-block;
+    vertical-align: middle;
+}
+.node .l {
+    margin-right: 5px;
+}
+.node .t {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.trigger {
+    margin: 10px 0 0 159px;
+    text-align:left;
+}
+.spring-trigger, .spring-trigger-hover {
+    background-color: #fffdf0;
+    border: 1px dashed #f9d5a6;
+    color: #f04e00;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 116px;
+}
+.spring-trigger .arrow {
+    background: url("/content/img/sprites/mmt_settlement.png") repeat scroll -173px -75px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 9px;
+    margin: 14px 5px 13px 0;
+    vertical-align: middle;
+    width: 12px;
+}
+.spring-trigger-hover .arrow {
+    transform: rotate(180deg);
+    transition: all 0.1s ease-in-out 0s;
+}
+.spring-trigger .txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+.spring-content {
+    height: 90px;
+    overflow: hidden;
+}
+.biz-pwd {
+    text-align:left;
+}
+.biz-pwd .c-tabs {
+    background: url("../img/bg1.png") no-repeat scroll 0 0 #fff;
+    margin-top: 15px;
+    padding-top: 39px;
+}
+.biz-pwd .bd {
+    padding:0 10px;
+}
+.biz-pwd .mod {
+    margin:15px 0;  
+}
+.biz-pwd .mod span {
+    color:#666;
+}
+.biz-pwd .mod em {
+    color:#f04c00;
+    font-size:18px;
+}
+.biz-pwd .tab-bd {
+    border-bottom:1px dotted #ddd;
+    padding-bottom:20px;
+}
+.biz-pwd .bt {
+    margin:40px 0 30px 180px;
+}
+.tab-bd .item {
+    display: none;
+}
+.settle_3 .current {
+    display: block;
+}
+.tab-bd .current {
+    display: block;
+}
+.wid90 {
+    width: 90px;
+}
+.zhifubao {
+    background-image: url("/content/img/sprites/bank.png");
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+    height: 34px;
+    text-align: center;
+}
+.zhifubao_sm {
+    background-image: url("/content/img/sprites/zfb_sm.png");
+    border: 0 solid #e2e2e2;
+    display: inline-block;
+    height: 39px;
+    text-align: center;
+    width: 150px;
+}
+.payment {
+    float: left;
+    height: 38px;
+    margin: 5px 0 5px 10px;
+    overflow: hidden;
+    width:175px;
+}
+.pay_img {
+    background-image: url("/content/img/sprites/combo.png");
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    text-align: center;
+    width: 126px;
+}
+.ABC {
+    background-position: 0 0;
+}
+.BJBANK {
+    background-position: 0 -36px;
+}
+.BJRCB {
+    background-position: 0 -72px;
+}
+.BOC {
+    background-position: 0 -108px;
+}
+.CCB {
+    background-position: 0 -144px;
+}
+.CEB {
+    background-position: 0 -180px;
+}
+.CIB {
+    background-position: 0 -216px;
+}
+.CITIC {
+    background-position: 0 -252px;
+}
+.CMB {
+    background-position: 0 -288px;
+}
+.CMBC {
+    background-position: 0 -324px;
+}
+.COMM {
+    background-position: 0 -360px;
+}
+.FDB {
+    background-position: 0 -396px;
+}
+.GDB {
+    background-position: 0 -432px;
+}
+.HZCB {
+    background-position: 0 -468px;
+}
+.ICBC {
+    background-position: 0 -504px;
+}
+.NBBANK {
+    background-position: 0 -540px;
+}
+.PSBC {
+    background-position: 0 -576px;
+}
+.SDB {
+    background-position: 0 -612px;
+}
+.SHBANK {
+    background-position: 0 -648px;
+}
+.SHRCB {
+    background-position: 0 -684px;
+}
+.SPABANK {
+    background-position: 0 -720px;
+}
+.SPDB {
+    background-position: 0 -756px;
+}
+.WZCB {
+    background-position: 0 -792px;
+}
+.HXBANK {
+    background-position: 0 -826px;
+}
+.HKBEA {
+    background-position: 0 -858px;
+}
+.NXBANK {
+    background-position: 0 -892px;
+}
+.TCCB {
+    background-position: 0 -932px;
+}
+.JSBANK {
+    background-position: 0 -972px;
+}
+.DLB {
+    background-position: 0 -1016px;
+}
+.BHB {
+    background-position: 0 -1058px;
+}
+.BOD {
+    background-position: 0 -1098px;
+}
+.NJCB {
+    background-position: 0 -1136px;
+}
+.HSBANK {
+    background-position: 0 -1170px;
+}
+/*完成充值的弹窗*/
+.pay_recharge .overbtn {
+    line-height:30px;
+}
+.pay_recharge .bottom_item {
+    margin:20px 0;
+}
+.pay_recharge .dec {
+    font-size:14px;
+}
+/*充值成功*/
+.success-wrap {
+    text-align:left;
+    padding:40px;
+    min-height:500px;
+}
+.success-wrap .title {
+    color:#59b200;
+    font-size:18px;
+}
+.order-success {
+    background-position:-2px -21px;
+    width:48px;
+    height:48px;
+    margin-right:15px;
+}
+.success-wrap .success-ft {
+    margin-left:63px;
+    color:#999;
+    margin-top:10px;
+}
+.success-wrap .success-ft .c-btn {
+    line-height:30px;
+    margin-top:10px;  
+}
+.blue {
+    color:#2277dd;
+}
+.blue:hover {
+    text-decoration:underline
+}
+.main .biz-pwd .briefly {
+    color:#999;
+}
+#logoEdit .shut {
+    background:url("../img/order-icon.png") no-repeat -135px -18px;
+    width:12px;
+    height:12px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+}
+.c-table a.blue {
+    color:#2277dd;
+}
+#divcanuse {
+    margin-top:20px;
+}
+#buttonTurnover {
+    margin-left:5px;
+}
+.funds-detail .ft-c-gray b {
+    color:#f04c00;
+}

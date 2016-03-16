@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+
+@import "../museum/sass/_common";
+
+/***/
+.article {
+    width: 838px;
+    float: left;
+    border: 1px solid #eee;
+    //padding: 10px;
+    position: relative;
+}
+
+/*文章列表*/
+.article-list {
+    .thumbnail {
+        float: left;
+        img {
+            margin: 10px;
+        }
+    }
+    .brief {
+        height: 55px;
+        word-break: break-all;
+        overflow: hidden;
+    }
+    .small-row {
+        margin: 5px 0;
+    }
+    .article-item {
+        height: 129px;
+        width: 670px;
+        float: left;
+        margin: 0 10px;
+        border-bottom: 1px dashed #ddd;
+        color: #666;
+    }
+    .end {
+        border: none;
+    }
+    .header {
+        .flag {
+            margin-right: 5px;
+        }
+        .target {
+            //background: url(../img/assemble.png) no-repeat;
+            background: #cc3333;
+            color: #fff;
+            //width: 37px;
+            padding: 0 3px;
+            font-size: 12px;
+            display: inline-block;
+            line-height: 16px;
+        }
+        .edge {
+            background: url(#{$imgpath}/assemble.png) -77px -80px;
+            display: inline-block;
+            height: 16px;
+            width: 9px;
+            margin: -3px -4px;
+            *margin: -5px -6px;
+        }
+        .title {
+            font-size: 16px;
+            color: #1d398d;
+            font-weight: bold;
+        }
+    }
+    .time-row {
+        margin: 11px 0;
+    }
+    .time {
+        color: #999;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/*推荐*/
+.recommend {
+    width: 338px;
+    float: right;
+    border: 1px solid #eee;
+    padding: 10px 0;
+    a {
+        color: #666;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .subtitle {
+        font-weight: bold;
+    }
+    ol {
+        margin: 0 10px;
+    }
+    li {
+        margin: 10px 0;
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 10px;
+        .no {
+            float: left;
+            height: 36px;
+            width: 25px;
+        }
+        .article-title {
+            float: left;
+            width: 290px;
+        }
+        i {
+            border: 1px solid #ddd;
+            color: #1d398d;
+            background: #fff;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+        }
+        .top-three {
+            color: #fff;
+            background: #1d398d;
+            border: none;
+        }
+    }
+    .end {
+        border-bottom: none;
+    }
+    /*投稿*/
+    .submission {
+        background: #cc3333;
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+        width: 320px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        white-space: nowrap;
+        border-radius: 3px;
+        margin: 0 auto;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

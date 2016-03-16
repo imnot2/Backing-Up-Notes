@@ -1,0 +1,41 @@
+﻿/*=======================cart.css===========================*/
+h1 {
+	padding-left: 40px;
+	padding-top: 3px;
+	background: transparent url(http://img.ymatou.com/portal/images/Cart.png) no-repeat scroll left top;
+}
+.odtable {
+	width: 100%;
+}
+.odtable .cctbox input {
+	width: 40px;
+}
+.totial {
+	width: 80%;
+	margin-top: 10px;
+}
+.bbnt {
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	float: right;
+}
+.buynow {
+	background: transparent url(http://img.ymatou.com/portal/images/qjs.png) no-repeat scroll -2px -2px;
+	margin-left: 10px;
+}
+.buynow:hover {
+	background-position: -147px -2px;
+}
+.buyreturn {
+	background: transparent url(http://img.ymatou.com/portal/images/jxgw.png) no-repeat scroll -2px -2px;
+	margin-left: 10px;
+}
+.buyreturn:hover {
+	background-position: -147px -2px;
+}
+.price {
+	font-size: 18px;
+	color: #B52745;
+	font-weight: 700;
+}

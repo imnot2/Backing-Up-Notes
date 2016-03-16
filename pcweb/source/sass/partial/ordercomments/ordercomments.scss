@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+//色板
+@import "../../utils/colors";
+
+//公共的一些组件
+@import "../../utils/classes";
+
+//placeholder
+@import "../../utils/smart-input";
+
+$comment-stars: sprite-map("ordercomments/icons/*.png", $spacing: 36px);
+
+//输出placeholder样式
+@include smart-input;
+
+.wrapper {
+    .order-comments {
+        width: 1000px;
+        min-width: 1000px;
+        @include horizontal-center;
+    }
+}
+
+.err-font {
+    color: $R2;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.darkred {
+    color: $R2;
+}
+
+.link-blue {
+    color: $L1;
+}
+
+.comment-error {
+    color: $R2;
+    padding-left: 20px;
+    height: 16px;
+    line-height: 16px;
+    background: sprite($comment-stars, warning, 0, 2px) no-repeat;
+    visibility: hidden;
+    &.show {
+        visibility: visible;
+    }
+}
+
+.title-bar {
+    height: 66px;
+    line-height: 66px;
+    font-size: 20px;
+}
+
+.order-box {
+    border: 4px solid $Ged;
+    background-color: $Gf9;
+    padding: 0 26px 26px 26px;
+    @include clearfix;
+    .order-title {
+        padding: 12px 0;
+        @include clearfix;
+        .seller-box {
+            width: 460px;
+            .order-info {
+                line-height: 54px;
+                .seller-name {
+                    color: $G6;
+                }
+                .order-detail {
+                    color: $G9;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .privilege-box {
+            height: 70px;
+            background: sprite($comment-stars, line) no-repeat;
+            padding-top: 20px;
+            padding-left: 48px;
+            font-size: 14px;
+            .privilege-card {
+                width: 110px;
+                height: 60px;
+                line-height: 60px;
+                cursor: pointer;
+                @include inline;
+                vertical-align: middle;
+                border-radius: 4px;
+                background-color: $R3;
+                color: $white;
+                text-align: center;
+                box-shadow: 0px 3px 3px $Gc;
+            }
+            .privilege-tip {
+                @include inline;
+                vertical-align: middle;
+                padding-left: 28px;
+            }
+        }
+    }
+    .order-content {}
+}
+
+.submit-box {
+    text-align: center;
+    .submit-button {
+        @include inline;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 46px;
+        color: $white;
+        background-color: $R2;
+        border-bottom: 1px solid $Gd;
+    }
+}
+
+//评分星星
+.opration-stars {
+    vertical-align: middle;
+    @include inline;
+    margin-right: 16px;
+    .opration-lable, .operation-stars, .comment-error {
+        vertical-align: middle;
+    }
+    .opration-lable {
+        font-size: 16px;
+    }
+    .operation-stars {
+        height: 36px;
+        @include inline;
+        .star-item {
+            width: 24px;
+            height: 36px;
+            @include inline;
+            background: sprite($comment-stars, star_gray, 0, 4px) no-repeat;
+            cursor: pointer;
+            &.star-active {
+                background: sprite($comment-stars, star_red, 0, 4px) no-repeat;
+            }
+        }
+    }
+}
+
+//商品评分
+.product-comment {
+    padding: 30px 0;
+    border-top: 1px dashed $Gdb;
+    .product-title {
+        font-size: 14px;
+    }
+    .product-img {
+        width: 98px;
+        height: 98px;
+        border: 1px solid $Gdb;
+        overflow: hidden;
+        float: left;
+    }
+    .product-info {
+        padding-left: 126px;
+        .product-title {}
+        .comment-box {
+            margin-top: 8px;
+            .opration-lable {
+                font-size: 12px;
+            }
+            .opration-stars {
+                padding: 0 14px;
+                background-color: $lightyellow;
+                border: 1px solid $deepyellow;
+            }
+        }
+    }
+    .comment-desc {
+        margin-top: 8px;
+        textarea {
+            width: 648px;
+            height: 88px;
+            &.err {
+                border: 1px solid $R2;
+            }
+            &.focus {
+                border: 1px solid $Gcb;
+            }
+        }
+    }
+}
+
+.deepRed {
+    color: $R2;
+}
+
+//小弹窗
+.small-layer {
+    box-shadow: 0px 0px 8px $Ge0;
+    width: 200px;
+    border: 1px solid $Ge0;
+    padding: 10px 34px;
+    vertical-align: middle;
+    .icon-success {
+        font-size: 60px;
+        vertical-align: middle;
+        color: $okay;
+    }
+    .layer-content {
+        padding-left: 10px;
+        vertical-align: middle;
+        font-size: 14px;
+        color: $G6;
+        text-align: left;
+        @include inline;
+    }
+}

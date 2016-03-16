@@ -1,0 +1,49 @@
+﻿@import "variables";
+@import "mixins";
+
+.c-pagination{
+	color:#999;
+	white-space: nowrap;
+}
+.c-pagination .pagination-page{
+	display:inline-block;
+}
+
+.c-pagination li a{
+	display:inline;
+	padding: 6px 10px;
+	border:1px solid #ddd;
+}
+.c-pagination .forward{
+	width:35px;
+	height:28px;line-height:28px;padding: 0 5px;border:1px solid #ccc;
+	background:linear-gradient(to bottom, #fff,#efefef,#e2e2e2);
+	margin:0 4px;
+	color: #999;
+    vertical-align: baseline;
+}
+.c-pagination li{
+	float:left;
+	margin:0 2px;
+}
+/*active*/
+.c-pagination li a:hover,.c-pagination li .active{
+	padding: 5px 9px;
+	border:2px solid #1D398D;
+	color:#1D398D;
+}
+/*disabled*/
+.c-pagination .disabled{
+	color: #eee;
+	border: 1px solid;
+	cursor: auto;
+}
+.c-pagination li .disabled:hover,
+.c-pagination li .active:hover{
+	cursor: auto;
+}
+.c-pagination li .disabled:hover {
+	padding: 6px 10px;
+	border:1px solid #ddd;
+	color: #eee;
+}

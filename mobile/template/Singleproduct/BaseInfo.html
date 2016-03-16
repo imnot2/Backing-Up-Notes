@@ -1,0 +1,101 @@
+﻿<div temp-data="data" id="productBaseInfo">
+    <section class="mod-product-show show-img-full mod-scroll" id="mod-scroll">
+        <div class="panel">
+            <ul>
+                <for e="list in data.Pictures">
+                <li class="item">
+                    <img src="${list}" class="img" title="${data.Title}" alt="" />
+                </li>
+                </for>
+            </ul>
+        </div>
+        <ul class="trigger">
+            <for e="list in data.Pictures">
+                <if e="listIndex==0">
+                    <li class="item current"></li>
+                </if>
+                <else>
+                    <li class="item"></li>
+                </else>
+            </for>
+        </ul>
+        
+    </section>
+    <section class="area product-title">
+        <div class="info">
+            <h2 class="h2">
+                <span class="lk-title-16">${data.Title}</span>
+            </h2>
+            <div class="dec">
+                <span class="mt-price-20">
+                    <i>&yen;</i><b id="productPrice">${data.Price}</b>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="area product-info">
+        <ul>
+            <li class="item">
+                <label>运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</label>
+                <span id="transfertemplate"></span>
+            </li>
+            <li class="item" id="expressPrice"></li>
+            <li class="item"><label>配送方式：</label><span class="postmethod">
+                <if e="data.CatalogStatu==2">
+                    <i class="icon-haiwaizy"></i>
+                </if>
+                <if e="data.CatalogStatu==3">
+                    <i class="icon-huhangzy"></i>
+                </if>${data.CatalogStatuText}</span><span class="fr blue pointer" id="checkTransferDetail" ></span></li>
+            <li class="item"><label>海关关税：</label><span class="customs"><if e="data.TariffType==1">买家</if><else>卖家</else>承担关税</span></li>
+            <li class="item"><label>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</label><span class="brand">${data.BrandName}</span></li>
+            <li class="item"><label>库存所在地：</label><span class="storeaddress">${data.StorePlace}</span></li>
+        </ul>
+    </section>
+</div>
+<section class="area specontent none" id="Specification"></section>
+<section class="area product-action none" id="productAction">
+    <div class="item">
+        <label>购买数量：</label><span class="mod-number" id="widget-amount"><i class="del">-</i><input type="text" value="1" id="txtNum" /><i class="add">+</i></span>
+    </div>
+    <div class="item amount">
+        (剩余库存：<span id="productStockNumber"></span>件)&nbsp;&nbsp;<span id="limitNumNumber"></span>
+    </div>
+    <div class="item tc">
+        <span class="btn-a pointer" id="submitToBuy">立即购买</span><span class="btn-c pointer" id="addShoppingCart">加入购物车</span>
+    </div>
+</section>
+<section class="area bar-a tc">
+    <a class="title" id="moreProductDetail" href="Description">查看更多商品详情</a>
+</section>
+<section class="area bar-a tc" >
+    <a class="title" id="moreProductCredits" href="Assessment">查看更多商品评价</a>
+</section>
+<section class="area product-info" id="sellerInfo"></section>
+<section class="area product-action">
+    <div class="item tc">
+        <a class="btn-d" id="collect-shop" href="javascript:void 0">收藏商品</a>
+    </div>
+</section>
+<section class="area product-share">
+    <h2 class="item tc">
+        分享到
+    </h2>
+    <div class="item tc">
+        <a  class="icon-weibo" href="javascript:window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&rcontent=','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void(0)"></a><a class="icon-qzone" href="javascript:(function(){window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+ encodeURIComponent(location.href)+ '&title='+encodeURIComponent(document.title),'_blank');})()"></a><a class="icon-kaixin" href="javascript:window.open('http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent(document.title)+'&rurl='+encodeURIComponent(document.location.href)+'&rcontent=');void(0)"></a><a class="icon-renren" href="javascript:window.open('http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title));void(0)"></a>
+    </div>
+</section>
+
+<div class="floatbox none" id="TransferDetail">
+    <div class="floatbox-backdrop"></div>
+    <div class="floatbox-content">
+        <!--运费详情-->
+       <div class="cost-detail">
+            <div class="c-d-title"><span class="fl">运费详情</span><span class="icon-font-moon fr">&#xe602;</span></div>
+            <div class="c-d-content" id="transferTemplateDetail"></div>
+       </div>
+
+       <!--<div class="ui-msg">消息提示</div>-->
+       <!--<div class="ui-msg-err">错误提示</div>-->
+    </div>
+</div>

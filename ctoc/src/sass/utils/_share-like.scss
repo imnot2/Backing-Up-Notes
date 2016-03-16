@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import "lib/classes";
+
+body {
+    background-color: #f4f4f4;
+}
+
+.share-icon {
+    background-image: url("/images/sprites/share.png");
+    @include inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+}
+
+.share-wrap {
+    height: 32px;
+    overflow: hidden;
+    background-color: $grey13;
+    border-radius: 3px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    z-index: 9;
+
+    .i-weibo {
+        background-position: -1px 0;
+        &:hover {
+            background-position: -1px -24px;
+        }
+    }
+    .i-weixin {
+        background-position: -25px 0;
+        &:hover {
+            background-position: -25px -24px;
+        }
+    }
+    .share-type {
+        float: left;
+        width: 87px;
+        height: 22px;
+        margin: 5px 0;
+        display: none;
+        span {
+            float: left;
+            padding: 0 10px;
+        }
+        .weibo {
+            border-right: 1px #c5c5c5 solid;
+        }
+        .weixin {
+            border-left: 1px $white solid;
+        }
+    }
+    .share-btn {
+        width: 55px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        border: 1px $grey13 solid;
+        text-align: center;
+        //border-radius: 3px;
+        background-color: $white;
+        color: $grey40;
+        cursor: pointer;
+    }
+    &.share-light {
+        background-color: $white;
+        // height: 30px;
+        // border: 1px $grey13 solid;
+        .share-type {
+            padding: 5px 0;
+            height: 20px;
+            border: 1px $grey13 solid;
+            border-right: 0;
+            border-radius: 3px 0 0 3px;
+            margin: 0;
+        }
+        .weibo {
+            border-right: 1px #f8d4d4 solid;
+        }
+        .share-btn {
+            background-color: $highRad;
+            border: 1px $highRad solid;
+            color: $white;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .i-weibo {
+            background-position: -97px -2px;
+            &:hover {
+                background-position: -1px -26px;
+            }
+        }
+        .i-weixin {
+            background-position: -121px -2px;
+            &:hover {
+                background-position: -25px -26px;
+            }
+        }
+    }
+}
+
+.like-wrap {
+    border: 1px $grey13 solid;
+    background-color: $white;
+    border-radius: 3px;
+    height: 22px;
+    padding: 4px 0;
+    float: right;
+    margin-left: 5px;
+    @include clearfix;
+    span {
+        padding: 0 6px;
+        float: left;
+        &.active {
+            .i-like-b {
+                background-position: -144px -2px;
+            }
+        }
+    }
+    em {
+        float: left;
+        font-size: 14px;
+        color: $grey40;
+        padding: 0 9px;
+        border-left: 1px $grey13 solid;
+    }
+    .i-like-b {
+        background-position: -48px -2px;
+        height: 22px;
+        cursor: pointer;
+    }
+}
+
+/*
+    @New Share 
+    @Html Format
+    <div class="m-share">
+        <div class="ms-name">分享</div>
+        <ol class="ms-li">
+            <li class="msl-weibo J-share">
+                <i class="img-share img-share-weibo"></i>
+            </li>
+            <li class="msl-wechat J-share">
+                <i class="img-share img-share-wechat"></i>
+            </li>
+        </ol>
+    </div>
+*/
+.m-share{
+    display: inline-block;
+    height: 26px;
+    padding:2px 3px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    vertical-align: middle;
+
+    .ms-name,.ms-li{
+        display: block;
+
+    }
+    .ms-name{
+        float: left;
+        width: 44px;
+        height: 26px;
+        line-height:26px;
+        text-align:center;
+        border-right: 1px solid #ddd;
+        color:#666;
+        margin-right: 5px;
+    }
+    .ms-li{
+        display: block;
+        height: 26px;
+        float: left;
+
+        li{
+            float:left;
+            display: block;
+            height: 26px;
+            margin: 0 5px;
+            cursor: pointer;
+            text-align: center;
+
+            .img-icon{
+                font-size:22px;
+            }
+            &:hover .img-icon{
+                color:#DD3333;
+            }
+        }
+    }
+}
+.m-share-r{
+    .ms-name{
+        float: right;
+        border:0;
+        border-left: 1px solid #ddd;
+        margin-right: 0;
+        margin-left:5px;
+    }
+
+}
+
+

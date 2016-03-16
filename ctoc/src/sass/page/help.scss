@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+@import "lib/classes";
+body {
+    background-color:$grayf4;
+}
+.seller-wrap {
+    .inner {
+        width: $docWidth;
+        margin: 0 auto;
+        @include clearfix;
+    }
+}
+.seller-side {
+    border-radius: 3px;
+    border: 1px $grey13 solid;
+    width: 280px;
+    background-color:$white;
+    float: left;
+    .side-wrap {
+        border-top: 4px $highRad solid;
+        border-radius: 3px 3px 0 0;
+    }
+    .help-title{
+        text-align:center;
+        font-size:36px;
+        color:$grey60;
+        padding-top:20px;
+        font-weight:500;
+        font-family: Arial;
+    }
+}
+.user-bd {
+    margin-top: 20px;
+    .nav-inline {
+        overflow: hidden;
+        margin-left: 15px;
+        a {
+            float: left;
+            color: $gray9a;
+            padding: 0 8px;
+            border-left: 1px $grey60 solid;
+            margin-left: -1px;
+        }
+        .num {
+            color: $gray65;
+            padding-left: 7px;
+        }
+    }
+    .nav {
+        border-top: 1px $grey10 solid;
+        padding-bottom: 150px;
+        font-size: 14px;
+        li {
+            border-bottom: 1px $grey10 solid;
+            height: 44px;
+            line-height: 44px;
+        }
+        .current {
+            a {
+                background-color: $highRad;
+                color: $white;
+            }
+        }
+        a {
+            display: block;
+            padding-left: 65px;
+            color: $grey60;
+            &:hover {
+                background-color: $highRad;
+                color: $white;
+            }
+        }
+    }
+}
+.seller-content {
+    width: 894px;
+    float: right;
+    .main-title {
+        font-size: 18px;
+        font-family: $font-yahei;
+        color: $grey60;
+        margin-bottom: 10px;
+    }
+}
+.help-wrap{
+    border-radius: 3px;
+    border: 1px $grey13 solid;
+    background-color:$white;
+    font-size:16px;
+    padding:0 40px 40px;
+    dl{
+        padding:20px 0 10px;
+    }
+    dt{
+        color:$highRad;
+        font-weight:700;
+    }
+    dd{
+        padding-top:10px;
+    }
+    li{
+        color:$black;
+        line-height:30px;
+    }
+}

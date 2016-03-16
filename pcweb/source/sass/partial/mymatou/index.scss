@@ -1,0 +1,133 @@
+﻿/*=======================index.css===========================*/
+.mt-top {
+	margin-bottom: 20px;
+}
+.mt-top .left {
+	float: left;
+	text-align: center;
+	width: 124px;
+	height: 124px;
+	position: relative;
+}
+.mt-top .radius {
+	width: 120px;
+	height: 120px;
+	vertical-align: middle;
+	line-height: 120px;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #f04e00;
+	border-radius: 100px;
+}
+.mt-top i {
+	height: 100%;
+	width: 0;
+}
+.mt-top .edit {
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#aa000000', endColorStr='#aa000000', gradientType=0);
+	background-color: rgba(0, 0, 0, 0.5);
+	display: block;
+	height: 36px;
+	width: 100%;
+	line-height: 36px;
+	position: absolute;
+	bottom: -2px;
+	color: #fff;
+}
+.mt-top .right {
+	padding-left: 135px;
+}
+.mt-top .level {
+	padding: 10px;
+	border-bottom: 1px solid #efefef;
+	line-height: 18px;
+}
+.mt-top .state {
+	display: inline-block;
+	background-color: #FAF4EA;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.mt-top .fr {
+	float: right;
+}
+.mt-top .tit {
+	font-size: 14px;
+	padding: 0 5px;
+}
+.mt-top .progress {
+	margin: 5px 10px 0 10px;
+}
+.mt-top .mr {
+	margin-right: 40px;
+}
+.mt-top .f16 {
+	font-size: 16px;
+}
+.mt-top .gray {
+	color: #999;
+}
+.mt-top .member {
+	margin: 0 0 5px;
+}
+.mt-top .last {
+	background-color: #F5F7F8;
+	margin-top: 1px;
+}
+.mt-top .split {
+	display: inline-block;
+	padding: 0 5px;
+}
+.split {
+	overflow: hidden;
+	margin-right: -2px;
+	font-size: 0;
+}
+.split a.yel {
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 10px;
+	vertical-align: middle;
+	height: 16px;
+	line-height: 16px;
+	border-right: 1px solid #EB5E00;
+}
+.btn-2, .btn-3 {
+	background-color: #F29722;
+	padding: 0 10px;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	border-radius: 5px;
+	border: 1px solid #efefef;
+	margin: 0 5px;
+	font-family: "\5fae\8f6f\96c5\9ed1";
+}
+.btn-3 {
+	background-color: #f04e00;
+}
+.somedec {
+	padding: 10px 0;
+	text-align: right;
+}
+.mt-rule {
+	padding: 10px;
+	border: 1px solid #eee;
+	line-height: 24px;
+	background-color: #f5f5f5;
+	margin-bottom: 15px;
+}
+.tooltip-3 {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: auto;
+	font-size: 12px;
+	letter-spacing: 0;
+	display: none;
+	white-space: normal;
+}
+.tooltip-3 .con {
+	width: 290px;
+}

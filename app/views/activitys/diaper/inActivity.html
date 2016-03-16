@@ -1,0 +1,69 @@
+<%=include commons/header.html%>
+<!-- 头部 -->
+	<div class="header">
+		<div class="headerCont clear">
+			<div class="header_img">
+				<em></em>
+			</div>
+			<div class="header_info tuansuccess">
+				<p class="header_tomorrow"><strong><%=groupInfo.Group.Creator%></strong>&nbsp;开启的团购</p>
+				<p class="header_huore">团购正在火热进行中</p>
+				<p class="header_time" <%=groupInfo.Group.LeftTime %>>
+						<em class="img img-clock"></em>剩余 : <span data-time="<%=groupInfo.Group.LeftTime%>"></span>
+				</p>
+				<a href="/forYmatouApp/redirect?url=s%3F__biz%3DMjM5OTMwODQyMA%3D%3D%26mid%3D205494894%26idx%3D1%26sn%3Dc1e5ae7fc69f8237316fb6728bc10ac4%23rd&needJumpFlag=1&title=洋码头&hostname=mp.weixin.qq.com" class="flag"></a>
+			</div>
+		</div>
+	</div>
+	<!-- 中间区域 -->
+	<div class="k1_center inActivity-wrap">
+		<figure class="k1_tugouBg">
+			<img src="<%=staticfileurl('/images/activitys/diaper/product-info.png')%>" alt="商品信息">
+		</figure>
+		
+		<p class="k1_tuanCanyu" >
+		<%if(groupInfo.Status == 1){%>	该团购目前参与人数<em><%=groupInfo.Group.MemberNum%></em>人 ， 正在向6人成团冲刺中！
+		<%}%>
+		<%if(groupInfo.Status == 2){%>	恭喜您，组团成功，可以进行购买啦
+		<%}%>
+		<%if(groupInfo.Status == 3){%>	抱歉，您访问的团购已满员，您可以自己发起团购
+		<%}%>
+		</p>
+		
+		<div class="canyuList">
+			<div class="canyuCont">
+				<ul class="canyuUl clear" >
+					<% for( var i = 0 ; i < 6 ; i++ ){%>
+						<li <%=(i<groupInfo.Group.MemberNum)? 'class=active' :''%>>
+								<span class="stick"></span>	
+						</li>
+				    <%}%>
+					<li class="big6 <%=(groupInfo.Status==2 || groupInfo.Status==3) ? 'fit-success' : ''%>">6人<br>成团</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tips6" >
+			<span class="tips6ren">
+			<%= (groupInfo.Status == 1)?
+			"满6人成团后，系统会发送短信通知您" : (groupInfo.Status == 2) ? "合体成功马上购买吧": "该团已满员，请另辟蹊径吧！"%></span>
+		</div>
+		<%if( groupInfo.Status == 1 ){%>
+		<a class="publicBtn buy-btn active J-share" data-attr="<%=groupInfo.Group.Code%>">
+			<em class="img img-share"></em>
+			<span class="btn-text">邀请朋友来参团</span>
+		</a>
+		<%}else if(groupInfo.Status == 2){%>
+		<a class="publicBtn buy-btn active in-group J-open" href="/forYmatouApp/activitys/diaper/<%=groupInfo.Group.Code%>/buy">
+			<span>已成团 立即购买</span>
+			<small>已有<i class="J-profile">x</i>人参与团购</small>
+		</a>
+		<%}else if(groupInfo.Status == 3){%>
+		<a class="publicBtn buy-btn active in-group J-create-group">
+			<span>我要自己建团！</span>
+			<small>已有<i class="J-profile">x</i>人参与团购</small>
+		</a>
+		<%}%>
+	</div>
+<%=include commons/bottom.html%>
+
+<%=include commons/footer.html%>

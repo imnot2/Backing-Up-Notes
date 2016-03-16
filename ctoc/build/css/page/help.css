@@ -1,0 +1,133 @@
+/* line 5, ../../../src/sass/page/help.scss */
+body {
+  background-color: #f4f4f4;
+}
+
+/* line 9, ../../../src/sass/page/help.scss */
+.seller-wrap .inner {
+  width: 1190px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+/* line 3, ../../../src/sass/lib/classes.scss */
+.seller-wrap .inner:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 15, ../../../src/sass/page/help.scss */
+.seller-side {
+  border-radius: 3px;
+  border: 1px #dddddd solid;
+  width: 280px;
+  background-color: #ffffff;
+  float: left;
+}
+/* line 21, ../../../src/sass/page/help.scss */
+.seller-side .side-wrap {
+  border-top: 4px #dd3333 solid;
+  border-radius: 3px 3px 0 0;
+}
+/* line 25, ../../../src/sass/page/help.scss */
+.seller-side .help-title {
+  text-align: center;
+  font-size: 36px;
+  color: #666666;
+  padding-top: 20px;
+  font-weight: 500;
+  font-family: Arial;
+}
+
+/* line 34, ../../../src/sass/page/help.scss */
+.user-bd {
+  margin-top: 20px;
+}
+/* line 36, ../../../src/sass/page/help.scss */
+.user-bd .nav-inline {
+  overflow: hidden;
+  margin-left: 15px;
+}
+/* line 39, ../../../src/sass/page/help.scss */
+.user-bd .nav-inline a {
+  float: left;
+  color: #9a9a9a;
+  padding: 0 8px;
+  border-left: 1px #666666 solid;
+  margin-left: -1px;
+}
+/* line 46, ../../../src/sass/page/help.scss */
+.user-bd .nav-inline .num {
+  color: #656565;
+  padding-left: 7px;
+}
+/* line 51, ../../../src/sass/page/help.scss */
+.user-bd .nav {
+  border-top: 1px #e5e5e5 solid;
+  padding-bottom: 150px;
+  font-size: 14px;
+}
+/* line 55, ../../../src/sass/page/help.scss */
+.user-bd .nav li {
+  border-bottom: 1px #e5e5e5 solid;
+  height: 44px;
+  line-height: 44px;
+}
+/* line 61, ../../../src/sass/page/help.scss */
+.user-bd .nav .current a {
+  background-color: #dd3333;
+  color: #ffffff;
+}
+/* line 66, ../../../src/sass/page/help.scss */
+.user-bd .nav a {
+  display: block;
+  padding-left: 65px;
+  color: #666666;
+}
+/* line 70, ../../../src/sass/page/help.scss */
+.user-bd .nav a:hover {
+  background-color: #dd3333;
+  color: #ffffff;
+}
+
+/* line 77, ../../../src/sass/page/help.scss */
+.seller-content {
+  width: 894px;
+  float: right;
+}
+/* line 80, ../../../src/sass/page/help.scss */
+.seller-content .main-title {
+  font-size: 18px;
+  font-family: "Microsoft yahei";
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+/* line 87, ../../../src/sass/page/help.scss */
+.help-wrap {
+  border-radius: 3px;
+  border: 1px #dddddd solid;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 0 40px 40px;
+}
+/* line 93, ../../../src/sass/page/help.scss */
+.help-wrap dl {
+  padding: 20px 0 10px;
+}
+/* line 96, ../../../src/sass/page/help.scss */
+.help-wrap dt {
+  color: #dd3333;
+  font-weight: 700;
+}
+/* line 100, ../../../src/sass/page/help.scss */
+.help-wrap dd {
+  padding-top: 10px;
+}
+/* line 103, ../../../src/sass/page/help.scss */
+.help-wrap li {
+  color: #000000;
+  line-height: 30px;
+}

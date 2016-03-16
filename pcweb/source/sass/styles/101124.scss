@@ -1,0 +1,176 @@
+﻿/*=======================101124.css===========================*/
+body {
+	background: transparent url(http://img.ymatou.com/portal/images/101124/e011.png) repeat-x scroll 0 0;
+}
+#head {
+	height: 80px !important;
+}
+#logo {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 60px;
+	width: 287px;
+	background: none !important;
+}
+#gb01 {
+	margin: 0 auto;
+	width: 950px;
+	height: 563px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	background: transparent url(http://img.ymatou.com/portal/images/101124/e01.png) no-repeat scroll 0 0;
+}
+#gb011 {
+	height: 10px;
+	background: #fff;
+}
+#gb012 {
+	height: 500px;
+	width: 10px;
+	background: #fff;
+	position: absolute;
+	left: -10px;
+	top: 0;
+}
+#gb013 {
+	height: 500px;
+	width: 10px;
+	background: #fff;
+	position: absolute;
+	right: -10px;
+	top: 0;
+}
+a#ecart {
+	position: absolute;
+	top: 4px;
+	left: 500px;
+	background: transparent url(http://img.ymatou.com/portal/images/101124/eb1i.png) no-repeat scroll 0 0;
+	width: 74px;
+	height: 26px;
+	color: #fff;
+	font-size: 14px;
+	padding: 4px 0 0 26px;
+}
+a#ecart:hover {
+	background-image: url(http://img.ymatou.com/portal/images/101124/eb1i_h.png);
+}
+a#eauth {
+	background: transparent url(http://img.ymatou.com/portal/images/101124/eb2i.png) no-repeat scroll 0 0;
+	width: 66px;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 0 0 34px;
+}
+a#eauth:hover {
+	background-image: url(http://img.ymatou.com/portal/images/101124/eb2i_h.png);
+}
+a.ebtn1 {
+	width: 100px;
+	height: 30px;
+	background: transparent url(/content/images/101124/eb1.png) no-repeat scroll 0 0;
+	color: #fff;
+	font-size: 14px;
+}
+a.ebtn1:hover {
+	background-image: url(http://img.ymatou.com/portal/images/101124/eb1_h.png);
+}
+a.ebtn2 {
+	width: 100px;
+	height: 30px;
+	background: transparent url(/content/images/101124/eb2.png) no-repeat scroll 0 0;
+	color: #fff;
+	font-size: 14px;
+}
+a.ebtn2:hover {
+	background-image: url(http://img.ymatou.com/portal/images/101124/eb2_h.png);
+}
+a.ebtn3 {
+	width: 44px;
+	height: 30px;
+	background: transparent url(/content/images/101124/eb3.png) no-repeat scroll 0 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 0 0 14px;
+}
+a.ebtn3:hover {
+	background-image: url(http://img.ymatou.com/portal/images/101124/eb3_h.png);
+}
+#nav {
+	background: #990100;
+	border-top: 4px solid #D17F7D;
+	height: 30px;
+}
+#n_navul {
+	height: 30px;
+	line-height: 30px;
+}
+#n_navul li {
+	height: 30px;
+}
+#n_navul li a {
+	height: 30px;
+	line-height: 30px;
+	background: none;
+	color: #eee;
+	font-size: 15px;
+}
+#n_navul li.act a {
+	color: #eee;
+}
+#n_navul li a:hover {
+	color: #88A825;
+}
+#n_arror {
+	top: 30px;
+	background-image: url(http://img.ymatou.com/portal/images/101124/n00.gif);
+}
+#nav li.back {
+	border-bottom: 4px solid #990100;
+	position: absolute;
+	bottom: 30px;
+	display: none;
+}
+#searchbox {
+	top: -3px;
+}
+span.munread {
+	top: -8px;
+}
+#m0 {
+	top: 5px;
+}
+ul#m_subnav {
+	background-color: #D17F7D !important;
+	border-top-color: #C16866 !important;
+}
+a#cate_nav {
+	background-color: #D17F7D !important;
+	_background-color: #D17F7D !important;
+	border-top-color: #C16866 !important;
+}
+a#cate_nav:hover, a.cate_nav_act {
+	color: #F2F3F8 !important;
+	border-top-color: #C16866 !important;
+	background-color: #D17F7D !important;
+	_background-color: #D17F7D !important;
+}
+#m_subnav li.fli {
+	border-bottom: 1px solid #CCC;
+}
+#m_subnav li a.fa, #m_subnav li a.nc {
+	border: 2px solid #C16866;
+}
+#m_subnav .flyout {
+	border: 2px solid #C16866;
+}
+#m_subnav li.hv a.nc, #m_subnav li.hv a.fa {
+	border: 2px solid #C16866;
+	color: #C16866;
+}
+#m_subnav .flyout li a:hover {
+	color: #C16866;
+}

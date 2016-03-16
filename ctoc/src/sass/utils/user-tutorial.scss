@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import "lib/classes";
+
+$beginerguide: sprite-map("sprites/beginerguide/*.png", $spacing: 20px);
+
+//newuser
+.new-tips {
+    @include inline-block;
+    vertical-align: middle;
+}
+
+.nt-step1 {
+    background: sprite($beginerguide, step1) no-repeat;
+    width: 765px;
+    height: 439px;
+}
+
+.nt-step2 {
+    background: sprite($beginerguide, step2) no-repeat;
+    width: 670px;
+    height: 430px;
+}
+
+.nt-step3 {
+    width: 870px;
+    height: 600px;
+}
+
+.nt-step3-1 {
+    background: sprite($beginerguide, step3-1) no-repeat;
+    width: 258px;
+    height: 272px;
+    position: absolute;
+    left: 18px;
+    top: 130px;
+}
+
+.nt-step3-2 {
+    background: sprite($beginerguide, step3-2) no-repeat;
+    width: 394px;
+    height: 286px;
+    position: absolute;
+    left: 212px;
+    top: 130px;
+}
+
+.nt-step3-3 {
+    background: sprite($beginerguide, step3-3) no-repeat;
+    width: 483px;
+    height: 157px;
+    position: absolute;
+    left: 417px;
+    top: 130px;
+}
+
+.nt-step3-4 {
+    background: sprite($beginerguide, step3-4) no-repeat;
+    width: 276px;
+    height: 272px;
+    position: absolute;
+    left: 121px;
+    top: 478px;
+}
+
+.nt-next {
+    background: sprite($beginerguide, btn1) no-repeat;
+    width: 340px;
+    height: 79px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.nt-close {
+    background: sprite($beginerguide, btn2) no-repeat;
+    width: 340px;
+    height: 79px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -170px;
+}
+
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#aa000000,endColorStr=#aa000000);
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#aa000000, endColorstr=aa000000);
+    z-index: 99999999999;
+    .mask-inner {
+        width: $docWidth;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+    .step1, .step2 {
+        //padding-top: 20px;
+        //margin-top: 50%;
+   
+    }
+}

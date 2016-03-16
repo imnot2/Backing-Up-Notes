@@ -1,0 +1,104 @@
+﻿/*=======================base_bottom.css===========================*/
+@charset "utf-8";
+
+/* =Reset
+-----------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p, pre, blockquote, dl, dt, dd, ul, ol, li, form, fieldset, legend, input, textarea, button, th, td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+ul, ol {
+	list-style: none outside;
+}
+
+/* outside重置IE6,7缩进 */
+select, input, button, textarea {
+	font-size: 100%;
+}
+
+/* 使表单元素能继承父级字体大小 */
+textarea {
+	overflow-y: auto;
+}
+
+/* 去除IE下textarea滚动条 */
+
+/* 修复IE6连续英文不折行导致页面布局崩溃 */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* m18的默认样式 */
+a {
+	text-decoration: none;
+}
+
+/*
+a:hover { color:#F04E00; text-decoration:underline; }
+select, input, button, textarea { _font-size:100%; }*/
+
+/* =left
+-----------------------------------------------------------------------------*/
+#bottom_gary1 {
+	background-color: #b3b3b3;
+	height: 5px;
+	width: 100%;
+	font-size: 0px;
+	margin-top: 10px;
+	clear: both;
+}
+#bottom_gary2 {
+	background-color: #f2f2f2;
+	height: 250px;
+	text-align: center;
+	width: 100%;
+	font-size: 0px;
+	clear: both;
+}
+.zp_img {
+	text-align: center;
+	width: 905px;
+	margin: 0 auto;
+	padding-top: 20px;
+	font-size: 0px;
+}
+.zp_img li {
+	float: left;
+	display: inline;
+}
+#bottom_gary2 li {
+	text-align: center;
+}
+#bottom_list {
+	width: 905px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0px;
+}
+#bottom_list div {
+	float: left;
+	width: 301px;
+	height: 120px;
+	font-size: 12px;
+}
+#bottom_list li {
+	margin-top: 10px;
+}
+#bottom_list span {
+	font-weight: bold;
+	font-size: 14px;
+}
+#bottom_list a {
+	color: #333333;
+}
+#copywrite {
+	text-align: center;
+}
+#aboutme {
+}
+#aboutme li {
+	display: inline;
+}

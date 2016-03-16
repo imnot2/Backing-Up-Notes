@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.icon{
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'iconfont';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.icon-back:before {
+  content: "\3437";
+}
+
+.icon-complete:before {
+  content: "\e616";
+}
+
+.icon-add:before {
+  content: "\349a";
+}
+
+.icon-next:before {
+  content: "\344b";
+}

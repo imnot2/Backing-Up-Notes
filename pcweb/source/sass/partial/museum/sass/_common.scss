@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@import "_base";
+@import "_variables";
+
+.main{width: 1190px; margin: 10px auto 60px auto;}
+
+/*商品列表*/
+.pro-list{
+	text-align:left;
+	margin:10px 0;
+	.pro-row{
+		margin-bottom:10px;
+	}
+	.pro-item{
+		float:left;
+		margin-right: 10px;
+		_margin-right:7px;
+		position: relative;
+		//width:230px;
+		height: 330px;
+		//商品图片	
+		&:hover{
+			.prc-title a{
+				text-decoration:underline;
+				color:#1f7dd8;
+			}					
+		}	
+		.pic-box{
+			width: 228px;
+			height: 228px;
+			border:1px solid #ddd;
+			text-align: center;
+			position: relative;
+			background:#fff;
+			zoom:1;
+
+			.pic-area{
+				margin: 9px;
+				width: 210px;
+				height: 210px;
+				img{
+					//处理ie7margin-top无效，触发haslayout无效，使用内部图片margin-top将页面撑回来
+					#{+margin-top}:9px;
+				}
+			}
+		}
+		//商品标题
+		.prc-title{
+			height:36px;
+			overflow:hidden;
+			word-break: break-all;
+			.prc-tager{
+				color:#cc3333;
+			}
+			a{
+				color:#666;
+				&:hover{
+					text-decoration:underline;
+					color:#1f7dd8;
+				}
+			}
+		}
+		//价格
+		.price{
+			vertical-align: middle;
+			.current-price{
+				i{
+					font-size:18px;
+				}
+				color:#cc3333;
+				font-size:26px;
+			}
+			.orig-price{
+				margin-left: 20px;
+				text-decoration:line-through;
+				font-size:16px;
+				color: #666;
+			}
+		}
+	}
+	.end{
+		margin-right: 0;
+	}
+	.pro-status{
+		width: 81px;
+		height: 81px;
+		display: inline-block;
+		position:absolute;
+		left: 0px;
+		top: 0px;
+		text-align: left;
+		// text-indent: 10px;
+		z-index: 1;
+		.text{
+			width: 45px;
+			display: block;
+			word-wrap: break-word;
+			margin: 3px 0 0 5px;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 700;
+			color:#fff;
+		}
+	}
+	//热卖
+	.hot-sale{
+		.pro-status{
+			background: url(#{$imgpath2}/icon-home.#{$version}.png) -90px 0;
+		}
+
+	}
+	.bule-sale{
+		.pro-status{
+			background: url(#{$imgpath2}/icon-home.#{$version}.png) 0 0;
+		}
+
+		
+	}
+	//售罄
+	.sold-out{
+		img{
+			-webkit-filter: #{"grayscale(100%)"};
+			filter:  #{"grayscale(1)"};		
+			filter: gray;
+		}
+		.pro-status{
+			background: url(#{$imgpath2}/icon-home.#{$version}.png) -410px 0;
+		}	
+		//将价格和商品标志置灰	
+		.price .current-price,
+		.prc-title .prc-tager{
+				color:#888;
+		}
+
+
+	}
+}
+/*!
+*
+* 面包屑
+*/
+.c-crumbs{
+	.crumbs-item{
+		margin:2px;
+		color:#666;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,44 @@
+<%=include global/header.html%>
+<section class="container" ng-controller='ExpressInfoController'>
+
+
+
+	<div class="logistics-tab">
+		<ul>
+			<li class="logistics-tab-item" ng-click="selectExpress($index)" ng-class="{'logistics-tab-ative':expIndex==$index}" ng-repeat='e in expressInfo'>
+				<a href="">包裹<span ng-bind='$index+1'></span></a>
+			</li>
+		</ul>
+	</div>
+	<div ng-repeat="e in expressInfo" ng-if='expIndex==$index'>
+	<div class="logistics-concise" >
+		<h2 ng-bind="e.LogisticsProvider"></h2>
+		<p><span>物流单号：</span> <strong ng-bind="e.LogisticsCode||'-'"></strong></p>
+		<p ng-if="e.HasWeight"><span>包裹重量：</span> <strong><span ng-bind="e.Weight"></span><span ng-bind="e.Unit">磅</span></strong></p>
+		<p ng-if="!e.HasWeight"><span>发货时间：</span> <strong ng-bind="e.AddTime"></strong></p>
+		<p class="logistics-msg" ng-if="!e.IsShippedByXlobo">暂无法获取该物流公司详细进度，请至其官网查询</p>
+	</div>
+	
+
+	<div class="logistics-stauts-title" ng-if="e.DisplayRecords"><span>最新流转状态</span></div>
+	<div class="logistics-stauts-list" ng-if="e.DisplayRecords">
+		<ul>
+			<li ng-class="{'active':$index==0}" ng-repeat="ls in e.Records ">
+				<div class="fl status-item status-ico"> 
+					<i class="round"></i>
+					<i class="line"></i>
+				</div>
+				<div class="fl status-item">
+					<div class="status-detail">
+						<time ng-bind="ls.TimeStamp||0"></time>
+						<p ng-bind="ls.OperatorName||null"></p>
+						<address ng-bind="removeTag(ls.Description)"></address> <em ng-bind="ls.ActionName"></em>
+					</div>				
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+</section>
+<%=include global/footer.html%>

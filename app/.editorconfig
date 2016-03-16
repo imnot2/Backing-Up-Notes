@@ -1,0 +1,13 @@
+﻿# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# 设置默认的字符集
+[*.{js,html,sass,scss,css}]
+charset = utf-8
+
+#设置js的缩进的规则
+[*.js,*.scss,*.sass,*.html,*.htm]
+indent_style = space
+indent_size = 4

@@ -1,0 +1,101 @@
+$imgPath: "/images/";
+$version:"2015031900";
+$docWidth:1190px;
+$docBgColor:#e4e4e4;
+$lightColor:#a90000;
+$lighterColor:#cc3333;
+$lighterColor1:#dd3333;
+$normalColor:#666;
+$miorColor:#999;
+$black:#000;
+$white:#fff;
+$normalBorder:#ddd;
+$miorBorder:#e5e5e5;
+$space:10px;
+$spaceSh:15px;
+$blue:#1d398d;
+$garyc:#ccc;
+$redHover:#960000;
+$noticeBg:#fffdf4;
+$ahover:#1f7dd8;
+$shBg:#dd3333;
+@mixin clearfix(){
+    *zoom:1;
+    &:after{
+        content: "\0020"; display: block; height: 0; overflow: hidden; clear:both;
+    } 
+}
+
+@mixin up_triangle($type, $border, $color){
+      @if $type=="up" {
+        border-bottom: $border solid $color; 
+        border-top: $border solid transparent;
+        border-right: $border solid transparent;
+        border-left: $border solid transparent;
+        border-style: dashed dashed solid dashed;
+      }
+
+      @if $type == 'down'{
+        border-bottom: $border solid transparent; 
+        border-top: $border solid $color;
+        border-right: $border solid transparent;
+        border-left: $border solid transparent;
+        border-style: solid dashed dashed dashed;
+      }
+      
+      @if $type == 'left'{
+        border-bottom: $border solid transparent; 
+        border-top: $border solid transparent;
+        border-right: $border solid $color;
+        border-left: $border solid transparent;
+        border-style: dashed solid dashed dashed;
+      }
+
+      @if $type == 'right'{
+        border-bottom: $border solid transparent; 
+        border-top: $border solid transparent;
+        border-right: $border solid transparent;
+        border-left: $border solid $color;
+        border-style: dashed dashed dashed solid;
+      }
+
+      width: 0px;
+      height:0px;
+      overflow: hidden;
+      display: block;
+      
+}
+
+@mixin inline-block(){
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+}
+@mixin background-img($imgUrl){
+	background-image:url("#{$imgPath}home/#{$imgUrl}");
+}
+@mixin size($width,$height){
+	width:$width;
+	height:$height;
+}
+@mixin ellipsis(){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap; 
+  word-wrap:normal; 
+}
+@mixin bgcolorgradient($type:linear,$startpointer:top,$startcolor:#ffffff,$endcolor:#eeeeee) {
+  background:-moz-#{$type}-gradient( $startpointer,$startcolor,$endcolor);
+  background:-webkit-#{$type}-gradient( $startpointer,$startcolor,$endcolor);
+  background:-o-#{$type}-gradient($startpointer,$startcolor,$endcolor);
+  @if($startpointer==top){
+  filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#{$startcolor},endColorStr=#{$endcolor});
+  -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#{$startcolor}, endColorstr=#{$endcolor});
+  }
+  @if($startpointer==left){
+  filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#{$startcolor},endColorStr=#{$endcolor});
+  -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, startColorstr=#{$startcolor}, endColorstr=#{$endcolor});
+  }
+  background:-ms-#{$type}-gradient($startpointer,$startcolor,$endcolor);
+  background:#{$type}-gradient($startpointer,$startcolor,$endcolor);
+}

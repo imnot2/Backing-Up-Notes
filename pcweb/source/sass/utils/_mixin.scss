@@ -1,0 +1,350 @@
+@mixin borderRadius {
+    .radiusWrap, .radiusLeft, .radiusRight {
+        @include inline;
+    }
+    .radiusWrap {
+        @include borderRadius-sprite(radiusWrap);
+        background-repeat: repeat-x;
+        .radiusLeft {
+            @include borderRadius-sprite(radiusLeft);
+            .radiusRight {
+                @include borderRadius-sprite(radiusRight);
+                height: borderRadius-sprite-height(radiusRight);
+                background-position-x: right;
+                line-height: borderRadius-sprite-height(radiusRight);
+                color: #fff;
+                padding: 0 10px;
+                *float: left;
+            }
+        }
+    }
+}
+
+@mixin proInfo {
+    .name {
+        float: left;
+        margin-top: 6px;
+    }
+    .des {
+        width: 410px;
+        float: left;
+        .item {
+            float: left;
+            position: relative;
+            margin: 0 4px 4px 0;
+            line-height: 24px;
+            vertical-align: middle;
+            padding: 0 1px;
+            a {
+                float: left;
+                background-color: #fff;
+                white-space: nowrap;
+                width: auto !important;
+                min-width: 10px;
+                padding: 2px 9px;
+                text-align: center;
+                border: 1px solid $Gd;
+                color: $G3;
+                text-decoration: none;
+                span {
+                    padding-left: 1px;
+                    float: left;
+                    img {
+                        float: left;
+                        height: 24px;
+                    }
+                }
+                &.disabled {
+                    color: $Gd;
+                }
+                &.hover {
+                    border: 2px solid $R2;
+                    line-height: 24px;
+                    padding: 1px 8px;
+                }
+            }
+        }
+    }
+}
+
+@mixin shadow {
+    .shadow {
+        border-bottom: 2px solid $Ge;
+        a {
+            padding: 1px 0 3px;
+            text-align: center;
+            border: 1px solid $Gd;
+            text-decoration: none;
+            float: left;
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                float: left;
+            }
+        }
+    }
+}
+
+@mixin switch {
+    .switchBox {
+        border: 1px solid $Gd;
+        border-top-width: 3px;
+        height: 38px;
+        background-color: #f6f6f6;
+        .switch {
+            li {
+                @include inline;
+                width: 250px;
+                height: 39px;
+                text-align: center;
+                margin-top: -3px;
+                border-top: 3px solid $Gd;
+                border-right: 1px solid $Gd;
+                cursor: pointer;
+                float: left;
+                position: relative;
+                .blueline {
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    padding: 0 1px;
+                    left: -1px;
+                    background-color: #4D6DB3;
+                    visibility: hidden;
+                    _line-height: 3px;
+                    _font-size: 0;
+                }
+                span, a.title {
+                    line-height: 41px;
+                    font-size: 14px;
+                    color: $G6;
+                }
+            }
+            .select {
+                background-color: #fff;
+                .blueline {
+                    visibility: visible;
+                }
+                span, a.title {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@mixin btn {
+    .btn {
+        background-color: #f8f8f8;
+        border: 1px solid $Gd;
+        @include inline;
+        a {
+            padding: 6px 14px;
+            @include inline;
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin proShow($pdgVertical: 13px) {
+    padding-right: 26px;
+    padding: 0 $pdgVertical;
+    width: 142px;
+    float: left;
+    a {
+        text-decoration: none;
+        &:hover {
+            .name {
+                color: $L1;
+            }
+        }
+    }
+    .imgWrap {
+        width: 120px;
+        padding: 10px;
+        border: 1px solid $Gd;
+        @include inline;
+    }
+    .name {
+        color: $G9;
+        line-height: 16px;
+        height: 32px;
+        padding: 6px 0;
+        @include inline;
+    }
+    .price {
+        color: $R2;
+        display: block;
+        .count {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin bubble($width: 340px) {
+    .bubble {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        border: 1px solid $Gd;
+        padding: 10px;
+        width: $width;
+        background-color: #fff;
+        font-size: 12px;
+        z-index: 99;
+        display: none;
+        .title {
+            color: $G6;
+            padding-bottom: 6px;
+        }
+        .info {
+            line-height: 16px;
+            color: $G9;
+            a {
+                color: $L1;
+                text-decoration: none;
+                &:hover {
+                    color: $L1;
+                }
+            }
+        }
+    }
+}
+
+@mixin buyOperation {
+    dl {
+        padding: 3px 0;
+    }
+    dt {
+        width: 66px;
+        vertical-align: top;
+    }
+    .buyOperationBox {
+        background-color: #f5f2e2;
+        padding: 13px 10px;
+        .colorBox, .sizeBox {
+            @include proInfo;
+        }
+        .countBox {
+            padding-bottom: 18px;
+            position: relative;
+            padding-top: 3px;
+            _height: 54px;
+            .name {
+                margin-top: 6px;
+                *margin-top: 10px;
+            }
+            .des {
+                position: relative;
+                .input {
+                    width: 70px;
+                    height: 28px;
+                    border: 1px solid $Gd;
+                    height: 10px;
+                    padding: 8px 10px;
+                    height: 14px;
+                    height: 13px\0;
+                }
+                .errorBorder {
+                    border: 1px solid $E1;
+                }
+                .action {
+                    @include inline;
+                    width: 16px;
+                    vertical-align: middle;
+                    vertical-align: top\0;
+                    *margin-top: 2px;
+                    *vertical-align: top;
+                    height: 32px;
+                    line-height: 17px;
+                    margin-right: 6px;
+                    .add, .del {
+                        width: 16px;
+                        height: 12px;
+                        vertical-align: top;
+                        cursor: pointer;
+                        @include inline;
+                        border: 1px solid $Gd;
+                    }
+                    .add {
+                        //@include icons-sprite(add-del);
+                        background: sprite($icons-sprite, add-del, 4px, 4px);
+                        background-repeat: no-repeat;
+                        background-color: #f7f7f7;
+                    }
+                    .del {
+                        //@include icons-sprite(add-del);
+                        background: sprite($icons-sprite, add-del, 4px, -12px);
+                        background-repeat: no-repeat;
+                        background-color: #f7f7f7;
+                    }
+                    a {
+                        width: 14px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        float: left;
+                        @include inline;
+                    }
+                }
+                .surplus {
+                    margin-left: 16px;
+                    vertical-align: middle;
+                    color: $G9;
+                    display: none;
+                    z-index: 2;
+                }
+            }
+        }
+        .tip {
+            padding: 0;
+            margin: 5px 0 0 66px;
+            line-height: 16px;
+            border: none;
+            //@include icons-sprite(buytip);
+            background: sprite($icons-sprite, buytip, 0, 2px);
+            background-repeat: no-repeat;
+            padding-left: 17px;
+            color: $E1;
+            display: block;
+        }
+        .buyBox {
+            .instantly, .intoShopCar, .racking {
+                width: 180px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+                border-bottom: 2px solid $Gd;
+                @include inline;
+                cursor: pointer;
+            }
+            .instantly {
+                background-color: $R2;
+                margin-right: 10px;
+                &:hover {
+                    background-color: #bb2222;
+                }
+            }
+            .intoShopCar {
+                background-color: $B3;
+                _position: relative;
+                .shopCar {
+                    @include inline;
+                    _position: relative;
+                    background: sprite($icons-sprite, intoShopCar, 0, 5px) no-repeat;
+                    padding-left: 38px;
+                    height: 45px;
+                }
+                &:hover {
+                    background-color: #4466aa;
+                }
+            }
+            .racking {
+                background-color: $G9;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<%=include global/header.html%>
+<section ng-controller='GroupProductController' >
+	<p class="home-title-bar everyday-title-bar"><strong>每日团</strong></p>
+	<div class="home-list everyday-group">
+		<ul class="hl-list" ng-if='GroupProductLists' dropdown="GroupProductLists.nextPage('page')">
+			<li ng-repeat="item in GroupProductLists.items" ng-click="toProduct('{{item.ProductId}}','{{escape(item.Name)}}','{{item.PicUrl}}','{{item.SellingPrice}}')">
+				<span class="pic">
+					<span class="float_off" ng-if="item.Stock<1"></span>
+					<img ng-src="{{item.PicUrl | urlAdapt}}"/>
+				</span>
+				<span class="info">
+					<div class="title" >
+						<span ng-bind="item.Name" textflow="2"></span>
+					</div>
+					<p class="price">
+						<span class='pull-left'>
+							<span class="price">
+								<i class="discount" ng-if="item.Discount>0"><strong ng-bind='item.Discount'></strong><span>折</span></i><strong class="realprice">&yen;<span ng-bind='item.SellingPrice'></span></strong>
+							</span>
+							<span class="sub-price">
+								国内价<span class="old-price" ng-if="item.MarketPrice>0"> &yen;<span ng-bind='item.MarketPrice'></span></span>
+							</span>
+						</span>
+					</p>
+					<p class="flag">
+						<i class="flag-icon" ng-style="{'background-image':'url('+item.Flag+')'}" ></i>
+						<span class="flag-name" ng-bind="item.CountryNameZh">美国</span>
+					</p>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div class="load-more"  ng-show='!GroupProductLists.busy'>
+		<p class="line" ng-hide="GroupProductLists.noData"><em class="icon icon-pull"></em>拉动可查看更多商品</p>
+		<p class="line" ng-show="GroupProductLists.noData">已显示全部商品</p>
+	</div>
+</section>
+<%=include global/footer.html%>

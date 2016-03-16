@@ -1,0 +1,159 @@
+$imgPath: "/images/appload/";
+$docWidth: 1190px;
+$docBgColor: #eee;
+
+.wrapper .template {
+    width: auto !important;
+    padding: 0px !important;
+}
+
+@mixin clearfix {
+    *zoom: 1;
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        clear: both;
+    }
+}
+
+@mixin inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+@mixin background-img($imgUrl) {
+    background-image: url(#{$imgPath}#{$imgUrl});
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.load-warp {
+    //text-align: left;
+    .lw-hd {
+        @include background-img("app-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 366px;
+        background-color: #4d6db3;
+    }
+    .lw-bd {
+        background-color: $docBgColor;
+        padding-bottom: 60px;
+    }
+    .inner {
+        width: $docWidth;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .lw-item {
+        width: 580px;
+        float: left;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    .lw-item-r {
+        float: right;
+    }
+    .lw-app-z, .lw-app-s {
+        position: relative;
+        padding-top: 20px;
+        width: 509px;
+    }
+    .lw-app-z {
+        float: left;
+    }
+    .lw-app-s {
+        float: right;
+    }
+    .app-z {
+        @include background-img("app-z01.png");
+        background-repeat: no-repeat;
+        @include inline-block;
+    }
+    .app-s {
+        @include background-img("app-s01.png");
+        background-repeat: no-repeat;
+        @include inline-block;
+    }
+    .az-l {
+        background-position: 0 0;
+        @include size(199px, 421px);
+    }
+    .az-title {
+        background-position: -247px -76px;
+        @include size(246px, 60px);
+        position: absolute;
+        top: 76px;
+        left: 247px;
+    }
+    .az-ewm {
+        background-position: -249px -156px;
+        @include size(120px, 120px);
+        position: absolute;
+        top: 156px;
+        left: 249px;
+    }
+    .az-iphone {
+        background-position: -389px -157px;
+        @include size(120px, 54px);
+        position: absolute;
+        top: 157px;
+        left: 389px;
+    }
+    .az-android {
+        background-position: -389px -221px;
+        @include size(120px, 54px);
+        position: absolute;
+        top: 225px;
+        left: 389px;
+    }
+    .as-l {
+        background-position: -310px 0;
+        @include size(199px, 421px);
+        position: absolute;
+        right: 0;
+    }
+    .as-title {
+        background-position: -1px -76px;
+        @include size(182px, 60px);
+        position: absolute;
+        top: 76px;
+        left: 1px;
+    }
+    .as-ewm {
+        background-position: -1px -157px;
+        @include size(120px, 120px);
+        position: absolute;
+        top: 157px;
+        left: 1px;
+    }
+    .as-iphone {
+        background-position: -141px -157px;
+        @include size(120px, 54px);
+        position: absolute;
+        top: 157px;
+        left: 141px;
+    }
+    .as-android {
+        background-position: -141px -221px;
+        @include size(120px, 54px);
+        position: absolute;
+        top: 225px;
+        left: 141px;
+    }
+    .load-title {
+        @include background-img("load-title.png");
+        background-repeat: no-repeat;
+        height: 80px;
+        margin-top: 93px;
+        width: 100%;
+        background-position: center top;
+    }
+}

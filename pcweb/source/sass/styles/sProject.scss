@@ -1,0 +1,165 @@
+﻿/*=======================sProject.css===========================*/
+.sh1 {
+    color: #494949;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0;
+    padding: 0 0 12px;
+}
+.sch_tit {
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+    padding: 4px;
+}
+.sch_tit_hover {
+    border-color: #AAAAAA #CCCCCC #CCCCCC;
+    cursor: pointer;
+    background-color: #FFFFD6;
+}
+.float_box {
+    position: fixed;
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 100;
+}
+.float_box_shadow {
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
+#sch_queryshadow {
+    top: 300px;
+    left: 500px;
+    height: 50px;
+    width: 360px;
+}
+#sch_querybox {
+    top: 300px;
+    left: 500px;
+    height: 30px;
+    width: 340px;
+}
+#txtSearchBoxF {
+    border: 1px solid #C4CCC9;
+    width: 240px;
+    color: #C4CCC9;
+    height: 21px;
+    line-height: 21px;
+    padding: 3px 0 3px 3px;
+    font-size: 13px;
+}
+#search_tab .ui-tabs-nav {
+    border-bottom: 1px solid #C4CCC9;
+}
+
+/*.s_navul{background:#eee url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;border-bottom:1px solid #D4D4D4;height:26px;margin-top:10px;}
+    .s_navul li{float:left;height:26px;line-height:28px;}
+    .s_navfliter{color:#9C9C9C;width:180px;padding-left:10px;}
+    .s_listcontent{border-top:1px solid #EAEAEA;text-align:left;}
+    .s_navtxt{margin-left:22px;color:#9c9c9c}
+    .s_navs,.s_navsSel,.s_navsr{padding:0 5px;cursor:pointer;color:#2B2A25}
+    .s_navsr{float:right!important;}
+    .s_navsr.act a{color:#B0250E;font-weight:700;}
+    .s_navs_hover{border-bottom:1px solid #A69C8D;color:#B0250E}
+    .s_navsSel{border-bottom:1px solid #A69C8D;background:#DBD03B url(http://img.ymatou.com/portal/images/bar_bk_nav.png) repeat-x scroll left bottom;}
+    .s_navsSel a{color:#fff;}
+    .s_viewV a{width:20px;height:26px;background:transparent url(http://img.ymatou.com/portal/images/sViewB.png) no-repeat scroll 0 4px;cursor:pointer;}
+    .s_viewL{margin-right:25px;}
+    .s_viewL a{background-image:url(http://img.ymatou.com/portal/images/sViewL.png);}
+    .s_viewL a:hover, .s_viewL.s_viewSel a{background-image:url(http://img.ymatou.com/portal/images/sViewLh.png)!important;}
+    .s_viewB a{background-image:url(http://img.ymatou.com/portal/images/sViewB.png);}
+    .s_viewB a:hover, .s_viewB.s_viewSel a{background-image:url(http://img.ymatou.com/portal/images/sViewBh.png)!important;}
+    .unused a{color:#9C9C9C}
+    .droppad{position:absolute;top:26px;left:0;border:1px solid #DDDDDD;display:none;background-color:#fff;z-index:10;}
+    .droppad a.dropitem{padding:0 5px;width:44px;}
+    .droppad a.dropitem:hover{background-color:#DBD03B;color:#fff}*/
+#pagebox {
+    right: 0px;
+    top: 130px;
+    display: none;
+    padding-right: 20px;
+}
+#pagebox a {
+    cursor: pointer;
+    color: #88A825;
+    padding: 2px 6px;
+}
+#pagebox a:hover {
+    background: #88A825;
+    color: #F2F3F8;
+}
+#pagebox a.act {
+    color: #B0250E;
+    font-weight: 700;
+}
+#f_current {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+#f_current a, #f_current .fc_item {
+    color: #111;
+}
+#f_current a:hover {
+    color: #A89E2D;
+    text-decoration: underline;
+}
+#f_current .fc_arror {
+    float: left;
+    margin: 0 5px;
+}
+#f_current .fc_item a {
+    background: transparent url(http://img.ymatou.com/portal/images/clo.png) no-repeat scroll right center;
+    cursor: pointer;
+    padding-right: 14px;
+    white-space: nowrap;
+}
+#f_current .fc_item a:hover {
+    background-image: url(http://img.ymatou.com/portal/images/cloh.png);
+}
+.treeview span {
+    cursor: pointer;
+}
+.treeview span.folder_h {
+    background: url(http://img.ymatou.com/portal/images/tMain_h.png) 0 0 no-repeat;
+}
+.treeview span.file_h {
+    background: url(http://img.ymatou.com/portal/images/tNot_h.png) 0 0 no-repeat;
+}
+.flul ul {
+    clear: both;
+    position: relative;
+}
+.flul ul.fl li {
+    float: left;
+    padding: 3px 5px;
+    position: relative;
+    z-index: 200;
+}
+.flul ul li a {
+    color: #A89E2D;
+    white-space: nowrap;
+}
+.flul ul li a:hover {
+    color: #fff;
+}
+.flul ul div.y_fhover {
+    background: #A89E2D;
+    position: absolute;
+}
+#flprices li {
+    padding-bottom: 3px;
+}
+#flprices li a {
+    color: #A89E2D;
+}
+#flprices li a:hover {
+    color: #B0250E;
+    text-decoration: underline;
+}
+#flprices .flprices_in {
+    width: 50px;
+}

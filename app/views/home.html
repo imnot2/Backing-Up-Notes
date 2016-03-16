@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="ymtapp" >
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="洋码头移动官网,洋码头APP下载，海外网购平台">
+<meta name="description" content="洋码头国内专业的海外网购平台，洋码头手机移动官网，为您提供洋码头手机APP下载，同时让您在手机移动设备端，方便，快捷浏览海外商品，选择您喜爱的海外商品，从洋码头手机移动官网开始。">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<title><%=title%></title>
+<%=include global/common.html%>
+<script>
+
+</script>
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//static.matouapp.ymatou.com">
+<link rel="stylesheet" href="<%=staticfileurl('/css/home.css')%>">
+</head>
+<body>
+<div class="views">
+	<div class="view container">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<search></search>
+			</div>
+		</div>
+		<div class="pages">
+			<div class="page" data-page="home" ng-controller="HomeController">
+				<div class="page-content">
+					<div class="slider hot-slide" id="slider" ng-if="banner.length>0" silde-swiper="bannerOpts">
+						<ul class="slide-group swiper-wrapper">
+							<li ng-repeat="b in banner track by $index" class="swiper-slide">
+								<a ng-href="{{b.LinkUrl}}" >
+									<img lazy-load="{{b.ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="/>
+								</a>
+							</li>
+						</ul>
+						<ol class="slide-triggers pagination">
+							<li class="trigger" ng-repeat="b in banner"></li>
+						</ol>
+					</div> 
+					<!--新频道-->
+					<div class="channel">
+						<div class="col" ng-click="open(channels[0].LinkUrl)">
+							<img lazy-load="{{channels[0].ImgUrl}}"  class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+						</div>
+						<div class="col">
+							<div class="row-2" ng-click="open(channels[1].LinkUrl)">
+								<img lazy-load="{{channels[1].ImgUrl}}"  class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+							</div>
+							<div class="row-2"   ng-click="open(channels[2].LinkUrl)">
+								<img lazy-load="{{channels[2].ImgUrl}}"  class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+							</div>
+						</div>
+					</div>
+					<!--大家都在逛-->
+					<p class="home-title-bar">
+						<strong>大家都在逛</strong>
+					</p>
+					<div  class="all-shopping">
+						<ul>
+							<li class="span-3">
+								<a ng-click="open(allShoppingSpan3[0].LinkUrl)">
+									<img lazy-load="{{allShoppingSpan3[0].ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+								</a>
+							</li>
+							<li class="span-3">
+								<a ng-click="open(allShoppingSpan3[1].LinkUrl)">
+									<img lazy-load="{{allShoppingSpan3[1].ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+								</a>
+							</li>
+							<li class="span-3">
+								<a ng-click="open(allShoppingSpan3[2].LinkUrl)">
+									<img lazy-load="{{allShoppingSpan3[2].ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="span-2">
+								<a ng-click="open(allShoppingSpan2[0].LinkUrl)">
+									<img lazy-load="{{allShoppingSpan2[0].ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+								</a>
+							</li>
+							<li class="span-2">
+								<a ng-click="open(allShoppingSpan2[1].LinkUrl)">
+									<img lazy-load="{{allShoppingSpan2[1].ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<p class="home-title-bar everyday-title-bar">
+						<strong>环球特卖</strong>
+						<span class="hot">HOT</span>
+
+						<a class="more" ng-click="open('/forYmatouApp/redirect?url=/activity_3303_app&needJumpFlag=1&title=环球特卖&hostname=evt.ymatou.com')">查看更多<i class="icon-arrow"></i></a>
+					</p>
+					<div class="sale-special">
+						<ul>
+							<li ng-repeat="item in saleSpecials">
+								<a ng-click="open(item.LinkUrl)">
+									<img lazy-load="{{item.ImgUrl}}" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="/>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<h3 class="recommend-bar" ng-if="recommendProducts.item && recommendProducts.item[0]">
+						<div class="title">
+							<span>猜你喜欢</span>
+						</div>
+					</h3>
+					<ng-include src="'/tpls/homeTpl.html'"></ng-include>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%=include global/footer.html%>

@@ -1,0 +1,60 @@
+<%=include global/header.html%>
+<selction ng-controller='HotController' <%if(isIphone){%> compatible-status-bar-hide <%}%> >
+	<div class="hot_nav_mod">
+		<div class="hot_nav slider" id="sliderCategory" silde-swiper="categoryOpts" <%if(isAndroid){%> compatible-android-click-invalid <%}%> >
+			<div class="slide-group swiper-wrapper">
+				<div class="swiper-slide li" ng-class='{active:hotProducts.tabId==99}' ng-click='selectTab(99)'>
+					<span class="hn-icon"><i class="icon icon-countryAll"></i></span>
+					<span class="hn-txt">全球热卖</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(7);' ng-class='{active:hotProducts.tabId==7}'>
+					<span class="hn-icon"><i class="icon icon-sortMami"></i></span>
+					<span class="hn-txt">妈咪宝贝</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(8)' ng-class='{active:hotProducts.tabId==8}' >
+					<span class="hn-icon"><i class="icon icon-sortBeauty"></i></span>
+					<span class="hn-txt">美妆达人</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(9)' ng-class='{active:hotProducts.tabId==9}'>
+					<span class="hn-icon"><i class="icon icon-sortFood"></i></span>
+					<span class="hn-txt">吃货军团</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(10)' ng-class='{active:hotProducts.tabId==10}' >
+					<span class="hn-icon"><i class="icon icon-hot-bjp"></i></span>
+					<span class="hn-txt">营养保健</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(11)' ng-class='{active:hotProducts.tabId==11}'>
+					<span class="hn-icon"><i class="icon icon-sortCloth"></i></span>
+					<span class="hn-txt">时尚教主</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(12)' ng-class='{active:hotProducts.tabId==12}'>
+					<span class="hn-icon"><i class="icon icon-shoes"></i></span>
+					<span class="hn-txt">运动户外</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(13)' ng-class='{active:hotProducts.tabId==13}'>
+					<span class="hn-icon"><i class="icon icon-sortLife"></i></span>
+					<span class="hn-txt"> 居家日用</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li" ng-click='selectTab(5)' ng-class='{active:hotProducts.tabId==5}'>
+					<span class="hn-icon"><i class="icon icon-sortAll"></i></span>
+					<span class="hn-txt">更多分类</span>
+					<div class="hn-split"></div>
+				</div>
+				<div class="swiper-slide li">
+					<span class="hn-txt"></span>
+				</div>
+			</div>
+			<div class="search-toggle" ng-click="search.openSearchBox()" ng-class="{'search-toggle-gray':search.isShowSearch}"><i ng-if="search.isShowSearch" class="icon icon-shut ng-cloak"></i><i ng-if="!search.isShowSearch" class="icon icon-search"></i></div>
+		</div>		
+	</div>
+	<div ng-include="'/tpls/hotTpl.html'" class="hot-container container"></div>
+</selction>
+<%=include global/footer.html%>

@@ -1,0 +1,913 @@
+﻿/*=======================public.css===========================*/
+
+/*---- global css begin----*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, i {
+    margin: 0;
+    padding: 0;
+}
+
+abbr, article, aside, bb, datagrid, datalist, details, dialog, eventsource, figure, footer, header, mark, menu, meter, nav, output, progress, section, time {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: #FAFAFA;
+    text-align: center;
+    font-family: "arial";
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table caption {
+    display: none;
+}
+
+ol, ul {
+    list-style: none outside;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3369FF;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font: 12px Tahoma, Arial, simsun;
+    line-height: 1.2em;
+}
+
+#container, .container {
+    width: 100%;
+    text-align: center;
+    min-width: 1000px;
+}
+
+.container .area {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clear {
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+
+.fix {
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+i, em, cite, b {
+    font-style: normal;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.marT_10 {
+    margin-top: 10px;
+}
+
+.marL_10 {
+    margin-left: 10px;
+}
+
+.blur {
+    color: #3369FF;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.blue {
+    color: #3368FF;
+}
+
+.white {
+    color: #fff;
+}
+
+.yel {
+    color: #F04D00;
+}
+
+.gray {
+    color: #acacac;
+}
+
+.business_header {
+    height: 80px;
+    background-color: #f04e00;
+}
+
+.business_header .fr {
+    margin-top: 25px;
+    position: relative;
+}
+
+.lang_nav {
+    position: absolute;
+    z-index: 120;
+    top: 20px;
+    width: 85px;
+    color: #fff;
+    right: 0;
+    font-size: 12px;
+}
+
+.lang_nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+.lang_nav .active {
+    background: #fff;
+    color: #f60;
+}
+
+.friend {
+    height: 100px;
+    border-top: 2px solid #ddd;
+    background: url(/images/business/bt.jpg) #fff no-repeat center center;
+    text-align: left;
+}
+
+.friend a {
+    display: inline-block;
+    margin-top: 18px;
+    height: 63px;
+}
+
+.redbaby {
+    width: 85px;
+    margin-left: 150px;
+}
+
+.jd {
+    width: 120px;
+    margin-left: 32px;
+}
+
+.bbtree {
+    width: 146px;
+    margin-left: 26px;
+}
+
+.tm {
+    width: 90px;
+    margin-left: 26px;
+}
+
+.sn {
+    width: 143px;
+    margin-left: 26px;
+}
+
+.copyright {
+    height: 40px;
+    padding-top: 15px;
+    background-color: #eee;
+}
+
+/**商家注册**/
+.business {
+    width: 1000px;
+    padding-top: 30px;
+    margin: auto;
+    text-align: left;
+}
+
+.business .inp {
+    width: 190px;
+}
+
+.business .fields {
+    padding-left: 35px;
+}
+
+.business .title_pic {
+    margin-bottom: 40px;
+}
+
+.business .fields .node {
+    height: 30px;
+}
+
+.business .fields label {
+    font-size: 14px;
+}
+
+.business .mailtip {
+    margin: 20px 0 10px;
+}
+
+.business .flowsteps li {
+    font-size: 12px;
+}
+
+.business .inp {
+    margin-right: 4px;
+}
+
+.business .bottom {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.section {
+    margin: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.section .upload {
+    display: none;
+}
+
+.upload .img {
+    max-width: 40px;
+    max-height: 35px;
+    _width: 40px;
+    _height: 35px;
+}
+
+.section .bd {
+    padding: 10px 0;
+}
+
+.scope .node {
+    float: left;
+    margin: 20px 0 20px 80px;
+    width: 17%;
+}
+
+.defalut {
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+    margin: 40px 0 40px 180px;
+}
+
+.defalut .bd {
+    height: 90px;
+    padding: 0 25px;
+}
+
+.defalut .bt {
+    margin: 10px 0;
+}
+
+.defalut .graybg {
+    border: 1px solid #e2e2e2;
+}
+
+.defalut .graybg .h3 {
+    margin-top: 30px;
+}
+
+.defalut .tooltip-3 .h3, .defalut .tooltip-1 .h3 {
+    margin: 20px 0 10px;
+}
+
+.defalut .tooltip-1 {
+    display: block;
+    position: static;
+    height: 130px;
+}
+
+.defalut .tooltip-1 .btn-1 {
+    margin: 10px 0 0;
+}
+
+.business .h3 {
+    font: bold 14px/1.5 "arial";
+    color: #000;
+}
+
+.fields .w-r-80 {
+    width: 80px;
+    text-align: right;
+}
+
+.fields .w-r-170 {
+    width: 150px;
+    text-align: right;
+}
+
+.title_pic .icon {
+    width: 40px;
+    height: 32px;
+    background: url(/content/images/register/title_reg.png) no-repeat 0 0;
+}
+
+.title_pic .tit {
+    font: bold 16px/1.5 "arial";
+    color: #f04d00;
+    margin-top: 10px;
+}
+
+/**business sucess**/
+.sucess {
+    width: 600px;
+    margin: 50px auto 50px 200px;
+    text-align: center;
+}
+
+.sucess .dec {
+    margin: 10px 0 30px;
+}
+
+.business .h2 {
+    font: normal 24px/1 "微软雅黑";
+    color: #F04E00;
+}
+
+.otheraction {
+    border-top: 1px dashed #ccc;
+    line-height: 30px;
+    text-align: left;
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.otheraction .dt {
+    font: bold 14px/1.5 "arial";
+    color: #F04E00;
+}
+
+/*卖家注册*/
+@font-face {
+    font-family: 'ymaicon';
+    src: url("/Content/icon-font/ymticon/iconfont.eot");
+    src: url("/Content/icon-font/ymticon/iconfont.eot?#iefix") format("embedded-opentype"), url("/Content/icon-font/ymticon/iconfont.woff") format("woff"), url("/Content/icon-font/ymticon/iconfont.ttf") format("truetype"), url("/Content/icon-font/ymticon/iconfont.svg#svgFontName") format("svg");
+}
+
+
+.ymticon {
+    font-family: "ymaicon";
+    font-size: 27px;
+    font-style: normal;
+}
+
+.alert_box {
+    display: none;
+}
+
+.business_header {
+    background: #F03D00;
+}
+
+.area {
+    width: 1000px;
+}
+
+.colorGreen {
+    color: #629C02 !important;
+}
+
+.colorRed {
+    color: #F03D00 !important;
+}
+
+.colorGray {
+    color: #666 !important;
+}
+
+.colorBlue {
+    color: #3367FF !important;
+}
+
+.killMt {
+    margin-top: 5px !important;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.msg-note {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #F04E00;
+    color: #F04E00;
+    background: #FFE2D5;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.msg-note a, .fs14 a {
+    color: #3366FF !important;
+}
+
+.msg-note-high {
+    font-size: 14px;
+    font-weight: bold;
+    color: #F03D00;
+    border-color: #FF7E40;
+    background: #FFE9DF;
+}
+
+.font_high {
+    font-weight: bold;
+    color: #F03D00;
+}
+
+.fs14 {
+    font-size: 14px;
+    vertical-align: inherit !important;
+}
+
+.hr {
+    border: 0;
+    border-bottom: 1px dashed #ddd;
+    margin: 30px 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.textMax {
+    height: 240px;
+    width: 620px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.mj_ipt_usermsg {
+    font-size: 14px;
+}
+
+.procedure {
+    background: #F5F5F5;
+    height: 100px;
+}
+
+.procedure ul {
+    margin-left: 15px;
+}
+
+.procedure ul, .procedure li {
+    display: block;
+}
+
+.procedure li {
+    float: left;
+    width: 240px;
+    height: 2px;
+    background: #999999;
+    margin-top: 40px;
+    position: relative;
+}
+
+.procedure li span {
+    display: block;
+    height: 60px;
+    top: -30px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    padding-top: 7px;
+    color: #999;
+}
+
+.procedure li span i {
+    font-family: Arial;
+    font-size: 16px;
+    color: #fff;
+}
+
+.procedure li .mj_p_bg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-style: normal;
+    background: url("/images/business/procedure_bg.gif") top center no-repeat #F5F5F5;
+}
+
+.procedure li .s1 {
+    left: 0;
+    text-align: left;
+}
+
+.procedure li .s2 {
+    left: 68px;
+}
+
+.procedure li .s3 {
+    left: 100px;
+}
+
+.procedure li .s4 {
+    right: -11px;
+}
+
+.procedure .active {
+    background: #F03D00;
+}
+
+.procedure .active span .mj_p_bg {
+    background-position: bottom left;
+}
+
+.procedure .active span {
+    color: #F03D00;
+}
+
+.procedure_two li {
+    width: 195px;
+}
+
+.sj_ipt {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+}
+
+.sj_ipt_select {
+    padding: 0;
+}
+
+.sj_ipt_code {
+    width: 50px;
+}
+
+.sj_ipt_note {
+    display: block;
+    padding-left: 161px;
+    padding-top: 5px;
+    color: #666;
+}
+
+.mj_btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    background: #F04E00;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.mj_btn:hover {
+    background: #F00000;
+}
+
+.mj_btn_gray {
+    background: #ccc;
+}
+
+.mj_btn_gray:hover {
+    background: #ccc;
+    cursor: text;
+}
+
+.seller_reg {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.seller_reg .fl {
+    width: 700px;
+}
+
+.seller_reg .fl .no-width {
+    width: 200px;
+}
+
+.seller_reg .sr_title {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.seller_reg .sr_title .account-over {
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.seller_reg .sr_title .account-over strong {
+    color: #F03D00;
+    font-weight: bold;
+}
+
+.sr_main, .sr_main_two {
+    display: block;
+    font-size: 12px;
+}
+
+.sr_main p, .sr_main_two p {
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.sr_main .mj_ipt_text {
+    margin-top: 8px;
+}
+
+.sr_main label, .sr_main_two label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.sr_main label .red {
+    color: red;
+}
+
+.sr_main .user_mod {
+    display: inline-block;
+    padding: 8px 10px;
+    background: #eee;
+}
+
+.sr_main a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sr_main .mj_link {
+    color: #3368FF;
+}
+
+.sr_main .mj_prompt {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.sr_main .mj_err {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-left: 5px;
+    border: 1px solid #F04E00;
+    color: #F04E00;
+    background: #FFE2D5;
+}
+
+.sr_main .c_validate {
+    border: 1px solid #eee;
+    color: #666;
+    background: #efefef;
+}
+
+.sr_main .mj_max_err {
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
+    margin-top: -21px;
+}
+
+.sr_main_two {
+    display: block;
+    padding: 25px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.msg-win {
+    display: block;
+    width: 255px;
+    border: 5px solid #EAEAEA;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 24px;
+    *width: 280px;
+}
+
+.msg-win a {
+    color: #3367FF;
+    text-decoration: none;
+}
+
+/*邮箱验证*/
+.seller_reg .sr_sendMail {
+    padding: 0 30px;
+}
+
+.seller_reg .sr_sendMail h3 {
+    font-size: 16px;
+    line-height: 15px;
+    padding-top: 18px;
+}
+
+.seller_reg .sr_sendMail .hr {
+    margin: 25px 0;
+}
+
+.seller_reg .sr_sendMail p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.seller_reg .sr_sendMail p .mj_btn {
+    color: #fff;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.editEmail {
+    display: none;
+}
+
+/*卖家信息填写*/
+.sr_addInfo {
+    padding: 0 25px;
+}
+
+.sr_addInfo_t {
+    line-height: 25px;
+}
+
+.sr_addInfo p {
+    font-size: 14px;
+}
+
+.sr_addInfo p label {
+    font-size: 12px;
+}
+
+/**/
+.sr_shenhe {
+    padding: 0 25px;
+}
+
+.sr_shenhe p {
+    margin-top: 8px;
+}
+
+.sr_shenhe .msg-note {
+    margin-top: 20px;
+}
+
+.sr_shenhe table {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.sr_shenhe table td .ymticon {
+    font-size: 12px;
+}
+
+.sr_shenhe .mj_btn {
+    color: #fff;
+}
+
+/*提交认证材料*/
+.sr_submitrenzhen {
+    padding: 0 25px;
+}
+
+.sr_submitrenzhen h3 {
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.sr_submitrenzhen .table {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.sr_submitrenzhen .table td {
+    text-align: center;
+}
+
+/*地址认证*/
+.sr_addSuccess .hr {
+    margin-top: 10px;
+}
+
+.sr_addSuccess table {
+    margin-bottom: 20px;
+}
+
+.sr_addSuccess p {
+    line-height: 20px;
+}
+
+.sr_addSuccess p strong {
+    font-size: 14px;
+}
+
+.sr_Identity label {
+    width: 200px;
+}
+
+.sr_Identity_error a {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*开店成功*/
+.sr_shop_success h3 {
+    font-size: 16px;
+}
+
+.sr_shop_success p {
+    margin-top: 10px;
+}
+
+.sr_shop_success table {
+    margin-top: 15px;
+    font-size: 12px !important;
+}
+
+.sr_shop_success .mj_btn {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*浮层*/
+.alert_box .msg-note {
+    margin: 20px 0;
+    width: 95%;
+}
+
+#dialogCheckPass .bt {
+    margin: 20px 0;
+}

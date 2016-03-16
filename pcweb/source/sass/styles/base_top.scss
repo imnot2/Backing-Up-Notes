@@ -1,0 +1,220 @@
+﻿/*=======================base_top.css===========================*/
+@charset "utf-8";
+
+/* =Reset
+-----------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p, pre, blockquote, dl, dt, dd, ul, ol, li, form, fieldset, legend, input, textarea, button, th, td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+ul, ol {
+	list-style: none outside;
+}
+
+/* outside重置IE6,7缩进 */
+select, input, button, textarea {
+	font-size: 100%;
+}
+
+/* 使表单元素能继承父级字体大小 */
+textarea {
+	overflow-y: auto;
+}
+
+/* 去除IE下textarea滚动条 */
+
+/* 修复IE6连续英文不折行导致页面布局崩溃 */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* m18的默认样式 */
+body {
+	font: 12px/1.5 "Lucida Grande", arial, helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+/*
+a:hover { color:#F04E00; text-decoration:underline; }
+select, input, button, textarea { _font-size:100%; }*/
+body {
+
+	/*text-align: center;*/
+}
+
+/* =left
+-----------------------------------------------------------------------------*/
+.class_gary a {
+	color: #666666;
+}
+.class_gary a:hover {
+	color: #F04E00;
+	text-decoration: underline;
+}
+#top_top_gary {
+	width: 100%;
+	height: 26px;
+	background-image: url(/content/images/top_bk.png);
+	text-align: center;
+	background-color: #000;
+}
+.top_center {
+	width: 1000px;
+	height: 26px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#top_login {
+	float: left;
+	height: 26px;
+	width: 330px;
+}
+#top_myytm {
+	float: right;
+	width: 400px;
+	height: 26px;
+	text-align: right;
+}
+#top_myytm ul {
+	float: right;
+}
+#top_myytm li {
+	float: right;
+	margin-right: 10px;
+}
+#singe_out {
+	margin-top: 4px;
+	text-align: right;
+}
+#singe_out li {
+	float: left;
+	margin-right: 10px;
+}
+#singe_in {
+}
+.margin-top {
+	margin-top: 4px;
+}
+.cart_style_li {
+	width: 132;    /* width:120px;*/
+}
+#cart_style {
+	width: 100%;
+	height: 25px;
+	background-image: url(/content/images/cart_bk.gif);
+	border-bottom: 1px solid #F4DDB3;
+	border-right: 1px solid #F4DDB3;
+	border-left: 1px solid #F4DDB3;
+}
+#cart_style li {
+	float: left;
+}
+#gav_logo_search {
+	margin-top: 20px;
+	height: 100px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gav_logo {
+	float: left;
+}
+.gav_logo li {
+	float: left;
+	margin-right: 10px;
+	height: 59px;
+}
+#search_body {
+	float: right;
+	width: 420px;
+}
+.search_tab {
+	height: 20px;
+	padding-left: 35px;
+}
+.search_tab li {
+	float: left;
+	margin-right: 10px;
+	color: #CCC;
+}
+#search_search {
+	height: 38px;
+	width: 420px;
+	background-image: url(/content/images/search_bk.png);
+}
+#search_search ul {
+	margin-left: 5px;
+}
+#search_search li {
+	float: left;
+	margin-top: 6px;
+}
+#search_input_bk {
+	width: 317px;
+	height: 27px;
+	background-image: url(/content/images/search_input_c.gif);
+	text-align: left;
+}
+#search_input_bk input {
+	border: 0;
+	margin-top: 6px;
+	height: 17px;
+	font-size: 14px;
+	width: 310px;
+}
+.search_keywords {
+	height: 30px;
+	padding-left: 35px;
+	margin-top: 5px;
+}
+.search_keywords li {
+	float: left;
+	margin-right: 10px;
+}
+#gav_main {
+	height: 37px;
+	width: 100%;
+	background-image: url(/content/images/gav_orange_bk.gif);
+	margin-right: auto;
+	margin-left: auto;
+}
+.gav_center {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 37px;
+	height: 37px;
+}
+#gav_menu {
+	font-size: 14px;
+	text-align: center;
+}
+#gav_menu a {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+}
+#gav_menu a:hover {
+	color: #F04E00;
+	background-image: url(/content/images/gav_hover_bk.gif);
+	display: block;
+	height: 37px;
+	text-decoration: none;
+}
+#gav_menu li {
+	font-size: 14px;
+	float: left;
+	line-height: 37px;
+	width: 90px;
+	margin-right: 20px;
+	height: 37px;
+}
+.gav_liucheng {
+	float: right;
+	padding-top: 3px;
+}

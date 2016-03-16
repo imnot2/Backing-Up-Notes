@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*
+    页面布局
+*/
+
+@import "mixins";
+
+.gb-wrapper {
+    text-align: center;
+    width: 100%;
+    .gb-inner {
+        width: 1190px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    //两排显示  左大右小,用“_”开头者反之
+    .gb-two {
+        width: 1190px;
+        text-align: left;
+        margin: 0 auto;
+        .gb-left {
+            float: left;
+            width: 280px;
+            margin-top: 20px;
+        }
+        .gb-right {
+            float: right;
+            width: 895px;
+        }
+        .n_gb-left {
+            float: left;
+            width: 895px;
+        }
+        .n_gb-right {
+            float: right;
+            width: 280px;
+            position: relative;
+        }
+    }
+}
+
+//老的码头样式
+.wrapper .area {
+    @include container-fixed;
+    text-align: left;
+    width: 1190px;
+    @media (min-width: 1200px) {
+        width: 1190px;
+    }
+}
+
+.wrapper {
+    @include wrapper;
+}
+
+.wrapper .topbar .area {
+    overflow: initial;
+}

@@ -1,0 +1,97 @@
+﻿<div temp-data="data">
+<if e="data.CartData.length==0">
+    <div class="shoppingcart-action">
+        <h1>您的购物车还没有商品请去购物吧</h1>
+        <div class="clearfix pd tc">
+            <a class="btn-a" href="/productlist/#AllCategorys">立即去购物</a>
+        </div>
+    </div>
+</if>
+<else>
+    <ul class="mod-collapsible shoppingcart">
+        <for e="buyer in data.CartData">
+            <li class="item buyerItem${buyer.SellerId}">
+                <div class="clearfix hd">
+                    <div class="fr icon-arrow-up fuc-spread"></div>
+                    <input type="checkbox" class="fuc-CheckSeller" <if e="buyer.AllChecked">checked</if> id="CheckSeller-${buyer.Seller}" data="${buyer.SellerId}" /><label for="CheckSeller-${buyer.Seller}" class="title">${buyer.Seller}(${buyer.CatalogList.length})</label>
+                </div>
+                <div class="mod-product-list show-img-60 bd current">
+                <ul class="panel">
+                    <for e="catalog in buyer.CatalogList">
+                        <li class="item catalogItem${catalog.CatalogId} catalogItemBuySeller${buyer.SellerId}">
+                            <if e="catalog.ShopCartCataStatus!=1">
+                                <input type="checkbox" disabled class="fl SellerCatalog${buyer.SellerId}"/> 
+                            </if>
+                            <else>
+                                <input type="checkbox" catalogid="${catalog.CatalogId}" sellerid="${buyer.SellerId}" class="fl SellerCatalog${buyer.SellerId} fuc-CanSelect" <if e="catalog.Selected==true">checked</if> />
+                            </else>
+                            <a class="lk-img" href="/singleproduct?productId=${catalog.ProductId}">
+                                <img src="${catalog.PictureUrl}" class="img" title="" alt="" />
+                            </a>
+                            <div class="info">
+                                <h2 class="h2">
+                                    <a class="lk-title-14" href="/singleproduct?productId=${catalog.ProductId}">${catalog.ProductName}</a>
+                                </h2>
+                                <div class="dec">
+                                    <for e="property in catalog.CatalogPropertyList">
+                                        <label>${property.Property}：</label><span class="specification">${property.PropertyAttribute}</span>&nbsp;&nbsp;&nbsp;
+                                    </for>
+                                </div>
+                                <if e="catalog.Promotion>0">
+                                    <div class="dec">
+                                        <label>原价：</label><span class="mk-price-12"><i>&yen;</i><b>${catalog.OriginalPrice}</b></span>
+                                    </div>
+                                    <div class="dec">
+                                        <i class="fr icon-trash fuc-delete" sellerid="${buyer.SellerId}" catalogidwithtoken="${catalog.CatalogId}|${catalog.Token}"></i><span class="mod-number"><i class="del" catalogid="${catalog.CatalogId}" data="s=${buyer.SellerId}&c=${catalog.CatalogId}&selected=${catalog.Selected}&num=-1">-</i><input type="text" value="${catalog.ProductNumber}" /><i class="add" catalogid="${catalog.CatalogId}" data="s=${buyer.SellerId}&c=${catalog.CatalogId}&selected=${catalog.Selected}&num=1">+</i></span><span class="mt-price-20"><i>&yen;</i><b id="Price${catalog.CatalogId}">${parseInt(catalog.QuotePrice)*parseInt(catalog.ProductNumber)}</b></span>
+                                    </div>
+                                </if>
+                                <else>
+                                    <div class="dec">
+                                        <i class="fr icon-trash fuc-delete" sellerid="${buyer.SellerId}" catalogidwithtoken="${catalog.CatalogId}|${catalog.Token}"></i><span class="mod-number"><i class="del" catalogid="${catalog.CatalogId}" data="s=${buyer.SellerId}&c=${catalog.CatalogId}&selected=${catalog.Selected}&num=-1">-</i><input type="text" value="${catalog.ProductNumber}" /><i class="add" catalogid="${catalog.CatalogId}" data="s=${buyer.SellerId}&c=${catalog.CatalogId}&selected=${catalog.Selected}&num=1">+</i></span><span class="mt-price-20"><i>&yen;</i><b id="Price${catalog.CatalogId}">${parseInt(catalog.QuotePrice)*parseInt(catalog.ProductNumber)}</b></span>
+                                    </div>
+                                </else>
+                            </div>
+                        </li>
+                    </for>
+                </ul>
+                </div>
+            </li>
+        </for>
+    </ul>
+<input type="hidden" id="AreaCode" value="${data.AreaCode}"/>
+<input type="hidden" id="Logined" value="${data.Logined}"/>
+<!--购物车-->
+<section class="shoppingcart-action">
+    <div class="clearfix pd">
+        <div class="fr">
+            商品合计：<span class="mt-price-20"><i>&yen;</i><b id="TotalPriceWithoutFlight">${data.TotalPriceWithoutFlight}</b></span>
+        </div>
+        <if e="data.SelectAll==true">
+           <input type="checkbox" checked id="fuc-SelectAll" class="a"/><label for="fuc-SelectAll">全选</label> 
+        </if>
+        <else>
+           <input type="checkbox" id="fuc-SelectAll" class="a"/><label for="fuc-SelectAll">全选</label>  
+        </else>
+    </div>
+    <div class="clearfix pd">
+        <div class="fr">
+            运费：<span class="mt-price-20"><i>&yen;</i><b id="TotalFlight">${data.TotalFlight}</b></span>
+        </div>
+        <if e="data.UsingChinaTemplate==true">
+        送往：<label id="chinaTemplate">上海</label>
+        </if>
+        <else>
+           <if e="data.AllInChina==false">送到国内</if> 
+        </else>
+    </div>
+    <div class="clearfix pd">
+        <div class="fr">
+            总价：<span class="mt-price-20"><i>&yen;</i><b id="TotalPrice">${data.TotalPrice}</b></span>
+        </div>
+    </div>
+    <div class="clearfix pd tc">
+        <a class="btn-a pointer" id="fuc-Buy">去结算</a>
+    </div>
+</section>
+</else>
+</div>

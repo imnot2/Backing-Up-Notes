@@ -1,0 +1,71 @@
+﻿@import "reset";
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+$fontStack: Helvetica, sans-serif;
+$primaryColor: #666;
+
+div {
+  font-family: $fontStack;
+  color: $primaryColor;
+}
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+.box-border {
+  border: 1px solid #ccc;
+  @include box-sizing(border-box);
+}
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+.success {
+  @extend .message;
+  border-color: green;
+}
+.error {
+  @extend .message;
+  border-color: red;
+}
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+.container {
+  width: 100%;
+}
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+aside[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+$linkColor: #08c;
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+
+  &:hover {
+    color: darken($linkColor, 10%);
+  }
+}

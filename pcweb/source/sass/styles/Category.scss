@@ -1,0 +1,71 @@
+﻿/*=======================Category.css===========================*/
+#crumbs {
+	position: absolute;
+	top: 10px;
+	left: 206px;
+}
+.search_tab .ui-tabs-nav {
+	border-bottom: 1px solid #C4CCC9;
+}
+#pagebox_p {
+	right: 13px;
+	top: 130px;
+	display: none;
+	padding-right: 20px;
+}
+#pagebox_p a {
+	cursor: pointer;
+	color: #88A825;
+	padding: 2px 6px;
+}
+#pagebox_p a:hover {
+	background: #88A825;
+	color: #F2F3F8;
+}
+#pagebox_p a.act {
+	color: #B0250E;
+	font-weight: 700;
+}
+.treeview span {
+	cursor: pointer;
+}
+.treeview span.folder_h {
+	background: url(http://img.ymatou.com/portal/images/tMain_h.png) 0 0 no-repeat;
+}
+.treeview span.file_h {
+	background: url(http://img.ymatou.com/portal/images/tNot_h.png) 0 0 no-repeat;
+}
+.flul ul {
+	clear: both;
+	position: relative;
+}
+.flul ul.fl li {
+	float: left;
+	padding: 3px 5px;
+	position: relative;
+	z-index: 200;
+}
+.flul ul li a {
+	color: #A89E2D;
+	white-space: nowrap;
+}
+.flul ul li a:hover {
+	color: #fff;
+}
+.flul ul div.y_fhover {
+	background: #A89E2D;
+	position: absolute;
+}
+.flprices li {
+	padding-bottom: 3px;
+}
+.flprices li a {
+	color: #A89E2D;
+}
+.flprices li a:hover {
+	color: #B0250E;
+	text-decoration: underline;
+}
+.flprices .flprices_in {
+	width: 50px;
+}

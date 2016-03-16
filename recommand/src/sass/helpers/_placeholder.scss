@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+//居中
+%text-center {
+    text-align: center;
+}
+
+//全圆角
+%full-radius {
+    @include border-radius(100%);
+}
+
+//标准圆角
+%extend-redius {
+    @include border-radius($extend-radius-val);
+}
+
+//字体加粗
+%bold-font {
+    font-weight: bold;
+}
+
+//清除浮动
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        overflow: hidden;
+    }
+}

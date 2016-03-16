@@ -1,0 +1,142 @@
+﻿.tools{
+    width:1200px;
+    margin:0 auto 60px;
+}
+.tools-wrap {
+    padding:10px;
+}
+.tools-hd .small-title {
+    padding-left:20px;
+}
+.tool-icon {
+    background:url('../img/tools.png') no-repeat;
+    display:block;
+}
+.tool-1 {
+    background-position:0 0;
+    width:60px;
+    height:70px;
+    margin-left:5px;
+}
+.tool-2{
+    background-position:-61px 0;
+    width:60px;
+    height:70px;
+    margin-left:5px;
+}
+.tool-3{
+    background-position:-123px -1px;
+    width:70px;
+    height:63px;
+}
+.tool-4{
+    background-position:-198px -2px;
+    width:76px;
+    height:67px;
+}
+.tool-5{
+    background-position:-296px 0;
+    width:60px;
+    height:70px;
+    margin-left:5px;
+}
+.tools-list {
+    overflow:hidden;
+    margin-left:-50px;
+}
+.tools-list li {
+    overflow:hidden;
+    float:left;
+    margin:30px 0 30px 50px;
+    padding-left:10px;
+    width:300px;
+}
+.tools-list li h5 {
+    font-size:14px;
+    color:#666;
+    margin-bottom:5px; 
+}
+.tools-list li .c-btn {
+    line-height:30px;
+    min-width:50px;
+    text-align:center; 
+}
+.tools-list li p {
+    color:#999; 
+    margin-bottom:10px;  
+}
+.tools-list .tools-l {
+    width:95px;
+    float:left;
+}
+.tools-list .tools-r {
+    margin-left:95px;
+}
+.tools-xlobo {
+    font-size:14px;
+    color:#666;
+    font-weight:700;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+/*教程*/
+.tutorial_tool_popup {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100%; 
+    top:0;
+    left:0;
+/*    background-color:rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType='0', StartColorStr='#99000000', EndColorStr='#99000000');*/
+}
+
+.tutorial_tool_popup .tutorial_frame_wrapper {
+  	width: 1200px;
+  	margin: 0 auto;
+  	position: relative;
+}
+
+.tutorial_tool_popup .tutorial_frame_wrapper .close {
+	display: block;
+	width: 150px;
+	height: 60px;
+	background: url(../img/course/close2.png) no-repeat; 
+	position: absolute;
+	top:295px;
+	left: 252px;
+}
+
+.tutorial_tool_popup .window{
+	width: 371px;
+	height: 227px;
+	background: url(../img/course/12_1.png) no-repeat;
+	position: absolute;
+}
+
+.tutorial_tool_popup .window1{
+	top: 110px;
+	left: -35px; 
+}
+
+.tutorial_tool_popup .window2{
+	width: 629px;
+	height: 235px;
+	background: url(../img/course/12_2.png) no-repeat;
+	position: absolute;
+	top: 110px;
+	left: 320px; 
+}
+
+.tutorial_tool_popup .window3{
+	top:310px;
+	left:-40px; 
+}
+
+.tutorial_tool_popup .window4{
+	top: 310px;
+	left: 320px; 
+}
+.backtop {
+    text-align:center;
+}

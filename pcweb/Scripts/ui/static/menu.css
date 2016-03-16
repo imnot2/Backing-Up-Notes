@@ -1,0 +1,18 @@
+﻿*{margin:0;padding:0;}
+ul{ list-style-type:none;}
+body{ margin:20px; font:12px/1.5 tahoma arial;}
+.grid_menu,.grid_menu_all_colums{ border:1px solid #718BB7; background:#F0F0F0; width:120px; padding:2px; box-shadow:0 0 4px rgba(34,69,135,.3);}
+.grid_menu li{padding:1px; position:relative; background:url("grid.gif") no-repeat -999px -999px;}
+.grid_menu li input{ position:absolute; top:6px; left:5px; border:1px solid #F0F0F0; border-radius:3px;}
+.grid_menu li label,.grid_menu li a{ display:block; padding-left:25px; line-height:24px; color:#000; text-decoration:none; border:1px solid #F0F0F0;}
+.grid_menu li.hover{ border:1px solid #AACCF6;padding:0; background-color:#EBF3FD; border-radius:3px; box-shadow:0 0 4px rgba(34,69,135,.3);}
+.grid_menu li.arrow i{ background:url("grid.gif") no-repeat 3px -89px; width:10px; height:10px; position:absolute; left:100px; top:9px;}
+.grid_menu li.arrow:hover i{left:99px; top:8px;}
+.grid_menu li.sort{ background-position:3px 6px;}
+.grid_menu li.sort:hover{ background-position:2px 5px;}
+.grid_menu li.reverse{ background-position:3px -23px;}
+.grid_menu li.reverse:hover{ background-position:2px -24px;}
+.grid_menu li.part{ background-position:3px -53px;}
+.grid_menu li.part:hover{ background-position:2px -54px;}
+.grid_menu_all_colums{ position:absolute; left:118px; top:5px; display:none;}
+.line{ border:outset 1px #000;}

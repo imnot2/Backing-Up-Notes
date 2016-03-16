@@ -1,0 +1,11 @@
+﻿<div id="hotBrands"></div>
+<div class="mod-collapsible allCategorys" temp-data="data">
+    <div class="clearfix hd">
+        <label class="title">更多品牌</label>
+    </div>
+    <dl class="mod-secondlist">
+        <for e="sec in data">
+            <dd title="${sec.Name}" onclick="$m.mobile.toURL('${data.param}/b=${sec.Id}')"><input type="radio" name="categoryItem" class="fr" id="brandid-${sec.Id}" /><label for="brandid-${sec.Id}">${sec.Name}</label></dd>
+        </for>
+    </dl>
+</div>

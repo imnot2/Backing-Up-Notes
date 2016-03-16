@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*
+* 动画
+*/
+
+/*
+* 弹出
+*/
+@keyframes popIn {
+	0%{
+	   transform: translate(0,$rem*-50);
+	}
+	50%{
+		transform: translate(0,0);
+	}
+	100%{
+		transform: translate(0,$rem*-50);
+	}
+}
+//慢
+.tran-slow{
+	transition:0.65s cubic-bezier(0, 0.25, 0.25, 1) 0ms;
+}
+
+//侧滑块
+.side-slide{
+	transition: .4s;
+}

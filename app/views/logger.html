@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app='ymtapp'>
+<head>
+<meta chareset='utf-8'>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+
+<title></title>
+
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+
+.list_ol{
+	display:block;
+	overflow: hidden;
+}
+
+.list_ol li{
+	list-style:none;
+	font-size:14px;
+	float:left;
+	line-height:20px;
+	dispaly:block;
+	border-top:2px solid #666;
+	margin-bottom:10px;
+	}
+.list_ol li span{
+	float:left;
+	display:block;
+	padding:4px 0;
+	width:100%;
+	word-wrap:break-word; 
+	padding:8px 20px;
+}
+
+.list_ol li .info{
+
+	background:#eee;
+}
+.list_ol li .info strong{
+	padding:0 10px;
+}
+
+.list_ol li .url{
+	font-weight:bold;
+	background:#f7f7f7;
+	border-bottom:1px solid #ddd;
+}
+
+
+.list_ol li .data{
+color:#666;
+}
+
+.list_ol li .error{
+	color:#f30;
+}
+
+</style>
+</head>
+<body>
+	<ol class="list_ol">
+		<%if(errList&&errList.length>0){%>
+		<%for(i in errList){%>
+		<li>
+			<span class="info">
+				<strong>方式：<i><%=errList[i].method%></i></strong>
+				<strong>状态：<i><%=errList[i].statusCode%></i></strong>
+				<strong>错误：<i class="error"><%=errList[i].error%></i></strong>
+				<strong>时间：<i><%=errList[i].date%></i></strong>
+			</span>
+			<span class="url">http://<%=errList[i].url%></span>
+			<span class="data"><%=errList[i].data%></span>
+			<span class="resulte"><%=errList[i].resulte%></span>
+
+		</li>
+		<%}%>
+		<%}%>
+	</ol>
+</body>
+</html>

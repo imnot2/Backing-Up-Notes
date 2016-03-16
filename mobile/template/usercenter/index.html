@@ -1,0 +1,52 @@
+﻿<div class="mymatou">
+    <section class="mod-nav clearfix">
+        <div class="fr">
+            <a class="btn-a-0 none" id="moreFeature" href="#">更多功能>></a>
+        </div>
+        <div class="fl">
+            <div class="bread" id="navigator"><a href="/">首页</a><i>></i><span>我的码头</span></div>
+        </div>
+        <div class="mod-sub-nav">
+            <a href="#">我的订单</a>
+            <a href="#">我收藏的帖子</a>
+            <a href="#">我的优惠券</a>
+            <a href="#">我的收藏夹</a>
+            <a href="#">回复我的</a>
+        </div>
+    </section>
+    <section class="buyerinfo" temp-data="data">
+        <div class="clearfix show-img-80">
+            <div class="fl lk-img">
+                <img src="${data.Logo}" class="img" title="" alt="">
+            </div>
+            <div class="info">
+                <h3 class="dec">${data.Name}</h3>
+                <div class="dec">登录邮箱：${data.Email}</div>
+                <div class="dec last">当前状态：<if e="!data.HasActiveVPrivilege">普通会员</if><else>VIP</else></div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <span class="mar">账户余额：<b class="co-red">¥${data.AccountAmount}</b></span>
+            <span>红包账户：<b class="co-red">¥${data.GiftAccountAmount}</b></span>
+        </div>
+        <div class="clearfix">
+            <!--<a class="blue" href="">充值</a><i class="blue split">|</i><a  class="blue"  href="#">修改地址</a><i  class="blue split">|</i><a  class="blue" href="#">更多功能&nbsp;>></a>-->
+            <if e="!data.IsSeller">
+                <a  class="blue"  href="/purchase/#addressList/ret=myaddress">修改地址</a>
+            </if>
+            
+        </div>
+    </section>
+    <header class="bar-h40">
+        <a class="title" href="Description">30天内的订单</a>
+    </header>
+    <div id="recentOrder"></div>
+    <section class="mod-product-show show-img-80 show-img-updown none" id="browsedContainer">
+        <div class="bar-h40"><b class="title">浏览过的商品</b></div>
+        <div id="browsed"></div>
+    </section>
+    <section class="mod-product-show show-img-80 show-img-updown none" id="myCollectedContainer">
+        <div class="bar-h40"><b class="title">我的收藏</b></div>
+        <div id="myCollected"></div>
+    </section>
+</div>

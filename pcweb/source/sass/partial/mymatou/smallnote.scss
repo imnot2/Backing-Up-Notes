@@ -1,0 +1,87 @@
+﻿/*=======================smallnote.css===========================*/
+
+/*body{text-align:center;color:#000; font-family:'Arial'}*/
+.field_l_r .l {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.field_l_r .r {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.packet {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-family: "Arial";
+}
+
+.packet .title {
+    font: 50px/1.5 'Arial';
+}
+
+.packet .dec {
+    padding: 15px 0;
+    text-align: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+}
+
+.packet .dec .line {
+    padding: 10px 0;
+}
+
+.packet .content {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.packet .content th {
+    line-height: 50px;
+}
+
+.packet .content td {
+    padding: 10px 0;
+}
+
+.packet .content .l {
+    text-align: left;
+}
+
+/*from Delivery\CreateSingleDelivery.cshtml section Style*/
+.failed {
+    border: 1px solid red;
+}
+
+.relative {
+    position: relative;
+}
+
+.tip-box {
+    position: absolute;
+    width: 496px;
+    height: 174px;
+    background: url("/Content/images/haiguantip.png") no-repeat;
+    left: -410px;
+    top: -170px;
+    display: none;
+}
+
+.tip-box .inner {
+    padding: 34px 10px 10px 20px;
+    line-height: 20px;
+}
+
+.tip-box .st {
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+}

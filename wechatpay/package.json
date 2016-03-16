@@ -1,0 +1,16 @@
+{
+  "name": "wechatpay",
+  "version": "0.0.1",
+  "private": true,
+  "description": "wechatpay",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "https":"*"
+  },
+  "devDependencies": {
+  }
+}

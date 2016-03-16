@@ -1,0 +1,29 @@
+@import "lib/variables";
+
+.userInfo {
+    display: block;
+    height: 66px;
+    z-index: 9;
+    .buyerPhoto {
+        margin: 10px 12px;
+        border-radius: 100%;
+    }
+    .infoBox {
+        padding-top: 12px;
+        .buyerName, .from {
+            height: 20px;
+            line-height: 20px;
+        }
+        .buyerName {
+            color: $highRad;
+            font-size: 14px;
+        }
+        .from {
+            color: $grey40;
+            .flag {
+                border-radius: 7px;
+                margin-right: 6px;
+            }
+        }
+    }
+}

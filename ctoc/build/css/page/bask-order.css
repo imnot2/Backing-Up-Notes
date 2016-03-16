@@ -1,0 +1,462 @@
+/* line 1, ../../../src/sass/lib/c2c-icons.scss */
+.c2c-icon {
+  background-image: url("/images/sprites/topic-icon.png");
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+/* line 8, ../../../src/sass/lib/c2c-icons.scss */
+.i-comment {
+  background-position: -4px -6px;
+  width: 20px;
+  height: 14px;
+}
+
+/* line 13, ../../../src/sass/lib/c2c-icons.scss */
+.i-prise {
+  background-position: -30px -7px;
+  width: 17px;
+  height: 10px;
+}
+
+/* line 5, ../../../src/sass/utils/_share-like.scss */
+body {
+  background-color: #f4f4f4;
+}
+
+/* line 9, ../../../src/sass/utils/_share-like.scss */
+.share-icon {
+  background-image: url("/images/sprites/share.png");
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+}
+
+/* line 17, ../../../src/sass/utils/_share-like.scss */
+.share-wrap {
+  height: 32px;
+  overflow: hidden;
+  background-color: #dddddd;
+  border-radius: 3px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  z-index: 9;
+}
+/* line 27, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .i-weibo {
+  background-position: -1px 0;
+}
+/* line 29, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .i-weibo:hover {
+  background-position: -1px -24px;
+}
+/* line 33, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .i-weixin {
+  background-position: -25px 0;
+}
+/* line 35, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .i-weixin:hover {
+  background-position: -25px -24px;
+}
+/* line 39, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .share-type {
+  float: left;
+  width: 87px;
+  height: 22px;
+  margin: 5px 0;
+  display: none;
+}
+/* line 45, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .share-type span {
+  float: left;
+  padding: 0 10px;
+}
+/* line 49, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .share-type .weibo {
+  border-right: 1px #c5c5c5 solid;
+}
+/* line 52, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .share-type .weixin {
+  border-left: 1px #ffffff solid;
+}
+/* line 56, ../../../src/sass/utils/_share-like.scss */
+.share-wrap .share-btn {
+  width: 55px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  border: 1px #dddddd solid;
+  text-align: center;
+  background-color: #ffffff;
+  color: #999999;
+  cursor: pointer;
+}
+/* line 68, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light {
+  background-color: #ffffff;
+}
+/* line 72, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .share-type {
+  padding: 5px 0;
+  height: 20px;
+  border: 1px #dddddd solid;
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+  margin: 0;
+}
+/* line 80, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .weibo {
+  border-right: 1px #f8d4d4 solid;
+}
+/* line 83, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .share-btn {
+  background-color: #dd3333;
+  border: 1px #dd3333 solid;
+  color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+/* line 91, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .i-weibo {
+  background-position: -97px -2px;
+}
+/* line 93, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .i-weibo:hover {
+  background-position: -1px -26px;
+}
+/* line 97, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .i-weixin {
+  background-position: -121px -2px;
+}
+/* line 99, ../../../src/sass/utils/_share-like.scss */
+.share-wrap.share-light .i-weixin:hover {
+  background-position: -25px -26px;
+}
+
+/* line 106, ../../../src/sass/utils/_share-like.scss */
+.like-wrap {
+  border: 1px #dddddd solid;
+  background-color: #ffffff;
+  border-radius: 3px;
+  height: 22px;
+  padding: 4px 0;
+  *zoom: 1;
+}
+/* line 3, ../../../src/sass/lib/classes.scss */
+.like-wrap:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+/* line 113, ../../../src/sass/utils/_share-like.scss */
+.like-wrap span {
+  padding: 0 6px;
+  float: left;
+}
+/* line 117, ../../../src/sass/utils/_share-like.scss */
+.like-wrap span.active .i-like-b {
+  background-position: -144px -2px;
+}
+/* line 122, ../../../src/sass/utils/_share-like.scss */
+.like-wrap em {
+  float: left;
+  font-size: 14px;
+  color: #999999;
+  padding: 0 9px;
+  border-left: 1px #dddddd solid;
+}
+/* line 129, ../../../src/sass/utils/_share-like.scss */
+.like-wrap .i-like-b {
+  background-position: -48px -2px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* line 8, ../../../src/sass/page/bask-order.scss */
+.seller-icon {
+  background-image: url("/images/seller/seller-icon.png");
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 14, ../../../src/sass/page/bask-order.scss */
+.si-time {
+  background-position: -279px -9px;
+  width: 16px;
+  height: 14px;
+}
+
+/* line 20, ../../../src/sass/page/bask-order.scss */
+.bask-order {
+  background-color: #f4f4f4;
+}
+
+/* line 24, ../../../src/sass/page/bask-order.scss */
+.order-wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+/* line 27, ../../../src/sass/page/bask-order.scss */
+.order-wrap .col {
+  width: 230px;
+  float: left;
+  margin-left: 10px;
+}
+/* line 32, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item {
+  width: 228px;
+  border: 1px #dddddd solid;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 10px;
+  background: #fff;
+}
+/* line 40, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box-overflow {
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+/* line 52, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box-visible .img-box a {
+  margin-bottom: 2px;
+}
+/* line 58, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box a {
+  width: 228px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 4px;
+}
+/* line 64, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box img {
+  width: 228px;
+}
+/* line 67, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box a.img_1 {
+  height: 80px;
+}
+/* line 70, ../../../src/sass/page/bask-order.scss */
+.order-wrap .img-box a.img_last {
+  margin-bottom: 0;
+}
+/* line 74, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item-hd {
+  position: relative;
+}
+/* line 76, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item-hd .share-wrap {
+  float: right;
+}
+/* line 79, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item-hd .like-wrap {
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px #000000;
+}
+/* line 86, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-top {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9;
+}
+/* line 91, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-top .share-wrap {
+  position: relative;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 0px 8px #000;
+}
+/* line 98, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt {
+  background-color: #000;
+  filter: Alpha(opacity=70);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  line-height: 24px;
+  z-index: 9;
+}
+/* line 109, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt .cover-inner {
+  padding: 0 10px;
+}
+/* line 112, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt .country-flag {
+  border-radius: 100%;
+  display: inline-block;
+  height: 14px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 14px;
+}
+/* line 120, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt .country-flag img {
+  height: 14px;
+  vertical-align: top;
+  width: 14px;
+}
+/* line 125, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt .brands {
+  vertical-align: middle;
+}
+/* line 128, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-bt .price {
+  vertical-align: middle;
+  padding: 0 4px;
+}
+/* line 133, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-center {
+  position: absolute;
+  bottom: 33px;
+  left: 10px;
+}
+/* line 137, ../../../src/sass/page/bask-order.scss */
+.order-wrap .cover-center span {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 24px;
+  padding: 0 10px;
+  line-height: 24px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 3px;
+  color: #ffffff;
+}
+/* line 148, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item-bd {
+  padding: 0 14px 15px;
+  margin-bottom: 0;
+}
+/* line 152, ../../../src/sass/page/bask-order.scss */
+.order-wrap .user-hd {
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+/* line 155, ../../../src/sass/page/bask-order.scss */
+.order-wrap .user-hd .avator {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+}
+/* line 161, ../../../src/sass/page/bask-order.scss */
+.order-wrap .user-hd .content {
+  padding-left: 7px;
+}
+/* line 164, ../../../src/sass/page/bask-order.scss */
+.order-wrap .user-hd .name {
+  font-size: 12px;
+}
+/* line 168, ../../../src/sass/page/bask-order.scss */
+.order-wrap .desc {
+  color: #000000;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* line 173, ../../../src/sass/page/bask-order.scss */
+.order-wrap .opertate {
+  color: #999999;
+  margin-top: 5px;
+  margin-left: -3px;
+}
+/* line 177, ../../../src/sass/page/bask-order.scss */
+.order-wrap .opertate a {
+  color: #999999;
+  margin: 0 5px;
+}
+/* line 182, ../../../src/sass/page/bask-order.scss */
+.order-wrap .item-ft {
+  padding: 10px 12px 0;
+  border-top: 1px #dddddd solid;
+  background: #fcfcfc;
+}
+/* line 187, ../../../src/sass/page/bask-order.scss */
+.order-wrap .comment {
+  font-family: "Microsoft yahei";
+  color: #999999;
+  margin-bottom: 5px;
+}
+/* line 191, ../../../src/sass/page/bask-order.scss */
+.order-wrap .comment li {
+  margin-top: 5px;
+}
+/* line 194, ../../../src/sass/page/bask-order.scss */
+.order-wrap .comment .name {
+  font-weight: 700;
+  color: #000000;
+}
+/* line 198, ../../../src/sass/page/bask-order.scss */
+.order-wrap .comment .content {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 204px;
+  color: #666666;
+}
+/* line 205, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-area {
+  padding: 5px 15px;
+  height: 36px;
+  margin-right: 0;
+  width: 174px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+/* line 214, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-wrap .fr {
+  float: none;
+}
+/* line 217, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-wrap .operateBox {
+  display: none;
+  color: #999999;
+  *zoom: 1;
+  padding-bottom: 10px;
+}
+/* line 3, ../../../src/sass/lib/classes.scss */
+.order-wrap .replay-wrap .operateBox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+/* line 223, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-wrap .checkbox {
+  float: left;
+  vertical-align: middle;
+}
+/* line 226, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-wrap .checkbox input {
+  vertical-align: middle;
+}
+/* line 230, ../../../src/sass/page/bask-order.scss */
+.order-wrap .replay-wrap .c2c-btn {
+  float: right;
+  padding: 2px 10px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #666666;
+}

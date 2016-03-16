@@ -1,0 +1,146 @@
+﻿/*=======================Pager.css===========================*/
+.Paginator {
+	LINE-HEIGHT: 22px;
+	MARGIN-LEFT: auto;
+	FONT-SIZE: 12px;
+	MARGIN-RIGHT: auto;
+}
+.Paginator A {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #ffffff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	BORDER-TOP: #ddd 1px solid;
+	BORDER-RIGHT: #ddd 1px solid;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+}
+.pageList .this-page {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #ffffff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	BORDER-TOP: #ddd 1px solid;
+	BORDER-RIGHT: #ddd 1px solid;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+}
+.Paginator A:visited {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	BORDER-TOP: #ddd 1px solid;
+	BORDER-RIGHT: #ddd 1px solid;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+}
+.Paginator .AtStart {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	COLOR: #bbbbbb;
+	BORDER-TOP: #ddd 1px solid;
+	MARGIN-RIGHT: 20px;
+	BORDER-RIGHT: #ddd 1px solid;
+	PADDING-TOP: 2px;
+}
+.Paginator .Prev {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	BORDER-TOP: #ddd 1px solid;
+	MARGIN-RIGHT: 20px;
+	BORDER-RIGHT: #ddd 1px solid;
+	PADDING-TOP: 2px;
+}
+.Paginator .break {
+	BORDER-BOTTOM: medium none;
+	BORDER-LEFT: medium none;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	COLOR: #bbbbbb;
+	BORDER-TOP: medium none;
+	BORDER-RIGHT: medium none;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+}
+.Paginator .Next {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	MARGIN-LEFT: 20px;
+	BORDER-TOP: #ddd 1px solid;
+	BORDER-RIGHT: #ddd 1px solid;
+	PADDING-TOP: 2px;
+}
+.Paginator .AtEnd {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	COLOR: #bbbbbb;
+	MARGIN-LEFT: 20px;
+	BORDER-TOP: #ddd 1px solid;
+	BORDER-RIGHT: #ddd 1px solid;
+	PADDING-TOP: 2px;
+}
+.Paginator .this-page {
+	BORDER-BOTTOM: #ddd 1px solid;
+	BORDER-LEFT: #ddd 1px solid;
+	PADDING-BOTTOM: 2px;
+	BACKGROUND-COLOR: #fff;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	COLOR: #ff8a00;
+	BORDER-TOP: #ddd 1px solid;
+	FONT-WEIGHT: bold;
+	BORDER-RIGHT: #ddd 1px solid;
+	PADDING-TOP: 2px;
+}
+.Paginator A:hover:visited {
+	BORDER-BOTTOM-COLOR: #ffffff;
+	BORDER-TOP-COLOR: #ffffff;
+	BACKGROUND: #0063dc 0px 0px;
+	COLOR: #fff;
+	BORDER-RIGHT-COLOR: #ffffff;
+	BORDER-LEFT-COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+.Paginator A:hover {
+	BORDER-BOTTOM-COLOR: #ffffff;
+	BORDER-TOP-COLOR: #ffffff;
+	BACKGROUND: #0063dc 0px 0px;
+	COLOR: #fff;
+	BORDER-RIGHT-COLOR: #ffffff;
+	BORDER-LEFT-COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}
+.Paginator A:active {
+	BORDER-BOTTOM-COLOR: #ffffff;
+	BORDER-TOP-COLOR: #ffffff;
+	BACKGROUND: #0063dc 0px 0px;
+	COLOR: #fff;
+	BORDER-RIGHT-COLOR: #ffffff;
+	BORDER-LEFT-COLOR: #ffffff;
+	TEXT-DECORATION: none;
+}

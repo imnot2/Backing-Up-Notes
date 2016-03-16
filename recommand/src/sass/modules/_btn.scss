@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.btns-box {
+    //width: pxtorem(570);
+    width: $main-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    @include btn(100%, pxtorem(90));
+    &.disable {
+        background-color: $disable-bg;
+    }
+}
+
+.btn-login {
+    background-color: $btn-login-bg;
+}
+
+.btn-wechatlogin {
+    color: $highlight-fc;
+    border: 1px solid $highlight-fc;
+    background-color: $base-bg;
+}
+
+.btn-bind {
+    background-color: $btn-bind-bg;
+}

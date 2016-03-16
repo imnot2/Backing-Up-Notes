@@ -1,0 +1,893 @@
+﻿/*=======================main.css===========================*/
+
+/**public**/
+.field_l_r .l {
+    display: inline-block;
+    vertical-align: middle;
+}
+.field_l_r .r {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.field_l_r .vt {
+    display: inline-block;
+    vertical-align: top
+}
+.inp_text {
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 4px
+}
+
+/**page settlement**/
+.settlement .i, .payPassword .i, .pay_recharge .i, .orderfloat .i {
+    background: url(/content/img/sprites/mmt_settlement.2015012822.png) no-repeat;
+    display: inline-block;
+}
+.settlement {
+    color: #000;
+    width: 1000px;
+    margin: 10px auto;
+    text-align: left;
+}
+.settlement .mod {
+    margin: 20px 0;
+}
+.settlement .price {
+    margin: 0 3px
+}
+.settlement .price i {
+    background-position: -194px -87px;
+    width: 6px;
+    height: 9px;
+    font-size: 0;
+    margin-right: 2px;
+}
+.settlement .h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px
+}
+.settlement .yel {
+    margin: 0 2px
+}
+.settlement .width200 {
+    width: 200px;
+}
+.settlement .width80 {
+    width: 80px;
+}
+.settlement .submitbtn, .payPassword .submitbtn {
+    width: 102px;
+    height: 32px;
+    background-position: 0 -33px;
+}
+.verifitip {
+    padding: 0 10px;
+    line-height: 22px;
+    display: none;
+    background-color: #EB5E00;
+    color: #fff;
+}
+
+/**settle_2**/
+.settle_2 {
+    border: 1px solid #F8CB94;
+    background-color: #FFFDF4;
+    padding: 0 2px
+}
+.settle_2 .t {
+    border-top: 1px dashed #ccc
+}
+.settle_2 .item {
+    margin: 0 0 10px
+}
+.settle_2 .mb {
+    margin-bottom: 0;
+}
+.settle_2 ul.node .l {
+    width: 160px;
+    text-align: right
+}
+.settle_2 .level {
+    padding: 15px 50px;
+    line-height: 30px;
+}
+.settle_2 .level .dec {
+    font-size: 12px;
+    color: #666
+}
+.settle_2 .price {
+    font-size: 12px;
+}
+.settle_2 .green {
+    color: #619B01
+}
+
+/**settle_3**/
+.settle_3 .bd {
+    background-color: #FEFEFE;
+    overflow: hidden;
+    padding: 0 0 15px;
+    margin-bottom: 20px
+}
+.settle_3 .bd .left, .settle_3 .bd .vt {
+    vertical-align: top;
+    margin-top: 10px;
+}
+.settle_3 .bt {
+    text-align: center;
+    margin: 30px 0 0
+}
+.settle_3 .left {
+    width: 160px;
+    text-align: right
+}
+.settle_3 .right {
+    width: 780px;
+    float: left;
+}
+.settle_3 .t {
+    border-bottom: 1px dashed #ccc;
+    margin: 1px 0 -1px
+}
+
+/*.settle_3 .t .left{margin-top:13px;}*/
+.settle_3 .level {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.settle_3 .toPay {
+    width: 102px;
+    height: 32px;
+    background-position: -105px 0
+}
+.settle_3 .tit {
+    padding: 10px 0 10px 5px;
+    _padding: 6px 0 10px 5px
+}
+.settle_3 .notToPay {
+    width: 102px;
+    height: 32px;
+    background-position: 0 0
+}
+.settle_3 .current {
+    display: block
+}
+
+/*bankarea*/
+.bankarea {
+    padding-top: 15px;
+    clear: both;
+}
+.bankarea .fl {
+    width: 130px;
+    text-align: right;
+    margin-top: 14px
+}
+.bankarea .hd {
+    margin: 16px 0 10px 12px;
+}
+.bankarea:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0
+}
+.bankarea {
+    display: inline-block
+}
+.bankarea {
+    display: block
+}
+.trigger {
+    margin: 10px 0 0 165px;
+    _margin-left: 178px
+}
+.springarea {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e2e2e2
+}
+.deco {
+    display: inline-block;
+    margin: 15px 0 10px 34px;
+    color: #666
+}
+
+/**payment**/
+.payment {
+    overflow: hidden;
+    float: left;
+    height: 37px;
+    margin: 5px 20px 5px 10px;
+}
+.pay_img {
+    background-image: url(/content/img/sprites/combo.png);
+    text-align: center;
+    height: 34px;
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+    width: 126px;
+    cursor: pointer
+}
+.wid90 {
+    width: 90px;
+}
+.zhifubao {
+    background-image: url(/content/img/sprites/bank.png);
+    text-align: center;
+    height: 34px;
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+}
+.zhifubao_sm {
+    background-image: url(/content/img/sprites/zfb_sm.png);
+    text-align: center;
+    height: 39px;
+    width: 150px;
+    border: 0px solid #e2e2e2;
+    display: inline-block;
+}
+.spring-content {
+    height: 90px;
+    overflow: hidden;
+}
+
+/**alert payPassword**/
+.payPassword .con {
+    padding: 20px 0 0;
+    width: 580px;
+    height: 300px;
+    color: #000;
+    border-top: 1px solid #e2e2e2;
+}
+.payPassword .h3 {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    padding: 10px 0 10px 10px
+}
+.payPassword ul {
+    margin: 20px 0 0 60px;
+}
+.payPassword .l {
+    width: 120px;
+    text-align: right
+}
+.payPassword li {
+    margin: 20px 0
+}
+.payPassword .mb {
+    margin-bottom: 5px;
+}
+.payPassword .mt {
+    margin-top: 5px;
+}
+.payPassword .logo {
+    width: 55px;
+    height: 30px;
+    background-position: 0 -66px
+}
+.payPassword .payment {
+    display: block
+}
+.payPassword .level {
+    padding: 10px 20px;
+    width: 510px;
+    margin: 0 auto;
+    background-color: #efefef;
+    margin-bottom: 1px;
+    height: 36px;
+    line-height: 36px;
+}
+.payPassword .plus {
+    width: 13px;
+    height: 13px;
+    background-position: -207px -37px;
+    margin: 0 10px;
+    vertical-align: middle
+}
+.payPassword .width200 {
+    width: 200px;
+}
+.payPassword .width80 {
+    width: 80px;
+}
+.payPassword .overage {
+    display: inline-block;
+    height: 35px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    color: #F04E00;
+    background-color: #fff;
+    padding: 0 10px
+}
+.pay_recharge {
+    width: 366px;
+    line-height: 36px;
+}
+.pay_recharge .h3 {
+    font-size: 14px;
+    color: #000;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.pay_recharge .dec {
+    margin: 10px 0;
+    text-align: center;
+}
+.pay_recharge .container {
+    padding: 20px 0;
+    width: 366px;
+    min-width: 366px;
+}
+.pay_recharge .overbtn {
+    width: 78px;
+    height: 32px;
+    background-position: -111px -36px
+}
+.pay_recharge .pay {
+    width: 78px;
+    height: 32px;
+    background-position: -83px -73px
+}
+.pay_recharge .bottom_item {
+    text-align: center;
+}
+.pay_recharge .bottom_item a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+.orderfloat {
+    background-color: #A8A8A8;
+    position: absolute;
+    width: 560px;
+    color: #333;
+    display: none
+}
+.orderfloat .inner {
+    border: 1px solid #A1BEE0;
+    width: 520px;
+    position: relative;
+    top: -2px;
+    left: -5px;
+    background-color: #FFFCED;
+    padding: 15px 20px
+}
+.orderfloat .l, .orderfloat .vt {
+    width: 66px;
+    text-align: right
+}
+.orderfloat .item {
+    margin: 5px 0
+}
+.orderfloat .arrow {
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-position: -212px -59px;
+    top: 30px;
+    left: -8px;
+}
+.orderfloat .shutbtn {
+    right: 10px;
+    top: 10px;
+    position: absolute
+}
+.orderfloat .t {
+    border-top: 1px dashed #999;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.orderfloat .field_l_r .r {
+    line-height: 18px;
+}
+
+/*购物车、下单器等page top*/
+.status_nav .con, .status_nav .modify, .status_nav li {
+    float: left;
+}
+.status_nav .icon {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    background: url(/content/img/sprites/icon.png) no-repeat
+}
+.status_nav .modify {
+    border-bottom: 1px dashed #CCCCCC;
+    width: 270px;
+    _width: 250px;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 20px 0
+}
+.status_nav .last .modify {
+    display: none
+}
+.setorder_top {
+    height: 32px;
+    text-align: left;
+    line-height: 32px;
+}
+.setorder_top .status_nav {
+    display: inline-block
+}
+.setorder_top .icon {
+    height: 32px;
+    width: 40px;
+}
+.setorder_top .item_0 .icon {
+    background-position: -95px -31px;
+}
+.setorder_top .item_1 .icon {
+    background-position: -95px -98px;
+}
+.setorder_top .item_2 .icon {
+    background-position: -94px -161px;
+}
+.setorder_top .current .icon_0 {
+    background-position: -95px 0;
+    height: 30px;
+}
+.setorder_top .current .icon_1 {
+    background-position: -95px -65px;
+}
+.setorder_top .current .icon_2 {
+    background-position: -94px -130px;
+    height: 30px;
+    width: 42px
+}
+.setorder_top .current a {
+    color: #EB5E00
+}
+
+/***bank icon***/
+
+/*.ABC, .BJBANK, .BJRCB, .BOC, .CCB, .CEB, .CIB, .CITIC, .CMB, .CMBC, .COMM, .FDB, .GDB, .HZCB, .ICBC, .NBBANK, .PSBC, .SDB, .SHBANK, .SHRCB, .SPABANK, .SPDB, .WZCB {text-indent: -9999px; background-image: url("/content/img/sprites/combo.png");} */
+.ABC {
+    background-position: 0px -0px;
+}
+.BJBANK {
+    background-position: 0px -36px;
+}
+.BJRCB {
+    background-position: 0px -72px;
+}
+.BOC {
+    background-position: 0px -108px;
+}
+.CCB {
+    background-position: 0px -144px;
+}
+.CEB {
+    background-position: 0px -180px;
+}
+.CIB {
+    background-position: 0px -216px;
+}
+.CITIC {
+    background-position: 0px -252px;
+}
+.CMB {
+    background-position: 0px -288px;
+}
+.CMBC {
+    background-position: 0px -324px;
+}
+.COMM {
+    background-position: 0px -360px;
+}
+.FDB {
+    background-position: 0px -396px;
+}
+.GDB {
+    background-position: 0px -432px;
+}
+.HZCB {
+    background-position: 0px -468px;
+}
+.ICBC {
+    background-position: 0px -504px;
+}
+.NBBANK {
+    background-position: 0px -540px;
+}
+.PSBC {
+    background-position: 0px -576px;
+}
+.SDB {
+    background-position: 0px -612px;
+}
+.SHBANK {
+    background-position: 0px -648px;
+}
+.SHRCB {
+    background-position: 0px -684px;
+}
+.SPABANK {
+    background-position: 0px -720px;
+}
+.SPDB {
+    background-position: 0px -756px;
+}
+.WZCB {
+    background-position: 0px -792px;
+}
+.HXBANK {
+    background-position: 0px -826px;
+}
+.HKBEA {
+    background-position: 0px -858px;
+}
+.NXBANK {
+    background-position: 0px -892px;
+}
+.TCCB {
+    background-position: 0px -932px;
+}
+.JSBANK {
+    background-position: 0px -972px;
+}
+.DLB {
+    background-position: 0px -1016px;
+}
+.BHB {
+    background-position: 0px -1058px;
+}
+.BOD {
+    background-position: 0px -1098px;
+}
+.NJCB {
+    background-position: 0px -1136px;
+}
+.HSBANK {
+    background-position: 0px -1170px;
+}
+.spring-trigger, .spring-trigger-hover {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 36px;
+    width: 116px;
+    height: 36px;
+    border: 1px dashed #F9D5A6;
+    color: #f04e00;
+    text-align: center;
+    background-color: #FFFDF0;
+    text-decoration: none;
+}
+.spring-trigger .arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 9px;
+    margin: 14px 5px 13px 0;
+    background: url(/content/img/sprites/mmt_settlement.2015012822e.png) -173px -75px
+}
+.spring-trigger-hover .arrow {
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+.spring-trigger .txt {
+    display: inline-block;
+    vertical-align: middle
+}
+
+/*支付宝国际*/
+.alipayGlobal .fl {
+    text-align: left;
+    width: auto;
+}
+.alipayGlobal .zhifubao {
+    height: 42px;
+    width: 111px;
+    background-image: url(/content/img/sprites/alipayGlobal.jpg);
+}
+.alipayGlobal .payment {
+    height: 44px;
+}
+
+/*扫货的支付*/
+#sh-pay {
+    padding: 30px 0;
+    text-align: center;
+}
+#sh-pay .countDown, #sh-pay .tips {
+    color: #dd3333;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+#sh-pay .countDown span {
+    padding: 0 3px;
+}
+#sh-pay .timeItem {
+    background-color: #dd3333;
+    border-radius: 3px;
+    color: #ffffff;
+    margin: 0 1px;
+    padding: 2px 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#sh-pay .tips {
+    padding-left: 17px;
+}
+#sh-end {
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #dd3333;
+}
+.sh-btns {
+    border-top: 1px #d2d2d2 dashed;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.sh-btn {
+    width: 175px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-radius: 5px;
+}
+.sbtn-light {
+    background-color: #dd3333;
+    color: #fff;
+    border: 1px #dd3333 solid;
+    margin-right: 15px;
+}
+.sbtn-light:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.sbtn-gray {
+    color: #999;
+    background-color: #f4f4f4;
+    border: 1px #dddddd solid;
+}
+.sbtn-gray:hover {
+    text-decoration: none;
+    color: #999;
+}
+#sh-end .title {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+/*杭保订单*/
+.pageBox {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+.pageBox .yel {
+    color: #cc3333;
+}
+.payTipBox {
+    padding: 38px 14px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.payTipBox .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 40px;
+    float: left;
+    color: #ff7f00;
+    margin-right: 22px;
+}
+.HZbondedProTipBox {
+    background-color: #fffdf4;
+    border: 1px solid #f8cb94;
+    padding: 16px 12px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.HZbondedProTipBox .counts {
+    font-size: 24px;
+}
+.proDetail, .price, .quantity, .proSubtotal, .order-hd .first, .order-hd .column, .order-hd .last {
+    padding-left: 14px;
+}
+.proDetail {
+    width: 432px;
+}
+.price {
+    width: 126px;
+}
+.quantity {
+    width: 76px;
+}
+.proSubtotal {
+    width: 80px;
+}
+.tradeStatus {
+    width: 227px;
+    text-align: center;
+}
+.order-hd, .order-tit {
+    height: 36px;
+    line-height: 36px;
+}
+.order-hd {
+    color: #666;
+    background-color: #f5f5f5;
+}
+.order-tit {
+    background-color: #ececec;
+    color: #333;
+}
+.order-hd .first {
+    width: 433px;
+}
+.order-hd .column {
+    width: 310px;
+}
+.order-hd .last {
+    width: 200px;
+}
+.order-hd .first .dealtime {
+    margin-left: 38px;
+}
+.order-hd .last {
+    text-align: right;
+    padding-right: 14px;
+}
+.order-hd .last .HZbondedBtn {
+    border-bottom: 2px solid #ddd;
+    width: 76px;
+    height: 26px;
+    line-height: 19px;
+    float: right;
+    text-align: left;
+}
+.order-hd .last .HZbondedBtn a {
+    float: right;
+    padding: 2px 0 3px 4px;
+    border: 1px solid #c5c5c5;
+    height: 19px;
+}
+.order-hd .last .HZbondedBtn a:hover {
+    color: #666;
+    text-decoration: none;
+}
+.order-hd .last .HZbondedBtn .bondedIcon {
+    width: 22px;
+    height: 19px;
+    background: url('/content/img/sprites/shop.png') -84px -15px no-repeat;
+    float: right;
+}
+.order-bd .pic {
+    display: inline;
+    float: left;
+    width: 82px;
+    text-align: center;
+    padding: 14px 0;
+}
+.order-bd .desc {
+    display: inline;
+    float: left;
+    width: 216px;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 18px 0 18px 14px;
+}
+.order-bd .desc .name {
+    color: #333;
+    line-height: 18px;
+}
+.order-bd .desc .spec {
+    color: #a9a9a9;
+    line-height: 20px;
+}
+.orderItem {
+    border: 1px solid #e5e5e5;
+}
+.orderItem .order-bd td {
+    border-bottom: 1px solid #e5e5e5;
+}
+.orderItem .order-bd .tradeStatus {
+    border-bottom: none;
+}
+.normal .order-bd .tradeStatus {
+    border-bottom: 1px solid #e5e5e5;
+}
+.orderItem .order-bd.last td, .normal .order-ft td.tradeStatus {
+    border-bottom: none;
+}
+.orderItem .order-bd .tradeStatus {
+    border-left: 1px solid #e5e5e5;
+}
+.orderItem.hover {
+    border: 1px solid #cc3333;
+}
+.order-ft {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+.order-ft .subTotalPrice {
+    border-left: none;
+    padding: 14px 0;
+}
+.payOprateBox .orderPrice {
+    color: #333;
+}
+.payOprateBox .payBtn {
+    background-color: #cc3333;
+    color: #fff;
+    font-size: 14px;
+    width: 180px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-bottom: 2px solid #ddd;
+    text-decoration: none;
+}
+.payOprateBox .payBtn:hover {
+    text-decoration: none;
+}
+.normal.hover {
+    border: 1px solid #999;
+}
+.normal.hover .orderItem, .normal.hover .order-ft {
+    border: none;
+}
+.normal.hover .orderItem {
+    border-bottom: 1px solid #e5e5e5;
+}
+.normal.hover .order-ft {
+    border: 1px solid #999;
+    border-top: none;
+}
+.sep-row {
+    height: 30px;
+}
+.priceSubTotal {
+    height: 102px;
+}
+.orderItem .last .viewBtn {
+    color: #1f7dd8;
+    margin-left: 18px;
+}
+.orderItem .last .viewBtn .sign {
+    font-family: "initial";
+}
+.orderPrice .yel {
+    font-size: 14px;
+    font-weight: bold;
+}
+.orderPrice.smallSize .yel {
+    font-size: 12px;
+    font-weight: normal;
+}
+.payOprateBox {
+    width: 180px;
+    margin: 0 auto;
+    text-align: right;
+}

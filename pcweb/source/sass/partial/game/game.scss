@@ -1,0 +1,42 @@
+﻿/*=======================game.css===========================*/
+.gamelist .banner {
+    position: relative;
+    width: 840px;
+    height: 350px;
+    background: url(/content/images/game/foundgame.png) no-repeat;
+}
+.infolist .hd {
+    padding: 15px 0 5px;
+    font-size: 14px;
+}
+.infolist .bt {
+    text-align: right;
+    padding: 10px 0;
+}
+.btns {
+    padding: 50px 30px 0 0;
+    text-align: right;
+}
+.btns .weibo {
+    display: inline-block;
+    height: 34px;
+    width: 133px;
+    background-image: url(/content/images/game/btn.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.btns .bind {
+    background-position: 0 0;
+}
+.btns .shard {
+    background-position: 0 -41px;
+}
+.goes {
+    padding: 190px 165px 0 0;
+    text-align: right;
+}
+.goes .into {
+    display: inline-block;
+    width: 175px;
+    height: 45px;
+}

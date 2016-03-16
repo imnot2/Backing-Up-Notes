@@ -1,0 +1,43 @@
+<!--规格选择-->
+<div class="ng-cloak" ng-show="showTypeModel">
+	<!--商品规格面板-->		
+	<div class="pro-select-panel">
+		<figure>			
+            <figcaption class="price" ng-bind="(activtEndTime>=nowTime)&&(nowTime>=activtStarTime) ? product.SellingPrice : product.OriginalPrice"></figcaption>
+            <p class="pic"><img ng-src="{{product.ProductPics[0]}}"/></p>
+            <p>
+            	<span class="stock" ng-bind="'库存'+product.Stock+'件'"></span>
+            	<!-- 接口没有限购参数 -->
+            	<span ng-if="product.LimitNum">
+            		(每人限购
+            		<strong ng-bind="product.LimitNum||0"></strong>
+            		件)
+            	</span>
+            </p>
+            <em class="close icon icon-closeBtn" ng-click="closeType()"></em>
+        </figure>
+        <div class="classify" ng-repeat="s in spec" ng-init="s.index = $index">
+        	<p ng-bind="s.name"></p>
+        	<ol class="m">
+        		<li ng-repeat="t in s.val" ng-click="selSpec(s,t.name)" ng-class="{'active':s.selected==t.name}">
+        			<span ng-if="t.url" class="img-btn">
+        				<img ng-src="{{t.url}}" alt="{{t.name}}" title="{{t.name}}"/>
+        			</span>
+        			<span class="btn" ng-class="{'btn-warning':s.selected==t.name,'btn-default':!(s.selected==t.name)}" ng-bind='t.name' ng-if="!t.url"></span>
+        		</li>
+        	</ol>
+        </div>
+        <p class="number">
+        	购买数量:
+        	<span class="btn-group">
+        		<button class="btn btn-default" ng-click="incOrDec()">-</button><input type="text" ng-model="product.ProductNumber" ng-value='product.ProductNumber||1' ng-change="incOrDec(2)"/><button class="btn btn-default"  ng-click="incOrDec(1)">+</button>
+        	</span>
+        </p>
+	</div>
+	<div  class="pro-bottom-bar tx-center">
+		<button class='btn btn-w-lg btn-primary' ng-click='postAdd(toType)' >确认</button>
+	</div>
+</div>
+
+<!--蒙版-->
+<div class="body-mask-fix ng-cloak" ng-show="showTypeModel" disabled-scroll></div>

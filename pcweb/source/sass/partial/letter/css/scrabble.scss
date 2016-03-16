@@ -1,0 +1,610 @@
+/*=======================scrabble.css===========================*/
+
+/* CSS Document */
+.clearspace {
+    font-size: 0;
+    letter-spacing: -4px;
+}
+.pro_letter_box {
+}
+.pro_letter_box .dark, .pro_letter_box .light {
+    width: 28px;
+    color: #333;
+    font-size: 14px;
+    float: left;
+    line-height: 28px;
+    margin-right: 2px;
+    text-align: center;
+    height: 28px;
+    background: url(/content/img/sprites/icon.png) no-repeat;
+}
+.pro_letter_box .dark {
+    background-position: -145px -234px;
+}
+.pro_letter_box .light {
+    background-position: -114px -234px;
+    color: #F04E00;
+}
+.pro_letter_box .num {
+    text-align: center;
+}
+.award .price i {
+    font-size: 14px;
+}
+.award .pro_list_left, .award .pro_list_img img {
+    width: 80px;
+    height: 80px;
+}
+.award .pro_list_tit {
+    font-weight: normal;
+}
+.award .pro_list_mod {
+    height: auto;
+    _height: 1%;
+}
+.special_award {
+    padding: 30px 0 0 30px;
+    height: 230px;
+    background: url(/content/letter/img/special_bg.png) repeat-x;
+}
+.special_award .pro_list_left, .special_award .pro_list_img img {
+    width: 256px;
+    height: 175px;
+}
+.special_award .pro_list_right {
+}
+.special_award .pro_list_tit {
+    color: #EB5E00;
+    font-size: 20px;
+    font-weight: normal;
+}
+.special_award .price i {
+    font-size: 14px;
+}
+.height50 {
+    height: 35px;
+}
+.common_award {
+    background: url(/content/letter/img/pro_bg.png) repeat-y;
+    overflow: auto;
+    _height: 1%;
+}
+.common_award .pro_list {
+    width: 362px;
+    display: inline;
+    margin: 15px 25px 0;
+    float: left;
+    height: 224px;
+}
+.common_award .pro_list_left, .common_award .pro_list_img img {
+    width: 160px;
+    height: 160px;
+}
+.common_award .pro_list_left {
+    padding-top: 20px;
+}
+.common_award .pro_list_mod {
+    margin: 10px 0;
+}
+.common_award .pro_list_right {
+    margin-left: 170px;
+}
+.common_award .pro_list_tit {
+    font-weight: normal;
+}
+.common_award .price i {
+    font-size: 14px;
+}
+.bottom_award {
+    background: url(/content/letter/img/w_bg.png) no-repeat;
+    height: 204px;
+    padding-top: 44px;
+}
+.bottom_award .pro_list_left, .bottom_award .pro_list_img img {
+    width: 90px;
+    height: 90px;
+}
+.bottom_award .pro_list_right {
+    margin-left: 90px;
+}
+.bottom_award .award {
+    float: left;
+    width: 246px;
+    display: inline;
+    margin: 0 16px;
+}
+.award_table {
+    width: 100%;
+}
+.award_table .tl {
+    text-align: left;
+}
+.award_table .time {
+    width: 150px;
+}
+.award_table .letterlong {
+    width: 170px;
+}
+.award_table .letter {
+    color: #F04D00;
+    font-size: 14px;
+    padding: 0 5px;
+}
+.award_table .yellow {
+    color: #F04D00;
+}
+.award_table .lookat {
+    width: 90px;
+}
+.award_table .lookat a {
+    color: #3368FF;
+}
+.award_table .excl_info {
+    width: 40%;
+}
+.award_table .wid {
+    width: 200px;
+}
+.award_table td {
+    padding: 10px 0;
+}
+.award_table tfoot td {
+    text-align: right;
+    height: 30px;
+}
+.award_table thead th {
+    background-color: #FBFBFB;
+    padding: 10px 0;
+    text-align: center;
+}
+.award_table tbody td {
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+}
+.award_game {
+    width: 800px;
+    padding: 26px 21px;
+    height: 200px;
+    background: url(/content/letter/img/game_bg03.png) no-repeat;
+    position: relative;
+}
+.collection_letters {
+    width: 460px;
+    float: left;
+}
+.letters li {
+    height: 62px;
+    position: relative;
+    float: left;
+    margin: 0 10px 1px 0;
+    width: 36px;
+    text-align: center;
+}
+.letters b {
+    font-weight: normal;
+}
+.letters .letter, .letters .night {
+    width: 35px;
+    height: 35px;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    background: url(/content/letter/img/tab_bg.png) no-repeat -39px -315px;
+}
+.letters .light {
+    background-position: 0 -315px;
+}
+.letters .num {
+    display: none;
+    color: #629C02;
+}
+.letters .tip {
+    position: absolute;
+    background: url(/content/letter/img/tip_bg.png) no-repeat;
+    width: 217px;
+    height: 62px;
+    top: -64px;
+    left: -5px;
+    z-index: 100;
+    display: none;
+}
+.letters .tip .tipinner {
+    padding: 8px 15px 0 10px;
+}
+.letters .tip .title {
+    color: #619B01;
+    font-weight: bold;
+}
+.letters .tip .con {
+    color: #1987BE;
+    font-weight: bold;
+}
+.letters .tip .shutdown {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.award_btn {
+    width: 125px;
+    height: 88px;
+    position: absolute;
+    top: 150px;
+    right: 230px;
+}
+.award_btn .btn1, .award_btn .btn2 {
+    width: 125px;
+    height: 36px;
+    text-decoration: none;
+    background: url(/content/letter/img/tab_bg.png) no-repeat 0 0;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+}
+.award_btn .btn1 {
+    margin-bottom: 10px;
+}
+.award_tab_box {
+    width: 842px;
+}
+.award_tab {
+    background: url(/content/letter/img/tab_bg.png) repeat-x 0 -108px;
+    height: 28px;
+    padding-top: 15px;
+}
+.award_tab .tab {
+    float: left;
+}
+.award_tab .item {
+    float: left;
+    height: 28px;
+    margin-right: 10px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 96px;
+    text-align: center;
+    cursor: pointer;
+    background: url(/content/letter/img/tab_bg.png) no-repeat 0 -36px;
+}
+.award_tab .current {
+    background-position: 0 -72px;
+    color: #666;
+}
+.award_tab_content .item {
+    display: none;
+}
+.award_tab_content .current {
+    display: block;
+}
+.award_name {
+    float: right;
+    width: 170px;
+    margin: 50px 10px 0 0;
+    height: 130px;
+    padding-bottom: 10px;
+}
+.award_name ul {
+    height: 130px;
+    width: 170px;
+    overflow: hidden;
+}
+.award_name .item {
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+}
+.award_name .item span {
+    padding: 0 10px;
+}
+.btn_award, .btn_award_dark {
+    display: inline-block;
+    width: 127px;
+    cursor: pointer;
+    height: 36px;
+    background: url(/content/letter/img/tab_bg.png) 0 -152px;
+}
+.btn_award_dark {
+    background-position: 0 -189px;
+}
+#exchangeForm {
+    width: 550px;
+    z-index: 120;
+}
+#exchangeForm .pro_list_left, #exchangeForm .pro_list_img img {
+    width: 80px;
+    height: 80px;
+}
+#exchangeForm .pro_list_right {
+    margin-left: 90px;
+    height: 80px;
+}
+#exchangeForm .alert_hd .bd {
+    width: 360px;
+    margin: 0 auto;
+}
+#exchangeForm .form_info {
+    border: 0;
+}
+.bodashed {
+    border-bottom: 1px dashed #ccc;
+}
+#shareweibodiv {
+    width: 400px;
+}
+#shareweibodiv .alert_box_inner {
+    padding: 50px 0;
+}
+#shareweibodiv .alert_mod, #pubweibo .alert_mod {
+    padding: 10px 0;
+    text-align: center;
+    line-height: 30px;
+}
+.award_letter_box {
+    height: 175px;
+    margin: 10px auto;
+}
+.award_letter_item {
+    height: 175px;
+}
+.award_letter_item iframe {
+    height: 175px;
+    width: 842px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.defined {
+    width: 430px;
+    margin: 50px auto 0 auto;
+}
+.defined .icon {
+    width: 122px;
+    height: 90px;
+    display: inline-block;
+    background: url(/content/letter/img/sprites/active.png) no-repeat 0 0;
+}
+.exle_hd {
+    width: 842px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    border-bottom: 1px solid #E2E2E2;
+}
+.exle_hd .exle_back {
+    display: inline-block;
+    color: #3368FF;
+    font-size: 14px;
+}
+.exle_bd {
+    width: 842px;
+    height: 260px;
+    background: url(/content/letter/img/exle_bg.png) no-repeat;
+}
+.exle_bd .exle_main {
+    width: 842px;
+    height: 260px;
+    position: relative;
+}
+.exle_self, .exle_other {
+    float: left;
+    width: 401px;
+    height: 240px;
+    font-size: 12px;
+    padding: 10px;
+    overflow: hidden;
+}
+.exle_main .hd {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-right: 10px;
+}
+.exle_main .hd .tit, .exle_main .hd .tit .letter, .exle_main .hd .tit .clearLetter {
+    display: inline-block;
+}
+.exle_main .hd .tit .clearLetter {
+    cursor: pointer;
+}
+.exle_main .hd .tit .letter {
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+.exle_main .hd .split {
+    padding: 0 10px;
+}
+.exle_main .hd .seletterBtn {
+    float: right;
+}
+.exle_main .bd {
+    padding: 10px 0;
+}
+.exle_main .dire {
+    background: url(/content/letter/img/tab_bg.png) no-repeat;
+    width: 12px;
+    height: 21px;
+    position: absolute;
+}
+.exle_main .pro_letter_box {
+    width: 380px;
+    margin: 0 auto;
+    height: 200px;
+}
+.exle_main .pro_letter_box .item {
+    float: left;
+    width: 28px;
+    margin: 0 5px 10px;
+    position: relative;
+}
+.exle_main .pro_letter_box .clo {
+    position: absolute;
+    background: url(/content/letter/img/tab_bg.png) no-repeat -104px -275px;
+    width: 12px;
+    height: 12px;
+    top: -10px;
+    right: 0px;
+    display: none;
+    cursor: porint;
+}
+.exle_main .pro_letter_box .light {
+    float: none;
+    display: block;
+    cursor: pointer;
+}
+.exle_main .exle_letters {
+    font-size: 12px;
+    overflow: hidden;
+}
+.exle_main .pro_list .pro_list_left {
+    width: 83px;
+    height: 83px;
+}
+.exle_main .pro_list .pro_list_img {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    border: 1px solid #ececec;
+}
+.exle_main .pro_list .pro_list_img img {
+    width: 80px;
+    height: 80px;
+}
+.exle_main .pro_list .pro_list_right {
+    width: 310px;
+    float: left;
+}
+.exle_main .pro_list .pro_letter_box {
+    width: 310px;
+    padding: 0;
+    height: 190px;
+}
+.exle_ie6 {
+    position: relative;
+    margin-top: -260px;
+}
+#otherLetters {
+    top: 0;
+    left: 0;
+    width: 410px;
+    text-align: center;
+}
+#selfLetters {
+    top: 0;
+    right: 0;
+    width: 410px;
+    text-align: center;
+}
+#otherLetters .dire {
+    background-position: 0 -355px;
+    top: 15px;
+    right: -12px;
+}
+#selfLetters .dire {
+    background-position: -12px -355px;
+    top: 15px;
+    left: -11px;
+}
+#otherLetters .pro_letter_box, #selfLetters .pro_letter_box {
+    width: 390px;
+    height: 188px;
+    padding: 10px;
+}
+.createLink {
+    margin: 30px auto 0;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+}
+.createLink .tit, .createLink .inter {
+    height: 30px;
+    padding: 5px 0;
+}
+.createLink .inter .inp {
+    display: inline-block;
+    margin-right: 10px;
+}
+.createLink .inter input {
+    height: 22px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 2px 2px 4px #F0F0F0 inset;
+    padding: 2px 5px;
+    line-height: 22px;
+}
+.createLink .inter .btn_1 {
+    margin-bottom: 5px;
+}
+.createLink .linkUrl {
+    background-color: #efefef;
+    margin: 10px auto;
+    text-align: left;
+    padding: 0 10px;
+    display: inline-block;
+}
+.createLink .linkUrl .linkUrlTit {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+}
+.createLink .linkUrl .url {
+    color: #F04C00;
+    display: inline-block;
+    width: 360px;
+}
+.letterNumBox {
+    width: 120px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #E2E2E2;
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+.letterNumBox input {
+    width: 35px;
+}
+.letterNumBox .btn_1 {
+    margin: 0 0 6px 10px;
+}
+.exchangeLetter {
+    height: 70px;
+    padding: 30px 0 20px;
+    text-align: center;
+}
+.exchangeLetter .exle_btn {
+    width: 126px;
+    height: 37px;
+    background: url(/content/letter/img/tab_bg.png) no-repeat 0 -381px;
+    display: inline-block;
+    cursor: pointer;
+}
+.exchangeLetter .dec {
+    padding: 10px 0;
+}
+.exle_sumit_btn {
+    width: 200px;
+    height: 30px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+#letter_error .alert_box_inner {
+    padding: 30px 0;
+    text-align: center;
+    width: 400px;
+}
+.pub_letter {
+    display: inline-block;
+    background: url(/content/img/sprites/icon.png) no-repeat -114px -234px;
+    color: #F04E00;
+    width: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    height: 28px;
+}

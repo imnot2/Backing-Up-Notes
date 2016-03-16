@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+
+$floatBottom: sprite-map("sprites/floatrightbottom/*.png", $spacing: 20px);
+
+//<div class="float-buttons"><span class="png backtotop"></span><span class="png qa"></span><span class="png redbag"></span></div>
+* html, * html body {
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+
+.float-buttons {
+    position: fixed;
+    width: 64px;
+    bottom: 100px;
+    right: 20px;
+    _position: absolute;
+    _bottom: auto;
+    _right: auto;
+    _left: expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+    .png {
+        display: block;
+        //background-image: url(/images/sprites/floatrightbottom.png);
+        width: 64px;
+        cursor: pointer;
+    }
+    .QQline {
+        height: 45px;
+        margin-bottom: 5px;
+    }
+    .QQonLine {
+        background: sprite($floatBottom, qqon, 9px) no-repeat;
+        &:hover {
+            background: sprite($floatBottom, qqon_hover, 9px) no-repeat;
+        }
+    }
+    .QQoffLine {
+        background: sprite($floatBottom, qqoff, 9px) no-repeat;
+        &:hover {
+            background: sprite($floatBottom, qqoff_hover, 9px) no-repeat;
+        }
+    }
+    .backtotop {
+        background: sprite($floatBottom, toTop, 9px) no-repeat;
+        height: 46px;
+        margin-bottom: 5px;
+        &:hover {
+            background: sprite($floatBottom, toTop_hover, 9px) no-repeat;
+        }
+    }
+    .qa {
+        background: sprite($floatBottom, qa, 9px) no-repeat;
+        height: 46px;
+        margin-bottom: 15px;
+        &:hover {
+            background: sprite($floatBottom, qa_hover, 9px) no-repeat;
+        }
+    }
+    .redbag {
+        background: sprite($floatBottom, redbag) no-repeat;
+        height: 64px;
+        &:hover {
+            background: sprite($floatBottom, redbag_hover) no-repeat;
+        }
+    }
+}

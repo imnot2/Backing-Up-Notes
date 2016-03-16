@@ -1,0 +1,53 @@
+/* line 3, ../../source/sass/home/recomme-product.scss */
+.recomme-product {
+  overflow: hidden;
+  margin: 14px 10px 7px;
+}
+/* line 6, ../../source/sass/home/recomme-product.scss */
+.recomme-product li {
+  float: left;
+  padding: 0 13px 10px;
+  width: 120px;
+  border-left: 1px #eee solid;
+  margin-left: -1px;
+  text-align: center;
+}
+/* line 13, ../../source/sass/home/recomme-product.scss */
+.recomme-product li .info-title {
+  font: normal 12px/1.5 "Microsoft yahei";
+  height: 35px;
+  overflow: hidden;
+  margin-top: 5px;
+  text-align: left;
+}
+/* line 21, ../../source/sass/home/recomme-product.scss */
+.recomme-product li:hover a {
+  color: #1F7DD8;
+  text-decoration: none;
+}
+/* line 27, ../../source/sass/home/recomme-product.scss */
+.recomme-product .imgbox {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+}
+/* line 32, ../../source/sass/home/recomme-product.scss */
+.recomme-product img {
+  width: auto;
+  height: auto;
+  _width: 120px;
+  _height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+}
+/* line 40, ../../source/sass/home/recomme-product.scss */
+.recomme-product .info-price {
+  color: #cc3333;
+  text-align: left;
+}
+/* line 44, ../../source/sass/home/recomme-product.scss */
+.recomme-product .price {
+  font-size: 16px;
+  margin-left: 2px;
+  font-weight: 700;
+}

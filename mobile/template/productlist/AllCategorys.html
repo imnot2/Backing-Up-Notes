@@ -1,0 +1,21 @@
+﻿<ul class="mod-collapsible allCategorys" temp-data="data">
+    <for e="first in data">
+    <li class="item">
+        <div class="clearfix hd">
+            <div class="fr icon-arrow-up"></div><label class="title">${first.CategoryName}(${first.ProductsNum})</label>
+        </div>
+        <dl class="bd mod-secondlist">
+            <for e="sec in first.SubCategory">
+                <dd >
+                    <label>${sec.CategoryName}</label>
+                    <div class="threemenu">
+                        <for e="s in sec.SubCategory">
+                            <a class="tm" href="filteredBrands/c=${s.CategoryId}">${s.CategoryName}</a>
+                        </for>
+                    </div>
+                </dd>
+            </for>
+        </dl>
+    </li>
+    </for>
+</ul>

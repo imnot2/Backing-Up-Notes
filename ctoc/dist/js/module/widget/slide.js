@@ -1,0 +1,1 @@
+Ymt.add(function(a){function b(a,c){return this instanceof b?void b.superclass.constructor.call(this,a,$m.merge(d,c)):new b(a,c)}var c=a("module/widget/Switchable"),d={navCls:"wy-slide-nav",contentCls:"wy-slide-content",autoplay:!0,circular:!0};return $m.extend(b,c),b});

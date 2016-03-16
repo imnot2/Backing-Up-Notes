@@ -1,0 +1,25 @@
+﻿@import "variables";
+.fc-gray-darker{
+color:$gray-darker
+}
+.fc-gray-dark{
+color:$gray-dark
+}
+.fc-gray{
+color:$gray
+}
+.fc-gray-light{
+	color:$gray-light;
+}
+a.fc-gray-light{
+	color:$gray-light;
+	&:hover{
+	color:$blue-hover;
+	}
+}
+.fc-gray-lighter{
+color:$gray-lighter
+}
+
+.fc-orange{color:$orange}
+.fc-red{color:#FF0000}

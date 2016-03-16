@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>tools</title>
+	<link rel="stylesheet" href="<%=staticfileurl('/css/Ymtapp.css')%>">
+</head>
+<body>
+	<section class="container feedback" ng-controller="FeedbackController">
+		<div class="min">
+			<p class="textContent"><textarea ng-model="feedbackContent" placeholder="输入你要打开的页面地址:)" id="address"></textarea></p>
+			<p class="submits"><button class="btn btn-primary" onclick="openUrl()">打开</button></p>
+		</div>
+		<div class="min">
+			<p class="submits">
+				<button type="button" class="btn btn-primary">清空本地静态缓存</button>
+			</p>
+		</div>
+		
+	</section>
+	<script>
+		function openUrl(){
+			location.href=document.getElementById('address').value;
+		}
+		function clearCache(){
+			localstorage.removeItem('YMT_HOME_STATIC');
+		}
+	</script>
+</body>
+</html>

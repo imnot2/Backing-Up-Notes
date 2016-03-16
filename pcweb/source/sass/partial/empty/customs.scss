@@ -1,0 +1,284 @@
+﻿/*=======================customs.css===========================*/
+
+/**layout**/
+.layout .r {
+	float: right
+}
+.layout .mod {
+	margin: 10px 0
+}
+
+/**sprite**/
+.head .img, .progress .i, .progress .btn, .upload .i, .foot .btn {
+	background-image: url(/content/img/sprites/empty/customs.png);
+	background-repeat: no-repeat
+}
+.head .img {
+	width: 459px;
+	height: 57px;
+	background-position: 0 0
+}
+.head .bt {
+	background: url(/content/img/sprites/bg.png) 0 -68px repeat-x;
+	height: 14px;
+	margin-top: -5px
+}
+
+/**page**/
+.head .r {
+	text-align: right
+}
+.head .btn {
+	color: #3368FF;
+	font: bold 14px/1.5 "微软雅黑"
+}
+.head .p {
+	margin-top: 5px
+}
+.progress {
+	padding: 20px 0 5px;
+	border-bottom: 1px solid #e2e2e2
+}
+.progress .hd {
+	font: bold 14px/1.5 "微软雅黑"
+}
+.progress .bd {
+	padding: 10px 0
+}
+.progress .c {
+	margin-right: 10px;
+}
+.progress .l {
+	margin: 5px 0
+}
+.progress .t {
+	padding: 2px 5px;
+	margin-right: 5px;
+	font-weight: bold
+}
+.progress .i {
+	width: 14px;
+	height: 11px;
+	font-size: 0;
+	margin-right: 10px;
+	background-position: -214px -62px
+}
+.progress .current {
+	color: #fff;
+	background-color: #F47C15;
+}
+.progress .btn {
+	width: 102px;
+	height: 32px;
+	background-position: 0 -61px;
+	text-indent: -999em
+}
+.addressee {
+	padding: 30px 0
+}
+.addressee .hd {
+	font: bold 20px/1.5 "微软雅黑";
+	margin-bottom: 20px
+}
+.addressee .bd {
+	padding: 30px 20px 0;
+	border: 1px solid #e2e2e2;
+	width: 960px;
+}
+.addressee .pro {
+	margin-bottom: 30px;
+}
+.addressee .tit, .upload .tit {
+	top: -18px;
+	left: 20px;
+}
+.addressee .phd {
+	margin-bottom: 10px
+}
+.addressee .phd .l {
+	font-size: 14px;
+	color: #F37B14;
+	font-weight: bold
+}
+.addressee .pbd {
+	width: 100%;
+	border: 1px solid #e6e6e6;
+	text-align: center
+}
+.addressee .pbd .d_1 {
+	text-align: left
+}
+.addressee td, .addressee th {
+	padding: 10px;
+	border: 1px solid #e6e6e6
+}
+.headline {
+	position: relative
+}
+.headline .tit {
+	position: absolute;
+	font: bold 14px/32px "微软雅黑";
+	background-color: #fff;
+	height: 32px;
+	color: #000;
+	width: 100px;
+	text-align: center;
+}
+.upload {
+	border: 1px solid #CAD8FF;
+}
+.upload .dec {
+	line-height: 26px;
+	padding-left: 10px;
+}
+.upload .title {
+	font: bold 14px/32px "微软雅黑";
+	color: #666;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 10px 0 10px 10px
+}
+.upload .title .name {
+	color: #000
+}
+.upload .hd {
+	margin: 20px 0 10px
+}
+.upload .hd .l {
+	font-weight: bold;
+}
+.upload .hd .r {
+	width: 310px;
+}
+.upload .bd {
+	padding-bottom: 10px;
+}
+.upload .bd .r {
+	width: 310px;
+	height: 190px;
+}
+.upload .con {
+	width: 328px;
+	height: 190px;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: middle
+}
+.upload .pos {
+	position: relative
+}
+.upload .stamp {
+	position: absolute;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	width: 322px;
+}
+.upload .mg-tb-10 {
+	margin: 10px 0
+}
+.stampright {
+	position: absolute;
+	z-index: 20;
+	right: 30px;
+	top: 0;
+	width: 322px;
+}
+.leftarea {
+	background-color: #F4F8FF;
+	padding: 5px 20px 20px;
+	width: 680px;
+	float: left;
+	border-right: 1px solid #CAD8FF
+}
+.leftarea .name {
+	font: bold 14px/1.5 "宋体";
+	color: #000
+}
+.tab-receiver .item {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 10px;
+	color: #000
+}
+.tab-receiver .bluearea {
+	background-color: #3368FF;
+	color: #fff;
+}
+.rightarea {
+	width: 230px;
+	float: left;
+	padding: 20px 0 0 20px;
+	text-align: center;
+	color: #000
+}
+.rightarea .img {
+	width: 210px
+}
+.upload .i {
+	width: 87px;
+	height: 25px;
+	background-position: -241px -62px;
+	margin: 0 30px
+}
+.upload .photo {
+	overflow: hidden
+}
+.upload .photo .mod {
+	width: 330px;
+	float: left;
+	padding-right: 20px;
+}
+.foot {
+	text-align: left;
+	margin: 10px 0;
+	float: left;
+	padding-left: 240px;
+}
+.foot .btn {
+	width: 94px;
+	height: 34px;
+	background-position: -108px -61px
+}
+.clearcustoms .alert_box_inner {
+	width: 400px;
+	height: 200px
+}
+.clearcustoms .con {
+	padding-top: 90px;
+	text-align: center;
+	color: #000
+}
+.list {
+	list-style: disc;
+	margin-left: 25px;
+}
+.list li {
+	line-height: 2
+}
+.red {
+	color: #F37B14
+}
+.notice {
+	background-color: #FFFFE5;
+	border: 1px solid #FAC97B;
+	color: #A62716;
+	padding: 10px;
+	margin: 0px 0px 15px 0px;
+}
+.btn-lg-red {
+	background: #ed4d00;
+	display: inline-block;
+	width: 171px;
+	height: 40px;
+	background-color: #ed4d00;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.btn-lg-red:hover {
+	color: #fff
+}

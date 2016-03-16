@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*
+*  倒计时控件，默认是高亮，需要变灰添加end类
+*/
+@import "lib/icon";
+
+.countDown {
+    background: sprite($icons-sprite, countdown_start, 0, 3px) no-repeat;
+    padding-left: 20px;
+    color: $highRad;
+    .timeItem {
+        border-radius: 3px;
+        background-color: $highRad;
+        color: $white;
+        padding: 2px 3px;
+        margin: 0 1px;
+        _display: inline;
+        _padding: 2px 1px;
+    }
+    &.end {
+        background: sprite($icons-sprite, countdown_end, 0, 3px) no-repeat;
+        color: $grey40;
+        .timeItem {
+            background-color: $grey40;
+        }
+    }
+}

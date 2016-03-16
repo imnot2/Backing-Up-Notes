@@ -1,0 +1,407 @@
+@import "../lib/variables";
+
+.order-wrapper {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.bar-title {
+    margin-top: 10px;
+}
+
+// order
+.orderlist {
+    margin-top: 20px;
+    .order-hd {
+        height: 80px;
+    }
+    .user-hd {
+        .avator {
+            border: 1px solid $grey10;
+        }
+        .country-flag {
+            width: 20px;
+            height: 20px;
+            img {
+                vertical-align: top;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .order-bd {
+        width: 100%;
+        td {
+            padding: 10px;
+            vertical-align: top;
+            padding-top: 30px;
+        }
+        .td-pic {
+            width: 12%;
+            text-align: center;
+            padding-top: 0;
+            img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .label {
+            font-size: 14px;
+        }
+        .td-name {
+            width: 60%;
+            padding-right: 30px;
+        }
+        .td-price {
+            color: $grey60;
+            width: 15%;
+            p {
+                font-size: 24px;
+                color: $black;
+            }
+            b {
+                padding-left: 2px;
+            }
+        }
+        .td-book {
+            color: $highRad;
+            width: 10%;
+            p {
+                font-size: 24px;
+            }
+            b {
+                padding-left: 2px;
+            }
+        }
+        .sign {
+            height: 18px;
+            border: 1px solid $highRad;
+            font: normal 12px / 18px "arial";
+            border-radius: 3px;
+            padding: 2px 3px;
+            color: $highRad;
+            i {
+                padding: 0 1px;
+            }
+        }
+        .productname {
+            font: normal 16px / 1.6 $font-yahei;
+            color: #232323;
+        }
+    }
+}
+
+//category
+.categorybox {
+    .cate-number {
+        width: 34%;
+    }
+    .btn-small {
+        margin: 0 6px 10px 0;
+    }
+    .btn-small:hover, .hover {
+        background-color: $highRad;
+        color: $white;
+    }
+    .disabled {
+        background-color: $grey13;
+        color: $grey40;
+        &:hover {
+            background-color: $grey13;
+            color: $grey40;
+        }
+    }
+    .cate-select {
+        width: 66%;
+        .item {
+            width: 45%;
+            padding: 0 0 0 5%;
+            float: left;
+        }
+    }
+    .label {
+        font: 16px / 20px $font-yahei;
+        color: #000;
+    }
+    .stockbox {
+        color: $grey60;
+        padding: 0 8px;
+    }
+    .limitbox {
+        color: $highRad;
+    }
+    .cate-hd {
+        padding: 15px 0;
+        line-height: 20px;
+    }
+}
+
+.add-del-count {
+    border: 1px solid $grey20;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    width: 240px;
+    .add, .del {
+        width: 80px;
+        float: left;
+        //background-color: $grey13;
+        background-color: $grey40;
+        width: 80px;
+        color: #fff;
+        text-align: center;
+        font: bold 20px/36px 'arial';
+        cursor: pointer;
+        &.op_disabled {
+            background-color: $grey13;
+        }
+    }
+    .count {
+        float: left;
+        width: 80px;
+        height: 36px;
+        line-height: 36px;
+        border: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+//address
+.addresslist {
+    .item {
+        margin-top: 5px;
+        padding: 11px 20px 12px;
+        .action {
+            float: right;
+            display: none;
+            a {
+                color: $highRad;
+                font-size: 14px;
+            }
+        }
+        .radio, .detail {
+            display: inline;
+            vertical-align: middle;
+        }
+        .detail {
+            padding-left: 5px;
+            font-size: 14px;
+        }
+    }
+    .default {
+        padding: 10px 20px 11px;
+        border: 1px solid #F8D6D5;
+        background-color: #FDF4F5;
+        .isDRed {
+            color: $highRad;
+        }
+    }
+}
+
+.address-bt {
+    padding: 10px 0 10px 50px;
+    .addNewAddress {
+        font-family: $font-yahei;
+    }
+}
+
+//
+.messagebox {
+    .message {
+        padding: 20px 0 10px 0;
+        width: auto;
+    }
+    textarea {
+        height: 50px;
+        padding: 15px;
+        border: 1px solid $grey10;
+        border-radius: 5px;
+        width: 1036px;
+        color: $grey40;
+    }
+}
+
+//couponbox
+.couponbox {
+    .item {
+        margin: 15px 0;
+        label, input, span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        label {
+            color: $gray38;
+            font: normal 16px / 1.2 $font-yahei;
+            padding: 0 15px 0 6px;
+        }
+        span {
+            color: $grey40;
+            font-size: 14px;
+        }
+        i {
+            padding: 0 2px;
+        }
+        b {
+            color: $gray38;
+            font-weight: bold;
+        }
+    }
+    .disabled {
+        label {
+            color: $grey40;
+        }
+    }
+    .couponlist {
+        padding-left: 28px;
+        li {
+            margin: 8px 0;
+            label {
+                color: $grey40;
+                font-size: 14px;
+            }
+        }
+    }
+    .code {
+        height: 36px;
+        padding: 0 10px;
+        border: 1px solid $grey10;
+        border-radius: 3px;
+    }
+    .mr {
+        padding-left: 14px;
+    }
+}
+
+//settlement
+.settlement {
+    border: 1px solid $highRad;
+    height: 56px;
+    padding: 15px 15px 13px;
+    margin: 40px 0;
+    .userinfo {
+        padding-top: 6px;
+        color: $grey60;
+        line-height: 1.8;
+        .phone {
+            padding: 0 6px;
+        }
+    }
+    .submitaction {
+        span, a {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .label {
+            color: $gray38;
+            font: normal 16px / 1.2 $font-yahei;
+        }
+        .price {
+            font: normal 36px / 1.2 'arial';
+            padding: 0 15px 0 25px;
+            color: $highRad;
+            i {
+                padding: 0 10px;
+            }
+        }
+        .submit {
+            height: 52px;
+            color: $white;
+            background-color: $highRad;
+            border: 1px solid $highRad;
+            border-radius: 3px;
+            font: bold 19px / 52px $font-yahei;
+            padding: 0 15px;
+        }
+    }
+}
+
+.floatlayer {
+    background-color: #fff;
+    width: 650px;
+    border: 1px solid $grey10;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    .layer-hd {
+        height: 60px;
+        .h2 {
+            font: normal 24px / 60px $font-yahei;
+            color: $black;
+            text-align: center;
+        }
+        border-bottom: 1px solid $grey10;
+    }
+    .layer-bd {
+        padding: 0 30px;
+    }
+    .layer-close {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 26px;
+        font-family: arial;
+        color: #666;
+        cursor: pointer;
+    }
+    .layer-tips {
+        padding: 10px 0;
+        text-align: center;
+        color: $highRad;
+    }
+}
+
+.addressform {
+    li {
+        margin-bottom: 5px;
+        height: 38px;
+        line-height: 36px;
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            vertical-align: middle;
+            color: $black;
+            height: 36px;
+            i {
+                padding: 0 5px;
+                color: $highRad;
+                font-size: 16px;
+            }
+            i, span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        select {
+            height: 37px;
+            line-height: 37px;
+            border: 1px solid $grey20;
+            vertical-align: middle;
+            width: 150px;
+            margin-right: 5px;
+        }
+        .input-text {
+            width: 283px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .default {
+        padding: 0 0 0 98px;
+        input {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        label {
+            color: $black;
+        }
+    }
+    .action {
+        padding: 15px 0 0 98px;
+    }
+    .deladdress {
+        color: $highRad;
+        padding-left: 40px;
+    }
+}

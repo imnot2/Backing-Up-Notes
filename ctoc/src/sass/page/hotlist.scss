@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import "lib/variables";
+@import "page/hotProduct";
+@import "page/userinfo";
+@import "page/buyOprate";
+@import "lib/classes";
+@import "../utils/share-like";
+
+.main {
+    width: $docWidth;
+    margin: 0 auto;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.hotBox {
+    background-color: $grayf4;
+    .navBarBox {
+        padding-top: 24px;
+        background-color: $white;
+        border-bottom: 1px solid $grey20;
+        .hotTipBox {
+            height: 46px;
+            line-height: 46px;
+            .mainTip {
+                font-size: 24px;
+                color: $black;
+            }
+            .subTip {
+                font-size: 14px;
+                color: $grey60;
+            }
+        }
+        .areaList {
+            border: 1px solid $grey20;
+            border-bottom: none;
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            border-right: none;
+            .areaItem {
+                border-right: 1px solid $grey20;
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 70px;
+                cursor: pointer;
+                .icon-font {
+                    @include inline-block;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    margin-right: 4px;
+                }
+                .areaDetail {
+                    vertical-align: middle;
+                }
+                &.active {
+                    border-bottom: 1px solid $grayf4;
+                    background-color: $grayf4;
+                    color: $highRad;
+                }
+                &.nomal {
+                    color: $greyce;
+                    cursor: text;
+                }
+                &.last {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .contBox {
+        width: 1202px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}

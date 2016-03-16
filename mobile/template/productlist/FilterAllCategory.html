@@ -1,0 +1,38 @@
+﻿<article class="clearfix mod-sideslide slideright out" id="FilterAllCategory" temp-data="data">
+    <div class="fr main">
+        <div class="bar"><span class="btn-1">全部分类</span><span class="title"></span></div>
+        <dl class="bd mod-secondlist">
+            <dd><span class="fr co-red"></span><label>已选分类</label></dd>
+            <dd><span class="fr co-red"></span><label>已选品牌</label></dd>
+        </dl>
+        <ul class="mod-collapsible">
+            <for e="first in data">
+            <li class="item">
+                <div class="clearfix hd">
+                    <div class="fr icon-arrow-up"></div><label class="title">常用品牌</label>
+                </div>
+                <dl class="bd mod-secondlist">
+                    <for e="sec in first.SubCategory">
+                    <dd onclick="$m.mobile.toURL('p=1&c=${first.CategoryId}')"><input type="radio" name="categoryItem" class="fr" id="categoryItem-${firstIndex}-${secIndex}" /><label for="categoryItem-${firstIndex}-${secIndex}">${sec.CategoryName}</label></dd>
+                    </for>
+                </dl>
+            </li>
+            </for>
+        </ul>
+        <ul class="mod-collapsible">
+            <for e="first in data">
+            <li class="item">
+                <div class="clearfix hd">
+                    <div class="fr icon-arrow-up"></div><label class="title">a</label>
+                </div>
+                <dl class="bd mod-secondlist">
+                    <for e="sec in first.SubCategory">
+                    <dd onclick="$m.mobile.toURL('p=1&c=${first.CategoryId}')"><input type="radio" name="categoryItem" class="fr" id="Radio1" /><label for="categoryItem-${firstIndex}-${secIndex}">${sec.CategoryName}</label></dd>
+                    </for>
+                </dl>
+            </li>
+            </for>
+        </ul>
+    </div>
+    <div class="fl trigger"><span>>></span><i></i></div>
+</article>

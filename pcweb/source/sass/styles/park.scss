@@ -1,0 +1,195 @@
+﻿/*=======================park.css===========================*/
+.n0 {
+	left: 464px;
+}
+#pk_head {
+	position: relative;
+	height: 63px;
+	margin-bottom: 10px;
+}
+#pk_head h1 {
+	position: absolute;
+	top: 3px;
+	left: 110px;
+	color: #F2F3F8;
+}
+#pk_head h1 .dis {
+	font-size: 13px;
+	color: #F2F3F8;
+}
+#pk_head img {
+	max-width: 950px;
+	height: 63px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#pk_head .pkh_dis {
+	position: absolute;
+	top: 40px;
+	left: 110px;
+}
+#pk_head #bntKeepAttention {
+	position: absolute;
+	top: 40px;
+	left: 200px;
+}
+h6 {
+	font-size: 14px;
+}
+#bntTopicSub {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 26px;
+}
+#bntTopicSub .ui-button-text {
+	line-height: 16px;
+}
+#p2 .plistitem {
+	float: left;
+	width: 130px;
+	margin-bottom: 10px;
+}
+#p2 .middle {
+	height: 130px;
+	line-height: 130px;
+	width: 131px;
+}
+#p4 a {
+	margin: 0 5px 10px 0;
+}
+#p4 img {
+	max-height: 69px;
+	max-width: 69px;
+}
+.mlist a {
+	margin: 0 5px 10px 0;
+}
+.mlist img {
+	max-height: 48px;
+	max-width: 48px;
+}
+#ptag_radio {
+	padding: 0 5px;
+	background-color: #F2F3F8;
+	font-size: 12px;
+	border: 1px solid #96B72A;
+	color: #2B2A25;
+}
+#ptag_radio a {
+	cursor: pointer;
+	padding: 2px 4px;
+}
+#ptag_radio a:hover {
+	background-color: #D4DBD8;
+}
+#ptag_radio a.sel {
+	background-color: #96B72A;
+	color: #fff;
+}
+a.combt {
+	float: right;
+	padding: 0 5px;
+	background-color: #B0250E;
+	margin-left: 10px;
+	font-size: 12px;
+	border: 1px solid #B0250E;
+	color: #F2F3F8;
+	cursor: pointer;
+	padding: 2px 4px;
+}
+a.combt:hover {
+	background-color: #F2F3F8;
+	color: #B0250E;
+}
+.olt {
+	width: 100%;
+}
+.olt th {
+	color: #999;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.olt td {
+	border-bottom: 1px dashed #DDDDDD;
+	padding: 5px 5px 5px 0;
+	font-size: 13px;
+	line-height: 20px;
+}
+.olt .tit a {
+	cursor: pointer;
+	color: #2B2A25;
+}
+.olt .tit a:hover {
+	background: #2B2A25;
+	color: #F2F3F8;
+}
+.olt td.time, .olt th.time {
+	color: #999;
+}
+.olt td.rp, .olt th.rp {
+	color: #999;
+}
+.olt span.gray {
+	font-size: 12px;
+}
+#hotmember {
+	margin-top: 20px;
+}
+.ssearchbox {
+	margin-left: 10px;
+	position: relative;
+	width: 118px;
+}
+#txtSellerSearch {
+	border: 1px solid;
+	border-color: #666666 #CCCCCC #CCCCCC;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 100px;
+	height: 16px;
+	vertical-align: middle;
+	color: #C4CCC9;
+}
+#btnSellerSearch {
+	background: url(http://img.ymatou.com/portal/images/Search2.png) no-repeat scroll 0 0 transparent;
+	border: 0 none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 1px;
+	height: 18px;
+	width: 18px;
+}
+.olt td.user a {
+	vertical-align: middle;
+}
+.img_pu {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.topPag {
+	float: right;
+	padding: 0 0 6px 0;
+}
+div#p3 li {
+	height: 52px;
+	line-height: 52px;
+}
+div#p3 li img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+div#p3 {
+	overflow: hidden;
+	height: 315px;
+	position: relative;
+}
+div#p3 ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+}

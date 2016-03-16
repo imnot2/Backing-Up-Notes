@@ -1,0 +1,835 @@
+@import "basic215";
+@import "timeout";
+@import "overseas";
+@import "homeproductinfo";
+@import "recomme-product";
+@import "sh-icon";
+@import "live";
+
+//top
+.navigatorbar {
+    height: auto;
+    background-color: transparent;
+}
+
+#notic-mod {
+    background-color: $noticeBg;
+    height: 29px;
+    width: 100%;
+    min-width: $docWidth;
+    .inner {
+        width: $docWidth;
+        margin: 0 auto;
+        text-align: left;
+        padding: 6px 0;
+        color: $normalColor;
+    }
+    .tips {
+        span {
+            color: $lighterColor;
+        }
+        a {
+            color: $lighterColor;
+            &:hover {
+                color: $ahover;
+            }
+        }
+    }
+    .close {
+        cursor: pointer;
+        padding-left: 20px;
+    }
+}
+
+#FocusImages .wy-slide-nav {
+    display: none;
+}
+
+//slider
+.nav-sidebar {
+    width: 158px;
+    _width: 160px;
+    border: 2px $lighterColor solid;
+    border-top: 0;
+    height: 298px;
+}
+
+.site-menus {
+    left: 153px;
+    border: 1px #ddd solid;
+    top: -15px;
+}
+
+.nav-sidebar .nav-item {
+    z-index: 0;
+    border-top: 1px $normalBorder solid;
+    border-bottom: 0;
+}
+
+.nav-sidebar .hover {
+    z-index: 112;
+}
+
+.hi-dot {
+    background-position: -72px 0;
+}
+
+.hi-dot-gray {
+    background-position: -96px 0;
+}
+
+.hi-cate {
+    background-position: 0 0;
+    margin-right: 9px;
+}
+
+.hi-arrow-l {
+    background-position: -24px 0;
+}
+
+.hi-arrow-g {
+    background-position: -129px -8px;
+    width: 6px;
+    height: 8px;
+}
+
+.hi-search {
+    background-position: -48px 0;
+}
+
+.i-bl-arrow {
+    background-position: -144px 0;
+}
+
+.i-bb-arrow {
+    background-position: -168px 0;
+}
+
+.hi-arrow-s {
+    background-position: -266px -7px;
+    width: 19px;
+    height: 7px;
+}
+
+//main banner
+.home-banners {
+    height: 300px;
+    background-repeat: repeat;
+    width: 100%;
+    min-width: $docWidth;
+    .images {
+        height: 300px;
+        width: 100%;
+    }
+    .item {
+        display: none;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+    .current {
+        display: block;
+    }
+    .area {
+        width: $docWidth;
+        margin: 0 auto;
+    }
+}
+
+.focus-images {
+    position: relative;
+    &:hover {
+        .prevarrow, .nextarrow {
+            visibility: visible;
+        }
+    }
+    .prevarrow, .nextarrow {
+        background-image: url(/images/sprites/focusimagearrow.png);
+        width: 20px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -25px 0 0 0;
+        z-index: 4;
+        cursor: pointer;
+        visibility: hidden;
+    }
+    .prevarrow {
+        background-position: 0 0;
+        margin-left: -595px;
+    }
+    .nextarrow {
+        background-position: -30px 0;
+        margin-left: 575px;
+    }
+}
+
+.home215-wrap {
+    text-align: left;
+    background-color: $docBgColor;
+    @include clearfix;
+    .hw-hd {
+        background-color: $lightColor;
+        height: 107px;
+        width: 100%;
+        min-width: $docWidth;
+        .logo-title {
+            float: left;
+            font-size: 38px;
+            color: $white;
+            margin-top: -12px;
+            margin-right: 26px;
+            a {
+                color: $white;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    .more {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .more {
+                font-size: 14px;
+                margin-left: 15px;
+            }
+            span {
+                font-size: 14px;
+                display: block;
+                margin-top: -5px;
+                color: #fde7e7;
+            }
+        }
+        .logo {
+            position: relative;
+            color: $normalColor;
+            text-decoration: none;
+            @include inline-block;
+            height: 80px;
+        }
+        .logo-hover {
+            .logo-cover {
+                display: block;
+            }
+        }
+        .logo-cover {
+            position: absolute;
+            left: 0;
+            top: 75px;
+            width: 262px;
+            height: 122px;
+            padding: 19px 14px 18px 18px;
+            background-color: #f7f7f7;
+            border: 1px $garyc solid;
+            border-radius: 3px;
+            display: none;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.21);
+            a:hover {
+                text-decoration: none;
+            }
+            .hi-arrow-s {
+                position: absolute;
+                top: -6px;
+                left: 20px;
+            }
+            p {
+                padding-top: 10px;
+                text-align: center;
+            }
+        }
+    }
+    .inner {
+        width: $docWidth;
+        margin: 0 auto;
+    }
+    .hw-wrap {
+        width: 752px;
+        padding: 10px;
+        float: left;
+        background-color: #f4f4f4;
+        padding-bottom: 60px;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.zbuy-head {
+    width: 752px;
+    padding: 27px 10px 0;
+    float: left;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    .hw-arrow {
+        position: absolute;
+        bottom: -17px;
+        left: 30px;
+    }
+}
+
+.sh-head {
+    width: 388px;
+    float: right;
+    padding: 27px 0 0 30px;
+    height: 80px;
+    background-color: $shBg;
+    position: relative;
+    z-index: 1;
+    .hw-arrow {
+        position: absolute;
+        bottom: -17px;
+        left: 30px;
+    }
+}
+
+.search-box {
+    width: 327px;
+    position: absolute;
+    top: 27px;
+    right: 84px;
+    .search-wrap {
+        @include background-img("search-bg.png");
+        background-repeat: no-repeat;
+        position: relative;
+        width: 327px;
+        height: 30px;
+    }
+    #search-btn {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+    }
+    .search-key {
+        color: $white;
+        margin: 15px 0 0 12px;
+        width: 320px;
+        @include ellipsis;
+        // font-family:"Verdana","SimSun";
+        a {
+            color: $white;
+            padding-left: 8px;
+        }
+    }
+    .sw-type {
+        width: 35px;
+        _width: 40px;
+        float: left;
+        margin: 4px 0 0 6px;
+        _margin-left: 3px;
+        padding: 1px 5px;
+        _padding-top: 5px;
+        border: 1px transparent solid;
+        _border: 0;
+        border-bottom: 0;
+        height: 25px;
+        position: relative;
+        // font-family:"Verdana","SimSun";
+        cursor: pointer;
+    }
+    .sw-type-change {
+        background-color: $white;
+        border: 1px $garyc solid;
+        _padding: 4px 4px 0;
+    }
+    .s-kind {
+        border: 1px solid $garyc;
+        border-top: 0;
+        width: 35px;
+        _width: 38px;
+        padding: 0 5px 2px;
+        position: absolute;
+        left: -1px;
+        top: 20px;
+        background-color: $white;
+    }
+    .hi-arrow-g {
+        _vertical-align: -2px;
+    }
+    .sw-input {
+        @include background-img("line-s.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        border: 0;
+        width: 70%;
+        padding-left: 10px;
+        float: left;
+        margin-top: 5px;
+        _margin-top: 8px;
+        outline: none;
+        font-family: "Microsoft yahei";
+    }
+}
+
+//tab
+.hw-tab {
+    .hwt-content {
+        border: 1px $miorBorder solid;
+        border-top-width: 3px;
+        background-color: $white;
+        border-radius: 0 0 5px 5px;
+        height: 260px;
+        overflow: hidden;
+        width: 750px;
+    }
+    .hwt-head {
+        @include clearfix;
+        .hwt-item {
+            float: left;
+            position: relative;
+        }
+        .more {
+            color: #7790C5;
+            font-size: 12px;
+            padding-left: 4px;
+            border-left: 1px solid #e5e5e5;
+            line-height: 1.2;
+            position: absolute;
+            right: 5px;
+            top: 32px;
+            a {
+                color: #7790C5;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .item {
+            float: left;
+            padding: 15px 18px 0;
+            height: 45px;
+            width: 150px;
+            *width: 156px;
+            @include background-img("line-tab.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            cursor: pointer;
+            border-bottom: 3px $miorBorder solid;
+            margin-bottom: -3px;
+        }
+        .item {
+            &:hover {
+                position: relative;
+                border-bottom: 3px $blue solid;
+                .title {
+                    color: $blue;
+                    font-weight: 700;
+                }
+            }
+        }
+        .current {
+            position: relative;
+            border-bottom: 3px $blue solid;
+            .title {
+                color: $blue;
+                font-weight: 700;
+            }
+        }
+        .title {
+            color: $normalColor;
+            font-size: 16px;
+            padding-right: 5px;
+            float: left;
+            margin-top: 3px;
+            *margin-top: 0;
+        }
+        .title-en {
+            color: #ccc;
+            float: left;
+            font-size: 10px;
+            -webkit-transform: scale(0.83);
+            em {
+                display: block;
+                margin-top: -3px;
+            }
+        }
+        .all-cate {
+            font-size: 18px;
+            color: $blue;
+            font-weight: 700;
+            padding: 5px 10px 0;
+            margin-top: 10px;
+            margin-left: -10px;
+            _margin-left: -5px;
+            float: left;
+            height: 38px;
+            width: 138px;
+            _width: 140px;
+            border: 2px transparent solid;
+            _border-color: tomato;
+            _filter: chroma(color = tomato);
+            border-bottom: 0;
+        }
+        .all-cate-hover {
+            color: $lighterColor;
+            border: 2px #dd3333 solid;
+            border-bottom: 0;
+            margin-left: -10px;
+            _margin-left: -5px;
+            padding-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            .hi-cate {
+                background-position: -216px 0;
+            }
+            .hi-arrow-l {
+                background-position: -216px -24px;
+            }
+        }
+    }
+}
+
+//dailydeals
+.tuangou-item {
+    .product-info .left, .product-info .right {
+        width: 374px;
+    }
+    .product-info .imgbox {
+        position: relative;
+    }
+}
+
+.overseas .tb-l {
+    .imgbox {
+        overflow: hidden;
+        img {
+            width: 200px;
+            height: 240px;
+        }
+    }
+}
+
+.dailydeals {
+    display: none;
+}
+
+.timeteals {
+    display: none;
+}
+
+//banner
+.hw-banner {
+    position: relative;
+    height: 240px;
+    margin-top: $space;
+    .hwb-box {
+        height: 240px;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 750px;
+            height: 240px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        img {
+            width: 750px;
+            height: 240px;
+        }
+    }
+    .hwb-index {
+        position: absolute;
+        bottom: 8px;
+        right: 15px;
+        span {
+            background-color: #bec1c5;
+            @include inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 0 2px;
+            cursor: pointer;
+            &.current {
+                background-color: $lighterColor;
+            }
+        }
+    }
+}
+
+//recommend
+.hw-recommend {
+    margin-top: $space;
+    overflow: hidden;
+    img {
+        width: 188px;
+        _width: 187px;
+        height: 172px;
+    }
+    a {
+        float: left;
+        width: 188px;
+        _width: 187px;
+    }
+}
+
+//module
+.hw-mod-overflow {
+    height: 310px;
+    .hwm-bd {
+        height: 306px;
+    }
+}
+
+.hw-mod {
+    margin-top: $space;
+    _width: 752px;
+    .hwm-bd {
+        border: 1px $miorBorder solid;
+        border-top: 3px $normalBorder solid;
+        background-color: $white;
+        border-radius: 0 0 5px 5px;
+        @include clearfix;
+        _width: 750px;
+        position: relative;
+    }
+    .col-category-line {
+        position: absolute;
+        height: 3px;
+        width: 281px;
+        background: $blue;
+        top: -3px;
+        left: -1px;
+        z-index: 1;
+    }
+    .img-120 {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .img-280 {
+        width: 280px;
+        height: 153px;
+        overflow: hidden;
+        img {
+            width: 280px;
+            height: 153px;
+            border-radius: 0 0 0 5px;
+        }
+    }
+    .img-265 {
+        width: 265px;
+        height: 306px;
+        display: block;
+        overflow: hidden;
+        img {
+            width: 265px;
+            height: 306px;
+            border-radius: 0 0 5px 0;
+        }
+    }
+    .hwm-l {
+        width: 280px;
+        height: 100%;
+        float: left;
+    }
+    .hwm-c {
+        width: 203px;
+        height: 100%;
+        float: left;
+        border-left: 1px $miorBorder solid;
+    }
+    .hwm-r {
+        width: 265px;
+        height: 100%;
+        float: right;
+        border-left: 1px $miorBorder solid;
+    }
+    .product-tb {
+        height: 147px;
+        border-top: 1px $miorBorder solid;
+        margin-top: -1px;
+        text-align: center;
+        position: relative;
+        padding-top: 6px;
+        &:hover {
+            a {
+                color: #1F7DD8;
+            }
+        }
+        .product-info {
+            padding-top: 5px;
+            a {
+                display: block;
+                width: 145px;
+                height: 17px;
+                overflow: hidden;
+                padding: 0 29px;
+            }
+        }
+        .price {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            color: $lighterColor;
+            font-size: 16px;
+            font-weight: 700;
+            em {
+                font-size: 14px;
+                margin-right: 2px;
+            }
+        }
+    }
+    .col-img {
+        margin-top: -3px;
+        height: 153px;
+        overflow: hidden;
+    }
+    .col-category {
+        height: 152px;
+        border-bottom: 1px $miorBorder solid;
+        border-top: 3px $blue solid;
+        background-color: #f8f8f8;
+        position: relative;
+        top: -3px;
+        padding: 0 20px;
+        .hd {
+            font-size: 24px;
+            padding: 17px 0 0;
+            margin-right: -21px;
+            a {
+                color: $blue;
+                text-decoration: none;
+            }
+            .en {
+                font-size: 12px;
+                font-family: "Century Gothic";
+                vertical-align: middle;
+            }
+        }
+        .bd {
+            font-size: 0;
+            overflow: hidden;
+            .list {
+                float: left;
+                overflow: hidden;
+                margin-left: -8px;
+                margin-left: -4px;
+                margin-top: 8px;
+                font-family: "Verdana","SimSun";
+            }
+            a {
+                @include inline-block;
+                font-size: 12px;
+                @include background-img("line.png");
+                background-repeat: no-repeat;
+                background-position: left 6px;
+                padding: 2px 8px;
+                color: #858585;
+                &:hover {
+                    color: #1F7DD8;
+                }
+            }
+        }
+    }
+    .baby {
+        @include background-img("baby.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .health {
+        @include background-img("food.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .cosmetic {
+        @include background-img("cosmetic.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .fashion {
+        @include background-img("fashion.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .home {
+        @include background-img("home-icon.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .outdoor {
+        @include background-img("outdoor.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    //hot mod
+    .hwm-hd {
+        font-size: 16px;
+        height: 30px;
+        padding-top: 5px;
+        .title-cn {
+            color: $blue;
+            border-bottom: 3px $blue solid;
+            padding-bottom: 7px;
+            font-weight: 700;
+            position: relative;
+            *bottom: 1px;
+            _bottom: -2px;
+            z-index: 1;
+        }
+        .title-en {
+            color: $garyc;
+            font-family: "Century Gothic";
+            _vertical-align: 8px;
+        }
+    }
+    .hot-brands {
+        overflow: hidden;
+        padding: 3px 0 17px;
+        _width: 750px;
+        height: 288px;
+        li {
+            float: left;
+            width: 90px;
+            height: 50px;
+            border: 1px #eee solid;
+            margin: 10px 5px 0 16px;
+            _margin-left: 12px;
+            overflow: hidden;
+            padding: 5px;
+        }
+    }
+    .hot-tags {
+        padding: 0 0 25px 5px;
+        height: 200px;
+        overflow: hidden;
+        a {
+            font-size: 18px;
+            color: $miorColor;
+            margin: 15px 0 0 10px;
+            @include inline-block;
+            vertical-align: middle;
+        }
+        .small-tag {
+            font-size: 14px;
+            color: $normalColor;
+        }
+        .light-tag {
+            font-size: 24px;
+            color: $lighterColor;
+        }
+    }
+}
+
+.home215-wrap .hw-hd .sh-head {
+    .logo-cover {
+        left: auto;
+        right: -65px;
+        *right: 0px;
+        .hi-arrow-s {
+            left: 190px;
+        }
+    }
+}
+
+.gb-header .logo {
+    background: url(/images/sprites/logo-new.png);
+    width: 310px;
+}

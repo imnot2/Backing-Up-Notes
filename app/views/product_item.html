@@ -1,0 +1,94 @@
+<%=include global/header.html%>
+<top-tools-bar class="navbar"></top-tools-bar>
+<section class="container mb45 productDetail" ng-controller="ProductItemController">
+
+	<div class="slider product-slide swiper-container" silde-swiper="focusOpts">
+		<ul class='slide-group swiper-wrapper' >
+			<li class="slide swiper-slide" ng-repeat='p in product.ProductPictures'>
+				<div>
+					<img lazy-load="{{p}}" data-booth-index="{{$index}}" data-closest="li" class="img-init" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="/>
+				</div>	
+			</li>
+		</ul>
+		<ol class="slide-triggers" id="slideIcon">
+			<li class="trigger" ng-class="{'curr':$index==0}" ng-repeat='p in product.ProductPictures'></li>
+		</ol>
+	</div>
+	<!--商品详情-->	
+	<div class="pro-section pro-detail">		
+		<div class="pro-title-warp">
+			<p  class="detail-title" ng-bind='product.ProductName' textflow="2" ymt-style="width:clientWidth-100"></p>
+			<div class="pro-detail-country-flag ng-cloak" ng-if="product.Distribution && product.Distribution!=3">
+				<i ng-style="{'background-image':'url('+buyerInfo.Flag+')'}"></i>
+				<span>{{buyerInfo.CountryNameZh}}</span>
+			</div>
+		</div>
+		<p class="pro-detail-price"> 
+			<!--价格区间-->
+			<strong class="pro-region" ng-bind-html="product.SellingPrice | replacePriceHtml"><b>&yen;</b></strong>
+			<!--原价-->
+			<small  class="org-price" ng-if="product.MarketPrice>0" ng-bind="'&yen;'+product.MarketPrice"></small>
+		</p>
+		<!--件数-->
+		<p class="pro-stock" ng-bind="'仅剩'+product.Stock+'件'" ng-if="product.Stock<11"></p>
+		<!--活动倒计时-->
+		<div class="pro-activity-timer ng-cloak" ng-if="product.ActivityId" ng-class="{'panic-buying':product.ActivityEnum==1}">
+			<strong><i ng-bind="product.ActivityName"></i><span ng-bind="product.Discount" ng-if="product.Discount > 0"></span>{{product.Discount>0?'折':''}}</strong>
+			<small ng-bind="ActivityCountDown"></small>
+			<button  class="ng-cloak btn" ng-class="{'close':HasRemind}" ng-if="product.ActivityEnum==1 && !product.IsActivityOn"  ng-click="setRemind()" ng-bind="(HasRemind?'关闭':'开启')+'提醒'"></button>
+		</div>
+		<div class="pro-detail-flag ng-cloak" ng-if="product.Distribution==3">
+			<i ng-style="{'background-image':'url('+buyerInfo.Flag+')'}"></i>
+			<span>海外直发</span>
+		</div>
+	</div>
+	<!--产品参数-->
+	<p class="pro-title pro-param ng-cloak" ng-class="{'see-detail':!showParam}" ng-click="toggleParam()" ng-if="product.Properties" log="showParam"><em class="icon icon-pro-paran"></em>产品参数</p>
+	<div class="pro-section comme-spec-section ng-cloak" ng-if="product.Properties && showParam" >
+		<ul>
+			<li ng-repeat="item in product.Properties"><span ng-bind="item.PropertyName+':'"></span>{{item.PropertyValue}}</li>
+		</ul>
+	</div>
+	<!--查看商品详情-->
+	<p class="pro-title see-detail" ng-click="seeDetail()"><em class="icon icon-IParameter"></em>查看商品详情<em class="icon icon-arrow"></em></p>
+	<!--查看商品详情-->
+	<p class="pro-title  see-detail" ng-click="product.OnShelf && product.Stock > 1 && OnShelf && hasStock && addCart()"><em class="icon icon-select-spec"></em><span ng-class="{'selectDesc':selectDesc}" ng-bind="selectDesc || '请选择尺码、颜色分类'"></span><em class="icon icon-arrow"></em></p>
+	<!--物流-->
+	<div class="pro-section comme-spec-section comme-spec-param ng-cloak">	
+		<ul>
+			<li><span>运费：</span>{{product.FreeShipping?'卖家承担运费':'以购物车结算为准'}}</li>
+			<li><span>配送方式：</span>{{product.DistributionDesc}}</li>
+			<li><span>海关关税：</span>{{product.TariffTypeDesc}}</li>
+			<li><span>物流速度：</span>{{product.ReceiveSpeedText}}</li>
+		</ul>
+	</div>
+	<div class="pro-promise">
+		<span> 
+			<em class="icon icon-SQuickly"></em>
+			闪电发货
+		</span>
+		<span> 
+			<em class="icon icon-SQuality"></em>
+			正品保证
+		</span>
+		<span>
+			<em class="icon icon-SReturn"></em>
+			退货保障
+		</span>
+	</div>
+	<div class="pre-notice" ng-if="product.IsXloboBonded">
+		<h4>售前须知</h4>
+		因海关操作流程限制，杭州保税区商品下单后，暂不提供“取消订单”服务，您可以在收到商品后尽快与商家协调处理。
+	</div>
+	<!--卖家信息-->
+	<div class="pro-section seller-info ng-cloak" ng-class="{'buyer-auth':!buyerInfo.IsMerchant,'seller-auth':buyerInfo.IsMerchant}">
+		<h4><em class="icon " ng-class="{'icon-flow02':!buyerInfo.IsMerchant,'icon-seller':buyerInfo.IsMerchant}"></em>{{buyerInfo.SellerName}}<i class="seller-rank" ng-repeat="i in PraiseCount track by $index"></i><i class="seller-rank-half" ng-repeat="i in PraiseCountHalf track by $index"></i></h4>
+		<p>所在地区：{{buyerInfo.CountryNameZh+' '+buyerInfo.StateName}}</p>
+		<p>当地时间：{{(buyerInfo.LocalTime+"").split(" ")[1]}}</p>
+	</div>
+	
+	<%=include part/productDetail.html%>	
+	<fixed-menu></fixed-menu>
+</section>
+
+<%=include global/footer.html%>

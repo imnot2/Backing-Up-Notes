@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/**
+ * 搜索页
+ */
+.search-container{
+	position:relative;
+
+.search-box{
+	text-align: center;
+	padding:$rem*10 0;
+	.inp-wrap{
+		display: block;
+		padding-left: 15px;
+		position: relative;
+		text-align: left;
+		float: left;	
+	}
+	input{
+		border-radius:$rem*4;
+		border:1px solid #e0e0e0;
+		color:#666;
+		margin-right:$rem*10;
+		font-size:$rem*12;
+		line-height: 1.5;
+		padding:$rem*6 $rem*20;
+		width: $rem*225;	
+	}
+	.icon-search{
+		position:absolute;
+		top: $rem*10;
+		left: $rem*20;
+		font-size:$rem*12;
+		color:#ff534b;
+	}
+	.icon-search-close{
+		font-size:$rem*15;
+		position:absolute;
+		color:#dcdcdc;
+		top: $rem*9;
+		left: $rem*215;
+	}
+	.btn{
+		background-color:#f0f0f0;
+		color:#666;
+		border:1px solid #d8d8d8;
+	}
+}
+.search-tools-box{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color:#eee;
+	color:#212121;
+	font-size:$rem*12;
+	padding:$rem*12 0;
+	@include clearfix();
+	.icon-search-up,
+	.icon-search-down,
+	.icon-search-filter{
+		font-size:$rem*12;
+	}
+	.selected{
+		color:#ff3c3c;
+		position:relative;
+		&:after{
+			content:'';
+			position:absolute;
+			width:0;
+			height:0;
+			border:$rem*6 solid transparent;
+			border-bottom: $rem*6 solid #fff;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -13px;
+		}
+	}
+	span{
+		float:left;
+		width:25%;		
+		text-align: center;
+		&:not(:last-child){
+			border-right: 1px solid #bdbdbd;
+		}
+	}
+}
+//筛选面板
+.screening-board{
+	background-color:#fff;
+	width:87%;
+	position:absolute;
+	right:0;
+	top:0;
+	.board-item{
+		position:absolute;
+		top:0;
+		width:100%;
+		background-color:#fff;
+	}
+ 	.scree-input-wrap{
+		display:inline-block;
+		width:$rem*110;
+	}
+	.scree-inp{
+		display: block;
+		width: 100%;
+		padding:$rem*8;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		font-size: $rem*12;
+		color:#999;
+		background-color: #fff;
+	}
+	.scree-title{
+		font-size:$rem*14;
+		color:#111;
+		padding:$rem*12 $rem*15;
+		&>span{
+			font-size:$rem*12;
+			color:#666;
+		}
+	}
+	.scree-row{
+		padding-left:$rem*15;
+		padding-bottom: $rem*12;
+		.input-group{
+			width:$rem*110;
+		}
+	}
+	.scree-row-division{
+		border-bottom: 1px solid #e0e0e0; 
+	}
+	.scree-list{
+		font-size:$rem*14;
+		color:#111;
+		border-top:1px solid #e0e0e0;
+		.icon-arrow{
+			font-size:$rem*14;
+			color:#bdbdbd;
+			position:absolute;
+			top:$rem*20;
+			right:$rem*10;
+		}
+		&>li{
+			position:relative;
+			padding:$rem*15 0;			
+			border-bottom:1px solid #e0e0e0;
+			&>strong{
+				color:#ff534b;
+				float: right;
+				margin-right: $rem*30;
+				overflow:hidden;
+				height:$rem*21;
+				white-space:nowrap; 
+				text-overflow:ellipsis;
+				width:$rem*180;
+				text-align: right;
+			}
+		}
+	}
+	.more-btn-grunp{
+		overflow:hidden;
+		&>li{
+			float:left;
+			margin-right:$rem*5;
+			margin-bottom:$rem*5;
+		}
+	}
+	.bottom-tools{
+		padding:$rem*10;
+		text-align: center;
+		.btn-gray{
+			background-color: #f1f1f1;
+			border-color:#d6d6d6;
+			color:#666;
+		}
+	}
+}
+//品牌分类
+.brand-classify{
+	.icon-search-unselected,
+	.icon-search-selected{
+		font-size:$rem*16;
+		color:#d2d2d2;
+		position:absolute;
+		top:$rem*16;
+		left:-$rem*20;
+	}
+	.icon-search-unselected,
+	.icon-search-selected{
+		color:#ff534b;
+	}
+	h3{
+		color:#111;
+		background-color:#f8f8f8;
+		font-size:$rem*15;
+		height:$rem*30;
+		line-height: $rem*30;
+		padding-left:$rem*15;
+		border-top:1px solid #e0e0e0;
+		border-bottom:1px solid #e0e0e0;
+		font-weight: bold;
+	}
+	.scree-list{
+		position:relative;
+		border-top:0;
+		padding-left: 30px;
+		&>li:last-child{
+			border-bottom:0;
+		}
+	}
+}
+/* //字母表
+.c-alphabet{
+	position:absolute;
+	right:$rem * 5;
+	top:50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	i{
+		font-size:$rem*12;
+		color:#1678e5;
+		display:block;
+		line-height:1.5; 
+		width: 50px;
+height: 50px;
+	}
+} */
+}
+.search-mask {
+	.search-mask-close{
+		width:$rem*27;
+		height:$rem*27;
+		background-color:#fff;
+		line-height: $rem*25;
+		text-align: center;
+		border-radius:50%;
+		position:absolute;
+		left:$rem*5;
+		top:50%;
+		transform: translate(0,-50%);
+		.icon-arrow{
+			font-size:$rem*15;
+			color:#7f7f7f;
+		}
+	}
+}
+//搜索为空
+.search-empty{
+	color: #999;
+	z-index: 10000;
+	text-align: center;
+	background-color: #f7f7f7;
+	padding: $rem*25 0;
+	line-height: 1.5;
+	font-size: $rem*14;
+}

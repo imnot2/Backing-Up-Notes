@@ -1,0 +1,8 @@
+<%=include global/header.html%>
+<section class="container feedback" ng-controller="FeedbackController">
+	<div class="min">
+		<p class="textContent"><textarea ng-model="feedbackContent" placeholder="提出你的宝贵意见:)"></textarea></p>
+		<p class="submits"><button class="btn btn-primary" ng-click="submitPropose()">提交意见</button></p>
+	</div>
+</section>
+<%=include global/footer.html%>

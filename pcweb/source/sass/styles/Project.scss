@@ -1,0 +1,358 @@
+﻿/*=======================Project.css===========================*/
+.mainpd {
+	padding-right: 10px;
+}
+#crumbs {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	z-index: 999;
+}
+.simg_box {
+	float: left;
+	width: 332px;
+}
+#simg_slider {
+	width: 332px;
+	height: 332px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #ddd;
+}
+#simg_slider img {
+	max-width: 330px;
+	max-height: 330px;
+	_width: expression(this.width > this.height ? (this.width > 330 ? 330:true):true) !important;
+	_height: expression(this.height > this.width ? (this.height > 330 ? 330:true):true) !important;
+}
+#simg_PN {
+	font-size: 12px;
+}
+#simg_PN #Next, #simg_PN #Prev {
+	cursor: pointer;
+}
+#simg_slider div.middle {
+	width: 320px;
+	height: 320px;
+	line-height: 320px;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+.zin {
+	z-index: 5;
+}
+.propwapper {
+	width: 360px;
+	float: right;
+	font-size: 13px;
+}
+.prop {
+	margin-bottom: 5px;
+}
+.prop_lbb {
+	position: relative;
+	height: 40px;
+}
+.p_star {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.p_mancout {
+	position: absolute;
+	top: 0;
+	left: 140px;
+	font-size: 14px;
+}
+.p_recommend_pos {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.recommend_radio {
+	float: right;
+	padding: 0 5px;
+	background-color: #F2F3F8;
+	margin-left: 10px;
+	font-size: 12px;
+	border: 1px solid #96B72A;
+	color: #2B2A25;
+}
+.recommend_radio a {
+	cursor: pointer;
+	padding: 2px 4px;
+}
+.recommend_radio a:hover {
+	background-color: #D4DBD8;
+}
+.recommend_radio a.sel {
+	background-color: #96B72A;
+	color: #fff;
+}
+.pjcomment {
+	margin: 5px 0 15px 0;
+}
+.pjcomment .com_h {
+	border-top: 1px solid #C4CCC9;
+	margin-bottom: 5px;
+}
+.pjcomment .com_h img {
+	float: left;
+	height: 48px;
+	width: 48px;
+}
+.pjcomment .com_h .com_hr {
+	float: right;
+	width: 642px;
+	padding-left: 10px;
+}
+.pjcomment .com_h .com_hr .com_dbt {
+	background: transparent url(http://img.ymatou.com/portal/images/sh_ex.png) no-repeat scroll 0 1px;
+	color: #ABC8E2;
+	cursor: pointer;
+	padding-left: 13px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.pjcomment .com_h .com_hr .com_dbt:hover {
+	background-image: url(http://img.ymatou.com/portal/images/sh_exh.png);
+	color: #A89E2D;
+}
+.pjcomment .com_h .com_hr .com_dbt.act {
+	background-image: url(http://img.ymatou.com/portal/images/sh_colh.png);
+	color: #FF8A00;
+}
+.pjcomment .com_h .com_hr .prop {
+	color: #B2B7B5;
+	margin-right: 10px;
+}
+.pjcomment .com_h .com_hr .prop a:hover {
+	color: #A89E2D;
+	text-decoration: underline;
+}
+.pjcomment .com_b {
+	display: none;
+}
+.pjcomment .com_action {
+	margin-top: 10px;
+}
+#p_samelist {
+	position: relative;
+	padding: 0 30px;
+}
+.winwrap {
+	height: 108px;
+	overflow: hidden;
+	width: 650px;
+}
+.win {
+	height: 108px;
+	width: 9999px;
+	overflow: hidden;
+	margin-left: 0px;
+	line-height: 108px;
+}
+.win a {
+	margin: 0 9px;
+	vertical-align: middle;
+}
+.win img {
+	max-height: 100px;
+	max-width: 100px;
+	vertical-align: middle;
+}
+#win_arrl {
+	display: block;
+	position: absolute;
+	top: 39px;
+	left: 0px;
+	width: 23px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(http://img.ymatou.com/portal/images/Arrl.png) no-repeat scroll 0 0;
+}
+#win_arrl.act {
+	background-image: url(http://img.ymatou.com/portal/images/Arrl_h.png);
+}
+#win_arrr {
+	display: block;
+	position: absolute;
+	top: 39px;
+	right: 0px;
+	width: 23px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(http://img.ymatou.com/portal/images/Arrr.png) no-repeat scroll 0 0;
+}
+#win_arrr.act {
+	background-image: url(http://img.ymatou.com/portal/images/Arrr_h.png);
+}
+.p_brandtitbox {
+	position: relative;
+	height: 42px;
+	border-top: 1px solid #C4CCC9;
+	overflow: hidden;
+}
+.p_brandtit {
+	color: #B0250E;
+	font-size: 88px;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	top: -14px;
+	left: 0;
+	font-family: Tahoma;
+	cursor: pointer;
+	letter-spacing: -10px;
+	height: 42px;
+	line-height: 0px;
+	*line-height: 32px;
+}
+.p_brandtit_ass {
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	font-size: 14px;
+	color: #88A825;
+	font-weight: normal;
+	display: block;
+}
+.p_brandtit_ass a {
+	color: #88A825;
+}
+.p_brandproj {
+	margin: 10px 0;
+}
+.hot div.middle {
+	width: 101px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 4px;
+	float: left;
+	margin-bottom: 5px;
+}
+.proj_lb {
+	margin-top: 10px;
+}
+#catalogbox {
+	position: absolute;
+	top: 220px;
+	right: 0;
+	border: 2px solid #88A825;
+	width: 336px;
+	background-color: #fff;
+	padding: 10px;
+	z-index: 998;
+	height: 25px;
+}
+.exStat {
+	width: 500px !important;
+	height: 210px !important;
+}
+.exStat #catalogcon {
+	display: block !important;
+}
+#moreBnt {
+	display: none;
+}
+.sbntGo {
+	display: none;
+}
+#catalogtit {
+	height: 26px;
+	line-height: 26px;
+}
+#catalogtit .dis {
+	color: #B0250E;
+	font-weight: 700;
+}
+#catalogcon {
+	display: none;
+}
+.catalogdiv {
+	color: #2B2A25;
+	margin: 10px 0 0;
+	width: 100%;
+}
+.cttrdivhd {
+	color: #C4CCC9;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.cttrdiv, .cttrdivwh {
+	border-bottom: 1px dashed #DDD;
+	padding: 7px 0;
+	cursor: pointer;
+	height: 18px;
+}
+.cttrdiv_hover {
+	background: transparent url(http://img.ymatou.com/portal/images/bntGo3.png) no-repeat scroll 0 4px;
+}
+.catalogdiv span {
+	padding-left: 10px;
+}
+.catalogdiv span.u {
+	width: 80px;
+}
+.catalogdiv span.s {
+	width: 70px;
+}
+.catalogdiv span.b {
+	width: 70px;
+}
+.catalogdiv span.p {
+	width: 70px;
+}
+.catalogdiv span.n {
+	width: 90px;
+}
+#showCatalog {
+	margin-left: 10px;
+}
+.b_chief {
+	margin-bottom: 30px;
+}
+.b_chief .b_ditial {
+	display: none;
+}
+.b_chief .b_detial_bt {
+	color: #ABC8E2;
+	cursor: pointer;
+}
+.b_chief .b_detial_bt:hover {
+	color: #A89E2D;
+}
+.b_chief .b_detial_bt.act {
+	color: #A89E2D;
+}
+.proj_fix {
+	margin-top: 20px;
+}
+.proj_fix h6 {
+	padding-bottom: 0;
+}
+#EnquiryDialog .epop {
+	float: left;
+	margin: 10px 10px 0 0;
+}
+#EnquiryDialog .txta {
+	width: 400px;
+	float: left;
+	margin: 10px 0 5px 0;
+}
+span.hdtips {
+	display: none;
+}
+
+/* HACK IE6 */
+#win_arrl {
+	_top: 30px;
+	_left: -20px;
+}
+#win_arrr {
+	_top: 26px;
+}

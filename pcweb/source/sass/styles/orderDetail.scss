@@ -1,0 +1,229 @@
+﻿/*=======================orderDetail.css===========================*/
+.level_module_4 {
+    margin: 10px 15px 20px;
+}
+.level_module_4 .bd li {
+    margin: 10px 0;
+}
+.level_module_4 label {
+    display: inline-block;
+    padding: 0 10px;
+    text-align: right;
+}
+.level_module_4 .table {
+    width: 60%;
+}
+.table td {
+    padding: 10px 0;
+}
+.level_module_4 .table-1 {
+    width: 95%;
+    margin: 15px auto 15px 20px;
+}
+#ymtmain .pad {
+    padding: 10px 0 15px 20px;
+}
+.mod {
+    margin: 10px 15px;
+}
+.title {
+    font: bold 14px/1 "宋体";
+    color: #000;
+}
+.mod .hd {
+    height: 32px;
+    border-bottom: 1px solid #CAD8FF;
+    line-height: 32px;
+}
+.mod .node {
+    margin: 30px 0 0;
+}
+.mod .p {
+    margin: 15px 0;
+}
+.bluearea {
+    background-color: #E8EEFF;
+    border: 1px solid #CAD8FF;
+    padding: 5px 15px;
+    width: 80%;
+    color: #000;
+    margin: 10px 0;
+}
+.bluearea .btn-0-0 {
+    margin-right: 20px;
+}
+.textarea {
+    border: 1px solid #CAD8FF;
+    width: 500px;
+    height: 120px;
+}
+.xqZtList {
+    margin: 8px 0px 15px 0px;
+    padding: 8px 15px 8px 15px;
+    background: #FFFCF3;
+    border: 1px solid #F7E4A5;
+    text-align: left;
+    font-size: 14px;
+}
+.xqZtList li {
+    margin: 10px 0;
+}
+.tooltip-3 {
+    visibility: hidden;
+    position: absolute;
+    color: #000;
+}
+.flowsteps-0 {
+    height: 60px;
+    margin: 10px 0;
+}
+.flowsteps-0 .current {
+    color: #000;
+}
+.processbg {
+    clear: both;
+    margin: 10px 0;
+}
+.processbg ul {
+    height: 70px;
+    padding-top: 58px;
+    margin: 0 0 0 30px;
+}
+.processbg li {
+    float: left;
+    text-align: center;
+}
+.processbg .tit {
+    display: block;
+    font: normal 14px/28px "宋体";
+    color: #000;
+}
+.processbg .pro-1 {
+    background: url(/images/buyerorder/process-bg2.jpg) no-repeat;
+}
+.processbg .first, .processbg .last {
+    width: 94px;
+}
+.processbg .first {
+    position: relative;
+    left: -20px;
+}
+.processbg .center {
+    margin: 0 0 0 165px;
+}
+.processbg .last {
+    float: right;
+    margin-right: 10px;
+}
+.processbg .pro-2 {
+    background: url(/images/buyerorder/process-bg.jpg) no-repeat;
+}
+.processbg .pro-3 {
+    background: url(/images/buyerorder/process-bg3.jpg) no-repeat;
+}
+.processbg .pro-4 {
+    background: url(/images/buyerorder/process-bg4.jpg) no-repeat;
+}
+.processbg .pro-4 .it {
+    width: 154px;
+    margin-left: 56px;
+}
+.processbg .it {
+    margin: 0 0 0 98px;
+}
+.tooltip-3 {
+    font-size: 12px;
+    width: 400px;
+}
+.infolist li {
+    margin: 10px 0;
+}
+#bannerAd {
+    width: 946px;
+    margin: 0 auto 20px;
+}
+
+/*确认收货弹框*/
+.layerbox_dialog_alert .isReceived {
+    position: relative;
+    display: block;
+}
+.layerbox_dialog_alert .isReceived .alert_box_inner {
+    padding: 0;
+    width: 550px;
+    text-align: left;
+}
+.layerbox_dialog_alert .isReceived .contentBox {
+    padding: 0 30px 20px;
+}
+.layerbox_dialog_alert .successReceive .contentBox {
+    padding: 30px 30px 50px;
+}
+.layerbox_dialog_alert .isReceived .contentBox .icon {
+    vertical-align: middle;
+    font-size: 60px;
+}
+.layerbox_dialog_alert .isReceived .contentBox .warningColor {
+    color: #ff7f00;
+}
+.layerbox_dialog_alert .isReceived .contentBox .okayColor {
+    color: #5ab201;
+}
+.layerbox_dialog_alert .isReceived .contentBox .des {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.layerbox_dialog_alert .isReceived .alert_box_inner .tip {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.layerbox_dialog_alert .isReceived .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.layerbox_dialog_alert .isReceived .btn-box {
+    padding-left: 70px;
+}
+.layerbox_dialog_alert .isReceived .layer-remarks {
+    padding-left: 70px;
+    color: #999;
+    font-size: 12px;
+}
+.layerbox_dialog_alert .confirmHtml1 .layer-remarks {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 28px;
+}
+.layerbox_dialog_alert .isReceived .btn-box .confirm {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 26px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F14308;
+    border-bottom: 1px solid #ddd;
+}
+.layerbox_dialog_alert .isReceived .btn-box .cancel {
+    margin-left: 26px;
+    color: #227DD8;
+}
+.blueColor {
+    color: #227DD8;
+}

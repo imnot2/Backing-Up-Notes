@@ -1,0 +1,172 @@
+﻿.wrapper, .area {
+	width: 1000px;
+}
+
+/*首页*/
+.sec-tab, .sec-seller, .new-product, .sec-showcase {
+	width: 1000px;
+	margin: 15px auto;
+	text-align: left;
+}
+.sec-first {
+	width: 1000px;
+}
+.topmain, .sec-safe {
+	min-width: 1000px;
+}
+.centerbar {
+	margin: 0 14px;
+}
+.container .area {
+	width: 1000px;
+}
+.sc-sidebar {
+	display: none;
+}
+.site-nav {
+	margin-left: 10px;
+}
+.site-nav a {
+	margin-left: 18px;
+}
+.slide-part {
+	width: 320px;
+	margin-left: 17px;
+}
+.slide-part .bd {
+	width: 320px;
+}
+.slide-part .side {
+	padding: 10px;
+	width: 100px;
+}
+.slide-part .side img {
+	width: 100px;
+	height: 100px;
+}
+.slide-part .main {
+	width: 194px;
+}
+.slide-part .header .text-area {
+	width: 190px;
+}
+.main .text-pic {
+	width: 175px;
+}
+.text-area h3 {
+	font-size: 12px;
+}
+.slide-part .main .text-area {
+	width: 94px;
+}
+.sec-showcase {
+	height: 200px;
+	overflow: hidden;
+}
+.sec-showcase a {
+	width: 250px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	_float: none;
+}
+.sec-showcase img {
+	width: 250px;
+	height: auto;
+}
+.new-product .item {
+	width: 146px;
+	padding: 10px;
+}
+.new-product .bd-item {
+	margin: 0 -2px;
+}
+.oth-product .hd-item {
+	padding: 0 10px;
+}
+.oth-product .main-bar {
+	width: 646px;
+}
+
+/*全部分类*/
+.kinds {
+	width: 1000px;
+}
+.pubtab_1 ul {
+	padding: 5px;
+}
+.pubtab_1 .item {
+	margin: 0 4.2px;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+}
+.kinds dl {
+	width: 310px;
+	padding: 10px;
+}
+.kinds dl dd {
+	width: 270px;
+}
+
+/*所有品牌*/
+#productClass {
+	width: 1000px;
+}
+.pdClsLetters {
+	width: 980px;
+	padding: 5px 10px;
+}
+.pdClsBrands .padlist {
+	margin-left: 0px;
+}
+
+/*产品列表*/
+.row1200 .tab-bd .panel {
+	width: 1000px;
+}
+.row1200, .row1200 .tab {
+	width: 1000px;
+	margin: 0 auto;
+}
+.row1200 .row-left {
+	float: left;
+	width: 1000px;
+}
+.row1200 .row-right {
+	display: none;
+}
+.row1200 .tab .content li {
+	width: 25%;
+}
+
+/*每日团*/
+.mrt-main {
+	width: 1000px;
+}
+.mrt-main .mrt-header {
+	width: 1000px;
+}
+.mrt-banner-main {
+	width: 1000px;
+}
+.mrt-content .mrt-list {
+	width: 910px;
+}
+.mrt-main .mrt-header {
+	width: 1000px;
+}
+
+/*顶部导航*/
+.topnavigator .navitem {
+	float: left;
+	width: 106px;
+	text-align: center;
+}
+.topnavigator .short {
+	width: 90px;
+}
+.topnavigator .all {
+	width: 172px;
+}

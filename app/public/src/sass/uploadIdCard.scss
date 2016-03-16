@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import "components/variables.scss";
+@import "components/_mixin.scss";
+@import "components/type.scss";
+@import "components/media.scss";
+@import "components/forms.scss";
+@import "components/button.scss";
+@import "components/icons.scss";
+@import "components/alerts.scss";
+
+@import "components/base64Image.scss";
+/*
+* 上传身份证
+*/
+.upload-mod{
+	padding: $rem * 10;
+	color:#666;
+	font-size: $rem * 14;
+	margin-bottom:$rem * 10;
+	&>p{
+		margin-bottom:$rem * 10;
+		a{
+			color:#ff534b;
+		}
+	}
+	.mod-title{
+		font-size: $rem * 18;
+	}
+	.btn-next{
+		margin-top:$rem *20;
+	}
+	.back{
+		text-align: right;
+		margin-top: $rem * 10;
+		color:#999;
+	}
+}
+.upload-mod-title{
+	margin-bottom:$rem * 10;
+}
+.upload-mod-lists{
+	display: block;
+	width:100%;
+	border:1px solid #ddd;
+	li{
+		border-bottom: 1px solid #ddd;
+		&:last-child{
+			border-bottom: 0;
+		}
+	}
+	a{
+		padding:$rem * 15 $rem * 10;
+		display:block;
+		overflow:hidden;
+		position:relative;
+		color:#666;
+		font-size:$rem * 14;
+		line-height: 1;
+		&>em{
+			float:right;
+			color:#bbb;
+		}
+	}
+	.submited{
+		&>a:after{
+			content:"已提交";
+			float:right;
+			color:#bbb;
+			position:absolute;
+			font-size: $rem *12;
+			top:$rem *16;
+			right:$rem * 23;
+		}
+	}
+}
+.mod-example{
+	&>figure{
+		 @include clearfix();
+		 margin-bottom: $rem * 20;
+		figcaption{
+			background:url($upload-example);
+			background-size:cover;		
+			width:$rem * 83;
+			height:$rem * 50;
+			float:left;
+			margin-right: $rem * 10;
+		}
+		&>p{
+			a{
+				color:#ff534b;
+			}
+		}
+	}
+	.upload-booth{
+		height:$rem * 102;
+		width:100%;		
+		margin-bottom:$rem * 10;
+		@include clearfix();
+		&>div{
+			border:2px solid #ccc;
+			width:$rem * 125;
+			height:100%;
+			float:left;
+			&:last-child{
+				float:right;
+			}
+			span{
+				display:block;
+				height:$rem * 75;
+				position:relative;
+				background:url($upload-add) center no-repeat;
+				background-size:$rem *30 $rem * 30;
+				position:relative;
+				input[type="file"]{
+					position:absolute;
+					top:0;
+					left:0;
+					display:block;
+					height:100%;
+					width:100%;
+					filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+					-moz-opacity:0; /*Firefox私有，透明度50%*/
+					opacity:0;/*其他，透明度50%*/
+					font-size: 60px;
+				}
+				img{
+					height:100%;
+					width:100%;
+					max-height: 100%;
+					max-width:100%;
+				}
+			}
+		}
+		.btn{
+			border-radius: 0;
+			height:$rem *23;
+			color:#666;
+			width:100%;
+		}
+	}
+}
+//上传实例
+.example-show{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7) url(#{$ImgUrl}/example.png) center no-repeat;
+}
+//条款
+.upload-provision{
+	padding: $rem * 10;
+	color:#666;
+	font-size:$rem *14;
+	p,h3{
+		margin-bottom: $rem * 5;
+	}
+	h3{
+		font-size: $rem *16;
+	}
+}
+.success-mod{
+	width: $rem*200;
+	margin: 0 auto;
+	margin-top:$rem*20;
+}
+.success-ico{
+	display:inline-block;
+	border-radius:50%;
+	color:#fff;
+	background-color:#8aad44;
+	width:$rem *36;
+	height:$rem*36;
+	position:relative;
+	float:left;
+	top: $rem*15;
+	&:before,
+	&:after{
+		content:"";
+		display:block;
+		background-color: #FFF;
+		position:absolute;
+		border-radius: 2px;
+	}
+	&:before{
+		height:$rem * 4;
+		width:$rem * 12;
+		transform: rotate(45deg);
+		top: $rem*18;
+		left: $rem*7;
+	}
+	&:after{
+		height:$rem * 4;
+		width:$rem * 18;
+		transform: rotate(45deg);
+		transform: rotate(-45deg);
+		top: $rem*15;
+		left: $rem*13;
+	}
+	&+.upload-mod{
+		padding-left:$rem *40;
+	}
+}

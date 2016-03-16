@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import "lib/classes";
+@import "lib/variables";
+@import "compass/css3";
+
+.replay-wrap {
+    .replay-area {
+        border: 1px solid $grey20;
+        border-radius: 4px;
+        height: 42px;
+        padding: 0 10px;
+        line-height: 42px;
+        color: $grey40;
+        vertical-align: middle;
+        &.focus {
+            color: $black;
+        }
+    }
+}
+
+.replay_fixed_box {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background: $white;
+    z-index: 999;
+    .fix_box {
+        margin: 0 auto;
+        padding: 18px 0;
+        @include clearfix;
+    }
+}
+
+.fixedReplay {
+    line-height: 70px;
+    display: block;
+    .inputOperateBox {
+        position: relative;
+        .size-reference{
+            width: 42px;
+            height: 34px;
+            line-height: 17px;
+            padding: 4px 0;
+            font-size:12px;
+
+        }
+        .size-ref-pop{
+            width: 86px;
+            height: 150px;
+            padding: 14px 0;
+            border:1px solid #555;
+            background: #555;
+            position: absolute;
+            z-index: 200;
+            display: none;
+            top:-172px;
+            left:-30px;
+            @include border-radius(5px);
+            .ref-down-arrow{
+                position: absolute;
+                z-index: 2;
+                top:178px;
+                left: 50%;
+                margin-left: -4px;
+                border-width: 8px;
+                border-color: #555;
+                border-style:solid;
+                height: 0px;
+                width: 0px;
+                line-height: 0;
+                font-size:0;
+                border-top-color:#555;
+                border-left-color:transparent;
+                border-right-color:transparent;
+                border-bottom-color:transparent;
+                display: inline-block;
+                *zoom:1;
+                overflow: hidden;
+            }
+            .icon{
+                font-size: 18px;
+                margin-right:6px;
+            }
+            ul li.cate-item{
+                display: block;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                color:$grey40;
+                cursor: pointer;
+                &:hover{
+                    color:$white;
+                }
+            }
+        }
+        .checkBtn, .label {
+            vertical-align: middle;
+        }
+        .sendComment {
+            width: 100px;
+            height: 34px;
+            line-height: 34px;
+            margin-left: 10px;
+            padding: 0;
+        }
+    }
+    .buyOperateBox {
+        .operateBtn, .priceTip, .priceCount {
+            float: left;
+        }
+        .operateBtn {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .priceTip {
+            margin-top: 5px;
+            line-height: 30px;
+        }
+        .priceCount {
+            padding-top: 30px;
+            margin-left: -60px;
+            position: relative;
+            color: $highRad;
+            font-size: 35px;
+            line-height: 35px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@mixin text-middle($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin btn($width, $height) {
+    width: $width;
+    color: $btn-fc;
+    border: none;
+    //background-color: $bg;
+    text-align: center;
+    cursor: pointer;
+    font-size: pxtorem(34);
+    @include inline-block;
+    @include border-radius($extend-radius-val);
+    @include text-middle($height);
+}

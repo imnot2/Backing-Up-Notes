@@ -1,0 +1,88 @@
+﻿/*=======================base.css===========================*/
+HTML {
+    BACKGROUND: #ffffff;
+}
+TABLE {
+    TEXT-ALIGN: left;
+    BORDER-SPACING: 0;
+    BORDER-COLLAPSE: collapse;
+    EMPTY-CELLS: show;
+}
+TH {
+    BORDER-COLLAPSE: collapse;
+}
+TD {
+    BORDER-COLLAPSE: collapse;
+}
+OL {
+    LIST-STYLE-TYPE: none;
+}
+UL {
+    LIST-STYLE-TYPE: none;
+}
+UL {
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    FONT-SIZE: 12px;
+    PADDING-TOP: 0px;
+}
+LI {
+    PADDING-BOTTOM: 0px;
+    LIST-STYLE-TYPE: none;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    FONT-FAMILY: Tahoma;
+    FONT-SIZE: 12px;
+    PADDING-TOP: 0px;
+}
+OL {
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    FONT-SIZE: 12px;
+    PADDING-TOP: 0px;
+}
+P {
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+}
+* {
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+}
+A {
+    COLOR: #666666;
+    TEXT-DECORATION: none;
+}
+A:hover {
+    COLOR: #ff3300;
+    TEXT-DECORATION: underline;
+}
+.p_show p {
+    WORD-WRAP: break-word;
+    WORD-BREAK: break-all;
+}
+.p_pic {
+    width: 162px;
+    height: 162px;
+    border: 1px solid #CCC;
+    text-align: center;
+}
+.p_pic img {
+    VERTICAL-ALIGN: middle;
+    MAX-WIDTH: 162px;
+    MAX-HEIGHT: 162px;
+}
+a img {
+    border: 0px;
+}

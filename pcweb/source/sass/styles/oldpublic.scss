@@ -1,0 +1,76 @@
+﻿.v {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clearfix:after, .wrapper:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.clearfix, .wrapper {
+    display: inline-block;
+}
+
+.clearfix, .wrapper {
+    display: block;
+}
+
+.clear {
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+
+.fix {
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.yel {
+    color: #F04D00;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.blue {
+    color: #3368FF;
+}
+
+.white {
+    color: #fff;
+}
+
+.price b {
+    color: #FF2900;
+    font-size: 22px;
+}
+
+.yel {
+    color: #F04D00;
+}
+
+.gray {
+    color: #acacac;
+}

@@ -1,0 +1,90 @@
+<%=include global/header.html%>
+<section class="container userOrder" ng-controller="UserOrderController">
+	<nav class="userOrderNav" compatible-android-click-invalid>
+		<ul>
+			<li ng-click="selectTab(4)" ng-class="{active:columeType==4}">全部订单</li>
+			<li ng-click="selectTab(1)"  ng-class="{active:columeType==1}">待付款</li>
+			<li ng-click="selectTab(2)"  ng-class="{active:columeType==2}">待收货</li>
+			<li ng-click="selectTab(3)"  ng-class="{active:columeType==3}">完成订单</li>
+		</ul>
+	</nav>
+
+	<div infinite-scroll='ordersList.nextPage()' infinite-scroll-disabled='ordersList.busy' infinite-scroll-distance='1'>
+		<p class="loading load-center" ng-show='ordersList.isLoaded'></p>
+		<!-- 购买商品列表 -->
+		<div class="p_mod orders_list ng-cloak" ng-repeat="o in ordersList.items">
+		<div class="pm-t">
+			<div class="pull-left">
+				<em class="order-origin" ng-class="orderSource(o.OrderSource)" ng-if="o.OrderSource!==''"></em>
+				<span class="pm-name spb-name" ng-bind='o.SellerName'></span>
+				<span class="seller-toTalk" diff-show ng-click="toChat(o.SellerId,o.SellerName,o.SellerLogo)"><i class="icon icon-chat"></i></span>
+			</div>
+			<div class="pull-right orders_number_type">
+				<p ng-bind="o.OrderId"></p>
+				<strong ng-bind="o.OrderStatusText"></strong>
+			</div>
+		</div>
+		<div class="pm-m">
+			<ol class="ol_list">
+				<li ng-repeat='op in o.Products' ng-click='toProduct(op.ProductId,op.ProductName,op.PictureUrl,op.QuotePrice,o.OrderSource)'>
+					<span class="pic">
+						<img lazy-load="{{op.PictureUrl  | urlAdapt}}" onerror="className='order-product-error';src='data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=='"/>
+					</span>
+					
+					<h3><strong ng-bind="op.ProductName"></strong>
+						<span class="price">￥<span ng-bind='op.QuotePrice'>0</span></span>
+						<span class="number">x<span ng-bind='op.ProductNumber'>0</span></span>
+					</h3>
+					
+					<p ng-repeat="CatalogProp in op.CatalogPropertyList">
+						<span ng-bind="CatalogProp.Property"></span>：<span ng-bind="CatalogProp.Attribute"></span>
+					</p>
+					<p class='freight_method' ng-init="ProductService.deliveryWay(op)">
+						<i class="{{op.delverIco}}"></i>{{op.delverText}}
+					</p>
+				</li>
+			</ol>
+		</div>
+		<div class="pm-bottom order-pm-bottom">
+			<div class="order-line">
+					<p>
+						<span class="type">共计<span ng-bind='o.Products.length||0'></span>件商品</span>
+						<span class="type">含运费: &yen;<span ng-bind='o.Freight||0'></span></span>
+						<span class="type">实付:<strong> &yen;<span ng-bind='o.NeedPayPrice'></span></strong></span>
+					</p>
+			</div>
+			<p class="warn-msg " ng-if="o.IsXloboBonded">杭州保税区订单不支持合并付款，且仅限盛付通支付</p>
+			<div class="order-btns-groud order-line">
+				<a ng-if="o.IsNeedUploadIdCard && o.OrderStatus != 18 && o.OrderStatus != 12 && !isAndroid" ng-click="toUploadCardId(o.TradingId)" class="btn btn-warning-boder" ng-bind="o.OrderStatus==3?'需要上传身份证':'上传身份证'"></a>
+				<span ng-click="toPay(o.OrderId,o.IsXloboBonded)" class="btn btn-warning-boder" ng-if="o.OrderStatus==1&&!o.IsPurchasingOrder">{{o.IsXloboBonded?'盛付通支付':'付款'}}</span>
+				<span ng-click="toExpress(o.OrderId)" class="btn btn-white" ng-if="o.OrderStatus==3 || o.OrderStatus==4">查看物流</span>
+				<span class="btn btn-warning-boder" ng-click="receive(o.OrderId)" ng-if="o.OrderStatus==3 && !o.IsNeedUploadIdCard ">
+					确认收货
+				</span>
+			</div>
+			<p class="delay-delivery-msg order-line" ng-if="o.IsNeedUploadIdCard && isAndroid">请至洋码头官网上传身份证 ymatou.com</p>
+			<p class="delay-delivery-msg order-line" ng-if="o.AutoReceiveTime">系统将于{{(o.AutoReceiveTime || "").split(" ")[0]}}自动确认收货<span ng-if="!o.IsReceiveDelayed">，如未收到商品，请及时<strong ng-click="delayDelivery(o.OrderId)">延长收货时间</strong></span>
+			</p>
+
+		</div>
+	</div>
+			
+	</div>
+	<div class="modal ng-cloak" ng-show="confirmReceiving"  disabled-scroll compatible-android-click-invalid>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="modal-title">您是否确认已收到该商品</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-warning btn-min-100" ng-click="confirmReceive()">确定</button>
+					<button class="btn btn-white btn-min-100" ng-click="confirmReceiving = false">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--插入分享代码-->
+<%=include part/recommend.html%>
+<%=include global/footer.html%>

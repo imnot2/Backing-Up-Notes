@@ -1,0 +1,13 @@
+﻿@mixin radiusBtn($bg:#cc3333,$font:#fff){
+	text-align: center;
+	border-radius: 5px;
+	padding: 12px 24px;
+	font-weight: bold;
+	margin: 10px 20px;
+	&:after {
+		text-decoration: none;	
+		color: $font;
+		background-color:$bg;	
+		outline: none;	
+    }
+}

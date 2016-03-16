@@ -1,0 +1,88 @@
+<style type='text/css'>
+@charset 'UTF-8';[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:none;}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="http://staticontent.ymatou.com/ymtapp/matouapp.ico" />
+<script>
+	!function(a){function b(){}var c='YMT_STATIC';b.prototype={config:function(a){return this.version=a.version,this.src=a.src,this},check:function(){var a=localStorage.getItem(c);if(a)try{a=JSON.parse(a),''!==this.version&&a.version==this.version?this.render(a):this.dynamicLoad()}catch(b){this.dynamicLoad(1),localStorage.removeItem(c)}else this.dynamicLoad()},render:function(a){function b(a){var b=document.getElementsByTagName('head')[0]||document.documentElement,c=document.createElement('style');c.innerHTML=a,b.insertBefore(c,b.lastChild)}a.style&&b(a.style),a.script&&this.createScript({innerHTML:a.script})},dynamicLoad:function(){this.createScript({src:this.src})},define:function(a){a();var b=a.toString(),d=JSON.stringify({version:this.version,script:'('+b+')();'});localStorage.setItem(c,d)},createScript:function(a){var b=document.getElementsByTagName('head')[0]||document.documentElement,c=document.createElement('script');a.src&&(c.src=a.src),a.innerHTML&&(c.innerHTML=a.innerHTML),b.insertBefore(c,b.firstChild)}},a.of=new b}(window);
+</script>
+<script type="text/javascript">
+	var ua = window.navigator.userAgent;
+	function insertScript(contents,isLink){
+		var createScript = function(content,cb){
+			if(!content){
+				return;
+			}
+			var _isLink = isLink;
+			if(Object.prototype.toString.call(content) === '[object Object]'){
+				_isLink = content.isLink;
+				content = content.content;
+			}
+			var head = document.getElementsByTagName('head')[0] || document.documentElement,
+			   script = document.createElement('script');
+			script.setAttribute('type', 'text/javascript');
+		  	script[_isLink?'src':'innerHTML'] = content;
+		  	script.onload = function(){
+		   		cb&&cb();
+		   		script.onload = null;
+		   	}
+	 	 	head.appendChild(script);
+		}
+	    
+        if(Object.prototype.toString.call(contents) === '[object Array]'){
+        	createScript(contents.shift(),function(){
+        		insertScript(contents,isLink)
+        	});
+        }else{
+        	createScript(contents);
+        }        
+	       
+	    
+	 }
+	var loadScript = function(src){
+	    var xhr = new XMLHttpRequest();
+	    //设置同步
+	    xhr.open('get',src,false);
+	    xhr.onreadystatechange = function(){
+	        if (xhr.readyState === 4) {
+	            insertScript(xhr.responseText);
+	        }
+	    }
+	    xhr.send();
+	}
+	var isAlpha =  /\.alpha\.ymatou.com|localhost|127.0.0.1/.test(window.location.host);
+			
+	;(function(doc){
+		if(/MicroMessenger/i.test(ua)){			
+			insertScript([
+				'http://res.wx.qq.com/open/js/jweixin-1.0.0.js?006',
+				'http://staticwap'+(isAlpha?'.alpha':'')+'.ymatou.com/wechat/js/hui.js?v=<%=wxVersion%>',
+				'http://staticwap'+(isAlpha?'.alpha':'')+'.ymatou.com/wechat/js/hui_requester.js?v=<%=wxVersion%>',
+				'http://staticwap'+(isAlpha?'.alpha':'')+'.ymatou.com/wechat/js/YmtApi.js?v=<%=wxVersion%>',
+				'<%=staticfileurl('/js/fixedMenu.js')%>',{
+					content: [
+						'of.config({',
+						'	version:\'<%=version%>\',',
+						'	src:\'<%=staticfileurl('/js/Ymtapp.js')%>\'',
+						'}).check();'
+					].join(''),
+					isLink:false
+				}
+			],true);
+		}else if(/saohuoApp/i.test(ua)){
+			loadScript('<%=staticfileurl('/js/saohuoYmtApi.js')%>');
+			insertScript(['of.config({',
+						'	version:\'<%=version%>\',',
+						'	src:\'<%=staticfileurl('/js/Ymtapp.js')%>\'',
+						'}).check();'
+					].join(''),false);
+		}else{
+			insertScript(['of.config({',
+						'	version:\'<%=version%>\',',
+						'	src:\'<%=staticfileurl('/js/Ymtapp.js')%>\'',
+						'}).check();'
+					].join(''),false);
+		}	
+	})(document);
+</script>
+
+

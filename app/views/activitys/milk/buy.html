@@ -1,0 +1,70 @@
+<%=include commons/header.html%>
+<!-- 头部 -->
+	<div class="header">
+		<div class="headerCont clear">
+			<div class="header_img">
+				<em></em>
+			</div>
+			<div class="header_info tuansuccess">
+				<p class="header_tomorrow"><strong><%=groupInfo.Group.Creator%></strong>&nbsp;开启的团购</p>
+				<p class="header_huore">团购正在火热进行中</p>
+				<p class="header_time"><em class="img img-clock"></em>剩余 : <span data-time="<%=groupInfo.Group.LeftTime%>"></span></p>
+				<a href="/forYmatouApp/redirect?url=s%3F__biz%3DMjM5OTMwODQyMA%3D%3D%26mid%3D205868163%26idx%3D1%26sn%3Dc1559c3533f2c581d1ad9648dca0f8fb%23rd&needJumpFlag=1&title=洋码头&hostname=mp.weixin.qq.com" class="flag"></a>
+			</div>
+		</div>
+	</div>
+	<!-- 中间区域 -->
+	<div class="k1_center">
+		<div class="buyCont clear">
+			<img src="<%=staticfileurl('/images/activitys/milk/product-pic.jpg')%>" alt="商品信息">
+			<div class="buyList fl">
+				<div class="danYi">
+					<h4>单一型号</h4>
+					<ul class="spec-list">
+						<li  data-index="0" data-catalog="PRE段 两罐装">
+							<strong>PRE段</strong>
+							<small>两罐装</small>
+							<strong>￥330</strong>
+						</li>
+						<li  data-index="1" data-catalog="1段 两罐装">
+							<strong>1段</strong>
+							<small>两罐装</small>
+							<strong>￥330</strong>
+						</li>
+						<li  data-index="2" data-catalog="2段 两罐装">
+							<strong>2段</strong>
+							<small>两罐装</small>
+							<strong>￥330</strong>
+						</li>
+						<li  data-index="3" data-catalog="3段 两罐装">
+							<strong>3段</strong>
+							<small>两罐装</small>
+							<strong>￥330</strong>
+						</li>
+						<li  data-index="4" data-catalog="1+段 三盒装">
+							<strong>1+段</strong>
+							<small>三盒装</small>
+							<strong>￥390</strong>
+						</li>
+						<li  data-index="5" data-catalog="2+段 三盒装">
+							<strong>2+段</strong>
+							<small>三盒装</small>
+							<strong>￥390</strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="buy_cont" >
+			<p class="huiyuanWord_0" style="display:none;" >本次活动每位会员仅限购一个规格哦</p>
+			<p class="huiyuanWord_1">您选择的是：<span id="J-catalog-text"></span></p>
+			<p class="totalWord">总计 ：&yen;<i>0</i></p>
+			<div class="publicBtn buy-btn J-pay"> <!-- yes_buy -->
+				<em class="img img-shoppingcart"></em>
+				<span>请选择上述型号或套餐</span><!--请选择上述型号或套餐-->
+			</div>
+		</div>
+	</div>
+<%=include commons/bottom.html%>
+
+<%=include commons/footer.html%>

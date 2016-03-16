@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body.share {
+    background-color: #8dd5ff;
+}
+
+.p-share {
+    background: url(#{$static-url}images/pages/share/sharebg.png) center top no-repeat;
+    background-size: contain;
+    width: pxtorem(640);
+    min-height: pxtorem(1136);
+    margin: 0 auto;
+    position: relative;
+    .btn-close {
+        position: absolute;
+        width: pxtorem(104);
+        height: pxtorem(104);
+        background: url(#{$static-url}images/pages/share/share_03.png) center top no-repeat;
+        right: pxtorem(20);
+        top: pxtorem(20);
+        background-size: contain;
+    }
+    .btn-share {
+        width: pxtorem(496);
+        height: pxtorem(85);
+        border-radius: pxtorem(48);
+        background-color: #ff534b;
+        color: #fff;
+        text-align: center;
+        line-height: pxtorem(85);
+        font-size: pxtorem(48);
+        position: absolute;
+        bottom: pxtorem(195);
+        left: 50%;
+        margin-left: pxtorem(-248);
+    }
+    .btn-viewrules {
+        width: pxtorem(420);
+        height: pxtorem(46);
+        background: url(#{$static-url}images/pages/share/share_07.png) left top no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        margin-left: pxtorem(-210);
+        bottom: pxtorem(100);
+        .view-text {
+            margin-left: pxtorem(64);
+            line-height: pxtorem(46);
+            color: $link-fc;
+            font-size: pxtorem(26);
+        }
+    }
+}

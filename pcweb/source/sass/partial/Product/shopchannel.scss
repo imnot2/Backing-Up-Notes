@@ -1,0 +1,301 @@
+﻿/*=======================shopchannel.css===========================*/
+.node {
+	letter-spacing: -4px;
+	font-size: 0;
+}
+.node .l {
+	margin-left: 4px;
+}
+.dd, .r, .l, .b, .sprite {
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: normal;
+	font-size: 12px;
+}
+.b {
+	vertical-align: bottom;
+}
+.link {
+	display: inline-block;
+}
+.mtprice {
+	color: #cc0033;
+	margin-right: 10px;
+}
+.mtprice .yen {
+	font-size: 12px;
+	font-family: Arial;
+}
+.mtprice .num {
+	font-size: 16px;
+}
+.sprite {
+	background-image: url(/content/img/sprites/productchannel.png?v=201212031207);
+	background-repeat: no-repeat;
+	font-size: 0;
+	text-indent: -999em;
+}
+.productchannel {
+	padding-top: 0px;
+}
+.ms-nav {
+	width: 149px;
+	height: 360px;
+	float: left;
+	background-color: #FEE7EF;
+	overflow: hidden;
+}
+.ms-nav .sprite {
+	width: 15px;
+	height: 15px;
+	background-position: -185px -17px;
+	text-indent: 0;
+	text-align: center;
+	font: normal 10px/1.4 "arial";
+	color: #fff;
+}
+.ms-nav .norm {
+	background-position: -185px -17px;
+}
+.ms-nav .spe .sprite {
+	background-position: -168px -17px;
+}
+.ms-nav .link:hover .sprite {
+	background-position: -151px -17px;
+}
+.ms-nav .hd {
+	height: 34px;
+	background: url(/content/shop/images/sh-nav.gif?v=201212031207) no-repeat;
+	text-indent: -999em;
+	margin-bottom: 7px;
+}
+.ms-nav .item {
+	padding: 9px 5px 9px 10px;
+	margin-left: 5px;
+	border-bottom: 1px solid #F7D8E3;
+}
+.ms-nav .dd {
+	color: #404040;
+	font: bold 14px/1.5 "arial";
+	margin-left: 15px;
+	width: 98px;
+	height: 21px;
+	overflow: hidden;
+}
+.ms-slide {
+	width: 608px;
+	height: 360px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+}
+.triggers {
+	position: absolute;
+	width: 100%;
+	height: 38px;
+	bottom: 0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#88666666, endColorstr=#88666666);
+	background: rgba(66, 66, 66, 0.4);
+	z-index: 3;
+	text-align: center;
+}
+.triggers .link {
+	width: 28px;
+	height: 28px;
+	border-radius: 15px;
+	background-color: #5e5e5e;
+	margin: 5px 5px 0;
+	color: #cacaca;
+	font: bold 16px/1.8 "arial";
+}
+.triggers .link:hover, .triggers .current {
+	background-color: #ab4142;
+	text-decoration: none;
+}
+.panels, .panels .item, .panels .img {
+	width: 608px;
+	height: 360px;
+}
+.panels .item {
+	position: absolute;
+	z-index: 1;
+}
+.ms-right {
+	width: 244px;
+	height: 360px;
+	float: left;
+	margin-right: -1px;
+}
+.ms-right .center {
+	margin: 10px 0;
+}
+.ms-right .img {
+	width: 244px;
+	height: 109px;
+	margin-top: 10px;
+}
+.fl-left {
+	float: left;
+	width: 813px;
+}
+.fl-right {
+	width: 175px;
+	float: right;
+	overflow: hidden;
+}
+.floor {
+	margin: 12px 0;
+}
+.floor .hd {
+	height: 40px;
+	border-bottom: 3px solid #D92765;
+	line-height: 22px;
+	padding: 0 10px;
+}
+.floor .bd {
+	border: 2px solid #eee;
+	border-top: 0;
+	position: relative;
+}
+.sec-1 .hd .sprite {
+	width: 110px;
+	height: 35px;
+	background-position: 0 0;
+}
+.sec-2 .hd .sprite {
+	width: 110px;
+	height: 33px;
+	background-position: 0 -36px;
+}
+.sec-3 .hd .sprite {
+	width: 109px;
+	height: 31px;
+	background-position: 0 -135px;
+}
+.sec-4 .hd .sprite {
+	width: 110px;
+	height: 34px;
+	background-position: 0 -70px;
+}
+.sec-5 .hd .sprite {
+	width: 106px;
+	height: 26px;
+	background-position: 0 -167px;
+}
+.sec-6 .hd .sprite {
+	width: 108px;
+	height: 29px;
+	background-position: 0 -105px;
+}
+.sec-3 .bd {
+	height: 951px;
+}
+.sec-3 .bd .img {
+	width: 170px;
+	height: 50px;
+	margin-bottom: 3px;
+}
+.sec-5 .bd {
+	height: 448px;
+	text-align: center;
+}
+.sec-5 .bd .link {
+	margin: 15px 0 0;
+}
+.sec-5 .bd .img {
+	width: 160px;
+	height: 200px;
+}
+.sec-6 .hd {
+	border-bottom: 4px solid #f04e00;
+}
+.sec-6 .bd {
+	padding: 15px 0 15px 18px;
+	font-size: 0;
+	letter-spacing: -4px;
+}
+.sec-6 .bd .link {
+	margin: 0 15px 0 0;
+}
+.sec-6 .bd .img {
+	width: 310px;
+	height: 148px;
+}
+.sec-1 {
+	margin-bottom: 10px;
+}
+.sec-1 .bd, .sec-2 .bd, .sec-4 .bd {
+	height: 448px;
+	overflow: hidden;
+}
+.section .h3 {
+	height: 40px;
+	line-height: 40px;
+}
+.section .h3 .sprite {
+	*display: block;
+	vertical-align: bottom;
+	margin-bottom: 2px;
+}
+.section .fr {
+	padding-top: 15px;
+}
+.section .dl {
+	margin-right: 50px;
+	padding-top: 18px;
+	line-height: 14px;
+	overflow: hidden;
+}
+.section .hd .more {
+	width: 64px;
+	height: 13px;
+	background-position: -136px 0;
+}
+.section .dd {
+	padding: 0 10px;
+	border-right: 1px solid #72430F;
+	color: #72430F;
+	margin-right: -1px;
+}
+.section .bd ul {
+	margin: 0 -1px -12px 0;
+}
+.section .bd .sprite {
+	position: absolute;
+	visibility: hidden;
+}
+.section .item {
+	text-align: center;
+	float: left;
+	position: relative;
+	height: 201px;
+	border-right: 1px solid #eee;
+	border-bottom: 12px solid #eee;
+	width: 141px;
+	padding: 10px;
+}
+.section .imgbox {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+.section .img {
+	width: 120px;
+	height: 120px;
+}
+.section .h4 {
+	font: normal 12px/1.4 "\5b8b\4f53", "arial";
+	margin: 10px 0;
+	height: 32px;
+	overflow: hidden;
+}
+.section .h4 a {
+	color: #4a4a4a;
+}
+.section a:hover {
+	color: #3369FF;
+}
+.section .pr {
+	line-height: 22px;
+}

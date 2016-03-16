@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.p-qr-rules {
+    .bar-tit {
+        height: pxtorem(55);
+        line-height: pxtorem(60);
+        padding-left: pxtorem(30);
+        font-size: pxtorem(32);
+        background-color: $bar-tit-bg;
+        color: $base-dark-fc;
+        border-bottom: 1px solid $base-bc;
+    }
+    .qr-cont {
+        width: pxtorem(526);
+        margin: 0 auto;
+        padding: pxtorem(25) 0 pxtorem(25) pxtorem(40);
+        position: relative;
+        img.img-qr {
+            width: pxtorem(148);
+        }
+        a.btn-bonus {
+            position: absolute;
+            right: 0;
+            bottom: pxtorem(25);
+            color: $link-fc;
+            font-size: pxtorem(30);
+        }
+    }
+    .bonus-box {
+        .flow-tit {
+            height: pxtorem(65);
+            line-height: pxtorem(65);
+            margin-top: pxtorem(10);
+            padding-left: pxtorem(30);
+            font-size: pxtorem(30);
+            color: $base-fc;
+            position: relative;
+            .icon-arrow {
+                position: absolute;
+                left: 50%;
+                margin-left: pxtorem(-17);
+                img {
+                    width: pxtorem(34);
+                }
+            }
+        }
+        .flow-cont {
+            text-align: center;
+            img.img-flow {
+                margin-top: pxtorem(15);
+                width: pxtorem(581);
+            }
+        }
+    }
+    .rules-box {
+        margin-top: pxtorem(30);
+        .rules-cont {
+            padding: pxtorem(28) pxtorem(16);
+            .rules-item {
+                font-size: pxtorem(24);
+                color: $base-fc;
+                line-height: pxtorem(34);
+                .subRules-item {
+                    padding-left: pxtorem(36);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+<div class="activity-switch" >
+	<p class="btn-group">
+		<button class="btn btn-white btn-border-primary" ng-class="{'active':activity==1}" data-toggle="choice-list" ng-click="activity=1">今日抢购</button>
+		<button class="btn btn-white btn-border-primary" ng-class="{'active':activity==2}" data-toggle="input-coupons" ng-click="activity=2">明日预告</button>
+	</p>
+</div>
+<!--今日抢购-->
+<div ng-if="todayProducts" ng-show="activity==1">
+	<div class="home-list" ng-repeat="cp in todayProducts.HourProducts">
+		<div class="timebar" ng-if='newDate.hours >= cp.Hour && newDate.hours < cp.Hour+2'>
+			<div class="time time-active">
+				<span class="clockbg">
+					<span class="clock now-clock">
+						<span class='clock-txt'><strong ng-bind='cp.Hour'></strong>点</span>
+						<i class="icon icon-buyingLogo"></i>
+					</span>
+				</span>
+				<span class="over-time">
+					<i class='icon icon-countdown'></i>
+					<span class="times" countdown data-curr-time="{{nowTime}}" data-target-hour="{{cp.Hour+2}}"></span>
+				</span>
+			</div>
+		</div>
+		<ul class="hl-list" ng-if='newDate.hours >= cp.Hour && newDate.hours < cp.Hour+2' >
+			<li ng-repeat="li in cp.Products" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+				<span class="pic" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+					<span class="float_off" ng-if="li.Stock<1"></span>
+					<img ng-src="{{getPicUrl(li.PicUrl)}}"/>
+				</span>
+				<span class="info">
+					<p class="title" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+						<span textflow="2" ng-bind="li.Name||'.....'"></span>
+					</p>
+					<p class="flag" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+						<i class="flag-icon" ng-style="{'background-image':'url('+li.Flag+')'}"></i>
+						<span class="flag-name" ng-bind="li.CountryNameZh"></span>
+					</p>
+					<p class="price">
+						<span class='pull-left'>
+							<span class="price">
+								<i class="discount" ng-if="li.Discount>0"><strong ng-bind='li.Discount'></strong><span>折</span></i><strong class="realprice">&yen;<span ng-bind='li.SellingPrice'></span></strong>
+							</span> 
+							<span class="sub-price">
+								市场价<span class="old-price" ng-if="li.MarketPrice>0">&yen;<span ng-bind='li.MarketPrice'></span></span><span class="number" ng-if="li.PersonCount>0">已有<span ng-bind='li.PersonCount'></span>人抢到</span>
+							</span>
+						</span>
+					</p>
+				</span>
+			</li>
+		</ul>
+		<div class="timebar" ng-if='!(newDate.hours >= cp.Hour && newDate.hours < cp.Hour+2)'>
+			<div class="time">
+				<span class="clockbg">
+					<span class="clock">
+						<span class="clock-txt"><strong ng-bind='cp.Hour'></strong>点</span>
+						<i class="clockIcon icon-{{(cp.Hour>12?cp.Hour-12:cp.Hour)}}clock"></i>
+					</span>
+				</span>
+				<span class="note">即将开抢，敬请期待！</span>
+			</div>
+		</div>
+		<ul class="hl-list not-enabled" ng-if='!(newDate.hours >= cp.Hour && newDate.hours < cp.Hour+2)' >
+			<li ng-repeat="li in cp.Products">
+				<span class="pic" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+					<img ng-src="{{getPicUrl(li.PicUrl)}}"/>
+				</span>
+				<span class="info">
+					<p class="title" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+						<span textflow="2" ng-bind="li.Name||'.....'"></span>
+					</p>
+					<p class="flag" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl)">
+						<i class="flag-icon" ng-style="{'background-image':'url('+li.Flag+')'}"></i>
+						<span class="flag-name" ng-bind="li.CountryNameZh || '国家'"></span>
+					</p>
+					<p class="price">
+						<span class='pull-left' ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+							<span class="price">
+								<i class="discount" ng-if="li.Discount"><strong ng-bind='li.Discount'></strong><span>折</span></i><strong class="realprice">￥<span ng-bind='li.SellingPrice'></span></strong>
+							</span>
+							<span class="sub-price">
+								市场价<span class="old-price">&yen;<span ng-bind='li.MarketPrice'></span></span>
+							</span>
+						</span>
+						<span class='pull-right setRemind' ng-class="{'active':li.HasRemind}" ng-click="setRemind(li,li.ProductId,li.StartTime,li.HasRemind)">
+							<i class="icon icon-alarmbellN" ></i>
+							<i ng-bind="li.HasRemind?'取消':'提醒'"></i>
+						</span>
+					</p>
+				</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--明日预告-->
+<div ng-if="tomorrowProducts" ng-show="activity==2">
+	<div class="home-list" ng-repeat="cp in tomorrowProducts.HourProducts">
+		<div class="timebar">
+			<div class="time">
+				<span class="clockbg">
+					<span class="clock">
+						<span class="clock-txt"><strong ng-bind='cp.Hour'></strong>点</span>
+						<i class="clockIcon icon-{{(cp.Hour>12?cp.Hour-12:cp.Hour)}}clock"></i>
+					</span>
+				</span>
+				<span class="note">明日开抢，敬请期待！</span>
+			</div>
+		</div>
+		<ul class="hl-list not-enabled" >
+			<li ng-repeat="li in cp.Products">
+				<span class="pic" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+					<img ng-src="{{getPicUrl(li.PicUrl)}}"/>
+				</span>
+				<span class="info">
+					<p class="title" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)" >
+						<span textflow="2" ng-bind="li.Name||'.....'"></span>
+					</p>
+					<p class="flag" ng-click="toProduct(li.ProductId,li.Name,li.PicUrl)">
+						<i class="flag-icon" ng-style="{'background-image':'url('+li.Flag+')'}"></i>
+						<span class="flag-name" ng-bind="li.CountryNameZh || '国家'"></span>
+					</p>
+					<p class="price">
+						<span class='pull-left' ng-click="toProduct(li.ProductId,li.Name,li.PicUrl,li.SellingPrice)">
+							<span class="price">
+								<i class="discount" ng-if="li.Discount"><strong ng-bind='li.Discount'></strong><span>折</span></i><strong class="realprice">￥<span ng-bind='li.SellingPrice'></span></strong>
+							</span>
+							<span class="sub-price">
+								市场价<span class="old-price">&yen;<span ng-bind='li.MarketPrice'></span></span>
+							</span>
+						</span>
+						<span class='pull-right setRemind' ng-class="{'active':li.HasRemind}" ng-click="setRemind(li,li.ProductId,li.StartTime,li.HasRemind)">
+							<i class="icon icon-alarmbellN" ></i>
+							<i ng-bind="li.HasRemind?'取消':'提醒'"></i>
+						</span>
+					</p>
+				</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<p class="loading-bar" ng-if='!loadComple'>数据加载中 <span class="loading"></span></p>
+<!--今日售罄提醒-->
+<div class="expect-msg m-t-50 ng-cloak" ng-if="soldOut && activity==1">
+	<em ng-class="{'icon icon-biaoqing':soldOut}"></em>
+	<p ng-bind="'小主，今天的抢购结束了'"></p>
+	<p ng-bind="'看看明天的预告吧'"></p>
+	<p ng-bind="'不要再错过了哦 ~'"></p>
+</div>
+
+<div class="expect-msg ng-cloak" ng-if="!(soldOut && activity==1) && tomorrowProducts">
+	<p>敬请期待 ~</p>
+	<p>更多臻选商品，只为您的精心选择</p>
+</div>

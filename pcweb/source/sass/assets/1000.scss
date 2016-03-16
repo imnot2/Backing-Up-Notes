@@ -1,0 +1,33 @@
+﻿@import "wharf/variables";
+@import "wharf/mixins";
+
+.container{
+	min-width:$screen-min;
+}
+
+.vbanner{
+	width:$screen-min;
+	margin:0 auto;
+}
+
+.wrapper{
+	min-width:$screen-min;
+}
+.matou-link{
+	max-width:900px;
+}
+.wrapper .area {
+	@include container-fixed();
+	text-align:left;
+	width:$screen-min;
+	min-width:$screen-min;
+}
+/*nav*/
+.hd-login{width:400px}
+.site-search{width:170px;}
+.search-inp{width:90px;}
+.navigatorbar .left{width:400px}
+
+.topbar .dropdown{margin:0 5px}
+.topbar .dropdown:hover .droptitle{padding:0 5px;}
+.navigatorbar .current{width:690px;}

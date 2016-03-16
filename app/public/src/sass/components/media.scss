@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.container{
+	margin:0 auto;
+	@include clearfix;
+}
+
+@media only screen and (min-width:1025px){
+	.container{
+		max-width:320px;
+	}
+}

@@ -1,0 +1,31 @@
+//reset
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, button, input, select, textarea {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

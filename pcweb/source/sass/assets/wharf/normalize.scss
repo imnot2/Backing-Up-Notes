@@ -1,0 +1,102 @@
+﻿@import "variables";
+@import "mixins";
+
+
+html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, i {margin:0;padding:0;}
+abbr, article, aside, bb, datagrid, datalist, details, dialog, eventsource, figure, footer, header, mark, menu, meter, nav, output, progress, section, time {margin:0;padding:0;}
+body{background-color:$body-bg;font:normal #{$font-size-h6}/1.5 "Microsoft yahei","Arial";color:$gray;text-align:center;word-wrap: break-word;word-break: break-all;}
+table {border-collapse:collapse;border-spacing:0;}
+td,th {
+  padding: 0;
+}
+table caption {display:none;}
+ol, ul {list-style:none outside}
+a{text-decoration:none;color:$gray}
+a:hover{text-decoration:underline;color:$blue-hover}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  font-size:100%;
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $gray-light;
+  }
+}
+
+
+small,
+.small {
+  font-size: floor((100% * $font-size-small / $font-size-base));
+}
+
+
+fieldset, img {border:0 none;}
+img{vertical-align: middle;}
+q:before, q:after {   content: '';}  
+button{padding:0;cursor:pointer;vertical-align:middle;}
+i,em,cite,b{ font-style:normal}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; 
+  vertical-align: baseline; 
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; 
+  cursor: pointer; 
+}
+
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; // 1
+  padding: 0; // 2
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

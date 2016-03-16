@@ -1,0 +1,24 @@
+﻿<ul class="mod-collapsible" id="FilterBrandOrCategory" temp-data="data">
+    <for e="first in data">
+    <li class="item">
+        <div class="clearfix hd">
+            <div class="fr icon-arrow-up"></div><label class="title">选择分类</label>
+        </div>
+        <dl class="bd mod-secondlist">
+            <for e="sec in first.SubCategory">
+            <dd onclick="$m.mobile.toURL('p=1&c=${first.CategoryId}')"><input type="radio" name="categoryItem" class="fr" id="Radio1" /><label for="categoryItem-${firstIndex}-${secIndex}">${sec.CategoryName}</label></dd>
+            </for>
+        </dl>
+    </li>
+    <li class="item">
+        <div class="clearfix hd">
+            <div class="fr icon-arrow-up"></div><label class="title">选择品牌</label>
+        </div>
+        <dl class="bd mod-secondlist">
+            <for e="sec in first.SubCategory">
+            <dd onclick="$m.mobile.toURL('p=1&c=${first.CategoryId}')"><input type="radio" name="categoryItem" class="fr" id="Radio2" /><label for="categoryItem-${firstIndex}-${secIndex}">${sec.CategoryName}</label></dd>
+            </for>
+        </dl>
+    </li>
+    </for>
+</ul>

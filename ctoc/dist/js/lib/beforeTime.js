@@ -1,0 +1,1 @@
+Ymt.add(function(a,b,c){var d=function(a){var b,c,d,e,f=parseInt((new Date).getTime()/1e3),g=parseInt(new Date(a).getTime()/1e3);return e=f-g,d=parseInt(e/86400),c=parseInt(e/3600),b=parseInt(e/60),d>0&&365>d?d+"天前":0>=d&&c>0?c+"小时前":0>=c&&b>0?b+"分钟前":"刚刚"};c.exports=d});

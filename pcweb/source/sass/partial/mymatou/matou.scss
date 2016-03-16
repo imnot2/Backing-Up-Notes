@@ -1,0 +1,106 @@
+﻿/*=======================matou.css===========================*/
+
+/**global**/
+.mod {
+	margin: 10px 0
+}
+.con-800 {
+	width: 800px;
+	margin: 0 auto;
+}
+.price .i, .cavel {
+	display: inline-block;
+	width: 6px;
+	height: 9px;
+	margin: 0 5px;
+	font-size: 0;
+	vertical-align: middle;
+	background: url(/content/img/sprites/com/com_1.gif) -56px -15px;
+}
+.price .num {
+	font-size: 16px
+}
+.field_l_r .l {
+	display: inline-block;
+	vertical-align: middle;
+}
+.field_l_r .r {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.field_l_r .vt {
+	display: inline-block;
+	vertical-align: top
+}
+.field_l_r .inp_text {
+	height: 22px;
+	line-height: 22px;
+	padding: 2px 4px;
+}
+
+/**补款使用红包**/
+.graybg {
+	background: #F2F2F2;
+	padding: 5px 10px;
+	color: #000;
+}
+.packet {
+	margin-left: 30px;
+}
+.packet .field_l_r li {
+	margin-right: 30px;
+	float: left;
+	line-height: 30px;
+}
+.packet .field_l_r .v {
+	margin: 0 10px
+}
+
+/**修改价格**/
+.buyerinfo {
+	margin: 10px 0;
+}
+.buyerinfo .hd {
+	padding: 5px 0;
+	color: #000
+}
+.buyerinfo .bt {
+	line-height: 28px;
+}
+.buyerinfo .bt .r {
+	float: right
+}
+.buyerinfo .bt .btn_0 {
+	margin-left: 15px
+}
+.buyerinfo .mar {
+	margin-right: 25px
+}
+.buyerinfo .box {
+	margin: 0 auto 5px;
+}
+.buyerinfo .mab {
+	margin-bottom: 10px;
+}
+.buyerinfo .tab {
+	width: 100%
+}
+.buyerinfo .inp_text {
+	width: 110px;
+	text-align: center;
+}
+.buyerinfo th {
+	background-color: #f9f9f9;
+	font: 14px/1.5 "微软雅黑";
+}
+.buyerinfo td, .buyerinfo th {
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+	vertical-align: middle;
+	text-align: center
+}
+.buyerinfo .t {
+	width: 300px;
+	margin: 0 0 5px 10px
+}

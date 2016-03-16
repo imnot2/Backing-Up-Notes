@@ -1,0 +1,613 @@
+﻿/*=======================xlobo20110809.css===========================*/
+.content_xlobo .title_box {
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4d00;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid #ffb667;
+    height: 31px;
+    margin-bottom: -2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    margin-left: 60px;
+    background-color: #FFFFFF;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-position: 0px -4px;
+    width: 150px;
+    margin-top: 10px;
+}
+.content_xlobo {
+    clear: both;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content_xlobo #c_xlobo1 {
+    font-size: 14px;
+    line-height: 28px;
+}
+.content_xlobo .title_x {
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #dedede;
+    margin-bottom: 10px;
+}
+.content_xlobo .xlobo_box1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffb667;
+    height: 45px;
+    width: 980px;
+    background-color: #FFFFFF;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    float: left;
+}
+.red_link {
+    color: #FF0000;
+    text-decoration: none;
+}
+.red_link a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+.content_xlobo .button_green1 {
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    height: 27px;
+    width: 140px;
+    padding-top: 2px;
+    background-position: 0px -57px;
+    display: block;
+    cursor: hand;
+}
+.content_xlobo .button_send {
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    height: 27px;
+    width: 140px;
+    padding-top: 2px;
+    background-position: 0px -97px;
+    display: block;
+    cursor: hand;
+}
+.content_xlobo .button_order1 {
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: 0px -172px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #aaaaaa;
+    height: 21px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.content_xlobo .button_order2 {
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    font-weight: bold;
+    color: #FFFFFF;
+    background-position: 0px -138px;
+    height: 21px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 99px;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 245px;
+}
+.content_xlobo .button_address {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: -149px -299px;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+.content_xlobo .button_split {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: -53px -334px;
+    height: 30px;
+    width: 85px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    padding-top: 4px;
+    clear: both;
+    margin-left: auto;
+}
+.content_xlobo .button_back {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 30px;
+    width: 73px;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: -54px -379px;
+    float: left;
+    margin-right: 10px;
+}
+.content_xlobo .button_order3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 30px;
+    width: 197px;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: 0px -428px;
+    cursor: hand;
+    float: left;
+}
+.content_xlobo .xlobo_box3 {
+    padding-left: 50px;
+}
+.content_xlobo .xlobo_box {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #ffb667;
+    padding: 10px;
+    width: 960px;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content_xlobo .order_select {
+    border-bottom: 2px solid #ffb667;
+    height: 33px;
+}
+.content_xlobo .order_select .order1 {
+    text-align: center;
+    border: 1px solid #bdbcbd;
+    font-size: 12px;
+    font-weight: bold;
+    color: #565656;
+    background-color: #f2f2f2;
+    height: 28px;
+    padding: 4px 10px 0 10px;
+    margin-right: 10px;
+    float: left;
+    display: block;
+}
+.content_xlobo .order_select .order1 a:hover {
+    text-align: center;
+    border: 1px solid #bdbcbd;
+    font-size: 12px;
+    font-weight: bold;
+    color: #CC6600;
+    background-color: #FFFF99;
+    height: 28px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+.content_xlobo .order_select .order_click {
+    font-size: 12px;
+    color: #ff4d00;
+    float: left;
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: 0px -4px;
+    text-align: center;
+    display: block;
+    height: 28px;
+    padding: 4px 10px 0 10px;
+    border-width: 2px 1px 1px 1px;
+    border-style: solid;
+    border-top-color: #ffb667;
+    border-right-color: #ffb667;
+    border-bottom-color: #FFFFFF;
+    border-left-color: #ffb667;
+    background-color: #FFFFFF;
+    margin-bottom: -2px;
+    font-weight: bold;
+}
+.content_xlobo .xlobo_form1 {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.content_xlobo .xlobo_form2 {
+    height: 90px;
+}
+.content_xlobo .xlobo_form3 {
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+}
+.content_xlobo .box_yellow {
+    background-color: #fffbcc;
+    padding: 10px;
+    border: 1px solid #e6db55;
+    clear: both;
+    width: 888px; /*width: 905px;*/
+    margin: 10px auto 0 24px;
+    overflow: auto;
+    display: inline-block;
+}
+.content_xlobo #order_operate span {
+    margin-right: 20px;
+    float: left;
+}
+.content_xlobo #order_info {
+    position: absolute;
+    width: 47px;
+    height: 29px;
+    z-index: 1;
+    left: 757px;
+    top: 714px;
+}
+.content_xlobo #order_info2 {
+    position: absolute;
+    width: 196px;
+    height: 61px;
+    z-index: 1;
+    background-image: url(/content/xlobo/images/float_info.gif);
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    padding-left: 20px;
+    left: 121px;
+    top: 7px;
+    float: right;
+}
+.order_nav {
+    clear: both;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "微软雅黑";
+    margin-top: 10px;
+}
+.flow-steps {
+    overflow: hidden;
+    clear: both;
+    width: 980px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.flow-steps .num3 li {
+    width: 301px;
+}
+.flow-steps .num4 li {
+    width: 222px;
+}
+.flow-steps .num5 li {
+    width: 175px;
+}
+.flow-steps .num6 li {
+    width: 143px;
+}
+.flow-steps li {
+    padding-right: 15px;
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    padding-bottom: 0px;
+    overflow: hidden;
+    color: #404040;
+    line-height: 23px;
+    padding-top: 0px;
+    height: 23px;
+    text-align: center;
+    background-color: #e4e4e4;
+    background-image: url(/content/xlobo/images/flowstep.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+}
+.flow-steps li SPAN {
+    display: block;
+}
+.flow-steps li STRONG {
+    display: block;
+}
+.flow-steps li .first {
+    background: url(/content/xlobo/images/flowstep.png) #e4e4e4 no-repeat -12px -69px;
+}
+.flow-steps li.last {
+    background-position: 100% -138px;
+}
+.flow-steps li.current {
+    color: #fff;
+    background-color: #f60;
+}
+.flow-steps li.current .first {
+    background-position: -12px -92px;
+    background-color: #f60;
+}
+.flow-steps li.current-prev {
+    background-position: 100% -23px;
+}
+.flow-steps li.done {
+    background-position: 100% -46px;
+    color: #f60;
+    background-color: #ffe6ba;
+}
+.flow-steps li.done .first {
+    background-position: -12px -115px;
+    background-color: #ffe6ba;
+}
+.flow-steps li.last-current {
+    background-position: 100% -161px;
+    color: #fff;
+    background-color: #f60;
+}
+#ico_new1 {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    z-index: 2;
+    left: -427px;
+    top: -297px;
+}
+#ico_new2 {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    z-index: 2;
+    left: -266px;
+    top: 59px;
+}
+.content_xlobo .xlobo_box5 span {
+
+    /*float: left;*/
+}
+.content_xlobo .line {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c2beb1;
+    background-color: #e7e2d3;
+    height: 40px;
+}
+.content_xlobo .xlobo_box5 {
+    border: 1px solid #c2beb1; /*overflow: hidden;*/
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.content_xlobo #xlobo_step1 td, .content_xlobo #xlobo_step3 td {
+    border-right: 1px solid #c2beb1;
+    border-bottom: 1px solid #c2beb1
+}
+.content_xlobo .fl {
+    float: left;
+    clear: both;
+    padding: 5px 0;
+    height: 24px;
+    width: 100%;
+}
+.content_xlobo .fl span {
+    display: inline-block;
+    margin-right: 8px;
+    height: 24px;
+    line-height: 24px;
+    width: 190px;
+    text-align: right;
+}
+.content_xlobo .address {
+    width: 500px;
+    height: 24px;
+}
+.pad20 {
+    padding: 10px 0;
+}
+.padcenter {
+    text-align: center;
+}
+.content_xlobo .title_step {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4d00;
+    background-image: url(/content/xlobo/images/ico_dot1.gif);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.content_xlobo .p_pic {
+    float: left;
+    height: 98px;
+    width: 98px;
+    text-align: center;
+    padding-top: 5px;
+}
+.content_xlobo .p_pic img {
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+}
+.content_xlobo .p_info {
+    float: left;
+    width: 290px;
+    font-size: 12px;
+}
+.content_xlobo .p_info a {
+    color: #3366cc;
+}
+.content_xlobo #xlobo_step3 p {
+}
+.content_xlobo #xlobo_step3 .info1 {
+    font-size: 12px;
+    border-top: 1px dotted #c5c5c5;
+    border-bottom: 1px dotted #c5c5c5;
+    padding: 5px 0 5px 10px;    /*overflow: hidden;*/
+    margin-top: 5px;
+}
+.address_title {
+    background-color: rgb(253, 233, 217);
+    border: 1px solid red;
+    padding: 5px
+}
+.package {
+    margin: 5px 0;
+}
+.package .title {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+.info2 {
+    font-size: 12px;
+    border-top-width: 1px;
+    border-top-color: #c5c5c5;
+    border-bottom-width: 1px;
+    border-bottom-color: #c5c5c5;
+    padding-left: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.ChinaArea {
+    height: 200px;
+    overflow: auto !important
+}
+.content_xlobo #xlobo_step3 .ico_warn img {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.content_xlobo #xlobo_step3 .p_weight {
+    width: 90%;
+    background-color: #fffbcc; /*padding: 5px;*/
+    float: left;
+    border: 1px solid #e6db55; /*width: 240px;*/
+
+    /*    height: 25px;*/
+    cursor: hand;
+    margin-bottom: 10px;
+}
+.content_xlobo #xlobo_step3 .p_weight2 {
+    float: left;
+}
+.content_xlobo #xlobo_step3 .p_weight2 img {
+    margin-bottom: -5px;
+}
+.content_xlobo #xlobo_step4 .order_button {
+    clear: both;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: none;
+}
+.content_xlobo .line3 {
+    overflow: hidden;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+.content_xlobo .xlobo_bag {
+    background-image: url(/content/xlobo/images/all_xlobo.gif);
+    background-repeat: no-repeat;
+    background-position: 0px -299px;
+    width: 20px;
+    float: left;
+    height: 116px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-right: 5px;
+    padding-left: 8px;
+    margin-left: -6px;
+    margin-bottom: -120px;
+    line-height: 18px;
+    padding-top: 5px;
+}
+.content_xlobo .boxtxt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF3300;
+    margin-bottom: 20px;
+}
+.content_xlobo .boxtxt img {
+    margin-bottom: -20px;
+    margin-right: 10px;
+}
+.shouhuo_info .div {
+    padding-left: 20px;
+    height: 35px;
+    padding-top: 4px;
+}
+.shouhuo_info li {
+    float: left;
+    margin-right: 10px;
+    height: 31px;
+    font-size: 12px;
+}
+.si_address {
+    width: 200px;
+    height: 25px;
+}
+.si_youbian {
+
+    /* width: 80px;*/
+    height: 25px;
+}
+.si_name {
+
+    /*width:120px;*/
+    height: 25px;
+}
+.si_phone {
+    width: 120px;
+    height: 25px;
+}
+.si_money {
+    width: 50px;
+    height: 25px;
+}
+.jinggao_tishi {
+    background-color: #FFC;
+}
+.color_orange {
+    color: #F30;
+}
+.color_red {
+    color: #F00;
+}
+#ajaxload {
+    z-index: 9990;
+    position: fixed;
+    filter: alpha(opacity=75);
+    width: 100%;
+    display: none;
+    background: url(http://img.ymatou.com/portal/images/ajaxload5.gif) #222 no-repeat 50% 50%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.75;
+}

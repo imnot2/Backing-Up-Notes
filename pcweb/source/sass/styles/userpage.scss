@@ -1,0 +1,81 @@
+﻿/*=======================userpage.css===========================*/
+.uProfile .h1body {
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom: 5px;
+	padding: 0 0 5px;
+	width: 600px;
+	position: relative;
+}
+.uProfile .h1body h1 {
+	padding: 0;
+}
+.uProfile .h1body span {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 15px;
+}
+.uProfile ul li {
+	float: left;
+	margin-right: 10px;
+}
+.s_list2 .s_list2r {
+	width: 552px;
+}
+.s_list2 {
+	margin-left: 0;
+}
+.olt {
+	width: 100%;
+}
+.olt th {
+	color: #C4CCC9;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.olt td {
+	padding: 5px 5px 5px 0;
+}
+.olt td.time, .olt th.time {
+	color: #C4CCC9;
+	text-align: right;
+}
+.olt td.rp, .olt th.rp {
+	color: #C4CCC9;
+	text-align: right;
+}
+.plist a {
+	margin: 0 5px 10px 0;
+}
+.plist img {
+	max-height: 100px;
+	max-width: 100px;
+}
+.blist a {
+	margin: 0 5px 10px 0;
+}
+.blist img {
+	max-height: 69px;
+	max-width: 69px;
+}
+.mlist a {
+	margin: 0 5px 10px 0;
+}
+.mlist img {
+	max-height: 48px;
+	max-width: 48px;
+}
+.b_chief {
+	margin-bottom: 30px;
+}
+.b_chief .b_ditial {
+	display: none;
+}
+.b_chief .b_detial_bt {
+	color: #ABC8E2;
+	cursor: pointer;
+}
+.b_chief .b_detial_bt:hover {
+	color: #A89E2D;
+}
+.b_chief .b_detial_bt.act {
+	color: #A89E2D;
+}

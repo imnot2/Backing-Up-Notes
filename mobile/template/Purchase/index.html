@@ -1,0 +1,67 @@
+﻿<header class="area bar-a">
+    <a class="title" href="Description">收获信息</a>
+</header>
+<div temp-data="d">
+<ul class="address">
+    <li class="clearfix item">
+        <div class="fl radio"><input name="addressRadio" type="radio" id="address-0" checked="true" /></div>
+        <div class="info">
+            <address>${d.DefaultAddress.FullAddress}</address>
+            <div class="dec"><span class="name vm">${d.DefaultAddress.sRecipient}</span><span class="vm tel">${d.DefaultAddress.sCellPhone}</span></div>
+            <div class="dec"><a async="true" href="alladdresses" class="blue">修改地址</a></div>
+            <if e="d.CanAddAddress">
+                <div class="dec"><a async="true" class="btn-c" href="modify">新增收货地址</a></div>
+            </if>
+            <else>
+                <div class="dec"><a class="btn-c" href="javascript:void 0" id="cantaddress">新增收货地址</a></div>
+            </else>
+        </div>
+    </li>
+</ul>
+<header class="area bar-a">
+    <a class="title" href="javascript:void 0">订单信息</a>
+</header>
+<section class="orderinfo">
+<for e="info in d.OrderInfos">
+    <article class="mod-product-list show-img-60">
+        <div class="hd clearfix">
+            <div class="fr">
+                <p class="co-dim">（含运费：&yen;${info.TotalFreightForSeller})</p>
+                <b class="pricearea">合计：&yen;<span class="TotalPriceForSeller">${info.TotalPriceForSeller}</span></b>
+            </div>
+            <h3 class="seller fl">卖家：${info.Seller}</h3>
+        </div>
+        <ul class="panel">
+            <for e="ct in info.CatalogList">
+            <li class="item">
+                <a class="lk-img" href="#">
+                    <img src="${ct.PictureUrl}" class="img" title="${ct.ProductName}" alt="${ct.ProductName}" />
+                </a>
+                <div class="info">
+                    <h2 class="h2">
+                        <a class="lk-title-14" href="#">${ct.ProductName}</a>
+                    </h2>
+                    <if e="!!ct.CatalogPropertys">
+                    <div class="dec">
+                        <label>规格：</label><span class="specification">${ct.CatalogPropertys}</span>
+                    </div>
+                    </if>
+                    <div class="dec">
+                        <label>原价：</label><span class="mk-price-12"><i>&yen;</i><b>${ct.OriginalPrice}</b></span>&nbsp;&nbsp;<span class="number">数量：${ct.ProductNumber}</span>
+                    </div>
+                </div>
+            </li>
+            </for>
+        </ul>
+        <div class="clearfix coupon">
+            <div class="fr"><span class="icon-arrow-up"></span></div>
+            <label>我要使用优惠券</label>
+        </div>
+    </article>
+</for>
+</section>
+<section class="payoff">
+    <div class="field tr">合计：<span class="mt-price-20"><i>&yen;</i><b id="TotalPrice">${d.TotalPrice}</b></span>&nbsp;（含运费：${d.TotalFreight}）</div>
+    <div class="field bt"><a id="btnSaveOrder" class="btn-a wp100" href="javascript:void 0">结算</a></div>
+</section>
+</div>

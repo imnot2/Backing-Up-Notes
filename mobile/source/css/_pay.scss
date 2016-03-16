@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "../assets/sass/_mixin.scss";
+
+.top-box {
+    height: rem(110);
+    background: url(/img/pay/topbg.png) repeat-x;
+    background-size: rem(15) rem(110);
+    .top-tips {
+        text-align: center;
+        width: rem(262);
+        margin: 0 auto;
+        padding-top: rem(11);
+    }
+}
+
+.main-box {
+    text-align: center;
+    padding-top: rem(11);
+    position: relative;
+    width: rem(302);
+    margin: 0 auto;
+    .down-btn {
+        position: absolute;
+        right: rem(37);
+        bottom: rem(11);
+        width: rem(119);
+        height: rem(43);
+        background: url(/img/pay/downbtn1.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+.guide-btn {
+    position: absolute;
+    right: rem(8);
+    top: 0;
+    width: rem(44);
+    height: rem(164);
+}
+
+// 微信浏览器支付页面的遮罩
+.pay-mask {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: none;
+    @include clearfix;
+    &.show {
+        display: block;
+    }
+}
+
+.top-title {
+    height: rem(45);
+    line-height: rem(45);
+    text-align: center;
+    color: #383838;
+    font-size: rem(18);
+    position: relative;
+    border-bottom: 1px solid #d6b8b7;
+    .to-index {
+        width: rem(65);
+        height: rem(38);
+        background: url(/img/pay/ymt-logo.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: rem(10);
+        top: rem(3.5);
+    }
+}
+
+.success-box {
+    background-color: #f63b32;
+    font-family: "microsoft yahei";
+    border-top: 1px solid #cecece;
+    .down-box {
+        width: rem(300);
+        margin: 0 auto;
+        text-align: center;
+        .down-img {
+            padding: rem(25) 0;
+        }
+        .down-tips {
+            line-height: rem(28);
+            color: #fff;
+            font-size: rem(15);
+            .big-font {
+                font-size: rem(18);
+            }
+        }
+        .down-btn {
+            margin-top: rem(21);
+            padding-bottom: rem(16);
+            text-align: center;
+        }
+    }
+}
+
+.bottom-box {
+    width: rem(293);
+    margin: 0 auto;
+    background-color: #fff;
+    height: rem(148);
+    background: url(/img/pay/pay2_07.png) center bottom no-repeat;
+    background-size: contain;
+}

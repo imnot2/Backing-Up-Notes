@@ -1,0 +1,135 @@
+﻿/*=======================order-yushou.css===========================*/
+.order {
+	padding: 20px 0;
+}
+.order .left {
+	float: left;
+	width: 650px;
+}
+.order .right {
+	float: right;
+	width: 280px;
+}
+.order .list {
+	width: 80px;
+	padding: 5px 5px 0;
+}
+.order .list li {
+	margin: 0 0 5px;
+}
+.mod .hd {
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e2e2;
+}
+.mod .bt {
+	padding: 15px 0;
+	border-top: 1px solid #e2e2e2;
+}
+.mod .mid {
+	display: inline-block;
+	width: 0;
+	font-size: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.mod .img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.productinfo .bd {
+	padding: 16px 0;
+}
+.productinfo .imgbox, .productinfo .link {
+	display: block;
+	width: 220px;
+	height: 220px;
+}
+.productinfo .imgbox {
+	border: 1px solid #e2e2e2;
+	text-align: center;
+	line-height: 220px;
+	float: left;
+}
+.productinfo .infobox {
+	padding-left: 236px;
+}
+.productinfo .img {
+	max-height: 220px;
+	max-width: 220px;
+
+	_width:expression((function(elem) {
+		elem.clientWidth>220&&(elem.style.width="220px")
+	}
+	)(this));
+
+	_height:expression((function(elem) {
+		elem.clientHeight>220&&(elem.style.height="220px")
+	}
+	)(this));
+}
+.productinfo .node {
+	margin: 10px 0 10px 10px;
+}
+.productinfo .h3 {
+	font: normal 22px/1 "Microsoft YaHei";
+	color: #F04C00;
+}
+.productinfo .h4 {
+	font: normal 14px/1.5 "瀹嬩綋";
+	padding-left: 10px;
+}
+.productinfo .name, .productinfo .h4 a {
+	color: #000;
+}
+.panel {
+	border: 1px solid #ffd800;
+	background-color: #FFF9C9;
+}
+.topay {
+	background: url(/content/images/order-yushou/topay.gif) 0 0;
+	width: 142px;
+	height: 40px;
+}
+.sidebar .h3, .sidebar .h4 {
+	font: bold 14px/1 "瀹嬩綋";
+	color: #000;
+}
+.sidebar .h4 a {
+	color: #000;
+}
+.sidebar .hd {
+	padding-top: 17px;
+}
+.sidebar .bd {
+	padding: 10px 0;
+	height: 80px;
+}
+.sidebar .imgbox, .sidebar .link {
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+.sidebar .img {
+	max-height: 80px;
+	max-width: 80px;
+
+	_width:expression((function(elem) {
+		elem.clientWidth>80&&(elem.style.width="80px")
+	}
+	)(this));
+
+	_height:expression((function(elem) {
+		elem.clientHeight>80&&(elem.style.height="80px")
+	}
+	)(this));
+}
+.sidebar .imgbox {
+	line-height: 80px;
+	float: left;
+}
+.sidebar .infobox {
+	padding-left: 90px;
+}
+.sidebar .node {
+	margin: 5px 0 0;
+}

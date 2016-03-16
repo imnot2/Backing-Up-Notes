@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*顶部分类下拉框*/
+.nav-sidebar {
+    a {
+        color: #666666;
+    }
+    width: 160px;
+    border: 1px solid #CC3333;
+    background-color: #fff;
+    text-align: left;
+    height: 298px;
+    .nav-item {
+        z-index: 200;
+        background-color: #f8f8f8;
+        padding: 0 0 0 10px;
+        //position: relative;
+        border-bottom: 1px solid #ddd;
+        .icon-font {
+            font-size: 12px;
+            float: right;
+            line-height: 32px;
+            position: relative;
+            height: 32px;
+            display: block;
+            background-color: #f8f8f8;
+            padding-right: 10px;
+            display: inline;
+        }
+    }
+    .hover {
+        background: #fff;
+        z-index: 112;
+        .icon-font {
+            z-index: 200;
+            margin-right: -2px;
+            padding-right: 12px;
+            background-color: #fff;
+        }
+    }
+    .topall {
+        font: bold 14px/34px "Microsoft yahei";
+        background-color: #EEEEEE;
+        height: 34px;
+        padding: 0 0 0 10px;
+    }
+    h3 {
+        font: normal 14px/32px "Microsoft yahei";
+        color: #333;
+        height: 32px;
+        a {
+            float: left;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .last {
+        border-bottom: 0;
+    }
+    .png {
+        background-image: url(/images/sprites/icon-allcategories.png);
+        background-repeat: no-repeat;
+        font-size: 0;
+        margin-right: 12px;
+        height: 22px;
+        float: left;
+        margin-top: 4px;
+    }
+    .last .png {
+        margin-top: -2px;
+    }
+}
+
+.nav-sidebar-float {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+}
+
+.icon-my {
+    background-position: -11px -38px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-yy {
+    background-position: -11px -105px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-mr {
+    background-position: -11px -71px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-fsxm {
+    background-position: -11px -137px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-sd {
+    background-position: -13px -171px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-spyl {
+    background-position: -12px -204px;
+    height: 23px;
+    width: 22px;
+}
+
+.icon-jjry {
+    background-position: -12px -237px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-ydhw {
+    background-position: -11px -269px;
+    height: 22px;
+    width: 22px;
+}
+
+.icon-all {
+    background-position: -11px -296px;
+    height: 15px;
+    width: 22px;
+}
+
+.icon-topall {
+    background-position: -9px -8px;
+    height: 22px;
+    width: 22px;
+}
+
+/*site-menus*/
+.nav-sidebar .hover .site-menus {
+    display: block;
+}
+
+.site-menus {
+    width: 676px;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    text-align: left;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    display: none;
+    height: auto;
+    min-height: 300px;
+    left: 157px;
+    top: -1px;
+    .site-list {
+        width: 445px;
+        float: left;
+        border-right: 1px #ddd dashed;
+        min-height: 300px;
+    }
+    .site-brands {
+        float: right;
+        width: 215px;
+        margin-right: 15px;
+    }
+    li {
+        display: none;
+    }
+    li.current {
+        display: block;
+    }
+    dl {
+        width: 200px;
+        float: left;
+        display: inline;
+        margin: 0 0 20px 15px;
+        overflow: hidden;
+    }
+    // .brands {
+    //     width: 416px;
+    // }
+    .brands dd {
+        height: auto;
+    }
+    dt {
+        // padding-bottom: 5px;
+        margin: 0 0 3px 0;
+        // border-bottom: 1px solid #dedede;
+   
+    }
+    dt a {
+        font: normal 12px/1.5 'microsoft yahei';
+        font-weight: 700;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    dd {
+        margin-left: -11px;
+        height: 62px;
+        overflow: hidden;
+    }
+    dd a {
+        display: inline-block;
+        padding: 0 10px;
+        height: 14px;
+        margin: 5px 0 0 0;
+        color: #878787;
+        font: normal 12px/normal 宋体,arial;
+        border-left: 1px solid #dedede;
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+}

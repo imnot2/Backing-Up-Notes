@@ -1,0 +1,55 @@
+﻿<div temp-data="data">
+    <header class="bar-h40">
+        <sapn class="title">30天内的订单</sapn>
+    </header>
+    <for e="d in data">
+        <article class="mod-product-list show-img-80 myorder">
+            <ul class="panel">
+                <for e="p in d.OrderInfos">
+                    <li class="item">
+                        <a class="lk-img" >
+                            <img src="${p.ProductPic}" class="img" title="${p.ProductTitle}" alt="${p.ProductTitle}" />
+                        </a>
+                        <div class="info">
+                            <h2 class="h2">
+                                <a class="lk-title-14" >${p.ProductTitle}</a>
+                            </h2>
+                            <div class="dec">
+                                <if e="p.PropertyInfo"><span class="specification">${p.PropertyInfo}</span></if>
+                            </div>
+                            <div class="dec last">
+                                <label>${p.CatalogTypeText}</label>
+                            </div>
+                        </div>
+                    </li>
+                </for>
+            </ul>
+            <footer>
+                <div class="fl">
+                    <span class="co-red">金额：<b>¥${d.OrderPrice}</b></span><span class="co-blank">（另加运费：¥${d.OrderFreight})</span>
+                </div>
+                <if e="d.OrderStatuNum==1">
+                    <div class="fr"><span></span><a class="btn-a-0 split payatonce" orderid="${d.OrderId}" href="javascript:void 0">立即付款</a></div>
+                </if>
+                <else>
+                    <div class="fr split">
+                        <b class="co-red">
+                            ${d.OrderStatuText}
+                        </b>
+                    </div>
+                </else>
+            </footer>
+        </article>
+    </for>
+    <div class="rate-number none" id="rate-number">
+        <div class="tc">
+            <a href="javascript:void 0" class="btn btn-primary" id="prevpage">上一页</a>
+            <span class="vm number"><span class="current" id="currentpage">${data.currentPage}</span>/<span class="total">${data.pageNum}</span></span>
+            <a href="javascript:void 0" class="btn btn-primary" id="nextpage">下一页</a>
+        </div>
+    </div>
+</div>
+
+
+
+
